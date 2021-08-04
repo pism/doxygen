@@ -1,0 +1,4 @@
+<map id="pism::fem::P1Quadrature3" name="pism::fem::P1Quadrature3">
+<area shape="rect" id="node1" title=" " alt="" coords="5,80,199,107"/>
+<area shape="rect" id="node2" href="$classpism_1_1fem_1_1Quadrature.html" title="Numerical integration of finite element functions." alt="" coords="17,5,187,32"/>
+</map>

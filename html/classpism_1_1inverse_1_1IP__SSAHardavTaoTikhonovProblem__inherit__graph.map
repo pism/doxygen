@@ -1,0 +1,5 @@
+<map id="pism::inverse::IP_SSAHardavTaoTikhonovProblem" name="pism::inverse::IP_SSAHardavTaoTikhonovProblem">
+<area shape="rect" id="node1" title="Defines an IPTaoTikhonovProblem for inversion of basal yeild stresses &#160;from SSA velocities." alt="" coords="52,200,263,241"/>
+<area shape="rect" id="node2" href="$classpism_1_1inverse_1_1IPTaoTikhonovProblem.html" title=" " alt="" coords="5,109,309,151"/>
+<area shape="rect" id="node3" href="$classpism_1_1inverse_1_1IPTaoTikhonovProblem.html" title="Defines a Tikhonov minimization problem to be solved with a TaoBasicSolver." alt="" coords="51,5,263,47"/>
+</map>

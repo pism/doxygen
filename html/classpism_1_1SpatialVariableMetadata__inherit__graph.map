@@ -1,0 +1,4 @@
+<map id="pism::SpatialVariableMetadata" name="pism::SpatialVariableMetadata">
+<area shape="rect" id="node1" title="Spatial NetCDF variable (corresponding to a 2D or 3D scalar field)." alt="" coords="5,80,228,107"/>
+<area shape="rect" id="node2" href="$classpism_1_1VariableMetadata.html" title="A class for handling variable metadata, reading, writing and converting from input units and to outpu..." alt="" coords="28,5,205,32"/>
+</map>

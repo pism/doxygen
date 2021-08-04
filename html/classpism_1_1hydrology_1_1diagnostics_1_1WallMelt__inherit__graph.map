@@ -1,0 +1,6 @@
+<map id="pism::hydrology::diagnostics::WallMelt" name="pism::hydrology::diagnostics::WallMelt">
+<area shape="rect" id="node1" title="Report the wall melt rate from dissipation of the potential energy of the transportable water." alt="" coords="5,247,213,288"/>
+<area shape="rect" id="node2" href="$classpism_1_1Diag.html" title=" " alt="" coords="23,171,195,197"/>
+<area shape="rect" id="node3" href="$classpism_1_1Diagnostic.html" title="Class representing diagnostic computations in PISM." alt="" coords="39,5,169,32"/>
+<area shape="rect" id="node4" href="$classpism_1_1Diag.html" title="A template derived from Diagnostic, adding a &quot;Model&quot;." alt="" coords="125,81,288,108"/>
+</map>

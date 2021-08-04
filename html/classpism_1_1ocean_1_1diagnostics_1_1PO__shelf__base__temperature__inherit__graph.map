@@ -1,0 +1,6 @@
+<map id="pism::ocean::diagnostics::PO_shelf_base_temperature" name="pism::ocean::diagnostics::PO_shelf_base_temperature">
+<area shape="rect" id="node1" title="Shelf base temperature." alt="" coords="5,247,219,288"/>
+<area shape="rect" id="node2" href="$classpism_1_1Diag.html" title=" " alt="" coords="11,171,213,197"/>
+<area shape="rect" id="node3" href="$classpism_1_1Diagnostic.html" title="Class representing diagnostic computations in PISM." alt="" coords="41,5,172,32"/>
+<area shape="rect" id="node4" href="$classpism_1_1Diag.html" title="A template derived from Diagnostic, adding a &quot;Model&quot;." alt="" coords="128,81,291,108"/>
+</map>

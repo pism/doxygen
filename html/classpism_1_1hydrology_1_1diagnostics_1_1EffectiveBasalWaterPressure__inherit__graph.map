@@ -1,0 +1,6 @@
+<map id="pism::hydrology::diagnostics::EffectiveBasalWaterPressure" name="pism::hydrology::diagnostics::EffectiveBasalWaterPressure">
+<area shape="rect" id="node1" title="Reports the effective pressure of the transportable water in the subglacial layer,..." alt="" coords="5,247,223,288"/>
+<area shape="rect" id="node2" href="$classpism_1_1Diag.html" title=" " alt="" coords="28,171,200,197"/>
+<area shape="rect" id="node3" href="$classpism_1_1Diagnostic.html" title="Class representing diagnostic computations in PISM." alt="" coords="43,5,174,32"/>
+<area shape="rect" id="node4" href="$classpism_1_1Diag.html" title="A template derived from Diagnostic, adding a &quot;Model&quot;." alt="" coords="130,81,293,108"/>
+</map>

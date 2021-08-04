@@ -1,0 +1,6 @@
+<map id="pism::atmosphere::diagnostics::MeanSummerTemperature" name="pism::atmosphere::diagnostics::MeanSummerTemperature">
+<area shape="rect" id="node1" title="Mean summer near&#45;surface air temperature." alt="" coords="5,247,228,288"/>
+<area shape="rect" id="node2" href="$classpism_1_1Diag.html" title=" " alt="" coords="18,171,215,197"/>
+<area shape="rect" id="node3" href="$classpism_1_1Diagnostic.html" title="Class representing diagnostic computations in PISM." alt="" coords="46,5,177,32"/>
+<area shape="rect" id="node4" href="$classpism_1_1Diag.html" title="A template derived from Diagnostic, adding a &quot;Model&quot;." alt="" coords="133,81,295,108"/>
+</map>

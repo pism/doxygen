@@ -1,0 +1,6 @@
+<map id="pism::stressbalance::SSB_taub_mag" name="pism::stressbalance::SSB_taub_mag">
+<area shape="rect" id="node1" title="Computes the magnitude of the basal shear stress (diagnostically)." alt="" coords="29,261,181,303"/>
+<area shape="rect" id="node2" href="$classpism_1_1Diag.html" title=" " alt="" coords="5,171,204,212"/>
+<area shape="rect" id="node3" href="$classpism_1_1Diagnostic.html" title="Class representing diagnostic computations in PISM." alt="" coords="34,5,165,32"/>
+<area shape="rect" id="node4" href="$classpism_1_1Diag.html" title="A template derived from Diagnostic, adding a &quot;Model&quot;." alt="" coords="121,81,283,108"/>
+</map>

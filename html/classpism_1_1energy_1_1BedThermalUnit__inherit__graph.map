@@ -1,0 +1,7 @@
+<map id="pism::energy::BedThermalUnit" name="pism::energy::BedThermalUnit">
+<area shape="rect" id="node1" title="Given the temperature of the top of the bedrock, for the duration of one time&#45;step,..." alt="" coords="111,80,331,107"/>
+<area shape="rect" id="node3" href="$classpism_1_1energy_1_1BTU__Full.html" title="Given the temperature of the top of the bedrock, for the duration of one time&#45;step,..." alt="" coords="31,155,201,181"/>
+<area shape="rect" id="node5" href="$classpism_1_1energy_1_1BTU__Minimal.html" title=" " alt="" coords="226,155,427,181"/>
+<area shape="rect" id="node2" href="$classpism_1_1Component.html" title="A class defining a common interface for most PISM sub&#45;models." alt="" coords="153,5,290,32"/>
+<area shape="rect" id="node4" href="$classpism_1_1energy_1_1BTU__Verification.html" title=" " alt="" coords="5,229,227,256"/>
+</map>

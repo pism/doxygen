@@ -1,0 +1,8 @@
+<map id="pism::atmosphere::YearlyCycle" name="pism::atmosphere::YearlyCycle">
+<area shape="rect" id="node1" title=" " alt="" coords="465,64,652,105"/>
+<area shape="rect" id="node4" href="$classpism_1_1atmosphere_1_1CosineYearlyCycle.html" title=" " alt="" coords="738,5,930,47"/>
+<area shape="rect" id="node5" href="$classpism_1_1atmosphere_1_1PIK.html" title=" " alt="" coords="749,71,919,98"/>
+<area shape="rect" id="node6" href="$classpism_1_1atmosphere_1_1SeaRISEGreenland.html" title="A modification of YearlyCycle tailored for the SeaRISE&#45;Greenland assessment. Uses the Fausto [Faustoe..." alt="" coords="700,122,968,149"/>
+<area shape="rect" id="node2" href="$classpism_1_1atmosphere_1_1AtmosphereModel.html" title="A purely virtual class defining the interface of a PISM Atmosphere Model." alt="" coords="191,64,417,105"/>
+<area shape="rect" id="node3" href="$classpism_1_1Component.html" title="A class defining a common interface for most PISM sub&#45;models." alt="" coords="5,71,143,98"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="pism::StringLogger" name="pism::StringLogger">
+<area shape="rect" id="node1" title="A logger that accumulates messages and reports them as a string." alt="" coords="5,80,149,107"/>
+<area shape="rect" id="node2" href="$classpism_1_1Logger.html" title="A basic logging class." alt="" coords="24,5,131,32"/>
+</map>

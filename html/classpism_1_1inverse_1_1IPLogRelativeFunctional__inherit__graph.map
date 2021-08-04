@@ -1,0 +1,5 @@
+<map id="pism::inverse::IPLogRelativeFunctional" name="pism::inverse::IPLogRelativeFunctional">
+<area shape="rect" id="node1" title="Implements a functional for log&#45;relative errors." alt="" coords="5,200,212,241"/>
+<area shape="rect" id="node2" href="$classpism_1_1inverse_1_1IPFunctional.html" title=" " alt="" coords="10,109,207,151"/>
+<area shape="rect" id="node3" href="$classpism_1_1inverse_1_1IPFunctional.html" title="Abstract base class for functions from ice model vectors to ." alt="" coords="10,5,207,47"/>
+</map>

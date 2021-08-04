@@ -1,0 +1,11 @@
+<map id="pism::stressbalance::Blatter" name="pism::stressbalance::Blatter">
+<area shape="rect" id="node1" title=" " alt="" coords="412,169,564,211"/>
+<area shape="rect" id="node4" href="$classpism_1_1stressbalance_1_1BlatterISMIPHOM.html" title=" " alt="" coords="625,5,777,47"/>
+<area shape="rect" id="node5" href="$classpism_1_1stressbalance_1_1BlatterTestCFBC.html" title=" " alt="" coords="625,71,777,112"/>
+<area shape="rect" id="node6" href="$classpism_1_1stressbalance_1_1BlatterTestHalfar.html" title=" " alt="" coords="625,136,777,177"/>
+<area shape="rect" id="node7" href="$classpism_1_1stressbalance_1_1BlatterTestXY.html" title=" " alt="" coords="625,201,777,243"/>
+<area shape="rect" id="node8" href="$classpism_1_1stressbalance_1_1BlatterTestXZ.html" title=" " alt="" coords="625,267,777,308"/>
+<area shape="rect" id="node9" href="$classpism_1_1stressbalance_1_1BlatterTestvanderVeen.html" title=" " alt="" coords="612,332,789,373"/>
+<area shape="rect" id="node2" href="$classpism_1_1stressbalance_1_1ShallowStressBalance.html" title="Shallow stress balance (such as the SSA)." alt="" coords="191,169,364,211"/>
+<area shape="rect" id="node3" href="$classpism_1_1Component.html" title="A class defining a common interface for most PISM sub&#45;models." alt="" coords="5,177,143,203"/>
+</map>

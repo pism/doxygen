@@ -1,0 +1,5 @@
+<map id="pism::ocean::Given" name="pism::ocean::Given">
+<area shape="rect" id="node1" title=" " alt="" coords="27,155,174,181"/>
+<area shape="rect" id="node2" href="$classpism_1_1ocean_1_1OceanModel.html" title="A very rudimentary PISM ocean model." alt="" coords="5,80,196,107"/>
+<area shape="rect" id="node3" href="$classpism_1_1Component.html" title="A class defining a common interface for most PISM sub&#45;models." alt="" coords="32,5,169,32"/>
+</map>

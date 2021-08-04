@@ -1,0 +1,7 @@
+<map id="pism::inverse::IPDesignVariableParameterization" name="pism::inverse::IPDesignVariableParameterization">
+<area shape="rect" id="node1" title=" " alt="" coords="5,104,233,145"/>
+<area shape="rect" id="node2" href="$classpism_1_1inverse_1_1IPDesignVariableParamExp.html" title="Parameterization &#160;with ." alt="" coords="281,5,509,47"/>
+<area shape="rect" id="node3" href="$classpism_1_1inverse_1_1IPDesignVariableParamIdent.html" title="Parameterization &#160;with ." alt="" coords="281,71,509,112"/>
+<area shape="rect" id="node4" href="$classpism_1_1inverse_1_1IPDesignVariableParamSquare.html" title="Parameterization &#160;with ." alt="" coords="281,136,509,177"/>
+<area shape="rect" id="node5" href="$classpism_1_1inverse_1_1IPDesignVariableParamTruncatedIdent.html" title="A monotone non&#45;negative parameterization &#160;that is approximately the identity away from small values o..." alt="" coords="281,201,509,243"/>
+</map>

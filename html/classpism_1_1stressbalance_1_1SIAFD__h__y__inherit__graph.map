@@ -1,0 +1,6 @@
+<map id="pism::stressbalance::SIAFD_h_y" name="pism::stressbalance::SIAFD_h_y">
+<area shape="rect" id="node1" title="Reports the y&#45;component of the ice surface gradient on the staggered grid as computed by SIAFD." alt="" coords="10,247,162,288"/>
+<area shape="rect" id="node2" href="$classpism_1_1Diag.html" title=" " alt="" coords="5,171,167,197"/>
+<area shape="rect" id="node3" href="$classpism_1_1Diagnostic.html" title="Class representing diagnostic computations in PISM." alt="" coords="15,5,146,32"/>
+<area shape="rect" id="node4" href="$classpism_1_1Diag.html" title="A template derived from Diagnostic, adding a &quot;Model&quot;." alt="" coords="102,81,265,108"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="pism::diagnostics::scalar::IceAreaGlacierizedGrounded" name="pism::diagnostics::scalar::IceAreaGlacierizedGrounded">
+<area shape="rect" id="node1" title="Computes the total grounded ice area." alt="" coords="119,276,309,332"/>
+<area shape="rect" id="node2" href="$classpism_1_1TSDiag.html" title=" " alt="" coords="115,185,313,227"/>
+<area shape="rect" id="node3" href="$classpism_1_1TSSnapshotDiagnostic.html" title="Scalar diagnostic reporting a snapshot of a quantity modeled by PISM." alt="" coords="5,81,212,108"/>
+<area shape="rect" id="node4" href="$classpism_1_1TSDiagnostic.html" title="PISM&#39;s scalar time&#45;series diagnostics." alt="" coords="35,5,182,32"/>
+<area shape="rect" id="node5" href="$classpism_1_1TSDiag.html" title=" " alt="" coords="237,81,405,108"/>
+<area shape="rect" id="node6" href="$classD.html" title=" " alt="" coords="301,5,340,32"/>
+</map>

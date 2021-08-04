@@ -1,0 +1,5 @@
+<map id="pism::io::NC_Serial" name="pism::io::NC_Serial">
+<area shape="rect" id="node1" title=" " alt="" coords="9,80,155,107"/>
+<area shape="rect" id="node3" href="$classpism_1_1io_1_1NC4__Serial.html" title=" " alt="" coords="5,155,159,181"/>
+<area shape="rect" id="node2" href="$classpism_1_1io_1_1NCFile.html" title="The PISM wrapper for a subset of the NetCDF C API." alt="" coords="20,5,144,32"/>
+</map>

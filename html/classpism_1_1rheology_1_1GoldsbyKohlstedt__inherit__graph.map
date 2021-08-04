@@ -1,0 +1,5 @@
+<map id="pism::rheology::GoldsbyKohlstedt" name="pism::rheology::GoldsbyKohlstedt">
+<area shape="rect" id="node1" title="A hybrid of Goldsby&#45;Kohlstedt (2001) ice (constitutive form) and Paterson&#45;Budd (1982)&#45;Glen (viscosity..." alt="" coords="5,80,245,107"/>
+<area shape="rect" id="node3" href="$classpism_1_1rheology_1_1GoldsbyKohlstedtStripped.html" title="Derived class of GoldsbyKohlstedt for testing purposes only." alt="" coords="5,155,245,196"/>
+<area shape="rect" id="node2" href="$classpism_1_1rheology_1_1FlowLaw.html" title=" " alt="" coords="34,5,217,32"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="pism::stressbalance::SIAFD_diffusivity_staggered" name="pism::stressbalance::SIAFD_diffusivity_staggered">
+<area shape="rect" id="node1" title="Compute diffusivity of the SIA flow (on the staggered grid)." alt="" coords="10,247,162,303"/>
+<area shape="rect" id="node2" href="$classpism_1_1Diag.html" title=" " alt="" coords="5,171,167,197"/>
+<area shape="rect" id="node3" href="$classpism_1_1Diagnostic.html" title="Class representing diagnostic computations in PISM." alt="" coords="15,5,146,32"/>
+<area shape="rect" id="node4" href="$classpism_1_1Diag.html" title="A template derived from Diagnostic, adding a &quot;Model&quot;." alt="" coords="102,81,265,108"/>
+</map>

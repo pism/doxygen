@@ -1,0 +1,6 @@
+<map id="pism::stressbalance::SSA_taud_mag" name="pism::stressbalance::SSA_taud_mag">
+<area shape="rect" id="node1" title="Computes the magnitude of the driving shear stress at the base of ice (diagnostically)." alt="" coords="5,247,157,288"/>
+<area shape="rect" id="node2" href="$classpism_1_1Diag.html" title=" " alt="" coords="7,171,155,197"/>
+<area shape="rect" id="node3" href="$classpism_1_1Diagnostic.html" title="Class representing diagnostic computations in PISM." alt="" coords="11,5,141,32"/>
+<area shape="rect" id="node4" href="$classpism_1_1Diag.html" title="A template derived from Diagnostic, adding a &quot;Model&quot;." alt="" coords="97,81,260,108"/>
+</map>

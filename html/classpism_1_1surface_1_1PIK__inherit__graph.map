@@ -1,0 +1,5 @@
+<map id="pism::surface::PIK" name="pism::surface::PIK">
+<area shape="rect" id="node1" title="A class implementing a constant&#45;in&#45;time surface model for the surface mass balance." alt="" coords="39,155,178,181"/>
+<area shape="rect" id="node2" href="$classpism_1_1surface_1_1SurfaceModel.html" title="The interface of PISM&#39;s surface models." alt="" coords="5,80,212,107"/>
+<area shape="rect" id="node3" href="$classpism_1_1Component.html" title="A class defining a common interface for most PISM sub&#45;models." alt="" coords="40,5,177,32"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="pism::stressbalance::BlatterISMIPHOM" name="pism::stressbalance::BlatterISMIPHOM">
+<area shape="rect" id="node1" title=" " alt="" coords="16,259,168,300"/>
+<area shape="rect" id="node2" href="$classpism_1_1stressbalance_1_1Blatter.html" title=" " alt="" coords="16,169,168,211"/>
+<area shape="rect" id="node3" href="$classpism_1_1stressbalance_1_1ShallowStressBalance.html" title="Shallow stress balance (such as the SSA)." alt="" coords="5,80,179,121"/>
+<area shape="rect" id="node4" href="$classpism_1_1Component.html" title="A class defining a common interface for most PISM sub&#45;models." alt="" coords="23,5,161,32"/>
+</map>

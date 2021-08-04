@@ -1,0 +1,5 @@
+<map id="pism::inverse::IPLogRatioFunctional" name="pism::inverse::IPLogRatioFunctional">
+<area shape="rect" id="node1" title="Implements a functional for log&#45;ratio errors." alt="" coords="11,200,197,241"/>
+<area shape="rect" id="node2" href="$classpism_1_1inverse_1_1IPFunctional.html" title=" " alt="" coords="5,109,203,151"/>
+<area shape="rect" id="node3" href="$classpism_1_1inverse_1_1IPFunctional.html" title="Abstract base class for functions from ice model vectors to ." alt="" coords="5,5,203,47"/>
+</map>

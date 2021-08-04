@@ -1,0 +1,6 @@
+<map id="pism::stressbalance::SIAFD_schoofs_theta" name="pism::stressbalance::SIAFD_schoofs_theta">
+<area shape="rect" id="node1" title="Computes the multiplier &#160;in Schoof&#39;s (2003) theory of the effect of bed roughness on the diffusivity ..." alt="" coords="5,247,172,288"/>
+<area shape="rect" id="node2" href="$classpism_1_1Diag.html" title=" " alt="" coords="8,171,169,197"/>
+<area shape="rect" id="node3" href="$classpism_1_1Diagnostic.html" title="Class representing diagnostic computations in PISM." alt="" coords="18,5,149,32"/>
+<area shape="rect" id="node4" href="$classpism_1_1Diag.html" title="A template derived from Diagnostic, adding a &quot;Model&quot;." alt="" coords="105,81,267,108"/>
+</map>

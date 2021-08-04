@@ -1,0 +1,5 @@
+<map id="pism::bed::PointwiseIsostasy" name="pism::bed::PointwiseIsostasy">
+<area shape="rect" id="node1" title="Point&#45;wise isostasy bed deformation model." alt="" coords="5,155,216,181"/>
+<area shape="rect" id="node2" href="$classpism_1_1bed_1_1BedDef.html" title="PISM bed deformation model (base class)." alt="" coords="39,80,182,107"/>
+<area shape="rect" id="node3" href="$classpism_1_1Component.html" title="A class defining a common interface for most PISM sub&#45;models." alt="" coords="42,5,179,32"/>
+</map>

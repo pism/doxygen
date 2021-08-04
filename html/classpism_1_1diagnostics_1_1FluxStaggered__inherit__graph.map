@@ -1,0 +1,6 @@
+<map id="pism::diagnostics::FluxStaggered" name="pism::diagnostics::FluxStaggered">
+<area shape="rect" id="node1" title="Report mass flux on the staggered grid." alt="" coords="57,247,201,288"/>
+<area shape="rect" id="node2" href="$classpism_1_1Diag.html" title=" " alt="" coords="5,171,253,197"/>
+<area shape="rect" id="node3" href="$classpism_1_1Diagnostic.html" title="Class representing diagnostic computations in PISM." alt="" coords="59,5,189,32"/>
+<area shape="rect" id="node4" href="$classpism_1_1Diag.html" title="A template derived from Diagnostic, adding a &quot;Model&quot;." alt="" coords="145,81,308,108"/>
+</map>

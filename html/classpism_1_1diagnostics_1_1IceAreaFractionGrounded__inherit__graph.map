@@ -1,0 +1,6 @@
+<map id="pism::diagnostics::IceAreaFractionGrounded" name="pism::diagnostics::IceAreaFractionGrounded">
+<area shape="rect" id="node1" title=" " alt="" coords="5,247,192,288"/>
+<area shape="rect" id="node2" href="$classpism_1_1Diag.html" title=" " alt="" coords="8,171,189,197"/>
+<area shape="rect" id="node3" href="$classpism_1_1Diagnostic.html" title="Class representing diagnostic computations in PISM." alt="" coords="28,5,159,32"/>
+<area shape="rect" id="node4" href="$classpism_1_1Diag.html" title="A template derived from Diagnostic, adding a &quot;Model&quot;." alt="" coords="115,81,277,108"/>
+</map>

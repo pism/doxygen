@@ -1,0 +1,5 @@
+<map id="pism::atmosphere::Anomaly" name="pism::atmosphere::Anomaly">
+<area shape="rect" id="node1" title="Reads and uses air_temp and precipitation anomalies from a file." alt="" coords="15,169,222,196"/>
+<area shape="rect" id="node2" href="$classpism_1_1atmosphere_1_1AtmosphereModel.html" title="A purely virtual class defining the interface of a PISM Atmosphere Model." alt="" coords="5,80,232,121"/>
+<area shape="rect" id="node3" href="$classpism_1_1Component.html" title="A class defining a common interface for most PISM sub&#45;models." alt="" coords="50,5,187,32"/>
+</map>

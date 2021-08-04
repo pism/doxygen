@@ -1,0 +1,6 @@
+<map id="pism::energy::diagnostics::Enthalpy" name="pism::energy::diagnostics::Enthalpy">
+<area shape="rect" id="node1" title="Report ice enthalpy." alt="" coords="15,247,203,288"/>
+<area shape="rect" id="node2" href="$classpism_1_1Diag.html" title=" " alt="" coords="5,171,212,197"/>
+<area shape="rect" id="node3" href="$classpism_1_1Diagnostic.html" title="Class representing diagnostic computations in PISM." alt="" coords="38,5,169,32"/>
+<area shape="rect" id="node4" href="$classpism_1_1Diag.html" title="A template derived from Diagnostic, adding a &quot;Model&quot;." alt="" coords="125,81,287,108"/>
+</map>

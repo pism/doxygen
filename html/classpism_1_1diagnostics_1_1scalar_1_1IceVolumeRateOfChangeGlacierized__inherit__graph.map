@@ -1,0 +1,8 @@
+<map id="pism::diagnostics::scalar::IceVolumeRateOfChangeGlacierized" name="pism::diagnostics::scalar::IceVolumeRateOfChangeGlacierized">
+<area shape="rect" id="node1" title="Computes the rate of change of the total ice volume in glacierized areas." alt="" coords="76,276,307,332"/>
+<area shape="rect" id="node2" href="$classpism_1_1TSDiag.html" title=" " alt="" coords="70,185,313,227"/>
+<area shape="rect" id="node3" href="$classpism_1_1TSRateDiagnostic.html" title="Scalar diagnostic reporting the rate of change of a quantity modeled by PISM." alt="" coords="5,81,183,108"/>
+<area shape="rect" id="node4" href="$classpism_1_1TSDiagnostic.html" title="PISM&#39;s scalar time&#45;series diagnostics." alt="" coords="21,5,167,32"/>
+<area shape="rect" id="node5" href="$classpism_1_1TSDiag.html" title=" " alt="" coords="207,81,375,108"/>
+<area shape="rect" id="node6" href="$classD.html" title=" " alt="" coords="272,5,311,32"/>
+</map>

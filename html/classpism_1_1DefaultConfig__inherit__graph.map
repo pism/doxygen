@@ -1,0 +1,5 @@
+<map id="pism::DefaultConfig" name="pism::DefaultConfig">
+<area shape="rect" id="node1" title="Default PISM configuration database: uses NetCDF files; can be initialized from a file specified usin..." alt="" coords="7,155,157,181"/>
+<area shape="rect" id="node2" href="$classpism_1_1NetCDFConfig.html" title="A class for reading, writing and accessing PISM configuration flags and parameters." alt="" coords="5,80,159,107"/>
+<area shape="rect" id="node3" href="$classpism_1_1Config.html" title="A class for storing and accessing PISM configuration flags and parameters." alt="" coords="31,5,133,32"/>
+</map>

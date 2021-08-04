@@ -1,0 +1,6 @@
+<map id="pism::diagnostics::TemperateIceThicknessBasal" name="pism::diagnostics::TemperateIceThicknessBasal">
+<area shape="rect" id="node1" title="Computes the thickness of the basal layer of temperate ice." alt="" coords="5,247,216,288"/>
+<area shape="rect" id="node2" href="$classpism_1_1Diag.html" title=" " alt="" coords="20,171,201,197"/>
+<area shape="rect" id="node3" href="$classpism_1_1Diagnostic.html" title="Class representing diagnostic computations in PISM." alt="" coords="40,5,171,32"/>
+<area shape="rect" id="node4" href="$classpism_1_1Diag.html" title="A template derived from Diagnostic, adding a &quot;Model&quot;." alt="" coords="127,81,289,108"/>
+</map>

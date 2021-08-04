@@ -1,0 +1,7 @@
+<map id="pism::stressbalance::SSAFD" name="pism::stressbalance::SSAFD">
+<area shape="rect" id="node1" title="PISM&#39;s SSA solver: the finite difference implementation." alt="" coords="23,244,175,285"/>
+<area shape="rect" id="node5" href="$classpism_1_1stressbalance_1_1SSAFD__Regional.html" title="A version of the SSA stress balance with tweaks for outlet glacier simulations." alt="" coords="23,333,175,375"/>
+<area shape="rect" id="node2" href="$classpism_1_1stressbalance_1_1SSA.html" title="PISM&#39;s SSA solver." alt="" coords="5,169,192,196"/>
+<area shape="rect" id="node3" href="$classpism_1_1stressbalance_1_1ShallowStressBalance.html" title="Shallow stress balance (such as the SSA)." alt="" coords="12,80,185,121"/>
+<area shape="rect" id="node4" href="$classpism_1_1Component.html" title="A class defining a common interface for most PISM sub&#45;models." alt="" coords="30,5,167,32"/>
+</map>

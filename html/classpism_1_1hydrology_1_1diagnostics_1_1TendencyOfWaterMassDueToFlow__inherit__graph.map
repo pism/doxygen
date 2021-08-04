@@ -1,0 +1,8 @@
+<map id="pism::hydrology::diagnostics::TendencyOfWaterMassDueToFlow" name="pism::hydrology::diagnostics::TendencyOfWaterMassDueToFlow">
+<area shape="rect" id="node1" title="Report water flux at the grounded margin." alt="" coords="5,427,255,468"/>
+<area shape="rect" id="node2" href="$classpism_1_1DiagAverageRate.html" title=" " alt="" coords="43,336,217,377"/>
+<area shape="rect" id="node3" href="$classpism_1_1Diag.html" title="A template derived from Diagnostic, adding a &quot;Model&quot;." alt="" coords="41,81,203,108"/>
+<area shape="rect" id="node6" href="$classpism_1_1Diag.html" title=" " alt="" coords="173,171,308,197"/>
+<area shape="rect" id="node4" href="$classpism_1_1Diagnostic.html" title="Class representing diagnostic computations in PISM." alt="" coords="115,5,246,32"/>
+<area shape="rect" id="node5" href="$classpism_1_1DiagAverageRate.html" title=" " alt="" coords="147,247,364,273"/>
+</map>

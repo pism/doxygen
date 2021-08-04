@@ -1,0 +1,5 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classpism_1_1surface_1_1LocalMassBalance.html" title="Base class for a model which computes surface mass flux rate (ice thickness per time) from precipitat..." alt="" coords="5,5,192,47"/>
+<area shape="rect" id="node2" href="$classpism_1_1surface_1_1PDDMassBalance.html" title="A PDD implementation which computes the local mass balance based on an expectation integral." alt="" coords="240,13,472,39"/>
+<area shape="rect" id="node3" href="$classpism_1_1surface_1_1PDDrandMassBalance.html" title="An alternative PDD implementation which simulates a random process to get the number of PDDs." alt="" coords="520,5,729,47"/>
+</map>

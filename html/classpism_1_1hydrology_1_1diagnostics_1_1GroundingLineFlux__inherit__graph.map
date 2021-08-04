@@ -1,0 +1,8 @@
+<map id="pism::hydrology::diagnostics::GroundingLineFlux" name="pism::hydrology::diagnostics::GroundingLineFlux">
+<area shape="rect" id="node1" title="Report subglacial water flux at grounding lines." alt="" coords="5,427,213,468"/>
+<area shape="rect" id="node2" href="$classpism_1_1DiagAverageRate.html" title=" " alt="" coords="22,336,197,377"/>
+<area shape="rect" id="node3" href="$classpism_1_1Diag.html" title="A template derived from Diagnostic, adding a &quot;Model&quot;." alt="" coords="20,81,183,108"/>
+<area shape="rect" id="node6" href="$classpism_1_1Diag.html" title=" " alt="" coords="153,171,287,197"/>
+<area shape="rect" id="node4" href="$classpism_1_1Diagnostic.html" title="Class representing diagnostic computations in PISM." alt="" coords="95,5,225,32"/>
+<area shape="rect" id="node5" href="$classpism_1_1DiagAverageRate.html" title=" " alt="" coords="126,247,343,273"/>
+</map>

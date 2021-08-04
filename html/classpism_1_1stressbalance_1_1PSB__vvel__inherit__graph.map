@@ -1,0 +1,6 @@
+<map id="pism::stressbalance::PSB_vvel" name="pism::stressbalance::PSB_vvel">
+<area shape="rect" id="node1" title="Computes the y&#45;component of the horizontal ice velocity." alt="" coords="37,247,189,288"/>
+<area shape="rect" id="node2" href="$classpism_1_1Diag.html" title=" " alt="" coords="5,171,220,197"/>
+<area shape="rect" id="node3" href="$classpism_1_1Diagnostic.html" title="Class representing diagnostic computations in PISM." alt="" coords="42,5,173,32"/>
+<area shape="rect" id="node4" href="$classpism_1_1Diag.html" title="A template derived from Diagnostic, adding a &quot;Model&quot;." alt="" coords="129,81,291,108"/>
+</map>

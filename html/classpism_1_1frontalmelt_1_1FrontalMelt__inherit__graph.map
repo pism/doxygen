@@ -1,0 +1,8 @@
+<map id="pism::frontalmelt::FrontalMelt" name="pism::frontalmelt::FrontalMelt">
+<area shape="rect" id="node1" title="A very rudimentary PISM frontal melt model." alt="" coords="191,104,333,145"/>
+<area shape="rect" id="node3" href="$classpism_1_1frontalmelt_1_1Constant.html" title="A class implementing a constant (in terms of the ocean inputs) frontal melt model...." alt="" coords="381,5,524,47"/>
+<area shape="rect" id="node4" href="$classpism_1_1frontalmelt_1_1DischargeGiven.html" title=" " alt="" coords="381,71,524,112"/>
+<area shape="rect" id="node5" href="$classpism_1_1frontalmelt_1_1DischargeRouting.html" title=" " alt="" coords="381,136,524,177"/>
+<area shape="rect" id="node6" href="$classpism_1_1frontalmelt_1_1Given.html" title=" " alt="" coords="381,201,524,243"/>
+<area shape="rect" id="node2" href="$classpism_1_1Component.html" title="A class defining a common interface for most PISM sub&#45;models." alt="" coords="5,111,143,138"/>
+</map>

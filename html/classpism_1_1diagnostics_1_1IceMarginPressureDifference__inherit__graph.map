@@ -1,0 +1,6 @@
+<map id="pism::diagnostics::IceMarginPressureDifference" name="pism::diagnostics::IceMarginPressureDifference">
+<area shape="rect" id="node1" title="Ocean pressure difference at calving fronts. Used to debug CF boundary conditins." alt="" coords="5,247,215,288"/>
+<area shape="rect" id="node2" href="$classpism_1_1Diag.html" title=" " alt="" coords="19,171,201,197"/>
+<area shape="rect" id="node3" href="$classpism_1_1Diagnostic.html" title="Class representing diagnostic computations in PISM." alt="" coords="39,5,170,32"/>
+<area shape="rect" id="node4" href="$classpism_1_1Diag.html" title="A template derived from Diagnostic, adding a &quot;Model&quot;." alt="" coords="126,81,289,108"/>
+</map>

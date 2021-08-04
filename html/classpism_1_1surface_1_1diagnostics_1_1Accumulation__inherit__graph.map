@@ -1,0 +1,8 @@
+<map id="pism::surface::diagnostics::Accumulation" name="pism::surface::diagnostics::Accumulation">
+<area shape="rect" id="node1" title="Report accumulation (precipitation minus rain), averaged over the reporting interval." alt="" coords="5,427,197,468"/>
+<area shape="rect" id="node2" href="$classpism_1_1DiagAverageRate.html" title=" " alt="" coords="14,336,189,377"/>
+<area shape="rect" id="node3" href="$classpism_1_1Diag.html" title="A template derived from Diagnostic, adding a &quot;Model&quot;." alt="" coords="12,81,175,108"/>
+<area shape="rect" id="node6" href="$classpism_1_1Diag.html" title=" " alt="" coords="145,171,279,197"/>
+<area shape="rect" id="node4" href="$classpism_1_1Diagnostic.html" title="Class representing diagnostic computations in PISM." alt="" coords="87,5,217,32"/>
+<area shape="rect" id="node5" href="$classpism_1_1DiagAverageRate.html" title=" " alt="" coords="118,247,335,273"/>
+</map>

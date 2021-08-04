@@ -1,0 +1,9 @@
+<map id="pism::diagnostics::scalar::IceMassRateOfChangeDueToFlow" name="pism::diagnostics::scalar::IceMassRateOfChangeDueToFlow">
+<area shape="rect" id="node1" title="Computes the rate of change of the total ice mass due to flow (influx due to prescribed constant&#45;in&#45;t..." alt="" coords="83,352,299,408"/>
+<area shape="rect" id="node2" href="$classpism_1_1TSDiag.html" title=" " alt="" coords="71,261,311,303"/>
+<area shape="rect" id="node3" href="$classpism_1_1TSFluxDiagnostic.html" title="Scalar diagnostic reporting a &quot;flux&quot;." alt="" coords="7,157,181,184"/>
+<area shape="rect" id="node4" href="$classpism_1_1TSRateDiagnostic.html" title="Scalar diagnostic reporting the rate of change of a quantity modeled by PISM." alt="" coords="5,81,183,108"/>
+<area shape="rect" id="node5" href="$classpism_1_1TSDiagnostic.html" title="PISM&#39;s scalar time&#45;series diagnostics." alt="" coords="21,5,167,32"/>
+<area shape="rect" id="node6" href="$classpism_1_1TSDiag.html" title=" " alt="" coords="206,157,374,184"/>
+<area shape="rect" id="node7" href="$classD.html" title=" " alt="" coords="271,81,309,108"/>
+</map>

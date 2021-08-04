@@ -1,0 +1,6 @@
+<map id="pism::atmosphere::diagnostics::Precipitation" name="pism::atmosphere::diagnostics::Precipitation">
+<area shape="rect" id="node1" title="Effective precipitation rate (average over time step)." alt="" coords="15,247,237,288"/>
+<area shape="rect" id="node2" href="$classpism_1_1Diag.html" title=" " alt="" coords="5,171,247,197"/>
+<area shape="rect" id="node3" href="$classpism_1_1Diagnostic.html" title="Class representing diagnostic computations in PISM." alt="" coords="55,5,186,32"/>
+<area shape="rect" id="node4" href="$classpism_1_1Diag.html" title="A template derived from Diagnostic, adding a &quot;Model&quot;." alt="" coords="142,81,305,108"/>
+</map>

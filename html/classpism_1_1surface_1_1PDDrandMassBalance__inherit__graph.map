@@ -1,0 +1,5 @@
+<map id="pism::surface::PDDrandMassBalance" name="pism::surface::PDDrandMassBalance">
+<area shape="rect" id="node1" title="An alternative PDD implementation which simulates a random process to get the number of PDDs." alt="" coords="17,169,226,211"/>
+<area shape="rect" id="node2" href="$classpism_1_1surface_1_1PDDMassBalance.html" title="A PDD implementation which computes the local mass balance based on an expectation integral." alt="" coords="5,95,237,121"/>
+<area shape="rect" id="node3" href="$classpism_1_1surface_1_1LocalMassBalance.html" title="Base class for a model which computes surface mass flux rate (ice thickness per time) from precipitat..." alt="" coords="28,5,215,47"/>
+</map>

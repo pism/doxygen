@@ -1,0 +1,5 @@
+<map id="pism::calving::IcebergRemoverFEM" name="pism::calving::IcebergRemoverFEM">
+<area shape="rect" id="node1" title=" " alt="" coords="5,155,257,181"/>
+<area shape="rect" id="node2" href="$classpism_1_1calving_1_1IcebergRemover.html" title="PISM iceberg remover." alt="" coords="19,80,243,107"/>
+<area shape="rect" id="node3" href="$classpism_1_1Component.html" title="A class defining a common interface for most PISM sub&#45;models." alt="" coords="63,5,200,32"/>
+</map>

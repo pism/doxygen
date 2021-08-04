@@ -1,0 +1,6 @@
+<map id="pism::CHLiquidWaterFraction" name="pism::CHLiquidWaterFraction">
+<area shape="rect" id="node1" title="Report liquid water fraction in the cryo&#45;hydrologic system." alt="" coords="19,247,230,273"/>
+<area shape="rect" id="node2" href="$classpism_1_1Diag.html" title=" " alt="" coords="5,171,244,197"/>
+<area shape="rect" id="node3" href="$classpism_1_1Diagnostic.html" title="Class representing diagnostic computations in PISM." alt="" coords="54,5,185,32"/>
+<area shape="rect" id="node4" href="$classpism_1_1Diag.html" title="A template derived from Diagnostic, adding a &quot;Model&quot;." alt="" coords="141,81,303,108"/>
+</map>

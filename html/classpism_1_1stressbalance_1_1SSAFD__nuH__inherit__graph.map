@@ -1,0 +1,6 @@
+<map id="pism::stressbalance::SSAFD_nuH" name="pism::stressbalance::SSAFD_nuH">
+<area shape="rect" id="node1" title="Reports the nuH (viscosity times thickness) product on the staggered grid." alt="" coords="13,247,165,288"/>
+<area shape="rect" id="node2" href="$classpism_1_1Diag.html" title=" " alt="" coords="5,171,172,197"/>
+<area shape="rect" id="node3" href="$classpism_1_1Diagnostic.html" title="Class representing diagnostic computations in PISM." alt="" coords="18,5,149,32"/>
+<area shape="rect" id="node4" href="$classpism_1_1Diag.html" title="A template derived from Diagnostic, adding a &quot;Model&quot;." alt="" coords="105,81,267,108"/>
+</map>

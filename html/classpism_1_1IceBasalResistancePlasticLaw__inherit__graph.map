@@ -1,0 +1,5 @@
+<map id="pism::IceBasalResistancePlasticLaw" name="pism::IceBasalResistancePlasticLaw">
+<area shape="rect" id="node1" title="Class containing physical constants and the constitutive relation describing till for SSA." alt="" coords="111,5,299,47"/>
+<area shape="rect" id="node2" href="$classpism_1_1IceBasalResistancePseudoPlasticLaw.html" title=" " alt="" coords="5,95,193,136"/>
+<area shape="rect" id="node3" href="$classpism_1_1IceBasalResistanceRegularizedLaw.html" title=" " alt="" coords="217,95,405,136"/>
+</map>

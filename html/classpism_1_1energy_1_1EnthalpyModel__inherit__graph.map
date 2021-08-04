@@ -1,0 +1,7 @@
+<map id="pism::energy::EnthalpyModel" name="pism::energy::EnthalpyModel">
+<area shape="rect" id="node1" title="The enthalpy&#45;based energy balance model." alt="" coords="123,155,333,181"/>
+<area shape="rect" id="node4" href="$classpism_1_1energy_1_1DummyEnergyModel.html" title="The &quot;dummy&quot; energy balance model. Reads in enthalpy from a file, but does not update it." alt="" coords="5,229,216,271"/>
+<area shape="rect" id="node5" href="$classpism_1_1energy_1_1EnthalpyModel__Regional.html" title="The enthalpy&#45;based energy balance model for regional runs." alt="" coords="240,229,451,271"/>
+<area shape="rect" id="node2" href="$classpism_1_1energy_1_1EnergyModel.html" title=" " alt="" coords="129,80,327,107"/>
+<area shape="rect" id="node3" href="$classpism_1_1Component.html" title="A class defining a common interface for most PISM sub&#45;models." alt="" coords="159,5,297,32"/>
+</map>

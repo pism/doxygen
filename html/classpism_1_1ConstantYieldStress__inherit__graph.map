@@ -1,0 +1,5 @@
+<map id="pism::ConstantYieldStress" name="pism::ConstantYieldStress">
+<area shape="rect" id="node1" title=" " alt="" coords="5,155,197,181"/>
+<area shape="rect" id="node2" href="$classpism_1_1YieldStress.html" title="The PISM basal yield stress model interface (virtual base class)" alt="" coords="34,80,169,107"/>
+<area shape="rect" id="node3" href="$classpism_1_1Component.html" title="A class defining a common interface for most PISM sub&#45;models." alt="" coords="33,5,170,32"/>
+</map>

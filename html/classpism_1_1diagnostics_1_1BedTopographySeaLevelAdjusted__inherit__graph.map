@@ -1,0 +1,6 @@
+<map id="pism::diagnostics::BedTopographySeaLevelAdjusted" name="pism::diagnostics::BedTopographySeaLevelAdjusted">
+<area shape="rect" id="node1" title="Sea&#45;level adjusted bed topography (zero at sea level)." alt="" coords="5,247,244,288"/>
+<area shape="rect" id="node2" href="$classpism_1_1Diag.html" title=" " alt="" coords="34,171,215,197"/>
+<area shape="rect" id="node3" href="$classpism_1_1Diagnostic.html" title="Class representing diagnostic computations in PISM." alt="" coords="54,5,185,32"/>
+<area shape="rect" id="node4" href="$classpism_1_1Diag.html" title="A template derived from Diagnostic, adding a &quot;Model&quot;." alt="" coords="141,81,303,108"/>
+</map>

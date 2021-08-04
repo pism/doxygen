@@ -1,0 +1,4 @@
+<map id="pism::taoutil::TAOTerminationReason" name="pism::taoutil::TAOTerminationReason">
+<area shape="rect" id="node1" title="Encapsulate TAO&#39;s TaoSolverTerminationReason codes as a PISM TerminationReason." alt="" coords="5,80,220,121"/>
+<area shape="rect" id="node2" href="$classpism_1_1TerminationReason.html" title=" " alt="" coords="19,5,206,32"/>
+</map>

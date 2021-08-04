@@ -1,0 +1,4 @@
+<map id="pism::fem::Q1Quadrature4" name="pism::fem::Q1Quadrature4">
+<area shape="rect" id="node1" title="The 4&#45;point Gaussian quadrature on the square [&#45;1,1]*[&#45;1,1]." alt="" coords="5,80,200,107"/>
+<area shape="rect" id="node2" href="$classpism_1_1fem_1_1Quadrature.html" title="Numerical integration of finite element functions." alt="" coords="18,5,187,32"/>
+</map>

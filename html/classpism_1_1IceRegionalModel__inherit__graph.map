@@ -1,0 +1,4 @@
+<map id="pism::IceRegionalModel" name="pism::IceRegionalModel">
+<area shape="rect" id="node1" title="A version of the PISM core class (IceModel) which knows about the no_model_mask and its semantics." alt="" coords="5,80,184,107"/>
+<area shape="rect" id="node2" href="$classpism_1_1IceModel.html" title=" " alt="" coords="34,5,155,32"/>
+</map>

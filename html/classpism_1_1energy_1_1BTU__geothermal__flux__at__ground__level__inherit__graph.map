@@ -1,0 +1,6 @@
+<map id="pism::energy::BTU_geothermal_flux_at_ground_level" name="pism::energy::BTU_geothermal_flux_at_ground_level">
+<area shape="rect" id="node1" title=" " alt="" coords="8,247,231,288"/>
+<area shape="rect" id="node2" href="$classpism_1_1Diag.html" title=" " alt="" coords="5,171,233,197"/>
+<area shape="rect" id="node3" href="$classpism_1_1Diagnostic.html" title="Class representing diagnostic computations in PISM." alt="" coords="49,5,179,32"/>
+<area shape="rect" id="node4" href="$classpism_1_1Diag.html" title="A template derived from Diagnostic, adding a &quot;Model&quot;." alt="" coords="135,81,298,108"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="pism::diagnostics::TendencyOfIceAmountDueToFlow" name="pism::diagnostics::TendencyOfIceAmountDueToFlow">
+<area shape="rect" id="node1" title="Computes tendency_of_ice_amount_due_to_flow, the rate of change of ice amount due to flow." alt="" coords="15,427,254,468"/>
+<area shape="rect" id="node2" href="$classpism_1_1DiagAverageRate.html" title=" " alt="" coords="47,336,222,377"/>
+<area shape="rect" id="node3" href="$classpism_1_1Diag.html" title=" " alt="" coords="5,171,187,197"/>
+<area shape="rect" id="node4" href="$classpism_1_1Diagnostic.html" title="Class representing diagnostic computations in PISM." alt="" coords="127,5,257,32"/>
+<area shape="rect" id="node5" href="$classpism_1_1Diag.html" title="A template derived from Diagnostic, adding a &quot;Model&quot;." alt="" coords="111,81,273,108"/>
+<area shape="rect" id="node7" href="$classpism_1_1Diag.html" title=" " alt="" coords="211,171,346,197"/>
+<area shape="rect" id="node6" href="$classpism_1_1DiagAverageRate.html" title=" " alt="" coords="161,247,378,273"/>
+</map>

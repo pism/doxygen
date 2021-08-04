@@ -1,0 +1,4 @@
+<map id="pism::ColdEnthalpyConverter" name="pism::ColdEnthalpyConverter">
+<area shape="rect" id="node1" title="An EnthalpyConverter for use in verification tests." alt="" coords="5,80,217,107"/>
+<area shape="rect" id="node2" href="$classpism_1_1EnthalpyConverter.html" title="Converts between specific enthalpy and temperature or liquid content." alt="" coords="20,5,203,32"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="pism::diagnostics::DischargeFlux" name="pism::diagnostics::DischargeFlux">
+<area shape="rect" id="node1" title="Report discharge (calving and frontal melt) flux." alt="" coords="63,427,207,468"/>
+<area shape="rect" id="node2" href="$classpism_1_1DiagAverageRate.html" title=" " alt="" coords="47,336,222,377"/>
+<area shape="rect" id="node3" href="$classpism_1_1Diag.html" title=" " alt="" coords="5,171,187,197"/>
+<area shape="rect" id="node4" href="$classpism_1_1Diagnostic.html" title="Class representing diagnostic computations in PISM." alt="" coords="127,5,257,32"/>
+<area shape="rect" id="node5" href="$classpism_1_1Diag.html" title="A template derived from Diagnostic, adding a &quot;Model&quot;." alt="" coords="111,81,273,108"/>
+<area shape="rect" id="node7" href="$classpism_1_1Diag.html" title=" " alt="" coords="211,171,346,197"/>
+<area shape="rect" id="node6" href="$classpism_1_1DiagAverageRate.html" title=" " alt="" coords="161,247,378,273"/>
+</map>
