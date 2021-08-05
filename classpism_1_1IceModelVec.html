@@ -298,7 +298,7 @@ Private Member Functions</h2></td></tr>
 <li>file input/output (read, write, regrid)</li>
 <li>tracking whether a field was updated (get_state_counter(), <a class="el" href="classpism_1_1IceModelVec_ae09394dcfbe8a3b252c2d18108ccfc67.html#ae09394dcfbe8a3b252c2d18108ccfc67" title="Increment the object state counter.">inc_state_counter()</a>)</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md7"></a>
+<h2><a class="anchor" id="autotoc_md6"></a>
 Memory allocation</h2>
 <div class="fragment"><div class="line">IceModelVec2S var(<a class="code" href="classpism_1_1IceModelVec_a7ec09c4ef26812d2a16d81db42f6b852.html#a7ec09c4ef26812d2a16d81db42f6b852">grid</a>, <span class="stringliteral">&quot;var_name&quot;</span>, <a class="code" href="namespacepism_af0700c6771420c20ac873c2779475d57.html#af0700c6771420c20ac873c2779475d57adad77f6206cd0215efe0cbcfbf57c0d3">WITH_GHOSTS</a>);</div>
 <div class="line"><span class="comment">// var is ready to use</span></div>
@@ -306,7 +306,7 @@ Memory allocation</h2>
 <div class="ttc" id="anamespacepism_af0700c6771420c20ac873c2779475d57_html_af0700c6771420c20ac873c2779475d57adad77f6206cd0215efe0cbcfbf57c0d3"><div class="ttname"><a href="namespacepism_af0700c6771420c20ac873c2779475d57.html#af0700c6771420c20ac873c2779475d57adad77f6206cd0215efe0cbcfbf57c0d3">pism::WITH_GHOSTS</a></div><div class="ttdeci">@ WITH_GHOSTS</div><div class="ttdef"><b>Definition:</b> <a href="iceModelVec_8hh_source.html#l00048">iceModelVec.hh:48</a></div></div>
 </div><!-- fragment --><p>("WITH_GHOSTS" means "can be used in computations using map-plane neighbors of grid points.)</p>
 <p>It is usually a good idea to set variable metadata right after creating it. The method <a class="el" href="classpism_1_1IceModelVec_a2f473e076b0aff0783935915d53ab3cf.html#a2f473e076b0aff0783935915d53ab3cf" title="Sets NetCDF attributes of an IceModelVec object.">set_attrs()</a> is used throughout PISM to set commonly used attributes.</p>
-<h2><a class="anchor" id="autotoc_md8"></a>
+<h2><a class="anchor" id="autotoc_md7"></a>
 Point-wise access</h2>
 <p>PETSc performs some pointer arithmetic magic to allow convenient indexing of grid point values. Because of this one needs to surround the code using row, column or level indexes with <a class="el" href="classpism_1_1IceModelVec_a4de75fa11d8507fa8f5f69aec65ed692.html#a4de75fa11d8507fa8f5f69aec65ed692" title="Checks if an IceModelVec is allocated and calls DAVecGetArray.">begin_access()</a> and <a class="el" href="classpism_1_1IceModelVec_aa9c7460ff5a73a448ba2a21acfb8a9b7.html#aa9c7460ff5a73a448ba2a21acfb8a9b7" title="Checks if an IceModelVec is allocated and calls DAVecRestoreArray.">end_access()</a> calls:</p>
 <div class="fragment"><div class="line"><span class="keywordtype">double</span> foo;</div>
@@ -319,7 +319,7 @@ Point-wise access</h2>
 </div><!-- fragment --><p>Please see <a class="el" href="classpism_1_1IceGrid.html#computational_grid">this page</a> for a discussion of the organization of PISM's computational grid and examples of for-loops you will probably put between <a class="el" href="classpism_1_1IceModelVec_a4de75fa11d8507fa8f5f69aec65ed692.html#a4de75fa11d8507fa8f5f69aec65ed692" title="Checks if an IceModelVec is allocated and calls DAVecGetArray.">begin_access()</a> and <a class="el" href="classpism_1_1IceModelVec_aa9c7460ff5a73a448ba2a21acfb8a9b7.html#aa9c7460ff5a73a448ba2a21acfb8a9b7" title="Checks if an IceModelVec is allocated and calls DAVecRestoreArray.">end_access()</a>.</p>
 <p>To ensure that ghost values are up to date add the following call before the code using ghosts:</p>
 <div class="fragment"><div class="line">ierr = var.update_ghosts(); CHKERRQ(ierr);</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md9"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md8"></a>
 Reading and writing variables</h2>
 <p>PISM can read variables either from files with data on a grid matching the current grid (<a class="el" href="classpism_1_1IceModelVec_a7aae5329203ff1f468a4217d3eb43c63.html#a7aae5329203ff1f468a4217d3eb43c63">read()</a>) or, using bilinear interpolation, from files containing data on a different (but compatible) grid (<a class="el" href="classpism_1_1IceModelVec_a377acbba464ee10054d9712cd20da1a5.html#a377acbba464ee10054d9712cd20da1a5">regrid()</a>).</p>
 <p>To write a field to a "prepared" NetCDF file, use <a class="el" href="classpism_1_1IceModelVec_aa51ad1c4387a5ea7cc4e2c0e94275574.html#aa51ad1c4387a5ea7cc4e2c0e94275574">write()</a>. (A file is prepared if it contains all the necessary dimensions, coordinate variables and global metadata.)</p>
@@ -337,7 +337,7 @@ Reading and writing variables</h2>
 <div class="line">var.write(...);</div>
 <div class="line">}</div>
 </div><!-- fragment --><p><a class="el" href="classpism_1_1IceModelVec_a2cd4941e753e35eb6c2884ec93d6c43a.html#a2cd4941e753e35eb6c2884ec93d6c43a" title="Define variables corresponding to an IceModelVec in a file opened using file.">IceModelVec::define()</a> is here so that we can use the first approach.</p>
-<h2><a class="anchor" id="autotoc_md10"></a>
+<h2><a class="anchor" id="autotoc_md9"></a>
 Tracking if a field changed</h2>
 <p>It is possible to track if a certain field changed with the help of get_state_counter() and <a class="el" href="classpism_1_1IceModelVec_ae09394dcfbe8a3b252c2d18108ccfc67.html#ae09394dcfbe8a3b252c2d18108ccfc67" title="Increment the object state counter.">inc_state_counter()</a> methods.</p>
 <p>For example, PISM's SIA code re-computes the smoothed bed only if the bed deformation code updated it:</p>
