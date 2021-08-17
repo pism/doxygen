@@ -1,26 +1,25 @@
 <map id="pism::Diag&lt; Model &gt;" name="pism::Diag&lt; Model &gt;">
-<area shape="rect" id="node1" title="A template derived from Diagnostic, adding a &quot;Model&quot;." alt="" coords="185,2038,348,2065"/>
+<area shape="rect" id="node1" title="A template derived from Diagnostic, adding a &quot;Model&quot;." alt="" coords="185,1886,348,1913"/>
 <area shape="rect" id="node3" href="$classpism_1_1DiagAverageRate.html" title=" " alt="" coords="610,104,785,145"/>
 <area shape="rect" id="node7" href="$classpism_1_1DiagAverageRate.html" title=" " alt="" coords="610,267,785,308"/>
 <area shape="rect" id="node10" href="$classpism_1_1DiagAverageRate.html" title=" " alt="" coords="610,627,785,668"/>
-<area shape="rect" id="node20" href="$classpism_1_1Diag.html" title=" " alt="" coords="592,1091,803,1118"/>
+<area shape="rect" id="node20" href="$classpism_1_1Diag.html" title=" " alt="" coords="592,1090,803,1117"/>
 <area shape="rect" id="node26" href="$classpism_1_1Diag.html" title=" " alt="" coords="573,1319,821,1346"/>
-<area shape="rect" id="node29" href="$classpism_1_1Diag.html" title=" " alt="" coords="599,1427,796,1454"/>
-<area shape="rect" id="node31" href="$classpism_1_1Diag.html" title=" " alt="" coords="607,1522,788,1549"/>
-<area shape="rect" id="node33" href="$classpism_1_1Diag.html" title=" " alt="" coords="577,1614,818,1641"/>
+<area shape="rect" id="node29" href="$classpism_1_1Diag.html" title=" " alt="" coords="599,1429,796,1455"/>
+<area shape="rect" id="node31" href="$classpism_1_1Diag.html" title=" " alt="" coords="607,1502,788,1529"/>
+<area shape="rect" id="node33" href="$classpism_1_1Diag.html" title=" " alt="" coords="577,1625,818,1651"/>
 <area shape="rect" id="node37" href="$classpism_1_1Diag.html" title=" " alt="" coords="596,1777,799,1803"/>
-<area shape="rect" id="node40" href="$classpism_1_1Diag.html" title=" " alt="" coords="578,1911,817,1938"/>
+<area shape="rect" id="node40" href="$classpism_1_1Diag.html" title=" " alt="" coords="578,1886,817,1913"/>
 <area shape="rect" id="node44" href="$classpism_1_1Diag.html" title=" " alt="" coords="598,2085,797,2127"/>
 <area shape="rect" id="node50" href="$classpism_1_1Diag.html" title=" " alt="" coords="617,2502,778,2529"/>
 <area shape="rect" id="node58" href="$classpism_1_1Diag.html" title=" " alt="" coords="583,2674,811,2701"/>
-<area shape="rect" id="node60" href="$classpism_1_1Diag.html" title=" " alt="" coords="594,2793,801,2819"/>
-<area shape="rect" id="node62" href="$classpism_1_1Diag.html" title=" " alt="" coords="623,2926,771,2953"/>
-<area shape="rect" id="node65" href="$classpism_1_1Diag.html" title=" " alt="" coords="590,3710,805,3737"/>
-<area shape="rect" id="node88" href="$classpism_1_1Diag.html" title=" " alt="" coords="607,4601,788,4627"/>
-<area shape="rect" id="node97" href="$classpism_1_1Diag.html" title=" " alt="" coords="614,4651,781,4678"/>
-<area shape="rect" id="node98" href="$classpism_1_1Diag.html" title=" " alt="" coords="611,4702,783,4729"/>
-<area shape="rect" id="node99" href="$classpism_1_1Diag.html" title=" " alt="" coords="630,4753,765,4779"/>
-<area shape="rect" id="node2" href="$classpism_1_1Diagnostic.html" title="Class representing diagnostic computations in PISM." alt="" coords="5,2038,136,2065"/>
+<area shape="rect" id="node60" href="$classpism_1_1Diag.html" title=" " alt="" coords="623,2861,771,2887"/>
+<area shape="rect" id="node63" href="$classpism_1_1Diag.html" title=" " alt="" coords="590,3645,805,3671"/>
+<area shape="rect" id="node86" href="$classpism_1_1Diag.html" title=" " alt="" coords="607,4593,788,4619"/>
+<area shape="rect" id="node97" href="$classpism_1_1Diag.html" title=" " alt="" coords="614,4643,781,4670"/>
+<area shape="rect" id="node98" href="$classpism_1_1Diag.html" title=" " alt="" coords="611,4694,783,4721"/>
+<area shape="rect" id="node99" href="$classpism_1_1Diag.html" title=" " alt="" coords="630,4745,765,4771"/>
+<area shape="rect" id="node2" href="$classpism_1_1Diagnostic.html" title="Class representing diagnostic computations in PISM." alt="" coords="5,1886,136,1913"/>
 <area shape="rect" id="node4" href="$classpism_1_1surface_1_1diagnostics_1_1Accumulation.html" title="Report accumulation (precipitation minus rain), averaged over the reporting interval." alt="" coords="903,5,1095,47"/>
 <area shape="rect" id="node5" href="$classpism_1_1surface_1_1diagnostics_1_1SurfaceMelt.html" title="Report surface melt, averaged over the reporting interval." alt="" coords="903,71,1095,112"/>
 <area shape="rect" id="node6" href="$classpism_1_1surface_1_1diagnostics_1_1SurfaceRunoff.html" title="Report surface runoff, averaged over the reporting interval." alt="" coords="903,136,1095,177"/>
@@ -65,37 +64,38 @@
 <area shape="rect" id="node56" href="$classpism_1_1stressbalance_1_1SIAFD__thksmooth.html" title="Computes the thickness relative to the smoothed bed elevation in Schoof&#39;s (2003) theory of the effect..." alt="" coords="923,2657,1075,2699"/>
 <area shape="rect" id="node57" href="$classpism_1_1stressbalance_1_1SIAFD__topgsmooth.html" title="Computes the smoothed bed elevation from Schoof&#39;s (2003) theory of the effect of bed roughness on the..." alt="" coords="921,2723,1076,2764"/>
 <area shape="rect" id="node59" href="$classpism_1_1energy_1_1BTU__geothermal__flux__at__ground__level.html" title=" " alt="" coords="887,2788,1110,2829"/>
-<area shape="rect" id="node61" href="$classpism_1_1energy_1_1diagnostics_1_1Enthalpy.html" title="Report ice enthalpy." alt="" coords="905,2853,1093,2895"/>
-<area shape="rect" id="node63" href="$classpism_1_1stressbalance_1_1SSA__taud.html" title="Computes the driving shear stress at the base of ice (diagnostically)." alt="" coords="923,2919,1075,2960"/>
-<area shape="rect" id="node64" href="$classpism_1_1stressbalance_1_1SSA__taud__mag.html" title="Computes the magnitude of the driving shear stress at the base of ice (diagnostically)." alt="" coords="923,2984,1075,3025"/>
-<area shape="rect" id="node66" href="$classpism_1_1stressbalance_1_1PSB__bfrict.html" title="Computes basal frictional heating." alt="" coords="923,3049,1075,3091"/>
-<area shape="rect" id="node67" href="$classpism_1_1stressbalance_1_1PSB__deviatoric__stresses.html" title="Reports the vertically&#45;integrated (2D) deviatoric stresses." alt="" coords="905,3115,1093,3156"/>
-<area shape="rect" id="node68" href="$classpism_1_1stressbalance_1_1PSB__flux.html" title="Computes uflux and vflux, components of vertically&#45;integrated horizontal flux of ice." alt="" coords="923,3180,1075,3221"/>
-<area shape="rect" id="node69" href="$classpism_1_1stressbalance_1_1PSB__flux__mag.html" title="Computes flux_mag, the magnitude of vertically&#45;integrated horizontal flux of ice." alt="" coords="923,3245,1075,3287"/>
-<area shape="rect" id="node70" href="$classpism_1_1stressbalance_1_1PSB__pressure.html" title="Reports the pressure within the ice (3D)." alt="" coords="923,3311,1075,3352"/>
-<area shape="rect" id="node71" href="$classpism_1_1stressbalance_1_1PSB__strain__rates.html" title="Reports the vertically&#45;integrated (2D) principal strain rates." alt="" coords="923,3376,1075,3417"/>
-<area shape="rect" id="node72" href="$classpism_1_1stressbalance_1_1PSB__strainheat.html" title="Reports the volumetric strain heating (3D)." alt="" coords="923,3441,1075,3483"/>
-<area shape="rect" id="node73" href="$classpism_1_1stressbalance_1_1PSB__tauxz.html" title="Reports the xz component of the shear stress within the ice (3D), according to the SIA formula." alt="" coords="923,3507,1075,3548"/>
-<area shape="rect" id="node74" href="$classpism_1_1stressbalance_1_1PSB__tauyz.html" title="Reports the yz component of the shear stress within the ice (3D), according to the SIA formula." alt="" coords="923,3572,1075,3613"/>
-<area shape="rect" id="node75" href="$classpism_1_1stressbalance_1_1PSB__uvel.html" title="Computes the x&#45;component of the horizontal ice velocity." alt="" coords="923,3637,1075,3679"/>
-<area shape="rect" id="node76" href="$classpism_1_1stressbalance_1_1PSB__velbar.html" title="Computes the vertically&#45;averaged ice velocity." alt="" coords="923,3703,1075,3744"/>
-<area shape="rect" id="node77" href="$classpism_1_1stressbalance_1_1PSB__velbar__mag.html" title="Computes velbar_mag, the magnitude of vertically&#45;integrated horizontal velocity of ice and masks out ..." alt="" coords="923,3768,1075,3809"/>
-<area shape="rect" id="node78" href="$classpism_1_1stressbalance_1_1PSB__velbase.html" title="Computes horizontal ice velocity at the base of ice." alt="" coords="923,3833,1075,3875"/>
-<area shape="rect" id="node79" href="$classpism_1_1stressbalance_1_1PSB__velbase__mag.html" title="Computes velbase_mag, the magnitude of horizontal velocity of ice at base of ice and masks out ice&#45;fr..." alt="" coords="923,3899,1075,3940"/>
-<area shape="rect" id="node80" href="$classpism_1_1stressbalance_1_1PSB__velsurf.html" title="Computes velsurf, the horizontal velocity of ice at ice surface." alt="" coords="923,3964,1075,4005"/>
-<area shape="rect" id="node81" href="$classpism_1_1stressbalance_1_1PSB__velsurf__mag.html" title="Computes velsurf_mag, the magnitude of horizontal ice velocity at the surface." alt="" coords="923,4029,1075,4071"/>
-<area shape="rect" id="node82" href="$classpism_1_1stressbalance_1_1PSB__vonmises__stress.html" title="tensile von Mises stress" alt="" coords="913,4095,1084,4136"/>
-<area shape="rect" id="node83" href="$classpism_1_1stressbalance_1_1PSB__vvel.html" title="Computes the y&#45;component of the horizontal ice velocity." alt="" coords="923,4160,1075,4201"/>
-<area shape="rect" id="node84" href="$classpism_1_1stressbalance_1_1PSB__wvel.html" title="Computes vertical ice velocity (relative to the geoid)." alt="" coords="923,4225,1075,4267"/>
-<area shape="rect" id="node85" href="$classpism_1_1stressbalance_1_1PSB__wvel__rel.html" title="Computes vertical velocity of ice, relative to the bed directly below." alt="" coords="923,4291,1075,4332"/>
-<area shape="rect" id="node86" href="$classpism_1_1stressbalance_1_1PSB__wvelbase.html" title="Computes wvelbase, the vertical velocity of ice at the base of ice." alt="" coords="923,4356,1075,4397"/>
-<area shape="rect" id="node87" href="$classpism_1_1stressbalance_1_1PSB__wvelsurf.html" title="Computes wvelsurf, the vertical velocity of ice at ice surface." alt="" coords="923,4421,1075,4463"/>
-<area shape="rect" id="node89" href="$classpism_1_1DiagAverageRate.html" title=" " alt="" coords="911,4487,1086,4528"/>
-<area shape="rect" id="node90" href="$classpism_1_1diagnostics_1_1BedTopographySeaLevelAdjusted.html" title="Sea&#45;level adjusted bed topography (zero at sea level)." alt="" coords="879,4552,1118,4593"/>
-<area shape="rect" id="node91" href="$classpism_1_1diagnostics_1_1CTS.html" title="Computes CTS, CTS = E/E_s(p)." alt="" coords="914,4618,1083,4645"/>
-<area shape="rect" id="node92" href="$classpism_1_1diagnostics_1_1HardnessAverage.html" title="Computes vertically&#45;averaged ice hardness." alt="" coords="927,4669,1071,4711"/>
-<area shape="rect" id="node93" href="$classpism_1_1diagnostics_1_1HeightAboveFloatation.html" title="Computes the 2D height above flotation." alt="" coords="913,4735,1085,4776"/>
-<area shape="rect" id="node94" href="$classpism_1_1diagnostics_1_1IceAreaFraction.html" title=" " alt="" coords="927,4800,1071,4841"/>
-<area shape="rect" id="node95" href="$classpism_1_1diagnostics_1_1IceAreaFractionFloating.html" title=" " alt="" coords="911,4865,1087,4907"/>
-<area shape="rect" id="node96" href="$classpism_1_1diagnostics_1_1IceAreaFractionGrounded.html" title=" " alt="" coords="905,4931,1092,4972"/>
+<area shape="rect" id="node61" href="$classpism_1_1stressbalance_1_1SSA__taud.html" title="Computes the driving shear stress at the base of ice (diagnostically)." alt="" coords="923,2853,1075,2895"/>
+<area shape="rect" id="node62" href="$classpism_1_1stressbalance_1_1SSA__taud__mag.html" title="Computes the magnitude of the driving shear stress at the base of ice (diagnostically)." alt="" coords="923,2919,1075,2960"/>
+<area shape="rect" id="node64" href="$classpism_1_1stressbalance_1_1PSB__bfrict.html" title="Computes basal frictional heating." alt="" coords="923,2984,1075,3025"/>
+<area shape="rect" id="node65" href="$classpism_1_1stressbalance_1_1PSB__deviatoric__stresses.html" title="Reports the vertically&#45;integrated (2D) deviatoric stresses." alt="" coords="905,3049,1093,3091"/>
+<area shape="rect" id="node66" href="$classpism_1_1stressbalance_1_1PSB__flux.html" title="Computes uflux and vflux, components of vertically&#45;integrated horizontal flux of ice." alt="" coords="923,3115,1075,3156"/>
+<area shape="rect" id="node67" href="$classpism_1_1stressbalance_1_1PSB__flux__mag.html" title="Computes flux_mag, the magnitude of vertically&#45;integrated horizontal flux of ice." alt="" coords="923,3180,1075,3221"/>
+<area shape="rect" id="node68" href="$classpism_1_1stressbalance_1_1PSB__pressure.html" title="Reports the pressure within the ice (3D)." alt="" coords="923,3245,1075,3287"/>
+<area shape="rect" id="node69" href="$classpism_1_1stressbalance_1_1PSB__strain__rates.html" title="Reports the vertically&#45;integrated (2D) principal strain rates." alt="" coords="923,3311,1075,3352"/>
+<area shape="rect" id="node70" href="$classpism_1_1stressbalance_1_1PSB__strainheat.html" title="Reports the volumetric strain heating (3D)." alt="" coords="923,3376,1075,3417"/>
+<area shape="rect" id="node71" href="$classpism_1_1stressbalance_1_1PSB__tauxz.html" title="Reports the xz component of the shear stress within the ice (3D), according to the SIA formula." alt="" coords="923,3441,1075,3483"/>
+<area shape="rect" id="node72" href="$classpism_1_1stressbalance_1_1PSB__tauyz.html" title="Reports the yz component of the shear stress within the ice (3D), according to the SIA formula." alt="" coords="923,3507,1075,3548"/>
+<area shape="rect" id="node73" href="$classpism_1_1stressbalance_1_1PSB__uvel.html" title="Computes the x&#45;component of the horizontal ice velocity." alt="" coords="923,3572,1075,3613"/>
+<area shape="rect" id="node74" href="$classpism_1_1stressbalance_1_1PSB__velbar.html" title="Computes the vertically&#45;averaged ice velocity." alt="" coords="923,3637,1075,3679"/>
+<area shape="rect" id="node75" href="$classpism_1_1stressbalance_1_1PSB__velbar__mag.html" title="Computes velbar_mag, the magnitude of vertically&#45;integrated horizontal velocity of ice and masks out ..." alt="" coords="923,3703,1075,3744"/>
+<area shape="rect" id="node76" href="$classpism_1_1stressbalance_1_1PSB__velbase.html" title="Computes horizontal ice velocity at the base of ice." alt="" coords="923,3768,1075,3809"/>
+<area shape="rect" id="node77" href="$classpism_1_1stressbalance_1_1PSB__velbase__mag.html" title="Computes velbase_mag, the magnitude of horizontal velocity of ice at base of ice and masks out ice&#45;fr..." alt="" coords="923,3833,1075,3875"/>
+<area shape="rect" id="node78" href="$classpism_1_1stressbalance_1_1PSB__velsurf.html" title="Computes velsurf, the horizontal velocity of ice at ice surface." alt="" coords="923,3899,1075,3940"/>
+<area shape="rect" id="node79" href="$classpism_1_1stressbalance_1_1PSB__velsurf__mag.html" title="Computes velsurf_mag, the magnitude of horizontal ice velocity at the surface." alt="" coords="923,3964,1075,4005"/>
+<area shape="rect" id="node80" href="$classpism_1_1stressbalance_1_1PSB__vonmises__stress.html" title="tensile von Mises stress" alt="" coords="913,4029,1084,4071"/>
+<area shape="rect" id="node81" href="$classpism_1_1stressbalance_1_1PSB__vvel.html" title="Computes the y&#45;component of the horizontal ice velocity." alt="" coords="923,4095,1075,4136"/>
+<area shape="rect" id="node82" href="$classpism_1_1stressbalance_1_1PSB__wvel.html" title="Computes vertical ice velocity (relative to the geoid)." alt="" coords="923,4160,1075,4201"/>
+<area shape="rect" id="node83" href="$classpism_1_1stressbalance_1_1PSB__wvel__rel.html" title="Computes vertical velocity of ice, relative to the bed directly below." alt="" coords="923,4225,1075,4267"/>
+<area shape="rect" id="node84" href="$classpism_1_1stressbalance_1_1PSB__wvelbase.html" title="Computes wvelbase, the vertical velocity of ice at the base of ice." alt="" coords="923,4291,1075,4332"/>
+<area shape="rect" id="node85" href="$classpism_1_1stressbalance_1_1PSB__wvelsurf.html" title="Computes wvelsurf, the vertical velocity of ice at ice surface." alt="" coords="923,4356,1075,4397"/>
+<area shape="rect" id="node87" href="$classpism_1_1DiagAverageRate.html" title=" " alt="" coords="911,4421,1086,4463"/>
+<area shape="rect" id="node88" href="$classpism_1_1diagnostics_1_1BedTopographySeaLevelAdjusted.html" title="Sea&#45;level adjusted bed topography (zero at sea level)." alt="" coords="879,4487,1118,4528"/>
+<area shape="rect" id="node89" href="$classpism_1_1diagnostics_1_1CTS.html" title="Computes CTS, CTS = E/E_s(p)." alt="" coords="914,4553,1083,4579"/>
+<area shape="rect" id="node90" href="$classpism_1_1diagnostics_1_1HardnessAverage.html" title="Computes vertically&#45;averaged ice hardness." alt="" coords="927,4604,1071,4645"/>
+<area shape="rect" id="node91" href="$classpism_1_1diagnostics_1_1HeightAboveFloatation.html" title="Computes the 2D height above flotation." alt="" coords="913,4669,1085,4711"/>
+<area shape="rect" id="node92" href="$classpism_1_1diagnostics_1_1IceAreaFraction.html" title=" " alt="" coords="927,4735,1071,4776"/>
+<area shape="rect" id="node93" href="$classpism_1_1diagnostics_1_1IceAreaFractionFloating.html" title=" " alt="" coords="911,4800,1087,4841"/>
+<area shape="rect" id="node94" href="$classpism_1_1diagnostics_1_1IceAreaFractionGrounded.html" title=" " alt="" coords="905,4865,1092,4907"/>
+<area shape="rect" id="node95" href="$classpism_1_1diagnostics_1_1IceBottomSurfaceElevation.html" title="Report ice top surface elevation." alt="" coords="899,4931,1098,4972"/>
+<area shape="rect" id="node96" href="$classpism_1_1diagnostics_1_1IceEnthalpyBasal.html" title="Computes enthalpy at the base of the ice." alt="" coords="927,4996,1071,5037"/>
 </map>

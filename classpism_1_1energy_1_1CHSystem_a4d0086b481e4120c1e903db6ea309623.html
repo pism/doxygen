@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>PISM, A Parallel Ice Sheet Model: pism::energy::diagnostics::Enthalpy::Enthalpy</title>
+<title>PISM, A Parallel Ice Sheet Model: pism::energy::CHSystem::diagnostics_impl</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -69,7 +69,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="namespacepism.html">pism</a></li><li class="navelem"><a class="el" href="namespacepism_1_1energy.html">energy</a></li><li class="navelem"><a class="el" href="namespacepism_1_1energy_1_1diagnostics.html">diagnostics</a></li><li class="navelem"><a class="el" href="classpism_1_1energy_1_1diagnostics_1_1Enthalpy.html">Enthalpy</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespacepism.html">pism</a></li><li class="navelem"><a class="el" href="namespacepism_1_1energy.html">energy</a></li><li class="navelem"><a class="el" href="classpism_1_1energy_1_1CHSystem.html">CHSystem</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="contents">
@@ -78,14 +78,21 @@ $(function() {
    <td valign="top">
       <div class="navtab">
         <table>
-          <tr><td class="navtab"><a class="navtab" href="classpism_1_1energy_1_1diagnostics_1_1Enthalpy_af90174c1960f2f6da68dfa599345c63d.html#af90174c1960f2f6da68dfa599345c63d">compute_impl</a></td></tr>
-          <tr><td class="navtabHL"><a class="navtab" href="classpism_1_1energy_1_1diagnostics_1_1Enthalpy_a19cd566ca1537723b0e08b10477ba439.html#a19cd566ca1537723b0e08b10477ba439">Enthalpy</a></td></tr>
+          <tr><td class="navtab"><a class="navtab" href="classpism_1_1energy_1_1CHSystem_ae95eec23b7ab8174e9c751c9fdcc0c5c.html#ae95eec23b7ab8174e9c751c9fdcc0c5c">bootstrap_impl</a></td></tr>
+          <tr><td class="navtab"><a class="navtab" href="classpism_1_1energy_1_1CHSystem_a78b9f8a853796ad7a532fff52d65607c.html#a78b9f8a853796ad7a532fff52d65607c">CHSystem</a></td></tr>
+          <tr><td class="navtab"><a class="navtab" href="classpism_1_1energy_1_1CHSystem_a6da0693b8c92d9a2e9db40197371d4ff.html#a6da0693b8c92d9a2e9db40197371d4ff">define_model_state_impl</a></td></tr>
+          <tr><td class="navtabHL"><a class="navtab" href="classpism_1_1energy_1_1CHSystem_a4d0086b481e4120c1e903db6ea309623.html#a4d0086b481e4120c1e903db6ea309623">diagnostics_impl</a></td></tr>
+          <tr><td class="navtab"><a class="navtab" href="classpism_1_1energy_1_1CHSystem_a95eba962650a3b207a614cfd9ecc0b82.html#a95eba962650a3b207a614cfd9ecc0b82">initialize_impl</a></td></tr>
+          <tr><td class="navtab"><a class="navtab" href="classpism_1_1energy_1_1CHSystem_a3e5a8b70aec11dc3a9727a7fdc15be54.html#a3e5a8b70aec11dc3a9727a7fdc15be54">restart_impl</a></td></tr>
+          <tr><td class="navtab"><a class="navtab" href="classpism_1_1energy_1_1CHSystem_a4ae94bf5d8c445892d61ae3fddd7adc2.html#a4ae94bf5d8c445892d61ae3fddd7adc2">update_impl</a></td></tr>
+          <tr><td class="navtab"><a class="navtab" href="classpism_1_1energy_1_1CHSystem_ae767831c14d969be92746890855fe520.html#ae767831c14d969be92746890855fe520">write_model_state_impl</a></td></tr>
+          <tr><td class="navtab"><a class="navtab" href="classpism_1_1energy_1_1CHSystem_a3a87ce32d2e00255e8e92e2cab80386f.html#a3a87ce32d2e00255e8e92e2cab80386f">~CHSystem</a></td></tr>
         </table>
       </div>
    </td>
    <td valign="top" class="mempage">
-<a id="a19cd566ca1537723b0e08b10477ba439"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a19cd566ca1537723b0e08b10477ba439">&#9670;&nbsp;</a></span>Enthalpy()</h2>
+<a id="a4d0086b481e4120c1e903db6ea309623"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d0086b481e4120c1e903db6ea309623">&#9670;&nbsp;</a></span>diagnostics_impl()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -94,23 +101,24 @@ $(function() {
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">pism::energy::diagnostics::Enthalpy::Enthalpy </td>
+          <td class="memname"><a class="el" href="namespacepism_a6154a990ba873c6ca606d8a320c441ac.html#a6154a990ba873c6ca606d8a320c441ac">DiagnosticList</a> pism::energy::CHSystem::diagnostics_impl </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classpism_1_1energy_1_1EnergyModel.html">EnergyModel</a> *&#160;</td>
-          <td class="paramname"><em>m</em></td><td>)</td>
-          <td></td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="EnergyModel_8cc_source.html#l00363">363</a> of file <a class="el" href="EnergyModel_8cc_source.html">EnergyModel.cc</a>.</p>
+<p>Reimplemented from <a class="el" href="classpism_1_1energy_1_1EnergyModel_a9b399d121596ec12bc9657cace81e9ef.html#a9b399d121596ec12bc9657cace81e9ef">pism::energy::EnergyModel</a>.</p>
 
-<p class="reference">References <a class="el" href="Diagnostic_8hh_source.html#l00112">pism::Diagnostic::m_vars</a>, and <a class="el" href="Diagnostic_8hh_source.html#l00158">pism::Diag&lt; EnergyModel &gt;::model</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CHSystem_8cc_source.html#l00305">305</a> of file <a class="el" href="CHSystem_8cc_source.html">CHSystem.cc</a>.</p>
+
+<p class="reference">References <a class="el" href="EnergyModel_8hh_source.html#l00139">pism::energy::EnergyModel::m_ice_enthalpy</a>, and <a class="el" href="Diagnostic_8hh_source.html#l00156">pism::Diagnostic::wrap()</a>.</p>
 
 </div>
 </div>

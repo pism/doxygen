@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>PISM, A Parallel Ice Sheet Model: pism::IceModelVec2S::add</title>
+<title>PISM, A Parallel Ice Sheet Model: pism::IceModelVec2S::allocate_copy</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -79,13 +79,14 @@ $(function() {
       <div class="navtab">
         <table>
           <tr><td class="navtab"><a class="navtab" href="classpism_1_1IceModelVec2S_a49608ae5193ca6efd731bfc17f09d263.html#a49608ae5193ca6efd731bfc17f09d263">absmax</a></td></tr>
-          <tr><td class="navtabHL"><a class="navtab" href="classpism_1_1IceModelVec2S_a453c97a70ea61793c46875ea56d43b0a.html#a453c97a70ea61793c46875ea56d43b0a">add</a></td></tr>
-          <tr><td class="navtab"><a class="navtab" href="classpism_1_1IceModelVec2S_a4de2d93189c33bc0d7612853dc144186.html#a4de2d93189c33bc0d7612853dc144186">add</a></td></tr>
+          <tr><td class="navtab"><a class="navtab" href="classpism_1_1IceModelVec2S_a04f7c152978059d5b4ef3a2d4fb0920b.html#a04f7c152978059d5b4ef3a2d4fb0920b">add</a></td></tr>
+          <tr><td class="navtab"><a class="navtab" href="classpism_1_1IceModelVec2S_a91249c671ecaa5a113f23194ceca7012.html#a91249c671ecaa5a113f23194ceca7012">add</a></td></tr>
+          <tr><td class="navtabHL"><a class="navtab" href="classpism_1_1IceModelVec2S_ac6594c8d07f21604000bedc37aa31f56.html#ac6594c8d07f21604000bedc37aa31f56">allocate_copy</a></td></tr>
           <tr><td class="navtab"><a class="navtab" href="classpism_1_1IceModelVec2S_a5bae0e0857479e166d593f09d0996c19.html#a5bae0e0857479e166d593f09d0996c19">array</a></td></tr>
           <tr><td class="navtab"><a class="navtab" href="classpism_1_1IceModelVec2S_a88dc5b350ac2a28d6e681b35266ad12e.html#a88dc5b350ac2a28d6e681b35266ad12e">array</a></td></tr>
           <tr><td class="navtab"><a class="navtab" href="classpism_1_1IceModelVec2S_ac96fdbf4c830eca5f73792749735857c.html#ac96fdbf4c830eca5f73792749735857c">box</a></td></tr>
           <tr><td class="navtab"><a class="navtab" href="classpism_1_1IceModelVec2S_a99aabea460c4fbd683d9b4f70e480fbc.html#a99aabea460c4fbd683d9b4f70e480fbc">ConstPtr</a></td></tr>
-          <tr><td class="navtab"><a class="navtab" href="classpism_1_1IceModelVec2S_a11331735d149708d1969caf4ad5a03bf.html#a11331735d149708d1969caf4ad5a03bf">copy_from</a></td></tr>
+          <tr><td class="navtab"><a class="navtab" href="classpism_1_1IceModelVec2S_a32b30f47b932c84984ae423922825722.html#a32b30f47b932c84984ae423922825722">copy_from</a></td></tr>
           <tr><td class="navtab"><a class="navtab" href="classpism_1_1IceModelVec2S_a48429bf1b57d98d3af197873ce9a3cf8.html#a48429bf1b57d98d3af197873ce9a3cf8">diff_x</a></td></tr>
           <tr><td class="navtab"><a class="navtab" href="classpism_1_1IceModelVec2S_ad26cd631bf6563a253999efa5a31ded6.html#ad26cd631bf6563a253999efa5a31ded6">diff_x_p</a></td></tr>
           <tr><td class="navtab"><a class="navtab" href="classpism_1_1IceModelVec2S_a8714a7d4a09e3d7f32e3a55b829bb693.html#a8714a7d4a09e3d7f32e3a55b829bb693">diff_y</a></td></tr>
@@ -107,47 +108,24 @@ $(function() {
       </div>
    </td>
    <td valign="top" class="mempage">
-<a id="a453c97a70ea61793c46875ea56d43b0a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a453c97a70ea61793c46875ea56d43b0a">&#9670;&nbsp;</a></span>add() <span class="overload">[1/2]</span></h2>
+<a id="ac6594c8d07f21604000bedc37aa31f56"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6594c8d07f21604000bedc37aa31f56">&#9670;&nbsp;</a></span>allocate_copy()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void pism::IceModelVec2S::add </td>
+          <td class="memname">std::shared_ptr&lt; <a class="el" href="classpism_1_1IceModelVec2S.html">IceModelVec2S</a> &gt; pism::IceModelVec2S::allocate_copy </td>
           <td>(</td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>alpha</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classpism_1_1IceModelVec.html">IceModelVec</a> &amp;&#160;</td>
-          <td class="paramname"><em>x</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>Result: v &lt;- v + alpha * x. Calls VecAXPY. </p>
+<p class="definition">Definition at line <a class="el" href="iceModelVec2_8cc_source.html#l00075">75</a> of file <a class="el" href="iceModelVec2_8cc_source.html">iceModelVec2.cc</a>.</p>
 
-<p>Reimplemented from <a class="el" href="classpism_1_1IceModelVec_afac76875f16577e269d8e6d0fb82365a.html#afac76875f16577e269d8e6d0fb82365a">pism::IceModelVec</a>.</p>
-
-<p class="definition">Definition at line <a class="el" href="iceModelVec2_8cc_source.html#l00467">467</a> of file <a class="el" href="iceModelVec2_8cc_source.html">iceModelVec2.cc</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="GeometryEvolution_8cc_source.html#l00339">pism::GeometryEvolution::apply_flux_divergence()</a>, <a class="el" href="IP__SSATaucTikhonovGNSolver_8cc_source.html#l00133">pism::inverse::IP_SSATaucTikhonovGNSolver::apply_GN()</a>, <a class="el" href="IP__SSAHardavForwardProblem_8cc_source.html#l00236">pism::inverse::IP_SSAHardavForwardProblem::apply_jacobian_design()</a>, <a class="el" href="IP__SSATaucForwardProblem_8cc_source.html#l00224">pism::inverse::IP_SSATaucForwardProblem::apply_jacobian_design()</a>, <a class="el" href="BedDef_8cc_source.html#l00167">pism::bed::BedDef::apply_topg_offset()</a>, <a class="el" href="IP__SSATaucTikhonovGNSolver_8cc_source.html#l00160">pism::inverse::IP_SSATaucTikhonovGNSolver::assemble_GN_rhs()</a>, <a class="el" href="SSAFD_8cc_source.html#l00500">pism::stressbalance::SSAFD::assemble_matrix()</a>, <a class="el" href="LingleClark_8cc_source.html#l00135">pism::bed::LingleClark::bootstrap_impl()</a>, <a class="el" href="SSAFEM_8cc_source.html#l00265">pism::stressbalance::SSAFEM::cache_inputs()</a>, <a class="el" href="energy_8cc_source.html#l00090">pism::IceModel::combine_basal_melt_rate()</a>, <a class="el" href="Routing_8cc_source.html#l00457">pism::hydrology::Routing::compute_conductivity()</a>, <a class="el" href="IP__SSATaucTikhonovGNSolver_8cc_source.html#l00407">pism::inverse::IP_SSATaucTikhonovGNSolver::compute_dlogalpha()</a>, <a class="el" href="diagnostics_8cc_source.html#l01868">pism::diagnostics::ThicknessRateOfChange::compute_impl()</a>, <a class="el" href="diagnostics_8cc_source.html#l01986">pism::diagnostics::IceAreaFraction::compute_impl()</a>, <a class="el" href="diagnostics_8cc_source.html#l02224">pism::diagnostics::IceMass::compute_impl()</a>, <a class="el" href="EmptyingProblem_8cc_source.html#l00445">pism::hydrology::EmptyingProblem::compute_mask()</a>, <a class="el" href="BedDef_8cc_source.html#l00181">pism::bed::BedDef::compute_uplift()</a>, <a class="el" href="IPMeanSquareFunctional_8cc_source.html#l00193">pism::inverse::IPMeanSquareFunctional2S::dot()</a>, <a class="el" href="IBIceModel_8cc_source.html#l00096">pism::icebin::IBIceModel::energy_step()</a>, <a class="el" href="Hydrology_8cc_source.html#l00681">pism::hydrology::Hydrology::enforce_bounds()</a>, <a class="el" href="IP__SSATaucTikhonovGNSolver_8cc_source.html#l00264">pism::inverse::IP_SSATaucTikhonovGNSolver::evaluate_objective_and_gradient()</a>, <a class="el" href="IP__SSATaucTikhonovGNSolver_8cc_source.html#l00193">pism::inverse::IP_SSATaucTikhonovGNSolver::evaluateGNFunctional()</a>, <a class="el" href="GeometryEvolution_8cc_source.html#l00235">pism::GeometryEvolution::flow_step()</a>, <a class="el" href="frontretreat_8cc_source.html#l00044">pism::IceModel::front_retreat_step()</a>, <a class="el" href="IPMeanSquareFunctional_8cc_source.html#l00220">pism::inverse::IPMeanSquareFunctional2S::gradientAt()</a>, <a class="el" href="Geometry_8cc_source.html#l00251">pism::ice_volume()</a>, <a class="el" href="LingleClark_8cc_source.html#l00229">pism::bed::LingleClark::init_impl()</a>, <a class="el" href="diagnostics_8cc_source.html#l01568">pism::diagnostics::scalar::mass_change()</a>, <a class="el" href="icemodel_2timestepping_8cc_source.html#l00110">pism::IceModel::max_timestep()</a>, <a class="el" href="LingleClark_8cc_source.html#l00340">pism::bed::LingleClark::step()</a>, <a class="el" href="EmptyingProblem_8cc_source.html#l00178">pism::hydrology::EmptyingProblem::update()</a>, <a class="el" href="fracture__density_8cc_source.html#l00027">pism::IceModel::update_fracture_density()</a>, <a class="el" href="TemperatureIndex_8cc_source.html#l00239">pism::surface::TemperatureIndex::update_impl()</a>, <a class="el" href="earth_2Given_8cc_source.html#l00086">pism::bed::Given::update_impl()</a>, <a class="el" href="MohrCoulombYieldStress_8cc_source.html#l00270">pism::MohrCoulombYieldStress::update_impl()</a>, <a class="el" href="Hydrology_8cc_source.html#l00131">pism::hydrology::diagnostics::SubglacialWaterFlux::update_impl()</a>, <a class="el" href="Diagnostic_8hh_source.html#l00225">pism::DiagAverageRate&lt; M &gt;::update_impl()</a>, <a class="el" href="NullTransport_8cc_source.html#l00110">pism::hydrology::NullTransport::update_impl()</a>, <a class="el" href="GeometryEvolution_8cc_source.html#l00659">pism::GeometryEvolution::update_in_place()</a>, <a class="el" href="Routing_8cc_source.html#l00817">pism::hydrology::Routing::update_W()</a>, and <a class="el" href="Routing_8cc_source.html#l00548">pism::hydrology::wall_melt()</a>.</p>
+<p class="reference">References <a class="el" href="iceModelVec_8cc_source.html#l00375">pism::IceModelVec::get_name()</a>, <a class="el" href="iceModelVec_8cc_source.html#l00080">pism::IceModelVec::grid()</a>, and <a class="el" href="iceModelVec_8hh_source.html#l00048">pism::WITHOUT_GHOSTS</a>.</p>
 
 </div>
 </div>
