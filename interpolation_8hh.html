@@ -76,12 +76,14 @@ $(function() {
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#enum-members">Enumerations</a>  </div>
+<a href="#enum-members">Enumerations</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">interpolation.hh File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;vector&gt;</code><br />
+<code>#include &lt;map&gt;</code><br />
 </div>
 <p><a href="interpolation_8hh_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -100,9 +102,15 @@ Enumerations</h2></td></tr>
 <tr class="memitem:ae50e2208404456d7dcfdca1da2484d23"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_ae50e2208404456d7dcfdca1da2484d23.html#ae50e2208404456d7dcfdca1da2484d23">pism::InterpolationType</a> { <a class="el" href="namespacepism_ae50e2208404456d7dcfdca1da2484d23.html#ae50e2208404456d7dcfdca1da2484d23aa03926dd636ce1d977b1a8a9ed608c85">pism::LINEAR</a>
 , <a class="el" href="namespacepism_ae50e2208404456d7dcfdca1da2484d23.html#ae50e2208404456d7dcfdca1da2484d23ac53a9592e0f6980b96d3851633675efa">pism::NEAREST</a>
 , <a class="el" href="namespacepism_ae50e2208404456d7dcfdca1da2484d23.html#ae50e2208404456d7dcfdca1da2484d23aaeafaa7e3ad42ccb0273b688dcb36f4e">pism::PIECEWISE_CONSTANT</a>
-, <a class="el" href="namespacepism_ae50e2208404456d7dcfdca1da2484d23.html#ae50e2208404456d7dcfdca1da2484d23ab9797d73fb19eb86c2ed6538ba248302">pism::LINEAR_PERIODIC</a>
  }</td></tr>
 <tr class="separator:ae50e2208404456d7dcfdca1da2484d23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a61d17ec07a9f4a2c18274251013dd75f"><td class="memItemLeft" align="right" valign="top">std::map&lt; size_t, double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_a61d17ec07a9f4a2c18274251013dd75f.html#a61d17ec07a9f4a2c18274251013dd75f">pism::integration_weights</a> (const double *x, size_t x_size, InterpolationType type, double a, double b)</td></tr>
+<tr class="separator:a61d17ec07a9f4a2c18274251013dd75f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab87107cffeea5a4b4068de828473a93f"><td class="memItemLeft" align="right" valign="top">std::map&lt; size_t, double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_ab87107cffeea5a4b4068de828473a93f.html#ab87107cffeea5a4b4068de828473a93f">pism::integration_weights</a> (const std::vector&lt; double &gt; &amp;x, InterpolationType type, double a, double b)</td></tr>
+<tr class="separator:ab87107cffeea5a4b4068de828473a93f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->

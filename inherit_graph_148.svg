@@ -11,10 +11,10 @@
 <!-- Node0 -->
 <g id="node1" class="node">
 <title>Node0</title>
-<g id="a_node1"><a xlink:href="classpism_1_1stressbalance_1_1BedSmoother.html" target="_top" xlink:title="PISM bed smoother, plus bed roughness parameterization, based on Schoof (2003).">
+<g id="a_node1"><a xlink:href="classpism_1_1stressbalance_1_1Inputs.html" target="_top" xlink:title=" ">
 <polygon fill="none" stroke="black" points="0,-0.5 0,-30.5 114,-30.5 114,-0.5 0,-0.5"/>
 <text text-anchor="start" x="8" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">pism::stressbalance</text>
-<text text-anchor="middle" x="57" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">::BedSmoother</text>
+<text text-anchor="middle" x="57" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">::Inputs</text>
 </a>
 </g>
 </g>

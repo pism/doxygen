@@ -186,11 +186,11 @@ Protected Attributes</h2></td></tr>
 <p>Another goal is to create an interface for computing diagnostics <em>without</em> knowing which PISM module is responsible for the computation.</p>
 <p>Technical note: to compute some diagnostic quantities we need access to protected members of classes. C++ forbids obtaining pointers to non-static methods of a class, but it is possible to define a (friend) function</p>
 <div class="fragment"><div class="line"><a class="code" href="classpism_1_1IceModelVec_a4c2d000bf8c70d9ed9801ea339b11097.html#a4c2d000bf8c70d9ed9801ea339b11097">IceModelVec::Ptr</a> compute_bar(Foo* model, ...);</div>
-<div class="ttc" id="aclasspism_1_1IceModelVec_a4c2d000bf8c70d9ed9801ea339b11097_html_a4c2d000bf8c70d9ed9801ea339b11097"><div class="ttname"><a href="classpism_1_1IceModelVec_a4c2d000bf8c70d9ed9801ea339b11097.html#a4c2d000bf8c70d9ed9801ea339b11097">pism::IceModelVec::Ptr</a></div><div class="ttdeci">std::shared_ptr&lt; IceModelVec &gt; Ptr</div><div class="ttdef"><b>Definition:</b> <a href="iceModelVec_8hh_source.html#l00216">iceModelVec.hh:216</a></div></div>
+<div class="ttc" id="aclasspism_1_1IceModelVec_a4c2d000bf8c70d9ed9801ea339b11097_html_a4c2d000bf8c70d9ed9801ea339b11097"><div class="ttname"><a href="classpism_1_1IceModelVec_a4c2d000bf8c70d9ed9801ea339b11097.html#a4c2d000bf8c70d9ed9801ea339b11097">pism::IceModelVec::Ptr</a></div><div class="ttdeci">std::shared_ptr&lt; IceModelVec &gt; Ptr</div><div class="ttdef"><b>Definition:</b> <a href="iceModelVec_8hh_source.html#l00213">iceModelVec.hh:213</a></div></div>
 </div><!-- fragment --><p>which is the same as creating a method <code>Foo::compute_bar()</code>, but you <em>can</em> get a pointer to it.</p>
 <p><a class="el" href="classpism_1_1Diagnostic.html" title="Class representing diagnostic computations in PISM.">Diagnostic</a> creates a common interface for all these compute_bar functions. </p>
 
-<p class="definition">Definition at line <a class="el" href="Diagnostic_8hh_source.html#l00060">60</a> of file <a class="el" href="Diagnostic_8hh_source.html">Diagnostic.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Diagnostic_8hh_source.html#l00059">59</a> of file <a class="el" href="Diagnostic_8hh_source.html">Diagnostic.hh</a>.</p>
 </div><hr/>The documentation for this class was generated from the following files:<ul>
 <li>src/util/<a class="el" href="Diagnostic_8hh_source.html">Diagnostic.hh</a></li>
 <li>src/util/<a class="el" href="Diagnostic_8cc_source.html">Diagnostic.cc</a></li>

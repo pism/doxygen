@@ -81,13 +81,17 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;cmath&gt;</code><br />
+<code>#include &lt;cassert&gt;</code><br />
+<code>#include &lt;cstdlib&gt;</code><br />
+<code>#include &lt;cstring&gt;</code><br />
 <code>#include &quot;<a class="el" href="Time_8hh_source.html">Time.hh</a>&quot;</code><br />
+<code>#include &quot;pism/external/calcalcs/calcalcs.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="ConfigInterface_8hh_source.html">ConfigInterface.hh</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="Time__Calendar_8hh_source.html">Time_Calendar.hh</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="pism__options_8hh_source.html">pism_options.hh</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="VariableMetadata_8hh_source.html">VariableMetadata.hh</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="pism__utilities_8hh_source.html">pism_utilities.hh</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="error__handling_8hh_source.html">error_handling.hh</a>&quot;</code><br />
 <code>#include &quot;pism/util/io/File.hh&quot;</code><br />
+<code>#include &quot;pism/util/io/io_helpers.hh&quot;</code><br />
 <code>#include &quot;pism/util/Logger.hh&quot;</code><br />
 </div>
 <p><a href="Time_8cc_source.html">Go to the source code of this file.</a></p>
@@ -99,17 +103,26 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a960ad9b33ccfb2f81582d796131646fa"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_a960ad9b33ccfb2f81582d796131646fa.html#a960ad9b33ccfb2f81582d796131646fa">pism::calendar_from_options</a> (MPI_Comm com, const Config &amp;config)</td></tr>
-<tr class="separator:a960ad9b33ccfb2f81582d796131646fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae31c80b35a17b94832f82324369965e9"><td class="memItemLeft" align="right" valign="top">Time::Ptr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_ae31c80b35a17b94832f82324369965e9.html#ae31c80b35a17b94832f82324369965e9">pism::time_from_options</a> (MPI_Comm com, Config::ConstPtr config, units::System::Ptr system)</td></tr>
-<tr class="memdesc:ae31c80b35a17b94832f82324369965e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a <a class="el" href="classpism_1_1Time.html" title="Time management class.">Time</a> instance by processing command-line options.  <a href="namespacepism_ae31c80b35a17b94832f82324369965e9.html#ae31c80b35a17b94832f82324369965e9">More...</a><br /></td></tr>
-<tr class="separator:ae31c80b35a17b94832f82324369965e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a39396a930dabc64ff1cb3d98ef3beba9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_a39396a930dabc64ff1cb3d98ef3beba9.html#a39396a930dabc64ff1cb3d98ef3beba9">pism::initialize_time</a> (MPI_Comm com, const std::string &amp;dimension_name, const Logger &amp;log, Time &amp;time)</td></tr>
-<tr class="memdesc:a39396a930dabc64ff1cb3d98ef3beba9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize model time using command-line options and (possibly) files.  <a href="namespacepism_a39396a930dabc64ff1cb3d98ef3beba9.html#a39396a930dabc64ff1cb3d98ef3beba9">More...</a><br /></td></tr>
-<tr class="separator:a39396a930dabc64ff1cb3d98ef3beba9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a347af9ea3421fd9214c446c98ef246c1"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_a347af9ea3421fd9214c446c98ef246c1.html#a347af9ea3421fd9214c446c98ef246c1">pism::reference_date_from_file</a> (const File &amp;file, const std::string &amp;time_name)</td></tr>
-<tr class="memdesc:a347af9ea3421fd9214c446c98ef246c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the reference date from a file.  <a href="namespacepism_a347af9ea3421fd9214c446c98ef246c1.html#a347af9ea3421fd9214c446c98ef246c1">More...</a><br /></td></tr>
-<tr class="separator:a347af9ea3421fd9214c446c98ef246c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace1adddf8814cd757e81491d77f9919b"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_ace1adddf8814cd757e81491d77f9919b.html#ace1adddf8814cd757e81491d77f9919b">pism::reference_date_from_file</a> (const File &amp;file, const std::string &amp;time_name, const std::string &amp;default_value, bool stop_on_error)</td></tr>
+<tr class="memdesc:ace1adddf8814cd757e81491d77f9919b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the reference date from a file.  <a href="namespacepism_ace1adddf8814cd757e81491d77f9919b.html#ace1adddf8814cd757e81491d77f9919b">More...</a><br /></td></tr>
+<tr class="separator:ace1adddf8814cd757e81491d77f9919b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a883764316d810e57c0db205cbadf3a68"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_a883764316d810e57c0db205cbadf3a68.html#a883764316d810e57c0db205cbadf3a68">pism::calendar_from_file</a> (const File &amp;file, const std::string &amp;time_name, const std::string &amp;default_value, bool stop_on_error)</td></tr>
+<tr class="memdesc:a883764316d810e57c0db205cbadf3a68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the reference date from a file.  <a href="namespacepism_a883764316d810e57c0db205cbadf3a68.html#a883764316d810e57c0db205cbadf3a68">More...</a><br /></td></tr>
+<tr class="separator:a883764316d810e57c0db205cbadf3a68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9064a69086e58a896e67cfb90406385a"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_a9064a69086e58a896e67cfb90406385a.html#a9064a69086e58a896e67cfb90406385a">pism::reference_date</a> (const File *input_file, const Config &amp;config, const Logger &amp;log)</td></tr>
+<tr class="separator:a9064a69086e58a896e67cfb90406385a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92b551e16c2bcbbc9d413f08181ed248"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_a92b551e16c2bcbbc9d413f08181ed248.html#a92b551e16c2bcbbc9d413f08181ed248">pism::calendar</a> (const File *input_file, const Config &amp;config, const Logger &amp;log)</td></tr>
+<tr class="separator:a92b551e16c2bcbbc9d413f08181ed248"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18d871e29704bed4d66b9b7a15a04b92"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_a18d871e29704bed4d66b9b7a15a04b92.html#a18d871e29704bed4d66b9b7a15a04b92">pism::increment_date</a> (const units::Unit &amp;time_units, const std::string &amp;calendar, double T, double years)</td></tr>
+<tr class="separator:a18d871e29704bed4d66b9b7a15a04b92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab901b1b53425e7a7595112fd3a6632ef"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_ab901b1b53425e7a7595112fd3a6632ef.html#ab901b1b53425e7a7595112fd3a6632ef">pism::parse_date</a> (const std::string &amp;input, const units::Unit &amp;time_units, const std::string &amp;calendar)</td></tr>
+<tr class="separator:ab901b1b53425e7a7595112fd3a6632ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f7e63b2877adf168f28ebff65ba9c79"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_a3f7e63b2877adf168f28ebff65ba9c79.html#a3f7e63b2877adf168f28ebff65ba9c79">pism::start_time</a> (const Config &amp;config, const Logger &amp;log, const File *file, const std::string &amp;reference_date, const std::string &amp;calendar, const units::Unit &amp;time_units)</td></tr>
+<tr class="separator:a3f7e63b2877adf168f28ebff65ba9c79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7400785b1f39e43fd5d195d1608c262d"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_a7400785b1f39e43fd5d195d1608c262d.html#a7400785b1f39e43fd5d195d1608c262d">pism::end_time</a> (const Config &amp;config, double time_start, const std::string &amp;calendar, const units::Unit &amp;time_units)</td></tr>
+<tr class="separator:a7400785b1f39e43fd5d195d1608c262d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85fc8cf4098b2a0c07a1e8d937fc0d56"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_a85fc8cf4098b2a0c07a1e8d937fc0d56.html#a85fc8cf4098b2a0c07a1e8d937fc0d56">pism::check_forcing_duration</a> (const Time &amp;time, double forcing_start, double forcing_end)</td></tr>
+<tr class="separator:a85fc8cf4098b2a0c07a1e8d937fc0d56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->

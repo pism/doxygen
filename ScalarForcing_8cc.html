@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>PISM, A Parallel Ice Sheet Model: src/coupler/util/ScalarForcing.cc File Reference</title>
+<title>PISM, A Parallel Ice Sheet Model: src/util/ScalarForcing.cc File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -69,23 +69,29 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_0171d4959defe1f65341fde2c6309901.html">coupler</a></li><li class="navelem"><a class="el" href="dir_b9eb48a36aaee9cd1500664790a20c12.html">util</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_b7878ad5ecbf2506f4125b9d34c97e45.html">util</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#namespaces">Namespaces</a>  </div>
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">ScalarForcing.cc File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="ScalarForcing_8hh_source.html">ScalarForcing.hh</a>&quot;</code><br />
+<code>#include &lt;algorithm&gt;</code><br />
+<code>#include &lt;cassert&gt;</code><br />
+<code>#include &lt;cmath&gt;</code><br />
 <code>#include &quot;pism/util/ConfigInterface.hh&quot;</code><br />
-<code>#include &quot;pism/util/Timeseries.hh&quot;</code><br />
+<code>#include &quot;pism/util/Context.hh&quot;</code><br />
 <code>#include &quot;pism/util/Time.hh&quot;</code><br />
 <code>#include &quot;pism/util/error_handling.hh&quot;</code><br />
 <code>#include &quot;pism/util/Logger.hh&quot;</code><br />
 <code>#include &quot;pism/util/io/File.hh&quot;</code><br />
+<code>#include &quot;pism/util/io/io_helpers.hh&quot;</code><br />
+<code>#include &quot;pism/util/VariableMetadata.hh&quot;</code><br />
 </div>
 <p><a href="ScalarForcing_8cc_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -93,6 +99,12 @@ $(function() {
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacepism"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism.html">pism</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a0c58dea7df941ef7fc2938d25deefcc8"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_a0c58dea7df941ef7fc2938d25deefcc8.html#a0c58dea7df941ef7fc2938d25deefcc8">pism::report_range</a> (const std::vector&lt; double &gt; &amp;data, const units::System::Ptr unit_system, const VariableMetadata &amp;metadata, const Logger &amp;log)</td></tr>
+<tr class="memdesc:a0c58dea7df941ef7fc2938d25deefcc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Report the range of a time-series stored in <code>data</code>.  <a href="namespacepism_a0c58dea7df941ef7fc2938d25deefcc8.html#a0c58dea7df941ef7fc2938d25deefcc8">More...</a><br /></td></tr>
+<tr class="separator:a0c58dea7df941ef7fc2938d25deefcc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->
