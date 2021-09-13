@@ -1,3 +1,7 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$structpism_1_1TestFGParameters.html" title=" " alt="" coords="5,5,185,32"/>
+<area shape="rect" id="node1" href="$classpism_1_1TerminationReason.html" title=" " alt="" coords="5,97,192,123"/>
+<area shape="rect" id="node2" href="$classpism_1_1GenericTerminationReason.html" title=" " alt="" coords="256,5,445,47"/>
+<area shape="rect" id="node3" href="$classpism_1_1KSPTerminationReason.html" title=" " alt="" coords="245,71,457,98"/>
+<area shape="rect" id="node4" href="$classpism_1_1SNESTerminationReason.html" title=" " alt="" coords="240,122,461,149"/>
+<area shape="rect" id="node5" href="$classpism_1_1taoutil_1_1TAOTerminationReason.html" title="Encapsulate TAO&#39;s TaoSolverTerminationReason codes as a PISM TerminationReason." alt="" coords="243,173,458,215"/>
 </map>
