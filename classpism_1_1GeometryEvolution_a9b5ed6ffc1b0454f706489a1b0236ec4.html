@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>PISM, A Parallel Ice Sheet Model: pism::GeometryEvolution::compute_flux_divergence</title>
+<title>PISM, A Parallel Ice Sheet Model: pism::GeometryEvolution::reset</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -82,7 +82,7 @@ $(function() {
           <tr><td class="navtab"><a class="navtab" href="classpism_1_1GeometryEvolution_a39d78e9f3e544880a0218d814e697bf9.html#a39d78e9f3e544880a0218d814e697bf9">apply_mass_fluxes</a></td></tr>
           <tr><td class="navtab"><a class="navtab" href="classpism_1_1GeometryEvolution_af64415cd021a6df2770e6873f4e15cad.html#af64415cd021a6df2770e6873f4e15cad">area_specific_volume_change_due_to_flow</a></td></tr>
           <tr><td class="navtab"><a class="navtab" href="classpism_1_1GeometryEvolution_a5af67b04db2d86fc600fea5567eb8c58.html#a5af67b04db2d86fc600fea5567eb8c58">bottom_surface_mass_balance</a></td></tr>
-          <tr><td class="navtabHL"><a class="navtab" href="classpism_1_1GeometryEvolution_a350a1ecc613337f7ad0c7966d68326d7.html#a350a1ecc613337f7ad0c7966d68326d7">compute_flux_divergence</a></td></tr>
+          <tr><td class="navtab"><a class="navtab" href="classpism_1_1GeometryEvolution_ac8431fe62621c1308f61b334f0935457.html#ac8431fe62621c1308f61b334f0935457">compute_flux_divergence</a></td></tr>
           <tr><td class="navtab"><a class="navtab" href="classpism_1_1GeometryEvolution_aa237c10bff4dc9d0f54f31bf58bbf8f1.html#aa237c10bff4dc9d0f54f31bf58bbf8f1">compute_interface_fluxes</a></td></tr>
           <tr><td class="navtab"><a class="navtab" href="classpism_1_1GeometryEvolution_a69988eba5265e220ba55887166cde0e5.html#a69988eba5265e220ba55887166cde0e5">compute_surface_and_basal_mass_balance</a></td></tr>
           <tr><td class="navtab"><a class="navtab" href="classpism_1_1GeometryEvolution_a2be3b09264dfb626e00e7f7c292f4731.html#a2be3b09264dfb626e00e7f7c292f4731">conservation_error</a></td></tr>
@@ -95,6 +95,7 @@ $(function() {
           <tr><td class="navtab"><a class="navtab" href="classpism_1_1GeometryEvolution_af6a65f2c42d7569e73d8463a39e8b263.html#af6a65f2c42d7569e73d8463a39e8b263">init</a></td></tr>
           <tr><td class="navtab"><a class="navtab" href="classpism_1_1GeometryEvolution_a1d67bd3f92c3caa1fbf437658180cee6.html#a1d67bd3f92c3caa1fbf437658180cee6">init_impl</a></td></tr>
           <tr><td class="navtab"><a class="navtab" href="classpism_1_1GeometryEvolution_a57d840dba3f1ab8356e899a4b2f293a3.html#a57d840dba3f1ab8356e899a4b2f293a3">m_impl</a></td></tr>
+          <tr><td class="navtabHL"><a class="navtab" href="classpism_1_1GeometryEvolution_a9b5ed6ffc1b0454f706489a1b0236ec4.html#a9b5ed6ffc1b0454f706489a1b0236ec4">reset</a></td></tr>
           <tr><td class="navtab"><a class="navtab" href="classpism_1_1GeometryEvolution_ad1de71d6dd9b8f3964b524a85328e1a0.html#ad1de71d6dd9b8f3964b524a85328e1a0">residual_redistribution_iteration</a></td></tr>
           <tr><td class="navtab"><a class="navtab" href="classpism_1_1GeometryEvolution_a7773400614136ca467a6f9acb9ae3ed4.html#a7773400614136ca467a6f9acb9ae3ed4">set_no_model_mask</a></td></tr>
           <tr><td class="navtab"><a class="navtab" href="classpism_1_1GeometryEvolution_a787289bff90ba2f65641cf8c70b13309.html#a787289bff90ba2f65641cf8c70b13309">set_no_model_mask_impl</a></td></tr>
@@ -107,53 +108,24 @@ $(function() {
       </div>
    </td>
    <td valign="top" class="mempage">
-<a id="a350a1ecc613337f7ad0c7966d68326d7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a350a1ecc613337f7ad0c7966d68326d7">&#9670;&nbsp;</a></span>compute_flux_divergence()</h2>
+<a id="a9b5ed6ffc1b0454f706489a1b0236ec4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b5ed6ffc1b0454f706489a1b0236ec4">&#9670;&nbsp;</a></span>reset()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void pism::GeometryEvolution::compute_flux_divergence </td>
+          <td class="memname">void pism::GeometryEvolution::reset </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classpism_1_1IceModelVec2Stag.html">IceModelVec2Stag</a> &amp;&#160;</td>
-          <td class="paramname"><em>flux</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classpism_1_1IceModelVec2Int.html">IceModelVec2Int</a> &amp;&#160;</td>
-          <td class="paramname"><em>thickness_bc_mask</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classpism_1_1IceModelVec2S.html">IceModelVec2S</a> &amp;&#160;</td>
-          <td class="paramname"><em>output</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
-<p>Compute flux divergence using cell interface fluxes on the staggered grid.</p>
-<p>The flux divergence at <em>ice thickness</em> Dirichlet B.C. locations is set to zero. </p>
 
-<p class="definition">Definition at line <a class="el" href="GeometryEvolution_8cc_source.html#l00614">614</a> of file <a class="el" href="GeometryEvolution_8cc_source.html">GeometryEvolution.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="GeometryEvolution_8cc_source.html#l00198">198</a> of file <a class="el" href="GeometryEvolution_8cc_source.html">GeometryEvolution.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="error__handling_8cc_source.html#l00205">pism::ParallelSection::check()</a>, <a class="el" href="StarStencil_8hh_source.html#l00029">pism::StarStencil&lt; T &gt;::e</a>, <a class="el" href="error__handling_8cc_source.html#l00189">pism::ParallelSection::failed()</a>, <a class="el" href="Component_8hh_source.html#l00136">pism::Component::m_grid</a>, <a class="el" href="StarStencil_8hh_source.html#l00029">pism::StarStencil&lt; T &gt;::n</a>, <a class="el" href="IceGrid_8hh_source.html#l00381">pism::PointsWithGhosts::next()</a>, <a class="el" href="StarStencil_8hh_source.html#l00029">pism::StarStencil&lt; T &gt;::s</a>, <a class="el" href="IceModelVec__inline_8hh_source.html#l00081">pism::IceModelVec2Stag::star()</a>, and <a class="el" href="StarStencil_8hh_source.html#l00029">pism::StarStencil&lt; T &gt;::w</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="GeometryEvolution_8cc_source.html#l00235">flow_step()</a>.</p>
+<p class="reference">References <a class="el" href="GeometryEvolution_8cc_source.html#l00061">pism::GeometryEvolution::Impl::conservation_error</a>, <a class="el" href="GeometryEvolution_8hh_source.html#l00126">m_impl</a>, and <a class="el" href="iceModelVec_8cc_source.html#l00638">pism::IceModelVec::set()</a>.</p>
 
 </div>
 </div>
