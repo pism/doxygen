@@ -1,3 +1,8 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classpism_1_1inverse_1_1IP__SSATaucTikhonovGNSolver.html" title=" " alt="" coords="5,5,196,47"/>
+<area shape="rect" id="node1" href="$classpism_1_1inverse_1_1IPFunctional.html" title=" " alt="" coords="5,103,203,144"/>
+<area shape="rect" id="node2" href="$classpism_1_1inverse_1_1IPInnerProductFunctional.html" title=" " alt="" coords="251,37,469,79"/>
+<area shape="rect" id="node5" href="$classpism_1_1inverse_1_1IPLogRatioFunctional.html" title="Implements a functional for log&#45;ratio errors." alt="" coords="267,103,453,144"/>
+<area shape="rect" id="node6" href="$classpism_1_1inverse_1_1IPLogRelativeFunctional.html" title="Implements a functional for log&#45;relative errors." alt="" coords="257,168,463,209"/>
+<area shape="rect" id="node3" href="$classpism_1_1inverse_1_1IPMeanSquareFunctional2V.html" title="Implements a functional corresponding to a (possibly weighted) sum of squares of components of an Ice..." alt="" coords="517,5,728,47"/>
+<area shape="rect" id="node4" href="$classpism_1_1inverse_1_1IP__L2NormFunctional2V.html" title="Implements a functional corresponding to (the square of) an &#160;norm of a vector valued function." alt="" coords="529,71,717,112"/>
 </map>

@@ -102,7 +102,7 @@ $(function() {
           <tr><td class="navtab"><a class="navtab" href="classpism_1_1stressbalance_1_1SSAFD_a08f16aa7abf31982cb42039af9d6f3fe.html#a08f16aa7abf31982cb42039af9d6f3fe">m_scaling</a></td></tr>
           <tr><td class="navtab"><a class="navtab" href="classpism_1_1stressbalance_1_1SSAFD_a0169525702647cb26a46304e7c8e1588.html#a0169525702647cb26a46304e7c8e1588">m_velocity_old</a></td></tr>
           <tr><td class="navtab"><a class="navtab" href="classpism_1_1stressbalance_1_1SSAFD_ae40dc5867b3c64f25cc558ca166d4344.html#ae40dc5867b3c64f25cc558ca166d4344">m_view_nuh</a></td></tr>
-          <tr><td class="navtab"><a class="navtab" href="classpism_1_1stressbalance_1_1SSAFD_a74961d1c825f1edcccdb1ef1a5b34ccf.html#a74961d1c825f1edcccdb1ef1a5b34ccf">m_work</a></td></tr>
+          <tr><td class="navtab"><a class="navtab" href="classpism_1_1stressbalance_1_1SSAFD_a071f71830d71b6f4917df2e9892fe88d.html#a071f71830d71b6f4917df2e9892fe88d">m_work</a></td></tr>
           <tr><td class="navtab"><a class="navtab" href="classpism_1_1stressbalance_1_1SSAFD_aa4b0be7d0f659c52609217d9b424fbc7.html#aa4b0be7d0f659c52609217d9b424fbc7">pc_setup_asm</a></td></tr>
           <tr><td class="navtab"><a class="navtab" href="classpism_1_1stressbalance_1_1SSAFD_ad4e53c2bbfd4153fba786518129f1b7f.html#ad4e53c2bbfd4153fba786518129f1b7f">pc_setup_bjacobi</a></td></tr>
           <tr><td class="navtab"><a class="navtab" href="classpism_1_1stressbalance_1_1SSAFD_ac6f3c04fb21c297233aef96fe365595d.html#ac6f3c04fb21c297233aef96fe365595d">picard_iteration</a></td></tr>
@@ -164,11 +164,11 @@ $(function() {
 <p>If one of the diagonal neighbors is ice-free we don't use the CFBC, but we do need to compute weights used in the <a class="el" href="classpism_1_1stressbalance_1_1SSA.html" title="PISM&#39;s SSA solver.">SSA</a> discretization (see <a class="el" href="classpism_1_1stressbalance_1_1SSAFD_a9d2b7c5f90521d04504265522a2be6d7.html#a9d2b7c5f90521d04504265522a2be6d7" title="Assemble the left-hand side matrix for the KSP-based, Picard iteration, and finite difference impleme...">assemble_matrix()</a>) to avoid differencing across interfaces between icy and ice-free cells.</p>
 <p>This method ensures that checks in <a class="el" href="classpism_1_1stressbalance_1_1SSAFD_afac389fdc315bc439e005e3cce9455f2.html#afac389fdc315bc439e005e3cce9455f2" title="Computes the right-hand side (&quot;rhs&quot;) of the linear problem for the Picard iteration and finite-differ...">assemble_rhs()</a> and <a class="el" href="classpism_1_1stressbalance_1_1SSAFD_a9d2b7c5f90521d04504265522a2be6d7.html#a9d2b7c5f90521d04504265522a2be6d7" title="Assemble the left-hand side matrix for the KSP-based, Picard iteration, and finite difference impleme...">assemble_matrix()</a> are consistent. </p>
 
-<p class="definition">Definition at line <a class="el" href="SSAFD_8cc_source.html#l01717">1717</a> of file <a class="el" href="SSAFD_8cc_source.html">SSAFD.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SSAFD_8cc_source.html#l01704">1704</a> of file <a class="el" href="SSAFD_8cc_source.html">SSAFD.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="Mask_8hh_source.html#l00057">pism::mask::ice_free()</a>, <a class="el" href="Mask_8hh_source.html#l00060">pism::mask::ice_free_ocean()</a>, <a class="el" href="Mask_8hh_source.html#l00047">pism::mask::icy()</a>, <a class="el" href="IceModelVec__inline_8hh_source.html#l00115">pism::IceModelVec2Int::int_box()</a>, and <a class="el" href="SSA_8hh_source.html#l00140">pism::stressbalance::SSA::m_mask</a>.</p>
+<p class="reference">References <a class="el" href="IceModelVec__inline_8hh_source.html#l00101">pism::IceModelVec2Int::box()</a>, <a class="el" href="Mask_8hh_source.html#l00057">pism::mask::ice_free()</a>, <a class="el" href="Mask_8hh_source.html#l00060">pism::mask::ice_free_ocean()</a>, <a class="el" href="Mask_8hh_source.html#l00047">pism::mask::icy()</a>, and <a class="el" href="SSA_8hh_source.html#l00140">pism::stressbalance::SSA::m_mask</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="SSAFD_8cc_source.html#l00500">assemble_matrix()</a>, and <a class="el" href="SSAFD_8cc_source.html#l00249">assemble_rhs()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="SSAFD_8cc_source.html#l00499">assemble_matrix()</a>, and <a class="el" href="SSAFD_8cc_source.html#l00248">assemble_rhs()</a>.</p>
 
 </div>
 </div>

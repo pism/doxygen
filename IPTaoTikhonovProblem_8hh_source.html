@@ -463,16 +463,16 @@ $(function() {
 <div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;  dWeight = 1/m_eta;</div>
 <div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;  sWeight = 1;</div>
 <div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;  </div>
-<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;  designNorm = m_grad_design-&gt;norm(NORM_2);</div>
-<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;  stateNorm  = m_grad_state-&gt;norm(NORM_2);</div>
-<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;  sumNorm    = m_grad-&gt;norm(NORM_2);</div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;  designNorm = m_grad_design-&gt;norm(NORM_2)[0];</div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;  stateNorm  = m_grad_state-&gt;norm(NORM_2)[0];</div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;  sumNorm    = m_grad-&gt;norm(NORM_2)[0];</div>
 <div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160; </div>
 <div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;  designNorm *= dWeight;    </div>
 <div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;  stateNorm  *= sWeight;</div>
 <div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;  </div>
 <div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;  <span class="keywordflow">if</span> (sumNorm &lt; m_tikhonov_atol) {</div>
 <div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;    TaoSetConvergedReason(tao, TAO_CONVERGED_GATOL);</div>
-<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;  } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (sumNorm &lt; m_tikhonov_rtol*std::max(designNorm,stateNorm)) {</div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;  } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (sumNorm &lt; m_tikhonov_rtol*<a class="code" href="namespacepism_a1c38bf61f42eeb099d3356ab93fefb5b.html#a1c38bf61f42eeb099d3356ab93fefb5b">std::max</a>(designNorm,stateNorm)) {</div>
 <div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;    TaoSetConvergedReason(tao, TAO_CONVERGED_USER);</div>
 <div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;  } <span class="keywordflow">else</span> {</div>
 <div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;    TaoDefaultConvergenceTest(tao, NULL);</div>
@@ -485,55 +485,56 @@ $(function() {
 <div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;  PetscErrorCode ierr;</div>
 <div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;  <span class="comment">// Variable &#39;x&#39; has no ghosts.  We need ghosts for computation with the design variable.</span></div>
 <div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;  {</div>
-<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;    <span class="comment">// increment the reference counter so that it does not get destroyed by petsc::Vec::~Vec()</span></div>
-<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;    PetscObjectReference((PetscObject)x);</div>
-<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;    <a class="code" href="classpism_1_1petsc_1_1Vec.html">petsc::Vec</a> tmp(x);</div>
-<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;    m_d-&gt;copy_from_vec(tmp);</div>
-<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;  }</div>
-<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160; </div>
-<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;  <a class="code" href="classpism_1_1TerminationReason_a1477a9427838815f537ee44d6df00c3e.html#a1477a9427838815f537ee44d6df00c3e">TerminationReason::Ptr</a> reason = m_forward.linearize_at(*m_d);</div>
-<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;  <span class="keywordflow">if</span> (reason-&gt;failed()) {</div>
-<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;    <a class="code" href="classpism_1_1Logger_a18135415c4090dc0f946beca43fdcc76.html#a18135415c4090dc0f946beca43fdcc76">Logger::ConstPtr</a> log = m_grid-&gt;ctx()-&gt;log();</div>
-<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;    log-&gt;message(2,</div>
-<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;                 <span class="stringliteral">&quot;IPTaoTikhonovProblem::evaluateObjectiveAndGradient&quot;</span></div>
-<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;                 <span class="stringliteral">&quot; failure in forward solve\n%s\n&quot;</span>, reason-&gt;description().c_str());</div>
-<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;    ierr = TaoSetConvergedReason(tao, TAO_DIVERGED_USER);</div>
-<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;    <a class="code" href="error__handling_8hh_a970ec877c0e54c6e16c039bfa1b88bad.html#a970ec877c0e54c6e16c039bfa1b88bad">PISM_CHK</a>(ierr, <span class="stringliteral">&quot;TaoSetConvergedReason&quot;</span>);</div>
-<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;    <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;  }</div>
-<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160; </div>
-<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;  m_d_diff-&gt;copy_from(*m_d);</div>
-<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;  m_d_diff-&gt;add(-1, m_d0);</div>
-<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;  m_designFunctional.gradientAt(*m_d_diff, *m_grad_design);</div>
-<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160; </div>
-<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;  m_u_diff-&gt;copy_from(*m_forward.solution());</div>
-<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;  m_u_diff-&gt;add(-1, m_u_obs);</div>
-<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160; </div>
-<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;  <span class="comment">// The following computes the reduced gradient.</span></div>
-<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;  m_stateFunctional.gradientAt(*m_u_diff, m_adjointRHS);</div>
-<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;  m_forward.apply_linearization_transpose(m_adjointRHS, *m_grad_state);</div>
-<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160; </div>
-<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;  m_grad-&gt;copy_from(*m_grad_design);</div>
-<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;  m_grad-&gt;scale(1.0 / m_eta);</div>
-<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;  m_grad-&gt;add(1, *m_grad_state);</div>
-<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160; </div>
-<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;  ierr = VecCopy(m_grad-&gt;vec(), gradient);</div>
-<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;  <a class="code" href="error__handling_8hh_a970ec877c0e54c6e16c039bfa1b88bad.html#a970ec877c0e54c6e16c039bfa1b88bad">PISM_CHK</a>(ierr, <span class="stringliteral">&quot;VecCopy&quot;</span>);</div>
-<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160; </div>
-<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;  <span class="keywordtype">double</span> valDesign, valState;</div>
-<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;  m_designFunctional.valueAt(*m_d_diff, &amp;valDesign);</div>
-<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;  m_stateFunctional.valueAt(*m_u_diff, &amp;valState);</div>
-<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160; </div>
-<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;  m_val_design = valDesign;</div>
-<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;  m_val_state = valState;</div>
-<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160; </div>
-<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;  *value = valDesign / m_eta + valState;</div>
-<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;}</div>
-<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160; </div>
-<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;} <span class="comment">// end of namespace inverse</span></div>
-<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;} <span class="comment">// end of namespace pism</span></div>
-<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160; </div>
-<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* end of include guard: IPTAOTIKHONOVPROBLEM_HH_4NMM724B */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;    ierr = DMGlobalToLocalBegin(*m_d-&gt;dm(), x, INSERT_VALUES, m_d-&gt;vec());</div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;    <a class="code" href="error__handling_8hh_a970ec877c0e54c6e16c039bfa1b88bad.html#a970ec877c0e54c6e16c039bfa1b88bad">PISM_CHK</a>(ierr, <span class="stringliteral">&quot;DMGlobalToLocalBegin&quot;</span>);</div>
+<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160; </div>
+<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;    ierr = DMGlobalToLocalEnd(*m_d-&gt;dm(), x, INSERT_VALUES, m_d-&gt;vec());</div>
+<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;    <a class="code" href="error__handling_8hh_a970ec877c0e54c6e16c039bfa1b88bad.html#a970ec877c0e54c6e16c039bfa1b88bad">PISM_CHK</a>(ierr, <span class="stringliteral">&quot;DMGlobalToLocalEnd&quot;</span>);</div>
+<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;  }</div>
+<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160; </div>
+<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;  <a class="code" href="classpism_1_1TerminationReason_a1477a9427838815f537ee44d6df00c3e.html#a1477a9427838815f537ee44d6df00c3e">TerminationReason::Ptr</a> reason = m_forward.linearize_at(*m_d);</div>
+<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;  <span class="keywordflow">if</span> (reason-&gt;failed()) {</div>
+<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;    <a class="code" href="classpism_1_1Logger_a18135415c4090dc0f946beca43fdcc76.html#a18135415c4090dc0f946beca43fdcc76">Logger::ConstPtr</a> log = m_grid-&gt;ctx()-&gt;log();</div>
+<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;    log-&gt;message(2,</div>
+<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;                 <span class="stringliteral">&quot;IPTaoTikhonovProblem::evaluateObjectiveAndGradient&quot;</span></div>
+<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;                 <span class="stringliteral">&quot; failure in forward solve\n%s\n&quot;</span>, reason-&gt;description().c_str());</div>
+<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;    ierr = TaoSetConvergedReason(tao, TAO_DIVERGED_USER);</div>
+<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;    <a class="code" href="error__handling_8hh_a970ec877c0e54c6e16c039bfa1b88bad.html#a970ec877c0e54c6e16c039bfa1b88bad">PISM_CHK</a>(ierr, <span class="stringliteral">&quot;TaoSetConvergedReason&quot;</span>);</div>
+<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;    <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;  }</div>
+<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160; </div>
+<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;  m_d_diff-&gt;copy_from(*m_d);</div>
+<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;  m_d_diff-&gt;add(-1, m_d0);</div>
+<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;  m_designFunctional.gradientAt(*m_d_diff, *m_grad_design);</div>
+<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160; </div>
+<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;  m_u_diff-&gt;copy_from(*m_forward.solution());</div>
+<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;  m_u_diff-&gt;add(-1, m_u_obs);</div>
+<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160; </div>
+<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;  <span class="comment">// The following computes the reduced gradient.</span></div>
+<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;  m_stateFunctional.gradientAt(*m_u_diff, m_adjointRHS);</div>
+<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;  m_forward.apply_linearization_transpose(m_adjointRHS, *m_grad_state);</div>
+<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160; </div>
+<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;  m_grad-&gt;copy_from(*m_grad_design);</div>
+<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;  m_grad-&gt;scale(1.0 / m_eta);</div>
+<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;  m_grad-&gt;add(1, *m_grad_state);</div>
+<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160; </div>
+<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;  ierr = VecCopy(m_grad-&gt;vec(), gradient);</div>
+<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;  <a class="code" href="error__handling_8hh_a970ec877c0e54c6e16c039bfa1b88bad.html#a970ec877c0e54c6e16c039bfa1b88bad">PISM_CHK</a>(ierr, <span class="stringliteral">&quot;VecCopy&quot;</span>);</div>
+<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160; </div>
+<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;  <span class="keywordtype">double</span> valDesign, valState;</div>
+<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;  m_designFunctional.valueAt(*m_d_diff, &amp;valDesign);</div>
+<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;  m_stateFunctional.valueAt(*m_u_diff, &amp;valState);</div>
+<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160; </div>
+<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;  m_val_design = valDesign;</div>
+<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;  m_val_state = valState;</div>
+<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160; </div>
+<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;  *value = valDesign / m_eta + valState;</div>
+<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;}</div>
+<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160; </div>
+<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;} <span class="comment">// end of namespace inverse</span></div>
+<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;} <span class="comment">// end of namespace pism</span></div>
+<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160; </div>
+<div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* end of include guard: IPTAOTIKHONOVPROBLEM_HH_4NMM724B */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="aIPFunctional_8hh_html"><div class="ttname"><a href="IPFunctional_8hh.html">IPFunctional.hh</a></div></div>
 <div class="ttc" id="aTaoUtil_8hh_html"><div class="ttname"><a href="TaoUtil_8hh.html">TaoUtil.hh</a></div></div>
 <div class="ttc" id="aclasspism_1_1GenericTerminationReason_acafda70bc8691ed81c472a2375084c25_html_acafda70bc8691ed81c472a2375084c25"><div class="ttname"><a href="classpism_1_1GenericTerminationReason_acafda70bc8691ed81c472a2375084c25.html#acafda70bc8691ed81c472a2375084c25">pism::GenericTerminationReason::success</a></div><div class="ttdeci">static TerminationReason::Ptr success()</div><div class="ttdef"><b>Definition:</b> <a href="TerminationReason_8hh_source.html#l00141">TerminationReason.hh:141</a></div></div>
@@ -584,13 +585,13 @@ $(function() {
 <div class="ttc" id="aclasspism_1_1inverse_1_1IPTaoTikhonovProblem_af498e6f7454abb58e47984e393c9b483_html_af498e6f7454abb58e47984e393c9b483"><div class="ttname"><a href="classpism_1_1inverse_1_1IPTaoTikhonovProblem_af498e6f7454abb58e47984e393c9b483.html#af498e6f7454abb58e47984e393c9b483">pism::inverse::IPTaoTikhonovProblem::m_designFunctional</a></div><div class="ttdeci">IPFunctional&lt; IceModelVec2S &gt; &amp; m_designFunctional</div><div class="ttdoc">Implementation of .</div><div class="ttdef"><b>Definition:</b> <a href="IPTaoTikhonovProblem_8hh_source.html#l00276">IPTaoTikhonovProblem.hh:276</a></div></div>
 <div class="ttc" id="aclasspism_1_1inverse_1_1IPTaoTikhonovProblem_af557b18cf4ecbf3ed234349f10e3015f_html_af557b18cf4ecbf3ed234349f10e3015f"><div class="ttname"><a href="classpism_1_1inverse_1_1IPTaoTikhonovProblem_af557b18cf4ecbf3ed234349f10e3015f.html#af557b18cf4ecbf3ed234349f10e3015f">pism::inverse::IPTaoTikhonovProblem::stateSolution</a></div><div class="ttdeci">virtual StateVecPtr stateSolution()</div><div class="ttdoc">Final value of , where  is the solution of the minimization.</div><div class="ttdef"><b>Definition:</b> <a href="IPTaoTikhonovProblem_8hh_source.html#l00209">IPTaoTikhonovProblem.hh:209</a></div></div>
 <div class="ttc" id="aclasspism_1_1inverse_1_1IPTaoTikhonovProblem_html"><div class="ttname"><a href="classpism_1_1inverse_1_1IPTaoTikhonovProblem.html">pism::inverse::IPTaoTikhonovProblem</a></div><div class="ttdoc">Defines a Tikhonov minimization problem to be solved with a TaoBasicSolver.</div><div class="ttdef"><b>Definition:</b> <a href="IPTaoTikhonovProblem_8hh_source.html#l00164">IPTaoTikhonovProblem.hh:165</a></div></div>
-<div class="ttc" id="aclasspism_1_1petsc_1_1Vec_html"><div class="ttname"><a href="classpism_1_1petsc_1_1Vec.html">pism::petsc::Vec</a></div><div class="ttdef"><b>Definition:</b> <a href="Vec_8hh_source.html#l00036">Vec.hh:36</a></div></div>
 <div class="ttc" id="aclasspism_1_1taoutil_1_1TaoConvergenceCallback_html"><div class="ttname"><a href="classpism_1_1taoutil_1_1TaoConvergenceCallback.html">pism::taoutil::TaoConvergenceCallback</a></div><div class="ttdoc">Adaptor to connect a TAO objective function callback to a C++ object method.</div><div class="ttdef"><b>Definition:</b> <a href="TaoUtil_8hh_source.html#l00359">TaoUtil.hh:359</a></div></div>
 <div class="ttc" id="aclasspism_1_1taoutil_1_1TaoMonitorCallback_html"><div class="ttname"><a href="classpism_1_1taoutil_1_1TaoMonitorCallback.html">pism::taoutil::TaoMonitorCallback</a></div><div class="ttdoc">Adaptor to connect a TAO monitoring callback to a C++ object method.</div><div class="ttdef"><b>Definition:</b> <a href="TaoUtil_8hh_source.html#l00226">TaoUtil.hh:226</a></div></div>
 <div class="ttc" id="aclasspism_1_1taoutil_1_1TaoObjGradCallback_html"><div class="ttname"><a href="classpism_1_1taoutil_1_1TaoObjGradCallback.html">pism::taoutil::TaoObjGradCallback</a></div><div class="ttdoc">Adaptor to connect a TAO objective and gradient function callback to a C++ object method.</div><div class="ttdef"><b>Definition:</b> <a href="TaoUtil_8hh_source.html#l00403">TaoUtil.hh:403</a></div></div>
 <div class="ttc" id="aerror__handling_8hh_a970ec877c0e54c6e16c039bfa1b88bad_html_a970ec877c0e54c6e16c039bfa1b88bad"><div class="ttname"><a href="error__handling_8hh_a970ec877c0e54c6e16c039bfa1b88bad.html#a970ec877c0e54c6e16c039bfa1b88bad">PISM_CHK</a></div><div class="ttdeci">#define PISM_CHK(errcode, name)</div><div class="ttdef"><b>Definition:</b> <a href="error__handling_8hh_source.html#l00091">error_handling.hh:91</a></div></div>
 <div class="ttc" id="anamespacepism_1_1inverse_a16bd15a34127cc491455ba03e95c30ae_html_a16bd15a34127cc491455ba03e95c30ae"><div class="ttname"><a href="namespacepism_1_1inverse_a16bd15a34127cc491455ba03e95c30ae.html#a16bd15a34127cc491455ba03e95c30ae">pism::inverse::DesignVec</a></div><div class="ttdeci">IceModelVec2S DesignVec</div><div class="ttdef"><b>Definition:</b> <a href="IP__SSATaucTaoTikhonovProblemLCL_8cc_source.html#l00027">IP_SSATaucTaoTikhonovProblemLCL.cc:27</a></div></div>
 <div class="ttc" id="anamespacepism_1_1inverse_a87a083e9db7f2fbc1ee5ed79cbb9a5d7_html_a87a083e9db7f2fbc1ee5ed79cbb9a5d7"><div class="ttname"><a href="namespacepism_1_1inverse_a87a083e9db7f2fbc1ee5ed79cbb9a5d7.html#a87a083e9db7f2fbc1ee5ed79cbb9a5d7">pism::inverse::StateVec</a></div><div class="ttdeci">IceModelVec2V StateVec</div><div class="ttdef"><b>Definition:</b> <a href="IP__SSATaucTaoTikhonovProblemLCL_8cc_source.html#l00028">IP_SSATaucTaoTikhonovProblemLCL.cc:28</a></div></div>
+<div class="ttc" id="anamespacepism_a1c38bf61f42eeb099d3356ab93fefb5b_html_a1c38bf61f42eeb099d3356ab93fefb5b"><div class="ttname"><a href="namespacepism_a1c38bf61f42eeb099d3356ab93fefb5b.html#a1c38bf61f42eeb099d3356ab93fefb5b">pism::max</a></div><div class="ttdeci">double max(const IceModelVec2S &amp;input)</div><div class="ttdoc">Finds maximum over all the values in an IceModelVec2S object. Ignores ghosts.</div><div class="ttdef"><b>Definition:</b> <a href="iceModelVec2_8cc_source.html#l00189">iceModelVec2.cc:189</a></div></div>
 <div class="ttc" id="anamespacepism_a7343afff8d353b59dbdec563bd896812_html_a7343afff8d353b59dbdec563bd896812"><div class="ttname"><a href="namespacepism_a7343afff8d353b59dbdec563bd896812.html#a7343afff8d353b59dbdec563bd896812">pism::k</a></div><div class="ttdeci">static const double k</div><div class="ttdef"><b>Definition:</b> <a href="exactTestP_8cc_source.html#l00045">exactTestP.cc:45</a></div></div>
 <div class="ttc" id="anamespacepism_af0700c6771420c20ac873c2779475d57_html_af0700c6771420c20ac873c2779475d57a64e797222853badb3592d5d01f623da9"><div class="ttname"><a href="namespacepism_af0700c6771420c20ac873c2779475d57.html#af0700c6771420c20ac873c2779475d57a64e797222853badb3592d5d01f623da9">pism::WITHOUT_GHOSTS</a></div><div class="ttdeci">@ WITHOUT_GHOSTS</div><div class="ttdef"><b>Definition:</b> <a href="iceModelVec_8hh_source.html#l00049">iceModelVec.hh:49</a></div></div>
 <div class="ttc" id="anamespacepism_af0700c6771420c20ac873c2779475d57_html_af0700c6771420c20ac873c2779475d57adad77f6206cd0215efe0cbcfbf57c0d3"><div class="ttname"><a href="namespacepism_af0700c6771420c20ac873c2779475d57.html#af0700c6771420c20ac873c2779475d57adad77f6206cd0215efe0cbcfbf57c0d3">pism::WITH_GHOSTS</a></div><div class="ttdeci">@ WITH_GHOSTS</div><div class="ttdef"><b>Definition:</b> <a href="iceModelVec_8hh_source.html#l00049">iceModelVec.hh:49</a></div></div>

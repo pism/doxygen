@@ -74,7 +74,6 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
@@ -82,10 +81,10 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;cassert&gt;</code><br />
+<code>#include &lt;petscdraw.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="iceModelVec_8hh_source.html">iceModelVec.hh</a>&quot;</code><br />
 <code>#include &quot;pism/util/IceModelVec2V.hh&quot;</code><br />
 <code>#include &quot;pism/util/IceModelVec_impl.hh&quot;</code><br />
-<code>#include &quot;<a class="el" href="iceModelVec__helpers_8hh_source.html">iceModelVec_helpers.hh</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Time_8hh_source.html">Time.hh</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="IceGrid_8hh_source.html">IceGrid.hh</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="ConfigInterface_8hh_source.html">ConfigInterface.hh</a>&quot;</code><br />
@@ -94,6 +93,7 @@ $(function() {
 <code>#include &quot;pism/util/Logger.hh&quot;</code><br />
 <code>#include &quot;pism/util/Profiling.hh&quot;</code><br />
 <code>#include &quot;pism/util/petscwrappers/VecScatter.hh&quot;</code><br />
+<code>#include &quot;pism/util/petscwrappers/Viewer.hh&quot;</code><br />
 <code>#include &quot;pism/util/Mask.hh&quot;</code><br />
 <code>#include &quot;pism/util/IceModelVec2CellType.hh&quot;</code><br />
 <code>#include &quot;pism/util/Context.hh&quot;</code><br />
@@ -103,14 +103,13 @@ $(function() {
 </div>
 <p><a href="iceModelVec_8cc_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpism_1_1VecAndScatter.html">pism::VecAndScatter</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacepism"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism.html">pism</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespacepism_1_1vec"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_1_1vec.html">pism::vec</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespacepism_1_1vec_1_1details"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_1_1vec_1_1details.html">pism::vec::details</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
@@ -119,19 +118,11 @@ Functions</h2></td></tr>
 <tr class="separator:a877a4795ab3db04ea436e26351d8059e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a577ac4366e6503445abcf3d0ba6cabe4"><td class="memItemLeft" align="right" valign="top">static NormType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_a577ac4366e6503445abcf3d0ba6cabe4.html#a577ac4366e6503445abcf3d0ba6cabe4">pism::int_to_normtype</a> (int input)</td></tr>
 <tr class="separator:a577ac4366e6503445abcf3d0ba6cabe4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a36084d4c91865aa042e6779277fccac6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_a36084d4c91865aa042e6779277fccac6.html#a36084d4c91865aa042e6779277fccac6">pism::compute_params</a> (const IceModelVec *const x, const IceModelVec *const y, const IceModelVec *const z, int &amp;ghosts, bool &amp;scatter)</td></tr>
-<tr class="memdesc:a36084d4c91865aa042e6779277fccac6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute parameters for 2<a class="el" href="classD.html">D</a> loop computations involving 3 IceModelVecs.  <a href="namespacepism_a36084d4c91865aa042e6779277fccac6.html#a36084d4c91865aa042e6779277fccac6">More...</a><br /></td></tr>
-<tr class="separator:a36084d4c91865aa042e6779277fccac6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab2359dbe37b383ff318efb00de39ed56"><td class="memItemLeft" align="right" valign="top">VecAndScatter&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_ab2359dbe37b383ff318efb00de39ed56.html#ab2359dbe37b383ff318efb00de39ed56">pism::scatter_part</a> (Vec v_in, int start, int length, int target_rank)</td></tr>
-<tr class="separator:ab2359dbe37b383ff318efb00de39ed56"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a018e2fca359f9dfd6c7c261fa1f76423"><td class="memItemLeft" align="right" valign="top">Vec&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_a018e2fca359f9dfd6c7c261fa1f76423.html#a018e2fca359f9dfd6c7c261fa1f76423">pism::get_natural_work</a> (DM dm)</td></tr>
-<tr class="separator:a018e2fca359f9dfd6c7c261fa1f76423"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9923fd6e65a09c7921344d8758378401"><td class="memItemLeft" align="right" valign="top">Vec&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_a9923fd6e65a09c7921344d8758378401.html#a9923fd6e65a09c7921344d8758378401">pism::proc0_copy</a> (DM dm, int start, int length)</td></tr>
-<tr class="separator:a9923fd6e65a09c7921344d8758378401"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7de619415c30d0784c7534e8c68663a4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_1_1vec_1_1details_a7de619415c30d0784c7534e8c68663a4.html#a7de619415c30d0784c7534e8c68663a4">pism::vec::details::compute_params</a> (const IceModelVec *const x, const IceModelVec *const y, const IceModelVec *const z, int &amp;ghosts, bool &amp;scatter)</td></tr>
+<tr class="memdesc:a7de619415c30d0784c7534e8c68663a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute parameters for 2<a class="el" href="classD.html">D</a> loop computations involving 3 IceModelVecs.  <a href="namespacepism_1_1vec_1_1details_a7de619415c30d0784c7534e8c68663a4.html#a7de619415c30d0784c7534e8c68663a4">More...</a><br /></td></tr>
+<tr class="separator:a7de619415c30d0784c7534e8c68663a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aded10babcc1dfd7b9d3f41562db82090"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_aded10babcc1dfd7b9d3f41562db82090.html#aded10babcc1dfd7b9d3f41562db82090">pism::convert_vec</a> (petsc::Vec &amp;v, units::System::Ptr system, const std::string &amp;spec1, const std::string &amp;spec2)</td></tr>
 <tr class="separator:aded10babcc1dfd7b9d3f41562db82090"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad2bfc88ef337357bbab7d967dfabdfdb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_ad2bfc88ef337357bbab7d967dfabdfdb.html#ad2bfc88ef337357bbab7d967dfabdfdb">pism::set_contains</a> (const std::set&lt; std::string &gt; &amp;<a class="el" href="test__cube_8c_a0d20d4720401ba664775e4eccc876ed0.html#a0d20d4720401ba664775e4eccc876ed0">S</a>, const IceModelVec &amp;field)</td></tr>
-<tr class="separator:ad2bfc88ef337357bbab7d967dfabdfdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae0b77a1bd5dce47d151d09b742a16e61"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_ae0b77a1bd5dce47d151d09b742a16e61.html#ae0b77a1bd5dce47d151d09b742a16e61">pism::staggered_to_regular</a> (const IceModelVec2CellType &amp;cell_type, const IceModelVec2Stag &amp;input, bool include_floating_ice, IceModelVec2S &amp;result)</td></tr>
 <tr class="separator:ae0b77a1bd5dce47d151d09b742a16e61"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a725069e6b273d257d8a824cdf39038e9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_a725069e6b273d257d8a824cdf39038e9.html#a725069e6b273d257d8a824cdf39038e9">pism::staggered_to_regular</a> (const IceModelVec2CellType &amp;cell_type, const IceModelVec2Stag &amp;input, bool include_floating_ice, IceModelVec2V &amp;result)</td></tr>

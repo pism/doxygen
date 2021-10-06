@@ -20,9 +20,9 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="classpism_1_1IceModelVec2.html" target="_top" xlink:title=" ">
+<g id="a_node2"><a xlink:href="classpism_1_1IceModelVec3.html" target="_top" xlink:title="A virtual class collecting methods common to ice and bedrock 3D fields.">
 <polygon fill="none" stroke="black" points="11,-56.5 11,-75.5 125,-75.5 125,-56.5 11,-56.5"/>
-<text text-anchor="middle" x="68" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00">pism::IceModelVec2</text>
+<text text-anchor="middle" x="68" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00">pism::IceModelVec3</text>
 </a>
 </g>
 </g>

@@ -74,7 +74,8 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#namespaces">Namespaces</a>  </div>
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">iceModelVec2.cc File Reference</div>  </div>
 </div><!--header-->
@@ -83,8 +84,6 @@ $(function() {
 <code>#include &lt;cstdlib&gt;</code><br />
 <code>#include &lt;cassert&gt;</code><br />
 <code>#include &lt;memory&gt;</code><br />
-<code>#include &lt;petscdraw.h&gt;</code><br />
-<code>#include &lt;petscdmda.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="iceModelVec_8hh_source.html">iceModelVec.hh</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="iceModelVec__helpers_8hh_source.html">iceModelVec_helpers.hh</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="IceModelVec2V_8hh_source.html">IceModelVec2V.hh</a>&quot;</code><br />
@@ -98,7 +97,6 @@ $(function() {
 <code>#include &quot;pism/util/Logger.hh&quot;</code><br />
 <code>#include &quot;pism/util/Context.hh&quot;</code><br />
 <code>#include &quot;pism/util/VariableMetadata.hh&quot;</code><br />
-<code>#include &quot;pism/util/petscwrappers/Viewer.hh&quot;</code><br />
 </div>
 <p><a href="iceModelVec2_8cc_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -106,6 +104,45 @@ $(function() {
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacepism"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism.html">pism</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a930ee083f87c6fa99908149d7c11cfc1"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; IceModelVec2S &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_a930ee083f87c6fa99908149d7c11cfc1.html#a930ee083f87c6fa99908149d7c11cfc1">pism::duplicate</a> (const IceModelVec2S &amp;source)</td></tr>
+<tr class="separator:a930ee083f87c6fa99908149d7c11cfc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34a6d60c32c159f1c0beed141454b52d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_a34a6d60c32c159f1c0beed141454b52d.html#a34a6d60c32c159f1c0beed141454b52d">pism::compute_magnitude</a> (const IceModelVec2S &amp;v_x, const IceModelVec2S &amp;v_y, IceModelVec2S &amp;result)</td></tr>
+<tr class="memdesc:a34a6d60c32c159f1c0beed141454b52d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets an <a class="el" href="classpism_1_1IceModelVec2.html" title="A storage vector combining related fields in a struct.">IceModelVec2</a> to the magnitude of a 2<a class="el" href="classD.html">D</a> vector field with components <code>v_x</code> and <code>v_y</code>.  <a href="namespacepism_a34a6d60c32c159f1c0beed141454b52d.html#a34a6d60c32c159f1c0beed141454b52d">More...</a><br /></td></tr>
+<tr class="separator:a34a6d60c32c159f1c0beed141454b52d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab171121b67aca828b253552b3152791d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_ab171121b67aca828b253552b3152791d.html#ab171121b67aca828b253552b3152791d">pism::compute_magnitude</a> (const IceModelVec2V &amp;input, IceModelVec2S &amp;result)</td></tr>
+<tr class="separator:ab171121b67aca828b253552b3152791d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a025bd18a9f04e4dba81de77f40343e67"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_a025bd18a9f04e4dba81de77f40343e67.html#a025bd18a9f04e4dba81de77f40343e67">pism::apply_mask</a> (const IceModelVec2S &amp;M, double fill, IceModelVec2S &amp;result)</td></tr>
+<tr class="memdesc:a025bd18a9f04e4dba81de77f40343e67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Masks out all the areas where \( M \le 0 \) by setting them to <code>fill</code>.  <a href="namespacepism_a025bd18a9f04e4dba81de77f40343e67.html#a025bd18a9f04e4dba81de77f40343e67">More...</a><br /></td></tr>
+<tr class="separator:a025bd18a9f04e4dba81de77f40343e67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a130a365f5d4f1dc58da38725143c2ccf"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_a130a365f5d4f1dc58da38725143c2ccf.html#a130a365f5d4f1dc58da38725143c2ccf">pism::diff_x</a> (const IceModelVec2S &amp;array, int i, int j)</td></tr>
+<tr class="memdesc:a130a365f5d4f1dc58da38725143c2ccf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the x-derivative at i,j approximated using centered finite differences.  <a href="namespacepism_a130a365f5d4f1dc58da38725143c2ccf.html#a130a365f5d4f1dc58da38725143c2ccf">More...</a><br /></td></tr>
+<tr class="separator:a130a365f5d4f1dc58da38725143c2ccf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb590cbad313e4ee604b60391772c9d8"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_adb590cbad313e4ee604b60391772c9d8.html#adb590cbad313e4ee604b60391772c9d8">pism::diff_y</a> (const IceModelVec2S &amp;array, int i, int j)</td></tr>
+<tr class="memdesc:adb590cbad313e4ee604b60391772c9d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the y-derivative at i,j approximated using centered finite differences.  <a href="namespacepism_adb590cbad313e4ee604b60391772c9d8.html#adb590cbad313e4ee604b60391772c9d8">More...</a><br /></td></tr>
+<tr class="separator:adb590cbad313e4ee604b60391772c9d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d60416f8b8b52bc9c4d153e7dcd764b"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_a4d60416f8b8b52bc9c4d153e7dcd764b.html#a4d60416f8b8b52bc9c4d153e7dcd764b">pism::diff_x_p</a> (const IceModelVec2S &amp;array, int i, int j)</td></tr>
+<tr class="memdesc:a4d60416f8b8b52bc9c4d153e7dcd764b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the x-derivative at i,j approximated using centered finite differences. Respects grid periodicity and uses one-sided FD at grid edges if necessary.  <a href="namespacepism_a4d60416f8b8b52bc9c4d153e7dcd764b.html#a4d60416f8b8b52bc9c4d153e7dcd764b">More...</a><br /></td></tr>
+<tr class="separator:a4d60416f8b8b52bc9c4d153e7dcd764b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3134c52a508b4f36e671ada23c16294"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_ac3134c52a508b4f36e671ada23c16294.html#ac3134c52a508b4f36e671ada23c16294">pism::diff_y_p</a> (const IceModelVec2S &amp;array, int i, int j)</td></tr>
+<tr class="memdesc:ac3134c52a508b4f36e671ada23c16294"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the y-derivative at i,j approximated using centered finite differences. Respects grid periodicity and uses one-sided FD at grid edges if necessary.  <a href="namespacepism_ac3134c52a508b4f36e671ada23c16294.html#ac3134c52a508b4f36e671ada23c16294">More...</a><br /></td></tr>
+<tr class="separator:ac3134c52a508b4f36e671ada23c16294"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb2c177460d5ddea2a9638c0f4aabba6"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_afb2c177460d5ddea2a9638c0f4aabba6.html#afb2c177460d5ddea2a9638c0f4aabba6">pism::sum</a> (const IceModelVec2S &amp;input)</td></tr>
+<tr class="memdesc:afb2c177460d5ddea2a9638c0f4aabba6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sums up all the values in an <a class="el" href="classpism_1_1IceModelVec2S.html">IceModelVec2S</a> object. Ignores ghosts.  <a href="namespacepism_afb2c177460d5ddea2a9638c0f4aabba6.html#afb2c177460d5ddea2a9638c0f4aabba6">More...</a><br /></td></tr>
+<tr class="separator:afb2c177460d5ddea2a9638c0f4aabba6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c38bf61f42eeb099d3356ab93fefb5b"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_a1c38bf61f42eeb099d3356ab93fefb5b.html#a1c38bf61f42eeb099d3356ab93fefb5b">pism::max</a> (const IceModelVec2S &amp;input)</td></tr>
+<tr class="memdesc:a1c38bf61f42eeb099d3356ab93fefb5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds maximum over all the values in an <a class="el" href="classpism_1_1IceModelVec2S.html">IceModelVec2S</a> object. Ignores ghosts.  <a href="namespacepism_a1c38bf61f42eeb099d3356ab93fefb5b.html#a1c38bf61f42eeb099d3356ab93fefb5b">More...</a><br /></td></tr>
+<tr class="separator:a1c38bf61f42eeb099d3356ab93fefb5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d57d54c5ac86d5a366a02f0d815e742"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_a5d57d54c5ac86d5a366a02f0d815e742.html#a5d57d54c5ac86d5a366a02f0d815e742">pism::absmax</a> (const IceModelVec2S &amp;input)</td></tr>
+<tr class="memdesc:a5d57d54c5ac86d5a366a02f0d815e742"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds maximum over all the absolute values in an <a class="el" href="classpism_1_1IceModelVec2S.html">IceModelVec2S</a> object. Ignores ghosts.  <a href="namespacepism_a5d57d54c5ac86d5a366a02f0d815e742.html#a5d57d54c5ac86d5a366a02f0d815e742">More...</a><br /></td></tr>
+<tr class="separator:a5d57d54c5ac86d5a366a02f0d815e742"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f181807bb07f129ee1ed1bc0508b7ee"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_a9f181807bb07f129ee1ed1bc0508b7ee.html#a9f181807bb07f129ee1ed1bc0508b7ee">pism::min</a> (const IceModelVec2S &amp;input)</td></tr>
+<tr class="memdesc:a9f181807bb07f129ee1ed1bc0508b7ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds minimum over all the values in an <a class="el" href="classpism_1_1IceModelVec2S.html">IceModelVec2S</a> object. Ignores ghosts.  <a href="namespacepism_a9f181807bb07f129ee1ed1bc0508b7ee.html#a9f181807bb07f129ee1ed1bc0508b7ee">More...</a><br /></td></tr>
+<tr class="separator:a9f181807bb07f129ee1ed1bc0508b7ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab06380586a685347209b2d5ae8e58997"><td class="memItemLeft" align="right" valign="top">std::array&lt; double, 2 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_ab06380586a685347209b2d5ae8e58997.html#ab06380586a685347209b2d5ae8e58997">pism::absmax</a> (const IceModelVec2Stag &amp;input)</td></tr>
+<tr class="separator:ab06380586a685347209b2d5ae8e58997"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->
