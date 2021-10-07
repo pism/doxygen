@@ -178,13 +178,13 @@ $(function() {
 <ol type="1">
 <li>computes <code>Wtill_new</code> instead of updating <code>Wtill</code> in place;</li>
 <li>uses time steps determined by the rest of the <a class="el" href="classpism_1_1hydrology_1_1Routing.html" title="A subglacial hydrology model which assumes water pressure equals overburden pressure.">hydrology::Routing</a> model;</li>
-<li>does not check mask because the <a class="el" href="classpism_1_1hydrology_1_1Hydrology_a2eaa079a9d54f8a65780b7d982d90e6d.html#a2eaa079a9d54f8a65780b7d982d90e6d" title="Correct the new water thickness based on boundary requirements.">enforce_bounds()</a> call addresses that.</li>
+<li>does not check mask because the <a class="el" href="classpism_1_1hydrology_1_1Hydrology_af1fccc516819331d5386a47a3367fc53.html#af1fccc516819331d5386a47a3367fc53" title="Correct the new water thickness based on boundary requirements.">enforce_bounds()</a> call addresses that.</li>
 </ol>
 <p>Otherwise this is the same physical model with the same configurable parameters. </p>
 
 <p class="definition">Definition at line <a class="el" href="Routing_8cc_source.html#l00751">751</a> of file <a class="el" href="Routing_8cc_source.html">Routing.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="ssafd__code_8cc_source.html#l00044">C</a>, <a class="el" href="pism__utilities_8hh_source.html#l00102">pism::clip()</a>, <a class="el" href="Component_8hh_source.html#l00138">pism::Component::m_config</a>, <a class="el" href="Component_8hh_source.html#l00136">pism::Component::m_grid</a>, <a class="el" href="IceGrid_8hh_source.html#l00381">pism::PointsWithGhosts::next()</a>, and <a class="el" href="Hydrology_8cc_source.html#l00530">pism::hydrology::Hydrology::surface_input_rate()</a>.</p>
+<p class="reference">References <a class="el" href="ssafd__code_8cc_source.html#l00044">C</a>, <a class="el" href="pism__utilities_8hh_source.html#l00102">pism::clip()</a>, <a class="el" href="Component_8hh_source.html#l00138">pism::Component::m_config</a>, <a class="el" href="Component_8hh_source.html#l00136">pism::Component::m_grid</a>, <a class="el" href="IceGrid_8hh_source.html#l00381">pism::PointsWithGhosts::next()</a>, and <a class="el" href="Hydrology_8cc_source.html#l00526">pism::hydrology::Hydrology::surface_input_rate()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="Distributed_8cc_source.html#l00312">pism::hydrology::Distributed::update_impl()</a>, and <a class="el" href="Routing_8cc_source.html#l00856">update_impl()</a>.</p>
 
