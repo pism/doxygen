@@ -136,72 +136,68 @@ $(function() {
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                       <span class="stringliteral">&quot;K&quot;</span>, <span class="stringliteral">&quot;&quot;</span>);</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;}</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;StuffAsAnomaly::~StuffAsAnomaly() {</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="comment">// empty</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;}</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keywordtype">void</span> StuffAsAnomaly::init_impl(<span class="keyword">const</span> Geometry &amp;geometry) {</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keywordflow">if</span> (m_input_model != NULL) {</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    m_input_model-&gt;init(geometry);</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  }</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  InputOptions opts = <a class="code" href="namespacepism_a44fca05de5c3d0cb82c4a2910666b6e2.html#a44fca05de5c3d0cb82c4a2910666b6e2">process_input_options</a>(m_grid-&gt;com, m_config);</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  m_log-&gt;message(2,</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;             <span class="stringliteral">&quot;* Initializing the &#39;turn_into_anomaly&#39; modifier\n&quot;</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;             <span class="stringliteral">&quot;  (it applies climate data as anomalies relative to &#39;ice_surface_temp&#39; and &#39;climatic_mass_balance&#39;\n&quot;</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;             <span class="stringliteral">&quot;  read from &#39;%s&#39;.\n&quot;</span>, opts.filename.c_str());</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <span class="keywordflow">if</span> (opts.type == <a class="code" href="namespacepism_a56e80801555b7f36f4dd28941739654a.html#a56e80801555b7f36f4dd28941739654aa260aa6280296d9fffc338c9ecdaba861">INIT_BOOTSTRAP</a>) {</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    m_mass_flux_input.regrid(opts.filename, <a class="code" href="namespacepism_a819d77fa657009a82298ebdfcb6ac004.html#a819d77fa657009a82298ebdfcb6ac004a84412d7ebc44a6c81384ba9eb118e88a">CRITICAL</a>);</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    m_temp_input.regrid(opts.filename, <a class="code" href="namespacepism_a819d77fa657009a82298ebdfcb6ac004.html#a819d77fa657009a82298ebdfcb6ac004a84412d7ebc44a6c81384ba9eb118e88a">CRITICAL</a>);</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    m_mass_flux_input.read(opts.filename, opts.record);</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    m_temp_input.read(opts.filename, opts.record);</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  }</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;}</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;MaxTimestep StuffAsAnomaly::max_timestep_impl(<span class="keywordtype">double</span> t)<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  (void) t;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <span class="keywordflow">return</span> MaxTimestep(<span class="stringliteral">&quot;surface turn_into_anomaly&quot;</span>);</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;}</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="keywordtype">void</span> StuffAsAnomaly::update_impl(<span class="keyword">const</span> Geometry &amp;geometry, <span class="keywordtype">double</span> t, <span class="keywordtype">double</span> dt) {</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <span class="keywordflow">if</span> (m_input_model != NULL) {</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    m_input_model-&gt;update(geometry, t, dt);</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    m_temp.copy_from(m_input_model-&gt;temperature());</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    m_mass_flux.copy_from(m_input_model-&gt;mass_flux());</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="comment">// if we are at the beginning of the run...</span></div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordflow">if</span> (t &lt; m_grid-&gt;ctx()-&gt;time()-&gt;start() + 1) {</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;      <span class="comment">// this is goofy, but time-steps are usually longer than 1 second, so it should work</span></div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;      m_temp_0.copy_from(m_temp);</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;      m_mass_flux_0.copy_from(m_mass_flux);</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    }</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  }</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  IceModelVec::AccessList list{&amp;m_mass_flux, &amp;m_mass_flux_0, &amp;m_mass_flux_input,</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;      &amp;m_temp, &amp;m_temp_0, &amp;m_temp_input};</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  <span class="keywordflow">for</span> (Points p(*m_grid); p; p.next()) {</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> i = p.i(), j = p.j();</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    m_mass_flux(i, j) = m_mass_flux(i, j) - m_mass_flux_0(i, j) + m_mass_flux_input(i, j);</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    m_temp(i, j)      = m_temp(i, j) - m_temp_0(i, j) + m_temp_input(i, j);</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;  }</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keywordtype">void</span> StuffAsAnomaly::init_impl(<span class="keyword">const</span> Geometry &amp;geometry) {</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="keywordflow">if</span> (m_input_model != NULL) {</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    m_input_model-&gt;init(geometry);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  }</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  InputOptions opts = <a class="code" href="namespacepism_a44fca05de5c3d0cb82c4a2910666b6e2.html#a44fca05de5c3d0cb82c4a2910666b6e2">process_input_options</a>(m_grid-&gt;com, m_config);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  m_log-&gt;message(2,</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;             <span class="stringliteral">&quot;* Initializing the &#39;turn_into_anomaly&#39; modifier\n&quot;</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;             <span class="stringliteral">&quot;  (it applies climate data as anomalies relative to &#39;ice_surface_temp&#39; and &#39;climatic_mass_balance&#39;\n&quot;</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;             <span class="stringliteral">&quot;  read from &#39;%s&#39;.\n&quot;</span>, opts.filename.c_str());</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="keywordflow">if</span> (opts.type == <a class="code" href="namespacepism_a56e80801555b7f36f4dd28941739654a.html#a56e80801555b7f36f4dd28941739654aa260aa6280296d9fffc338c9ecdaba861">INIT_BOOTSTRAP</a>) {</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    m_mass_flux_input.regrid(opts.filename, <a class="code" href="namespacepism_a819d77fa657009a82298ebdfcb6ac004.html#a819d77fa657009a82298ebdfcb6ac004a84412d7ebc44a6c81384ba9eb118e88a">CRITICAL</a>);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    m_temp_input.regrid(opts.filename, <a class="code" href="namespacepism_a819d77fa657009a82298ebdfcb6ac004.html#a819d77fa657009a82298ebdfcb6ac004a84412d7ebc44a6c81384ba9eb118e88a">CRITICAL</a>);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    m_mass_flux_input.read(opts.filename, opts.record);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    m_temp_input.read(opts.filename, opts.record);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  }</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;}</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;MaxTimestep StuffAsAnomaly::max_timestep_impl(<span class="keywordtype">double</span> t)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  (void) t;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <span class="keywordflow">return</span> MaxTimestep(<span class="stringliteral">&quot;surface turn_into_anomaly&quot;</span>);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;}</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="keywordtype">void</span> StuffAsAnomaly::update_impl(<span class="keyword">const</span> Geometry &amp;geometry, <span class="keywordtype">double</span> t, <span class="keywordtype">double</span> dt) {</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <span class="keywordflow">if</span> (m_input_model != NULL) {</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    m_input_model-&gt;update(geometry, t, dt);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    m_temp.copy_from(m_input_model-&gt;temperature());</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    m_mass_flux.copy_from(m_input_model-&gt;mass_flux());</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="comment">// if we are at the beginning of the run...</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordflow">if</span> (t &lt; m_grid-&gt;ctx()-&gt;time()-&gt;start() + 1) {</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;      <span class="comment">// this is goofy, but time-steps are usually longer than 1 second, so it should work</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;      m_temp_0.copy_from(m_temp);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;      m_mass_flux_0.copy_from(m_mass_flux);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    }</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  }</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  IceModelVec::AccessList list{&amp;m_mass_flux, &amp;m_mass_flux_0, &amp;m_mass_flux_input,</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;      &amp;m_temp, &amp;m_temp_0, &amp;m_temp_input};</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  <span class="keywordflow">for</span> (Points p(*m_grid); p; p.next()) {</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> i = p.i(), j = p.j();</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    m_mass_flux(i, j) = m_mass_flux(i, j) - m_mass_flux_0(i, j) + m_mass_flux_input(i, j);</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    m_temp(i, j)      = m_temp(i, j) - m_temp_0(i, j) + m_temp_input(i, j);</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  }</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;}</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="keyword">const</span> IceModelVec2S &amp;StuffAsAnomaly::mass_flux_impl()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;  <span class="keywordflow">return</span> m_mass_flux;</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;}</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="keyword">const</span> IceModelVec2S &amp;StuffAsAnomaly::mass_flux_impl()<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  <span class="keywordflow">return</span> m_mass_flux;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="keyword">const</span> IceModelVec2S &amp;StuffAsAnomaly::temperature_impl()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  <span class="keywordflow">return</span> m_temp;</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;}</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160; </div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="keyword">const</span> IceModelVec2S &amp;StuffAsAnomaly::temperature_impl()<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;  <span class="keywordflow">return</span> m_temp;</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;}</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160; </div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;} <span class="comment">// end of namespace surface</span></div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;} <span class="comment">// end of namespace pism</span></div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;} <span class="comment">// end of namespace surface</span></div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;} <span class="comment">// end of namespace pism</span></div>
 <div class="ttc" id="aclasspism_1_1IceGrid_aa59b13ca1f14efc1555016e2b8a8b1ac_html_aa59b13ca1f14efc1555016e2b8a8b1ac"><div class="ttname"><a href="classpism_1_1IceGrid_aa59b13ca1f14efc1555016e2b8a8b1ac.html#aa59b13ca1f14efc1555016e2b8a8b1ac">pism::IceGrid::ConstPtr</a></div><div class="ttdeci">std::shared_ptr&lt; const IceGrid &gt; ConstPtr</div><div class="ttdef"><b>Definition:</b> <a href="IceGrid_8hh_source.html#l00233">IceGrid.hh:233</a></div></div>
 <div class="ttc" id="anamespacepism_a44fca05de5c3d0cb82c4a2910666b6e2_html_a44fca05de5c3d0cb82c4a2910666b6e2"><div class="ttname"><a href="namespacepism_a44fca05de5c3d0cb82c4a2910666b6e2.html#a44fca05de5c3d0cb82c4a2910666b6e2">pism::process_input_options</a></div><div class="ttdeci">InputOptions process_input_options(MPI_Comm com, Config::ConstPtr config)</div><div class="ttdef"><b>Definition:</b> <a href="Component_8cc_source.html#l00045">Component.cc:45</a></div></div>
 <div class="ttc" id="anamespacepism_a47d754ed3e959d5866b02a1b78b6a5b5_html_a47d754ed3e959d5866b02a1b78b6a5b5"><div class="ttname"><a href="namespacepism_a47d754ed3e959d5866b02a1b78b6a5b5.html#a47d754ed3e959d5866b02a1b78b6a5b5">pism::g</a></div><div class="ttdeci">static const double g</div><div class="ttdef"><b>Definition:</b> <a href="exactTestP_8cc_source.html#l00039">exactTestP.cc:39</a></div></div>
