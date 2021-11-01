@@ -719,6 +719,9 @@ $(function() {
 <li>m_dh_dalphaGlobal
 : <a class="el" href="classpism_1_1inverse_1_1IP__SSATaucTikhonovGNSolver_a7c33e39bbbd410762e168d61c8bcd377.html#a7c33e39bbbd410762e168d61c8bcd377">pism::inverse::IP_SSATaucTikhonovGNSolver</a>
 </li>
+<li>m_dhdt_min
+: <a class="el" href="classpism_1_1OptTillphiYieldStress_aa3bc9450fb11e6424fd6c5943fc52a27.html#aa3bc9450fb11e6424fd6c5943fc52a27">pism::OptTillphiYieldStress</a>
+</li>
 <li>m_diagnostics
 : <a class="el" href="classpism_1_1IceModel_ac9e3a3926dc24247a88e2bc347da201c.html#ac9e3a3926dc24247a88e2bc347da201c">pism::IceModel</a>
 </li>
@@ -806,6 +809,15 @@ $(function() {
 </li>
 <li>m_doubles
 : <a class="el" href="classpism_1_1VariableMetadata_ab2717135e5d9eea05ed4ed587c5e3d96.html#ab2717135e5d9eea05ed4ed587c5e3d96">pism::VariableMetadata</a>
+</li>
+<li>m_dphi_max
+: <a class="el" href="classpism_1_1OptTillphiYieldStress_a4ffd37f2f47adefd52d103ce2bc1acf0.html#a4ffd37f2f47adefd52d103ce2bc1acf0">pism::OptTillphiYieldStress</a>
+</li>
+<li>m_dphi_min
+: <a class="el" href="classpism_1_1OptTillphiYieldStress_a9ae2ad818bf9bfca53298ca2b635e03d.html#a9ae2ad818bf9bfca53298ca2b635e03d">pism::OptTillphiYieldStress</a>
+</li>
+<li>m_dphi_scale
+: <a class="el" href="classpism_1_1OptTillphiYieldStress_ae5162d88bdddceda8ab779fceb4b492b.html#ae5162d88bdddceda8ab779fceb4b492b">pism::OptTillphiYieldStress</a>
 </li>
 <li>m_driving_stress_x
 : <a class="el" href="classpism_1_1stressbalance_1_1SSAFEM_a4c6b90aedc132b59826ce2734d0d08a5.html#a4c6b90aedc132b59826ce2734d0d08a5">pism::stressbalance::SSAFEM</a>
@@ -1232,11 +1244,11 @@ $(function() {
 , <a class="el" href="classpism_1_1stressbalance_1_1BlatterTestvanderVeen_aa1f0bb9ef968c22125c266b78a97e1ad.html#aa1f0bb9ef968c22125c266b78a97e1ad">pism::stressbalance::BlatterTestvanderVeen</a>
 , <a class="el" href="classpism_1_1stressbalance_1_1BlatterTestXZ_ab9c37a8d535f60407d358e31d1a7fb9c.html#ab9c37a8d535f60407d358e31d1a7fb9c">pism::stressbalance::BlatterTestXZ</a>
 </li>
-<li>m_h_stored
-: <a class="el" href="classpism_1_1stressbalance_1_1SSAFD__Regional_a0fc9896b96821439124fe17344befacb.html#a0fc9896b96821439124fe17344befacb">pism::stressbalance::SSAFD_Regional</a>
-</li>
 <li>m_H_stored
 : <a class="el" href="classpism_1_1stressbalance_1_1SSAFD__Regional_adc1b21cc05e9d8af10b7b4a601c9a7f1.html#adc1b21cc05e9d8af10b7b4a601c9a7f1">pism::stressbalance::SSAFD_Regional</a>
+</li>
+<li>m_h_stored
+: <a class="el" href="classpism_1_1stressbalance_1_1SSAFD__Regional_a0fc9896b96821439124fe17344befacb.html#a0fc9896b96821439124fe17344befacb">pism::stressbalance::SSAFD_Regional</a>
 </li>
 <li>m_h_x
 : <a class="el" href="classpism_1_1stressbalance_1_1SIAFD_a716cda93ed26eca82283a7cd91ce810a.html#a716cda93ed26eca82283a7cd91ce810a">pism::stressbalance::SIAFD</a>
@@ -1650,6 +1662,7 @@ $(function() {
 <li>m_mask
 : <a class="el" href="classpism_1_1calving_1_1IcebergRemoverFEM_afd4e6489c2f50af400fa88595c419568.html#afd4e6489c2f50af400fa88595c419568">pism::calving::IcebergRemoverFEM</a>
 , <a class="el" href="classpism_1_1energy_1_1tempSystemCtx_afff3b7b196fc89bf96184692a63c1fed.html#afff3b7b196fc89bf96184692a63c1fed">pism::energy::tempSystemCtx</a>
+, <a class="el" href="classpism_1_1OptTillphiYieldStress_a969d396254ba42aadaff8253e07a70d7.html#a969d396254ba42aadaff8253e07a70d7">pism::OptTillphiYieldStress</a>
 , <a class="el" href="classpism_1_1Poisson_ac4d5dfdf3bee8c411e2ce0deb9fdfd78.html#ac4d5dfdf3bee8c411e2ce0deb9fdfd78">pism::Poisson</a>
 , <a class="el" href="classpism_1_1stressbalance_1_1SSA_af180af006dbf3e09ba85ae6c485f7f7f.html#af180af006dbf3e09ba85ae6c485f7f7f">pism::stressbalance::SSA</a>
 </li>
@@ -1665,6 +1678,7 @@ $(function() {
 , <a class="el" href="classpism_1_1surface_1_1Given_a261e28b391f04b9e0c964cbb7943ca1e.html#a261e28b391f04b9e0c964cbb7943ca1e">pism::surface::Given</a>
 , <a class="el" href="classpism_1_1surface_1_1InitializationHelper_a19dac55de3fab4067bfb50d7e785614d.html#a19dac55de3fab4067bfb50d7e785614d">pism::surface::InitializationHelper</a>
 , <a class="el" href="classpism_1_1surface_1_1ISMIP6_ab4d8a3551df859fffbe21315dca3a016.html#ab4d8a3551df859fffbe21315dca3a016">pism::surface::ISMIP6</a>
+, <a class="el" href="classpism_1_1surface_1_1NoGLRetreat_afeb701561bdebf6892ac1a1455994e0e.html#afeb701561bdebf6892ac1a1455994e0e">pism::surface::NoGLRetreat</a>
 , <a class="el" href="classpism_1_1surface_1_1PIK_aa57addf154b715c69a9a1827e64162f2.html#aa57addf154b715c69a9a1827e64162f2">pism::surface::PIK</a>
 , <a class="el" href="classpism_1_1surface_1_1PSFormulas_a1a30bb5b1ce8980ba2be16c65907c298.html#a1a30bb5b1ce8980ba2be16c65907c298">pism::surface::PSFormulas</a>
 , <a class="el" href="classpism_1_1surface_1_1Simple_a200bba8a05ee0fcd73e093ce81325e1f.html#a200bba8a05ee0fcd73e093ce81325e1f">pism::surface::Simple</a>
@@ -1713,6 +1727,9 @@ $(function() {
 </li>
 <li>m_method
 : <a class="el" href="classpism_1_1surface_1_1LocalMassBalance_ac764dd94a947a6e4da37bcc9d11be416.html#ac764dd94a947a6e4da37bcc9d11be416">pism::surface::LocalMassBalance</a>
+</li>
+<li>m_min_ice_thickness
+: <a class="el" href="classpism_1_1surface_1_1NoGLRetreat_aa4053cd60d48c8b98059ac07311fe945.html#aa4053cd60d48c8b98059ac07311fe945">pism::surface::NoGLRetreat</a>
 </li>
 <li>m_min_thickness
 : <a class="el" href="classpism_1_1stressbalance_1_1SSAStrengthExtension_a9852a3d4e51c4754ceaf297a1194460a.html#a9852a3d4e51c4754ceaf297a1194460a">pism::stressbalance::SSAStrengthExtension</a>
@@ -1930,6 +1947,15 @@ $(function() {
 </li>
 <li>m_period_start
 : <a class="el" href="classpism_1_1ScalarForcing_a949c37f346b6d860d6a378025d79068b.html#a949c37f346b6d860d6a378025d79068b">pism::ScalarForcing</a>
+</li>
+<li>m_phi0_max
+: <a class="el" href="classpism_1_1OptTillphiYieldStress_ac51d7a0bf215cff8711eac60f6272c6b.html#ac51d7a0bf215cff8711eac60f6272c6b">pism::OptTillphiYieldStress</a>
+</li>
+<li>m_phi0_min
+: <a class="el" href="classpism_1_1OptTillphiYieldStress_afac098eee7a9a95e57a482d1c9dd958e.html#afac098eee7a9a95e57a482d1c9dd958e">pism::OptTillphiYieldStress</a>
+</li>
+<li>m_phi_max
+: <a class="el" href="classpism_1_1OptTillphiYieldStress_ad032fb02804d64253515e3135603b2b5.html#ad032fb02804d64253515e3135603b2b5">pism::OptTillphiYieldStress</a>
 </li>
 <li>m_pj
 : <a class="el" href="classpism_1_1Proj_aa87dd9f0d1661f68b74bfd487ad16e11.html#aa87dd9f0d1661f68b74bfd487ad16e11">pism::Proj</a>
@@ -2296,6 +2322,9 @@ $(function() {
 : <a class="el" href="classpism_1_1IceBasalResistancePseudoPlasticLaw_aaebd10306c687370019f9787ef837763.html#aaebd10306c687370019f9787ef837763">pism::IceBasalResistancePseudoPlasticLaw</a>
 , <a class="el" href="classpism_1_1IceBasalResistanceRegularizedLaw_ad7148abe0312b8dcbdbab272c9e5fbbf.html#ad7148abe0312b8dcbdbab272c9e5fbbf">pism::IceBasalResistanceRegularizedLaw</a>
 </li>
+<li>m_smb_adjustment
+: <a class="el" href="classpism_1_1surface_1_1NoGLRetreat_a6d2bc84485a8e491107db27e1b9c1665.html#a6d2bc84485a8e491107db27e1b9c1665">pism::surface::NoGLRetreat</a>
+</li>
 <li>m_smb_exp_factor
 : <a class="el" href="classpism_1_1surface_1_1ElevationChange_af80b1f2021885e7cd631a87b397e2e26.html#af80b1f2021885e7cd631a87b397e2e26">pism::surface::ElevationChange</a>
 </li>
@@ -2493,10 +2522,12 @@ $(function() {
 <li>m_t_eps
 : <a class="el" href="classpism_1_1bed_1_1LingleClark_a1e41140415faefb7c737806628244ceb.html#a1e41140415faefb7c737806628244ceb">pism::bed::LingleClark</a>
 , <a class="el" href="classpism_1_1hydrology_1_1SteadyState_afa1de6329b068259c87ebd17ef090377.html#afa1de6329b068259c87ebd17ef090377">pism::hydrology::SteadyState</a>
+, <a class="el" href="classpism_1_1OptTillphiYieldStress_aea49ae5e7dc8418540c9810f0b036ecf.html#aea49ae5e7dc8418540c9810f0b036ecf">pism::OptTillphiYieldStress</a>
 </li>
 <li>m_t_last
 : <a class="el" href="classpism_1_1bed_1_1LingleClark_a64976155cdb1d2931da0a9105dc604d8.html#a64976155cdb1d2931da0a9105dc604d8">pism::bed::LingleClark</a>
 , <a class="el" href="classpism_1_1hydrology_1_1SteadyState_a30b07f988e6ccd91ab8b9c993ae828e0.html#a30b07f988e6ccd91ab8b9c993ae828e0">pism::hydrology::SteadyState</a>
+, <a class="el" href="classpism_1_1OptTillphiYieldStress_aa358b8746142d5fc5ac9507c74ccfa0a.html#aa358b8746142d5fc5ac9507c74ccfa0a">pism::OptTillphiYieldStress</a>
 </li>
 <li>m_T_max
 : <a class="el" href="classpism_1_1surface_1_1Elevation_a036385840ffd969f33d2ade46ca85429.html#a036385840ffd969f33d2ade46ca85429">pism::surface::Elevation</a>
@@ -2669,6 +2700,7 @@ $(function() {
 <li>m_time_name
 : <a class="el" href="classpism_1_1bed_1_1LingleClark_a3d42ea45571dd3afdef1eb5db619971b.html#a3d42ea45571dd3afdef1eb5db619971b">pism::bed::LingleClark</a>
 , <a class="el" href="classpism_1_1hydrology_1_1SteadyState_a689bd36d580a4d0e70888b4a714119ff.html#a689bd36d580a4d0e70888b4a714119ff">pism::hydrology::SteadyState</a>
+, <a class="el" href="classpism_1_1OptTillphiYieldStress_ae9ae8d85e72c423545968189905d04e7.html#ae9ae8d85e72c423545968189905d04e7">pism::OptTillphiYieldStress</a>
 , <a class="el" href="classpism_1_1TSDiagnostic_a5e355b232c2b3a1786f8c3e6f9404b77.html#a5e355b232c2b3a1786f8c3e6f9404b77">pism::TSDiagnostic</a>
 </li>
 <li>m_time_since_reset
@@ -2738,6 +2770,12 @@ $(function() {
 </li>
 <li>m_topg_last
 : <a class="el" href="classpism_1_1bed_1_1BedDef_a9478da83d53a8752c68ebb5cd3b49e8d.html#a9478da83d53a8752c68ebb5cd3b49e8d">pism::bed::BedDef</a>
+</li>
+<li>m_topg_max
+: <a class="el" href="classpism_1_1OptTillphiYieldStress_a836ac3a34026406f896446d6454f05bb.html#a836ac3a34026406f896446d6454f05bb">pism::OptTillphiYieldStress</a>
+</li>
+<li>m_topg_min
+: <a class="el" href="classpism_1_1OptTillphiYieldStress_a62e36aac576a132f8fe8d49e8766a5b6.html#a62e36aac576a132f8fe8d49e8766a5b6">pism::OptTillphiYieldStress</a>
 </li>
 <li>m_topg_reference
 : <a class="el" href="classpism_1_1bed_1_1Given_acc2c5ec2bfe51a9d4296b67e6769185b.html#acc2c5ec2bfe51a9d4296b67e6769185b">pism::bed::Given</a>
@@ -2845,6 +2883,7 @@ $(function() {
 <li>m_update_interval
 : <a class="el" href="classpism_1_1bed_1_1LingleClark_ad65bc1016f4fb398b4a6c95cd6f1a056.html#ad65bc1016f4fb398b4a6c95cd6f1a056">pism::bed::LingleClark</a>
 , <a class="el" href="classpism_1_1hydrology_1_1SteadyState_a11a355a0d9a213c579551c7c288839e6.html#a11a355a0d9a213c579551c7c288839e6">pism::hydrology::SteadyState</a>
+, <a class="el" href="classpism_1_1OptTillphiYieldStress_a73b2bf6f812ad8c7f8ae7651d9a7f1b9.html#a73b2bf6f812ad8c7f8ae7651d9a7f1b9">pism::OptTillphiYieldStress</a>
 </li>
 <li>m_update_interval_years
 : <a class="el" href="classpism_1_1ocean_1_1Cache_a00d9ad3697961899a60691bf07d109a0.html#a00d9ad3697961899a60691bf07d109a0">pism::ocean::Cache</a>
@@ -2856,8 +2895,14 @@ $(function() {
 <li>m_use_linear_interpolation
 : <a class="el" href="classpism_1_1ColumnInterpolation_aec53946dca8955919ef682e115ec2e13.html#aec53946dca8955919ef682e115ec2e13">pism::ColumnInterpolation</a>
 </li>
+<li>m_usurf_difference
+: <a class="el" href="classpism_1_1OptTillphiYieldStress_ac3f09c6644de0bab9cac6ff901652399.html#ac3f09c6644de0bab9cac6ff901652399">pism::OptTillphiYieldStress</a>
+</li>
 <li>m_usurf_stored
 : <a class="el" href="classpism_1_1IceRegionalModel_aa887a09cffe2d0f56315694539f76ff1.html#aa887a09cffe2d0f56315694539f76ff1">pism::IceRegionalModel</a>
+</li>
+<li>m_usurf_target
+: <a class="el" href="classpism_1_1OptTillphiYieldStress_aabbddfa795edbcc9c2ad73f24e81e04e.html#aabbddfa795edbcc9c2ad73f24e81e04e">pism::OptTillphiYieldStress</a>
 </li>
 <li>m_Uv
 : <a class="el" href="classpism_1_1bed_1_1LingleClarkSerial_acd7121fb6d90ff272b309a76fd329ca6.html#acd7121fb6d90ff272b309a76fd329ca6">pism::bed::LingleClarkSerial</a>
@@ -3231,6 +3276,7 @@ $(function() {
 , <a class="el" href="classpism_1_1surface_1_1Given_ac6fd138fb6aa7429c3d0cba463503e81.html#ac6fd138fb6aa7429c3d0cba463503e81">pism::surface::Given</a>
 , <a class="el" href="classpism_1_1surface_1_1InitializationHelper_a95e9c8f060d389e28cd925d36937d703.html#a95e9c8f060d389e28cd925d36937d703">pism::surface::InitializationHelper</a>
 , <a class="el" href="classpism_1_1surface_1_1ISMIP6_a1d47e2b85e764c3e50f3cf28b10a8072.html#a1d47e2b85e764c3e50f3cf28b10a8072">pism::surface::ISMIP6</a>
+, <a class="el" href="classpism_1_1surface_1_1NoGLRetreat_a88998b286672b3a5bd704f50a8ebf1ef.html#a88998b286672b3a5bd704f50a8ebf1ef">pism::surface::NoGLRetreat</a>
 , <a class="el" href="classpism_1_1surface_1_1PIK_a17fc31275a1d1dd3f634b725f0219cd0.html#a17fc31275a1d1dd3f634b725f0219cd0">pism::surface::PIK</a>
 , <a class="el" href="classpism_1_1surface_1_1PSFormulas_a87072f0784e9f8555f961a70963c0bb2.html#a87072f0784e9f8555f961a70963c0bb2">pism::surface::PSFormulas</a>
 , <a class="el" href="classpism_1_1surface_1_1Simple_a3fb1886d2f42154953811816830853f0.html#a3fb1886d2f42154953811816830853f0">pism::surface::Simple</a>
@@ -3250,7 +3296,7 @@ $(function() {
 : <a class="el" href="structpism_1_1icebin_1_1MassEnthVec2S_aaf7f2d230954abbb51e9ac5a0ecd24ff.html#aaf7f2d230954abbb51e9ac5a0ecd24ff">pism::icebin::MassEnthVec2S</a>
 </li>
 <li>Mat()
-: <a class="el" href="classpism_1_1petsc_1_1Mat_a26fe304110401d41d19d96f612dbc225.html#a26fe304110401d41d19d96f612dbc225">pism::petsc::Mat</a>
+: <a class="el" href="classpism_1_1petsc_1_1Mat_a4034972a7e884057e160e9055c487da4.html#a4034972a7e884057e160e9055c487da4">pism::petsc::Mat</a>
 </li>
 <li>max_diffusivity()
 : <a class="el" href="classpism_1_1stressbalance_1_1SSB__Modifier_ad802104c3003df6a15131f38e2be204f.html#ad802104c3003df6a15131f38e2be204f">pism::stressbalance::SSB_Modifier</a>
@@ -3313,6 +3359,7 @@ $(function() {
 , <a class="el" href="classpism_1_1ocean_1_1Pico_a66785728fa968676f668b608e689dc5d.html#a66785728fa968676f668b608e689dc5d">pism::ocean::Pico</a>
 , <a class="el" href="classpism_1_1ocean_1_1PIK_a119a1d68a58978418044b8740b3fb6f5.html#a119a1d68a58978418044b8740b3fb6f5">pism::ocean::PIK</a>
 , <a class="el" href="classpism_1_1ocean_1_1sea__level_1_1SeaLevel_ac4b8af2b46edb2c5eb520c8cac368b56.html#ac4b8af2b46edb2c5eb520c8cac368b56">pism::ocean::sea_level::SeaLevel</a>
+, <a class="el" href="classpism_1_1OptTillphiYieldStress_a0afb6da9390ce084f9d611c40a1515cf.html#a0afb6da9390ce084f9d611c40a1515cf">pism::OptTillphiYieldStress</a>
 , <a class="el" href="classpism_1_1PrescribedRetreat_a87ffc8db6577824f9eda9486be369556.html#a87ffc8db6577824f9eda9486be369556">pism::PrescribedRetreat</a>
 , <a class="el" href="classpism_1_1RegionalYieldStress_a6d31d90f08ca2e8d87fd9bcc625bd430.html#a6d31d90f08ca2e8d87fd9bcc625bd430">pism::RegionalYieldStress</a>
 , <a class="el" href="classpism_1_1surface_1_1Cache_a50a68670e1bf86827e299ce611c88ee0.html#a50a68670e1bf86827e299ce611c88ee0">pism::surface::Cache</a>
@@ -3400,6 +3447,7 @@ $(function() {
 , <a class="el" href="classpism_1_1surface_1_1Given_aea4c461cff3839b09d89e6e2a99c7948.html#aea4c461cff3839b09d89e6e2a99c7948">pism::surface::Given</a>
 , <a class="el" href="classpism_1_1surface_1_1InitializationHelper_a6104c81b27e06f612432f3126917443f.html#a6104c81b27e06f612432f3126917443f">pism::surface::InitializationHelper</a>
 , <a class="el" href="classpism_1_1surface_1_1ISMIP6_ab4b6a1c950884407d5fa5fe287041fa7.html#ab4b6a1c950884407d5fa5fe287041fa7">pism::surface::ISMIP6</a>
+, <a class="el" href="classpism_1_1surface_1_1NoGLRetreat_aa191f3bdbe07ef8210fd2bb266a1f4fc.html#aa191f3bdbe07ef8210fd2bb266a1f4fc">pism::surface::NoGLRetreat</a>
 , <a class="el" href="classpism_1_1surface_1_1PIK_a2862c717fb24845ee3611eb431e55563.html#a2862c717fb24845ee3611eb431e55563">pism::surface::PIK</a>
 , <a class="el" href="classpism_1_1surface_1_1PSFormulas_ac90609622372350800416e2b8bb3ab9c.html#ac90609622372350800416e2b8bb3ab9c">pism::surface::PSFormulas</a>
 , <a class="el" href="classpism_1_1surface_1_1Simple_aa5bad298be909f901c49b056c47eaf8e.html#aa5bad298be909f901c49b056c47eaf8e">pism::surface::Simple</a>
@@ -3470,6 +3518,7 @@ $(function() {
 , <a class="el" href="classpism_1_1hydrology_1_1diagnostics_1_1TotalInputRate_a81d795bf36b8be4d97c3b99999adb778.html#a81d795bf36b8be4d97c3b99999adb778">pism::hydrology::diagnostics::TotalInputRate</a>
 , <a class="el" href="classpism_1_1hydrology_1_1diagnostics_1_1WaterInputFlux_a9149d7d6545a1d135b271f2acbe5e805.html#a9149d7d6545a1d135b271f2acbe5e805">pism::hydrology::diagnostics::WaterInputFlux</a>
 , <a class="el" href="classpism_1_1surface_1_1diagnostics_1_1Accumulation_acf51fed5317220b4a489317bf491fb70.html#acf51fed5317220b4a489317bf491fb70">pism::surface::diagnostics::Accumulation</a>
+, <a class="el" href="classpism_1_1surface_1_1diagnostics_1_1SMBAdjustment_a60cacc1db965959f3fc0a7238bf6a32d.html#a60cacc1db965959f3fc0a7238bf6a32d">pism::surface::diagnostics::SMBAdjustment</a>
 , <a class="el" href="classpism_1_1surface_1_1diagnostics_1_1SurfaceMelt_a39ebb98a77fb43a30c9be5fff69b8e5e.html#a39ebb98a77fb43a30c9be5fff69b8e5e">pism::surface::diagnostics::SurfaceMelt</a>
 , <a class="el" href="classpism_1_1surface_1_1diagnostics_1_1SurfaceRunoff_aa80a24911cfeddd4e9824392e75d43a9.html#aa80a24911cfeddd4e9824392e75d43a9">pism::surface::diagnostics::SurfaceRunoff</a>
 </li>

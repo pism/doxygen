@@ -258,33 +258,33 @@
 <path fill="none" stroke="midnightblue" d="M51.17,-2872.76C54.92,-2828.7 70.54,-2722.13 135,-2670.5 198.28,-2619.81 445.98,-2626.17 553.14,-2631.52"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="47.66,-2872.77 50.42,-2883 54.64,-2873.28 47.66,-2872.77"/>
 </g>
-<!-- Node134 -->
+<!-- Node136 -->
 <g id="node98" class="node">
-<title>Node134</title>
+<title>Node136</title>
 <g id="a_node98"><a xlink:href="classpism_1_1Diag.html" target="_top" xlink:title="A template derived from Diagnostic, adding a &quot;Model&quot;.">
 <polygon fill="none" stroke="red" points="177.5,-2917 177.5,-2936 299.5,-2936 299.5,-2917 177.5,-2917"/>
 <text text-anchor="middle" x="238.5" y="-2924" font-family="Helvetica,sans-Serif" font-size="10.00">pism::Diag&lt; Model &gt;</text>
 </a>
 </g>
 </g>
-<!-- Node1&#45;&gt;Node134 -->
+<!-- Node1&#45;&gt;Node136 -->
 <g id="edge97" class="edge">
-<title>Node1&#45;&gt;Node134</title>
+<title>Node1&#45;&gt;Node136</title>
 <path fill="none" stroke="midnightblue" d="M108.2,-2903.05C132.78,-2907.51 161.18,-2912.66 185.1,-2917"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="108.75,-2899.6 98.29,-2901.26 107.5,-2906.48 108.75,-2899.6"/>
 </g>
-<!-- Node135 -->
+<!-- Node137 -->
 <g id="node99" class="node">
-<title>Node135</title>
+<title>Node137</title>
 <g id="a_node99"><a xlink:href="classpism_1_1DiagWithDedicatedStorage.html" target="_top" xlink:title=" ">
 <polygon fill="none" stroke="black" points="135,-2420 135,-2439 342,-2439 342,-2420 135,-2420"/>
 <text text-anchor="middle" x="238.5" y="-2427" font-family="Helvetica,sans-Serif" font-size="10.00">pism::DiagWithDedicatedStorage&lt; T &gt;</text>
 </a>
 </g>
 </g>
-<!-- Node1&#45;&gt;Node135 -->
+<!-- Node1&#45;&gt;Node137 -->
 <g id="edge114" class="edge">
-<title>Node1&#45;&gt;Node135</title>
+<title>Node1&#45;&gt;Node137</title>
 <path fill="none" stroke="midnightblue" d="M50.07,-2872.74C50.78,-2795.45 57.39,-2514.86 116,-2453.5 121.72,-2447.51 128.46,-2442.79 135.8,-2439.07"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="46.57,-2872.96 50,-2882.98 53.57,-2873 46.57,-2872.96"/>
 </g>
@@ -1564,114 +1564,114 @@
 <path fill="none" stroke="midnightblue" d="M606.67,-686.38C612.58,-743.88 637.69,-911.86 734,-999.5 742.62,-1007.34 753.52,-1012.75 764.7,-1016.46"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="610.13,-685.76 605.7,-676.13 603.16,-686.41 610.13,-685.76"/>
 </g>
-<!-- Node134&#45;&gt;Node2 -->
+<!-- Node136&#45;&gt;Node2 -->
 <g id="edge98" class="edge">
-<title>Node134&#45;&gt;Node2</title>
+<title>Node136&#45;&gt;Node2</title>
 <path fill="none" stroke="orange" stroke-dasharray="5,2" d="M246.51,-2945.86C262.14,-2987.15 302.97,-3085.55 360,-3152.5 408.13,-3209 442.95,-3198.69 493,-3253.5 544.02,-3309.38 585.36,-3392.01 598.56,-3419.91"/>
 <polygon fill="orange" stroke="orange" points="249.77,-2944.59 243.01,-2936.43 243.21,-2947.03 249.77,-2944.59"/>
 <text text-anchor="middle" x="426.5" y="-3256.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &lt; SurfaceModel &gt;</text>
 </g>
-<!-- Node134&#45;&gt;Node8 -->
+<!-- Node136&#45;&gt;Node8 -->
 <g id="edge99" class="edge">
-<title>Node134&#45;&gt;Node8</title>
+<title>Node136&#45;&gt;Node8</title>
 <path fill="none" stroke="orange" stroke-dasharray="5,2" d="M309.87,-2934.69C326.29,-2936.28 343.74,-2937.69 360,-2938.5 419.04,-2941.43 433.95,-2941.18 493,-2938.5 498.84,-2938.23 504.85,-2937.89 510.91,-2937.49"/>
 <polygon fill="orange" stroke="orange" points="310.08,-2931.2 299.79,-2933.69 309.39,-2938.16 310.08,-2931.2"/>
 <text text-anchor="middle" x="426.5" y="-2943.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &lt; GeometryEvolution &gt;</text>
 </g>
-<!-- Node134&#45;&gt;Node11 -->
+<!-- Node136&#45;&gt;Node11 -->
 <g id="edge100" class="edge">
-<title>Node134&#45;&gt;Node11</title>
+<title>Node136&#45;&gt;Node11</title>
 <path fill="none" stroke="orange" stroke-dasharray="5,2" d="M239.28,-2946.46C239.62,-3013.47 249.5,-3233.18 360,-3359.5 402.34,-3407.91 451.14,-3367.68 493,-3416.5 513.91,-3440.89 487.75,-3464.34 511,-3486.5 516.43,-3491.68 522.88,-3495.61 529.81,-3498.57"/>
 <polygon fill="orange" stroke="orange" points="242.78,-2946.11 239.31,-2936.1 235.78,-2946.09 242.78,-2946.11"/>
 <text text-anchor="middle" x="426.5" y="-3419.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &lt; YearlyCycle &gt;</text>
 </g>
-<!-- Node134&#45;&gt;Node13 -->
+<!-- Node136&#45;&gt;Node13 -->
 <g id="edge101" class="edge">
-<title>Node134&#45;&gt;Node13</title>
+<title>Node136&#45;&gt;Node13</title>
 <path fill="none" stroke="orange" stroke-dasharray="5,2" d="M238.99,-2946.58C238.16,-3019.09 244.13,-3271.3 360,-3427.5 400.83,-3482.54 439.35,-3462.87 493,-3505.5 502.11,-3512.74 500.84,-3518.84 511,-3524.5 518.69,-3528.78 527.24,-3532.11 535.93,-3534.68"/>
 <polygon fill="orange" stroke="orange" points="242.5,-2946.25 239.17,-2936.19 235.5,-2946.13 242.5,-2946.25"/>
 <text text-anchor="middle" x="426.5" y="-3508.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &lt; SeaLevel &gt;</text>
 </g>
-<!-- Node134&#45;&gt;Node15 -->
+<!-- Node136&#45;&gt;Node15 -->
 <g id="edge102" class="edge">
-<title>Node134&#45;&gt;Node15</title>
+<title>Node136&#45;&gt;Node15</title>
 <path fill="none" stroke="orange" stroke-dasharray="5,2" d="M241.96,-2946.14C249.78,-3001.74 278.6,-3162.8 360,-3264.5 403.69,-3319.08 453.94,-3290.51 493,-3348.5 518.23,-3385.95 479.48,-3416.16 511,-3448.5 514.64,-3452.24 518.81,-3455.34 523.32,-3457.9"/>
 <polygon fill="orange" stroke="orange" points="245.42,-2945.65 240.63,-2936.2 238.48,-2946.58 245.42,-2945.65"/>
 <text text-anchor="middle" x="426.5" y="-3351.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &lt; AtmosphereModel &gt;</text>
 </g>
-<!-- Node134&#45;&gt;Node19 -->
+<!-- Node136&#45;&gt;Node19 -->
 <g id="edge103" class="edge">
-<title>Node134&#45;&gt;Node19</title>
+<title>Node136&#45;&gt;Node19</title>
 <path fill="none" stroke="orange" stroke-dasharray="5,2" d="M285.88,-2938.5C308.2,-2944.06 335.4,-2950.52 360,-2955.5 419.61,-2967.56 488,-2978.57 537.01,-2985.97"/>
 <polygon fill="orange" stroke="orange" points="286.55,-2935.06 276,-2936.02 284.84,-2941.85 286.55,-2935.06"/>
 <text text-anchor="middle" x="426.5" y="-2981.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &lt; OceanModel &gt;</text>
 </g>
-<!-- Node134&#45;&gt;Node22 -->
+<!-- Node136&#45;&gt;Node22 -->
 <g id="edge104" class="edge">
-<title>Node134&#45;&gt;Node22</title>
+<title>Node136&#45;&gt;Node22</title>
 <path fill="none" stroke="orange" stroke-dasharray="5,2" d="M263.38,-2941.38C287.25,-2955.87 325.3,-2977.92 360,-2993.5 432.98,-3026.27 522.71,-3054.77 570.08,-3068.95"/>
 <polygon fill="orange" stroke="orange" points="265.02,-2938.28 254.66,-2936.04 261.36,-2944.25 265.02,-2938.28"/>
 <text text-anchor="middle" x="426.5" y="-3046.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &lt; IceRegionalModel &gt;</text>
 </g>
-<!-- Node134&#45;&gt;Node26 -->
+<!-- Node136&#45;&gt;Node26 -->
 <g id="edge105" class="edge">
-<title>Node134&#45;&gt;Node26</title>
+<title>Node136&#45;&gt;Node26</title>
 <path fill="none" stroke="orange" stroke-dasharray="5,2" d="M253.18,-2944.39C274.23,-2971.21 316.69,-3022.5 360,-3058.5 362.45,-3060.54 517.55,-3156.61 578.65,-3194.43"/>
 <polygon fill="orange" stroke="orange" points="255.79,-2942.05 246.89,-2936.29 250.26,-2946.34 255.79,-2942.05"/>
 <text text-anchor="middle" x="426.5" y="-3141.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &lt; ShallowStressBalance &gt;</text>
 </g>
-<!-- Node134&#45;&gt;Node32 -->
+<!-- Node136&#45;&gt;Node32 -->
 <g id="edge106" class="edge">
-<title>Node134&#45;&gt;Node32</title>
+<title>Node136&#45;&gt;Node32</title>
 <path fill="none" stroke="orange" stroke-dasharray="5,2" d="M240.92,-2906.71C246.04,-2850.15 268.45,-2686.2 360,-2597.5 404.72,-2554.18 455.37,-2603.1 493,-2553.5 518.88,-2519.38 507.17,-2211.15 511,-2168.5 536.11,-1888.85 591.27,-1548.55 601.39,-1487.21"/>
 <polygon fill="orange" stroke="orange" points="237.42,-2906.55 240.09,-2916.81 244.4,-2907.13 237.42,-2906.55"/>
 <text text-anchor="middle" x="426.5" y="-2600.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &lt; SIAFD &gt;</text>
 </g>
-<!-- Node134&#45;&gt;Node40 -->
+<!-- Node136&#45;&gt;Node40 -->
 <g id="edge107" class="edge">
-<title>Node134&#45;&gt;Node40</title>
+<title>Node136&#45;&gt;Node40</title>
 <path fill="none" stroke="orange" stroke-dasharray="5,2" d="M256.99,-2909.88C279.31,-2889.43 319.89,-2854.81 360,-2833.5 414.98,-2804.29 434.93,-2811.95 493,-2789.5 501.17,-2786.34 502.99,-2785.02 511,-2781.5 534.76,-2771.06 562.02,-2759.22 580.67,-2751.15"/>
 <polygon fill="orange" stroke="orange" points="254.56,-2907.35 249.62,-2916.72 259.33,-2912.48 254.56,-2907.35"/>
 <text text-anchor="middle" x="426.5" y="-2836.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &lt; BedThermalUnit &gt;</text>
 </g>
-<!-- Node134&#45;&gt;Node42 -->
+<!-- Node136&#45;&gt;Node42 -->
 <g id="edge108" class="edge">
-<title>Node134&#45;&gt;Node42</title>
+<title>Node136&#45;&gt;Node42</title>
 <path fill="none" stroke="orange" stroke-dasharray="5,2" d="M282.04,-2914.05C343.47,-2895.95 453.94,-2862.98 493,-2848.5 525.04,-2836.62 561.17,-2820.26 583.01,-2810.04"/>
 <polygon fill="orange" stroke="orange" points="280.86,-2910.74 272.25,-2916.92 282.84,-2917.46 280.86,-2910.74"/>
 <text text-anchor="middle" x="426.5" y="-2891.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &lt; SSA &gt;</text>
 </g>
-<!-- Node134&#45;&gt;Node45 -->
+<!-- Node136&#45;&gt;Node45 -->
 <g id="edge109" class="edge">
-<title>Node134&#45;&gt;Node45</title>
+<title>Node136&#45;&gt;Node45</title>
 <path fill="none" stroke="orange" stroke-dasharray="5,2" d="M242.71,-2906.71C251.76,-2857.21 282.12,-2726.94 360,-2656.5 406.18,-2614.74 450.46,-2657.96 493,-2612.5 553.15,-2548.23 594.31,-2253.9 601.78,-2197.03"/>
 <polygon fill="orange" stroke="orange" points="239.23,-2906.29 240.97,-2916.74 246.12,-2907.49 239.23,-2906.29"/>
 <text text-anchor="middle" x="426.5" y="-2659.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &lt; StressBalance &gt;</text>
 </g>
-<!-- Node134&#45;&gt;Node68 -->
+<!-- Node136&#45;&gt;Node68 -->
 <g id="edge110" class="edge">
-<title>Node134&#45;&gt;Node68</title>
+<title>Node136&#45;&gt;Node68</title>
 <path fill="none" stroke="orange" stroke-dasharray="5,2" d="M240.05,-2906.6C242.82,-2844.2 259.52,-2649.99 360,-2538.5 403.06,-2490.73 457.13,-2534.88 493,-2481.5 508.85,-2457.91 509.11,-1486.86 511,-1458.5 532.52,-1136 591.32,-742.91 601.49,-676.3"/>
 <polygon fill="orange" stroke="orange" points="236.54,-2906.84 239.67,-2916.96 243.54,-2907.09 236.54,-2906.84"/>
 <text text-anchor="middle" x="426.5" y="-2541.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &lt; IceModel &gt;</text>
 </g>
-<!-- Node134&#45;&gt;Node106 -->
+<!-- Node136&#45;&gt;Node106 -->
 <g id="edge111" class="edge">
-<title>Node134&#45;&gt;Node106</title>
+<title>Node136&#45;&gt;Node106</title>
 <path fill="none" stroke="orange" stroke-dasharray="5,2" d="M249.6,-2907.54C267.58,-2875.53 308.19,-2810.71 360,-2774.5 411.03,-2738.83 434.93,-2752.95 493,-2730.5 501.17,-2727.34 502.81,-2725.6 511,-2722.5 530.11,-2715.27 551.9,-2708.34 569.47,-2703.07"/>
 <polygon fill="orange" stroke="orange" points="246.31,-2906.25 244.57,-2916.7 252.45,-2909.62 246.31,-2906.25"/>
 <text text-anchor="middle" x="426.5" y="-2777.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &lt; SSAFD &gt;</text>
 </g>
-<!-- Node134&#45;&gt;Node108 -->
+<!-- Node136&#45;&gt;Node108 -->
 <g id="edge112" class="edge">
-<title>Node134&#45;&gt;Node108</title>
+<title>Node136&#45;&gt;Node108</title>
 <path fill="none" stroke="orange" stroke-dasharray="5,2" d="M309.85,-2923.79C360.97,-2921 431.66,-2915.43 493,-2904.5 520.67,-2899.57 551.49,-2890.88 573.45,-2884.11"/>
 <polygon fill="orange" stroke="orange" points="309.37,-2920.31 299.57,-2924.33 309.74,-2927.3 309.37,-2920.31"/>
 <text text-anchor="middle" x="426.5" y="-2922.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &lt; Routing &gt;</text>
 </g>
-<!-- Node134&#45;&gt;Node115 -->
+<!-- Node136&#45;&gt;Node115 -->
 <g id="edge113" class="edge">
-<title>Node134&#45;&gt;Node115</title>
+<title>Node136&#45;&gt;Node115</title>
 <path fill="none" stroke="orange" stroke-dasharray="5,2" d="M245.24,-2907.24C258.52,-2865.96 295.26,-2768.46 360,-2715.5 408.19,-2676.07 433.94,-2691.2 493,-2671.5 520.71,-2662.25 552.32,-2651.61 574.52,-2644.12"/>
 <polygon fill="orange" stroke="orange" points="241.87,-2906.29 242.24,-2916.88 248.55,-2908.37 241.87,-2906.29"/>
 <text text-anchor="middle" x="426.5" y="-2718.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &lt; M &gt;</text>

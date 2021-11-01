@@ -1,0 +1,6 @@
+<map id="pism::OptTillphiYieldStress" name="pism::OptTillphiYieldStress">
+<area shape="rect" id="node1" title="Iterative optimization of the till friction angle." alt="" coords="19,229,217,256"/>
+<area shape="rect" id="node2" href="$classpism_1_1MohrCoulombYieldStress.html" title="PISM&#39;s default basal yield stress model which applies the Mohr&#45;Coulomb model of deformable,..." alt="" coords="5,155,231,181"/>
+<area shape="rect" id="node3" href="$classpism_1_1YieldStress.html" title="The PISM basal yield stress model interface (virtual base class)" alt="" coords="51,80,185,107"/>
+<area shape="rect" id="node4" href="$classpism_1_1Component.html" title="A class defining a common interface for most PISM sub&#45;models." alt="" coords="49,5,187,32"/>
+</map>

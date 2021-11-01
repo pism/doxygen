@@ -75,8 +75,9 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classpism_1_1MohrCoulombYieldStress-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">pism::MohrCoulombYieldStress Class Reference</div>  </div>
@@ -92,7 +93,7 @@ $(function() {
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classpism_1_1MohrCoulombYieldStress__inherit__graph.svg" width="236" height="187"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classpism_1_1MohrCoulombYieldStress__inherit__graph.svg" width="236" height="262"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -142,8 +143,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:ada4785e675db5a0f366bab5385668626 inherit pub_methods_classpism_1_1Component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reports the maximum time-step the model can take at time t.  <a href="classpism_1_1Component_ada4785e675db5a0f366bab5385668626.html#ada4785e675db5a0f366bab5385668626">More...</a><br /></td></tr>
 <tr class="separator:ada4785e675db5a0f366bab5385668626 inherit pub_methods_classpism_1_1Component"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
 <tr class="memitem:a4c365935b031ee2afefcce1c561017a0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpism_1_1MohrCoulombYieldStress_a4c365935b031ee2afefcce1c561017a0.html#a4c365935b031ee2afefcce1c561017a0">restart_impl</a> (const <a class="el" href="classpism_1_1File.html">File</a> &amp;input_file, int record)</td></tr>
 <tr class="separator:a4c365935b031ee2afefcce1c561017a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad8f627c2c242de257e93987a19a5fc82"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpism_1_1MohrCoulombYieldStress_ad8f627c2c242de257e93987a19a5fc82.html#ad8f627c2c242de257e93987a19a5fc82">bootstrap_impl</a> (const <a class="el" href="classpism_1_1File.html">File</a> &amp;input_file, const <a class="el" href="classpism_1_1YieldStressInputs.html">YieldStressInputs</a> &amp;inputs)</td></tr>
@@ -164,27 +165,6 @@ Private Member Functions</h2></td></tr>
 <tr class="separator:a560dd7d955cd9e4cc31c7c0e41d4e64d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8abf93ca3dd8ae03fb37ed354a12ad4b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpism_1_1MohrCoulombYieldStress_a8abf93ca3dd8ae03fb37ed354a12ad4b.html#a8abf93ca3dd8ae03fb37ed354a12ad4b">finish_initialization</a> (const <a class="el" href="classpism_1_1YieldStressInputs.html">YieldStressInputs</a> &amp;inputs)</td></tr>
 <tr class="separator:a8abf93ca3dd8ae03fb37ed354a12ad4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aad766525740aa95078143e36ef37fe21"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpism_1_1MohrCoulombYieldStress_aad766525740aa95078143e36ef37fe21.html#aad766525740aa95078143e36ef37fe21">till_friction_angle</a> (const <a class="el" href="classpism_1_1IceModelVec2S.html">IceModelVec2S</a> &amp;bed_topography, <a class="el" href="classpism_1_1IceModelVec2S.html">IceModelVec2S</a> &amp;result)</td></tr>
-<tr class="memdesc:aad766525740aa95078143e36ef37fe21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the till friction angle phi as a piecewise linear function of bed elevation, according to user options.  <a href="classpism_1_1MohrCoulombYieldStress_aad766525740aa95078143e36ef37fe21.html#aad766525740aa95078143e36ef37fe21">More...</a><br /></td></tr>
-<tr class="separator:aad766525740aa95078143e36ef37fe21"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac75e3b8694e387250d2b2607bd075dc3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpism_1_1MohrCoulombYieldStress_ac75e3b8694e387250d2b2607bd075dc3.html#ac75e3b8694e387250d2b2607bd075dc3">till_friction_angle</a> (const <a class="el" href="classpism_1_1IceModelVec2S.html">IceModelVec2S</a> &amp;basal_yield_stress, const <a class="el" href="classpism_1_1IceModelVec2S.html">IceModelVec2S</a> &amp;till_water_thickness, const <a class="el" href="classpism_1_1IceModelVec2S.html">IceModelVec2S</a> &amp;ice_thickness, const <a class="el" href="classpism_1_1IceModelVec2CellType.html">IceModelVec2CellType</a> &amp;cell_type, <a class="el" href="classpism_1_1IceModelVec2S.html">IceModelVec2S</a> &amp;result)</td></tr>
-<tr class="separator:ac75e3b8694e387250d2b2607bd075dc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:aca99ee1064c8ac427d87bd6db4c4b84a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpism_1_1IceModelVec2S.html">IceModelVec2S</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpism_1_1MohrCoulombYieldStress_aca99ee1064c8ac427d87bd6db4c4b84a.html#aca99ee1064c8ac427d87bd6db4c4b84a">m_till_phi</a></td></tr>
-<tr class="separator:aca99ee1064c8ac427d87bd6db4c4b84a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a03901c246704f1e660fd4e4a19cdefd9"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classpism_1_1IceModelVec2T.html">IceModelVec2T</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpism_1_1MohrCoulombYieldStress_a03901c246704f1e660fd4e4a19cdefd9.html#a03901c246704f1e660fd4e4a19cdefd9">m_delta</a></td></tr>
-<tr class="separator:a03901c246704f1e660fd4e4a19cdefd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
-Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pro_types_classpism_1_1Component"><td colspan="2" onclick="javascript:toggleInherit('pro_types_classpism_1_1Component')"><img src="closed.png" alt="-"/>&#160;Protected Types inherited from <a class="el" href="classpism_1_1Component.html">pism::Component</a></td></tr>
-<tr class="memitem:a48f8d0b81b7853d4e3fba0de79ec4a7f inherit pro_types_classpism_1_1Component"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpism_1_1Component_a48f8d0b81b7853d4e3fba0de79ec4a7f.html#a48f8d0b81b7853d4e3fba0de79ec4a7f">RegriddingFlag</a> { <a class="el" href="classpism_1_1Component_a48f8d0b81b7853d4e3fba0de79ec4a7f.html#a48f8d0b81b7853d4e3fba0de79ec4a7fa27f687170795f16d7eb334423b0bc9de">REGRID_WITHOUT_REGRID_VARS</a>
-, <a class="el" href="classpism_1_1Component_a48f8d0b81b7853d4e3fba0de79ec4a7f.html#a48f8d0b81b7853d4e3fba0de79ec4a7fa40db21687f40497645ef1b899d9d5d95">NO_REGRID_WITHOUT_REGRID_VARS</a>
- }</td></tr>
-<tr class="memdesc:a48f8d0b81b7853d4e3fba0de79ec4a7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">This flag determines whether a variable is read from the <code>-regrid_file</code> file even if it is not listed among variables in <code>-regrid_vars</code>.  <a href="classpism_1_1Component_a48f8d0b81b7853d4e3fba0de79ec4a7f.html#a48f8d0b81b7853d4e3fba0de79ec4a7f">More...</a><br /></td></tr>
-<tr class="separator:a48f8d0b81b7853d4e3fba0de79ec4a7f inherit pro_types_classpism_1_1Component"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classpism_1_1YieldStress"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classpism_1_1YieldStress')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classpism_1_1YieldStress.html">pism::YieldStress</a></td></tr>
 <tr class="memitem:a9fa5ae224f9d9269ea670d1b2f3b8f68 inherit pro_methods_classpism_1_1YieldStress"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacepism_a6154a990ba873c6ca606d8a320c441ac.html#a6154a990ba873c6ca606d8a320c441ac">DiagnosticList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpism_1_1YieldStress_a9fa5ae224f9d9269ea670d1b2f3b8f68.html#a9fa5ae224f9d9269ea670d1b2f3b8f68">diagnostics_impl</a> () const</td></tr>
 <tr class="separator:a9fa5ae224f9d9269ea670d1b2f3b8f68 inherit pro_methods_classpism_1_1YieldStress"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -193,6 +173,13 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a3f3c8ee243ed68c1b3129f53a332cfa3 inherit pro_methods_classpism_1_1Component"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a85da8daa4d3f6d265bc0d17dd8b3988f inherit pro_methods_classpism_1_1Component"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpism_1_1Component_a85da8daa4d3f6d265bc0d17dd8b3988f.html#a85da8daa4d3f6d265bc0d17dd8b3988f">regrid</a> (const std::string &amp;module_name, <a class="el" href="classpism_1_1IceModelVec.html">IceModelVec</a> &amp;variable, <a class="el" href="classpism_1_1Component_a48f8d0b81b7853d4e3fba0de79ec4a7f.html#a48f8d0b81b7853d4e3fba0de79ec4a7f">RegriddingFlag</a> flag=<a class="el" href="classpism_1_1Component_a48f8d0b81b7853d4e3fba0de79ec4a7f.html#a48f8d0b81b7853d4e3fba0de79ec4a7fa40db21687f40497645ef1b899d9d5d95">NO_REGRID_WITHOUT_REGRID_VARS</a>)</td></tr>
 <tr class="separator:a85da8daa4d3f6d265bc0d17dd8b3988f inherit pro_methods_classpism_1_1Component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:aca99ee1064c8ac427d87bd6db4c4b84a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpism_1_1IceModelVec2S.html">IceModelVec2S</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpism_1_1MohrCoulombYieldStress_aca99ee1064c8ac427d87bd6db4c4b84a.html#aca99ee1064c8ac427d87bd6db4c4b84a">m_till_phi</a></td></tr>
+<tr class="separator:aca99ee1064c8ac427d87bd6db4c4b84a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03901c246704f1e660fd4e4a19cdefd9"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classpism_1_1IceModelVec2T.html">IceModelVec2T</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpism_1_1MohrCoulombYieldStress_a03901c246704f1e660fd4e4a19cdefd9.html#a03901c246704f1e660fd4e4a19cdefd9">m_delta</a></td></tr>
+<tr class="separator:a03901c246704f1e660fd4e4a19cdefd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classpism_1_1YieldStress"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classpism_1_1YieldStress')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classpism_1_1YieldStress.html">pism::YieldStress</a></td></tr>
 <tr class="memitem:a8db73ea81fc1f4fa8d038d531f16d238 inherit pro_attribs_classpism_1_1YieldStress"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpism_1_1IceModelVec2S.html">IceModelVec2S</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpism_1_1YieldStress_a8db73ea81fc1f4fa8d038d531f16d238.html#a8db73ea81fc1f4fa8d038d531f16d238">m_basal_yield_stress</a></td></tr>
 <tr class="separator:a8db73ea81fc1f4fa8d038d531f16d238 inherit pro_attribs_classpism_1_1YieldStress"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -211,6 +198,23 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a29575eba605feccf4403d6b4ff0954a4 inherit pro_attribs_classpism_1_1Component"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classpism_1_1Logger_a18135415c4090dc0f946beca43fdcc76.html#a18135415c4090dc0f946beca43fdcc76">Logger::ConstPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpism_1_1Component_a29575eba605feccf4403d6b4ff0954a4.html#a29575eba605feccf4403d6b4ff0954a4">m_log</a></td></tr>
 <tr class="memdesc:a29575eba605feccf4403d6b4ff0954a4 inherit pro_attribs_classpism_1_1Component"><td class="mdescLeft">&#160;</td><td class="mdescRight">logger (for easy access)  <a href="classpism_1_1Component_a29575eba605feccf4403d6b4ff0954a4.html#a29575eba605feccf4403d6b4ff0954a4">More...</a><br /></td></tr>
 <tr class="separator:a29575eba605feccf4403d6b4ff0954a4 inherit pro_attribs_classpism_1_1Component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:aad766525740aa95078143e36ef37fe21"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpism_1_1MohrCoulombYieldStress_aad766525740aa95078143e36ef37fe21.html#aad766525740aa95078143e36ef37fe21">till_friction_angle</a> (const <a class="el" href="classpism_1_1IceModelVec2S.html">IceModelVec2S</a> &amp;bed_topography, <a class="el" href="classpism_1_1IceModelVec2S.html">IceModelVec2S</a> &amp;result)</td></tr>
+<tr class="memdesc:aad766525740aa95078143e36ef37fe21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the till friction angle phi as a piecewise linear function of bed elevation, according to user options.  <a href="classpism_1_1MohrCoulombYieldStress_aad766525740aa95078143e36ef37fe21.html#aad766525740aa95078143e36ef37fe21">More...</a><br /></td></tr>
+<tr class="separator:aad766525740aa95078143e36ef37fe21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac75e3b8694e387250d2b2607bd075dc3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpism_1_1MohrCoulombYieldStress_ac75e3b8694e387250d2b2607bd075dc3.html#ac75e3b8694e387250d2b2607bd075dc3">till_friction_angle</a> (const <a class="el" href="classpism_1_1IceModelVec2S.html">IceModelVec2S</a> &amp;basal_yield_stress, const <a class="el" href="classpism_1_1IceModelVec2S.html">IceModelVec2S</a> &amp;till_water_thickness, const <a class="el" href="classpism_1_1IceModelVec2S.html">IceModelVec2S</a> &amp;ice_thickness, const <a class="el" href="classpism_1_1IceModelVec2CellType.html">IceModelVec2CellType</a> &amp;cell_type, <a class="el" href="classpism_1_1IceModelVec2S.html">IceModelVec2S</a> &amp;result)</td></tr>
+<tr class="separator:ac75e3b8694e387250d2b2607bd075dc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pro_types_classpism_1_1Component"><td colspan="2" onclick="javascript:toggleInherit('pro_types_classpism_1_1Component')"><img src="closed.png" alt="-"/>&#160;Protected Types inherited from <a class="el" href="classpism_1_1Component.html">pism::Component</a></td></tr>
+<tr class="memitem:a48f8d0b81b7853d4e3fba0de79ec4a7f inherit pro_types_classpism_1_1Component"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpism_1_1Component_a48f8d0b81b7853d4e3fba0de79ec4a7f.html#a48f8d0b81b7853d4e3fba0de79ec4a7f">RegriddingFlag</a> { <a class="el" href="classpism_1_1Component_a48f8d0b81b7853d4e3fba0de79ec4a7f.html#a48f8d0b81b7853d4e3fba0de79ec4a7fa27f687170795f16d7eb334423b0bc9de">REGRID_WITHOUT_REGRID_VARS</a>
+, <a class="el" href="classpism_1_1Component_a48f8d0b81b7853d4e3fba0de79ec4a7f.html#a48f8d0b81b7853d4e3fba0de79ec4a7fa40db21687f40497645ef1b899d9d5d95">NO_REGRID_WITHOUT_REGRID_VARS</a>
+ }</td></tr>
+<tr class="memdesc:a48f8d0b81b7853d4e3fba0de79ec4a7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">This flag determines whether a variable is read from the <code>-regrid_file</code> file even if it is not listed among variables in <code>-regrid_vars</code>.  <a href="classpism_1_1Component_a48f8d0b81b7853d4e3fba0de79ec4a7f.html#a48f8d0b81b7853d4e3fba0de79ec4a7f">More...</a><br /></td></tr>
+<tr class="separator:a48f8d0b81b7853d4e3fba0de79ec4a7f inherit pro_types_classpism_1_1Component"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>PISM's default basal yield stress model which applies the Mohr-Coulomb model of deformable, pressurized till. </p>

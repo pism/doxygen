@@ -16,8 +16,8 @@
 <area shape="rect" id="node106" href="$classpism_1_1Diag.html" title=" " alt="" coords="239,4909,405,4935"/>
 <area shape="rect" id="node108" href="$classpism_1_1Diag.html" title=" " alt="" coords="236,5578,408,5605"/>
 <area shape="rect" id="node115" href="$classpism_1_1Diag.html" title=" " alt="" coords="255,5731,389,5758"/>
-<area shape="rect" id="node117" href="$classpism_1_1Diag.html" title="A template derived from Diagnostic, adding a &quot;Model&quot;." alt="" coords="241,5891,403,5918"/>
-<area shape="rect" id="node135" href="$classpism_1_1DiagWithDedicatedStorage.html" title=" " alt="" coords="184,5942,460,5969"/>
+<area shape="rect" id="node117" href="$classpism_1_1Diag.html" title="A template derived from Diagnostic, adding a &quot;Model&quot;." alt="" coords="241,5925,403,5951"/>
+<area shape="rect" id="node137" href="$classpism_1_1DiagWithDedicatedStorage.html" title=" " alt="" coords="184,5975,460,6002"/>
 <area shape="rect" id="node3" href="$classpism_1_1surface_1_1diagnostics_1_1PS__climatic__mass__balance.html" title="Climatic mass balance." alt="" coords="525,5,730,47"/>
 <area shape="rect" id="node4" href="$classpism_1_1surface_1_1diagnostics_1_1PS__ice__surface__temp.html" title="Ice surface temperature." alt="" coords="531,71,723,112"/>
 <area shape="rect" id="node5" href="$classpism_1_1surface_1_1diagnostics_1_1PS__layer__mass.html" title="Mass of the surface layer (snow and firn)." alt="" coords="531,136,723,177"/>
@@ -119,19 +119,21 @@
 <area shape="rect" id="node116" href="$classpism_1_1DiagAverageRate.html" title=" " alt="" coords="519,5833,736,5859"/>
 <area shape="rect" id="node118" href="$classpism_1_1DiagAverageRate.html" title=" " alt="" coords="540,5884,715,5925"/>
 <area shape="rect" id="node122" href="$classpism_1_1DiagAverageRate.html" title=" " alt="" coords="540,5949,715,5991"/>
-<area shape="rect" id="node125" href="$classpism_1_1DiagAverageRate.html" title=" " alt="" coords="540,6308,715,6349"/>
+<area shape="rect" id="node124" href="$classpism_1_1DiagAverageRate.html" title=" " alt="" coords="540,6015,715,6056"/>
+<area shape="rect" id="node127" href="$classpism_1_1DiagAverageRate.html" title=" " alt="" coords="540,6373,715,6415"/>
 <area shape="rect" id="node119" href="$classpism_1_1surface_1_1diagnostics_1_1Accumulation.html" title="Report accumulation (precipitation minus rain), averaged over the reporting interval." alt="" coords="827,5753,1019,5795"/>
 <area shape="rect" id="node120" href="$classpism_1_1surface_1_1diagnostics_1_1SurfaceMelt.html" title="Report surface melt, averaged over the reporting interval." alt="" coords="827,5819,1019,5860"/>
 <area shape="rect" id="node121" href="$classpism_1_1surface_1_1diagnostics_1_1SurfaceRunoff.html" title="Report surface runoff, averaged over the reporting interval." alt="" coords="827,5884,1019,5925"/>
-<area shape="rect" id="node123" href="$classpism_1_1frontalmelt_1_1diagnostics_1_1FrontalMeltRate.html" title="Report frontal melt rate." alt="" coords="819,5949,1027,5991"/>
-<area shape="rect" id="node124" href="$classpism_1_1frontalmelt_1_1diagnostics_1_1FrontalMeltRetreatRate.html" title="Report retreat rate due to frontal melt." alt="" coords="795,6015,1051,6056"/>
-<area shape="rect" id="node126" href="$classpism_1_1hydrology_1_1diagnostics_1_1ConservationErrorFlux.html" title="Report subglacial water conservation error flux (mass added to preserve non&#45;negativity)." alt="" coords="819,6080,1027,6121"/>
-<area shape="rect" id="node127" href="$classpism_1_1hydrology_1_1diagnostics_1_1DomainBoundaryFlux.html" title="Report subglacial water flux at domain boundary (in regional model configurations)." alt="" coords="819,6145,1027,6187"/>
-<area shape="rect" id="node128" href="$classpism_1_1hydrology_1_1diagnostics_1_1GroundedMarginFlux.html" title="Report water flux at the grounded margin." alt="" coords="819,6211,1027,6252"/>
-<area shape="rect" id="node129" href="$classpism_1_1hydrology_1_1diagnostics_1_1GroundingLineFlux.html" title="Report subglacial water flux at grounding lines." alt="" coords="819,6276,1027,6317"/>
-<area shape="rect" id="node130" href="$classpism_1_1hydrology_1_1diagnostics_1_1SubglacialWaterFlux.html" title="Report advective subglacial water flux." alt="" coords="819,6341,1027,6383"/>
-<area shape="rect" id="node131" href="$classpism_1_1hydrology_1_1diagnostics_1_1TendencyOfWaterMass.html" title=" " alt="" coords="819,6407,1027,6448"/>
-<area shape="rect" id="node132" href="$classpism_1_1hydrology_1_1diagnostics_1_1TendencyOfWaterMassDueToFlow.html" title="Report water flux at the grounded margin." alt="" coords="798,6472,1047,6513"/>
-<area shape="rect" id="node133" href="$classpism_1_1hydrology_1_1diagnostics_1_1TotalInputRate.html" title="Report water input rate from the ice surface into the subglacial water system." alt="" coords="819,6537,1027,6579"/>
-<area shape="rect" id="node134" href="$classpism_1_1hydrology_1_1diagnostics_1_1WaterInputFlux.html" title="Report water flux due to input (basal melt and drainage from the surface)." alt="" coords="819,6603,1027,6644"/>
+<area shape="rect" id="node123" href="$classpism_1_1surface_1_1diagnostics_1_1SMBAdjustment.html" title=" " alt="" coords="827,5949,1019,5991"/>
+<area shape="rect" id="node125" href="$classpism_1_1frontalmelt_1_1diagnostics_1_1FrontalMeltRate.html" title="Report frontal melt rate." alt="" coords="819,6015,1027,6056"/>
+<area shape="rect" id="node126" href="$classpism_1_1frontalmelt_1_1diagnostics_1_1FrontalMeltRetreatRate.html" title="Report retreat rate due to frontal melt." alt="" coords="795,6080,1051,6121"/>
+<area shape="rect" id="node128" href="$classpism_1_1hydrology_1_1diagnostics_1_1ConservationErrorFlux.html" title="Report subglacial water conservation error flux (mass added to preserve non&#45;negativity)." alt="" coords="819,6145,1027,6187"/>
+<area shape="rect" id="node129" href="$classpism_1_1hydrology_1_1diagnostics_1_1DomainBoundaryFlux.html" title="Report subglacial water flux at domain boundary (in regional model configurations)." alt="" coords="819,6211,1027,6252"/>
+<area shape="rect" id="node130" href="$classpism_1_1hydrology_1_1diagnostics_1_1GroundedMarginFlux.html" title="Report water flux at the grounded margin." alt="" coords="819,6276,1027,6317"/>
+<area shape="rect" id="node131" href="$classpism_1_1hydrology_1_1diagnostics_1_1GroundingLineFlux.html" title="Report subglacial water flux at grounding lines." alt="" coords="819,6341,1027,6383"/>
+<area shape="rect" id="node132" href="$classpism_1_1hydrology_1_1diagnostics_1_1SubglacialWaterFlux.html" title="Report advective subglacial water flux." alt="" coords="819,6407,1027,6448"/>
+<area shape="rect" id="node133" href="$classpism_1_1hydrology_1_1diagnostics_1_1TendencyOfWaterMass.html" title=" " alt="" coords="819,6472,1027,6513"/>
+<area shape="rect" id="node134" href="$classpism_1_1hydrology_1_1diagnostics_1_1TendencyOfWaterMassDueToFlow.html" title="Report water flux at the grounded margin." alt="" coords="798,6537,1047,6579"/>
+<area shape="rect" id="node135" href="$classpism_1_1hydrology_1_1diagnostics_1_1TotalInputRate.html" title="Report water input rate from the ice surface into the subglacial water system." alt="" coords="819,6603,1027,6644"/>
+<area shape="rect" id="node136" href="$classpism_1_1hydrology_1_1diagnostics_1_1WaterInputFlux.html" title="Report water flux due to input (basal melt and drainage from the surface)." alt="" coords="819,6668,1027,6709"/>
 </map>
