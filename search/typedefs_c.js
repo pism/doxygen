@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['rule_9247',['rule',['../cubature_8c_ae648232412b13de3ed777a59b4d80128.html#ae648232412b13de3ed777a59b4d80128',1,'cubature.c']]]
+  ['rule_9260',['rule',['../cubature_8c_ae648232412b13de3ed777a59b4d80128.html#ae648232412b13de3ed777a59b4d80128',1,'cubature.c']]]
 ];
