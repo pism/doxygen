@@ -1336,19 +1336,19 @@ $(function() {
 <div class="line"><a name="l01257"></a><span class="lineno"> 1257</span>&#160;        <span class="keyword">auto</span> M = cell_type.<a class="code" href="classpism_1_1IceModelVec2Int_a9765aea19a56e73b3089131d61c1f049.html#a9765aea19a56e73b3089131d61c1f049">star</a>(i, j);</div>
 <div class="line"><a name="l01258"></a><span class="lineno"> 1258</span>&#160;        <span class="keyword">auto</span> Q = flux.<a class="code" href="classpism_1_1IceModelVec2Stag_a3b0b8b5b6ab37009439d23fadf797774.html#a3b0b8b5b6ab37009439d23fadf797774">star</a>(i, j);</div>
 <div class="line"><a name="l01259"></a><span class="lineno"> 1259</span>&#160; </div>
-<div class="line"><a name="l01260"></a><span class="lineno"> 1260</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="namespacepism_1_1mask_ad47d0a5b232f9cf32bcb243f8dce9594.html#ad47d0a5b232f9cf32bcb243f8dce9594">grounded</a>(M.n) and Q.n &lt;= 0.0) {</div>
+<div class="line"><a name="l01260"></a><span class="lineno"> 1260</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="namespacepism_1_1mask_ad47d0a5b232f9cf32bcb243f8dce9594.html#ad47d0a5b232f9cf32bcb243f8dce9594">grounded</a>(M.n)) {</div>
 <div class="line"><a name="l01261"></a><span class="lineno"> 1261</span>&#160;          result += Q.n * dx;</div>
 <div class="line"><a name="l01262"></a><span class="lineno"> 1262</span>&#160;        }</div>
 <div class="line"><a name="l01263"></a><span class="lineno"> 1263</span>&#160; </div>
-<div class="line"><a name="l01264"></a><span class="lineno"> 1264</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="namespacepism_1_1mask_ad47d0a5b232f9cf32bcb243f8dce9594.html#ad47d0a5b232f9cf32bcb243f8dce9594">grounded</a>(M.e) and Q.e &lt;= 0.0) {</div>
+<div class="line"><a name="l01264"></a><span class="lineno"> 1264</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="namespacepism_1_1mask_ad47d0a5b232f9cf32bcb243f8dce9594.html#ad47d0a5b232f9cf32bcb243f8dce9594">grounded</a>(M.e)) {</div>
 <div class="line"><a name="l01265"></a><span class="lineno"> 1265</span>&#160;          result += Q.e * dy;</div>
 <div class="line"><a name="l01266"></a><span class="lineno"> 1266</span>&#160;        }</div>
 <div class="line"><a name="l01267"></a><span class="lineno"> 1267</span>&#160; </div>
-<div class="line"><a name="l01268"></a><span class="lineno"> 1268</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="namespacepism_1_1mask_ad47d0a5b232f9cf32bcb243f8dce9594.html#ad47d0a5b232f9cf32bcb243f8dce9594">grounded</a>(M.s) and Q.s &gt;= 0.0) {</div>
+<div class="line"><a name="l01268"></a><span class="lineno"> 1268</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="namespacepism_1_1mask_ad47d0a5b232f9cf32bcb243f8dce9594.html#ad47d0a5b232f9cf32bcb243f8dce9594">grounded</a>(M.s)) {</div>
 <div class="line"><a name="l01269"></a><span class="lineno"> 1269</span>&#160;          result -= Q.s * dx;</div>
 <div class="line"><a name="l01270"></a><span class="lineno"> 1270</span>&#160;        }</div>
 <div class="line"><a name="l01271"></a><span class="lineno"> 1271</span>&#160; </div>
-<div class="line"><a name="l01272"></a><span class="lineno"> 1272</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="namespacepism_1_1mask_ad47d0a5b232f9cf32bcb243f8dce9594.html#ad47d0a5b232f9cf32bcb243f8dce9594">grounded</a>(M.w) and Q.w &gt;= 0.0) {</div>
+<div class="line"><a name="l01272"></a><span class="lineno"> 1272</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="namespacepism_1_1mask_ad47d0a5b232f9cf32bcb243f8dce9594.html#ad47d0a5b232f9cf32bcb243f8dce9594">grounded</a>(M.w)) {</div>
 <div class="line"><a name="l01273"></a><span class="lineno"> 1273</span>&#160;          result -= Q.w * dy;</div>
 <div class="line"><a name="l01274"></a><span class="lineno"> 1274</span>&#160;        }</div>
 <div class="line"><a name="l01275"></a><span class="lineno"> 1275</span>&#160; </div>
@@ -1399,19 +1399,19 @@ $(function() {
 <div class="line"><a name="l01320"></a><span class="lineno"> 1320</span>&#160;        <span class="keyword">auto</span> M = cell_type.<a class="code" href="classpism_1_1IceModelVec2Int_a9765aea19a56e73b3089131d61c1f049.html#a9765aea19a56e73b3089131d61c1f049">star</a>(i, j);</div>
 <div class="line"><a name="l01321"></a><span class="lineno"> 1321</span>&#160;        <span class="keyword">auto</span> Q = flux.<a class="code" href="classpism_1_1IceModelVec2Stag_a3b0b8b5b6ab37009439d23fadf797774.html#a3b0b8b5b6ab37009439d23fadf797774">star</a>(i, j); <span class="comment">// m^2 / s</span></div>
 <div class="line"><a name="l01322"></a><span class="lineno"> 1322</span>&#160; </div>
-<div class="line"><a name="l01323"></a><span class="lineno"> 1323</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="namespacepism_1_1mask_ad47d0a5b232f9cf32bcb243f8dce9594.html#ad47d0a5b232f9cf32bcb243f8dce9594">grounded</a>(M.n) and Q.n &lt;= 0.0) {</div>
+<div class="line"><a name="l01323"></a><span class="lineno"> 1323</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="namespacepism_1_1mask_ad47d0a5b232f9cf32bcb243f8dce9594.html#ad47d0a5b232f9cf32bcb243f8dce9594">grounded</a>(M.n)) {</div>
 <div class="line"><a name="l01324"></a><span class="lineno"> 1324</span>&#160;          volume_flux += Q.n * dx;</div>
 <div class="line"><a name="l01325"></a><span class="lineno"> 1325</span>&#160;        }</div>
 <div class="line"><a name="l01326"></a><span class="lineno"> 1326</span>&#160; </div>
-<div class="line"><a name="l01327"></a><span class="lineno"> 1327</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="namespacepism_1_1mask_ad47d0a5b232f9cf32bcb243f8dce9594.html#ad47d0a5b232f9cf32bcb243f8dce9594">grounded</a>(M.e) and Q.e &lt;= 0.0) {</div>
+<div class="line"><a name="l01327"></a><span class="lineno"> 1327</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="namespacepism_1_1mask_ad47d0a5b232f9cf32bcb243f8dce9594.html#ad47d0a5b232f9cf32bcb243f8dce9594">grounded</a>(M.e)) {</div>
 <div class="line"><a name="l01328"></a><span class="lineno"> 1328</span>&#160;          volume_flux += Q.e * dy;</div>
 <div class="line"><a name="l01329"></a><span class="lineno"> 1329</span>&#160;        }</div>
 <div class="line"><a name="l01330"></a><span class="lineno"> 1330</span>&#160; </div>
-<div class="line"><a name="l01331"></a><span class="lineno"> 1331</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="namespacepism_1_1mask_ad47d0a5b232f9cf32bcb243f8dce9594.html#ad47d0a5b232f9cf32bcb243f8dce9594">grounded</a>(M.s) and Q.s &gt;= 0.0) {</div>
+<div class="line"><a name="l01331"></a><span class="lineno"> 1331</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="namespacepism_1_1mask_ad47d0a5b232f9cf32bcb243f8dce9594.html#ad47d0a5b232f9cf32bcb243f8dce9594">grounded</a>(M.s)) {</div>
 <div class="line"><a name="l01332"></a><span class="lineno"> 1332</span>&#160;          volume_flux -= Q.s * dx;</div>
 <div class="line"><a name="l01333"></a><span class="lineno"> 1333</span>&#160;        }</div>
 <div class="line"><a name="l01334"></a><span class="lineno"> 1334</span>&#160; </div>
-<div class="line"><a name="l01335"></a><span class="lineno"> 1335</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="namespacepism_1_1mask_ad47d0a5b232f9cf32bcb243f8dce9594.html#ad47d0a5b232f9cf32bcb243f8dce9594">grounded</a>(M.w) and Q.w &gt;= 0.0) {</div>
+<div class="line"><a name="l01335"></a><span class="lineno"> 1335</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="namespacepism_1_1mask_ad47d0a5b232f9cf32bcb243f8dce9594.html#ad47d0a5b232f9cf32bcb243f8dce9594">grounded</a>(M.w)) {</div>
 <div class="line"><a name="l01336"></a><span class="lineno"> 1336</span>&#160;          volume_flux -= Q.w * dy;</div>
 <div class="line"><a name="l01337"></a><span class="lineno"> 1337</span>&#160;        }</div>
 <div class="line"><a name="l01338"></a><span class="lineno"> 1338</span>&#160;      }</div>
