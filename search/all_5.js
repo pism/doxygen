@@ -18,7 +18,7 @@ var searchData=
   ['date_5flt_641',['date_lt',['../calcalcs_8c_a9d54aafaa3f0e5b56d99934b7240bf3e.html#a9d54aafaa3f0e5b56d99934b7240bf3e',1,'calcalcs.c']]],
   ['datetime_642',['DateTime',['../structpism_1_1units_1_1DateTime.html',1,'pism::units']]],
   ['day_643',['day',['../structccs__ccode_aad6ce6156790e221ca5dd2941a2487bb.html#aad6ce6156790e221ca5dd2941a2487bb',1,'ccs_ccode::day()'],['../structpism_1_1units_1_1DateTime_abad769997e1eb93f7ccfe940ff747849.html#abad769997e1eb93f7ccfe940ff747849',1,'pism::units::DateTime::day()']]],
-  ['day_5fof_5fthe_5fyear_5fto_5fday_5ffraction_644',['day_of_the_year_to_day_fraction',['../classpism_1_1Time_a0825353f7f431bbf3d05e943476ad60b.html#a0825353f7f431bbf3d05e943476ad60b',1,'pism::Time']]],
+  ['day_5fof_5fthe_5fyear_5fto_5fyear_5ffraction_644',['day_of_the_year_to_year_fraction',['../classpism_1_1Time_ae201e1ff7f1467f14068c7529b343b5f.html#ae201e1ff7f1467f14068c7529b343b5f',1,'pism::Time']]],
   ['day_5fpx_645',['day_px',['../structcccalendar_aaff57cf4f4ad480f765e5ba7f6fbfb1b.html#aaff57cf4f4ad480f765e5ba7f6fbfb1b',1,'cccalendar']]],
   ['day_5fx_646',['day_x',['../structcccalendar_adcb72d1c33d392c0a8765b01e9de929a.html#adcb72d1c33d392c0a8765b01e9de929a',1,'cccalendar']]],
   ['dblquad_5fcubature_647',['dblquad_cubature',['../matlablike_8hh_aa4bab2cd176d2037935a135f9d37b5aa.html#aa4bab2cd176d2037935a135f9d37b5aa',1,'dblquad_cubature(integrand f, double ax, double bx, double ay, double by, double reqRelError, void *fdata):&#160;matlablike.cc'],['../matlablike_8cc_aa4bab2cd176d2037935a135f9d37b5aa.html#aa4bab2cd176d2037935a135f9d37b5aa',1,'dblquad_cubature(integrand f, double ax, double bx, double ay, double by, double reqRelError, void *fdata):&#160;matlablike.cc']]],
