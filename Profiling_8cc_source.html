@@ -77,7 +77,7 @@ $(function() {
 <div class="title">Profiling.cc</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="Profiling_8cc.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/* Copyright (C) 2015, 2016 PISM Authors</span></div>
+<a href="Profiling_8cc.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/* Copyright (C) 2015, 2016, 2021 PISM Authors</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * This file is part of PISM.</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> *</span></div>
@@ -167,14 +167,14 @@ $(function() {
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;}</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
 <div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="classpism_1_1Profiling_a3b2770f3c62a535cbf55ec2fd1cb95ea.html#a3b2770f3c62a535cbf55ec2fd1cb95ea">   90</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classpism_1_1Profiling_a3b2770f3c62a535cbf55ec2fd1cb95ea.html#a3b2770f3c62a535cbf55ec2fd1cb95ea">Profiling::end</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> * name)<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  PetscLogEvent <span class="keyword">event</span> = 0;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="classpism_1_1Profiling_a25da1a07dc4c9824b3b98d7b17a2d4ea.html#a25da1a07dc4c9824b3b98d7b17a2d4ea">m_events</a>.find(name) == <a class="code" href="classpism_1_1Profiling_a25da1a07dc4c9824b3b98d7b17a2d4ea.html#a25da1a07dc4c9824b3b98d7b17a2d4ea">m_events</a>.end()) {</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordflow">throw</span> <a class="code" href="classpism_1_1RuntimeError_ad0ed5f05a9a4e3e403a1d62f8d1e4e7d.html#ad0ed5f05a9a4e3e403a1d62f8d1e4e7d">RuntimeError::formatted</a>(<a class="code" href="error__handling_8hh_aa0c260bffe8a4dbd77d48e8feee7c526.html#aa0c260bffe8a4dbd77d48e8feee7c526">PISM_ERROR_LOCATION</a>, <span class="stringliteral">&quot;cannot end event \&quot;%s\&quot; because it was not started&quot;</span>,</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                                  name);</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keyword">event</span> = <a class="code" href="classpism_1_1Profiling_a25da1a07dc4c9824b3b98d7b17a2d4ea.html#a25da1a07dc4c9824b3b98d7b17a2d4ea">m_events</a>[name];</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  }</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  PetscErrorCode ierr = PetscLogEventEnd(event, 0, 0, 0, 0);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordflow">throw</span> <a class="code" href="classpism_1_1RuntimeError_ad0ed5f05a9a4e3e403a1d62f8d1e4e7d.html#ad0ed5f05a9a4e3e403a1d62f8d1e4e7d">RuntimeError::formatted</a>(<a class="code" href="error__handling_8hh_aa0c260bffe8a4dbd77d48e8feee7c526.html#aa0c260bffe8a4dbd77d48e8feee7c526">PISM_ERROR_LOCATION</a>,</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                                  <span class="stringliteral">&quot;cannot end event \&quot;%s\&quot; because it was not started&quot;</span>,</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                                  name);</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  }</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  PetscErrorCode ierr = PetscLogEventEnd(<a class="code" href="classpism_1_1Profiling_a25da1a07dc4c9824b3b98d7b17a2d4ea.html#a25da1a07dc4c9824b3b98d7b17a2d4ea">m_events</a>[name], 0, 0, 0, 0);</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  <a class="code" href="error__handling_8hh_a970ec877c0e54c6e16c039bfa1b88bad.html#a970ec877c0e54c6e16c039bfa1b88bad">PISM_CHK</a>(ierr, <span class="stringliteral">&quot;PetscLogEventEnd&quot;</span>);</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;}</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>

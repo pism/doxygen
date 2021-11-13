@@ -75,6 +75,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classpism_1_1TridiagonalSystem-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -111,12 +112,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a1a1af43a4162e635f0505dd5f0d2e7d8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpism_1_1TridiagonalSystem_a1a1af43a4162e635f0505dd5f0d2e7d8.html#a1a1af43a4162e635f0505dd5f0d2e7d8">save_system</a> (std::ostream &amp;output, unsigned int system_size) const</td></tr>
 <tr class="memdesc:a1a1af43a4162e635f0505dd5f0d2e7d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">View the tridiagonal system A x = b to an output stream, both A as a full matrix and b as a vector.  <a href="classpism_1_1TridiagonalSystem_a1a1af43a4162e635f0505dd5f0d2e7d8.html#a1a1af43a4162e635f0505dd5f0d2e7d8">More...</a><br /></td></tr>
 <tr class="separator:a1a1af43a4162e635f0505dd5f0d2e7d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a65fdf0e96d46f465b723795d80b5a9d3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpism_1_1TridiagonalSystem_a65fdf0e96d46f465b723795d80b5a9d3.html#a65fdf0e96d46f465b723795d80b5a9d3">save_matrix</a> (std::ostream &amp;output, unsigned int system_size, const std::string &amp;info) const</td></tr>
-<tr class="memdesc:a65fdf0e96d46f465b723795d80b5a9d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">View the tridiagonal matrix.  <a href="classpism_1_1TridiagonalSystem_a65fdf0e96d46f465b723795d80b5a9d3.html#a65fdf0e96d46f465b723795d80b5a9d3">More...</a><br /></td></tr>
-<tr class="separator:a65fdf0e96d46f465b723795d80b5a9d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acddf17a94be07f012dcacf71f378dd73"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpism_1_1TridiagonalSystem_acddf17a94be07f012dcacf71f378dd73.html#acddf17a94be07f012dcacf71f378dd73">save_vector</a> (std::ostream &amp;output, const std::vector&lt; double &gt; &amp;v, unsigned int system_size, const std::string &amp;info) const</td></tr>
-<tr class="memdesc:acddf17a94be07f012dcacf71f378dd73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Utility for simple ascii view of a vector (one-dimensional column) quantity.  <a href="classpism_1_1TridiagonalSystem_acddf17a94be07f012dcacf71f378dd73.html#acddf17a94be07f012dcacf71f378dd73">More...</a><br /></td></tr>
-<tr class="separator:acddf17a94be07f012dcacf71f378dd73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19a060cb3c47628681b2dbae147dadfa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpism_1_1TridiagonalSystem_a19a060cb3c47628681b2dbae147dadfa.html#a19a060cb3c47628681b2dbae147dadfa">save_matrix</a> (std::ostream &amp;output, unsigned int system_size, const std::string &amp;variable) const</td></tr>
+<tr class="memdesc:a19a060cb3c47628681b2dbae147dadfa"><td class="mdescLeft">&#160;</td><td class="mdescRight">View the tridiagonal matrix.  <a href="classpism_1_1TridiagonalSystem_a19a060cb3c47628681b2dbae147dadfa.html#a19a060cb3c47628681b2dbae147dadfa">More...</a><br /></td></tr>
+<tr class="separator:a19a060cb3c47628681b2dbae147dadfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a27ee53b9a87619082860168d902931bf"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpism_1_1TridiagonalSystem_a27ee53b9a87619082860168d902931bf.html#a27ee53b9a87619082860168d902931bf">prefix</a> () const</td></tr>
 <tr class="separator:a27ee53b9a87619082860168d902931bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a999e3e59c2a720d74685e8e2b47e43db"><td class="memItemLeft" align="right" valign="top">double &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpism_1_1TridiagonalSystem_a999e3e59c2a720d74685e8e2b47e43db.html#a999e3e59c2a720d74685e8e2b47e43db">L</a> (size_t i)</td></tr>
@@ -127,6 +125,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a97d7c1f82e9aaf6200c69dbdf57e0caa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d58571f96beffe94d7f03d1807381f8"><td class="memItemLeft" align="right" valign="top">double &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpism_1_1TridiagonalSystem_a2d58571f96beffe94d7f03d1807381f8.html#a2d58571f96beffe94d7f03d1807381f8">RHS</a> (size_t i)</td></tr>
 <tr class="separator:a2d58571f96beffe94d7f03d1807381f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a9e7cd17edb66b05af7df5170d95a9694"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpism_1_1TridiagonalSystem_a9e7cd17edb66b05af7df5170d95a9694.html#a9e7cd17edb66b05af7df5170d95a9694">save_vector</a> (std::ostream &amp;output, const std::vector&lt; double &gt; &amp;v, unsigned int system_size, const std::string &amp;variable)</td></tr>
+<tr class="memdesc:a9e7cd17edb66b05af7df5170d95a9694"><td class="mdescLeft">&#160;</td><td class="mdescRight">Utility for simple ascii view of a vector (one-dimensional column) quantity.  <a href="classpism_1_1TridiagonalSystem_a9e7cd17edb66b05af7df5170d95a9694.html#a9e7cd17edb66b05af7df5170d95a9694">More...</a><br /></td></tr>
+<tr class="separator:a9e7cd17edb66b05af7df5170d95a9694"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
