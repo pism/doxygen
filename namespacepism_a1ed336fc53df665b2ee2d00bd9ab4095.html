@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>PISM, A Parallel Ice Sheet Model: pism::operator*</title>
+<title>PISM, A Parallel Ice Sheet Model: pism::GlobalMax</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -196,7 +196,7 @@ $(function() {
           <tr><td class="navtab"><a class="navtab" href="namespacepism_a877a4795ab3db04ea436e26351d8059e.html#a877a4795ab3db04ea436e26351d8059e">global_to_local</a></td></tr>
           <tr><td class="navtab"><a class="navtab" href="namespacepism_a4f5594a235f5835d6ddbb2a21f4d40cc.html#a4f5594a235f5835d6ddbb2a21f4d40cc">GlobalMax</a></td></tr>
           <tr><td class="navtab"><a class="navtab" href="namespacepism_a38a0f30fe4dfd9847da570dfbcd44bc4.html#a38a0f30fe4dfd9847da570dfbcd44bc4">GlobalMax</a></td></tr>
-          <tr><td class="navtab"><a class="navtab" href="namespacepism_a1ed336fc53df665b2ee2d00bd9ab4095.html#a1ed336fc53df665b2ee2d00bd9ab4095">GlobalMax</a></td></tr>
+          <tr><td class="navtabHL"><a class="navtab" href="namespacepism_a1ed336fc53df665b2ee2d00bd9ab4095.html#a1ed336fc53df665b2ee2d00bd9ab4095">GlobalMax</a></td></tr>
           <tr><td class="navtab"><a class="navtab" href="namespacepism_aa67d24ee72754ef6277e6e85f74b7c60.html#aa67d24ee72754ef6277e6e85f74b7c60">GlobalMin</a></td></tr>
           <tr><td class="navtab"><a class="navtab" href="namespacepism_a2a4c8026777a008dd350ea11c3722b36.html#a2a4c8026777a008dd350ea11c3722b36">GlobalMin</a></td></tr>
           <tr><td class="navtab"><a class="navtab" href="namespacepism_af535956cf1b7fb98c645e5ace352375d.html#af535956cf1b7fb98c645e5ace352375d">GlobalReduce</a></td></tr>
@@ -263,7 +263,7 @@ $(function() {
           <tr><td class="navtab"><a class="navtab" href="namespacepism_a6ede579b8842fc26817e71269c0b766e.html#a6ede579b8842fc26817e71269c0b766e">nc_type_to_pism_type</a></td></tr>
           <tr><td class="navtab"><a class="navtab" href="namespacepism_a29133ed3f28e0aaba2d3af612dbbc5d6.html#a29133ed3f28e0aaba2d3af612dbbc5d6">NodeType</a></td></tr>
           <tr><td class="navtab"><a class="navtab" href="namespacepism_adabb10f0ad62051d0e456737b7a779c1.html#adabb10f0ad62051d0e456737b7a779c1">operator!=</a></td></tr>
-          <tr><td class="navtabHL"><a class="navtab" href="namespacepism_aef00e5a7eafd32b053d8b00d5765a992.html#aef00e5a7eafd32b053d8b00d5765a992">operator*</a></td></tr>
+          <tr><td class="navtab"><a class="navtab" href="namespacepism_aef00e5a7eafd32b053d8b00d5765a992.html#aef00e5a7eafd32b053d8b00d5765a992">operator*</a></td></tr>
           <tr><td class="navtab"><a class="navtab" href="namespacepism_acd3d7dbc10ce95b6747e04dc761be162.html#acd3d7dbc10ce95b6747e04dc761be162">operator&lt;</a></td></tr>
           <tr><td class="navtab"><a class="navtab" href="namespacepism_ae1a1454e498db3e1180946ab04844935.html#ae1a1454e498db3e1180946ab04844935">operator==</a></td></tr>
           <tr><td class="navtab"><a class="navtab" href="namespacepism_a0ad2991b5d138251a243c331014b4749.html#a0ad2991b5d138251a243c331014b4749">operator==</a></td></tr>
@@ -371,26 +371,35 @@ $(function() {
       </div>
    </td>
    <td valign="top" class="mempage">
-<a id="aef00e5a7eafd32b053d8b00d5765a992"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aef00e5a7eafd32b053d8b00d5765a992">&#9670;&nbsp;</a></span>operator*()</h2>
+<a id="a1ed336fc53df665b2ee2d00bd9ab4095"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ed336fc53df665b2ee2d00bd9ab4095">&#9670;&nbsp;</a></span>GlobalMax() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classpism_1_1Vector2.html">Vector2</a> pism::operator* </td>
+          <td class="memname">void pism::GlobalMax </td>
           <td>(</td>
-          <td class="paramtype">const double &amp;&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
+          <td class="paramtype">MPI_Comm&#160;</td>
+          <td class="paramname"><em>comm</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classpism_1_1Vector2.html">Vector2</a> &amp;&#160;</td>
-          <td class="paramname"><em>v</em>&#160;</td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>local</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>result</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>count</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -398,14 +407,11 @@ $(function() {
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Vector2_8hh_source.html#l00107">107</a> of file <a class="el" href="Vector2_8hh_source.html">Vector2.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pism__utilities_8cc_source.html#l00160">160</a> of file <a class="el" href="pism__utilities_8cc_source.html">pism_utilities.cc</a>.</p>
+
+<p class="reference">References <a class="el" href="test__cube_8c_source.html#l00016">count</a>, and <a class="el" href="pism__utilities_8cc_source.html#l00140">GlobalReduce()</a>.</p>
 
 </div>
 </div>
