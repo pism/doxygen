@@ -313,32 +313,37 @@ $(function() {
 <div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    <span class="keywordflow">for</span> (<a class="code" href="classpism_1_1Points.html">Points</a> p(*<a class="code" href="classpism_1_1IceModelVec_a3d4feaa8cb0ab80fdc0aa71b0172ab66.html#a3d4feaa8cb0ab80fdc0aa71b0172ab66">m_impl</a>-&gt;<a class="code" href="structpism_1_1IceModelVec_1_1Impl_ac9285cb801959258d2e80f252e6f92d6.html#ac9285cb801959258d2e80f252e6f92d6">grid</a>); p; p.<a class="code" href="classpism_1_1PointsWithGhosts_a36441e98cc5c0a8538c5358523dce6af.html#a36441e98cc5c0a8538c5358523dce6af">next</a>()) {</div>
 <div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;      <span class="keyword">const</span> <span class="keywordtype">int</span> i = p.i(), j = p.j();</div>
 <div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160; </div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;      PetscArraymove(this-&gt;<a class="code" href="classpism_1_1IceModelVec3_aa04e5dc52b1af5f25a99bbf84306bc32.html#aa04e5dc52b1af5f25a99bbf84306bc32">get_column</a>(i, j), input.<a class="code" href="classpism_1_1IceModelVec3_aa04e5dc52b1af5f25a99bbf84306bc32.html#aa04e5dc52b1af5f25a99bbf84306bc32">get_column</a>(i, j), N);</div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;    }</div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;  } <span class="keywordflow">catch</span> (...) {</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;    loop.<a class="code" href="classpism_1_1ParallelSection_a6b0a6e5e64970af7eadabfebe2b20bd2.html#a6b0a6e5e64970af7eadabfebe2b20bd2">failed</a>();</div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;  }</div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;  loop.<a class="code" href="classpism_1_1ParallelSection_ac23296abee1cbcb3c3fd68c7f5ce0835.html#ac23296abee1cbcb3c3fd68c7f5ce0835">check</a>();</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160; </div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;  <a class="code" href="classpism_1_1IceModelVec_a08cf2fc4afc32d8a12619c0d5d090956.html#a08cf2fc4afc32d8a12619c0d5d090956">update_ghosts</a>();</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160; </div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;  <a class="code" href="classpism_1_1IceModelVec_ae09394dcfbe8a3b252c2d18108ccfc67.html#ae09394dcfbe8a3b252c2d18108ccfc67">inc_state_counter</a>();</div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;}</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;<span class="preprocessor">#if PETSC_VERSION_LT(3, 12, 0)</span></div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;      PetscMemmove(this-&gt;<a class="code" href="classpism_1_1IceModelVec3_aa04e5dc52b1af5f25a99bbf84306bc32.html#aa04e5dc52b1af5f25a99bbf84306bc32">get_column</a>(i, j),</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;                   <span class="keyword">const_cast&lt;</span><span class="keywordtype">double</span>*<span class="keyword">&gt;</span>(input.<a class="code" href="classpism_1_1IceModelVec3_aa04e5dc52b1af5f25a99bbf84306bc32.html#aa04e5dc52b1af5f25a99bbf84306bc32">get_column</a>(i, j)), N*<span class="keyword">sizeof</span>(<span class="keywordtype">double</span>));</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;      PetscArraymove(this-&gt;<a class="code" href="classpism_1_1IceModelVec3_aa04e5dc52b1af5f25a99bbf84306bc32.html#aa04e5dc52b1af5f25a99bbf84306bc32">get_column</a>(i, j), input.<a class="code" href="classpism_1_1IceModelVec3_aa04e5dc52b1af5f25a99bbf84306bc32.html#aa04e5dc52b1af5f25a99bbf84306bc32">get_column</a>(i, j), N);</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;    }</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;  } <span class="keywordflow">catch</span> (...) {</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;    loop.<a class="code" href="classpism_1_1ParallelSection_a6b0a6e5e64970af7eadabfebe2b20bd2.html#a6b0a6e5e64970af7eadabfebe2b20bd2">failed</a>();</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;  }</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;  loop.<a class="code" href="classpism_1_1ParallelSection_ac23296abee1cbcb3c3fd68c7f5ce0835.html#ac23296abee1cbcb3c3fd68c7f5ce0835">check</a>();</div>
 <div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160; </div>
-<div class="line"><a name="l00249"></a><span class="lineno"><a class="line" href="namespacepism_a264b4ead9971af67116d35d707de1a29.html#a264b4ead9971af67116d35d707de1a29">  249</a></span>&#160;std::shared_ptr&lt;IceModelVec3&gt; <a class="code" href="namespacepism_a930ee083f87c6fa99908149d7c11cfc1.html#a930ee083f87c6fa99908149d7c11cfc1">duplicate</a>(<span class="keyword">const</span> <a class="code" href="classpism_1_1IceModelVec3.html">IceModelVec3</a> &amp;source) {</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;  <a class="code" href="classpism_1_1IceModelVec_a08cf2fc4afc32d8a12619c0d5d090956.html#a08cf2fc4afc32d8a12619c0d5d090956">update_ghosts</a>();</div>
 <div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160; </div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;  <span class="keyword">auto</span> result = std::make_shared&lt;IceModelVec3&gt;(source.<a class="code" href="classpism_1_1IceModelVec_a7ec09c4ef26812d2a16d81db42f6b852.html#a7ec09c4ef26812d2a16d81db42f6b852">grid</a>(),</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;                                               source.<a class="code" href="classpism_1_1IceModelVec_ade52b8a620b4d2c1446d26fc06ed7960.html#ade52b8a620b4d2c1446d26fc06ed7960">get_name</a>(),</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;                                               <a class="code" href="namespacepism_af0700c6771420c20ac873c2779475d57.html#af0700c6771420c20ac873c2779475d57a64e797222853badb3592d5d01f623da9">WITHOUT_GHOSTS</a>,</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;                                               source.<a class="code" href="classpism_1_1IceModelVec_a94982587e2e4365fc7dce94498768f53.html#a94982587e2e4365fc7dce94498768f53">levels</a>());</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;  <a class="code" href="classpism_1_1IceModelVec_ae09394dcfbe8a3b252c2d18108ccfc67.html#ae09394dcfbe8a3b252c2d18108ccfc67">inc_state_counter</a>();</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;}</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160; </div>
+<div class="line"><a name="l00254"></a><span class="lineno"><a class="line" href="namespacepism_a264b4ead9971af67116d35d707de1a29.html#a264b4ead9971af67116d35d707de1a29">  254</a></span>&#160;std::shared_ptr&lt;IceModelVec3&gt; <a class="code" href="namespacepism_a930ee083f87c6fa99908149d7c11cfc1.html#a930ee083f87c6fa99908149d7c11cfc1">duplicate</a>(<span class="keyword">const</span> <a class="code" href="classpism_1_1IceModelVec3.html">IceModelVec3</a> &amp;source) {</div>
 <div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160; </div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;  result-&gt;metadata() = source.<a class="code" href="classpism_1_1IceModelVec_a198b0bb7db28b03415f6e2cfa37ce7be.html#a198b0bb7db28b03415f6e2cfa37ce7be">metadata</a>();</div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160; </div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;  <span class="keywordflow">return</span> result;</div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;}</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;  <span class="keyword">auto</span> result = std::make_shared&lt;IceModelVec3&gt;(source.<a class="code" href="classpism_1_1IceModelVec_a7ec09c4ef26812d2a16d81db42f6b852.html#a7ec09c4ef26812d2a16d81db42f6b852">grid</a>(),</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;                                               source.<a class="code" href="classpism_1_1IceModelVec_ade52b8a620b4d2c1446d26fc06ed7960.html#ade52b8a620b4d2c1446d26fc06ed7960">get_name</a>(),</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;                                               <a class="code" href="namespacepism_af0700c6771420c20ac873c2779475d57.html#af0700c6771420c20ac873c2779475d57a64e797222853badb3592d5d01f623da9">WITHOUT_GHOSTS</a>,</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;                                               source.<a class="code" href="classpism_1_1IceModelVec_a94982587e2e4365fc7dce94498768f53.html#a94982587e2e4365fc7dce94498768f53">levels</a>());</div>
 <div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160; </div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160; </div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;} <span class="comment">// end of namespace pism</span></div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;  result-&gt;metadata() = source.<a class="code" href="classpism_1_1IceModelVec_a198b0bb7db28b03415f6e2cfa37ce7be.html#a198b0bb7db28b03415f6e2cfa37ce7be">metadata</a>();</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160; </div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;  <span class="keywordflow">return</span> result;</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;}</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160; </div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160; </div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;} <span class="comment">// end of namespace pism</span></div>
 <div class="ttc" id="aConfigInterface_8hh_html"><div class="ttname"><a href="ConfigInterface_8hh.html">ConfigInterface.hh</a></div></div>
 <div class="ttc" id="aIceGrid_8hh_html"><div class="ttname"><a href="IceGrid_8hh.html">IceGrid.hh</a></div></div>
 <div class="ttc" id="aclasspism_1_1AccessList_html"><div class="ttname"><a href="classpism_1_1AccessList.html">pism::AccessList</a></div><div class="ttdoc">Makes sure that we call begin_access() and end_access() for all accessed IceModelVecs.</div><div class="ttdef"><b>Definition:</b> <a href="iceModelVec_8hh_source.html#l00059">iceModelVec.hh:59</a></div></div>

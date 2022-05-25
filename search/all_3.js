@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['b_135',['B',['../structTestNParameters_a2614fa893edf711125a76eff7a592070.html#a2614fa893edf711125a76eff7a592070',1,'TestNParameters']]],
-  ['b_136',['b',['../classpism_1_1ocean_1_1GivenTH_1_1Constants_a195989d8a210a099526e5c9454d069c4.html#a195989d8a210a099526e5c9454d069c4',1,'pism::ocean::GivenTH::Constants::b()'],['../structExactLParameters_a065ce5d2c8095c5968e4e1ccfa49528b.html#a065ce5d2c8095c5968e4e1ccfa49528b',1,'ExactLParameters::b()']]],
+  ['b_135',['b',['../classpism_1_1ocean_1_1GivenTH_1_1Constants_a195989d8a210a099526e5c9454d069c4.html#a195989d8a210a099526e5c9454d069c4',1,'pism::ocean::GivenTH::Constants::b()'],['../structExactLParameters_a065ce5d2c8095c5968e4e1ccfa49528b.html#a065ce5d2c8095c5968e4e1ccfa49528b',1,'ExactLParameters::b()']]],
+  ['b_136',['B',['../structTestNParameters_a2614fa893edf711125a76eff7a592070.html#a2614fa893edf711125a76eff7a592070',1,'TestNParameters']]],
   ['b0_137',['B0',['../classpism_1_1stressbalance_1_1SSATestCasePlug_ad524db7826c4c188a5acd75997f82b3d.html#ad524db7826c4c188a5acd75997f82b3d',1,'pism::stressbalance::SSATestCasePlug::B0()'],['../exactTestK_8c_a16cd714cec1ab4c7a60c61a47367272c.html#a16cd714cec1ab4c7a60c61a47367272c',1,'B0():&#160;exactTestK.c']]],
   ['b0_138',['b0',['../exactTestL_8cc_a7cd4ebc9eb7d8912281c0f7e47868b80.html#a7cd4ebc9eb7d8912281c0f7e47868b80',1,'exactTestL.cc']]],
   ['b_5fbed_139',['B_bed',['../namespacepism_1_1stressbalance_aae245efb36317330f37dea8305e0da5d.html#aae245efb36317330f37dea8305e0da5d',1,'pism::stressbalance']]],
