@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PISM, A Parallel Ice Sheet Model
-   &#160;<span id="projectnumber">stable v2.0.5 committed by Constantine Khrulev on 2022-10-14 09:56:26 -0800</span>
+   &#160;<span id="projectnumber">stable v2.0.6 committed by Constantine Khrulev on 2023-01-23 15:14:38 -0900</span>
    </div>
   </td>
  </tr>
@@ -179,15 +179,14 @@ $(function() {
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">grid</td><td>PISM's grid. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">Mz</td><td>number of vertical levels </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">n_levels</td><td>maximum number of grid levels to use </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">coarsening_factor</td><td>grid coarsening factor </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="Blatter_8cc_source.html#l00258">258</a> of file <a class="el" href="Blatter_8cc_source.html">Blatter.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Blatter_8cc_source.html#l00257">257</a> of file <a class="el" href="Blatter_8cc_source.html">Blatter.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="FlowLawFactory_8cc_source.html#l00110">pism::rheology::FlowLawFactory::create()</a>, <a class="el" href="exactTestP_8cc_source.html#l00039">pism::g</a>, <a class="el" href="Component_8cc_source.html#l00105">pism::Component::grid()</a>, <a class="el" href="FlowLawFactory_8hh_source.html#l00037">ICE_GOLDSBY_KOHLSTEDT</a>, <a class="el" href="Component_8hh_source.html#l00138">pism::Component::m_config</a>, <a class="el" href="Blatter_8hh_source.html#l00100">m_E_viscosity</a>, <a class="el" href="ShallowStressBalance_8hh_source.html#l00081">pism::stressbalance::ShallowStressBalance::m_EC</a>, <a class="el" href="Blatter_8hh_source.html#l00094">m_eta_transform</a>, <a class="el" href="Blatter_8hh_source.html#l00113">m_face100</a>, <a class="el" href="Blatter_8hh_source.html#l00112">m_face4</a>, <a class="el" href="ShallowStressBalance_8hh_source.html#l00080">pism::stressbalance::ShallowStressBalance::m_flow_law</a>, <a class="el" href="Blatter_8hh_source.html#l00091">m_glen_exponent</a>, <a class="el" href="Blatter_8hh_source.html#l00105">m_Nq</a>, <a class="el" href="Blatter_8hh_source.html#l00085">m_rho_ice_g</a>, <a class="el" href="Blatter_8hh_source.html#l00088">m_rho_ocean_g</a>, <a class="el" href="Blatter_8hh_source.html#l00082">m_scaling</a>, <a class="el" href="Blatter_8hh_source.html#l00068">m_u_sigma</a>, <a class="el" href="Blatter_8hh_source.html#l00068">m_v_sigma</a>, <a class="el" href="Element_8hh_source.html#l00404">pism::fem::Q1Element3Face::n_pts()</a>, <a class="el" href="error__handling_8hh_source.html#l00044">PISM_ERROR_LOCATION</a>, <a class="el" href="FlowLawFactory_8cc_source.html#l00096">pism::rheology::FlowLawFactory::remove()</a>, <a class="el" href="Blatter_8cc_source.html#l00382">setup()</a>, and <a class="el" href="iceModelVec_8hh_source.html#l00049">pism::WITHOUT_GHOSTS</a>.</p>
+<p class="reference">References <a class="el" href="FlowLawFactory_8cc_source.html#l00110">pism::rheology::FlowLawFactory::create()</a>, <a class="el" href="exactTestP_8cc_source.html#l00039">pism::g</a>, <a class="el" href="Component_8cc_source.html#l00105">pism::Component::grid()</a>, <a class="el" href="FlowLawFactory_8hh_source.html#l00037">ICE_GOLDSBY_KOHLSTEDT</a>, <a class="el" href="Component_8hh_source.html#l00138">pism::Component::m_config</a>, <a class="el" href="Blatter_8hh_source.html#l00100">m_E_viscosity</a>, <a class="el" href="ShallowStressBalance_8hh_source.html#l00081">pism::stressbalance::ShallowStressBalance::m_EC</a>, <a class="el" href="Blatter_8hh_source.html#l00094">m_eta_transform</a>, <a class="el" href="Blatter_8hh_source.html#l00113">m_face100</a>, <a class="el" href="Blatter_8hh_source.html#l00112">m_face4</a>, <a class="el" href="ShallowStressBalance_8hh_source.html#l00080">pism::stressbalance::ShallowStressBalance::m_flow_law</a>, <a class="el" href="Blatter_8hh_source.html#l00091">m_glen_exponent</a>, <a class="el" href="Blatter_8hh_source.html#l00105">m_Nq</a>, <a class="el" href="Blatter_8hh_source.html#l00085">m_rho_ice_g</a>, <a class="el" href="Blatter_8hh_source.html#l00088">m_rho_ocean_g</a>, <a class="el" href="Blatter_8hh_source.html#l00082">m_scaling</a>, <a class="el" href="Blatter_8hh_source.html#l00068">m_u_sigma</a>, <a class="el" href="Blatter_8hh_source.html#l00068">m_v_sigma</a>, <a class="el" href="Element_8hh_source.html#l00404">pism::fem::Q1Element3Face::n_pts()</a>, <a class="el" href="error__handling_8hh_source.html#l00044">PISM_ERROR_LOCATION</a>, <a class="el" href="FlowLawFactory_8cc_source.html#l00096">pism::rheology::FlowLawFactory::remove()</a>, <a class="el" href="Blatter_8cc_source.html#l00381">setup()</a>, and <a class="el" href="iceModelVec_8hh_source.html#l00049">pism::WITHOUT_GHOSTS</a>.</p>
 
 </div>
 </div>

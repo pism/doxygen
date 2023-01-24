@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>PISM, A Parallel Ice Sheet Model: pism::io::NCFile::write_darray_impl</title>
+<title>PISM, A Parallel Ice Sheet Model: pism::io::NCFile::write_darray</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PISM, A Parallel Ice Sheet Model
-   &#160;<span id="projectnumber">stable v2.0.5 committed by Constantine Khrulev on 2022-10-14 09:56:26 -0800</span>
+   &#160;<span id="projectnumber">stable v2.0.6 committed by Constantine Khrulev on 2023-01-23 15:14:38 -0900</span>
    </div>
   </td>
  </tr>
@@ -144,24 +144,21 @@ $(function() {
           <tr><td class="navtab"><a class="navtab" href="classpism_1_1io_1_1NCFile_ab4e0b8d8a7416ca52903f97999913a17.html#ab4e0b8d8a7416ca52903f97999913a17">set_fill_impl</a></td></tr>
           <tr><td class="navtab"><a class="navtab" href="classpism_1_1io_1_1NCFile_a0c9a0992cd49142ed66a254deab9f4d4.html#a0c9a0992cd49142ed66a254deab9f4d4">sync</a></td></tr>
           <tr><td class="navtab"><a class="navtab" href="classpism_1_1io_1_1NCFile_ac0a6c501dbf521e220039ca52e784ef7.html#ac0a6c501dbf521e220039ca52e784ef7">sync_impl</a></td></tr>
-          <tr><td class="navtab"><a class="navtab" href="classpism_1_1io_1_1NCFile_a594448a3bc049c00b02d758e8b19a22b.html#a594448a3bc049c00b02d758e8b19a22b">write_darray</a></td></tr>
-          <tr><td class="navtabHL"><a class="navtab" href="classpism_1_1io_1_1NCFile_a0adfacd1fde59935d220be3a281706d8.html#a0adfacd1fde59935d220be3a281706d8">write_darray_impl</a></td></tr>
+          <tr><td class="navtabHL"><a class="navtab" href="classpism_1_1io_1_1NCFile_a952f56f3bb35cc075b8a3523526bf614.html#a952f56f3bb35cc075b8a3523526bf614">write_darray</a></td></tr>
+          <tr><td class="navtab"><a class="navtab" href="classpism_1_1io_1_1NCFile_a1ea7795ec401f216ce8bb49aebbc0871.html#a1ea7795ec401f216ce8bb49aebbc0871">write_darray_impl</a></td></tr>
           <tr><td class="navtab"><a class="navtab" href="classpism_1_1io_1_1NCFile_a7c1a52e94b4f3f94c4bbe146b6351185.html#a7c1a52e94b4f3f94c4bbe146b6351185">~NCFile</a></td></tr>
         </table>
       </div>
    </td>
    <td valign="top" class="mempage">
-<a id="a0adfacd1fde59935d220be3a281706d8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0adfacd1fde59935d220be3a281706d8">&#9670;&nbsp;</a></span>write_darray_impl()</h2>
+<a id="a952f56f3bb35cc075b8a3523526bf614"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a952f56f3bb35cc075b8a3523526bf614">&#9670;&nbsp;</a></span>write_darray()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void pism::io::NCFile::write_darray_impl </td>
+          <td class="memname">void pism::io::NCFile::write_darray </td>
           <td>(</td>
           <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>variable_name</em>, </td>
@@ -181,6 +178,12 @@ $(function() {
         <tr>
           <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>time_dependent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">unsigned int&#160;</td>
           <td class="paramname"><em>record</em>, </td>
         </tr>
@@ -196,21 +199,11 @@ $(function() {
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
-<p>The default implementation computes start and count and calls <a class="el" href="classpism_1_1io_1_1NCFile_a5cba8e723869f737b64a644b2a580710.html#a5cba8e723869f737b64a644b2a580710">put_vara_double()</a> </p>
 
-<p>Reimplemented in <a class="el" href="classpism_1_1io_1_1ParallelIO_a42cda71727a3aa9280424e2619c2694c.html#a42cda71727a3aa9280424e2619c2694c">pism::io::ParallelIO</a>.</p>
+<p class="definition">Definition at line <a class="el" href="NCFile_8cc_source.html#l00158">158</a> of file <a class="el" href="NCFile_8cc_source.html">NCFile.cc</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="NCFile_8cc_source.html#l00170">170</a> of file <a class="el" href="NCFile_8cc_source.html">NCFile.cc</a>.</p>
-
-<p class="reference">References <a class="el" href="test__cube_8c_source.html#l00016">count</a>, <a class="el" href="NCFile_8cc_source.html#l00229">inq_vardimid()</a>, <a class="el" href="NCFile_8cc_source.html#l00142">put_vara_double()</a>, <a class="el" href="IceGrid_8cc_source.html#l00928">pism::IceGrid::xm()</a>, <a class="el" href="IceGrid_8cc_source.html#l00918">pism::IceGrid::xs()</a>, <a class="el" href="IceGrid_8cc_source.html#l00933">pism::IceGrid::ym()</a>, and <a class="el" href="IceGrid_8cc_source.html#l00923">pism::IceGrid::ys()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="NCFile_8cc_source.html#l00158">write_darray()</a>.</p>
+<p class="reference">References <a class="el" href="NCFile_8cc_source.html#l00084">enddef()</a>, and <a class="el" href="NCFile_8cc_source.html#l00171">write_darray_impl()</a>.</p>
 
 </div>
 </div>

@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PISM, A Parallel Ice Sheet Model
-   &#160;<span id="projectnumber">stable v2.0.5 committed by Constantine Khrulev on 2022-10-14 09:56:26 -0800</span>
+   &#160;<span id="projectnumber">stable v2.0.6 committed by Constantine Khrulev on 2023-01-23 15:14:38 -0900</span>
    </div>
   </td>
  </tr>
@@ -78,7 +78,7 @@ $(function() {
 <div class="title">exactTestL.cc</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="exactTestL_8cc.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/* Copyright (C) 2016, 2017 PISM Authors</span></div>
+<a href="exactTestL_8cc.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/* Copyright (C) 2016, 2017, 2022 PISM Authors</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * This file is part of PISM.</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> *</span></div>
@@ -238,61 +238,58 @@ $(function() {
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160; </div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">double</span> Lsqr = <a class="code" href="exactTestL_8cc_a047809198cbf2ebfd058ed4c3da89e47.html#a047809198cbf2ebfd058ed4c3da89e47">L</a> * <a class="code" href="exactTestL_8cc_a047809198cbf2ebfd058ed4c3da89e47.html#a047809198cbf2ebfd058ed4c3da89e47">L</a>;</div>
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">double</span> a0 = 0.3 / <a class="code" href="exactTestL_8cc_a7714df5f626688836ecd30d8e12190d5.html#a7714df5f626688836ecd30d8e12190d5">SperA</a>;   <span class="comment">/* m/s;  i.e. 0.3 m/a */</span></div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;  <span class="keywordtype">double</span> *u;</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;  <span class="keywordtype">int</span> stat, i;</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160; </div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;  u = (<span class="keywordtype">double</span> *) malloc((<span class="keywordtype">size_t</span>)N * <span class="keyword">sizeof</span>(double)); <span class="comment">/* temporary arrays */</span></div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160; </div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;  <span class="comment">/* combination EPS_ABS = 1e-12, EPS_REL=0.0, method = 1 = RK Cash-Karp</span></div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;<span class="comment">     believed to be predictable and accurate */</span></div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;  stat = <a class="code" href="exactTestL_8cc_a7d032b90ddbc8c3ea3dc30b7eac70285.html#a7d032b90ddbc8c3ea3dc30b7eac70285">getU</a>(r,N,u,1.0e-12,0.0,1);</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;  <span class="keywordflow">if</span> (stat != GSL_SUCCESS) {</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    free(u);</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    <span class="keywordflow">return</span> stat;</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;  }</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160; </div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;  <span class="keywordflow">for</span> (i = 0; i &lt; N; i++) {</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    H[i] = pow(u[i],3.0/8.0);</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    b[i] = - <a class="code" href="exactTestL_8cc_a7cd4ebc9eb7d8912281c0f7e47868b80.html#a7cd4ebc9eb7d8912281c0f7e47868b80">b0</a> * cos(<a class="code" href="exactTestL_8cc_a984ae9368846dddd0f8a8ddfb6813a4d.html#a984ae9368846dddd0f8a8ddfb6813a4d">z0</a> * M_PI * r[i] / <a class="code" href="exactTestL_8cc_a047809198cbf2ebfd058ed4c3da89e47.html#a047809198cbf2ebfd058ed4c3da89e47">L</a>);</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    a[i] = a0 * (1.0 - (2.0 * r[i] * r[i] / Lsqr));</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;  }</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160; </div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;  free(u);</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;  <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;}</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160; </div>
-<div class="line"><a name="l00184"></a><span class="lineno"><a class="line" href="structExactLParameters_ab6c30abe5a1a69774d73c5c52f2e4ff3.html#ab6c30abe5a1a69774d73c5c52f2e4ff3">  184</a></span>&#160;<a class="code" href="structExactLParameters_ab6c30abe5a1a69774d73c5c52f2e4ff3.html#ab6c30abe5a1a69774d73c5c52f2e4ff3">ExactLParameters::ExactLParameters</a>(<span class="keywordtype">size_t</span> size)</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;  : H(size), a(size), b(size) {</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;}</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;  <span class="keywordtype">int</span> stat, i;</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160; </div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;  std::vector&lt;double&gt; u(N);</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160; </div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;  <span class="comment">/* combination EPS_ABS = 1e-12, EPS_REL=0.0, method = 1 = RK Cash-Karp</span></div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;<span class="comment">     believed to be predictable and accurate */</span></div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;  stat = <a class="code" href="exactTestL_8cc_a7d032b90ddbc8c3ea3dc30b7eac70285.html#a7d032b90ddbc8c3ea3dc30b7eac70285">getU</a>(r,N,u.data(),1.0e-12,0.0,1);</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;  <span class="keywordflow">if</span> (stat != GSL_SUCCESS) {</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    <span class="keywordflow">return</span> stat;</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;  }</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160; </div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;  <span class="keywordflow">for</span> (i = 0; i &lt; N; i++) {</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    H[i] = pow(u[i],3.0/8.0);</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    b[i] = - <a class="code" href="exactTestL_8cc_a7cd4ebc9eb7d8912281c0f7e47868b80.html#a7cd4ebc9eb7d8912281c0f7e47868b80">b0</a> * cos(<a class="code" href="exactTestL_8cc_a984ae9368846dddd0f8a8ddfb6813a4d.html#a984ae9368846dddd0f8a8ddfb6813a4d">z0</a> * M_PI * r[i] / <a class="code" href="exactTestL_8cc_a047809198cbf2ebfd058ed4c3da89e47.html#a047809198cbf2ebfd058ed4c3da89e47">L</a>);</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    a[i] = a0 * (1.0 - (2.0 * r[i] * r[i] / Lsqr));</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;  }</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160; </div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;  <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;}</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160; </div>
+<div class="line"><a name="l00181"></a><span class="lineno"><a class="line" href="structExactLParameters_ab6c30abe5a1a69774d73c5c52f2e4ff3.html#ab6c30abe5a1a69774d73c5c52f2e4ff3">  181</a></span>&#160;<a class="code" href="structExactLParameters_ab6c30abe5a1a69774d73c5c52f2e4ff3.html#ab6c30abe5a1a69774d73c5c52f2e4ff3">ExactLParameters::ExactLParameters</a>(<span class="keywordtype">size_t</span> size)</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;  : H(size), a(size), b(size) {</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;}</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160; </div>
+<div class="line"><a name="l00185"></a><span class="lineno"><a class="line" href="exactTestL_8cc_aa34486a71034fb6184d0d032c5f059ef.html#aa34486a71034fb6184d0d032c5f059ef">  185</a></span>&#160;<a class="code" href="structExactLParameters.html">ExactLParameters</a> <a class="code" href="exactTestL_8cc_aa34486a71034fb6184d0d032c5f059ef.html#aa34486a71034fb6184d0d032c5f059ef">exactL</a>(<span class="keyword">const</span> std::vector&lt;double&gt; &amp;r) {</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;  <a class="code" href="structExactLParameters.html">ExactLParameters</a> result(r.size());</div>
 <div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160; </div>
-<div class="line"><a name="l00188"></a><span class="lineno"><a class="line" href="exactTestL_8cc_aa34486a71034fb6184d0d032c5f059ef.html#aa34486a71034fb6184d0d032c5f059ef">  188</a></span>&#160;<a class="code" href="structExactLParameters.html">ExactLParameters</a> <a class="code" href="exactTestL_8cc_aa34486a71034fb6184d0d032c5f059ef.html#aa34486a71034fb6184d0d032c5f059ef">exactL</a>(<span class="keyword">const</span> std::vector&lt;double&gt; &amp;r) {</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;  <a class="code" href="structExactLParameters.html">ExactLParameters</a> result(r.size());</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160; </div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;  <span class="keywordtype">int</span> error_code = <a class="code" href="exactTestL_8cc_a537d241ca857e7077806d00e269df381.html#a537d241ca857e7077806d00e269df381">exactL_list</a>(&amp;r[0], r.size(), &amp;result.<a class="code" href="structExactLParameters_a5ad8d9584603c6a145956f7da382c371.html#a5ad8d9584603c6a145956f7da382c371">H</a>[0], &amp;result.<a class="code" href="structExactLParameters_a065ce5d2c8095c5968e4e1ccfa49528b.html#a065ce5d2c8095c5968e4e1ccfa49528b">b</a>[0], &amp;result.<a class="code" href="structExactLParameters_aaa839e3f122ce2bbc7cc307afbc2b82a.html#aaa839e3f122ce2bbc7cc307afbc2b82a">a</a>[0]);</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160; </div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;  <span class="keywordflow">switch</span> (error_code) {</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;  <span class="keywordflow">case</span> <a class="code" href="exactTestL_8cc_a3cdfc076f601d323c1200493fc494374.html#a3cdfc076f601d323c1200493fc494374">TESTL_NOT_DONE</a>:</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    <span class="keywordflow">throw</span> RuntimeError::formatted(<a class="code" href="error__handling_8hh_aa0c260bffe8a4dbd77d48e8feee7c526.html#aa0c260bffe8a4dbd77d48e8feee7c526">PISM_ERROR_LOCATION</a>, <span class="stringliteral">&quot;Test L ERROR: exactL_list() returns &#39;NOT_DONE&#39; (%d) ...&quot;</span>,</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;                                  error_code);</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;  <span class="keywordflow">case</span> <a class="code" href="exactTestL_8cc_a195e9af017e0711f28458e0042eadaa8.html#a195e9af017e0711f28458e0042eadaa8">TESTL_NOT_DECREASING</a>:</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    <span class="keywordflow">throw</span> RuntimeError::formatted(<a class="code" href="error__handling_8hh_aa0c260bffe8a4dbd77d48e8feee7c526.html#aa0c260bffe8a4dbd77d48e8feee7c526">PISM_ERROR_LOCATION</a>, <span class="stringliteral">&quot;Test L ERROR: exactL_list() returns &#39;NOT_DECREASING&#39; (%d) ...&quot;</span>,</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;                                  error_code);</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;  <span class="keywordflow">case</span> <a class="code" href="exactTestL_8cc_adf1f6953c51d7daa6d50ef08ac5944fb.html#adf1f6953c51d7daa6d50ef08ac5944fb">TESTL_INVALID_METHOD</a>:</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    <span class="keywordflow">throw</span> RuntimeError::formatted(<a class="code" href="error__handling_8hh_aa0c260bffe8a4dbd77d48e8feee7c526.html#aa0c260bffe8a4dbd77d48e8feee7c526">PISM_ERROR_LOCATION</a>, <span class="stringliteral">&quot;Test L ERROR: exactL_list() returns &#39;INVALID_METHOD&#39; (%d) ...&quot;</span>,</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;                                  error_code);</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;  <span class="keywordflow">case</span> <a class="code" href="exactTestL_8cc_a35310ad4cbf60dd3e73ff0e8933e88a8.html#a35310ad4cbf60dd3e73ff0e8933e88a8">TESTL_NO_LIST</a>:</div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    <span class="keywordflow">throw</span> RuntimeError::formatted(<a class="code" href="error__handling_8hh_aa0c260bffe8a4dbd77d48e8feee7c526.html#aa0c260bffe8a4dbd77d48e8feee7c526">PISM_ERROR_LOCATION</a>, <span class="stringliteral">&quot;Test L ERROR: exactL_list() returns &#39;NO_LIST&#39; (%d) ...&quot;</span>,</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;                                  error_code);</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;  <span class="keywordflow">default</span>:</div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;    <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;  }</div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160; </div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;  <span class="keywordflow">return</span> result;</div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;}</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;  <span class="keywordtype">int</span> error_code = <a class="code" href="exactTestL_8cc_a537d241ca857e7077806d00e269df381.html#a537d241ca857e7077806d00e269df381">exactL_list</a>(&amp;r[0], r.size(), &amp;result.<a class="code" href="structExactLParameters_a5ad8d9584603c6a145956f7da382c371.html#a5ad8d9584603c6a145956f7da382c371">H</a>[0], &amp;result.<a class="code" href="structExactLParameters_a065ce5d2c8095c5968e4e1ccfa49528b.html#a065ce5d2c8095c5968e4e1ccfa49528b">b</a>[0], &amp;result.<a class="code" href="structExactLParameters_aaa839e3f122ce2bbc7cc307afbc2b82a.html#aaa839e3f122ce2bbc7cc307afbc2b82a">a</a>[0]);</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160; </div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;  <span class="keywordflow">switch</span> (error_code) {</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;  <span class="keywordflow">case</span> <a class="code" href="exactTestL_8cc_a3cdfc076f601d323c1200493fc494374.html#a3cdfc076f601d323c1200493fc494374">TESTL_NOT_DONE</a>:</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    <span class="keywordflow">throw</span> RuntimeError::formatted(<a class="code" href="error__handling_8hh_aa0c260bffe8a4dbd77d48e8feee7c526.html#aa0c260bffe8a4dbd77d48e8feee7c526">PISM_ERROR_LOCATION</a>, <span class="stringliteral">&quot;Test L ERROR: exactL_list() returns &#39;NOT_DONE&#39; (%d) ...&quot;</span>,</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;                                  error_code);</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;  <span class="keywordflow">case</span> <a class="code" href="exactTestL_8cc_a195e9af017e0711f28458e0042eadaa8.html#a195e9af017e0711f28458e0042eadaa8">TESTL_NOT_DECREASING</a>:</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    <span class="keywordflow">throw</span> RuntimeError::formatted(<a class="code" href="error__handling_8hh_aa0c260bffe8a4dbd77d48e8feee7c526.html#aa0c260bffe8a4dbd77d48e8feee7c526">PISM_ERROR_LOCATION</a>, <span class="stringliteral">&quot;Test L ERROR: exactL_list() returns &#39;NOT_DECREASING&#39; (%d) ...&quot;</span>,</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;                                  error_code);</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;  <span class="keywordflow">case</span> <a class="code" href="exactTestL_8cc_adf1f6953c51d7daa6d50ef08ac5944fb.html#adf1f6953c51d7daa6d50ef08ac5944fb">TESTL_INVALID_METHOD</a>:</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    <span class="keywordflow">throw</span> RuntimeError::formatted(<a class="code" href="error__handling_8hh_aa0c260bffe8a4dbd77d48e8feee7c526.html#aa0c260bffe8a4dbd77d48e8feee7c526">PISM_ERROR_LOCATION</a>, <span class="stringliteral">&quot;Test L ERROR: exactL_list() returns &#39;INVALID_METHOD&#39; (%d) ...&quot;</span>,</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;                                  error_code);</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;  <span class="keywordflow">case</span> <a class="code" href="exactTestL_8cc_a35310ad4cbf60dd3e73ff0e8933e88a8.html#a35310ad4cbf60dd3e73ff0e8933e88a8">TESTL_NO_LIST</a>:</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    <span class="keywordflow">throw</span> RuntimeError::formatted(<a class="code" href="error__handling_8hh_aa0c260bffe8a4dbd77d48e8feee7c526.html#aa0c260bffe8a4dbd77d48e8feee7c526">PISM_ERROR_LOCATION</a>, <span class="stringliteral">&quot;Test L ERROR: exactL_list() returns &#39;NO_LIST&#39; (%d) ...&quot;</span>,</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;                                  error_code);</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;  <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;  }</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160; </div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;  <span class="keywordflow">return</span> result;</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;}</div>
 <div class="ttc" id="aclasspism_1_1RuntimeError_html"><div class="ttname"><a href="classpism_1_1RuntimeError.html">pism::RuntimeError</a></div><div class="ttdef"><b>Definition:</b> <a href="error__handling_8hh_source.html#l00047">error_handling.hh:47</a></div></div>
 <div class="ttc" id="aerror__handling_8hh_aa0c260bffe8a4dbd77d48e8feee7c526_html_aa0c260bffe8a4dbd77d48e8feee7c526"><div class="ttname"><a href="error__handling_8hh_aa0c260bffe8a4dbd77d48e8feee7c526.html#aa0c260bffe8a4dbd77d48e8feee7c526">PISM_ERROR_LOCATION</a></div><div class="ttdeci">#define PISM_ERROR_LOCATION</div><div class="ttdef"><b>Definition:</b> <a href="error__handling_8hh_source.html#l00044">error_handling.hh:44</a></div></div>
 <div class="ttc" id="aexactTestL_8cc_a047809198cbf2ebfd058ed4c3da89e47_html_a047809198cbf2ebfd058ed4c3da89e47"><div class="ttname"><a href="exactTestL_8cc_a047809198cbf2ebfd058ed4c3da89e47.html#a047809198cbf2ebfd058ed4c3da89e47">L</a></div><div class="ttdeci">static const double L</div><div class="ttdef"><b>Definition:</b> <a href="exactTestL_8cc_source.html#l00040">exactTestL.cc:40</a></div></div>
@@ -306,7 +303,7 @@ $(function() {
 <div class="ttc" id="aexactTestL_8cc_a7cd4ebc9eb7d8912281c0f7e47868b80_html_a7cd4ebc9eb7d8912281c0f7e47868b80"><div class="ttname"><a href="exactTestL_8cc_a7cd4ebc9eb7d8912281c0f7e47868b80.html#a7cd4ebc9eb7d8912281c0f7e47868b80">b0</a></div><div class="ttdeci">static const double b0</div><div class="ttdef"><b>Definition:</b> <a href="exactTestL_8cc_source.html#l00041">exactTestL.cc:41</a></div></div>
 <div class="ttc" id="aexactTestL_8cc_a7d032b90ddbc8c3ea3dc30b7eac70285_html_a7d032b90ddbc8c3ea3dc30b7eac70285"><div class="ttname"><a href="exactTestL_8cc_a7d032b90ddbc8c3ea3dc30b7eac70285.html#a7d032b90ddbc8c3ea3dc30b7eac70285">getU</a></div><div class="ttdeci">int getU(const double *r, int N, double *u, const double EPS_ABS, const double EPS_REL, const int ode_method)</div><div class="ttdef"><b>Definition:</b> <a href="exactTestL_8cc_source.html#l00142">exactTestL.cc:142</a></div></div>
 <div class="ttc" id="aexactTestL_8cc_a984ae9368846dddd0f8a8ddfb6813a4d_html_a984ae9368846dddd0f8a8ddfb6813a4d"><div class="ttname"><a href="exactTestL_8cc_a984ae9368846dddd0f8a8ddfb6813a4d.html#a984ae9368846dddd0f8a8ddfb6813a4d">z0</a></div><div class="ttdeci">static const double z0</div><div class="ttdef"><b>Definition:</b> <a href="exactTestL_8cc_source.html#l00042">exactTestL.cc:42</a></div></div>
-<div class="ttc" id="aexactTestL_8cc_aa34486a71034fb6184d0d032c5f059ef_html_aa34486a71034fb6184d0d032c5f059ef"><div class="ttname"><a href="exactTestL_8cc_aa34486a71034fb6184d0d032c5f059ef.html#aa34486a71034fb6184d0d032c5f059ef">exactL</a></div><div class="ttdeci">ExactLParameters exactL(const std::vector&lt; double &gt; &amp;r)</div><div class="ttdef"><b>Definition:</b> <a href="exactTestL_8cc_source.html#l00188">exactTestL.cc:188</a></div></div>
+<div class="ttc" id="aexactTestL_8cc_aa34486a71034fb6184d0d032c5f059ef_html_aa34486a71034fb6184d0d032c5f059ef"><div class="ttname"><a href="exactTestL_8cc_aa34486a71034fb6184d0d032c5f059ef.html#aa34486a71034fb6184d0d032c5f059ef">exactL</a></div><div class="ttdeci">ExactLParameters exactL(const std::vector&lt; double &gt; &amp;r)</div><div class="ttdef"><b>Definition:</b> <a href="exactTestL_8cc_source.html#l00185">exactTestL.cc:185</a></div></div>
 <div class="ttc" id="aexactTestL_8cc_aae14bb6d846f70291d5a016a6d19d11e_html_aae14bb6d846f70291d5a016a6d19d11e"><div class="ttname"><a href="exactTestL_8cc_aae14bb6d846f70291d5a016a6d19d11e.html#aae14bb6d846f70291d5a016a6d19d11e">rho</a></div><div class="ttdeci">static const double rho</div><div class="ttdef"><b>Definition:</b> <a href="exactTestL_8cc_source.html#l00044">exactTestL.cc:44</a></div></div>
 <div class="ttc" id="aexactTestL_8cc_adf1f6953c51d7daa6d50ef08ac5944fb_html_adf1f6953c51d7daa6d50ef08ac5944fb"><div class="ttname"><a href="exactTestL_8cc_adf1f6953c51d7daa6d50ef08ac5944fb.html#adf1f6953c51d7daa6d50ef08ac5944fb">TESTL_INVALID_METHOD</a></div><div class="ttdeci">#define TESTL_INVALID_METHOD</div><div class="ttdef"><b>Definition:</b> <a href="exactTestL_8cc_source.html#l00078">exactTestL.cc:78</a></div></div>
 <div class="ttc" id="aexactTestL_8cc_afd53743d1af6bfa2856255b23b5a41a9_html_afd53743d1af6bfa2856255b23b5a41a9"><div class="ttname"><a href="exactTestL_8cc_afd53743d1af6bfa2856255b23b5a41a9.html#afd53743d1af6bfa2856255b23b5a41a9">n</a></div><div class="ttdeci">static const double n</div><div class="ttdef"><b>Definition:</b> <a href="exactTestL_8cc_source.html#l00045">exactTestL.cc:45</a></div></div>
@@ -316,7 +313,7 @@ $(function() {
 <div class="ttc" id="astructExactLParameters_a065ce5d2c8095c5968e4e1ccfa49528b_html_a065ce5d2c8095c5968e4e1ccfa49528b"><div class="ttname"><a href="structExactLParameters_a065ce5d2c8095c5968e4e1ccfa49528b.html#a065ce5d2c8095c5968e4e1ccfa49528b">ExactLParameters::b</a></div><div class="ttdeci">std::vector&lt; double &gt; b</div><div class="ttdef"><b>Definition:</b> <a href="exactTestL_8hh_source.html#l00039">exactTestL.hh:39</a></div></div>
 <div class="ttc" id="astructExactLParameters_a5ad8d9584603c6a145956f7da382c371_html_a5ad8d9584603c6a145956f7da382c371"><div class="ttname"><a href="structExactLParameters_a5ad8d9584603c6a145956f7da382c371.html#a5ad8d9584603c6a145956f7da382c371">ExactLParameters::H</a></div><div class="ttdeci">std::vector&lt; double &gt; H</div><div class="ttdef"><b>Definition:</b> <a href="exactTestL_8hh_source.html#l00039">exactTestL.hh:39</a></div></div>
 <div class="ttc" id="astructExactLParameters_aaa839e3f122ce2bbc7cc307afbc2b82a_html_aaa839e3f122ce2bbc7cc307afbc2b82a"><div class="ttname"><a href="structExactLParameters_aaa839e3f122ce2bbc7cc307afbc2b82a.html#aaa839e3f122ce2bbc7cc307afbc2b82a">ExactLParameters::a</a></div><div class="ttdeci">std::vector&lt; double &gt; a</div><div class="ttdef"><b>Definition:</b> <a href="exactTestL_8hh_source.html#l00039">exactTestL.hh:39</a></div></div>
-<div class="ttc" id="astructExactLParameters_ab6c30abe5a1a69774d73c5c52f2e4ff3_html_ab6c30abe5a1a69774d73c5c52f2e4ff3"><div class="ttname"><a href="structExactLParameters_ab6c30abe5a1a69774d73c5c52f2e4ff3.html#ab6c30abe5a1a69774d73c5c52f2e4ff3">ExactLParameters::ExactLParameters</a></div><div class="ttdeci">ExactLParameters(size_t n)</div><div class="ttdef"><b>Definition:</b> <a href="exactTestL_8cc_source.html#l00184">exactTestL.cc:184</a></div></div>
+<div class="ttc" id="astructExactLParameters_ab6c30abe5a1a69774d73c5c52f2e4ff3_html_ab6c30abe5a1a69774d73c5c52f2e4ff3"><div class="ttname"><a href="structExactLParameters_ab6c30abe5a1a69774d73c5c52f2e4ff3.html#ab6c30abe5a1a69774d73c5c52f2e4ff3">ExactLParameters::ExactLParameters</a></div><div class="ttdeci">ExactLParameters(size_t n)</div><div class="ttdef"><b>Definition:</b> <a href="exactTestL_8cc_source.html#l00181">exactTestL.cc:181</a></div></div>
 <div class="ttc" id="astructExactLParameters_html"><div class="ttname"><a href="structExactLParameters.html">ExactLParameters</a></div><div class="ttdef"><b>Definition:</b> <a href="exactTestL_8hh_source.html#l00037">exactTestL.hh:37</a></div></div>
 <div class="ttc" id="atest__cube_8c_ad43c3812e6d13e0518d9f8b8f463ffcf_html_ad43c3812e6d13e0518d9f8b8f463ffcf"><div class="ttname"><a href="test__cube_8c_ad43c3812e6d13e0518d9f8b8f463ffcf.html#ad43c3812e6d13e0518d9f8b8f463ffcf">count</a></div><div class="ttdeci">int count</div><div class="ttdef"><b>Definition:</b> <a href="test__cube_8c_source.html#l00016">test_cube.c:16</a></div></div>
 </div><!-- fragment --></div><!-- contents -->

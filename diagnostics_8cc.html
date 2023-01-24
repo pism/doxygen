@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PISM, A Parallel Ice Sheet Model
-   &#160;<span id="projectnumber">stable v2.0.5 committed by Constantine Khrulev on 2022-10-14 09:56:26 -0800</span>
+   &#160;<span id="projectnumber">stable v2.0.6 committed by Constantine Khrulev on 2023-01-23 15:14:38 -0900</span>
    </div>
   </td>
  </tr>
@@ -308,6 +308,8 @@ Namespaces</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespacepism_1_1diagnostics_1_1scalar"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_1_1diagnostics_1_1scalar.html">pism::diagnostics::scalar</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespacepism_1_1details"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_1_1details.html">pism::details</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -327,6 +329,10 @@ Enumerations</h2></td></tr>
 , <a class="el" href="namespacepism_1_1diagnostics_a9be104df35f48c5782d93a48a0890024.html#a9be104df35f48c5782d93a48a0890024a66bc496a7e959b3632c7cc641cd00191">pism::diagnostics::ERROR</a>
  }</td></tr>
 <tr class="separator:a9be104df35f48c5782d93a48a0890024"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba92385acd5e5713532e85cf542af6c3"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_1_1details_aba92385acd5e5713532e85cf542af6c3.html#aba92385acd5e5713532e85cf542af6c3">pism::details::IceKind</a> { <a class="el" href="namespacepism_1_1details_aba92385acd5e5713532e85cf542af6c3.html#aba92385acd5e5713532e85cf542af6c3a1b02681dc0553155b85e22f2d83a44c2">pism::details::ICE_COLD</a>
+, <a class="el" href="namespacepism_1_1details_aba92385acd5e5713532e85cf542af6c3.html#aba92385acd5e5713532e85cf542af6c3ad1bf477f02372061e1f696c4857db913">pism::details::ICE_TEMPERATE</a>
+ }</td></tr>
+<tr class="separator:aba92385acd5e5713532e85cf542af6c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -342,6 +348,8 @@ Functions</h2></td></tr>
 <tr class="separator:a377ce69d35011a1ef8b9df3fea40b72e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8c9f45a84512d415582822ed5db9430"><td class="memItemLeft" align="right" valign="top">static Metadata&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_aa8c9f45a84512d415582822ed5db9430.html#aa8c9f45a84512d415582822ed5db9430">pism::ts_diag_metadata</a> (const std::map&lt; std::string, TSDiagnostic::Ptr &gt; &amp;ts_diags)</td></tr>
 <tr class="separator:aa8c9f45a84512d415582822ed5db9430"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13cab08d8233ec083a530a1de43ebd79"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_1_1details_a13cab08d8233ec083a530a1de43ebd79.html#a13cab08d8233ec083a530a1de43ebd79">pism::details::ice_volume</a> (const IceModelVec2S &amp;ice_thickness, const IceModelVec3 &amp;ice_enthalpy, IceKind kind, double thickness_threshold)</td></tr>
+<tr class="separator:a13cab08d8233ec083a530a1de43ebd79"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
