@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PISM, A Parallel Ice Sheet Model
-   &#160;<span id="projectnumber">stable v2.0.6 committed by Constantine Khrulev on 2023-01-23 15:14:38 -0900</span>
+   &#160;<span id="projectnumber">stable v2.0.7 committed by Constantine Khrulev on 2023-11-21 12:49:11 -0900</span>
    </div>
   </td>
  </tr>
@@ -139,7 +139,7 @@ $(function() {
 <p>where \( \tau_b=(\tau_{(b)x},\tau_{(b)y}) \) , \( U=(u,v) \) , \( q= \) <code>pseudo_q</code>, and \( U_{\mathtt{th}}= \) <code>pseudo_u_threshold</code>. Typical values for the constants are \( q=0.25 \) and \( U_{\mathtt{th}} = 100 \) m year-1.</p>
 <p>The linearly-viscous till case pseudo_q = 1.0 is allowed, in which case \( \beta = \tau_c/U_{\mathtt{th}} \) . The purely-plastic till case pseudo_q = 0.0 is also allowed; note that there is still a regularization with data member plastic_regularize.</p>
 <p>One can scale tauc if desired:</p>
-<p>A scale factor of \( A \) is intended to increase basal sliding rate by \( A \) . It would have exactly this effect <em>if</em> the driving stress were <em>hypothetically</em> completely held by the basal resistance. Thus this scale factor is used to reduce (if <code>-sliding_scale_factor_reduces_tauc</code> \( A \) with \( A &gt; 1 \)) or increase (if \( A &lt; 1 \)) the value of the (pseudo-) yield stress <code>tauc</code>. The concept behind this is described at <a href="http://websrv.cs.umt.edu/isis/index.php/Category_1:_Whole_Ice_Sheet#Initial_Experiment_-_E1_-_Increased_Basal_Lubrication">the SeaRISE wiki</a>.</p>
+<p>A scale factor of \( A \) is intended to increase basal sliding rate by \( A \) . It would have exactly this effect <em>if</em> the driving stress were <em>hypothetically</em> completely held by the basal resistance. Thus this scale factor is used to reduce (if <code>-sliding_scale_factor_reduces_tauc</code> \( A \) with \( A &gt; 1 \)) or increase (if \( A &lt; 1 \)) the value of the (pseudo-) yield stress <code>tauc</code>. The concept behind this is described at <a href="https://web.archive.org/web/20120126164914/http://websrv.cs.umt.edu/isis/index.php/Category_1:_Whole_Ice_Sheet#Initial_Experiment_-_E1_-_Increased_Basal_Lubrication">the SeaRISE wiki</a>.</p>
 <p>Specifically, the concept behind this mechanism is to suppose equality of driving and basal shear stresses,</p>
 <p class="formulaDsp">
 \[ \rho g H \nabla h = \frac{\tau_c}{|\mathbf{U}|^{1-q} U_{\mathtt{th}}^q} \mathbf{U}. \]

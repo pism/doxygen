@@ -160,7 +160,7 @@ var searchData=
   ['spatialvariablemetadata_7378',['SpatialVariableMetadata',['../classpism_1_1SpatialVariableMetadata_a4897d838a5a74fb0408e80515d7307f1.html#a4897d838a5a74fb0408e80515d7307f1',1,'pism::SpatialVariableMetadata']]],
   ['special_5fparameter_7379',['special_parameter',['../namespacepism_abbfcd14227ffd44545100b9b364411b7.html#abbfcd14227ffd44545100b9b364411b7',1,'pism']]],
   ['split_7380',['split',['../namespacepism_afdb43451a10d4c44fe2587de57671634.html#afdb43451a10d4c44fe2587de57671634',1,'pism']]],
-  ['split_5fice_5fshelves_7381',['split_ice_shelves',['../classpism_1_1ocean_1_1PicoGeometry_a1379d69e0c0f4ade17d83ff5c64fd666.html#a1379d69e0c0f4ade17d83ff5c64fd666',1,'pism::ocean::PicoGeometry']]],
+  ['split_5fice_5fshelves_7381',['split_ice_shelves',['../classpism_1_1ocean_1_1PicoGeometry_a60f971b255fdeb84908ed40b64364799.html#a60f971b255fdeb84908ed40b64364799',1,'pism::ocean::PicoGeometry']]],
   ['square_7382',['square',['../namespacepism_1_1diagnostics_a9bb8da80ad8f5597b8e6f44079020bed.html#a9bb8da80ad8f5597b8e6f44079020bed',1,'pism::diagnostics::square()'],['../namespacepism_ade913fd7526a8e044a7d90ee82396586.html#ade913fd7526a8e044a7d90ee82396586',1,'pism::square()']]],
   ['ssa_7383',['SSA',['../classpism_1_1stressbalance_1_1SSA_a68ceebe9a05a769e59fb7df8f727ed16.html#a68ceebe9a05a769e59fb7df8f727ed16',1,'pism::stressbalance::SSA']]],
   ['ssa_5ftaud_7384',['SSA_taud',['../classpism_1_1stressbalance_1_1SSA__taud_a3871271168911305bbc5c5ddd06a9b8c.html#a3871271168911305bbc5c5ddd06a9b8c',1,'pism::stressbalance::SSA_taud']]],
