@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PISM, A Parallel Ice Sheet Model
-   &#160;<span id="projectnumber">stable v2.0.7 committed by Constantine Khrulev on 2023-11-21 12:49:11 -0900</span>
+   &#160;<span id="projectnumber">stable v2.1 committed by Constantine Khrulev on 2023-11-23 11:24:22 -0900</span>
    </div>
   </td>
  </tr>
@@ -82,20 +82,15 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;cassert&gt;</code><br />
-<code>#include &quot;<a class="el" href="IceModel_8hh_source.html">IceModel.hh</a>&quot;</code><br />
+<code>#include &quot;pism/icemodel/IceModel.hh&quot;</code><br />
 <code>#include &quot;pism/energy/BedThermalUnit.hh&quot;</code><br />
-<code>#include &quot;pism/util/IceGrid.hh&quot;</code><br />
-<code>#include &quot;pism/util/Mask.hh&quot;</code><br />
+<code>#include &quot;pism/util/Grid.hh&quot;</code><br />
 <code>#include &quot;pism/util/ConfigInterface.hh&quot;</code><br />
 <code>#include &quot;pism/util/error_handling.hh&quot;</code><br />
-<code>#include &quot;pism/util/pism_utilities.hh&quot;</code><br />
 <code>#include &quot;pism/coupler/SurfaceModel.hh&quot;</code><br />
 <code>#include &quot;pism/util/EnthalpyConverter.hh&quot;</code><br />
 <code>#include &quot;pism/util/Profiling.hh&quot;</code><br />
-<code>#include &quot;pism/hydrology/Hydrology.hh&quot;</code><br />
-<code>#include &quot;pism/stressbalance/StressBalance.hh&quot;</code><br />
 <code>#include &quot;pism/energy/EnergyModel.hh&quot;</code><br />
-<code>#include &quot;pism/energy/utilities.hh&quot;</code><br />
 </div>
 <p><a href="energy_8cc_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -106,9 +101,9 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a66a064977bfb3d193360801556e8fd42"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_a66a064977bfb3d193360801556e8fd42.html#a66a064977bfb3d193360801556e8fd42">pism::bedrock_surface_temperature</a> (const IceModelVec2S &amp;sea_level, const IceModelVec2CellType &amp;cell_type, const IceModelVec2S &amp;bed_topography, const IceModelVec2S &amp;ice_thickness, const IceModelVec2S &amp;basal_enthalpy, const IceModelVec2S &amp;ice_surface_temperature, IceModelVec2S &amp;result)</td></tr>
-<tr class="memdesc:a66a064977bfb3d193360801556e8fd42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the temperature seen by the top of the bedrock thermal layer.  <a href="namespacepism_a66a064977bfb3d193360801556e8fd42.html#a66a064977bfb3d193360801556e8fd42">More...</a><br /></td></tr>
-<tr class="separator:a66a064977bfb3d193360801556e8fd42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa04cdf90d444dec6c7091c6737b721ab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_aa04cdf90d444dec6c7091c6737b721ab.html#aa04cdf90d444dec6c7091c6737b721ab">pism::bedrock_surface_temperature</a> (const array::Scalar &amp;sea_level, const array::CellType &amp;cell_type, const array::Scalar &amp;bed_topography, const array::Scalar &amp;ice_thickness, const array::Scalar &amp;basal_enthalpy, const array::Scalar &amp;ice_surface_temperature, array::Scalar &amp;result)</td></tr>
+<tr class="memdesc:aa04cdf90d444dec6c7091c6737b721ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the temperature seen by the top of the bedrock thermal layer.  <a href="namespacepism_aa04cdf90d444dec6c7091c6737b721ab.html#aa04cdf90d444dec6c7091c6737b721ab">More...</a><br /></td></tr>
+<tr class="separator:aa04cdf90d444dec6c7091c6737b721ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Methods of IceModel which address conservation of energy. Common to enthalpy (polythermal) and temperature (cold-ice) methods. </p>

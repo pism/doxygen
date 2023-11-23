@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PISM, A Parallel Ice Sheet Model
-   &#160;<span id="projectnumber">stable v2.0.7 committed by Constantine Khrulev on 2023-11-21 12:49:11 -0900</span>
+   &#160;<span id="projectnumber">stable v2.1 committed by Constantine Khrulev on 2023-11-23 11:24:22 -0900</span>
    </div>
   </td>
  </tr>
@@ -81,10 +81,10 @@ $(function() {
 <div class="title">label_components.cc File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="label__components_8hh_source.html">label_components.hh</a>&quot;</code><br />
-<code>#include &quot;pism/util/iceModelVec.hh&quot;</code><br />
+<div class="textblock"><code>#include &quot;pism/util/label_components.hh&quot;</code><br />
+<code>#include &quot;pism/util/array/Scalar.hh&quot;</code><br />
 <code>#include &quot;pism/util/error_handling.hh&quot;</code><br />
-<code>#include &quot;<a class="el" href="connected__components_8hh_source.html">connected_components.hh</a>&quot;</code><br />
+<code>#include &quot;pism/util/connected_components.hh&quot;</code><br />
 <code>#include &quot;pism/util/petscwrappers/Vec.hh&quot;</code><br />
 </div>
 <p><a href="label__components_8cc_source.html">Go to the source code of this file.</a></p>
@@ -96,8 +96,10 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a825e8776bf835db878cbfba2978878d3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_a825e8776bf835db878cbfba2978878d3.html#a825e8776bf835db878cbfba2978878d3">pism::label_components</a> (IceModelVec2Int &amp;mask, bool identify_icebergs, double mask_grounded)</td></tr>
-<tr class="separator:a825e8776bf835db878cbfba2978878d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3596ffc5dfc577e5e3d362c277af395"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_ab3596ffc5dfc577e5e3d362c277af395.html#ab3596ffc5dfc577e5e3d362c277af395">pism::label_components</a> (array::Scalar &amp;mask, petsc::Vec &amp;mask_p0, bool identify_icebergs, double mask_grounded)</td></tr>
+<tr class="separator:ab3596ffc5dfc577e5e3d362c277af395"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0686b0f1e98532c6ae7a51b66d59d91"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_ae0686b0f1e98532c6ae7a51b66d59d91.html#ae0686b0f1e98532c6ae7a51b66d59d91">pism::label_components</a> (array::Scalar &amp;mask, bool identify_icebergs, double mask_grounded)</td></tr>
+<tr class="separator:ae0686b0f1e98532c6ae7a51b66d59d91"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->

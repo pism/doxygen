@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PISM, A Parallel Ice Sheet Model
-   &#160;<span id="projectnumber">stable v2.0.7 committed by Constantine Khrulev on 2023-11-21 12:49:11 -0900</span>
+   &#160;<span id="projectnumber">stable v2.1 committed by Constantine Khrulev on 2023-11-23 11:24:22 -0900</span>
    </div>
   </td>
  </tr>
@@ -74,24 +74,18 @@ $(function() {
 
 <h3><a id="index_v"></a>- v -</h3><ul>
 <li>v
-: <a class="el" href="structpism_1_1IceModelVec2T_1_1Data_a0240fb98016fc53378debfbee0db6934.html#a0240fb98016fc53378debfbee0db6934">pism::IceModelVec2T::Data</a>
-, <a class="el" href="structpism_1_1IceModelVec_1_1Impl_a629299a12c961a9d45286a4a3d50e406.html#a629299a12c961a9d45286a4a3d50e406">pism::IceModelVec::Impl</a>
-, <a class="el" href="classpism_1_1Vector2_a8ed317b575aa49c435e7e306bc4379c6.html#a8ed317b575aa49c435e7e306bc4379c6">pism::Vector2</a>
+: <a class="el" href="structpism_1_1array_1_1Array_1_1Impl_ae6675398609d961132a8e6948b3d2777.html#ae6675398609d961132a8e6948b3d2777">pism::array::Array::Impl</a>
+, <a class="el" href="structpism_1_1array_1_1Forcing_1_1Data_aa441ee6e6df99b81d21abb6da1068164.html#aa441ee6e6df99b81d21abb6da1068164">pism::array::Forcing::Data</a>
+, <a class="el" href="classpism_1_1Vector2d_ad28e2526d041dd6847615630ddab0866.html#ad28e2526d041dd6847615630ddab0866">pism::Vector2d</a>
 , <a class="el" href="structTestIParameters_a61d1394374816974e0f59899cf94cb01.html#a61d1394374816974e0f59899cf94cb01">TestIParameters</a>
 , <a class="el" href="structTestJParameters_a6113e349527343f0f8068d380fc591c7.html#a6113e349527343f0f8068d380fc591c7">TestJParameters</a>
 </li>
 <li>V0
 : <a class="el" href="classpism_1_1stressbalance_1_1SSATestCaseCFBC_ad52e078f757cb3489bda6fb96eb199f7.html#ad52e078f757cb3489bda6fb96eb199f7">pism::stressbalance::SSATestCaseCFBC</a>
 </li>
-<li>V1
-: <a class="el" href="classpism_1_1icebin_1_1IBIceModel_a70c70f194de8886568441008945f2e34.html#a70c70f194de8886568441008945f2e34">pism::icebin::IBIceModel</a>
-</li>
-<li>V2
-: <a class="el" href="classpism_1_1icebin_1_1IBIceModel_aaa99894b65d0d2aaa313ef527ea39797.html#aaa99894b65d0d2aaa313ef527ea39797">pism::icebin::IBIceModel</a>
-</li>
 <li>v3
-: <a class="el" href="classpism_1_1AgeModelInputs_a56e763a4e38c2135fce8c4fb81f92cd4.html#a56e763a4e38c2135fce8c4fb81f92cd4">pism::AgeModelInputs</a>
-, <a class="el" href="classpism_1_1energy_1_1Inputs_afe904ac205025b7f8e4a52210c7b945b.html#afe904ac205025b7f8e4a52210c7b945b">pism::energy::Inputs</a>
+: <a class="el" href="classpism_1_1AgeModelInputs_a980bfc1f2bcdd4766afe151bb4f2c0e4.html#a980bfc1f2bcdd4766afe151bb4f2c0e4">pism::AgeModelInputs</a>
+, <a class="el" href="classpism_1_1energy_1_1Inputs_a76e3ab920c19e444c743fe867c37ec07.html#a76e3ab920c19e444c743fe867c37ec07">pism::energy::Inputs</a>
 </li>
 <li>v_max
 : <a class="el" href="structpism_1_1CFLData_a1402624c5cb7334cf5a13abe87996929.html#a1402624c5cb7334cf5a13abe87996929">pism::CFLData</a>
@@ -107,7 +101,8 @@ $(function() {
 , <a class="el" href="structpism_1_1fem_1_1Germ_a0acf620659f26a95338160e6943e4abf.html#a0acf620659f26a95338160e6943e4abf">pism::fem::Germ</a>
 </li>
 <li>validate()
-: <a class="el" href="classpism_1_1GridParameters_ae145fdfc0379bdbaddc6dd28269bfbf3.html#ae145fdfc0379bdbaddc6dd28269bfbf3">pism::GridParameters</a>
+: <a class="el" href="classpism_1_1grid_1_1Parameters_ac3f63d2c6f9f531ee96b7e260f757e10.html#ac3f63d2c6f9f531ee96b7e260f757e10">pism::grid::Parameters</a>
+, <a class="el" href="classpism_1_1PCFactory_a5537228ada7998c20d0fe04117d6737a.html#a5537228ada7998c20d0fe04117d6737a">pism::PCFactory&lt; Model &gt;</a>
 </li>
 <li>validate_E_P()
 : <a class="el" href="classpism_1_1EnthalpyConverter_a0a12c530b7efdf9b5d437b73c73c85dd.html#a0a12c530b7efdf9b5d437b73c73c85dd">pism::EnthalpyConverter</a>
@@ -122,22 +117,26 @@ $(function() {
 , <a class="el" href="classpism_1_1ScalarForcing_a36b4f421bf81e7b478a0b749d20588a8.html#a36b4f421bf81e7b478a0b749d20588a8">pism::ScalarForcing</a>
 </li>
 <li>value_type
-: <a class="el" href="classpism_1_1IceModelVec2_a66ec34e4b591013f30dbf24c1353056b.html#a66ec34e4b591013f30dbf24c1353056b">pism::IceModelVec2&lt; T &gt;</a>
+: <a class="el" href="classpism_1_1array_1_1Array2D_a1281bc59399611e4aecff02ae375ac67.html#a1281bc59399611e4aecff02ae375ac67">pism::array::Array2D&lt; T &gt;</a>
 </li>
 <li>valueAt()
-: <a class="el" href="classpism_1_1inverse_1_1IP__H1NormFunctional2S_a63fc3c8978d5bb6723fbc940fcaf4457.html#a63fc3c8978d5bb6723fbc940fcaf4457">pism::inverse::IP_H1NormFunctional2S</a>
-, <a class="el" href="classpism_1_1inverse_1_1IP__L2NormFunctional2S_aed72207497e30fd6ec4f7b617167d3eb.html#aed72207497e30fd6ec4f7b617167d3eb">pism::inverse::IP_L2NormFunctional2S</a>
-, <a class="el" href="classpism_1_1inverse_1_1IP__L2NormFunctional2V_abe977b9f56b8366ec33a62e9cddf99e0.html#abe977b9f56b8366ec33a62e9cddf99e0">pism::inverse::IP_L2NormFunctional2V</a>
+: <a class="el" href="classpism_1_1inverse_1_1IP__H1NormFunctional2S_aaf3a44ca570df49365a7a71c54fbe25e.html#aaf3a44ca570df49365a7a71c54fbe25e">pism::inverse::IP_H1NormFunctional2S</a>
+, <a class="el" href="classpism_1_1inverse_1_1IP__L2NormFunctional2S_a3afedd4d62c79b3f60da60f7193fbdd2.html#a3afedd4d62c79b3f60da60f7193fbdd2">pism::inverse::IP_L2NormFunctional2S</a>
+, <a class="el" href="classpism_1_1inverse_1_1IP__L2NormFunctional2V_ab1996b64432112dc42b714ce62140086.html#ab1996b64432112dc42b714ce62140086">pism::inverse::IP_L2NormFunctional2V</a>
 , <a class="el" href="classpism_1_1inverse_1_1IPFunctional_a2eb38a278b42f32d0068b37ef3937a55.html#a2eb38a278b42f32d0068b37ef3937a55">pism::inverse::IPFunctional&lt; IMVecType &gt;</a>
-, <a class="el" href="classpism_1_1inverse_1_1IPGroundedIceH1NormFunctional2S_ac0529910a2a34cee1b9c37d1b5920903.html#ac0529910a2a34cee1b9c37d1b5920903">pism::inverse::IPGroundedIceH1NormFunctional2S</a>
-, <a class="el" href="classpism_1_1inverse_1_1IPLogRatioFunctional_a10f4f57a35abbf6ff52fc1680922a048.html#a10f4f57a35abbf6ff52fc1680922a048">pism::inverse::IPLogRatioFunctional</a>
-, <a class="el" href="classpism_1_1inverse_1_1IPLogRelativeFunctional_a37dbe29ea6e21efcc7760e56247c03b0.html#a37dbe29ea6e21efcc7760e56247c03b0">pism::inverse::IPLogRelativeFunctional</a>
-, <a class="el" href="classpism_1_1inverse_1_1IPMeanSquareFunctional2S_a698069a776532a5b57a9cd4164e527e0.html#a698069a776532a5b57a9cd4164e527e0">pism::inverse::IPMeanSquareFunctional2S</a>
-, <a class="el" href="classpism_1_1inverse_1_1IPMeanSquareFunctional2V_a95096a5eb91998f27d24dd6a36d4b1b7.html#a95096a5eb91998f27d24dd6a36d4b1b7">pism::inverse::IPMeanSquareFunctional2V</a>
-, <a class="el" href="classpism_1_1inverse_1_1IPTotalVariationFunctional2S_a590d86545bfc045086de5528f00f4e39.html#a590d86545bfc045086de5528f00f4e39">pism::inverse::IPTotalVariationFunctional2S</a>
+, <a class="el" href="classpism_1_1inverse_1_1IPGroundedIceH1NormFunctional2S_a5794a9102349440477c142224425603b.html#a5794a9102349440477c142224425603b">pism::inverse::IPGroundedIceH1NormFunctional2S</a>
+, <a class="el" href="classpism_1_1inverse_1_1IPLogRatioFunctional_a7d6d013616efc65e9a475b0005a04c42.html#a7d6d013616efc65e9a475b0005a04c42">pism::inverse::IPLogRatioFunctional</a>
+, <a class="el" href="classpism_1_1inverse_1_1IPLogRelativeFunctional_a71d5290339f771f82e98a178674ff775.html#a71d5290339f771f82e98a178674ff775">pism::inverse::IPLogRelativeFunctional</a>
+, <a class="el" href="classpism_1_1inverse_1_1IPMeanSquareFunctional2S_a66f2bda18a4d8a8630cfd24d2a70b6df.html#a66f2bda18a4d8a8630cfd24d2a70b6df">pism::inverse::IPMeanSquareFunctional2S</a>
+, <a class="el" href="classpism_1_1inverse_1_1IPMeanSquareFunctional2V_a73628afaaa4715478e057344e6489f4f.html#a73628afaaa4715478e057344e6489f4f">pism::inverse::IPMeanSquareFunctional2V</a>
+, <a class="el" href="classpism_1_1inverse_1_1IPTotalVariationFunctional2S_a2895963a78e073c3fc47a3024f488170.html#a2895963a78e073c3fc47a3024f488170">pism::inverse::IPTotalVariationFunctional2S</a>
+</li>
+<li>values
+: <a class="el" href="structpism_1_1ScalarForcing_1_1Impl_a3ef03209da0f0f703cfa519a6e869cae.html#a3ef03209da0f0f703cfa519a6e869cae">pism::ScalarForcing::Impl</a>
 </li>
 <li>variable_name()
 : <a class="el" href="classpism_1_1File_a6665ce96d62f735d7ecad0717ca327f4.html#a6665ce96d62f735d7ecad0717ca327f4">pism::File</a>
+, <a class="el" href="classpism_1_1grid_1_1InputGridInfo_ab25c38a0273f0e9fa4ca3065ab8810c3.html#ab25c38a0273f0e9fa4ca3065ab8810c3">pism::grid::InputGridInfo</a>
 </li>
 <li>VariableMetadata
 : <a class="el" href="classpism_1_1Attribute_a196829762022b9a3f9cca22524256e1f.html#a196829762022b9a3f9cca22524256e1f">pism::Attribute</a>
@@ -145,33 +144,33 @@ $(function() {
 , <a class="el" href="classpism_1_1VariableMetadata_a5ecc93499cafc583d70168efe8f55a83.html#a5ecc93499cafc583d70168efe8f55a83">pism::VariableMetadata</a>
 </li>
 <li>variables
-: <a class="el" href="structpism_1_1IceGrid_1_1Impl_aef0963174587313815997ba450a43ae3.html#aef0963174587313815997ba450a43ae3">pism::IceGrid::Impl</a>
-, <a class="el" href="classpism_1_1IceGrid_a43bc7ece81b8ee98f4a951c385cd419f.html#a43bc7ece81b8ee98f4a951c385cd419f">pism::IceGrid</a>
+: <a class="el" href="structpism_1_1Grid_1_1Impl_a018a47f3c5551c7a338689e3969c02ea.html#a018a47f3c5551c7a338689e3969c02ea">pism::Grid::Impl</a>
+, <a class="el" href="classpism_1_1Grid_a598cef6f35f72dc6c4c60e1b6bce3aae.html#a598cef6f35f72dc6c4c60e1b6bce3aae">pism::Grid</a>
 </li>
 <li>Vars()
 : <a class="el" href="classpism_1_1Vars_a77ff2fc89965df4a00ee1df18b3d1a41.html#a77ff2fc89965df4a00ee1df18b3d1a41">pism::Vars</a>
 </li>
-<li>vec
-: <a class="el" href="structpism_1_1icebin_1_1VecWithFlags_af08f505b55f701b5dcea9eabc12bb3bc.html#af08f505b55f701b5dcea9eabc12bb3bc">pism::icebin::VecWithFlags</a>
-, <a class="el" href="classpism_1_1IceModelVec_a571f6bb95b1ec6a9412b149ab2da49c6.html#a571f6bb95b1ec6a9412b149ab2da49c6">pism::IceModelVec</a>
+<li>vec()
+: <a class="el" href="classpism_1_1array_1_1Array_a5da8e0cb6f7c1e6e2ac6efdc841fb80d.html#a5da8e0cb6f7c1e6e2ac6efdc841fb80d">pism::array::Array</a>
+, <a class="el" href="structpism_1_1icebin_1_1VecWithFlags_a5ffaba98ef5d765945032abe2b8236b5.html#a5ffaba98ef5d765945032abe2b8236b5">pism::icebin::VecWithFlags</a>
 </li>
 <li>Vec()
 : <a class="el" href="classpism_1_1petsc_1_1Vec_a15ad042dbb1b0069bc95640b1d5b85d1.html#a15ad042dbb1b0069bc95640b1d5b85d1">pism::petsc::Vec</a>
 </li>
 <li>Vec2CellTypePtr
-: <a class="el" href="classpism_1_1Vars_ad4d0a1c1bde869ce392289c8921d5427.html#ad4d0a1c1bde869ce392289c8921d5427">pism::Vars</a>
+: <a class="el" href="classpism_1_1Vars_ad83296c1e7c5f0f8d96d3fa8581b3382.html#ad83296c1e7c5f0f8d96d3fa8581b3382">pism::Vars</a>
 </li>
 <li>Vec2IntPtr
-: <a class="el" href="classpism_1_1Vars_a64e8ca57e9430cbf0826607e9829bc04.html#a64e8ca57e9430cbf0826607e9829bc04">pism::Vars</a>
+: <a class="el" href="classpism_1_1Vars_aebeed3e7cf6fca7351fec7bb831452f7.html#aebeed3e7cf6fca7351fec7bb831452f7">pism::Vars</a>
 </li>
 <li>Vec2SPtr
-: <a class="el" href="classpism_1_1Vars_aa337370fd95c8c136fa57aa62da9f063.html#aa337370fd95c8c136fa57aa62da9f063">pism::Vars</a>
+: <a class="el" href="classpism_1_1Vars_a5de9c1a1216ff4babe70e8c093403353.html#a5de9c1a1216ff4babe70e8c093403353">pism::Vars</a>
 </li>
 <li>Vec2VPtr
-: <a class="el" href="classpism_1_1Vars_a1e04a9b9753b2f81d904bcd8db5ee325.html#a1e04a9b9753b2f81d904bcd8db5ee325">pism::Vars</a>
+: <a class="el" href="classpism_1_1Vars_a68228705c53642e75085c3957b832405.html#a68228705c53642e75085c3957b832405">pism::Vars</a>
 </li>
 <li>Vec3Ptr
-: <a class="el" href="classpism_1_1Vars_ac429a285d0626ed54efe69d3088fe919.html#ac429a285d0626ed54efe69d3088fe919">pism::Vars</a>
+: <a class="el" href="classpism_1_1Vars_a28aed3ef4a883d47d7377b532044d82e.html#a28aed3ef4a883d47d7377b532044d82e">pism::Vars</a>
 </li>
 <li>VecArray()
 : <a class="el" href="classpism_1_1petsc_1_1VecArray_a0322ab025f287f11a8f340a6db220939.html#a0322ab025f287f11a8f340a6db220939">pism::petsc::VecArray</a>
@@ -180,51 +179,60 @@ $(function() {
 : <a class="el" href="classpism_1_1petsc_1_1VecArray2D_a87e60346f5e00fbda02d005572874a0e.html#a87e60346f5e00fbda02d005572874a0e">pism::petsc::VecArray2D</a>
 </li>
 <li>VecBundleWriter()
-: <a class="el" href="classpism_1_1icebin_1_1VecBundleWriter_a9f0b4773e2f4fc12e5a1d75eea1eb35c.html#a9f0b4773e2f4fc12e5a1d75eea1eb35c">pism::icebin::VecBundleWriter</a>
+: <a class="el" href="classpism_1_1icebin_1_1VecBundleWriter_a55c76f5851b884dc38d545ca1cfb9680.html#a55c76f5851b884dc38d545ca1cfb9680">pism::icebin::VecBundleWriter</a>
 </li>
 <li>VecPtr
-: <a class="el" href="classpism_1_1Vars_a39172e04cac21bc91bc4489331839c17.html#a39172e04cac21bc91bc4489331839c17">pism::Vars</a>
+: <a class="el" href="classpism_1_1Vars_a9bf9815d0853d474f360046b7940d0a8.html#a9bf9815d0853d474f360046b7940d0a8">pism::Vars</a>
 </li>
 <li>vecs
-: <a class="el" href="classpism_1_1icebin_1_1VecBundleWriter_a51302315931f6078f597db5386f81b5c.html#a51302315931f6078f597db5386f81b5c">pism::icebin::VecBundleWriter</a>
+: <a class="el" href="classpism_1_1icebin_1_1VecBundleWriter_a5c033224c2f172371e8e198077c4c808.html#a5c033224c2f172371e8e198077c4c808">pism::icebin::VecBundleWriter</a>
 </li>
 <li>VecScatter()
 : <a class="el" href="classpism_1_1petsc_1_1VecScatter_a8ddd352c449d5d2df403ffaf925c411d.html#a8ddd352c449d5d2df403ffaf925c411d">pism::petsc::VecScatter</a>
 </li>
+<li>Vector()
+: <a class="el" href="classpism_1_1array_1_1Vector_af1faa57c7db5141f5698410565a94cb0.html#af1faa57c7db5141f5698410565a94cb0">pism::array::Vector</a>
+</li>
+<li>Vector1()
+: <a class="el" href="classpism_1_1array_1_1Vector1_a4c0045f996726b7bd1f4415c5519f89a.html#a4c0045f996726b7bd1f4415c5519f89a">pism::array::Vector1</a>
+</li>
 <li>Vector2()
-: <a class="el" href="classpism_1_1Vector2_a5574a52a3216cd8e0b0102b5992cf2a5.html#a5574a52a3216cd8e0b0102b5992cf2a5">pism::Vector2</a>
+: <a class="el" href="classpism_1_1array_1_1Vector2_a0e478fea9c4cfd4de2d2dad578f3b40e.html#a0e478fea9c4cfd4de2d2dad578f3b40e">pism::array::Vector2</a>
+</li>
+<li>Vector2d()
+: <a class="el" href="classpism_1_1Vector2d_af32b8529a70aaa2a553cd71f3fa07a64.html#af32b8529a70aaa2a553cd71f3fa07a64">pism::Vector2d</a>
 </li>
 <li>VecWithFlags()
-: <a class="el" href="structpism_1_1icebin_1_1VecWithFlags_adca56c5309305b74e00b2b1b78ca4d7d.html#adca56c5309305b74e00b2b1b78ca4d7d">pism::icebin::VecWithFlags</a>
+: <a class="el" href="structpism_1_1icebin_1_1VecWithFlags_a4d630c9cc2a7236db98da781f2626950.html#a4d630c9cc2a7236db98da781f2626950">pism::icebin::VecWithFlags</a>
 </li>
 <li>velocity()
-: <a class="el" href="classpism_1_1stressbalance_1_1ShallowStressBalance_af5c693d312befb6ff8f0c8947e650ea2.html#af5c693d312befb6ff8f0c8947e650ea2">pism::stressbalance::ShallowStressBalance</a>
+: <a class="el" href="classpism_1_1stressbalance_1_1ShallowStressBalance_a08ee38431bba93d1317146c038ab4624.html#a08ee38431bba93d1317146c038ab4624">pism::stressbalance::ShallowStressBalance</a>
 </li>
 <li>velocity_staggered()
-: <a class="el" href="classpism_1_1hydrology_1_1Routing_ad2568174d1d58352e8a938bc810acb9a.html#ad2568174d1d58352e8a938bc810acb9a">pism::hydrology::Routing</a>
+: <a class="el" href="classpism_1_1hydrology_1_1Routing_ab13a661f6d9ebbb56883b13fe55c48d0.html#ab13a661f6d9ebbb56883b13fe55c48d0">pism::hydrology::Routing</a>
 </li>
 <li>velocity_u()
-: <a class="el" href="classpism_1_1stressbalance_1_1SSB__Modifier_afb85993dd6161175e0a835d72f5dbe12.html#afb85993dd6161175e0a835d72f5dbe12">pism::stressbalance::SSB_Modifier</a>
-, <a class="el" href="classpism_1_1stressbalance_1_1StressBalance_a05325b1be2d65b553fa564b22de30fbd.html#a05325b1be2d65b553fa564b22de30fbd">pism::stressbalance::StressBalance</a>
+: <a class="el" href="classpism_1_1stressbalance_1_1SSB__Modifier_a104089dbe9b850dbcfdfb273a6f33135.html#a104089dbe9b850dbcfdfb273a6f33135">pism::stressbalance::SSB_Modifier</a>
+, <a class="el" href="classpism_1_1stressbalance_1_1StressBalance_a562a1dd32298268a4ac11e1842c1afd0.html#a562a1dd32298268a4ac11e1842c1afd0">pism::stressbalance::StressBalance</a>
 </li>
 <li>velocity_u_sigma()
-: <a class="el" href="classpism_1_1stressbalance_1_1Blatter_a585a21dea79c578392401d11e6fa38cd.html#a585a21dea79c578392401d11e6fa38cd">pism::stressbalance::Blatter</a>
+: <a class="el" href="classpism_1_1stressbalance_1_1Blatter_a8169170b85b085f1c4e3b6143c8bdae7.html#a8169170b85b085f1c4e3b6143c8bdae7">pism::stressbalance::Blatter</a>
 </li>
 <li>velocity_v()
-: <a class="el" href="classpism_1_1stressbalance_1_1SSB__Modifier_a115dcad428d5125ff74a89a3e3f09ff7.html#a115dcad428d5125ff74a89a3e3f09ff7">pism::stressbalance::SSB_Modifier</a>
-, <a class="el" href="classpism_1_1stressbalance_1_1StressBalance_acc2b7b2adadca4efc0facda67c7961bf.html#acc2b7b2adadca4efc0facda67c7961bf">pism::stressbalance::StressBalance</a>
+: <a class="el" href="classpism_1_1stressbalance_1_1SSB__Modifier_ab2b3fc8628d77bab69edef27e6bce348.html#ab2b3fc8628d77bab69edef27e6bce348">pism::stressbalance::SSB_Modifier</a>
+, <a class="el" href="classpism_1_1stressbalance_1_1StressBalance_abbc8a95f16bd3fbe3fc49d2813e45295.html#abbc8a95f16bd3fbe3fc49d2813e45295">pism::stressbalance::StressBalance</a>
 </li>
 <li>velocity_v_sigma()
-: <a class="el" href="classpism_1_1stressbalance_1_1Blatter_a58510c278dcd69fd00d64875450568a0.html#a58510c278dcd69fd00d64875450568a0">pism::stressbalance::Blatter</a>
+: <a class="el" href="classpism_1_1stressbalance_1_1Blatter_a59d46f5bb73d1ac6e7207ecb4a9d6ac8.html#a59d46f5bb73d1ac6e7207ecb4a9d6ac8">pism::stressbalance::Blatter</a>
 </li>
 <li>velocity_w()
-: <a class="el" href="classpism_1_1stressbalance_1_1StressBalance_adf1174b577193b63332bfc1e071a29f3.html#adf1174b577193b63332bfc1e071a29f3">pism::stressbalance::StressBalance</a>
+: <a class="el" href="classpism_1_1stressbalance_1_1StressBalance_a1a5226ad760ea2b42ba3778019a295b2.html#a1a5226ad760ea2b42ba3778019a295b2">pism::stressbalance::StressBalance</a>
 </li>
 <li>Verification()
-: <a class="el" href="classpism_1_1surface_1_1Verification_a8752cdedb65c46d9d2c975f0242c91c8.html#a8752cdedb65c46d9d2c975f0242c91c8">pism::surface::Verification</a>
+: <a class="el" href="classpism_1_1surface_1_1Verification_a6ac584e99c967a4275a8d5c5bd5e9dd7.html#a6ac584e99c967a4275a8d5c5bd5e9dd7">pism::surface::Verification</a>
 </li>
 <li>vertical_grid_from_options()
-: <a class="el" href="classpism_1_1GridParameters_ad8388c1d16b240bc977e4d5d8374c8ef.html#ad8388c1d16b240bc977e4d5d8374c8ef">pism::GridParameters</a>
+: <a class="el" href="classpism_1_1grid_1_1Parameters_a6491990bb10612b503f314ae084e0d6e.html#a6491990bb10612b503f314ae084e0d6e">pism::grid::Parameters</a>
 </li>
 <li>vertical_spacing()
 : <a class="el" href="classpism_1_1energy_1_1BedThermalUnit_ac059f034933c5eb3997114b18f9e3f5b.html#ac059f034933c5eb3997114b18f9e3f5b">pism::energy::BedThermalUnit</a>
@@ -235,29 +243,29 @@ $(function() {
 , <a class="el" href="classpism_1_1energy_1_1BTU__Minimal_a2814cf826f6afc1fbf114d1a38204dfd.html#a2814cf826f6afc1fbf114d1a38204dfd">pism::energy::BTU_Minimal</a>
 </li>
 <li>view()
-: <a class="el" href="classpism_1_1IceModelVec_a2188ae81496607d89ec6aa12e1ac1bf4.html#a2188ae81496607d89ec6aa12e1ac1bf4">pism::IceModelVec</a>
+: <a class="el" href="classpism_1_1array_1_1Array_a93ecc3ba18b8ee1b19387703814fa5ed.html#a93ecc3ba18b8ee1b19387703814fa5ed">pism::array::Array</a>
 </li>
 <li>view_field()
-: <a class="el" href="classpism_1_1IceModel_ac401bc63846d61e2fd174a46c7dda09b.html#ac401bc63846d61e2fd174a46c7dda09b">pism::IceModel</a>
+: <a class="el" href="classpism_1_1IceModel_a211bb79935c3c26ae15386fbe666f741.html#a211bb79935c3c26ae15386fbe666f741">pism::IceModel</a>
 </li>
 <li>Viewer()
 : <a class="el" href="classpism_1_1petsc_1_1Viewer_a4b3a5d08f3ed299cc8bfccd299a206c3.html#a4b3a5d08f3ed299cc8bfccd299a206c3">pism::petsc::Viewer</a>
 </li>
 <li>viscous_displacement()
-: <a class="el" href="classpism_1_1bed_1_1LingleClark_a51c80b15d6349b4fa6abc2e42b9b18e5.html#a51c80b15d6349b4fa6abc2e42b9b18e5">pism::bed::LingleClark</a>
+: <a class="el" href="classpism_1_1bed_1_1LingleClark_ac229b38840573be4ad106662fad54ecf.html#ac229b38840573be4ad106662fad54ecf">pism::bed::LingleClark</a>
 , <a class="el" href="classpism_1_1bed_1_1LingleClarkSerial_a216d3542d86e1a525e0c1488b0687bd2.html#a216d3542d86e1a525e0c1488b0687bd2">pism::bed::LingleClarkSerial</a>
 </li>
 <li>vol
 : <a class="el" href="structhypercube_a2d59f78ab7d33e16e5dbec841b094dff.html#a2d59f78ab7d33e16e5dbec841b094dff">hypercube</a>
 </li>
 <li>volumetric_heating_rate
-: <a class="el" href="classpism_1_1energy_1_1Inputs_aeea233d76a18c39452a93ab6d761fb05.html#aeea233d76a18c39452a93ab6d761fb05">pism::energy::Inputs</a>
+: <a class="el" href="classpism_1_1energy_1_1Inputs_ae72c72650b039813ad10d610740c4a3a.html#ae72c72650b039813ad10d610740c4a3a">pism::energy::Inputs</a>
 </li>
 <li>volumetric_strain_heating()
-: <a class="el" href="classpism_1_1stressbalance_1_1StressBalance_a128fb574d2b6640277906d7d2d2db3de.html#a128fb574d2b6640277906d7d2d2db3de">pism::stressbalance::StressBalance</a>
+: <a class="el" href="classpism_1_1stressbalance_1_1StressBalance_ae962c451540568890d5ba5a3a7cb84bd.html#ae962c451540568890d5ba5a3a7cb84bd">pism::stressbalance::StressBalance</a>
 </li>
 <li>vonMisesCalving()
-: <a class="el" href="classpism_1_1calving_1_1vonMisesCalving_a9af3e2d34253044beee3e77f4636b8e7.html#a9af3e2d34253044beee3e77f4636b8e7">pism::calving::vonMisesCalving</a>
+: <a class="el" href="classpism_1_1calving_1_1vonMisesCalving_a2de385c5626299c00b23e54cc98b248a.html#a2de385c5626299c00b23e54cc98b248a">pism::calving::vonMisesCalving</a>
 </li>
 </ul>
 </div><!-- contents -->

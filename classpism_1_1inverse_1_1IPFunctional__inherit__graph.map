@@ -1,21 +1,21 @@
 <map id="pism::inverse::IPFunctional&lt; IMVecType &gt;" name="pism::inverse::IPFunctional&lt; IMVecType &gt;">
-<area shape="rect" id="node1" title="Abstract base class for functions from ice model vectors to ." alt="" coords="5,189,203,231"/>
-<area shape="rect" id="node2" href="$classpism_1_1inverse_1_1IPInnerProductFunctional.html" title="Abstract base class for IPFunctionals arising from an inner product." alt="" coords="424,189,636,231"/>
-<area shape="rect" id="node13" href="$classpism_1_1inverse_1_1IPFunctional.html" title=" " alt="" coords="431,39,629,80"/>
-<area shape="rect" id="node15" href="$classpism_1_1inverse_1_1IPFunctional.html" title=" " alt="" coords="431,111,629,152"/>
-<area shape="rect" id="node16" href="$classpism_1_1inverse_1_1IPFunctional.html" title=" " alt="" coords="431,264,629,305"/>
-<area shape="rect" id="node17" href="$classpism_1_1inverse_1_1IPFunctional.html" title=" " alt="" coords="431,336,629,377"/>
-<area shape="rect" id="node3" href="$classpism_1_1inverse_1_1IPInnerProductFunctional.html" title=" " alt="" coords="878,79,1095,120"/>
-<area shape="rect" id="node8" href="$classpism_1_1inverse_1_1IPInnerProductFunctional.html" title=" " alt="" coords="857,144,1116,185"/>
-<area shape="rect" id="node9" href="$classpism_1_1inverse_1_1IPInnerProductFunctional.html" title=" " alt="" coords="858,209,1115,251"/>
-<area shape="rect" id="node10" href="$classpism_1_1inverse_1_1IPInnerProductFunctional.html" title=" " alt="" coords="877,283,1096,324"/>
-<area shape="rect" id="node4" href="$classpism_1_1inverse_1_1IPGroundedIceH1NormFunctional2S.html" title="Implements a functional corresponding to (the square of) an &#160;norm of a scalar valued function over a ..." alt="" coords="1174,141,1367,183"/>
-<area shape="rect" id="node5" href="$classpism_1_1inverse_1_1IPMeanSquareFunctional2S.html" title="Implements a functional corresponding to a (possibly weighted) sum of squares of components of an Ice..." alt="" coords="1165,207,1376,248"/>
-<area shape="rect" id="node6" href="$classpism_1_1inverse_1_1IP__H1NormFunctional2S.html" title="Implements a functional corresponding to (the square of) an &#160;norm of a scalar valued function." alt="" coords="1175,11,1366,52"/>
-<area shape="rect" id="node7" href="$classpism_1_1inverse_1_1IP__L2NormFunctional2S.html" title="Implements a functional corresponding to (the square of) an &#160;norm of a scalar valued function." alt="" coords="1177,76,1365,117"/>
-<area shape="rect" id="node11" href="$classpism_1_1inverse_1_1IPMeanSquareFunctional2V.html" title="Implements a functional corresponding to a (possibly weighted) sum of squares of components of an Ice..." alt="" coords="1165,276,1376,317"/>
-<area shape="rect" id="node12" href="$classpism_1_1inverse_1_1IP__L2NormFunctional2V.html" title="Implements a functional corresponding to (the square of) an &#160;norm of a vector valued function." alt="" coords="1177,341,1365,383"/>
-<area shape="rect" id="node14" href="$classpism_1_1inverse_1_1IPTotalVariationFunctional2S.html" title="Pseduo total variation functional." alt="" coords="877,5,1096,47"/>
-<area shape="rect" id="node18" href="$classpism_1_1inverse_1_1IPLogRatioFunctional.html" title="Implements a functional for log&#45;ratio errors." alt="" coords="893,353,1080,395"/>
-<area shape="rect" id="node19" href="$classpism_1_1inverse_1_1IPLogRelativeFunctional.html" title="Implements a functional for log&#45;relative errors." alt="" coords="883,419,1090,460"/>
+<area shape="rect" id="node1" title="Abstract base class for functions from ice model vectors to ." alt="" coords="5,166,203,207"/>
+<area shape="rect" id="node2" href="$classpism_1_1inverse_1_1IPInnerProductFunctional.html" title="Abstract base class for IPFunctionals arising from an inner product." alt="" coords="408,166,620,207"/>
+<area shape="rect" id="node13" href="$classpism_1_1inverse_1_1IPFunctional.html" title=" " alt="" coords="415,18,613,59"/>
+<area shape="rect" id="node14" href="$classpism_1_1inverse_1_1IPFunctional.html" title=" " alt="" coords="415,237,613,278"/>
+<area shape="rect" id="node17" href="$classpism_1_1inverse_1_1IPFunctional.html" title=" " alt="" coords="415,94,613,135"/>
+<area shape="rect" id="node18" href="$classpism_1_1inverse_1_1IPFunctional.html" title=" " alt="" coords="415,326,613,367"/>
+<area shape="rect" id="node3" href="$classpism_1_1inverse_1_1IPInnerProductFunctional.html" title=" " alt="" coords="829,5,1041,61"/>
+<area shape="rect" id="node4" href="$classpism_1_1inverse_1_1IPInnerProductFunctional.html" title=" " alt="" coords="829,171,1041,213"/>
+<area shape="rect" id="node7" href="$classpism_1_1inverse_1_1IPInnerProductFunctional.html" title=" " alt="" coords="829,88,1041,144"/>
+<area shape="rect" id="node8" href="$classpism_1_1inverse_1_1IPInnerProductFunctional.html" title=" " alt="" coords="829,307,1041,349"/>
+<area shape="rect" id="node5" href="$classpism_1_1inverse_1_1IPMeanSquareFunctional2V.html" title="Implements a functional corresponding to a (possibly weighted) sum of squares of components of an arr..." alt="" coords="1093,107,1304,149"/>
+<area shape="rect" id="node6" href="$classpism_1_1inverse_1_1IP__L2NormFunctional2V.html" title="Implements a functional corresponding to (the square of) an &#160;norm of a vector valued function." alt="" coords="1105,173,1293,214"/>
+<area shape="rect" id="node9" href="$classpism_1_1inverse_1_1IPGroundedIceH1NormFunctional2S.html" title="Implements a functional corresponding to (the square of) an &#160;norm of a scalar valued function over a ..." alt="" coords="1102,241,1295,282"/>
+<area shape="rect" id="node10" href="$classpism_1_1inverse_1_1IPMeanSquareFunctional2S.html" title="Implements a functional corresponding to a (possibly weighted) sum of squares of components of an arr..." alt="" coords="1093,306,1304,347"/>
+<area shape="rect" id="node11" href="$classpism_1_1inverse_1_1IP__H1NormFunctional2S.html" title="Implements a functional corresponding to (the square of) an &#160;norm of a scalar valued function." alt="" coords="1103,371,1294,413"/>
+<area shape="rect" id="node12" href="$classpism_1_1inverse_1_1IP__L2NormFunctional2S.html" title="Implements a functional corresponding to (the square of) an &#160;norm of a scalar valued function." alt="" coords="1105,437,1293,478"/>
+<area shape="rect" id="node15" href="$classpism_1_1inverse_1_1IPLogRatioFunctional.html" title="Implements a functional for log&#45;ratio errors." alt="" coords="841,242,1028,283"/>
+<area shape="rect" id="node16" href="$classpism_1_1inverse_1_1IPLogRelativeFunctional.html" title="Implements a functional for log&#45;relative errors." alt="" coords="831,373,1038,414"/>
+<area shape="rect" id="node19" href="$classpism_1_1inverse_1_1IPTotalVariationFunctional2S.html" title="Pseduo total variation functional." alt="" coords="825,438,1044,479"/>
 </map>

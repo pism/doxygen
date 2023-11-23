@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['inputmodel_9279',['InputModel',['../classpism_1_1surface_1_1Factory_a5af8b133906290278c92727369f876d1.html#a5af8b133906290278c92727369f876d1',1,'pism::surface::Factory']]],
-  ['integrand_9280',['integrand',['../cubature_8h_a6e9a87a699043972ce6dafa9375bf774.html#a6e9a87a699043972ce6dafa9375bf774',1,'cubature.h']]]
+  ['listener_9659',['Listener',['../classpism_1_1inverse_1_1IP__SSATaucTaoTikhonovProblemLCL_ae8f52d5c305cc3d7dbe4120a8f80d638.html#ae8f52d5c305cc3d7dbe4120a8f80d638',1,'pism::inverse::IP_SSATaucTaoTikhonovProblemLCL']]]
 ];

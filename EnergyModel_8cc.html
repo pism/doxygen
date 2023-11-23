@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PISM, A Parallel Ice Sheet Model
-   &#160;<span id="projectnumber">stable v2.0.7 committed by Constantine Khrulev on 2023-11-21 12:49:11 -0900</span>
+   &#160;<span id="projectnumber">stable v2.1 committed by Constantine Khrulev on 2023-11-23 11:24:22 -0900</span>
    </div>
   </td>
  </tr>
@@ -82,20 +82,16 @@ $(function() {
 <div class="title">EnergyModel.cc File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="EnergyModel_8hh_source.html">EnergyModel.hh</a>&quot;</code><br />
-<code>#include &quot;pism/util/MaxTimestep.hh&quot;</code><br />
+<div class="textblock"><code>#include &quot;pism/energy/EnergyModel.hh&quot;</code><br />
+<code>#include &quot;pism/energy/utilities.hh&quot;</code><br />
 <code>#include &quot;pism/stressbalance/StressBalance.hh&quot;</code><br />
-<code>#include &quot;pism/util/io/File.hh&quot;</code><br />
-<code>#include &quot;pism/util/Vars.hh&quot;</code><br />
-<code>#include &quot;<a class="el" href="utilities_8hh_source.html">utilities.hh</a>&quot;</code><br />
-<code>#include &quot;pism/util/EnthalpyConverter.hh&quot;</code><br />
-<code>#include &quot;<a class="el" href="bootstrapping_8hh_source.html">bootstrapping.hh</a>&quot;</code><br />
-<code>#include &quot;pism/util/pism_utilities.hh&quot;</code><br />
-<code>#include &quot;pism/util/error_handling.hh&quot;</code><br />
-<code>#include &quot;pism/util/IceModelVec2CellType.hh&quot;</code><br />
-<code>#include &quot;pism/util/pism_options.hh&quot;</code><br />
+<code>#include &quot;pism/util/MaxTimestep.hh&quot;</code><br />
 <code>#include &quot;pism/util/Profiling.hh&quot;</code><br />
-<code>#include &quot;pism/util/Context.hh&quot;</code><br />
+<code>#include &quot;pism/util/Vars.hh&quot;</code><br />
+<code>#include &quot;pism/util/array/CellType.hh&quot;</code><br />
+<code>#include &quot;pism/util/error_handling.hh&quot;</code><br />
+<code>#include &quot;pism/util/io/File.hh&quot;</code><br />
+<code>#include &quot;pism/util/pism_utilities.hh&quot;</code><br />
 </div>
 <p><a href="EnergyModel_8cc_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -115,10 +111,10 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a739ba61156a10b44f3654fa418794d59"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_1_1energy_a739ba61156a10b44f3654fa418794d59.html#a739ba61156a10b44f3654fa418794d59">pism::energy::check_input</a> (const IceModelVec *ptr, const char *name)</td></tr>
-<tr class="separator:a739ba61156a10b44f3654fa418794d59"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2d8f9f9fe5d5505c852e8524473d8bcc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_1_1energy_a2d8f9f9fe5d5505c852e8524473d8bcc.html#a2d8f9f9fe5d5505c852e8524473d8bcc">pism::energy::marginal</a> (const IceModelVec2S &amp;thickness, int i, int j, double threshold)</td></tr>
-<tr class="separator:a2d8f9f9fe5d5505c852e8524473d8bcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21ad4352bf0bb7cff3cf276fec6cf628"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_1_1energy_a21ad4352bf0bb7cff3cf276fec6cf628.html#a21ad4352bf0bb7cff3cf276fec6cf628">pism::energy::check_input</a> (const array::Array *ptr, const char *name)</td></tr>
+<tr class="separator:a21ad4352bf0bb7cff3cf276fec6cf628"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5947863588636523462b5766409acf47"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_1_1energy_a5947863588636523462b5766409acf47.html#a5947863588636523462b5766409acf47">pism::energy::marginal</a> (const array::Scalar1 &amp;thickness, int i, int j, double threshold)</td></tr>
+<tr class="separator:a5947863588636523462b5766409acf47"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->

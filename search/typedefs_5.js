@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['flags_9274',['Flags',['../classpism_1_1Config_aad756b3d16af3ad58abf884353f75b00.html#aad756b3d16af3ad58abf884353f75b00',1,'pism::Config']]],
-  ['flowlawcreator_9275',['FlowLawCreator',['../namespacepism_1_1rheology_a20c6507dbc5eabe0cc86f607b273777e.html#a20c6507dbc5eabe0cc86f607b273777e',1,'pism::rheology']]]
+  ['geometry_9655',['geometry',['../classpism_1_1stressbalance_1_1BlatterISMIPHOM_a70a3240f2bb303e473b270af919b8877.html#a70a3240f2bb303e473b270af919b8877',1,'pism::stressbalance::BlatterISMIPHOM']]]
 ];

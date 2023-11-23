@@ -1,6 +1,0 @@
-<map id="pism::IceModelVec3" name="pism::IceModelVec3">
-<area shape="rect" id="node1" title="A virtual class collecting methods common to ice and bedrock 3D fields." alt="" coords="20,155,172,181"/>
-<area shape="rect" id="node4" href="$classpism_1_1IceModelVec2Stag.html" title="A class for storing and accessing internal staggered&#45;grid 2D fields. Uses dof=2 storage...." alt="" coords="5,229,187,256"/>
-<area shape="rect" id="node2" href="$classpism_1_1IceModelVec.html" title="Abstract class for reading, writing, allocating, and accessing a DA&#45;based PETSc Vec (2D and 3D fields..." alt="" coords="24,80,168,107"/>
-<area shape="rect" id="node3" href="$classpism_1_1PetscAccessible.html" title=" " alt="" coords="13,5,179,32"/>
-</map>

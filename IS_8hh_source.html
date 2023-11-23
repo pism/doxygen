@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PISM, A Parallel Ice Sheet Model
-   &#160;<span id="projectnumber">stable v2.0.7 committed by Constantine Khrulev on 2023-11-21 12:49:11 -0900</span>
+   &#160;<span id="projectnumber">stable v2.1 committed by Constantine Khrulev on 2023-11-23 11:24:22 -0900</span>
    </div>
   </td>
  </tr>
@@ -102,11 +102,11 @@ $(function() {
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &lt;petscis.h&gt;</span></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Wrapper_8hh.html">Wrapper.hh</a>&quot;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &quot;pism/util/Wrapper.hh&quot;</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacepism.html">pism</a> {</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">namespace </span>petsc {</div>
-<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="classpism_1_1petsc_1_1IS.html">   29</a></span>&#160;<span class="keyword">class </span><a class="code" href="classpism_1_1petsc_1_1IS.html">IS</a> : <span class="keyword">public</span> <a class="code" href="classpism_1_1petsc_1_1Wrapper.html">petsc::Wrapper</a>&lt; ::IS &gt; {</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="classpism_1_1petsc_1_1IS.html">   29</a></span>&#160;<span class="keyword">class </span><a class="code" href="classpism_1_1petsc_1_1IS.html">IS</a> : <span class="keyword">public</span> <a class="code" href="classpism_1_1Wrapper.html">Wrapper</a>&lt; ::IS &gt; {</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <a class="code" href="classpism_1_1petsc_1_1IS_a13da830c53550f3f835a4b131cc432ab.html#a13da830c53550f3f835a4b131cc432ab">IS</a>();</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <a class="code" href="classpism_1_1petsc_1_1IS_a13da830c53550f3f835a4b131cc432ab.html#a13da830c53550f3f835a4b131cc432ab">IS</a>(::<a class="code" href="classpism_1_1petsc_1_1IS.html">IS</a> m);</div>
@@ -116,12 +116,11 @@ $(function() {
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;} <span class="comment">// end of namespace pism</span></div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* _IS_H_ */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="aWrapper_8hh_html"><div class="ttname"><a href="Wrapper_8hh.html">Wrapper.hh</a></div></div>
+<div class="ttc" id="aclasspism_1_1Wrapper_html"><div class="ttname"><a href="classpism_1_1Wrapper.html">pism::Wrapper</a></div><div class="ttdef"><b>Definition:</b> <a href="Wrapper_8hh_source.html#l00028">Wrapper.hh:28</a></div></div>
 <div class="ttc" id="aclasspism_1_1petsc_1_1IS_a13da830c53550f3f835a4b131cc432ab_html_a13da830c53550f3f835a4b131cc432ab"><div class="ttname"><a href="classpism_1_1petsc_1_1IS_a13da830c53550f3f835a4b131cc432ab.html#a13da830c53550f3f835a4b131cc432ab">pism::petsc::IS::IS</a></div><div class="ttdeci">IS()</div><div class="ttdef"><b>Definition:</b> <a href="IS_8cc_source.html#l00025">IS.cc:25</a></div></div>
 <div class="ttc" id="aclasspism_1_1petsc_1_1IS_ad12a813ae12f7b67a689dd291a390bb2_html_ad12a813ae12f7b67a689dd291a390bb2"><div class="ttname"><a href="classpism_1_1petsc_1_1IS_ad12a813ae12f7b67a689dd291a390bb2.html#ad12a813ae12f7b67a689dd291a390bb2">pism::petsc::IS::~IS</a></div><div class="ttdeci">~IS()</div><div class="ttdef"><b>Definition:</b> <a href="IS_8cc_source.html#l00033">IS.cc:33</a></div></div>
 <div class="ttc" id="aclasspism_1_1petsc_1_1IS_html"><div class="ttname"><a href="classpism_1_1petsc_1_1IS.html">pism::petsc::IS</a></div><div class="ttdef"><b>Definition:</b> <a href="IS_8hh_source.html#l00029">IS.hh:29</a></div></div>
-<div class="ttc" id="aclasspism_1_1petsc_1_1Wrapper_html"><div class="ttname"><a href="classpism_1_1petsc_1_1Wrapper.html">pism::petsc::Wrapper</a></div><div class="ttdef"><b>Definition:</b> <a href="Wrapper_8hh_source.html#l00029">Wrapper.hh:29</a></div></div>
-<div class="ttc" id="anamespacepism_html"><div class="ttname"><a href="namespacepism.html">pism</a></div><div class="ttdef"><b>Definition:</b> <a href="AgeColumnSystem_8cc_source.html#l00024">AgeColumnSystem.cc:24</a></div></div>
+<div class="ttc" id="anamespacepism_html"><div class="ttname"><a href="namespacepism.html">pism</a></div><div class="ttdef"><b>Definition:</b> <a href="AgeColumnSystem_8cc_source.html#l00023">AgeColumnSystem.cc:23</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

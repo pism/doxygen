@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PISM, A Parallel Ice Sheet Model
-   &#160;<span id="projectnumber">stable v2.0.7 committed by Constantine Khrulev on 2023-11-21 12:49:11 -0900</span>
+   &#160;<span id="projectnumber">stable v2.1 committed by Constantine Khrulev on 2023-11-23 11:24:22 -0900</span>
    </div>
   </td>
  </tr>
@@ -78,7 +78,7 @@ $(function() {
 <div class="title">grounded_cell_fraction.hh</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="grounded__cell__fraction_8hh.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/* Copyright (C) 2016, 2017, 2018 PISM Authors</span></div>
+<a href="grounded__cell__fraction_8hh.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/* Copyright (C) 2016, 2017, 2018, 2022 PISM Authors</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * This file is part of PISM.</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> *</span></div>
@@ -102,28 +102,31 @@ $(function() {
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacepism.html">pism</a> {</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">class </span>IceModelVec2S;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keywordtype">double</span> <a class="code" href="namespacepism_a2eb46a5674fa164e1ed49556082b2b83.html#a2eb46a5674fa164e1ed49556082b2b83">grounded_area_fraction</a>(<span class="keywordtype">double</span> a, <span class="keywordtype">double</span> b, <span class="keywordtype">double</span> c);</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">/*!</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment"> * Compute grounded cell fractions by splitting control volumes into triangles and</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment"> * treating the flotation criterion as a linear function on each triangle.</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespacepism_a43f0457b9456bf05d3fa0fedd866890e.html#a43f0457b9456bf05d3fa0fedd866890e">compute_grounded_cell_fraction</a>(<span class="keywordtype">double</span> ice_density,</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                                    <span class="keywordtype">double</span> ocean_density,</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                                    <span class="keyword">const</span> IceModelVec2S &amp;sea_level,</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                                    <span class="keyword">const</span> IceModelVec2S &amp;ice_thickness,</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                                    <span class="keyword">const</span> IceModelVec2S &amp;bed_topography,</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                                    IceModelVec2S &amp;result);</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;} <span class="comment">// end of namespace pism</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">namespace </span>array {</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">class </span>Scalar;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">class </span>Scalar1;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;}</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keywordtype">double</span> <a class="code" href="namespacepism_a2eb46a5674fa164e1ed49556082b2b83.html#a2eb46a5674fa164e1ed49556082b2b83">grounded_area_fraction</a>(<span class="keywordtype">double</span> a, <span class="keywordtype">double</span> b, <span class="keywordtype">double</span> c);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">/*!</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment"> * Compute grounded cell fractions by splitting control volumes into triangles and</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment"> * treating the flotation criterion as a linear function on each triangle.</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespacepism_a5e0714b3565e7cdd98c09aad3c191884.html#a5e0714b3565e7cdd98c09aad3c191884">compute_grounded_cell_fraction</a>(<span class="keywordtype">double</span> ice_density,</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                                    <span class="keywordtype">double</span> ocean_density,</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                                    <span class="keyword">const</span> array::Scalar1 &amp;sea_level,</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                                    <span class="keyword">const</span> array::Scalar1 &amp;ice_thickness,</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                                    <span class="keyword">const</span> array::Scalar1 &amp;bed_topography,</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                                    array::Scalar &amp;result);</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* _GROUNDED_CELL_FRACTION_H_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;} <span class="comment">// end of namespace pism</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* _GROUNDED_CELL_FRACTION_H_ */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="anamespacepism_a2eb46a5674fa164e1ed49556082b2b83_html_a2eb46a5674fa164e1ed49556082b2b83"><div class="ttname"><a href="namespacepism_a2eb46a5674fa164e1ed49556082b2b83.html#a2eb46a5674fa164e1ed49556082b2b83">pism::grounded_area_fraction</a></div><div class="ttdeci">double grounded_area_fraction(double a, double b, double c)</div><div class="ttdef"><b>Definition:</b> <a href="grounded__cell__fraction_8cc_source.html#l00132">grounded_cell_fraction.cc:132</a></div></div>
-<div class="ttc" id="anamespacepism_a43f0457b9456bf05d3fa0fedd866890e_html_a43f0457b9456bf05d3fa0fedd866890e"><div class="ttname"><a href="namespacepism_a43f0457b9456bf05d3fa0fedd866890e.html#a43f0457b9456bf05d3fa0fedd866890e">pism::compute_grounded_cell_fraction</a></div><div class="ttdeci">void compute_grounded_cell_fraction(double ice_density, double ocean_density, const IceModelVec2S &amp;sea_level, const IceModelVec2S &amp;ice_thickness, const IceModelVec2S &amp;bed_topography, IceModelVec2S &amp;result)</div><div class="ttdef"><b>Definition:</b> <a href="grounded__cell__fraction_8cc_source.html#l00257">grounded_cell_fraction.cc:257</a></div></div>
-<div class="ttc" id="anamespacepism_html"><div class="ttname"><a href="namespacepism.html">pism</a></div><div class="ttdef"><b>Definition:</b> <a href="AgeColumnSystem_8cc_source.html#l00024">AgeColumnSystem.cc:24</a></div></div>
+<div class="ttc" id="anamespacepism_a5e0714b3565e7cdd98c09aad3c191884_html_a5e0714b3565e7cdd98c09aad3c191884"><div class="ttname"><a href="namespacepism_a5e0714b3565e7cdd98c09aad3c191884.html#a5e0714b3565e7cdd98c09aad3c191884">pism::compute_grounded_cell_fraction</a></div><div class="ttdeci">void compute_grounded_cell_fraction(double ice_density, double ocean_density, const array::Scalar1 &amp;sea_level, const array::Scalar1 &amp;ice_thickness, const array::Scalar1 &amp;bed_topography, array::Scalar &amp;result)</div><div class="ttdef"><b>Definition:</b> <a href="grounded__cell__fraction_8cc_source.html#l00257">grounded_cell_fraction.cc:257</a></div></div>
+<div class="ttc" id="anamespacepism_html"><div class="ttname"><a href="namespacepism.html">pism</a></div><div class="ttdef"><b>Definition:</b> <a href="AgeColumnSystem_8cc_source.html#l00023">AgeColumnSystem.cc:23</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

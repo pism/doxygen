@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PISM, A Parallel Ice Sheet Model
-   &#160;<span id="projectnumber">stable v2.0.7 committed by Constantine Khrulev on 2023-11-21 12:49:11 -0900</span>
+   &#160;<span id="projectnumber">stable v2.1 committed by Constantine Khrulev on 2023-11-23 11:24:22 -0900</span>
    </div>
   </td>
  </tr>
@@ -210,7 +210,7 @@ Protected Attributes</h2></td></tr>
 <div class="line">E_s = EC.enthalpy_cts(p);</div>
 <div class="line">... etc ...</div>
 <div class="line">}   </div>
-<div class="ttc" id="aclasspism_1_1EnthalpyConverter_a089e0e60e9a8fb1b88f1c147578ea356_html_a089e0e60e9a8fb1b88f1c147578ea356"><div class="ttname"><a href="classpism_1_1EnthalpyConverter_a089e0e60e9a8fb1b88f1c147578ea356.html#a089e0e60e9a8fb1b88f1c147578ea356">pism::EnthalpyConverter::EnthalpyConverter</a></div><div class="ttdeci">EnthalpyConverter(const Config &amp;config)</div><div class="ttdef"><b>Definition:</b> <a href="EnthalpyConverter_8cc_source.html#l00055">EnthalpyConverter.cc:55</a></div></div>
+<div class="ttc" id="aclasspism_1_1EnthalpyConverter_a089e0e60e9a8fb1b88f1c147578ea356_html_a089e0e60e9a8fb1b88f1c147578ea356"><div class="ttname"><a href="classpism_1_1EnthalpyConverter_a089e0e60e9a8fb1b88f1c147578ea356.html#a089e0e60e9a8fb1b88f1c147578ea356">pism::EnthalpyConverter::EnthalpyConverter</a></div><div class="ttdeci">EnthalpyConverter(const Config &amp;config)</div><div class="ttdef"><b>Definition:</b> <a href="EnthalpyConverter_8cc_source.html#l00054">EnthalpyConverter.cc:54</a></div></div>
 </div><!-- fragment --><p>The three methods that get the enthalpy from temperatures and liquid fractions, namely <a class="el" href="classpism_1_1EnthalpyConverter_a03cc5817bb07623518436fe8c7d759f2.html#a03cc5817bb07623518436fe8c7d759f2" title="Compute enthalpy from absolute temperature, liquid water fraction, and pressure.">enthalpy()</a>, <a class="el" href="classpism_1_1EnthalpyConverter_a826890722ac0956486e60640dfeadf0a.html#a826890722ac0956486e60640dfeadf0a" title="Compute enthalpy more permissively than enthalpy().">enthalpy_permissive()</a> are more strict about error checking. They throw <a class="el" href="classpism_1_1RuntimeError.html">RuntimeError</a> if their arguments are invalid.</p>
 <p>This class is documented by [<a class="el" href="references.html#AschwandenBuelerKhroulevBlatter">AschwandenBuelerKhroulevBlatter</a>].</p>
 <p>Maps from \( (H,p) \) to \( (T,\omega,p) \) and back.</p>

@@ -5,11 +5,11 @@ var indexSectionsWithContent =
   2: "ip",
   3: "abcdefghijklmnopqrstuvwy",
   4: "abcdefghijklmnopqrstuvwxyz~",
-  5: "_abcdefghijklmnopqrstuvwxyz",
-  6: "abcdefghilmprstuvw",
-  7: "acdefghiklmnoprstu",
+  5: "abcdefghijklmnopqrstuvwxyz",
+  6: "abcdfghilmprstvw",
+  7: "abcdefhiklmnoprtuv",
   8: "abcdefghijlmnopqrstuwxyz",
-  9: ":cuv",
+  9: ":ciuv",
   10: "_abcghikmnprstu",
   11: "r"
 };

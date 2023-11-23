@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PISM, A Parallel Ice Sheet Model
-   &#160;<span id="projectnumber">stable v2.0.7 committed by Constantine Khrulev on 2023-11-21 12:49:11 -0900</span>
+   &#160;<span id="projectnumber">stable v2.1 committed by Constantine Khrulev on 2023-11-23 11:24:22 -0900</span>
    </div>
   </td>
  </tr>
@@ -85,31 +85,55 @@ $(function() {
 <div class="title">diagnostics.cc File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;cassert&gt;</code><br />
-<code>#include &lt;algorithm&gt;</code><br />
-<code>#include &quot;pism/icemodel/IceModel.hh&quot;</code><br />
+<div class="textblock"><code>#include &lt;algorithm&gt;</code><br />
+<code>#include &lt;cassert&gt;</code><br />
+<code>#include &lt;memory&gt;</code><br />
 <code>#include &quot;pism/age/AgeModel.hh&quot;</code><br />
 <code>#include &quot;pism/energy/EnergyModel.hh&quot;</code><br />
 <code>#include &quot;pism/energy/utilities.hh&quot;</code><br />
 <code>#include &quot;pism/geometry/grounded_cell_fraction.hh&quot;</code><br />
 <code>#include &quot;pism/geometry/part_grid_threshold_thickness.hh&quot;</code><br />
+<code>#include &quot;pism/icemodel/IceModel.hh&quot;</code><br />
 <code>#include &quot;pism/rheology/FlowLaw.hh&quot;</code><br />
-<code>#include &quot;pism/stressbalance/StressBalance.hh&quot;</code><br />
 <code>#include &quot;pism/stressbalance/SSB_Modifier.hh&quot;</code><br />
 <code>#include &quot;pism/stressbalance/ShallowStressBalance.hh&quot;</code><br />
-<code>#include &quot;pism/util/EnthalpyConverter.hh&quot;</code><br />
+<code>#include &quot;pism/stressbalance/StressBalance.hh&quot;</code><br />
 <code>#include &quot;pism/util/Diagnostic.hh&quot;</code><br />
-<code>#include &quot;pism/util/Vars.hh&quot;</code><br />
+<code>#include &quot;pism/util/EnthalpyConverter.hh&quot;</code><br />
 <code>#include &quot;pism/util/error_handling.hh&quot;</code><br />
 <code>#include &quot;pism/util/pism_utilities.hh&quot;</code><br />
 <code>#include &quot;pism/util/projection.hh&quot;</code><br />
-<code>#include &quot;pism/earth/BedDef.hh&quot;</code><br />
-<code>#include &quot;<a class="el" href="flux__balance_8hh_source.html">flux_balance.hh</a>&quot;</code><br />
 </div>
 <p><a href="diagnostics_8cc_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpism_1_1diagnostics_1_1TendencyOfIceAmount.html">pism::diagnostics::TendencyOfIceAmount</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes tendency_of_ice_amount, the ice amount rate of change.  <a href="classpism_1_1diagnostics_1_1TendencyOfIceAmount.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpism_1_1diagnostics_1_1TendencyOfIceAmountDueToFlow.html">pism::diagnostics::TendencyOfIceAmountDueToFlow</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes tendency_of_ice_amount_due_to_flow, the rate of change of ice amount due to flow.  <a href="classpism_1_1diagnostics_1_1TendencyOfIceAmountDueToFlow.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpism_1_1diagnostics_1_1SurfaceFlux.html">pism::diagnostics::SurfaceFlux</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Report surface mass balance flux, averaged over the reporting interval.  <a href="classpism_1_1diagnostics_1_1SurfaceFlux.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpism_1_1diagnostics_1_1BasalFlux.html">pism::diagnostics::BasalFlux</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Report basal mass balance flux, averaged over the reporting interval.  <a href="classpism_1_1diagnostics_1_1BasalFlux.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpism_1_1diagnostics_1_1ConservationErrorFlux.html">pism::diagnostics::ConservationErrorFlux</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpism_1_1diagnostics_1_1DischargeFlux.html">pism::diagnostics::DischargeFlux</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Report discharge (calving and frontal melt) flux.  <a href="classpism_1_1diagnostics_1_1DischargeFlux.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpism_1_1diagnostics_1_1CalvingFlux.html">pism::diagnostics::CalvingFlux</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Report the calving flux.  <a href="classpism_1_1diagnostics_1_1CalvingFlux.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpism_1_1diagnostics_1_1FrontalMeltFlux.html">pism::diagnostics::FrontalMeltFlux</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Report the frontal melt flux.  <a href="classpism_1_1diagnostics_1_1FrontalMeltFlux.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpism_1_1diagnostics_1_1ForcedRetreatFlux.html">pism::diagnostics::ForcedRetreatFlux</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Report the frontal melt flux.  <a href="classpism_1_1diagnostics_1_1ForcedRetreatFlux.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpism_1_1diagnostics_1_1IceMarginPressureDifference.html">pism::diagnostics::IceMarginPressureDifference</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ocean pressure difference at calving fronts. Used to debug CF boundary conditins.  <a href="classpism_1_1diagnostics_1_1IceMarginPressureDifference.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -230,6 +254,9 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpism_1_1diagnostics_1_1scalar_1_1TimeStepLength.html">pism::diagnostics::scalar::TimeStepLength</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reports the mass continuity time step.  <a href="classpism_1_1diagnostics_1_1scalar_1_1TimeStepLength.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpism_1_1diagnostics_1_1scalar_1_1TimeStepRatio.html">pism::diagnostics::scalar::TimeStepRatio</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reports the mass continuity time step.  <a href="classpism_1_1diagnostics_1_1scalar_1_1TimeStepRatio.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpism_1_1diagnostics_1_1scalar_1_1MaxDiffusivity.html">pism::diagnostics::scalar::MaxDiffusivity</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reports maximum diffusivity.  <a href="classpism_1_1diagnostics_1_1scalar_1_1MaxDiffusivity.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -318,6 +345,16 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
+<tr class="memitem:a45f6224f1bb1d0a924bd5d0c706aafb9"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_1_1diagnostics_a45f6224f1bb1d0a924bd5d0c706aafb9.html#a45f6224f1bb1d0a924bd5d0c706aafb9">pism::diagnostics::AmountKind</a> { <a class="el" href="namespacepism_1_1diagnostics_a45f6224f1bb1d0a924bd5d0c706aafb9.html#a45f6224f1bb1d0a924bd5d0c706aafb9a821c10735df8d6095bcd5bed0d1b7a35">pism::diagnostics::AMOUNT</a>
+, <a class="el" href="namespacepism_1_1diagnostics_a45f6224f1bb1d0a924bd5d0c706aafb9.html#a45f6224f1bb1d0a924bd5d0c706aafb9a0dfee94623260f49617b695b6f90d2cf">pism::diagnostics::MASS</a>
+ }</td></tr>
+<tr class="separator:a45f6224f1bb1d0a924bd5d0c706aafb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af35ed9ee223a712238e91a0b486f1580"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_1_1diagnostics_af35ed9ee223a712238e91a0b486f1580.html#af35ed9ee223a712238e91a0b486f1580">pism::diagnostics::ChangeKind</a> { <a class="el" href="namespacepism_1_1diagnostics_af35ed9ee223a712238e91a0b486f1580.html#af35ed9ee223a712238e91a0b486f1580ad9089e1aa6b6afabf2150b569252ec2c">pism::diagnostics::CALVING</a>
+, <a class="el" href="namespacepism_1_1diagnostics_af35ed9ee223a712238e91a0b486f1580.html#af35ed9ee223a712238e91a0b486f1580a8c10d734b89c325fa591b84bc9e94413">pism::diagnostics::FRONTAL_MELT</a>
+, <a class="el" href="namespacepism_1_1diagnostics_af35ed9ee223a712238e91a0b486f1580.html#af35ed9ee223a712238e91a0b486f1580aa65ac382a521d1b05849d85702bf4e80">pism::diagnostics::FORCED_RETREAT</a>
+, <a class="el" href="namespacepism_1_1diagnostics_af35ed9ee223a712238e91a0b486f1580.html#af35ed9ee223a712238e91a0b486f1580a86691bb64ed83f8158ccff0ca0504d65">pism::diagnostics::TOTAL_DISCHARGE</a>
+ }</td></tr>
+<tr class="separator:af35ed9ee223a712238e91a0b486f1580"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a555fe870937c53c2aeba1a5e2034f518"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_1_1diagnostics_a555fe870937c53c2aeba1a5e2034f518.html#a555fe870937c53c2aeba1a5e2034f518">pism::diagnostics::AreaType</a> { <a class="el" href="namespacepism_1_1diagnostics_a555fe870937c53c2aeba1a5e2034f518.html#a555fe870937c53c2aeba1a5e2034f518a058fc8e2bc03202ab718af2bb3f99036">pism::diagnostics::GROUNDED</a>
 , <a class="el" href="namespacepism_1_1diagnostics_a555fe870937c53c2aeba1a5e2034f518.html#a555fe870937c53c2aeba1a5e2034f518a7a51c1c583627edb4570bc7733972c4b">pism::diagnostics::SHELF</a>
 , <a class="el" href="namespacepism_1_1diagnostics_a555fe870937c53c2aeba1a5e2034f518.html#a555fe870937c53c2aeba1a5e2034f518a275e00202f7ecc1b914777cfb735ed87">pism::diagnostics::BOTH</a>
@@ -336,6 +373,8 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:ac9cc8e1d6a8eb72b6e9fd5f9f3fd7fb5"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_1_1diagnostics_ac9cc8e1d6a8eb72b6e9fd5f9f3fd7fb5.html#ac9cc8e1d6a8eb72b6e9fd5f9f3fd7fb5">pism::diagnostics::accumulate_changes</a> (const IceModel *model, double factor, ChangeKind kind, array::Scalar &amp;accumulator)</td></tr>
+<tr class="separator:ac9cc8e1d6a8eb72b6e9fd5f9f3fd7fb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b5d5c926ded80ac3f3d8f6f5fae8a22"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_1_1diagnostics_1_1scalar_a9b5d5c926ded80ac3f3d8f6f5fae8a22.html#a9b5d5c926ded80ac3f3d8f6f5fae8a22">pism::diagnostics::scalar::mass_change</a> (const IceModel *model, TermType term, AreaType area)</td></tr>
 <tr class="separator:a9b5d5c926ded80ac3f3d8f6f5fae8a22"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9bb8da80ad8f5597b8e6f44079020bed"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_1_1diagnostics_a9bb8da80ad8f5597b8e6f44079020bed.html#a9bb8da80ad8f5597b8e6f44079020bed">pism::diagnostics::square</a> (double x)</td></tr>
@@ -348,8 +387,10 @@ Functions</h2></td></tr>
 <tr class="separator:a377ce69d35011a1ef8b9df3fea40b72e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8c9f45a84512d415582822ed5db9430"><td class="memItemLeft" align="right" valign="top">static Metadata&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_aa8c9f45a84512d415582822ed5db9430.html#aa8c9f45a84512d415582822ed5db9430">pism::ts_diag_metadata</a> (const std::map&lt; std::string, TSDiagnostic::Ptr &gt; &amp;ts_diags)</td></tr>
 <tr class="separator:aa8c9f45a84512d415582822ed5db9430"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a13cab08d8233ec083a530a1de43ebd79"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_1_1details_a13cab08d8233ec083a530a1de43ebd79.html#a13cab08d8233ec083a530a1de43ebd79">pism::details::ice_volume</a> (const IceModelVec2S &amp;ice_thickness, const IceModelVec3 &amp;ice_enthalpy, IceKind kind, double thickness_threshold)</td></tr>
-<tr class="separator:a13cab08d8233ec083a530a1de43ebd79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0291224aa2559ff11aa282b02a808fb7"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_1_1details_a0291224aa2559ff11aa282b02a808fb7.html#a0291224aa2559ff11aa282b02a808fb7">pism::details::ice_volume</a> (const array::Scalar &amp;ice_thickness, const array::Array3D &amp;ice_enthalpy, IceKind kind, double thickness_threshold)</td></tr>
+<tr class="separator:a0291224aa2559ff11aa282b02a808fb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad48e20b30a856281bcced5645a75119"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_1_1details_aad48e20b30a856281bcced5645a75119.html#aad48e20b30a856281bcced5645a75119">pism::details::base_area</a> (const array::Scalar &amp;ice_thickness, const array::Array3D &amp;ice_enthalpy, IceKind kind, double thickness_threshold)</td></tr>
+<tr class="separator:aad48e20b30a856281bcced5645a75119"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>

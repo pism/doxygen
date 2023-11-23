@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PISM, A Parallel Ice Sheet Model
-   &#160;<span id="projectnumber">stable v2.0.7 committed by Constantine Khrulev on 2023-11-21 12:49:11 -0900</span>
+   &#160;<span id="projectnumber">stable v2.1 committed by Constantine Khrulev on 2023-11-23 11:24:22 -0900</span>
    </div>
   </td>
  </tr>
@@ -82,18 +82,18 @@ $(function() {
 <div class="contents">
 <div class="textblock"><code>#include &lt;algorithm&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
-<code>#include &quot;<a class="el" href="PSVerification_8hh_source.html">PSVerification.hh</a>&quot;</code><br />
+<code>#include &quot;pism/verification/PSVerification.hh&quot;</code><br />
 <code>#include &quot;pism/coupler/AtmosphereModel.hh&quot;</code><br />
 <code>#include &quot;pism/rheology/PatersonBuddCold.hh&quot;</code><br />
 <code>#include &quot;pism/util/EnthalpyConverter.hh&quot;</code><br />
 <code>#include &quot;pism/util/Time.hh&quot;</code><br />
 <code>#include &quot;pism/util/ConfigInterface.hh&quot;</code><br />
-<code>#include &quot;<a class="el" href="exactTestsABCD_8h_source.html">tests/exactTestsABCD.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="exactTestsFG_8hh_source.html">tests/exactTestsFG.hh</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="exactTestH_8h_source.html">tests/exactTestH.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="exactTestL_8hh_source.html">tests/exactTestL.hh</a>&quot;</code><br />
+<code>#include &quot;pism/verification/tests/exactTestsABCD.h&quot;</code><br />
+<code>#include &quot;pism/verification/tests/exactTestsFG.hh&quot;</code><br />
+<code>#include &quot;pism/verification/tests/exactTestH.h&quot;</code><br />
+<code>#include &quot;pism/verification/tests/exactTestL.hh&quot;</code><br />
 <code>#include &quot;pism/util/error_handling.hh&quot;</code><br />
-<code>#include &quot;pism/util/IceGrid.hh&quot;</code><br />
+<code>#include &quot;pism/util/Grid.hh&quot;</code><br />
 <code>#include &quot;pism/util/MaxTimestep.hh&quot;</code><br />
 <code>#include &quot;pism/util/Context.hh&quot;</code><br />
 </div>

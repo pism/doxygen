@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PISM, A Parallel Ice Sheet Model
-   &#160;<span id="projectnumber">stable v2.0.7 committed by Constantine Khrulev on 2023-11-21 12:49:11 -0900</span>
+   &#160;<span id="projectnumber">stable v2.1 committed by Constantine Khrulev on 2023-11-23 11:24:22 -0900</span>
    </div>
   </td>
  </tr>
@@ -78,7 +78,7 @@ $(function() {
 <div class="title">FlowLawFactory.hh</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="FlowLawFactory_8hh.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// Copyright (C) 2009--2015, 2017, 2018, 2021 Jed Brown, Ed Bueler and Constantine Khroulev</span></div>
+<a href="FlowLawFactory_8hh.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// Copyright (C) 2009--2015, 2017, 2018, 2021, 2023 Jed Brown, Ed Bueler and Constantine Khroulev</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">// This file is part of PISM.</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">//</span></div>
@@ -103,7 +103,7 @@ $(function() {
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="FlowLaw_8hh.html">FlowLaw.hh</a>&quot;</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &quot;pism/rheology/FlowLaw.hh&quot;</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &quot;pism/util/ConfigInterface.hh&quot;</span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacepism.html">pism</a> {</div>
@@ -142,7 +142,6 @@ $(function() {
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;} <span class="comment">// end of namespace pism</span></div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// __flowlaw_factory</span></div>
-<div class="ttc" id="aFlowLaw_8hh_html"><div class="ttname"><a href="FlowLaw_8hh.html">FlowLaw.hh</a></div></div>
 <div class="ttc" id="aclasspism_1_1Config_a4dc1634c0eac358eb86303633024f810_html_a4dc1634c0eac358eb86303633024f810"><div class="ttname"><a href="classpism_1_1Config_a4dc1634c0eac358eb86303633024f810.html#a4dc1634c0eac358eb86303633024f810">pism::Config::ConstPtr</a></div><div class="ttdeci">std::shared_ptr&lt; const Config &gt; ConstPtr</div><div class="ttdef"><b>Definition:</b> <a href="ConfigInterface_8hh_source.html#l00056">ConfigInterface.hh:56</a></div></div>
 <div class="ttc" id="aclasspism_1_1Config_html"><div class="ttname"><a href="classpism_1_1Config.html">pism::Config</a></div><div class="ttdoc">A class for storing and accessing PISM configuration flags and parameters.</div><div class="ttdef"><b>Definition:</b> <a href="ConfigInterface_8hh_source.html#l00053">ConfigInterface.hh:53</a></div></div>
 <div class="ttc" id="aclasspism_1_1EnthalpyConverter_a359de77bfa0496c82308037e08d93210_html_a359de77bfa0496c82308037e08d93210"><div class="ttname"><a href="classpism_1_1EnthalpyConverter_a359de77bfa0496c82308037e08d93210.html#a359de77bfa0496c82308037e08d93210">pism::EnthalpyConverter::Ptr</a></div><div class="ttdeci">std::shared_ptr&lt; EnthalpyConverter &gt; Ptr</div><div class="ttdef"><b>Definition:</b> <a href="EnthalpyConverter_8hh_source.html#l00056">EnthalpyConverter.hh:56</a></div></div>
@@ -158,9 +157,9 @@ $(function() {
 <div class="ttc" id="aclasspism_1_1rheology_1_1FlowLawFactory_ae36f059ba220e51ec7002e650545d87a_html_ae36f059ba220e51ec7002e650545d87a"><div class="ttname"><a href="classpism_1_1rheology_1_1FlowLawFactory_ae36f059ba220e51ec7002e650545d87a.html#ae36f059ba220e51ec7002e650545d87a">pism::rheology::FlowLawFactory::set_default</a></div><div class="ttdeci">void set_default(const std::string &amp;name)</div><div class="ttdef"><b>Definition:</b> <a href="FlowLawFactory_8cc_source.html#l00100">FlowLawFactory.cc:100</a></div></div>
 <div class="ttc" id="aclasspism_1_1rheology_1_1FlowLawFactory_ae3bf759bcaf7ad23ff48efb4a5df7391_html_ae3bf759bcaf7ad23ff48efb4a5df7391"><div class="ttname"><a href="classpism_1_1rheology_1_1FlowLawFactory_ae3bf759bcaf7ad23ff48efb4a5df7391.html#ae3bf759bcaf7ad23ff48efb4a5df7391">pism::rheology::FlowLawFactory::add</a></div><div class="ttdeci">void add(const std::string &amp;name, FlowLawCreator)</div><div class="ttdef"><b>Definition:</b> <a href="FlowLawFactory_8cc_source.html#l00092">FlowLawFactory.cc:92</a></div></div>
 <div class="ttc" id="aclasspism_1_1rheology_1_1FlowLawFactory_html"><div class="ttname"><a href="classpism_1_1rheology_1_1FlowLawFactory.html">pism::rheology::FlowLawFactory</a></div><div class="ttdef"><b>Definition:</b> <a href="FlowLawFactory_8hh_source.html#l00043">FlowLawFactory.hh:43</a></div></div>
-<div class="ttc" id="aclasspism_1_1rheology_1_1FlowLaw_html"><div class="ttname"><a href="classpism_1_1rheology_1_1FlowLaw.html">pism::rheology::FlowLaw</a></div><div class="ttdef"><b>Definition:</b> <a href="FlowLaw_8hh_source.html#l00076">FlowLaw.hh:76</a></div></div>
+<div class="ttc" id="aclasspism_1_1rheology_1_1FlowLaw_html"><div class="ttname"><a href="classpism_1_1rheology_1_1FlowLaw.html">pism::rheology::FlowLaw</a></div><div class="ttdef"><b>Definition:</b> <a href="FlowLaw_8hh_source.html#l00077">FlowLaw.hh:77</a></div></div>
 <div class="ttc" id="anamespacepism_1_1rheology_a20c6507dbc5eabe0cc86f607b273777e_html_a20c6507dbc5eabe0cc86f607b273777e"><div class="ttname"><a href="namespacepism_1_1rheology_a20c6507dbc5eabe0cc86f607b273777e.html#a20c6507dbc5eabe0cc86f607b273777e">pism::rheology::FlowLawCreator</a></div><div class="ttdeci">FlowLaw *(* FlowLawCreator)(const std::string &amp;, const Config &amp;, EnthalpyConverter::Ptr)</div><div class="ttdef"><b>Definition:</b> <a href="FlowLawFactory_8hh_source.html#l00040">FlowLawFactory.hh:40</a></div></div>
-<div class="ttc" id="anamespacepism_html"><div class="ttname"><a href="namespacepism.html">pism</a></div><div class="ttdef"><b>Definition:</b> <a href="AgeColumnSystem_8cc_source.html#l00024">AgeColumnSystem.cc:24</a></div></div>
+<div class="ttc" id="anamespacepism_html"><div class="ttname"><a href="namespacepism.html">pism</a></div><div class="ttdef"><b>Definition:</b> <a href="AgeColumnSystem_8cc_source.html#l00023">AgeColumnSystem.cc:23</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

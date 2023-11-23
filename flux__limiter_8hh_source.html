@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PISM, A Parallel Ice Sheet Model
-   &#160;<span id="projectnumber">stable v2.0.7 committed by Constantine Khrulev on 2023-11-21 12:49:11 -0900</span>
+   &#160;<span id="projectnumber">stable v2.1 committed by Constantine Khrulev on 2023-11-23 11:24:22 -0900</span>
    </div>
   </td>
  </tr>
@@ -78,7 +78,7 @@ $(function() {
 <div class="title">flux_limiter.hh</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="flux__limiter_8hh.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/* Copyright (C) 2022, 2023 PISM Authors</span></div>
+<a href="flux__limiter_8hh.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/* Copyright (C) 2022 PISM Authors</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * This file is part of PISM.</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> *</span></div>
@@ -99,20 +99,23 @@ $(function() {
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacepism.html">pism</a> {</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">class </span>IceModelVec2S;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">class </span>IceModelVec2Stag;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">/*! Limit fluxes to preserve non-negativity of a transported quantity.</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespacepism_af7561c64039f82167451fa2cfd64ed73.html#af7561c64039f82167451fa2cfd64ed73">make_nonnegative_preserving</a>(<span class="keywordtype">double</span> dt,</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                                 <span class="keyword">const</span> IceModelVec2S &amp;x,</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                                 <span class="keyword">const</span> IceModelVec2Stag &amp;flux,</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                                 IceModelVec2Stag &amp;result);</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;} <span class="comment">// end of namespace pism</span></div>
-<div class="ttc" id="anamespacepism_af7561c64039f82167451fa2cfd64ed73_html_af7561c64039f82167451fa2cfd64ed73"><div class="ttname"><a href="namespacepism_af7561c64039f82167451fa2cfd64ed73.html#af7561c64039f82167451fa2cfd64ed73">pism::make_nonnegative_preserving</a></div><div class="ttdeci">void make_nonnegative_preserving(double dt, const IceModelVec2S &amp;x, const IceModelVec2Stag &amp;flux, IceModelVec2Stag &amp;result)</div><div class="ttdef"><b>Definition:</b> <a href="flux__limiter_8cc_source.html#l00074">flux_limiter.cc:74</a></div></div>
-<div class="ttc" id="anamespacepism_html"><div class="ttname"><a href="namespacepism.html">pism</a></div><div class="ttdef"><b>Definition:</b> <a href="AgeColumnSystem_8cc_source.html#l00024">AgeColumnSystem.cc:24</a></div></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">namespace </span>array {</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">class </span>Scalar1;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">class </span>Staggered;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">class </span>Staggered1;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;} <span class="comment">// end of namespace array</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">/*! Limit fluxes to preserve non-negativity of a transported quantity.</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespacepism_afd8e51b175fddb961ff652cd096bc52e.html#afd8e51b175fddb961ff652cd096bc52e">make_nonnegative_preserving</a>(<span class="keywordtype">double</span> dt,</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                                 <span class="keyword">const</span> array::Scalar1 &amp;x,</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                                 <span class="keyword">const</span> array::Staggered1 &amp;flux,</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                                 array::Staggered &amp;result);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;} <span class="comment">// end of namespace pism</span></div>
+<div class="ttc" id="anamespacepism_afd8e51b175fddb961ff652cd096bc52e_html_afd8e51b175fddb961ff652cd096bc52e"><div class="ttname"><a href="namespacepism_afd8e51b175fddb961ff652cd096bc52e.html#afd8e51b175fddb961ff652cd096bc52e">pism::make_nonnegative_preserving</a></div><div class="ttdeci">void make_nonnegative_preserving(double dt, const array::Scalar1 &amp;x, const array::Staggered1 &amp;flux, array::Staggered &amp;result)</div><div class="ttdef"><b>Definition:</b> <a href="flux__limiter_8cc_source.html#l00075">flux_limiter.cc:75</a></div></div>
+<div class="ttc" id="anamespacepism_html"><div class="ttname"><a href="namespacepism.html">pism</a></div><div class="ttdef"><b>Definition:</b> <a href="AgeColumnSystem_8cc_source.html#l00023">AgeColumnSystem.cc:23</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

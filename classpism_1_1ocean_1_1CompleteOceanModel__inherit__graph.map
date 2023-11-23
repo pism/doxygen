@@ -1,9 +1,10 @@
 <map id="pism::ocean::CompleteOceanModel" name="pism::ocean::CompleteOceanModel">
-<area shape="rect" id="node1" title=" " alt="" coords="258,155,471,196"/>
-<area shape="rect" id="node4" href="$classpism_1_1ocean_1_1Constant.html" title="A class implementing a constant (in terms of the ocean inputs) ocean model. Uses configuration parame..." alt="" coords="5,244,172,271"/>
-<area shape="rect" id="node5" href="$classpism_1_1ocean_1_1GivenTH.html" title=" " alt="" coords="197,244,362,271"/>
-<area shape="rect" id="node6" href="$classpism_1_1ocean_1_1PIK.html" title="Implements the ocean model used in [Martinetal2011]." alt="" coords="386,244,517,271"/>
-<area shape="rect" id="node7" href="$classpism_1_1ocean_1_1Pico.html" title=" " alt="" coords="541,244,677,271"/>
-<area shape="rect" id="node2" href="$classpism_1_1ocean_1_1OceanModel.html" title="A very rudimentary PISM ocean model." alt="" coords="269,80,460,107"/>
-<area shape="rect" id="node3" href="$classpism_1_1Component.html" title="A class defining a common interface for most PISM sub&#45;models." alt="" coords="296,5,433,32"/>
+<area shape="rect" id="node1" title=" " alt="" coords="429,99,643,141"/>
+<area shape="rect" id="node4" href="$classpism_1_1ocean_1_1Constant.html" title="A class implementing a constant (in terms of the ocean inputs) ocean model. Uses configuration parame..." alt="" coords="711,5,877,32"/>
+<area shape="rect" id="node5" href="$classpism_1_1ocean_1_1GivenTH.html" title=" " alt="" coords="711,56,877,83"/>
+<area shape="rect" id="node6" href="$classpism_1_1ocean_1_1PIK.html" title="Implements the ocean model used in [Martinetal2011]." alt="" coords="729,107,859,133"/>
+<area shape="rect" id="node7" href="$classpism_1_1ocean_1_1Pico.html" title=" " alt="" coords="726,157,862,184"/>
+<area shape="rect" id="node8" href="$classpism_1_1ocean_1_1PyOceanModelAdapter.html" title="The adapter class for Python ocean models." alt="" coords="691,209,897,250"/>
+<area shape="rect" id="node2" href="$classpism_1_1ocean_1_1OceanModel.html" title="A very rudimentary PISM ocean model." alt="" coords="191,107,381,133"/>
+<area shape="rect" id="node3" href="$classpism_1_1Component.html" title="A class defining a common interface for most PISM sub&#45;models." alt="" coords="5,107,143,133"/>
 </map>

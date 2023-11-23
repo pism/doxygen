@@ -1,6 +1,12 @@
 var searchData=
 [
-  ['j_8086',['j',['../structpism_1_1fem_1_1Element3_1_1GlobalIndex_a63552101d0f3cea318024277f8b88dbf.html#a63552101d0f3cea318024277f8b88dbf',1,'pism::fem::Element3::GlobalIndex::j()'],['../classpism_1_1rgrid_ad52608f513795e1e9cfe71204af4b755.html#ad52608f513795e1e9cfe71204af4b755',1,'pism::rgrid::j()']]],
-  ['j_8087',['J',['../ssafd__code_8cc_a16de2bd8e6c79fd979dc2c0e413f92bc.html#a16de2bd8e6c79fd979dc2c0e413f92bc',1,'J():&#160;ssafd_code.cc'],['../ssafd__pik__code_8cc_a16de2bd8e6c79fd979dc2c0e413f92bc.html#a16de2bd8e6c79fd979dc2c0e413f92bc',1,'J():&#160;ssafd_pik_code.cc']]],
-  ['jday_5fx_8088',['jday_x',['../structcccalendar_aa968a18f21490bcbd85d8682d64137c7.html#aa968a18f21490bcbd85d8682d64137c7',1,'cccalendar']]]
+  ['k_8422',['k',['../structpism_1_1fem_1_1Element3_1_1GlobalIndex_a2bcf503b43d6fd40a15329825d5a9ae6.html#a2bcf503b43d6fd40a15329825d5a9ae6',1,'pism::fem::Element3::GlobalIndex::k()'],['../structTestNConstants_a312083c0b3c8b46efe0efbe9fc5de051.html#a312083c0b3c8b46efe0efbe9fc5de051',1,'TestNConstants::k()'],['../namespacepism_a7343afff8d353b59dbdec563bd896812.html#a7343afff8d353b59dbdec563bd896812',1,'pism::k()']]],
+  ['k_5fbedrock_8423',['k_BEDROCK',['../exactTestO_8c_af05d6c40b7e1d1694bc322af8ec12a1d.html#af05d6c40b7e1d1694bc322af8ec12a1d',1,'exactTestO.c']]],
+  ['k_5fbr_8424',['k_BR',['../exactTestK_8c_aef865b9b807cb3a0419db3858f38bbc8.html#aef865b9b807cb3a0419db3858f38bbc8',1,'exactTestK.c']]],
+  ['k_5fice_8425',['k_ICE',['../exactTestO_8c_a191a87ac0ea17159f27ac4053f27b082.html#a191a87ac0ea17159f27ac4053f27b082',1,'exactTestO.c']]],
+  ['k_5fice_8426',['k_ice',['../exactTestK_8c_a15ab13858591a7858b9da91446c609d1.html#a15ab13858591a7858b9da91446c609d1',1,'exactTestK.c']]],
+  ['known_5fcal_8427',['known_cal',['../utCalendar2__cal_8c_af025b723f4122641aa46f57042343c92.html#af025b723f4122641aa46f57042343c92',1,'utCalendar2_cal.c']]],
+  ['known_5fcal_5fname_8428',['known_cal_name',['../utCalendar2__cal_8c_a430c6723f6ec2f3a4772e144de420751.html#a430c6723f6ec2f3a4772e144de420751',1,'utCalendar2_cal.c']]],
+  ['ksp_5fit_8429',['ksp_it',['../structpism_1_1stressbalance_1_1Blatter_1_1SolutionInfo_ab5d5c2adf415c683884027e492a4a73d.html#ab5d5c2adf415c683884027e492a4a73d',1,'pism::stressbalance::Blatter::SolutionInfo']]],
+  ['ksp_5freason_8430',['ksp_reason',['../structpism_1_1stressbalance_1_1Blatter_1_1SolutionInfo_aa09df2a0f309008343e22deba328f8ad.html#aa09df2a0f309008343e22deba328f8ad',1,'pism::stressbalance::Blatter::SolutionInfo']]]
 ];

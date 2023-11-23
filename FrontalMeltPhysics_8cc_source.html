@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PISM, A Parallel Ice Sheet Model
-   &#160;<span id="projectnumber">stable v2.0.7 committed by Constantine Khrulev on 2023-11-21 12:49:11 -0900</span>
+   &#160;<span id="projectnumber">stable v2.1 committed by Constantine Khrulev on 2023-11-23 11:24:22 -0900</span>
    </div>
   </td>
  </tr>
@@ -78,7 +78,7 @@ $(function() {
 <div class="title">FrontalMeltPhysics.cc</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="FrontalMeltPhysics_8cc.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/* Copyright (C) 2018, 2019 PISM Authors</span></div>
+<a href="FrontalMeltPhysics_8cc.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/* Copyright (C) 2018, 2019, 2023 PISM Authors</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * This file is part of PISM.</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> *</span></div>
@@ -98,7 +98,7 @@ $(function() {
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &lt;cmath&gt;</span> <span class="comment">// pow</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="FrontalMeltPhysics_8hh.html">FrontalMeltPhysics.hh</a>&quot;</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;pism/coupler/frontalmelt/FrontalMeltPhysics.hh&quot;</span></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;pism/util/ConfigInterface.hh&quot;</span></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
@@ -158,8 +158,7 @@ $(function() {
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;} <span class="comment">// end of namespace frontalmeltmodel</span></div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;} <span class="comment">// end of namespace pism</span></div>
-<div class="ttc" id="aFrontalMeltPhysics_8hh_html"><div class="ttname"><a href="FrontalMeltPhysics_8hh.html">FrontalMeltPhysics.hh</a></div></div>
-<div class="ttc" id="aclasspism_1_1Config_a3d85dee64feb6cb551f98b32cf6db27d_html_a3d85dee64feb6cb551f98b32cf6db27d"><div class="ttname"><a href="classpism_1_1Config_a3d85dee64feb6cb551f98b32cf6db27d.html#a3d85dee64feb6cb551f98b32cf6db27d">pism::Config::get_number</a></div><div class="ttdeci">double get_number(const std::string &amp;name, UseFlag flag=REMEMBER_THIS_USE) const</div><div class="ttdef"><b>Definition:</b> <a href="ConfigInterface_8cc_source.html#l00144">ConfigInterface.cc:144</a></div></div>
+<div class="ttc" id="aclasspism_1_1Config_a3d85dee64feb6cb551f98b32cf6db27d_html_a3d85dee64feb6cb551f98b32cf6db27d"><div class="ttname"><a href="classpism_1_1Config_a3d85dee64feb6cb551f98b32cf6db27d.html#a3d85dee64feb6cb551f98b32cf6db27d">pism::Config::get_number</a></div><div class="ttdeci">double get_number(const std::string &amp;name, UseFlag flag=REMEMBER_THIS_USE) const</div><div class="ttdef"><b>Definition:</b> <a href="ConfigInterface_8cc_source.html#l00170">ConfigInterface.cc:170</a></div></div>
 <div class="ttc" id="aclasspism_1_1Config_html"><div class="ttname"><a href="classpism_1_1Config.html">pism::Config</a></div><div class="ttdoc">A class for storing and accessing PISM configuration flags and parameters.</div><div class="ttdef"><b>Definition:</b> <a href="ConfigInterface_8hh_source.html#l00053">ConfigInterface.hh:53</a></div></div>
 <div class="ttc" id="aclasspism_1_1frontalmelt_1_1FrontalMeltPhysics_a2b6a042113a68e96a1df678dcf5b002c_html_a2b6a042113a68e96a1df678dcf5b002c"><div class="ttname"><a href="classpism_1_1frontalmelt_1_1FrontalMeltPhysics_a2b6a042113a68e96a1df678dcf5b002c.html#a2b6a042113a68e96a1df678dcf5b002c">pism::frontalmelt::FrontalMeltPhysics::frontal_melt_from_undercutting</a></div><div class="ttdeci">double frontal_melt_from_undercutting(double ice_thickness, double discharge_flux, double potential_temperature) const</div><div class="ttdef"><b>Definition:</b> <a href="FrontalMeltPhysics_8cc_source.html#l00051">FrontalMeltPhysics.cc:51</a></div></div>
 <div class="ttc" id="aclasspism_1_1frontalmelt_1_1FrontalMeltPhysics_a64a94ecb458fe8def34e0aca3560b58a_html_a64a94ecb458fe8def34e0aca3560b58a"><div class="ttname"><a href="classpism_1_1frontalmelt_1_1FrontalMeltPhysics_a64a94ecb458fe8def34e0aca3560b58a.html#a64a94ecb458fe8def34e0aca3560b58a">pism::frontalmelt::FrontalMeltPhysics::m_beta</a></div><div class="ttdeci">double m_beta</div><div class="ttdef"><b>Definition:</b> <a href="FrontalMeltPhysics_8hh_source.html#l00039">FrontalMeltPhysics.hh:39</a></div></div>
@@ -168,7 +167,7 @@ $(function() {
 <div class="ttc" id="aclasspism_1_1frontalmelt_1_1FrontalMeltPhysics_acc09e8c1c914507afe29aa72775497d2_html_acc09e8c1c914507afe29aa72775497d2"><div class="ttname"><a href="classpism_1_1frontalmelt_1_1FrontalMeltPhysics_acc09e8c1c914507afe29aa72775497d2.html#acc09e8c1c914507afe29aa72775497d2">pism::frontalmelt::FrontalMeltPhysics::FrontalMeltPhysics</a></div><div class="ttdeci">FrontalMeltPhysics(const Config &amp;config)</div><div class="ttdef"><b>Definition:</b> <a href="FrontalMeltPhysics_8cc_source.html#l00028">FrontalMeltPhysics.cc:28</a></div></div>
 <div class="ttc" id="aclasspism_1_1frontalmelt_1_1FrontalMeltPhysics_adf1e3d8732ec96aafa6a4263d1281547_html_adf1e3d8732ec96aafa6a4263d1281547"><div class="ttname"><a href="classpism_1_1frontalmelt_1_1FrontalMeltPhysics_adf1e3d8732ec96aafa6a4263d1281547.html#adf1e3d8732ec96aafa6a4263d1281547">pism::frontalmelt::FrontalMeltPhysics::m_alpha</a></div><div class="ttdeci">double m_alpha</div><div class="ttdef"><b>Definition:</b> <a href="FrontalMeltPhysics_8hh_source.html#l00039">FrontalMeltPhysics.hh:39</a></div></div>
 <div class="ttc" id="aclasspism_1_1frontalmelt_1_1FrontalMeltPhysics_af72b9944be4fdcb57996cc1bd734e151_html_af72b9944be4fdcb57996cc1bd734e151"><div class="ttname"><a href="classpism_1_1frontalmelt_1_1FrontalMeltPhysics_af72b9944be4fdcb57996cc1bd734e151.html#af72b9944be4fdcb57996cc1bd734e151">pism::frontalmelt::FrontalMeltPhysics::m_A</a></div><div class="ttdeci">double m_A</div><div class="ttdef"><b>Definition:</b> <a href="FrontalMeltPhysics_8hh_source.html#l00039">FrontalMeltPhysics.hh:39</a></div></div>
-<div class="ttc" id="anamespacepism_html"><div class="ttname"><a href="namespacepism.html">pism</a></div><div class="ttdef"><b>Definition:</b> <a href="AgeColumnSystem_8cc_source.html#l00024">AgeColumnSystem.cc:24</a></div></div>
+<div class="ttc" id="anamespacepism_html"><div class="ttname"><a href="namespacepism.html">pism</a></div><div class="ttdef"><b>Definition:</b> <a href="AgeColumnSystem_8cc_source.html#l00023">AgeColumnSystem.cc:23</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

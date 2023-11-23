@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PISM, A Parallel Ice Sheet Model
-   &#160;<span id="projectnumber">stable v2.0.7 committed by Constantine Khrulev on 2023-11-21 12:49:11 -0900</span>
+   &#160;<span id="projectnumber">stable v2.1 committed by Constantine Khrulev on 2023-11-23 11:24:22 -0900</span>
    </div>
   </td>
  </tr>
@@ -75,6 +75,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
@@ -84,17 +85,23 @@ $(function() {
 <div class="contents">
 <div class="textblock"><code>#include &lt;cstdlib&gt;</code><br />
 <code>#include &lt;cmath&gt;</code><br />
-<code>#include &quot;<a class="el" href="projection_8hh_source.html">projection.hh</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="VariableMetadata_8hh_source.html">VariableMetadata.hh</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="error__handling_8hh_source.html">error_handling.hh</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="File_8hh_source.html">io/File.hh</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="io__helpers_8hh_source.html">io/io_helpers.hh</a>&quot;</code><br />
-<code>#include &quot;pism/util/IceGrid.hh&quot;</code><br />
-<code>#include &quot;pism/util/iceModelVec.hh&quot;</code><br />
+<code>#include &quot;pism/util/projection.hh&quot;</code><br />
+<code>#include &quot;pism/util/VariableMetadata.hh&quot;</code><br />
+<code>#include &quot;pism/util/error_handling.hh&quot;</code><br />
+<code>#include &quot;pism/util/io/File.hh&quot;</code><br />
+<code>#include &quot;pism/util/io/io_helpers.hh&quot;</code><br />
+<code>#include &quot;pism/util/Grid.hh&quot;</code><br />
+<code>#include &quot;pism/util/array/Scalar.hh&quot;</code><br />
+<code>#include &quot;pism/util/array/Array3D.hh&quot;</code><br />
 <code>#include &quot;pism/pism_config.hh&quot;</code><br />
 </div>
 <p><a href="projection_8cc_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpism_1_1LonLatCalculator_1_1Impl.html">pism::LonLatCalculator::Impl</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacepism"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism.html">pism</a></td></tr>
@@ -118,20 +125,20 @@ Functions</h2></td></tr>
 <tr class="memitem:ab8fd48c549dd91400cc2600d129331c3"><td class="memItemLeft" align="right" valign="top">MappingInfo&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_ab8fd48c549dd91400cc2600d129331c3.html#ab8fd48c549dd91400cc2600d129331c3">pism::get_projection_info</a> (const File &amp;input_file, const std::string &amp;mapping_name, units::System::Ptr unit_system)</td></tr>
 <tr class="memdesc:ab8fd48c549dd91400cc2600d129331c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get projection info from a file.  <a href="namespacepism_ab8fd48c549dd91400cc2600d129331c3.html#ab8fd48c549dd91400cc2600d129331c3">More...</a><br /></td></tr>
 <tr class="separator:ab8fd48c549dd91400cc2600d129331c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af4588c3a5bf6e457e71434097df4689f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_af4588c3a5bf6e457e71434097df4689f.html#af4588c3a5bf6e457e71434097df4689f">pism::compute_cell_areas</a> (const std::string &amp;projection, IceModelVec2S &amp;result)</td></tr>
-<tr class="separator:af4588c3a5bf6e457e71434097df4689f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad463b4bd755c3fc207070199674b659d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_ad463b4bd755c3fc207070199674b659d.html#ad463b4bd755c3fc207070199674b659d">pism::compute_lon_lat</a> (const std::string &amp;projection, LonLat which, IceModelVec2S &amp;result)</td></tr>
-<tr class="separator:ad463b4bd755c3fc207070199674b659d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa7894c07fe146fd9b0347b5666a65a2f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_aa7894c07fe146fd9b0347b5666a65a2f.html#aa7894c07fe146fd9b0347b5666a65a2f">pism::compute_lon_lat_bounds</a> (const std::string &amp;projection, LonLat which, IceModelVec3 &amp;result)</td></tr>
-<tr class="separator:aa7894c07fe146fd9b0347b5666a65a2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac5a3ccd6bcab0e4bfe371211bcc8726f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_ac5a3ccd6bcab0e4bfe371211bcc8726f.html#ac5a3ccd6bcab0e4bfe371211bcc8726f">pism::compute_longitude</a> (const std::string &amp;projection, IceModelVec2S &amp;result)</td></tr>
-<tr class="separator:ac5a3ccd6bcab0e4bfe371211bcc8726f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab3ad8d75a5cd69453f7b0b679000f4e9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_ab3ad8d75a5cd69453f7b0b679000f4e9.html#ab3ad8d75a5cd69453f7b0b679000f4e9">pism::compute_latitude</a> (const std::string &amp;projection, IceModelVec2S &amp;result)</td></tr>
-<tr class="separator:ab3ad8d75a5cd69453f7b0b679000f4e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa3338a5bbaaca89eb3ebf60726efc5ae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_aa3338a5bbaaca89eb3ebf60726efc5ae.html#aa3338a5bbaaca89eb3ebf60726efc5ae">pism::compute_lon_bounds</a> (const std::string &amp;projection, IceModelVec3 &amp;result)</td></tr>
-<tr class="separator:aa3338a5bbaaca89eb3ebf60726efc5ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afac32a579111bc07b61c44eb61d73aaf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_afac32a579111bc07b61c44eb61d73aaf.html#afac32a579111bc07b61c44eb61d73aaf">pism::compute_lat_bounds</a> (const std::string &amp;projection, IceModelVec3 &amp;result)</td></tr>
-<tr class="separator:afac32a579111bc07b61c44eb61d73aaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc1e5e8ee0e14c19711bde75d6cc51cc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_acc1e5e8ee0e14c19711bde75d6cc51cc.html#acc1e5e8ee0e14c19711bde75d6cc51cc">pism::compute_cell_areas</a> (const std::string &amp;projection, array::Scalar &amp;result)</td></tr>
+<tr class="separator:acc1e5e8ee0e14c19711bde75d6cc51cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafb6ea19d90814f3dc588f5446f5c239"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_aafb6ea19d90814f3dc588f5446f5c239.html#aafb6ea19d90814f3dc588f5446f5c239">pism::compute_lon_lat</a> (const std::string &amp;projection, LonLat which, array::Scalar &amp;result)</td></tr>
+<tr class="separator:aafb6ea19d90814f3dc588f5446f5c239"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d4da2e49423c6c9e2c4e5d267840711"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_a3d4da2e49423c6c9e2c4e5d267840711.html#a3d4da2e49423c6c9e2c4e5d267840711">pism::compute_lon_lat_bounds</a> (const std::string &amp;projection, LonLat which, array::Array3D &amp;result)</td></tr>
+<tr class="separator:a3d4da2e49423c6c9e2c4e5d267840711"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a605b6fc194a974a2c4d05832350b8243"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_a605b6fc194a974a2c4d05832350b8243.html#a605b6fc194a974a2c4d05832350b8243">pism::compute_longitude</a> (const std::string &amp;projection, array::Scalar &amp;result)</td></tr>
+<tr class="separator:a605b6fc194a974a2c4d05832350b8243"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ce72a381d3ce36d2875f76970902100"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_a4ce72a381d3ce36d2875f76970902100.html#a4ce72a381d3ce36d2875f76970902100">pism::compute_latitude</a> (const std::string &amp;projection, array::Scalar &amp;result)</td></tr>
+<tr class="separator:a4ce72a381d3ce36d2875f76970902100"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad57ae50305a1132726951321dd8b216d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_ad57ae50305a1132726951321dd8b216d.html#ad57ae50305a1132726951321dd8b216d">pism::compute_lon_bounds</a> (const std::string &amp;projection, array::Array3D &amp;result)</td></tr>
+<tr class="separator:ad57ae50305a1132726951321dd8b216d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1d8aa8ab4da574963f7cb2d30a6d419"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_ac1d8aa8ab4da574963f7cb2d30a6d419.html#ac1d8aa8ab4da574963f7cb2d30a6d419">pism::compute_lat_bounds</a> (const std::string &amp;projection, array::Array3D &amp;result)</td></tr>
+<tr class="separator:ac1d8aa8ab4da574963f7cb2d30a6d419"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->

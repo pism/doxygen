@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PISM, A Parallel Ice Sheet Model
-   &#160;<span id="projectnumber">stable v2.0.7 committed by Constantine Khrulev on 2023-11-21 12:49:11 -0900</span>
+   &#160;<span id="projectnumber">stable v2.1 committed by Constantine Khrulev on 2023-11-23 11:24:22 -0900</span>
    </div>
   </td>
  </tr>
@@ -81,9 +81,8 @@ $(function() {
 <div class="title">Geometry.cc File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="Geometry_8hh_source.html">Geometry.hh</a>&quot;</code><br />
-<code>#include &quot;pism/util/iceModelVec.hh&quot;</code><br />
-<code>#include &quot;pism/util/IceModelVec2CellType.hh&quot;</code><br />
+<div class="textblock"><code>#include &quot;pism/geometry/Geometry.hh&quot;</code><br />
+<code>#include &quot;pism/util/array/CellType.hh&quot;</code><br />
 <code>#include &quot;pism/util/Mask.hh&quot;</code><br />
 <code>#include &quot;pism/util/pism_utilities.hh&quot;</code><br />
 <code>#include &quot;pism/geometry/grounded_cell_fraction.hh&quot;</code><br />
@@ -91,6 +90,7 @@ $(function() {
 <code>#include &quot;pism/util/VariableMetadata.hh&quot;</code><br />
 <code>#include &quot;pism/util/io/File.hh&quot;</code><br />
 <code>#include &quot;pism/util/io/io_helpers.hh&quot;</code><br />
+<code>#include &quot;pism/util/io/IO_Flags.hh&quot;</code><br />
 </div>
 <p><a href="Geometry_8cc_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -101,10 +101,8 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ae36df4e40ea603cb7468c0ebbf86f1e7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_ae36df4e40ea603cb7468c0ebbf86f1e7.html#ae36df4e40ea603cb7468c0ebbf86f1e7">pism::check_minimum_ice_thickness</a> (const IceModelVec2S &amp;ice_thickness)</td></tr>
-<tr class="separator:ae36df4e40ea603cb7468c0ebbf86f1e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa37cee25b56a0053b8959c8fda1abda0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_aa37cee25b56a0053b8959c8fda1abda0.html#aa37cee25b56a0053b8959c8fda1abda0">pism::ice_bottom_surface</a> (const Geometry &amp;geometry, IceModelVec2S &amp;result)</td></tr>
-<tr class="separator:aa37cee25b56a0053b8959c8fda1abda0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9af075d22ead61f832e8c3f0d276c4d5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_a9af075d22ead61f832e8c3f0d276c4d5.html#a9af075d22ead61f832e8c3f0d276c4d5">pism::ice_bottom_surface</a> (const Geometry &amp;geometry, array::Scalar &amp;result)</td></tr>
+<tr class="separator:a9af075d22ead61f832e8c3f0d276c4d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8e3ff7404658398789bf2fd18d1f0f6b"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_a8e3ff7404658398789bf2fd18d1f0f6b.html#a8e3ff7404658398789bf2fd18d1f0f6b">pism::ice_volume</a> (const Geometry &amp;geometry, double thickness_threshold)</td></tr>
 <tr class="memdesc:a8e3ff7404658398789bf2fd18d1f0f6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the ice volume, in m^3.  <a href="namespacepism_a8e3ff7404658398789bf2fd18d1f0f6b.html#a8e3ff7404658398789bf2fd18d1f0f6b">More...</a><br /></td></tr>
 <tr class="separator:a8e3ff7404658398789bf2fd18d1f0f6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -122,9 +120,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a6bf159955d9b418f3fb97e4c9a28a2cd"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_a6bf159955d9b418f3fb97e4c9a28a2cd.html#a6bf159955d9b418f3fb97e4c9a28a2cd">pism::sea_level_rise_potential</a> (const Geometry &amp;geometry, double thickness_threshold)</td></tr>
 <tr class="memdesc:a6bf159955d9b418f3fb97e4c9a28a2cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the sea level rise that would result if all the ice were melted.  <a href="namespacepism_a6bf159955d9b418f3fb97e4c9a28a2cd.html#a6bf159955d9b418f3fb97e4c9a28a2cd">More...</a><br /></td></tr>
 <tr class="separator:a6bf159955d9b418f3fb97e4c9a28a2cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9626e293939b6093a53b1af09fc50b7f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_a9626e293939b6093a53b1af09fc50b7f.html#a9626e293939b6093a53b1af09fc50b7f">pism::set_no_model_strip</a> (const IceGrid &amp;grid, double width, IceModelVec2Int &amp;result)</td></tr>
-<tr class="memdesc:a9626e293939b6093a53b1af09fc50b7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set no_model_mask variable to have value 1 in strip of width 'strip' m around edge of computational domain, and value 0 otherwise.  <a href="namespacepism_a9626e293939b6093a53b1af09fc50b7f.html#a9626e293939b6093a53b1af09fc50b7f">More...</a><br /></td></tr>
-<tr class="separator:a9626e293939b6093a53b1af09fc50b7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d18b69dad587eafd2fd63a079a6756e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_a3d18b69dad587eafd2fd63a079a6756e.html#a3d18b69dad587eafd2fd63a079a6756e">pism::set_no_model_strip</a> (const Grid &amp;grid, double width, array::Scalar &amp;result)</td></tr>
+<tr class="memdesc:a3d18b69dad587eafd2fd63a079a6756e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set no_model_mask variable to have value 1 in strip of width 'strip' m around edge of computational domain, and value 0 otherwise.  <a href="namespacepism_a3d18b69dad587eafd2fd63a079a6756e.html#a3d18b69dad587eafd2fd63a079a6756e">More...</a><br /></td></tr>
+<tr class="separator:a3d18b69dad587eafd2fd63a079a6756e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->

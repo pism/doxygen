@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PISM, A Parallel Ice Sheet Model
-   &#160;<span id="projectnumber">stable v2.0.7 committed by Constantine Khrulev on 2023-11-21 12:49:11 -0900</span>
+   &#160;<span id="projectnumber">stable v2.1 committed by Constantine Khrulev on 2023-11-23 11:24:22 -0900</span>
    </div>
   </td>
  </tr>
@@ -107,6 +107,9 @@ $(function() {
 , <a class="el" href="classpism_1_1atmosphere_1_1WeatherStation_a302a80e589c331218c91d3b87064bcf7.html#a302a80e589c331218c91d3b87064bcf7">pism::atmosphere::WeatherStation</a>
 , <a class="el" href="classpism_1_1atmosphere_1_1YearlyCycle_ae548a74fd9779e34be2fcf04c0edd653.html#ae548a74fd9779e34be2fcf04c0edd653">pism::atmosphere::YearlyCycle</a>
 </li>
+<li>temperate_base_area()
+: <a class="el" href="classpism_1_1IceModel_a46ac94b128d2e2bcffa688b5843842ff.html#a46ac94b128d2e2bcffa688b5843842ff">pism::IceModel</a>
+</li>
 <li>TemperateIceThickness()
 : <a class="el" href="classpism_1_1diagnostics_1_1TemperateIceThickness_a6de5dfb447dc9b1b09b983d9c0e5ef70.html#a6de5dfb447dc9b1b09b983d9c0e5ef70">pism::diagnostics::TemperateIceThickness</a>
 </li>
@@ -117,41 +120,45 @@ $(function() {
 : <a class="el" href="classpism_1_1diagnostics_1_1Temperature_a73e93abf80215b058fddf760f794b642.html#a73e93abf80215b058fddf760f794b642">pism::diagnostics::Temperature</a>
 </li>
 <li>temperature()
-: <a class="el" href="classpism_1_1energy_1_1BTU__Full_afd6f263d15b5c06877075a9a412b5708.html#afd6f263d15b5c06877075a9a412b5708">pism::energy::BTU_Full</a>
-, <a class="el" href="classpism_1_1energy_1_1TemperatureModel_ada85171f0f20e5ff318e6ea1d8613804.html#ada85171f0f20e5ff318e6ea1d8613804">pism::energy::TemperatureModel</a>
+: <a class="el" href="classpism_1_1energy_1_1BTU__Full_a1be25b6ce9053f7a9346f7bb3c565985.html#a1be25b6ce9053f7a9346f7bb3c565985">pism::energy::BTU_Full</a>
+, <a class="el" href="classpism_1_1energy_1_1TemperatureModel_a39ec5bddd6f687d7cccc59a9698aa282.html#a39ec5bddd6f687d7cccc59a9698aa282">pism::energy::TemperatureModel</a>
 , <a class="el" href="classpism_1_1EnthalpyConverter_a3e7648c3e11cc0d3b416a0ede7999ed6.html#a3e7648c3e11cc0d3b416a0ede7999ed6">pism::EnthalpyConverter</a>
-, <a class="el" href="classpism_1_1surface_1_1SurfaceModel_a237404aa542c367a537ec1eb5a1a9bae.html#a237404aa542c367a537ec1eb5a1a9bae">pism::surface::SurfaceModel</a>
+, <a class="el" href="classpism_1_1surface_1_1SurfaceModel_a99619f416c4c3549f5b1f1d3ae81be79.html#a99619f416c4c3549f5b1f1d3ae81be79">pism::surface::SurfaceModel</a>
 </li>
 <li>temperature_cold()
 : <a class="el" href="classpism_1_1EnthalpyConverter_ab2fe5f41e79e102dce8ee6690f4a00a4.html#ab2fe5f41e79e102dce8ee6690f4a00a4">pism::EnthalpyConverter</a>
 </li>
+<li>temperature_driven_melt()
+: <a class="el" href="classpism_1_1surface_1_1DEBMSimple_acf76a79e5e1d12d97d201d369f38ccfe.html#acf76a79e5e1d12d97d201d369f38ccfe">pism::surface::DEBMSimple</a>
+</li>
 <li>temperature_impl()
-: <a class="el" href="classpism_1_1icebin_1_1IBSurfaceModel_ad6f19f5616aa7c16b489aa551ec032e5.html#ad6f19f5616aa7c16b489aa551ec032e5">pism::icebin::IBSurfaceModel</a>
-, <a class="el" href="classpism_1_1surface_1_1Anomaly_ad8d953f3f034dd1566bc6e4c2648ad6f.html#ad8d953f3f034dd1566bc6e4c2648ad6f">pism::surface::Anomaly</a>
-, <a class="el" href="classpism_1_1surface_1_1Cache_af74f467f3dcbe8225cf43ca949d551a7.html#af74f467f3dcbe8225cf43ca949d551a7">pism::surface::Cache</a>
-, <a class="el" href="classpism_1_1surface_1_1Delta__T_adc306a1a3420772d6e5de637caf7809c.html#adc306a1a3420772d6e5de637caf7809c">pism::surface::Delta_T</a>
-, <a class="el" href="classpism_1_1surface_1_1Elevation_ab768f1a668902512c291c7e88e2a96a5.html#ab768f1a668902512c291c7e88e2a96a5">pism::surface::Elevation</a>
-, <a class="el" href="classpism_1_1surface_1_1ElevationChange_a9409c1a7ca9f5928caf5798504d4f83a.html#a9409c1a7ca9f5928caf5798504d4f83a">pism::surface::ElevationChange</a>
-, <a class="el" href="classpism_1_1surface_1_1Given_af0675e6cf25b63f0aea1392d19ead2ad.html#af0675e6cf25b63f0aea1392d19ead2ad">pism::surface::Given</a>
-, <a class="el" href="classpism_1_1surface_1_1InitializationHelper_a67c3ce6e92f767203eddacb50514b2b3.html#a67c3ce6e92f767203eddacb50514b2b3">pism::surface::InitializationHelper</a>
-, <a class="el" href="classpism_1_1surface_1_1ISMIP6_a2bd819d82cc973c904cbcca598c586d0.html#a2bd819d82cc973c904cbcca598c586d0">pism::surface::ISMIP6</a>
-, <a class="el" href="classpism_1_1surface_1_1PIK_a0f48212d949a2db7d6cca8aba05f4a8c.html#a0f48212d949a2db7d6cca8aba05f4a8c">pism::surface::PIK</a>
-, <a class="el" href="classpism_1_1surface_1_1PSFormulas_a907754787bc443b67867abf839be92d0.html#a907754787bc443b67867abf839be92d0">pism::surface::PSFormulas</a>
-, <a class="el" href="classpism_1_1surface_1_1Simple_a3c435746f09d93d05d3cdb11fed598b5.html#a3c435746f09d93d05d3cdb11fed598b5">pism::surface::Simple</a>
-, <a class="el" href="classpism_1_1surface_1_1SurfaceModel_a2500ade25436594d79210cd6e22a6310.html#a2500ade25436594d79210cd6e22a6310">pism::surface::SurfaceModel</a>
-, <a class="el" href="classpism_1_1surface_1_1TemperatureIndex_a7b6ee9937e5ecda9b888ec14b82423f9.html#a7b6ee9937e5ecda9b888ec14b82423f9">pism::surface::TemperatureIndex</a>
+: <a class="el" href="classpism_1_1icebin_1_1IBSurfaceModel_aebed835b4f91bdcd8f183aa5fa4924bb.html#aebed835b4f91bdcd8f183aa5fa4924bb">pism::icebin::IBSurfaceModel</a>
+, <a class="el" href="classpism_1_1surface_1_1Anomaly_af50e0896372dcbdcbad49ceb702e22ed.html#af50e0896372dcbdcbad49ceb702e22ed">pism::surface::Anomaly</a>
+, <a class="el" href="classpism_1_1surface_1_1Cache_ac58dce603a4fc8389a48b92ebd53f1a1.html#ac58dce603a4fc8389a48b92ebd53f1a1">pism::surface::Cache</a>
+, <a class="el" href="classpism_1_1surface_1_1DEBMSimple_afa2a9ecb5a2157d5e959d14bfd0d82a3.html#afa2a9ecb5a2157d5e959d14bfd0d82a3">pism::surface::DEBMSimple</a>
+, <a class="el" href="classpism_1_1surface_1_1Delta__T_ae9582b51e1aceb2e1a9eb3e295f13fc8.html#ae9582b51e1aceb2e1a9eb3e295f13fc8">pism::surface::Delta_T</a>
+, <a class="el" href="classpism_1_1surface_1_1Elevation_a19905fe767cc54d388ac1e54317b230e.html#a19905fe767cc54d388ac1e54317b230e">pism::surface::Elevation</a>
+, <a class="el" href="classpism_1_1surface_1_1ElevationChange_a99cc426f9a3c2626e5e7f1a2774f7fb1.html#a99cc426f9a3c2626e5e7f1a2774f7fb1">pism::surface::ElevationChange</a>
+, <a class="el" href="classpism_1_1surface_1_1Given_aeded7d4461090fb3c22d53dbd6778781.html#aeded7d4461090fb3c22d53dbd6778781">pism::surface::Given</a>
+, <a class="el" href="classpism_1_1surface_1_1InitializationHelper_a578ce404072ec23ca8b19f1b45017bad.html#a578ce404072ec23ca8b19f1b45017bad">pism::surface::InitializationHelper</a>
+, <a class="el" href="classpism_1_1surface_1_1ISMIP6_a27d89686c185c7bcd633fbfcc842b0b2.html#a27d89686c185c7bcd633fbfcc842b0b2">pism::surface::ISMIP6</a>
+, <a class="el" href="classpism_1_1surface_1_1PIK_a4a32aa9f1852e6bdc16a1dbb9ce94342.html#a4a32aa9f1852e6bdc16a1dbb9ce94342">pism::surface::PIK</a>
+, <a class="el" href="classpism_1_1surface_1_1PSFormulas_a35633ab2bb7baf5cde990e8debedda8a.html#a35633ab2bb7baf5cde990e8debedda8a">pism::surface::PSFormulas</a>
+, <a class="el" href="classpism_1_1surface_1_1Simple_a3eb00b573422941a1b2908c91e195c85.html#a3eb00b573422941a1b2908c91e195c85">pism::surface::Simple</a>
+, <a class="el" href="classpism_1_1surface_1_1SurfaceModel_afaca7f71589a0b66947c88af47b6b5d1.html#afaca7f71589a0b66947c88af47b6b5d1">pism::surface::SurfaceModel</a>
+, <a class="el" href="classpism_1_1surface_1_1TemperatureIndex_a5fc5f1cf06b83ca9582bfdf8609f38ee.html#a5fc5f1cf06b83ca9582bfdf8609f38ee">pism::surface::TemperatureIndex</a>
 </li>
 <li>TemperatureBasal()
 : <a class="el" href="classpism_1_1diagnostics_1_1TemperatureBasal_a98a2b78442e05b3b91105416576860f4.html#a98a2b78442e05b3b91105416576860f4">pism::diagnostics::TemperatureBasal</a>
 </li>
 <li>TemperatureIndex()
-: <a class="el" href="classpism_1_1surface_1_1TemperatureIndex_a6424982386efc9bfe0a10093f8c3b870.html#a6424982386efc9bfe0a10093f8c3b870">pism::surface::TemperatureIndex</a>
+: <a class="el" href="classpism_1_1surface_1_1TemperatureIndex_af6606c7b14a4167489cfdd443bfd033e.html#af6606c7b14a4167489cfdd443bfd033e">pism::surface::TemperatureIndex</a>
 </li>
 <li>TemperatureModel()
-: <a class="el" href="classpism_1_1energy_1_1TemperatureModel_a4ae31f0a2e49bfeb4307bbf58355095b.html#a4ae31f0a2e49bfeb4307bbf58355095b">pism::energy::TemperatureModel</a>
+: <a class="el" href="classpism_1_1energy_1_1TemperatureModel_adde298b509da6ee43bd221251d63acaf.html#adde298b509da6ee43bd221251d63acaf">pism::energy::TemperatureModel</a>
 </li>
 <li>TemperatureModel_Verification()
-: <a class="el" href="classpism_1_1energy_1_1TemperatureModel__Verification_a74fd55ae44019cfd2a2b0bbe5f7e8d02.html#a74fd55ae44019cfd2a2b0bbe5f7e8d02">pism::energy::TemperatureModel_Verification</a>
+: <a class="el" href="classpism_1_1energy_1_1TemperatureModel__Verification_a882edb0bcb69efd4e1799850b4222c83.html#a882edb0bcb69efd4e1799850b4222c83">pism::energy::TemperatureModel_Verification</a>
 </li>
 <li>TemperaturePA()
 : <a class="el" href="classpism_1_1diagnostics_1_1TemperaturePA_aaefc8dc3a906f184bfa6becce2f8b9b4.html#aaefc8dc3a906f184bfa6becce2f8b9b4">pism::diagnostics::TemperaturePA</a>
@@ -170,13 +177,13 @@ $(function() {
 : <a class="el" href="classpism_1_1petsc_1_1TemporaryGlobalVec_a5a6ff32ab08ce19902f84a18440b33d1.html#a5a6ff32ab08ce19902f84a18440b33d1">pism::petsc::TemporaryGlobalVec</a>
 </li>
 <li>tempSystemCtx()
-: <a class="el" href="classpism_1_1energy_1_1tempSystemCtx_a3b78b4963cf8ac04a734f40e825f5912.html#a3b78b4963cf8ac04a734f40e825f5912">pism::energy::tempSystemCtx</a>
+: <a class="el" href="classpism_1_1energy_1_1tempSystemCtx_ac46e0debd4aad34249144894a32ead16.html#ac46e0debd4aad34249144894a32ead16">pism::energy::tempSystemCtx</a>
 </li>
 <li>TendencyOfIceAmount()
-: <a class="el" href="classpism_1_1diagnostics_1_1TendencyOfIceAmount_afd191c33dd9f654f1ae3c4de119bd9d3.html#afd191c33dd9f654f1ae3c4de119bd9d3">pism::diagnostics::TendencyOfIceAmount</a>
+: <a class="el" href="classpism_1_1diagnostics_1_1TendencyOfIceAmount_ab9877353084572a48d02dec6e2978c25.html#ab9877353084572a48d02dec6e2978c25">pism::diagnostics::TendencyOfIceAmount</a>
 </li>
 <li>TendencyOfIceAmountDueToFlow()
-: <a class="el" href="classpism_1_1diagnostics_1_1TendencyOfIceAmountDueToFlow_a3ce129742a0e2694aa7237ad99cf069c.html#a3ce129742a0e2694aa7237ad99cf069c">pism::diagnostics::TendencyOfIceAmountDueToFlow</a>
+: <a class="el" href="classpism_1_1diagnostics_1_1TendencyOfIceAmountDueToFlow_a8269096416161c377b13ea0b5c5c22c0.html#a8269096416161c377b13ea0b5c5c22c0">pism::diagnostics::TendencyOfIceAmountDueToFlow</a>
 </li>
 <li>TendencyOfWaterMass()
 : <a class="el" href="classpism_1_1hydrology_1_1diagnostics_1_1TendencyOfWaterMass_a085af4322910656d64af575fdc3a76dc.html#a085af4322910656d64af575fdc3a76dc">pism::hydrology::diagnostics::TendencyOfWaterMass</a>
@@ -197,33 +204,34 @@ $(function() {
 : <a class="el" href="structpism_1_1TestPParameters_a82e01a85629a71f22bcdf709e140b420.html#a82e01a85629a71f22bcdf709e140b420">pism::TestPParameters</a>
 </li>
 <li>theta()
-: <a class="el" href="classpism_1_1stressbalance_1_1BedSmoother_a54a3ac7aeebe25fb72aceae848fca9a7.html#a54a3ac7aeebe25fb72aceae848fca9a7">pism::stressbalance::BedSmoother</a>
+: <a class="el" href="classpism_1_1stressbalance_1_1BedSmoother_a71b068f8e7b3d3aa7235e6d1bec1f797.html#a71b068f8e7b3d3aa7235e6d1bec1f797">pism::stressbalance::BedSmoother</a>
 </li>
 <li>theta_pm()
 : <a class="el" href="classpism_1_1ocean_1_1PicoPhysics_a98d996a8f2960ab03232f342875c09c0.html#a98d996a8f2960ab03232f342875c09c0">pism::ocean::PicoPhysics</a>
 </li>
 <li>thickness_change_due_to_flow()
-: <a class="el" href="classpism_1_1GeometryEvolution_aacd0b349ff7b7629acbbeb2e537b1a32.html#aacd0b349ff7b7629acbbeb2e537b1a32">pism::GeometryEvolution</a>
+: <a class="el" href="classpism_1_1GeometryEvolution_a1399bdda59ad14af09aa793cbac52537.html#a1399bdda59ad14af09aa793cbac52537">pism::GeometryEvolution</a>
 </li>
 <li>ThicknessChanges()
-: <a class="el" href="structpism_1_1IceModel_1_1ThicknessChanges_ad1a42cc9907e74b7d4c2c12990738bce.html#ad1a42cc9907e74b7d4c2c12990738bce">pism::IceModel::ThicknessChanges</a>
+: <a class="el" href="structpism_1_1IceModel_1_1ThicknessChanges_ab936ce00f47b3bfa9251015acd097c95.html#ab936ce00f47b3bfa9251015acd097c95">pism::IceModel::ThicknessChanges</a>
 </li>
 <li>ThicknessRateOfChange()
 : <a class="el" href="classpism_1_1diagnostics_1_1ThicknessRateOfChange_a6a6ee05bc3a8d8b2ec2368bbf0f63e88.html#a6a6ee05bc3a8d8b2ec2368bbf0f63e88">pism::diagnostics::ThicknessRateOfChange</a>
 </li>
 <li>threshold()
-: <a class="el" href="classpism_1_1calving_1_1CalvingAtThickness_a4dded1e977568280c0418077d2b74fe1.html#a4dded1e977568280c0418077d2b74fe1">pism::calving::CalvingAtThickness</a>
-, <a class="el" href="classpism_1_1calving_1_1vonMisesCalving_ab51262bd23a9ac82b94d4f6092f94199.html#ab51262bd23a9ac82b94d4f6092f94199">pism::calving::vonMisesCalving</a>
+: <a class="el" href="classpism_1_1calving_1_1CalvingAtThickness_adf86e3a191d22bf74db55d336c272066.html#adf86e3a191d22bf74db55d336c272066">pism::calving::CalvingAtThickness</a>
+, <a class="el" href="classpism_1_1calving_1_1vonMisesCalving_ac51ae9bee7d014d96ec2afd821324233.html#ac51ae9bee7d014d96ec2afd821324233">pism::calving::vonMisesCalving</a>
 </li>
 <li>till_friction_angle()
 : <a class="el" href="classpism_1_1MohrCoulombPointwise_a646d66207661e4521009e91044a813a3.html#a646d66207661e4521009e91044a813a3">pism::MohrCoulombPointwise</a>
-, <a class="el" href="classpism_1_1MohrCoulombYieldStress_aad766525740aa95078143e36ef37fe21.html#aad766525740aa95078143e36ef37fe21">pism::MohrCoulombYieldStress</a>
+, <a class="el" href="classpism_1_1MohrCoulombYieldStress_ad8660dd9046e851cbc65045b49da60b8.html#ad8660dd9046e851cbc65045b49da60b8">pism::MohrCoulombYieldStress</a>
 </li>
 <li>till_water_thickness()
-: <a class="el" href="classpism_1_1hydrology_1_1Hydrology_afded3f07594c79239d4d46162da7c256.html#afded3f07594c79239d4d46162da7c256">pism::hydrology::Hydrology</a>
+: <a class="el" href="classpism_1_1hydrology_1_1Hydrology_a0ac7ca4109afd44e3fca5683a2a55e0f.html#a0ac7ca4109afd44e3fca5683a2a55e0f">pism::hydrology::Hydrology</a>
 </li>
 <li>time()
-: <a class="el" href="classpism_1_1Context_af81230d15130fbfe2b5fda14d58576fa.html#af81230d15130fbfe2b5fda14d58576fa">pism::Context</a>
+: <a class="el" href="classpism_1_1Component_a0c8b6cce615bda88f2b24171230af6a2.html#a0c8b6cce615bda88f2b24171230af6a2">pism::Component</a>
+, <a class="el" href="classpism_1_1Context_acda0444e25509eda1a580e91d7e64bd7.html#acda0444e25509eda1a580e91d7e64bd7">pism::Context</a>
 </li>
 <li>Time()
 : <a class="el" href="classpism_1_1Time_abe00d31b55fb7c4d264096a3040733d3.html#abe00d31b55fb7c4d264096a3040733d3">pism::Time</a>
@@ -235,8 +243,14 @@ $(function() {
 : <a class="el" href="classpism_1_1icebin_1_1IBIceModel_a287b9f652d2a25cf6e1757e701b1adc6.html#a287b9f652d2a25cf6e1757e701b1adc6">pism::icebin::IBIceModel</a>
 , <a class="el" href="classpism_1_1IceModel_aa272a42dcfbc0c45f1c08a758f34b1ae.html#aa272a42dcfbc0c45f1c08a758f34b1ae">pism::IceModel</a>
 </li>
+<li>timeseries_length()
+: <a class="el" href="classpism_1_1surface_1_1DEBMSimple_abaac6021d4d9cc470b2d919420ce2555.html#abaac6021d4d9cc470b2d919420ce2555">pism::surface::DEBMSimple</a>
+</li>
 <li>TimeStepLength()
 : <a class="el" href="classpism_1_1diagnostics_1_1scalar_1_1TimeStepLength_a5e4ae32fe015662d6c6ea3e174deedbf.html#a5e4ae32fe015662d6c6ea3e174deedbf">pism::diagnostics::scalar::TimeStepLength</a>
+</li>
+<li>TimeStepRatio()
+: <a class="el" href="classpism_1_1diagnostics_1_1scalar_1_1TimeStepRatio_ad3927ae11ba75831dd000ceb2ad73d4d.html#ad3927ae11ba75831dd000ceb2ad73d4d">pism::diagnostics::scalar::TimeStepRatio</a>
 </li>
 <li>to_external()
 : <a class="el" href="classpism_1_1Diagnostic_aca5c739e29f438faaaa9a38ed644f94a.html#aca5c739e29f438faaaa9a38ed644f94a">pism::Diagnostic</a>
@@ -257,30 +271,33 @@ $(function() {
 , <a class="el" href="classpism_1_1inverse_1_1IPDesignVariableParamSquare_a5c6bc02c33e7ebadd99eb5b9b46d50e8.html#a5c6bc02c33e7ebadd99eb5b9b46d50e8">pism::inverse::IPDesignVariableParamSquare</a>
 , <a class="el" href="classpism_1_1inverse_1_1IPDesignVariableParamTruncatedIdent_a74e0e9b528462ccd4a5c6f4791ebc985.html#a74e0e9b528462ccd4a5c6f4791ebc985">pism::inverse::IPDesignVariableParamTruncatedIdent</a>
 </li>
+<li>top_layer_deposition_time()
+: <a class="el" href="classpism_1_1Isochrones_aaa72a12772ddebc05f67f5bd899a5639.html#aaa72a12772ddebc05f67f5bd899a5639">pism::Isochrones</a>
+</li>
 <li>top_surface_mass_balance()
-: <a class="el" href="classpism_1_1GeometryEvolution_a84c3bc648b80e9d766d5112ea745bcd7.html#a84c3bc648b80e9d766d5112ea745bcd7">pism::GeometryEvolution</a>
+: <a class="el" href="classpism_1_1GeometryEvolution_aa9aa8dcad90a31e4d48ad38f4dcd71d1.html#aa9aa8dcad90a31e4d48ad38f4dcd71d1">pism::GeometryEvolution</a>
 </li>
 <li>total_displacement()
-: <a class="el" href="classpism_1_1bed_1_1LingleClark_a1bb7839d03d6b35b6113fce5625ca134.html#a1bb7839d03d6b35b6113fce5625ca134">pism::bed::LingleClark</a>
+: <a class="el" href="classpism_1_1bed_1_1LingleClark_ab08a2bc79e7bb82dbc52511c1c70e8bc.html#ab08a2bc79e7bb82dbc52511c1c70e8bc">pism::bed::LingleClark</a>
 , <a class="el" href="classpism_1_1bed_1_1LingleClarkSerial_aca24952571735f9c07c7f940a8bf0075.html#aca24952571735f9c07c7f940a8bf0075">pism::bed::LingleClarkSerial</a>
 </li>
 <li>TotalInputRate()
 : <a class="el" href="classpism_1_1hydrology_1_1diagnostics_1_1TotalInputRate_ac5dead40e3ce97c4460745f1e41647ad.html#ac5dead40e3ce97c4460745f1e41647ad">pism::hydrology::diagnostics::TotalInputRate</a>
 </li>
 <li>TotalSurfaceAccumulation()
-: <a class="el" href="classpism_1_1surface_1_1diagnostics_1_1TotalSurfaceAccumulation_a76ece098cc91157fb71bb060c165fcf2.html#a76ece098cc91157fb71bb060c165fcf2">pism::surface::diagnostics::TotalSurfaceAccumulation</a>
+: <a class="el" href="classpism_1_1surface_1_1diagnostics_1_1TotalSurfaceAccumulation_a41b575677c3277978c5b384000ef9334.html#a41b575677c3277978c5b384000ef9334">pism::surface::diagnostics::TotalSurfaceAccumulation</a>
 </li>
 <li>TotalSurfaceMelt()
-: <a class="el" href="classpism_1_1surface_1_1diagnostics_1_1TotalSurfaceMelt_ae3340c691f1036829b63c34bb7a5d0c5.html#ae3340c691f1036829b63c34bb7a5d0c5">pism::surface::diagnostics::TotalSurfaceMelt</a>
+: <a class="el" href="classpism_1_1surface_1_1diagnostics_1_1TotalSurfaceMelt_a257f25305b08ced2d7315771228bad88.html#a257f25305b08ced2d7315771228bad88">pism::surface::diagnostics::TotalSurfaceMelt</a>
 </li>
 <li>TotalSurfaceRunoff()
-: <a class="el" href="classpism_1_1surface_1_1diagnostics_1_1TotalSurfaceRunoff_afa850d387ac1c78772d35399ae330443.html#afa850d387ac1c78772d35399ae330443">pism::surface::diagnostics::TotalSurfaceRunoff</a>
+: <a class="el" href="classpism_1_1surface_1_1diagnostics_1_1TotalSurfaceRunoff_a8677b93df2432800791cf690d53ee02d.html#a8677b93df2432800791cf690d53ee02d">pism::surface::diagnostics::TotalSurfaceRunoff</a>
 </li>
 <li>toughness()
-: <a class="el" href="classpism_1_1FractureDensity_abe141786d9cf9204417e3a88ff1500d7.html#abe141786d9cf9204417e3a88ff1500d7">pism::FractureDensity</a>
+: <a class="el" href="classpism_1_1FractureDensity_a48eb76f8e0d184ba63b9e7556e00cabc.html#a48eb76f8e0d184ba63b9e7556e00cabc">pism::FractureDensity</a>
 </li>
 <li>transfer()
-: <a class="el" href="classpism_1_1stressbalance_1_1BlatterMod_a09d6295e6fffe5f2030d85024b47c99a.html#a09d6295e6fffe5f2030d85024b47c99a">pism::stressbalance::BlatterMod</a>
+: <a class="el" href="classpism_1_1stressbalance_1_1BlatterMod_a5fbe1209a80bd52e69102c98234588db.html#a5fbe1209a80bd52e69102c98234588db">pism::stressbalance::BlatterMod</a>
 </li>
 <li>TridiagonalSystem()
 : <a class="el" href="classpism_1_1TridiagonalSystem_a3fea9a4c36f4c6e4a17ac7e8f13ef5c2.html#a3fea9a4c36f4c6e4a17ac7e8f13ef5c2">pism::TridiagonalSystem</a>
@@ -300,7 +317,6 @@ $(function() {
 , <a class="el" href="classpism_1_1RegionalYieldStress_a431508a0e01cd0ddfba430764aaaf041.html#a431508a0e01cd0ddfba430764aaaf041">pism::RegionalYieldStress</a>
 , <a class="el" href="classpism_1_1stressbalance_1_1StressBalance_a53460dc289818617e5f5f1eacc260cd0.html#a53460dc289818617e5f5f1eacc260cd0">pism::stressbalance::StressBalance</a>
 , <a class="el" href="classpism_1_1surface_1_1SurfaceModel_aaf90d1a7562554b4919b72917e150455.html#aaf90d1a7562554b4919b72917e150455">pism::surface::SurfaceModel</a>
-, <a class="el" href="classpism_1_1surface_1_1TemperatureIndex_a291ded3da9b71f9650d368865ed4d497.html#a291ded3da9b71f9650d368865ed4d497">pism::surface::TemperatureIndex</a>
 </li>
 <li>ts_max_timestep()
 : <a class="el" href="classpism_1_1IceModel_a5bd30f499b9f9e300fd91c91745bb709.html#a5bd30f499b9f9e300fd91c91745bb709">pism::IceModel</a>
@@ -309,16 +325,16 @@ $(function() {
 : <a class="el" href="classpism_1_1TSDiag_a0880e66c5efb8d5e885b2018604d2084.html#a0880e66c5efb8d5e885b2018604d2084">pism::TSDiag&lt; D, M &gt;</a>
 </li>
 <li>TSDiagnostic()
-: <a class="el" href="classpism_1_1TSDiagnostic_ac14e94e14731531f39b8f3109bec93ee.html#ac14e94e14731531f39b8f3109bec93ee">pism::TSDiagnostic</a>
+: <a class="el" href="classpism_1_1TSDiagnostic_a7ca436f2f773e232e8cec2045030a32a.html#a7ca436f2f773e232e8cec2045030a32a">pism::TSDiagnostic</a>
 </li>
 <li>TSFluxDiagnostic()
-: <a class="el" href="classpism_1_1TSFluxDiagnostic_a9509eb3f0a50f0b680937a07c3b8da34.html#a9509eb3f0a50f0b680937a07c3b8da34">pism::TSFluxDiagnostic</a>
+: <a class="el" href="classpism_1_1TSFluxDiagnostic_a85bc20ed94013450e139e5add99a64f3.html#a85bc20ed94013450e139e5add99a64f3">pism::TSFluxDiagnostic</a>
 </li>
 <li>TSRateDiagnostic()
-: <a class="el" href="classpism_1_1TSRateDiagnostic_ae89d5c9bf9638713f21e09c8f6d4046f.html#ae89d5c9bf9638713f21e09c8f6d4046f">pism::TSRateDiagnostic</a>
+: <a class="el" href="classpism_1_1TSRateDiagnostic_a2ac56d261d414422f846c8ba936fe92e.html#a2ac56d261d414422f846c8ba936fe92e">pism::TSRateDiagnostic</a>
 </li>
 <li>TSSnapshotDiagnostic()
-: <a class="el" href="classpism_1_1TSSnapshotDiagnostic_a6bfbf32379acb8f66d7a9e20d9006ca8.html#a6bfbf32379acb8f66d7a9e20d9006ca8">pism::TSSnapshotDiagnostic</a>
+: <a class="el" href="classpism_1_1TSSnapshotDiagnostic_ae1334fdc161c2691319e943dcf83fc82.html#ae1334fdc161c2691319e943dcf83fc82">pism::TSSnapshotDiagnostic</a>
 </li>
 <li>tweak()
 : <a class="el" href="classpism_1_1bed_1_1LingleClarkSerial_a37b6daaa81d57f46544fdac878bfbd42.html#a37b6daaa81d57f46544fdac878bfbd42">pism::bed::LingleClarkSerial</a>

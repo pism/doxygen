@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PISM, A Parallel Ice Sheet Model
-   &#160;<span id="projectnumber">stable v2.0.7 committed by Constantine Khrulev on 2023-11-21 12:49:11 -0900</span>
+   &#160;<span id="projectnumber">stable v2.1 committed by Constantine Khrulev on 2023-11-23 11:24:22 -0900</span>
    </div>
   </td>
  </tr>
@@ -75,7 +75,9 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#namespaces">Namespaces</a>  </div>
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">localMassBalance.cc File Reference</div>  </div>
 </div><!--header-->
@@ -87,14 +89,19 @@ $(function() {
 <code>#include &lt;gsl/gsl_math.h&gt;</code><br />
 <code>#include &lt;cmath&gt;</code><br />
 <code>#include &lt;algorithm&gt;</code><br />
-<code>#include &quot;pism/util/pism_utilities.hh&quot;</code><br />
 <code>#include &quot;pism/util/ConfigInterface.hh&quot;</code><br />
-<code>#include &quot;<a class="el" href="localMassBalance_8hh_source.html">localMassBalance.hh</a>&quot;</code><br />
-<code>#include &quot;pism/util/IceGrid.hh&quot;</code><br />
+<code>#include &quot;pism/coupler/surface/localMassBalance.hh&quot;</code><br />
+<code>#include &quot;pism/util/Grid.hh&quot;</code><br />
 <code>#include &quot;pism/util/Context.hh&quot;</code><br />
+<code>#include &quot;pism/util/VariableMetadata.hh&quot;</code><br />
 </div>
 <p><a href="localMassBalance_8cc_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpism_1_1surface_1_1PDDrandMassBalance_1_1Impl.html">pism::surface::PDDrandMassBalance::Impl</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacepism"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism.html">pism</a></td></tr>
@@ -102,6 +109,12 @@ Namespaces</h2></td></tr>
 <tr class="memitem:namespacepism_1_1surface"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_1_1surface.html">pism::surface</a></td></tr>
 <tr class="memdesc:namespacepism_1_1surface"><td class="mdescLeft">&#160;</td><td class="mdescRight">Surface models and modifiers: provide top-surface temperature, mass flux, liquid water fraction, mass and thickness of the surface layer. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ac27ee0e259bffe65e5ac01814896269d"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_1_1surface_ac27ee0e259bffe65e5ac01814896269d.html#ac27ee0e259bffe65e5ac01814896269d">pism::surface::CalovGreveIntegrand</a> (double sigma, double TacC)</td></tr>
+<tr class="memdesc:ac27ee0e259bffe65e5ac01814896269d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the integrand in integral (6) in [<a class="el" href="references.html#CalovGreve05">CalovGreve05</a>].  <a href="namespacepism_1_1surface_ac27ee0e259bffe65e5ac01814896269d.html#ac27ee0e259bffe65e5ac01814896269d">More...</a><br /></td></tr>
+<tr class="separator:ac27ee0e259bffe65e5ac01814896269d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->

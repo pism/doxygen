@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PISM, A Parallel Ice Sheet Model
-   &#160;<span id="projectnumber">stable v2.0.7 committed by Constantine Khrulev on 2023-11-21 12:49:11 -0900</span>
+   &#160;<span id="projectnumber">stable v2.1 committed by Constantine Khrulev on 2023-11-23 11:24:22 -0900</span>
    </div>
   </td>
  </tr>
@@ -130,7 +130,7 @@ Protected Attributes</h2></td></tr>
 <div class="line">  |  0            1  |</div>
 <div class="line">0 o------------------o  1</div>
 </div><!-- fragment --><p>There are four quad points per element, which occur at \(x,y=\pm 1/\sqrt{3}\). This corresponds to the tensor product of Gaussian integration on an interval that is exact for cubic functions on the interval.</p>
-<p>Integration on a physical element can be thought of as being done by change of variables. The quadrature weights need to be modified, and the <a class="el" href="classpism_1_1fem_1_1Quadrature.html" title="Numerical integration of finite element functions.">Quadrature</a> takes care of this. Because all elements in an <a class="el" href="classpism_1_1IceGrid.html" title="Describes the PISM grid and the distribution of data across processors.">IceGrid</a> are congruent, the quadrature weights are the same for each element, and are computed upon initialization. </p>
+<p>Integration on a physical element can be thought of as being done by change of variables. The quadrature weights need to be modified, and the <a class="el" href="classpism_1_1fem_1_1Quadrature.html" title="Numerical integration of finite element functions.">Quadrature</a> takes care of this. Because all elements in an <a class="el" href="classpism_1_1Grid.html" title="Describes the PISM grid and the distribution of data across processors.">Grid</a> are congruent, the quadrature weights are the same for each element, and are computed upon initialization. </p>
 
 <p class="definition">Definition at line <a class="el" href="Quadrature_8hh_source.html#l00062">62</a> of file <a class="el" href="Quadrature_8hh_source.html">Quadrature.hh</a>.</p>
 </div><hr/>The documentation for this class was generated from the following files:<ul>

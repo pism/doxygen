@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PISM, A Parallel Ice Sheet Model
-   &#160;<span id="projectnumber">stable v2.0.7 committed by Constantine Khrulev on 2023-11-21 12:49:11 -0900</span>
+   &#160;<span id="projectnumber">stable v2.1 committed by Constantine Khrulev on 2023-11-23 11:24:22 -0900</span>
    </div>
   </td>
  </tr>
@@ -76,7 +76,8 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#nested-classes">Classes</a>  </div>
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">pism::surface Namespace Reference</div>  </div>
 </div><!--header-->
@@ -87,6 +88,8 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
+<tr class="memitem:namespacepism_1_1surface_1_1details"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_1_1surface_1_1details.html">details</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespacepism_1_1surface_1_1diagnostics"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_1_1surface_1_1diagnostics.html">diagnostics</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -99,6 +102,14 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpism_1_1surface_1_1PIK.html">PIK</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A class implementing a constant-in-time surface model for the surface mass balance.  <a href="classpism_1_1surface_1_1PIK.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpism_1_1surface_1_1DEBMSimple.html">DEBMSimple</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A class implementing a temperature-index (positive degree-day) scheme to compute melt and runoff, and thus surface mass balance, from precipitation and air temperature.  <a href="classpism_1_1surface_1_1DEBMSimple.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpism_1_1surface_1_1DEBMSimpleMelt.html">DEBMSimpleMelt</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpism_1_1surface_1_1DEBMSimplePointwise.html">DEBMSimplePointwise</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A dEBM-simple implementation.  <a href="classpism_1_1surface_1_1DEBMSimplePointwise.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpism_1_1surface_1_1Delta__T.html">Delta_T</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implements the scalar temperature offsets for the ice surface temperature.  <a href="classpism_1_1surface_1_1Delta__T.html#details">More...</a><br /></td></tr>
@@ -147,6 +158,12 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpism_1_1surface_1_1Verification.html">Verification</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Climate inputs for verification tests.  <a href="classpism_1_1surface_1_1Verification.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ac27ee0e259bffe65e5ac01814896269d"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_1_1surface_ac27ee0e259bffe65e5ac01814896269d.html#ac27ee0e259bffe65e5ac01814896269d">CalovGreveIntegrand</a> (double sigma, double TacC)</td></tr>
+<tr class="memdesc:ac27ee0e259bffe65e5ac01814896269d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the integrand in integral (6) in [<a class="el" href="references.html#CalovGreve05">CalovGreve05</a>].  <a href="namespacepism_1_1surface_ac27ee0e259bffe65e5ac01814896269d.html#ac27ee0e259bffe65e5ac01814896269d">More...</a><br /></td></tr>
+<tr class="separator:ac27ee0e259bffe65e5ac01814896269d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Surface models and modifiers: provide top-surface temperature, mass flux, liquid water fraction, mass and thickness of the surface layer. </p>

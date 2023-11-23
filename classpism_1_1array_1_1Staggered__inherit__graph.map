@@ -1,0 +1,6 @@
+<map id="pism::array::Staggered" name="pism::array::Staggered">
+<area shape="rect" id="node1" title="A class for storing and accessing internal staggered&#45;grid 2D fields. Uses dof=2 storage...." alt="" coords="9,155,179,181"/>
+<area shape="rect" id="node4" href="$classpism_1_1array_1_1Staggered1.html" title=" " alt="" coords="5,229,183,256"/>
+<area shape="rect" id="node2" href="$classpism_1_1array_1_1Array.html" title="Abstract class for reading, writing, allocating, and accessing a DA&#45;based PETSc Vec (2D and 3D fields..." alt="" coords="25,80,163,107"/>
+<area shape="rect" id="node3" href="$classpism_1_1PetscAccessible.html" title=" " alt="" coords="11,5,177,32"/>
+</map>

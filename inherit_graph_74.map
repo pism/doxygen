@@ -1,4 +1,8 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classpism_1_1inverse_1_1IPFunctional.html" title="Abstract base class for functions from ice model vectors to ." alt="" coords="5,5,203,47"/>
-<area shape="rect" id="node2" href="$classpism_1_1inverse_1_1IPInnerProductFunctional.html" title="Abstract base class for IPFunctionals arising from an inner product." alt="" coords="251,5,463,47"/>
+<area shape="rect" id="node1" href="$classpism_1_1inverse_1_1IPFunctional.html" title=" " alt="" coords="5,103,203,144"/>
+<area shape="rect" id="node2" href="$classpism_1_1inverse_1_1IPInnerProductFunctional.html" title=" " alt="" coords="251,37,463,79"/>
+<area shape="rect" id="node5" href="$classpism_1_1inverse_1_1IPLogRatioFunctional.html" title="Implements a functional for log&#45;ratio errors." alt="" coords="263,103,450,144"/>
+<area shape="rect" id="node6" href="$classpism_1_1inverse_1_1IPLogRelativeFunctional.html" title="Implements a functional for log&#45;relative errors." alt="" coords="253,168,460,209"/>
+<area shape="rect" id="node3" href="$classpism_1_1inverse_1_1IPMeanSquareFunctional2V.html" title="Implements a functional corresponding to a (possibly weighted) sum of squares of components of an arr..." alt="" coords="511,5,721,47"/>
+<area shape="rect" id="node4" href="$classpism_1_1inverse_1_1IP__L2NormFunctional2V.html" title="Implements a functional corresponding to (the square of) an &#160;norm of a vector valued function." alt="" coords="522,71,710,112"/>
 </map>

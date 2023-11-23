@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PISM, A Parallel Ice Sheet Model
-   &#160;<span id="projectnumber">stable v2.0.7 committed by Constantine Khrulev on 2023-11-21 12:49:11 -0900</span>
+   &#160;<span id="projectnumber">stable v2.1 committed by Constantine Khrulev on 2023-11-23 11:24:22 -0900</span>
    </div>
   </td>
  </tr>
@@ -83,7 +83,10 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;pism/util/Component.hh&quot;</code><br />
-<code>#include &quot;pism/util/iceModelVec.hh&quot;</code><br />
+<code>#include &quot;pism/util/array/Scalar.hh&quot;</code><br />
+<code>#include &quot;pism/util/array/Array3D.hh&quot;</code><br />
+<code>#include &quot;pism/util/array/CellType.hh&quot;</code><br />
+<code>#include &lt;memory&gt;</code><br />
 </div>
 <p><a href="EnergyModel_8hh_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -109,8 +112,8 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a2d8f9f9fe5d5505c852e8524473d8bcc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_1_1energy_a2d8f9f9fe5d5505c852e8524473d8bcc.html#a2d8f9f9fe5d5505c852e8524473d8bcc">pism::energy::marginal</a> (const IceModelVec2S &amp;thickness, int i, int j, double threshold)</td></tr>
-<tr class="separator:a2d8f9f9fe5d5505c852e8524473d8bcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5947863588636523462b5766409acf47"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_1_1energy_a5947863588636523462b5766409acf47.html#a5947863588636523462b5766409acf47">pism::energy::marginal</a> (const array::Scalar1 &amp;thickness, int i, int j, double threshold)</td></tr>
+<tr class="separator:a5947863588636523462b5766409acf47"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->

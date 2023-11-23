@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PISM, A Parallel Ice Sheet Model
-   &#160;<span id="projectnumber">stable v2.0.7 committed by Constantine Khrulev on 2023-11-21 12:49:11 -0900</span>
+   &#160;<span id="projectnumber">stable v2.1 committed by Constantine Khrulev on 2023-11-23 11:24:22 -0900</span>
    </div>
   </td>
  </tr>
@@ -78,7 +78,7 @@ $(function() {
 <div class="title">Viewer.cc</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="Viewer_8cc.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/* Copyright (C) 2014, 2015, 2017 PISM Authors</span></div>
+<a href="Viewer_8cc.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/* Copyright (C) 2014, 2015, 2017, 2023 PISM Authors</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * This file is part of PISM.</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> *</span></div>
@@ -97,7 +97,7 @@ $(function() {
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Viewer_8hh.html">Viewer.hh</a>&quot;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;pism/util/petscwrappers/Viewer.hh&quot;</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &lt;petscdraw.h&gt;</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &lt;cassert&gt;</span></div>
@@ -114,13 +114,13 @@ $(function() {
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <a class="code" href="classpism_1_1petsc_1_1Viewer_aec55f089bf78749b253318c4dc9074e3.html#aec55f089bf78749b253318c4dc9074e3">compute_size</a>(target_size, Lx, Ly, X, Y);</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  ierr = PetscViewerDrawOpen(com, NULL, title.c_str(),</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                             PETSC_DECIDE, PETSC_DECIDE, X, Y, &amp;<a class="code" href="classpism_1_1petsc_1_1Wrapper_a5f0520460de0b629fbf78f665157c0dd.html#a5f0520460de0b629fbf78f665157c0dd">m_value</a>);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                             PETSC_DECIDE, PETSC_DECIDE, X, Y, &amp;<a class="code" href="classpism_1_1Wrapper_a912b8a03111de55021d86ca48e74adca.html#a912b8a03111de55021d86ca48e74adca">m_value</a>);</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <a class="code" href="error__handling_8hh_a970ec877c0e54c6e16c039bfa1b88bad.html#a970ec877c0e54c6e16c039bfa1b88bad">PISM_CHK</a>(ierr, <span class="stringliteral">&quot;PetscViewerDrawOpen&quot;</span>);</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="comment">// following should be redundant, but may put up a title even under 2.3.3-p1:3 where</span></div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="comment">// there is a no titles bug</span></div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  PetscDraw draw;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  ierr = PetscViewerDrawGetDraw(<a class="code" href="classpism_1_1petsc_1_1Wrapper_a5f0520460de0b629fbf78f665157c0dd.html#a5f0520460de0b629fbf78f665157c0dd">m_value</a>, 0, &amp;draw);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  ierr = PetscViewerDrawGetDraw(<a class="code" href="classpism_1_1Wrapper_a912b8a03111de55021d86ca48e74adca.html#a912b8a03111de55021d86ca48e74adca">m_value</a>, 0, &amp;draw);</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <a class="code" href="error__handling_8hh_a970ec877c0e54c6e16c039bfa1b88bad.html#a970ec877c0e54c6e16c039bfa1b88bad">PISM_CHK</a>(ierr, <span class="stringliteral">&quot;PetscViewerDrawGetDraw&quot;</span>);</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  ierr = PetscDrawSetTitle(draw, title.c_str());</div>
@@ -128,21 +128,21 @@ $(function() {
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;}</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
 <div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="classpism_1_1petsc_1_1Viewer_a071ca583aabb417dd53e2d945d25ffc0.html#a071ca583aabb417dd53e2d945d25ffc0">   50</a></span>&#160;<a class="code" href="classpism_1_1petsc_1_1Viewer_af1590d2dc6f9eb1bcbfd808f581778b6.html#af1590d2dc6f9eb1bcbfd808f581778b6">Viewer::Viewer</a>(MPI_Comm com) {</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  PetscErrorCode ierr = PetscViewerCreate(com, &amp;<a class="code" href="classpism_1_1petsc_1_1Wrapper_a5f0520460de0b629fbf78f665157c0dd.html#a5f0520460de0b629fbf78f665157c0dd">m_value</a>);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  PetscErrorCode ierr = PetscViewerCreate(com, &amp;<a class="code" href="classpism_1_1Wrapper_a912b8a03111de55021d86ca48e74adca.html#a912b8a03111de55021d86ca48e74adca">m_value</a>);</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <a class="code" href="error__handling_8hh_a970ec877c0e54c6e16c039bfa1b88bad.html#a970ec877c0e54c6e16c039bfa1b88bad">PISM_CHK</a>(ierr, <span class="stringliteral">&quot;PetscViewerCreate&quot;</span>);</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;}</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
 <div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="classpism_1_1petsc_1_1Viewer_a04eefec44577c0e8aff02555c501a104.html#a04eefec44577c0e8aff02555c501a104">   55</a></span>&#160;<a class="code" href="classpism_1_1petsc_1_1Viewer_af1590d2dc6f9eb1bcbfd808f581778b6.html#af1590d2dc6f9eb1bcbfd808f581778b6">Viewer::Viewer</a>(PetscViewer v) {</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <a class="code" href="classpism_1_1petsc_1_1Wrapper_a5f0520460de0b629fbf78f665157c0dd.html#a5f0520460de0b629fbf78f665157c0dd">m_value</a> = v;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <a class="code" href="classpism_1_1Wrapper_a912b8a03111de55021d86ca48e74adca.html#a912b8a03111de55021d86ca48e74adca">m_value</a> = v;</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;}</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
 <div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="classpism_1_1petsc_1_1Viewer_af1590d2dc6f9eb1bcbfd808f581778b6.html#af1590d2dc6f9eb1bcbfd808f581778b6">   59</a></span>&#160;<a class="code" href="classpism_1_1petsc_1_1Viewer_af1590d2dc6f9eb1bcbfd808f581778b6.html#af1590d2dc6f9eb1bcbfd808f581778b6">Viewer::Viewer</a>() {</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <a class="code" href="classpism_1_1petsc_1_1Wrapper_a5f0520460de0b629fbf78f665157c0dd.html#a5f0520460de0b629fbf78f665157c0dd">m_value</a> = NULL;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <a class="code" href="classpism_1_1Wrapper_a912b8a03111de55021d86ca48e74adca.html#a912b8a03111de55021d86ca48e74adca">m_value</a> = NULL;</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;}</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
 <div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="classpism_1_1petsc_1_1Viewer_a2f46cb1cce30b94158dc722a4d713051.html#a2f46cb1cce30b94158dc722a4d713051">   63</a></span>&#160;<a class="code" href="classpism_1_1petsc_1_1Viewer_a2f46cb1cce30b94158dc722a4d713051.html#a2f46cb1cce30b94158dc722a4d713051">Viewer::~Viewer</a>() {</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="classpism_1_1petsc_1_1Wrapper_a5f0520460de0b629fbf78f665157c0dd.html#a5f0520460de0b629fbf78f665157c0dd">m_value</a> != NULL) {</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    PetscErrorCode ierr = PetscViewerDestroy(&amp;<a class="code" href="classpism_1_1petsc_1_1Wrapper_a5f0520460de0b629fbf78f665157c0dd.html#a5f0520460de0b629fbf78f665157c0dd">m_value</a>); CHKERRCONTINUE(ierr);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="classpism_1_1Wrapper_a912b8a03111de55021d86ca48e74adca.html#a912b8a03111de55021d86ca48e74adca">m_value</a> != NULL) {</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    PetscErrorCode ierr = PetscViewerDestroy(&amp;<a class="code" href="classpism_1_1Wrapper_a912b8a03111de55021d86ca48e74adca.html#a912b8a03111de55021d86ca48e74adca">m_value</a>); CHKERRCONTINUE(ierr);</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  }</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;}</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
@@ -180,13 +180,12 @@ $(function() {
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;} <span class="comment">// end of namespace petsc</span></div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;} <span class="comment">// end of namespace pism</span></div>
-<div class="ttc" id="aViewer_8hh_html"><div class="ttname"><a href="Viewer_8hh.html">Viewer.hh</a></div></div>
+<div class="ttc" id="aclasspism_1_1Wrapper_a912b8a03111de55021d86ca48e74adca_html_a912b8a03111de55021d86ca48e74adca"><div class="ttname"><a href="classpism_1_1Wrapper_a912b8a03111de55021d86ca48e74adca.html#a912b8a03111de55021d86ca48e74adca">pism::Wrapper&lt; PetscViewer &gt;::m_value</a></div><div class="ttdeci">PetscViewer m_value</div><div class="ttdef"><b>Definition:</b> <a href="Wrapper_8hh_source.html#l00046">Wrapper.hh:46</a></div></div>
 <div class="ttc" id="aclasspism_1_1petsc_1_1Viewer_a2f46cb1cce30b94158dc722a4d713051_html_a2f46cb1cce30b94158dc722a4d713051"><div class="ttname"><a href="classpism_1_1petsc_1_1Viewer_a2f46cb1cce30b94158dc722a4d713051.html#a2f46cb1cce30b94158dc722a4d713051">pism::petsc::Viewer::~Viewer</a></div><div class="ttdeci">~Viewer()</div><div class="ttdef"><b>Definition:</b> <a href="Viewer_8cc_source.html#l00063">Viewer.cc:63</a></div></div>
 <div class="ttc" id="aclasspism_1_1petsc_1_1Viewer_aec55f089bf78749b253318c4dc9074e3_html_aec55f089bf78749b253318c4dc9074e3"><div class="ttname"><a href="classpism_1_1petsc_1_1Viewer_aec55f089bf78749b253318c4dc9074e3.html#aec55f089bf78749b253318c4dc9074e3">pism::petsc::Viewer::compute_size</a></div><div class="ttdeci">void compute_size(unsigned int target_size, double Lx, double Ly, unsigned int &amp;X, unsigned int &amp;Y)</div><div class="ttdef"><b>Definition:</b> <a href="Viewer_8cc_source.html#l00069">Viewer.cc:69</a></div></div>
 <div class="ttc" id="aclasspism_1_1petsc_1_1Viewer_af1590d2dc6f9eb1bcbfd808f581778b6_html_af1590d2dc6f9eb1bcbfd808f581778b6"><div class="ttname"><a href="classpism_1_1petsc_1_1Viewer_af1590d2dc6f9eb1bcbfd808f581778b6.html#af1590d2dc6f9eb1bcbfd808f581778b6">pism::petsc::Viewer::Viewer</a></div><div class="ttdeci">Viewer()</div><div class="ttdef"><b>Definition:</b> <a href="Viewer_8cc_source.html#l00059">Viewer.cc:59</a></div></div>
-<div class="ttc" id="aclasspism_1_1petsc_1_1Wrapper_a5f0520460de0b629fbf78f665157c0dd_html_a5f0520460de0b629fbf78f665157c0dd"><div class="ttname"><a href="classpism_1_1petsc_1_1Wrapper_a5f0520460de0b629fbf78f665157c0dd.html#a5f0520460de0b629fbf78f665157c0dd">pism::petsc::Wrapper&lt; PetscViewer &gt;::m_value</a></div><div class="ttdeci">PetscViewer m_value</div><div class="ttdef"><b>Definition:</b> <a href="Wrapper_8hh_source.html#l00047">Wrapper.hh:47</a></div></div>
-<div class="ttc" id="aerror__handling_8hh_a970ec877c0e54c6e16c039bfa1b88bad_html_a970ec877c0e54c6e16c039bfa1b88bad"><div class="ttname"><a href="error__handling_8hh_a970ec877c0e54c6e16c039bfa1b88bad.html#a970ec877c0e54c6e16c039bfa1b88bad">PISM_CHK</a></div><div class="ttdeci">#define PISM_CHK(errcode, name)</div><div class="ttdef"><b>Definition:</b> <a href="error__handling_8hh_source.html#l00091">error_handling.hh:91</a></div></div>
-<div class="ttc" id="anamespacepism_html"><div class="ttname"><a href="namespacepism.html">pism</a></div><div class="ttdef"><b>Definition:</b> <a href="AgeColumnSystem_8cc_source.html#l00024">AgeColumnSystem.cc:24</a></div></div>
+<div class="ttc" id="aerror__handling_8hh_a970ec877c0e54c6e16c039bfa1b88bad_html_a970ec877c0e54c6e16c039bfa1b88bad"><div class="ttname"><a href="error__handling_8hh_a970ec877c0e54c6e16c039bfa1b88bad.html#a970ec877c0e54c6e16c039bfa1b88bad">PISM_CHK</a></div><div class="ttdeci">#define PISM_CHK(errcode, name)</div><div class="ttdef"><b>Definition:</b> <a href="error__handling_8hh_source.html#l00090">error_handling.hh:90</a></div></div>
+<div class="ttc" id="anamespacepism_html"><div class="ttname"><a href="namespacepism.html">pism</a></div><div class="ttdef"><b>Definition:</b> <a href="AgeColumnSystem_8cc_source.html#l00023">AgeColumnSystem.cc:23</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

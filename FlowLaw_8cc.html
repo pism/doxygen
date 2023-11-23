@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PISM, A Parallel Ice Sheet Model
-   &#160;<span id="projectnumber">stable v2.0.7 committed by Constantine Khrulev on 2023-11-21 12:49:11 -0900</span>
+   &#160;<span id="projectnumber">stable v2.1 committed by Constantine Khrulev on 2023-11-23 11:24:22 -0900</span>
    </div>
   </td>
  </tr>
@@ -81,14 +81,13 @@ $(function() {
 <div class="title">FlowLaw.cc File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="FlowLaw_8hh_source.html">FlowLaw.hh</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;pism/rheology/FlowLaw.hh&quot;</code><br />
 <code>#include &lt;petsc.h&gt;</code><br />
-<code>#include &quot;pism/util/pism_utilities.hh&quot;</code><br />
 <code>#include &quot;pism/util/EnthalpyConverter.hh&quot;</code><br />
-<code>#include &quot;pism/util/pism_options.hh&quot;</code><br />
-<code>#include &quot;pism/util/iceModelVec.hh&quot;</code><br />
+<code>#include &quot;pism/util/array/Scalar.hh&quot;</code><br />
+<code>#include &quot;pism/util/array/Array3D.hh&quot;</code><br />
 <code>#include &quot;pism/util/ConfigInterface.hh&quot;</code><br />
-<code>#include &quot;pism/util/IceGrid.hh&quot;</code><br />
+<code>#include &quot;pism/util/Grid.hh&quot;</code><br />
 <code>#include &quot;pism/util/error_handling.hh&quot;</code><br />
 </div>
 <p><a href="FlowLaw_8cc_source.html">Go to the source code of this file.</a></p>
@@ -103,11 +102,11 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a5ce3637ea124e77fec3551a270e52d20"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_1_1rheology_a5ce3637ea124e77fec3551a270e52d20.html#a5ce3637ea124e77fec3551a270e52d20">pism::rheology::averaged_hardness_vec</a> (const FlowLaw &amp;ice, const IceModelVec2S &amp;thickness, const IceModelVec3 &amp;enthalpy, IceModelVec2S &amp;result)</td></tr>
-<tr class="separator:a5ce3637ea124e77fec3551a270e52d20"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d431649f2120ee5d241da07cca03326"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_1_1rheology_a3d431649f2120ee5d241da07cca03326.html#a3d431649f2120ee5d241da07cca03326">pism::rheology::averaged_hardness</a> (const FlowLaw &amp;ice, double thickness, int kbelowH, const double *zlevels, const double *enthalpy)</td></tr>
-<tr class="memdesc:a3d431649f2120ee5d241da07cca03326"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes vertical average of <code>B(E, p)</code> ice hardness, namely \(\bar B(E, p)\).  <a href="namespacepism_1_1rheology_a3d431649f2120ee5d241da07cca03326.html#a3d431649f2120ee5d241da07cca03326">More...</a><br /></td></tr>
-<tr class="separator:a3d431649f2120ee5d241da07cca03326"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a8f958b829dbcbad1b19c445c7c55a6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_1_1rheology_a1a8f958b829dbcbad1b19c445c7c55a6.html#a1a8f958b829dbcbad1b19c445c7c55a6">pism::rheology::averaged_hardness_vec</a> (const FlowLaw &amp;ice, const array::Scalar &amp;thickness, const array::Array3D &amp;enthalpy, array::Scalar &amp;result)</td></tr>
+<tr class="separator:a1a8f958b829dbcbad1b19c445c7c55a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51ea57e1a00e8de97723c6813696d423"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_1_1rheology_a51ea57e1a00e8de97723c6813696d423.html#a51ea57e1a00e8de97723c6813696d423">pism::rheology::averaged_hardness</a> (const FlowLaw &amp;ice, double thickness, unsigned int kbelowH, const double *zlevels, const double *enthalpy)</td></tr>
+<tr class="memdesc:a51ea57e1a00e8de97723c6813696d423"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes vertical average of <code>B(E, p)</code> ice hardness, namely \(\bar B(E, p)\).  <a href="namespacepism_1_1rheology_a51ea57e1a00e8de97723c6813696d423.html#a51ea57e1a00e8de97723c6813696d423">More...</a><br /></td></tr>
+<tr class="separator:a51ea57e1a00e8de97723c6813696d423"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab2f0466580b239e5f2fefbc475226144"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_1_1rheology_ab2f0466580b239e5f2fefbc475226144.html#ab2f0466580b239e5f2fefbc475226144">pism::rheology::FlowLawUsesGrainSize</a> (const FlowLaw &amp;flow_law)</td></tr>
 <tr class="separator:ab2f0466580b239e5f2fefbc475226144"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>

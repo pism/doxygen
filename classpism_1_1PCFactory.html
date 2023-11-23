@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PISM, A Parallel Ice Sheet Model
-   &#160;<span id="projectnumber">stable v2.0.7 committed by Constantine Khrulev on 2023-11-21 12:49:11 -0900</span>
+   &#160;<span id="projectnumber">stable v2.1 committed by Constantine Khrulev on 2023-11-23 11:24:22 -0900</span>
    </div>
   </td>
  </tr>
@@ -108,13 +108,15 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ac84d8b9a5843d4caf3d836dadf424d5b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpism_1_1PCFactory_ac84d8b9a5843d4caf3d836dadf424d5b.html#ac84d8b9a5843d4caf3d836dadf424d5b">PCFactory</a> (<a class="el" href="classpism_1_1IceGrid_aa59b13ca1f14efc1555016e2b8a8b1ac.html#aa59b13ca1f14efc1555016e2b8a8b1ac">IceGrid::ConstPtr</a> <a class="el" href="namespacepism_a47d754ed3e959d5866b02a1b78b6a5b5.html#a47d754ed3e959d5866b02a1b78b6a5b5">g</a>, const std::string &amp;parameter)</td></tr>
-<tr class="separator:ac84d8b9a5843d4caf3d836dadf424d5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a893fe8c8d2d37adf5214d1ba776ef64d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpism_1_1PCFactory_a893fe8c8d2d37adf5214d1ba776ef64d.html#a893fe8c8d2d37adf5214d1ba776ef64d">PCFactory</a> (std::shared_ptr&lt; const <a class="el" href="classpism_1_1Grid.html">Grid</a> &gt; <a class="el" href="namespacepism_a47d754ed3e959d5866b02a1b78b6a5b5.html#a47d754ed3e959d5866b02a1b78b6a5b5">g</a>, const std::string &amp;parameter)</td></tr>
+<tr class="separator:a893fe8c8d2d37adf5214d1ba776ef64d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a08c924fb446a8e783682620f8f5b298a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpism_1_1PCFactory_a08c924fb446a8e783682620f8f5b298a.html#a08c924fb446a8e783682620f8f5b298a">~PCFactory</a> ()</td></tr>
 <tr class="separator:a08c924fb446a8e783682620f8f5b298a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe2d723d2d4c2705782546ce0b9d57c2"><td class="memItemLeft" align="right" valign="top">virtual std::shared_ptr&lt; Model &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpism_1_1PCFactory_afe2d723d2d4c2705782546ce0b9d57c2.html#afe2d723d2d4c2705782546ce0b9d57c2">create</a> ()</td></tr>
 <tr class="memdesc:afe2d723d2d4c2705782546ce0b9d57c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a boundary model. Processes command-line options.  <a href="classpism_1_1PCFactory_afe2d723d2d4c2705782546ce0b9d57c2.html#afe2d723d2d4c2705782546ce0b9d57c2">More...</a><br /></td></tr>
 <tr class="separator:afe2d723d2d4c2705782546ce0b9d57c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5537228ada7998c20d0fe04117d6737a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpism_1_1PCFactory_a5537228ada7998c20d0fe04117d6737a.html#a5537228ada7998c20d0fe04117d6737a">validate</a> (const std::string &amp;list) const</td></tr>
+<tr class="separator:a5537228ada7998c20d0fe04117d6737a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa85e1df86aab1ac93a8d2b8f06e89622"><td class="memItemLeft" align="right" valign="top">virtual std::shared_ptr&lt; Model &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpism_1_1PCFactory_aa85e1df86aab1ac93a8d2b8f06e89622.html#aa85e1df86aab1ac93a8d2b8f06e89622">create</a> (const std::string &amp;type)</td></tr>
 <tr class="memdesc:aa85e1df86aab1ac93a8d2b8f06e89622"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a boundary model.  <a href="classpism_1_1PCFactory_aa85e1df86aab1ac93a8d2b8f06e89622.html#aa85e1df86aab1ac93a8d2b8f06e89622">More...</a><br /></td></tr>
 <tr class="separator:aa85e1df86aab1ac93a8d2b8f06e89622"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -128,9 +130,9 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a33d1c0b7ed5a6ccfd0ce02e88315d233"><td class="memTemplParams" colspan="2">template&lt;class M &gt; </td></tr>
 <tr class="memitem:a33d1c0b7ed5a6ccfd0ce02e88315d233"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classpism_1_1PCFactory_a33d1c0b7ed5a6ccfd0ce02e88315d233.html#a33d1c0b7ed5a6ccfd0ce02e88315d233">add_modifier</a> (const std::string &amp;name)</td></tr>
 <tr class="separator:a33d1c0b7ed5a6ccfd0ce02e88315d233"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3c2271013e96d7075a9a6d9599598334"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a3c2271013e96d7075a9a6d9599598334"><td class="memTemplItemLeft" align="right" valign="top">std::string&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classpism_1_1PCFactory_a3c2271013e96d7075a9a6d9599598334.html#a3c2271013e96d7075a9a6d9599598334">key_list</a> (std::map&lt; std::string, T &gt; list)</td></tr>
-<tr class="separator:a3c2271013e96d7075a9a6d9599598334"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0e723737c5b48bcb9446bf5aa178760"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:aa0e723737c5b48bcb9446bf5aa178760"><td class="memTemplItemLeft" align="right" valign="top">std::string&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classpism_1_1PCFactory_aa0e723737c5b48bcb9446bf5aa178760.html#aa0e723737c5b48bcb9446bf5aa178760">key_list</a> (std::map&lt; std::string, T &gt; list) const</td></tr>
+<tr class="separator:aa0e723737c5b48bcb9446bf5aa178760"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a310407e3a668cdeaa9307790b1334cce"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; Model &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpism_1_1PCFactory_a310407e3a668cdeaa9307790b1334cce.html#a310407e3a668cdeaa9307790b1334cce">model</a> (const std::string &amp;type)</td></tr>
 <tr class="separator:a310407e3a668cdeaa9307790b1334cce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c93e578b2efff7f2b46767e7e4c6cd2"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
@@ -145,8 +147,8 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:afb630bcc605fcff4b5f98d812f5d7840"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7dd3998e3ec60ba0175206e2cec2a1fd"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, std::shared_ptr&lt; <a class="el" href="classpism_1_1PCFactory_1_1ModifierCreator.html">ModifierCreator</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpism_1_1PCFactory_a7dd3998e3ec60ba0175206e2cec2a1fd.html#a7dd3998e3ec60ba0175206e2cec2a1fd">m_modifiers</a></td></tr>
 <tr class="separator:a7dd3998e3ec60ba0175206e2cec2a1fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa13a58069bb33a943cba5c6b40a1172"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpism_1_1IceGrid_aa59b13ca1f14efc1555016e2b8a8b1ac.html#aa59b13ca1f14efc1555016e2b8a8b1ac">IceGrid::ConstPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpism_1_1PCFactory_aaa13a58069bb33a943cba5c6b40a1172.html#aaa13a58069bb33a943cba5c6b40a1172">m_grid</a></td></tr>
-<tr class="separator:aaa13a58069bb33a943cba5c6b40a1172"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a3eb042c32635473c1306b7782d1726"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; const <a class="el" href="classpism_1_1Grid.html">Grid</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpism_1_1PCFactory_a6a3eb042c32635473c1306b7782d1726.html#a6a3eb042c32635473c1306b7782d1726">m_grid</a></td></tr>
+<tr class="separator:a6a3eb042c32635473c1306b7782d1726"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;class Model&gt;<br />

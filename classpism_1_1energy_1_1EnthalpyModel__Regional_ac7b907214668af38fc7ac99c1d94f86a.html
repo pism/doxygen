@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PISM, A Parallel Ice Sheet Model
-   &#160;<span id="projectnumber">stable v2.0.7 committed by Constantine Khrulev on 2023-11-21 12:49:11 -0900</span>
+   &#160;<span id="projectnumber">stable v2.1 committed by Constantine Khrulev on 2023-11-23 11:24:22 -0900</span>
    </div>
   </td>
  </tr>
@@ -79,11 +79,11 @@ $(function() {
    <td valign="top">
       <div class="navtab">
         <table>
-          <tr><td class="navtab"><a class="navtab" href="classpism_1_1energy_1_1EnthalpyModel__Regional_a55b276c14d6bb4a32af714e5162e3c35.html#a55b276c14d6bb4a32af714e5162e3c35">bootstrap_impl</a></td></tr>
-          <tr><td class="navtab"><a class="navtab" href="classpism_1_1energy_1_1EnthalpyModel__Regional_a4aec68950f34e5759a2641772decaf14.html#a4aec68950f34e5759a2641772decaf14">EnthalpyModel_Regional</a></td></tr>
-          <tr><td class="navtab"><a class="navtab" href="classpism_1_1energy_1_1EnthalpyModel__Regional_a6fa8f14fb61a616a59e69e79739e1447.html#a6fa8f14fb61a616a59e69e79739e1447">initialize_impl</a></td></tr>
-          <tr><td class="navtab"><a class="navtab" href="classpism_1_1energy_1_1EnthalpyModel__Regional_a923b9d60c67231f1ddc8a9dd33d5601a.html#a923b9d60c67231f1ddc8a9dd33d5601a">m_basal_melt_rate_stored</a></td></tr>
-          <tr><td class="navtab"><a class="navtab" href="classpism_1_1energy_1_1EnthalpyModel__Regional_a112b4b3b3d1f17b18d9c988b1521c921.html#a112b4b3b3d1f17b18d9c988b1521c921">m_no_model_mask</a></td></tr>
+          <tr><td class="navtab"><a class="navtab" href="classpism_1_1energy_1_1EnthalpyModel__Regional_a68c58a18b524f9134a841592aad660e5.html#a68c58a18b524f9134a841592aad660e5">bootstrap_impl</a></td></tr>
+          <tr><td class="navtab"><a class="navtab" href="classpism_1_1energy_1_1EnthalpyModel__Regional_a5bde3da8a15efdda0e6f88270669a10c.html#a5bde3da8a15efdda0e6f88270669a10c">EnthalpyModel_Regional</a></td></tr>
+          <tr><td class="navtab"><a class="navtab" href="classpism_1_1energy_1_1EnthalpyModel__Regional_a397b30a9d4257de758b17d7b43fb1a0d.html#a397b30a9d4257de758b17d7b43fb1a0d">initialize_impl</a></td></tr>
+          <tr><td class="navtab"><a class="navtab" href="classpism_1_1energy_1_1EnthalpyModel__Regional_ab491830d603c3cbad0a3b959f8480254.html#ab491830d603c3cbad0a3b959f8480254">m_basal_melt_rate_stored</a></td></tr>
+          <tr><td class="navtab"><a class="navtab" href="classpism_1_1energy_1_1EnthalpyModel__Regional_a1a2d648e04a2c9296c4f276411e0c05a.html#a1a2d648e04a2c9296c4f276411e0c05a">m_no_model_mask</a></td></tr>
           <tr><td class="navtab"><a class="navtab" href="classpism_1_1energy_1_1EnthalpyModel__Regional_a5b72b88cb9d573e51a7683f0a83a009a.html#a5b72b88cb9d573e51a7683f0a83a009a">restart_impl</a></td></tr>
           <tr><td class="navtabHL"><a class="navtab" href="classpism_1_1energy_1_1EnthalpyModel__Regional_ac7b907214668af38fc7ac99c1d94f86a.html#ac7b907214668af38fc7ac99c1d94f86a">update_impl</a></td></tr>
         </table>
@@ -132,15 +132,15 @@ $(function() {
 
 <p>Update ice enthalpy field based on conservation of energy. </p>
 <p>This method is documented by the page bombproofenth and by [<a class="el" href="references.html#AschwandenBuelerKhroulevBlatter">AschwandenBuelerKhroulevBlatter</a>].</p>
-<p>This method updates <a class="el" href="classpism_1_1IceModelVec3.html" title="A virtual class collecting methods common to ice and bedrock 3D fields.">IceModelVec3</a> m_work and <a class="el" href="classpism_1_1IceModelVec2S.html">IceModelVec2S</a> basal_melt_rate. No communication of ghosts is done for any of these fields.</p>
+<p>This method updates <a class="el" href="classpism_1_1array_1_1Array3D.html" title="A virtual class collecting methods common to ice and bedrock 3D fields.">array::Array3D</a> m_work and <a class="el" href="classpism_1_1array_1_1Scalar.html">array::Scalar</a> basal_melt_rate. No communication of ghosts is done for any of these fields.</p>
 <p>We use an instance of <a class="el" href="classpism_1_1energy_1_1enthSystemCtx.html" title="Tridiagonal linear system for conservation of energy in vertical column of ice enthalpy.">enthSystemCtx</a>.</p>
 <p>Regarding drainage, see [<a class="el" href="references.html#AschwandenBuelerKhroulevBlatter">AschwandenBuelerKhroulevBlatter</a>] and references therein. </p>
 
 <p>Reimplemented from <a class="el" href="classpism_1_1energy_1_1EnthalpyModel_a347f6f418a43999636792e8226e214c9.html#a347f6f418a43999636792e8226e214c9">pism::energy::EnthalpyModel</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="EnthalpyModel__Regional_8cc_source.html#l00071">71</a> of file <a class="el" href="EnthalpyModel__Regional_8cc_source.html">EnthalpyModel_Regional.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EnthalpyModel__Regional_8cc_source.html#l00070">70</a> of file <a class="el" href="EnthalpyModel__Regional_8cc_source.html">EnthalpyModel_Regional.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="iceModelVec3_8cc_source.html#l00135">pism::IceModelVec3::get_column()</a>, <a class="el" href="exactTestP_8cc_source.html#l00045">pism::k</a>, <a class="el" href="EnergyModel_8hh_source.html#l00141">pism::energy::EnergyModel::m_basal_melt_rate</a>, <a class="el" href="EnthalpyModel__Regional_8hh_source.html#l00051">m_basal_melt_rate_stored</a>, <a class="el" href="Component_8hh_source.html#l00136">pism::Component::m_grid</a>, <a class="el" href="EnergyModel_8hh_source.html#l00139">pism::energy::EnergyModel::m_ice_enthalpy</a>, <a class="el" href="EnergyModel_8hh_source.html#l00140">pism::energy::EnergyModel::m_work</a>, <a class="el" href="IceGrid_8hh_source.html#l00381">pism::PointsWithGhosts::next()</a>, <a class="el" href="EnergyModel_8hh_source.html#l00057">pism::energy::Inputs::no_model_mask</a>, and <a class="el" href="classpism_1_1energy_1_1EnthalpyModel_ac1de468c17185324adc4864e021f9370.html#ac1de468c17185324adc4864e021f9370">pism::energy::EnthalpyModel::update_impl()</a>.</p>
+<p class="reference">References <a class="el" href="Array3D_8cc_source.html#l00120">pism::array::Array3D::get_column()</a>, <a class="el" href="exactTestP_8cc_source.html#l00042">pism::k</a>, <a class="el" href="EnergyModel_8hh_source.html#l00143">pism::energy::EnergyModel::m_basal_melt_rate</a>, <a class="el" href="EnthalpyModel__Regional_8hh_source.html#l00052">m_basal_melt_rate_stored</a>, <a class="el" href="Component_8hh_source.html#l00156">pism::Component::m_grid</a>, <a class="el" href="EnergyModel_8hh_source.html#l00141">pism::energy::EnergyModel::m_ice_enthalpy</a>, <a class="el" href="EnergyModel_8hh_source.html#l00142">pism::energy::EnergyModel::m_work</a>, <a class="el" href="EnergyModel_8hh_source.html#l00058">pism::energy::Inputs::no_model_mask</a>, and <a class="el" href="classpism_1_1energy_1_1EnthalpyModel_ac1de468c17185324adc4864e021f9370.html#ac1de468c17185324adc4864e021f9370">pism::energy::EnthalpyModel::update_impl()</a>.</p>
 
 </div>
 </div>

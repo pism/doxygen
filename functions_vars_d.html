@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PISM, A Parallel Ice Sheet Model
-   &#160;<span id="projectnumber">stable v2.0.7 committed by Constantine Khrulev on 2023-11-21 12:49:11 -0900</span>
+   &#160;<span id="projectnumber">stable v2.1 committed by Constantine Khrulev on 2023-11-23 11:24:22 -0900</span>
    </div>
   </td>
  </tr>
@@ -77,13 +77,13 @@ $(function() {
 : <a class="el" href="structpism_1_1bed_1_1vd__params_acfdc081de808aa7365d19ed24d96c92a.html#acfdc081de808aa7365d19ed24d96c92a">pism::bed::vd_params</a>
 </li>
 <li>da
-: <a class="el" href="structpism_1_1IceModelVec2T_1_1Data_a9dd17ab7c0a5a25cca29e065d922b513.html#a9dd17ab7c0a5a25cca29e065d922b513">pism::IceModelVec2T::Data</a>
-, <a class="el" href="structpism_1_1IceModelVec_1_1Impl_a15290394a0401eed99ba6b81f85252a1.html#a15290394a0401eed99ba6b81f85252a1">pism::IceModelVec::Impl</a>
+: <a class="el" href="structpism_1_1array_1_1Array_1_1Impl_aed733ad520c76599d407b7059831e49a.html#aed733ad520c76599d407b7059831e49a">pism::array::Array::Impl</a>
+, <a class="el" href="structpism_1_1array_1_1Forcing_1_1Data_a7b52933146a908f1389f3005a400dc48.html#a7b52933146a908f1389f3005a400dc48">pism::array::Forcing::Data</a>
 , <a class="el" href="structpism_1_1SNESProblem_1_1CallbackData_a42d36941e1504b93a59862c581cbecad.html#a42d36941e1504b93a59862c581cbecad">pism::SNESProblem&lt; DOF, U &gt;::CallbackData</a>
 , <a class="el" href="structpism_1_1stressbalance_1_1SSAFEM_1_1CallbackData_a0d1c9773a616c6ac3a2c615ef75cd6cd.html#a0d1c9773a616c6ac3a2c615ef75cd6cd">pism::stressbalance::SSAFEM::CallbackData</a>
 </li>
 <li>da_stencil_width
-: <a class="el" href="structpism_1_1IceModelVec_1_1Impl_a26d67892f668956811c61b0745716ed5.html#a26d67892f668956811c61b0745716ed5">pism::IceModelVec::Impl</a>
+: <a class="el" href="structpism_1_1array_1_1Array_1_1Impl_a961bf463efac459983019621ea7594d1.html#a961bf463efac459983019621ea7594d1">pism::array::Array::Impl</a>
 </li>
 <li>data
 : <a class="el" href="structhypercube_a05efd9d0d7cda1e662a817a31a72f95e.html#a05efd9d0d7cda1e662a817a31a72f95e">hypercube</a>
@@ -99,8 +99,15 @@ $(function() {
 <li>day_x
 : <a class="el" href="structcccalendar_adcb72d1c33d392c0a8765b01e9de929a.html#adcb72d1c33d392c0a8765b01e9de929a">cccalendar</a>
 </li>
+<li>declination
+: <a class="el" href="structpism_1_1surface_1_1DEBMSimplePointwise_1_1OrbitalParameters_ace28dfbd086c2673d0ae387755e50270.html#ace28dfbd086c2673d0ae387755e50270">pism::surface::DEBMSimplePointwise::OrbitalParameters</a>
+</li>
 <li>DELTA
 : <a class="el" href="classpism_1_1icebin_1_1MassEnergyBudget_a41b90390e6a4a180a72237c10d0bb191.html#a41b90390e6a4a180a72237c10d0bb191">pism::icebin::MassEnergyBudget</a>
+</li>
+<li>deltah
+: <a class="el" href="classpism_1_1icebin_1_1IBSurfaceModel_a677e40df7966d16c863e2c6759b2ed14.html#a677e40df7966d16c863e2c6759b2ed14">pism::icebin::IBSurfaceModel</a>
+, <a class="el" href="classpism_1_1icebin_1_1MassEnergyBudget_afc2bab7d07a5e4ca76a836d882a1431c.html#afc2bab7d07a5e4ca76a836d882a1431c">pism::icebin::MassEnergyBudget</a>
 </li>
 <li>destroy
 : <a class="el" href="structrule__s_af65ca31b5bdf5af687feb0e425e7891b.html#af65ca31b5bdf5af687feb0e425e7891b">rule_s</a>
@@ -114,17 +121,23 @@ $(function() {
 : <a class="el" href="structhypercube_aeddaba030927cfda2e83e44cf328bd4b.html#aeddaba030927cfda2e83e44cf328bd4b">hypercube</a>
 , <a class="el" href="structrule__s_af7da963873083001946994f19d2ee426.html#af7da963873083001946994f19d2ee426">rule_s</a>
 </li>
+<li>dimension_types
+: <a class="el" href="classpism_1_1grid_1_1InputGridInfo_a9c747f5478dda466fe51719f7b271d04.html#a9c747f5478dda466fe51719f7b271d04">pism::grid::InputGridInfo</a>
+</li>
 <li>dimensionless
 : <a class="el" href="classpism_1_1stressbalance_1_1SSATestCasePlug_afa80774d031fb0ac285fa6e4e2615d52.html#afa80774d031fb0ac285fa6e4e2615d52">pism::stressbalance::SSATestCasePlug</a>
 </li>
+<li>distance_factor
+: <a class="el" href="structpism_1_1surface_1_1DEBMSimplePointwise_1_1OrbitalParameters_a4af0a1e268655b316a49eee6db24cf41.html#a4af0a1e268655b316a49eee6db24cf41">pism::surface::DEBMSimplePointwise::OrbitalParameters</a>
+</li>
 <li>dm_scalar_global
-: <a class="el" href="structpism_1_1IceGrid_1_1Impl_a4634d34b6f5893ce71ea6d313934696e.html#a4634d34b6f5893ce71ea6d313934696e">pism::IceGrid::Impl</a>
+: <a class="el" href="structpism_1_1Grid_1_1Impl_a6f755a4b5661f98c300f0a8cadd442a6.html#a6f755a4b5661f98c300f0a8cadd442a6">pism::Grid::Impl</a>
 </li>
 <li>dms
-: <a class="el" href="structpism_1_1IceGrid_1_1Impl_aa326aa6ae7c6248a532a56f9c4b161d3.html#aa326aa6ae7c6248a532a56f9c4b161d3">pism::IceGrid::Impl</a>
+: <a class="el" href="structpism_1_1Grid_1_1Impl_ab308f0067a79103036f91f1fabe35bd0.html#ab308f0067a79103036f91f1fabe35bd0">pism::Grid::Impl</a>
 </li>
 <li>dof
-: <a class="el" href="structpism_1_1IceModelVec_1_1Impl_a9b2954045de1dd0ad0c1e1224697bc4e.html#a9b2954045de1dd0ad0c1e1224697bc4e">pism::IceModelVec::Impl</a>
+: <a class="el" href="structpism_1_1array_1_1Array_1_1Impl_afed8669b7b65408241944b89f5d5eaf8.html#afed8669b7b65408241944b89f5d5eaf8">pism::array::Array::Impl</a>
 </li>
 <li>DR2
 : <a class="el" href="classpism_1_1energy_1_1DrainageCalculator_a4c50d69ddbf2122c78777a13570976ad.html#a4c50d69ddbf2122c78777a13570976ad">pism::energy::DrainageCalculator</a>
@@ -133,7 +146,7 @@ $(function() {
 : <a class="el" href="classpism_1_1energy_1_1DrainageCalculator_a659e9035518602ac36104d576dec1eff.html#a659e9035518602ac36104d576dec1eff">pism::energy::DrainageCalculator</a>
 </li>
 <li>driving_stress
-: <a class="el" href="structpism_1_1stressbalance_1_1SSAFEM_1_1Coefficients_ad19e7f89aa3a5b998b7a67684c045189.html#ad19e7f89aa3a5b998b7a67684c045189">pism::stressbalance::SSAFEM::Coefficients</a>
+: <a class="el" href="structpism_1_1stressbalance_1_1SSAFEM_1_1Coefficients_a9a9673d2ed9996eed90bb891a3f774de.html#a9a9673d2ed9996eed90bb891a3f774de">pism::stressbalance::SSAFEM::Coefficients</a>
 </li>
 <li>Drr
 : <a class="el" href="structTestMParameters_a579bd90bd1f4a4d6aa056bd3251d0ef1.html#a579bd90bd1f4a4d6aa056bd3251d0ef1">TestMParameters</a>
@@ -146,7 +159,7 @@ $(function() {
 : <a class="el" href="structpism_1_1CFLData_ac8552efe8035be0521118151d653bf5a.html#ac8552efe8035be0521118151d653bf5a">pism::CFLData</a>
 </li>
 <li>dt_min
-: <a class="el" href="structpism_1_1IceModelVec2T_1_1Data_a47a8d1c6bc790efea1d808410fd9b60c.html#a47a8d1c6bc790efea1d808410fd9b60c">pism::IceModelVec2T::Data</a>
+: <a class="el" href="structpism_1_1array_1_1Forcing_1_1Data_a54cbfcfdd28f929c2f44597b522dbdf6.html#a54cbfcfdd28f929c2f44597b522dbdf6">pism::array::Forcing::Data</a>
 </li>
 <li>dt_TempAge
 : <a class="el" href="classpism_1_1IceModel_aefb916c38c8baf636ddc358f2467b0d7.html#aefb916c38c8baf636ddc358f2467b0d7">pism::IceModel</a>
@@ -154,12 +167,12 @@ $(function() {
 <li>dx
 : <a class="el" href="structpism_1_1bed_1_1ge__data_a2a1be1ea6bf75473331ccebf591b81f2.html#a2a1be1ea6bf75473331ccebf591b81f2">pism::bed::ge_data</a>
 , <a class="el" href="structpism_1_1fem_1_1Germ_afef00876912306f50415036a6b2073dc.html#afef00876912306f50415036a6b2073dc">pism::fem::Germ</a>
-, <a class="el" href="structpism_1_1IceGrid_1_1Impl_a6388140b4118297d93a4e23911e45482.html#a6388140b4118297d93a4e23911e45482">pism::IceGrid::Impl</a>
+, <a class="el" href="structpism_1_1Grid_1_1Impl_a46da6466140aec047537448045365505.html#a46da6466140aec047537448045365505">pism::Grid::Impl</a>
 </li>
 <li>dy
 : <a class="el" href="structpism_1_1bed_1_1ge__data_ab9210023d6b79f2391ba94b99a0b4a9f.html#ab9210023d6b79f2391ba94b99a0b4a9f">pism::bed::ge_data</a>
 , <a class="el" href="structpism_1_1fem_1_1Germ_a049a429410ad48bb357c2ca2004b0df5.html#a049a429410ad48bb357c2ca2004b0df5">pism::fem::Germ</a>
-, <a class="el" href="structpism_1_1IceGrid_1_1Impl_ae0a0b3aa49fee0be254a87c6cb88986f.html#ae0a0b3aa49fee0be254a87c6cb88986f">pism::IceGrid::Impl</a>
+, <a class="el" href="structpism_1_1Grid_1_1Impl_abd547e0a73e31370afd2749f88b7d543.html#abd547e0a73e31370afd2749f88b7d543">pism::Grid::Impl</a>
 </li>
 <li>dz
 : <a class="el" href="structpism_1_1fem_1_1Germ_abb1017c75e3b1e88daef21bd0b180485.html#abb1017c75e3b1e88daef21bd0b180485">pism::fem::Germ</a>

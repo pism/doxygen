@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PISM, A Parallel Ice Sheet Model
-   &#160;<span id="projectnumber">stable v2.0.7 committed by Constantine Khrulev on 2023-11-21 12:49:11 -0900</span>
+   &#160;<span id="projectnumber">stable v2.1 committed by Constantine Khrulev on 2023-11-23 11:24:22 -0900</span>
    </div>
   </td>
  </tr>
@@ -78,7 +78,7 @@ $(function() {
 <div class="title">TaoUtil.cc</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="TaoUtil_8cc.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// Copyright (C) 2012, 2014, 2015  David Maxwell and Constantine Khroulev</span></div>
+<a href="TaoUtil_8cc.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// Copyright (C) 2012, 2014, 2015, 2023  David Maxwell and Constantine Khroulev</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">// This file is part of PISM.</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">//</span></div>
@@ -96,7 +96,7 @@ $(function() {
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">// along with PISM; if not, write to the Free Software</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">// Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="TaoUtil_8hh.html">TaoUtil.hh</a>&quot;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &quot;pism/inverse/TaoUtil.hh&quot;</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacepism.html">pism</a> {</div>
 <div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="namespacepism_1_1taoutil.html">   22</a></span>&#160;<span class="keyword">namespace </span>taoutil {</div>
@@ -114,12 +114,11 @@ $(function() {
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;} <span class="comment">// end of namespace taoutil</span></div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;} <span class="comment">// end of namespace pism</span></div>
-<div class="ttc" id="aTaoUtil_8hh_html"><div class="ttname"><a href="TaoUtil_8hh.html">TaoUtil.hh</a></div></div>
-<div class="ttc" id="aclasspism_1_1TerminationReason_a54f777c9b17ba06926909c7856a8351c_html_a54f777c9b17ba06926909c7856a8351c"><div class="ttname"><a href="classpism_1_1TerminationReason_a54f777c9b17ba06926909c7856a8351c.html#a54f777c9b17ba06926909c7856a8351c">pism::TerminationReason::m_reason</a></div><div class="ttdeci">int m_reason</div><div class="ttdef"><b>Definition:</b> <a href="TerminationReason_8hh_source.html#l00096">TerminationReason.hh:96</a></div></div>
-<div class="ttc" id="aclasspism_1_1TerminationReason_ad7b7a7c3a00398ebe23e389ffa60f9cf_html_ad7b7a7c3a00398ebe23e389ffa60f9cf"><div class="ttname"><a href="classpism_1_1TerminationReason_ad7b7a7c3a00398ebe23e389ffa60f9cf.html#ad7b7a7c3a00398ebe23e389ffa60f9cf">pism::TerminationReason::sm_indent</a></div><div class="ttdeci">static const char * sm_indent</div><div class="ttdef"><b>Definition:</b> <a href="TerminationReason_8hh_source.html#l00098">TerminationReason.hh:98</a></div></div>
+<div class="ttc" id="aclasspism_1_1TerminationReason_a54f777c9b17ba06926909c7856a8351c_html_a54f777c9b17ba06926909c7856a8351c"><div class="ttname"><a href="classpism_1_1TerminationReason_a54f777c9b17ba06926909c7856a8351c.html#a54f777c9b17ba06926909c7856a8351c">pism::TerminationReason::m_reason</a></div><div class="ttdeci">int m_reason</div><div class="ttdef"><b>Definition:</b> <a href="TerminationReason_8hh_source.html#l00094">TerminationReason.hh:94</a></div></div>
+<div class="ttc" id="aclasspism_1_1TerminationReason_ad7b7a7c3a00398ebe23e389ffa60f9cf_html_ad7b7a7c3a00398ebe23e389ffa60f9cf"><div class="ttname"><a href="classpism_1_1TerminationReason_ad7b7a7c3a00398ebe23e389ffa60f9cf.html#ad7b7a7c3a00398ebe23e389ffa60f9cf">pism::TerminationReason::sm_indent</a></div><div class="ttdeci">static const char * sm_indent</div><div class="ttdef"><b>Definition:</b> <a href="TerminationReason_8hh_source.html#l00096">TerminationReason.hh:96</a></div></div>
 <div class="ttc" id="aclasspism_1_1taoutil_1_1TAOTerminationReason_a1fe8106db2431d6c25eabca1bf9c2f00_html_a1fe8106db2431d6c25eabca1bf9c2f00"><div class="ttname"><a href="classpism_1_1taoutil_1_1TAOTerminationReason_a1fe8106db2431d6c25eabca1bf9c2f00.html#a1fe8106db2431d6c25eabca1bf9c2f00">pism::taoutil::TAOTerminationReason::TAOTerminationReason</a></div><div class="ttdeci">TAOTerminationReason(TaoConvergedReason r)</div><div class="ttdef"><b>Definition:</b> <a href="TaoUtil_8cc_source.html#l00024">TaoUtil.cc:24</a></div></div>
 <div class="ttc" id="aclasspism_1_1taoutil_1_1TAOTerminationReason_a200537afba3a63894cf199ee2f926bb9_html_a200537afba3a63894cf199ee2f926bb9"><div class="ttname"><a href="classpism_1_1taoutil_1_1TAOTerminationReason_a200537afba3a63894cf199ee2f926bb9.html#a200537afba3a63894cf199ee2f926bb9">pism::taoutil::TAOTerminationReason::get_description</a></div><div class="ttdeci">virtual void get_description(std::ostream &amp;desc, int indent_level=0)</div><div class="ttdef"><b>Definition:</b> <a href="TaoUtil_8cc_source.html#l00028">TaoUtil.cc:28</a></div></div>
-<div class="ttc" id="anamespacepism_html"><div class="ttname"><a href="namespacepism.html">pism</a></div><div class="ttdef"><b>Definition:</b> <a href="AgeColumnSystem_8cc_source.html#l00024">AgeColumnSystem.cc:24</a></div></div>
+<div class="ttc" id="anamespacepism_html"><div class="ttname"><a href="namespacepism.html">pism</a></div><div class="ttdef"><b>Definition:</b> <a href="AgeColumnSystem_8cc_source.html#l00023">AgeColumnSystem.cc:23</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

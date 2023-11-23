@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PISM, A Parallel Ice Sheet Model
-   &#160;<span id="projectnumber">stable v2.0.7 committed by Constantine Khrulev on 2023-11-21 12:49:11 -0900</span>
+   &#160;<span id="projectnumber">stable v2.1 committed by Constantine Khrulev on 2023-11-23 11:24:22 -0900</span>
    </div>
   </td>
  </tr>
@@ -88,24 +88,24 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ae298a2e89198f2af56f7cb6ee09bffd3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpism_1_1Poisson_ae298a2e89198f2af56f7cb6ee09bffd3.html#ae298a2e89198f2af56f7cb6ee09bffd3">Poisson</a> (<a class="el" href="classpism_1_1IceGrid_aa59b13ca1f14efc1555016e2b8a8b1ac.html#aa59b13ca1f14efc1555016e2b8a8b1ac">IceGrid::ConstPtr</a> grid)</td></tr>
-<tr class="separator:ae298a2e89198f2af56f7cb6ee09bffd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a09804c6bfe0417e980055853929832d1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpism_1_1Poisson_a09804c6bfe0417e980055853929832d1.html#a09804c6bfe0417e980055853929832d1">solve</a> (const <a class="el" href="classpism_1_1IceModelVec2Int.html">IceModelVec2Int</a> &amp;mask, const <a class="el" href="classpism_1_1IceModelVec2S.html">IceModelVec2S</a> &amp;bc, double rhs, bool reuse_matrix=false)</td></tr>
-<tr class="separator:a09804c6bfe0417e980055853929832d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad8fe049b2bb7190ca3faf2639d1fd763"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classpism_1_1IceModelVec2S.html">IceModelVec2S</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpism_1_1Poisson_ad8fe049b2bb7190ca3faf2639d1fd763.html#ad8fe049b2bb7190ca3faf2639d1fd763">solution</a> () const</td></tr>
-<tr class="separator:ad8fe049b2bb7190ca3faf2639d1fd763"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac379870018096d7ced9951db0466ad55"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpism_1_1Poisson_ac379870018096d7ced9951db0466ad55.html#ac379870018096d7ced9951db0466ad55">Poisson</a> (std::shared_ptr&lt; const <a class="el" href="classpism_1_1Grid.html">Grid</a> &gt; grid)</td></tr>
+<tr class="separator:ac379870018096d7ced9951db0466ad55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03b7c96e795a576adb49f05dcbc8928d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpism_1_1Poisson_a03b7c96e795a576adb49f05dcbc8928d.html#a03b7c96e795a576adb49f05dcbc8928d">solve</a> (const <a class="el" href="classpism_1_1array_1_1Scalar.html">array::Scalar</a> &amp;mask, const <a class="el" href="classpism_1_1array_1_1Scalar.html">array::Scalar</a> &amp;bc, double rhs, bool reuse_matrix=false)</td></tr>
+<tr class="separator:a03b7c96e795a576adb49f05dcbc8928d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a54796bc7126e8027f91f7500d3bf1b"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classpism_1_1array_1_1Scalar.html">array::Scalar</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpism_1_1Poisson_a7a54796bc7126e8027f91f7500d3bf1b.html#a7a54796bc7126e8027f91f7500d3bf1b">solution</a> () const</td></tr>
+<tr class="separator:a7a54796bc7126e8027f91f7500d3bf1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:a6222b83a9a7e474fda876eebf53053ff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpism_1_1Poisson_a6222b83a9a7e474fda876eebf53053ff.html#a6222b83a9a7e474fda876eebf53053ff">assemble_matrix</a> (const <a class="el" href="classpism_1_1IceModelVec2Int.html">IceModelVec2Int</a> &amp;mask, Mat A)</td></tr>
-<tr class="separator:a6222b83a9a7e474fda876eebf53053ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4433758c22a3302acc1c32f0f3b0aa7f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpism_1_1Poisson_a4433758c22a3302acc1c32f0f3b0aa7f.html#a4433758c22a3302acc1c32f0f3b0aa7f">assemble_rhs</a> (double rhs, const <a class="el" href="classpism_1_1IceModelVec2Int.html">IceModelVec2Int</a> &amp;mask, const <a class="el" href="classpism_1_1IceModelVec2S.html">IceModelVec2S</a> &amp;bc, <a class="el" href="classpism_1_1IceModelVec2S.html">IceModelVec2S</a> &amp;b)</td></tr>
-<tr class="separator:a4433758c22a3302acc1c32f0f3b0aa7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c633c6408e69039f6b6460e05665c85"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpism_1_1Poisson_a0c633c6408e69039f6b6460e05665c85.html#a0c633c6408e69039f6b6460e05665c85">assemble_matrix</a> (const <a class="el" href="classpism_1_1array_1_1Scalar1.html">array::Scalar1</a> &amp;mask, Mat A)</td></tr>
+<tr class="separator:a0c633c6408e69039f6b6460e05665c85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98c736c38c86c7467f48411d7fe0e958"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpism_1_1Poisson_a98c736c38c86c7467f48411d7fe0e958.html#a98c736c38c86c7467f48411d7fe0e958">assemble_rhs</a> (double rhs, const <a class="el" href="classpism_1_1array_1_1Scalar.html">array::Scalar</a> &amp;mask, const <a class="el" href="classpism_1_1array_1_1Scalar.html">array::Scalar</a> &amp;bc, <a class="el" href="classpism_1_1array_1_1Scalar.html">array::Scalar</a> &amp;b)</td></tr>
+<tr class="separator:a98c736c38c86c7467f48411d7fe0e958"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a922b199714ebcda72a54b9a0c39261a3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpism_1_1IceGrid_aa59b13ca1f14efc1555016e2b8a8b1ac.html#aa59b13ca1f14efc1555016e2b8a8b1ac">IceGrid::ConstPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpism_1_1Poisson_a922b199714ebcda72a54b9a0c39261a3.html#a922b199714ebcda72a54b9a0c39261a3">m_grid</a></td></tr>
-<tr class="separator:a922b199714ebcda72a54b9a0c39261a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38d62a185524e494ae8696757649d109"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; const <a class="el" href="classpism_1_1Grid.html">Grid</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpism_1_1Poisson_a38d62a185524e494ae8696757649d109.html#a38d62a185524e494ae8696757649d109">m_grid</a></td></tr>
+<tr class="separator:a38d62a185524e494ae8696757649d109"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc95971112ee8ce8a9572c4676a2819d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpism_1_1Logger_a18135415c4090dc0f946beca43fdcc76.html#a18135415c4090dc0f946beca43fdcc76">Logger::ConstPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpism_1_1Poisson_adc95971112ee8ce8a9572c4676a2819d.html#adc95971112ee8ce8a9572c4676a2819d">m_log</a></td></tr>
 <tr class="separator:adc95971112ee8ce8a9572c4676a2819d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f2b5c434cf1137f78b0023b5d9c94fb"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classpism_1_1petsc_1_1DM.html">petsc::DM</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpism_1_1Poisson_a8f2b5c434cf1137f78b0023b5d9c94fb.html#a8f2b5c434cf1137f78b0023b5d9c94fb">m_da</a></td></tr>
@@ -114,16 +114,16 @@ Private Attributes</h2></td></tr>
 <tr class="separator:aae52ce41436f9c21305ad59ae69aab5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2dd2b262b4952cad13a6c551bda9defb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpism_1_1petsc_1_1Mat.html">petsc::Mat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpism_1_1Poisson_a2dd2b262b4952cad13a6c551bda9defb.html#a2dd2b262b4952cad13a6c551bda9defb">m_A</a></td></tr>
 <tr class="separator:a2dd2b262b4952cad13a6c551bda9defb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a518697095c7dd306593761e5ac755526"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpism_1_1IceModelVec2S.html">IceModelVec2S</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpism_1_1Poisson_a518697095c7dd306593761e5ac755526.html#a518697095c7dd306593761e5ac755526">m_b</a></td></tr>
-<tr class="separator:a518697095c7dd306593761e5ac755526"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa181b2f9ad58dc292d79d2d13eb9d59b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpism_1_1IceModelVec2S.html">IceModelVec2S</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpism_1_1Poisson_aa181b2f9ad58dc292d79d2d13eb9d59b.html#aa181b2f9ad58dc292d79d2d13eb9d59b">m_x</a></td></tr>
-<tr class="separator:aa181b2f9ad58dc292d79d2d13eb9d59b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac4d5dfdf3bee8c411e2ce0deb9fdfd78"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpism_1_1IceModelVec2Int.html">IceModelVec2Int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpism_1_1Poisson_ac4d5dfdf3bee8c411e2ce0deb9fdfd78.html#ac4d5dfdf3bee8c411e2ce0deb9fdfd78">m_mask</a></td></tr>
-<tr class="separator:ac4d5dfdf3bee8c411e2ce0deb9fdfd78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa05e9fbbe4cdb337a16a647f8d03f6fd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpism_1_1array_1_1Scalar.html">array::Scalar</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpism_1_1Poisson_aa05e9fbbe4cdb337a16a647f8d03f6fd.html#aa05e9fbbe4cdb337a16a647f8d03f6fd">m_b</a></td></tr>
+<tr class="separator:aa05e9fbbe4cdb337a16a647f8d03f6fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc2967a0e3083ac712376297f8f873cf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpism_1_1array_1_1Scalar.html">array::Scalar</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpism_1_1Poisson_adc2967a0e3083ac712376297f8f873cf.html#adc2967a0e3083ac712376297f8f873cf">m_x</a></td></tr>
+<tr class="separator:adc2967a0e3083ac712376297f8f873cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d0a9fa6c5f4de46a48ef57432c90464"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpism_1_1array_1_1Scalar1.html">array::Scalar1</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpism_1_1Poisson_a9d0a9fa6c5f4de46a48ef57432c90464.html#a9d0a9fa6c5f4de46a48ef57432c90464">m_mask</a></td></tr>
+<tr class="separator:a9d0a9fa6c5f4de46a48ef57432c90464"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="Poisson_8hh_source.html#l00028">28</a> of file <a class="el" href="Poisson_8hh_source.html">Poisson.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Poisson_8hh_source.html#l00029">29</a> of file <a class="el" href="Poisson_8hh_source.html">Poisson.hh</a>.</p>
 </div><hr/>The documentation for this class was generated from the following files:<ul>
 <li>src/util/<a class="el" href="Poisson_8hh_source.html">Poisson.hh</a></li>
 <li>src/util/<a class="el" href="Poisson_8cc_source.html">Poisson.cc</a></li>

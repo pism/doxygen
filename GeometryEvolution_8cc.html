@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PISM, A Parallel Ice Sheet Model
-   &#160;<span id="projectnumber">stable v2.0.7 committed by Constantine Khrulev on 2023-11-21 12:49:11 -0900</span>
+   &#160;<span id="projectnumber">stable v2.1 committed by Constantine Khrulev on 2023-11-23 11:24:22 -0900</span>
    </div>
   </td>
  </tr>
@@ -82,16 +82,20 @@ $(function() {
 <div class="title">GeometryEvolution.cc File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="GeometryEvolution_8hh_source.html">GeometryEvolution.hh</a>&quot;</code><br />
-<code>#include &quot;pism/util/iceModelVec.hh&quot;</code><br />
-<code>#include &quot;pism/util/IceGrid.hh&quot;</code><br />
+<div class="textblock"><code>#include &quot;pism/geometry/GeometryEvolution.hh&quot;</code><br />
+<code>#include &quot;pism/util/Grid.hh&quot;</code><br />
 <code>#include &quot;pism/util/Mask.hh&quot;</code><br />
+<code>#include &quot;pism/util/array/CellType.hh&quot;</code><br />
+<code>#include &quot;pism/util/array/Scalar.hh&quot;</code><br />
+<code>#include &quot;pism/util/array/Staggered.hh&quot;</code><br />
+<code>#include &quot;pism/util/array/Vector.hh&quot;</code><br />
 <code>#include &quot;pism/geometry/part_grid_threshold_thickness.hh&quot;</code><br />
-<code>#include &quot;pism/util/pism_utilities.hh&quot;</code><br />
+<code>#include &quot;pism/util/Context.hh&quot;</code><br />
 <code>#include &quot;pism/util/Logger.hh&quot;</code><br />
 <code>#include &quot;pism/util/Profiling.hh&quot;</code><br />
-<code>#include &quot;pism/util/Context.hh&quot;</code><br />
-<code>#include &quot;<a class="el" href="flux__limiter_8hh_source.html">flux_limiter.hh</a>&quot;</code><br />
+<code>#include &quot;pism/util/interpolation.hh&quot;</code><br />
+<code>#include &quot;pism/util/pism_utilities.hh&quot;</code><br />
+<code>#include &quot;pism/geometry/flux_limiter.hh&quot;</code><br />
 </div>
 <p><a href="GeometryEvolution_8cc_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -121,10 +125,10 @@ Functions</h2></td></tr>
 <tr class="separator:ae6d6ca578538493981c9c6c167786700"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a40ceb33a97eadbe295a9313c23603ab5"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_a40ceb33a97eadbe295a9313c23603ab5.html#a40ceb33a97eadbe295a9313c23603ab5">pism::effective_change</a> (double H, double dH)</td></tr>
 <tr class="separator:a40ceb33a97eadbe295a9313c23603ab5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0bfeff259e45c743ebce368e46c3e213"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_a0bfeff259e45c743ebce368e46c3e213.html#a0bfeff259e45c743ebce368e46c3e213">pism::grounding_line_flux</a> (const IceModelVec2CellType &amp;cell_type, const IceModelVec2Stag &amp;flux, double dt, bool add_values, IceModelVec2S &amp;output)</td></tr>
-<tr class="separator:a0bfeff259e45c743ebce368e46c3e213"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a593acc9e625904a14c8466578453db5e"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_a593acc9e625904a14c8466578453db5e.html#a593acc9e625904a14c8466578453db5e">pism::total_grounding_line_flux</a> (const IceModelVec2CellType &amp;cell_type, const IceModelVec2Stag &amp;flux, double dt)</td></tr>
-<tr class="separator:a593acc9e625904a14c8466578453db5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94a457d3de3b80dc3021682f351dd28c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_a94a457d3de3b80dc3021682f351dd28c.html#a94a457d3de3b80dc3021682f351dd28c">pism::grounding_line_flux</a> (const array::CellType1 &amp;cell_type, const array::Staggered1 &amp;flux, double dt, bool add_values, array::Scalar &amp;output)</td></tr>
+<tr class="separator:a94a457d3de3b80dc3021682f351dd28c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70f357ce4220d57f67c9ebadf3e7d309"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_a70f357ce4220d57f67c9ebadf3e7d309.html#a70f357ce4220d57f67c9ebadf3e7d309">pism::total_grounding_line_flux</a> (const array::CellType1 &amp;cell_type, const array::Staggered1 &amp;flux, double dt)</td></tr>
+<tr class="separator:a70f357ce4220d57f67c9ebadf3e7d309"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->

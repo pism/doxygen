@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PISM, A Parallel Ice Sheet Model
-   &#160;<span id="projectnumber">stable v2.0.7 committed by Constantine Khrulev on 2023-11-21 12:49:11 -0900</span>
+   &#160;<span id="projectnumber">stable v2.1 committed by Constantine Khrulev on 2023-11-23 11:24:22 -0900</span>
    </div>
   </td>
  </tr>
@@ -102,18 +102,18 @@ $(function() {
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacepism.html">pism</a> {</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">class </span>IceModelVec2S;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">namespace </span>array { <span class="keyword">class </span>Scalar; }</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespacepism_a20308a6a87ffcc5472363f80d0a62583.html#a20308a6a87ffcc5472363f80d0a62583">lapse_rate_correction</a>(<span class="keyword">const</span> IceModelVec2S &amp;surface,</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                           <span class="keyword">const</span> IceModelVec2S &amp;reference_surface,</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespacepism_a5c8727cc267594c16cf9dc9702e7e66d.html#a5c8727cc267594c16cf9dc9702e7e66d">lapse_rate_correction</a>(<span class="keyword">const</span> array::Scalar &amp;surface,</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                           <span class="keyword">const</span> array::Scalar &amp;reference_surface,</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                           <span class="keywordtype">double</span> lapse_rate,</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                           IceModelVec2S &amp;result);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                           array::Scalar &amp;result);</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;} <span class="comment">// end of namespace pism</span></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* LAPSE_RATES_H */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="anamespacepism_a20308a6a87ffcc5472363f80d0a62583_html_a20308a6a87ffcc5472363f80d0a62583"><div class="ttname"><a href="namespacepism_a20308a6a87ffcc5472363f80d0a62583.html#a20308a6a87ffcc5472363f80d0a62583">pism::lapse_rate_correction</a></div><div class="ttdeci">void lapse_rate_correction(const IceModelVec2S &amp;surface, const IceModelVec2S &amp;reference_surface, double lapse_rate, IceModelVec2S &amp;result)</div><div class="ttdef"><b>Definition:</b> <a href="lapse__rates_8cc_source.html#l00026">lapse_rates.cc:26</a></div></div>
-<div class="ttc" id="anamespacepism_html"><div class="ttname"><a href="namespacepism.html">pism</a></div><div class="ttdef"><b>Definition:</b> <a href="AgeColumnSystem_8cc_source.html#l00024">AgeColumnSystem.cc:24</a></div></div>
+<div class="ttc" id="anamespacepism_a5c8727cc267594c16cf9dc9702e7e66d_html_a5c8727cc267594c16cf9dc9702e7e66d"><div class="ttname"><a href="namespacepism_a5c8727cc267594c16cf9dc9702e7e66d.html#a5c8727cc267594c16cf9dc9702e7e66d">pism::lapse_rate_correction</a></div><div class="ttdeci">void lapse_rate_correction(const array::Scalar &amp;surface, const array::Scalar &amp;reference_surface, double lapse_rate, array::Scalar &amp;result)</div><div class="ttdef"><b>Definition:</b> <a href="lapse__rates_8cc_source.html#l00026">lapse_rates.cc:26</a></div></div>
+<div class="ttc" id="anamespacepism_html"><div class="ttname"><a href="namespacepism.html">pism</a></div><div class="ttdef"><b>Definition:</b> <a href="AgeColumnSystem_8cc_source.html#l00023">AgeColumnSystem.cc:23</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

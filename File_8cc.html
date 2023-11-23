@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PISM, A Parallel Ice Sheet Model
-   &#160;<span id="projectnumber">stable v2.0.7 committed by Constantine Khrulev on 2023-11-21 12:49:11 -0900</span>
+   &#160;<span id="projectnumber">stable v2.1 committed by Constantine Khrulev on 2023-11-23 11:24:22 -0900</span>
    </div>
   </td>
  </tr>
@@ -85,18 +85,16 @@ $(function() {
 <div class="textblock"><code>#include &lt;cassert&gt;</code><br />
 <code>#include &lt;cstdio&gt;</code><br />
 <code>#include &lt;memory&gt;</code><br />
+<code>#include &lt;map&gt;</code><br />
 <code>#include &lt;petscvec.h&gt;</code><br />
-<code>#include &quot;<a class="el" href="File_8hh_source.html">File.hh</a>&quot;</code><br />
-<code>#include &quot;pism/util/IceGrid.hh&quot;</code><br />
-<code>#include &quot;pism/util/pism_utilities.hh&quot;</code><br />
-<code>#include &quot;pism/util/VariableMetadata.hh&quot;</code><br />
-<code>#include &quot;pism/util/ConfigInterface.hh&quot;</code><br />
-<code>#include &quot;pism/util/Time.hh&quot;</code><br />
-<code>#include &quot;<a class="el" href="NC__Serial_8hh_source.html">NC_Serial.hh</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="NC4__Serial_8hh_source.html">NC4_Serial.hh</a>&quot;</code><br />
+<code>#include &quot;pism/util/io/File.hh&quot;</code><br />
+<code>#include &quot;pism/util/Grid.hh&quot;</code><br />
+<code>#include &quot;pism/util/io/NC_Serial.hh&quot;</code><br />
+<code>#include &quot;pism/util/io/NC4_Serial.hh&quot;</code><br />
 <code>#include &quot;pism/pism_config.hh&quot;</code><br />
 <code>#include &quot;pism/util/error_handling.hh&quot;</code><br />
 <code>#include &quot;pism/util/io/io_helpers.hh&quot;</code><br />
+<code>#include &quot;pism/util/io/IO_Flags.hh&quot;</code><br />
 </div>
 <p><a href="File_8cc_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -112,14 +110,16 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a5128d7850f14808e8533b5c3342321d7"><td class="memItemLeft" align="right" valign="top">IO_Backend&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_a5128d7850f14808e8533b5c3342321d7.html#a5128d7850f14808e8533b5c3342321d7">pism::string_to_backend</a> (const std::string &amp;backend)</td></tr>
-<tr class="separator:a5128d7850f14808e8533b5c3342321d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a877f38c6a965d3962d5cb162d60742"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_a2a877f38c6a965d3962d5cb162d60742.html#a2a877f38c6a965d3962d5cb162d60742">pism::backend_to_string</a> (IO_Backend backend)</td></tr>
-<tr class="separator:a2a877f38c6a965d3962d5cb162d60742"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1df872f505018628863e51728c1f75f9"><td class="memItemLeft" align="right" valign="top">static IO_Backend&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_a1df872f505018628863e51728c1f75f9.html#a1df872f505018628863e51728c1f75f9">pism::choose_backend</a> (MPI_Comm com, const std::string &amp;filename)</td></tr>
-<tr class="separator:a1df872f505018628863e51728c1f75f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6129d037f33a49e7feadf54d56281653"><td class="memItemLeft" align="right" valign="top">static io::NCFile::Ptr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_a6129d037f33a49e7feadf54d56281653.html#a6129d037f33a49e7feadf54d56281653">pism::create_backend</a> (MPI_Comm com, IO_Backend backend, int iosysid)</td></tr>
-<tr class="separator:a6129d037f33a49e7feadf54d56281653"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a119676f731a5157beed776ce429e2b45"><td class="memItemLeft" align="right" valign="top">io::Backend&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_a119676f731a5157beed776ce429e2b45.html#a119676f731a5157beed776ce429e2b45">pism::string_to_backend</a> (const std::string &amp;backend)</td></tr>
+<tr class="separator:a119676f731a5157beed776ce429e2b45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe280a2b5407175b2a7dc705b02fe063"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_abe280a2b5407175b2a7dc705b02fe063.html#abe280a2b5407175b2a7dc705b02fe063">pism::backend_to_string</a> (io::Backend backend)</td></tr>
+<tr class="separator:abe280a2b5407175b2a7dc705b02fe063"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a658e944a1042fb11c6a11c6f61a7bb48"><td class="memItemLeft" align="right" valign="top">static io::Backend&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_a658e944a1042fb11c6a11c6f61a7bb48.html#a658e944a1042fb11c6a11c6f61a7bb48">pism::choose_backend</a> (MPI_Comm com, const std::string &amp;filename)</td></tr>
+<tr class="separator:a658e944a1042fb11c6a11c6f61a7bb48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82b488bd8f3d9559daddba7f574192ab"><td class="memItemLeft" align="right" valign="top">static io::NCFile::Ptr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_a82b488bd8f3d9559daddba7f574192ab.html#a82b488bd8f3d9559daddba7f574192ab">pism::create_backend</a> (MPI_Comm com, io::Backend backend, int iosysid)</td></tr>
+<tr class="separator:a82b488bd8f3d9559daddba7f574192ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8426fd49c73c0ab8a423cce2109b322"><td class="memItemLeft" align="right" valign="top">AxisType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_ad8426fd49c73c0ab8a423cce2109b322.html#ad8426fd49c73c0ab8a423cce2109b322">pism::axis_type_from_string</a> (const std::string &amp;input)</td></tr>
+<tr class="separator:ad8426fd49c73c0ab8a423cce2109b322"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->

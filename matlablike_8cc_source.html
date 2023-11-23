@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PISM, A Parallel Ice Sheet Model
-   &#160;<span id="projectnumber">stable v2.0.7 committed by Constantine Khrulev on 2023-11-21 12:49:11 -0900</span>
+   &#160;<span id="projectnumber">stable v2.1 committed by Constantine Khrulev on 2023-11-23 11:24:22 -0900</span>
    </div>
   </td>
  </tr>
@@ -78,7 +78,7 @@ $(function() {
 <div class="title">matlablike.cc</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="matlablike_8cc.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/* Copyright (C) 2004-2009, 2014, 2015, 2017, 2018 Ed Bueler and Constantine Khroulev</span></div>
+<a href="matlablike_8cc.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/* Copyright (C) 2004-2009, 2014, 2015, 2017, 2018, 2023 Ed Bueler and Constantine Khroulev</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> This file is part of PISM.</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"></span> </div>
@@ -97,7 +97,7 @@ $(function() {
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">*/</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="matlablike_8hh.html">matlablike.hh</a>&quot;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;pism/earth/matlablike.hh&quot;</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
 <div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="matlablike_8cc_aa4bab2cd176d2037935a135f9d37b5aa.html#aa4bab2cd176d2037935a135f9d37b5aa">   22</a></span>&#160;<span class="keywordtype">double</span> <a class="code" href="matlablike_8cc_aa4bab2cd176d2037935a135f9d37b5aa.html#aa4bab2cd176d2037935a135f9d37b5aa">dblquad_cubature</a>(<a class="code" href="cubature_8h_a6e9a87a699043972ce6dafa9375bf774.html#a6e9a87a699043972ce6dafa9375bf774">integrand</a> f, <span class="keywordtype">double</span> ax, <span class="keywordtype">double</span> bx, <span class="keywordtype">double</span> ay, <span class="keywordtype">double</span> by,</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;                        <span class="keywordtype">double</span> reqRelError, <span class="keywordtype">void</span> *fdata) {</div>
@@ -116,7 +116,6 @@ $(function() {
 <div class="ttc" id="acubature_8c_a7966c8dbada39354cb67312c4ca0ce20_html_a7966c8dbada39354cb67312c4ca0ce20"><div class="ttname"><a href="cubature_8c_a7966c8dbada39354cb67312c4ca0ce20.html#a7966c8dbada39354cb67312c4ca0ce20">adapt_integrate</a></div><div class="ttdeci">int adapt_integrate(integrand f, void *fdata, unsigned dim, const double *xmin, const double *xmax, unsigned maxEval, double reqAbsError, double reqRelError, double *val, double *estimated_error)</div><div class="ttdef"><b>Definition:</b> <a href="cubature_8c_source.html#l00701">cubature.c:701</a></div></div>
 <div class="ttc" id="acubature_8h_a6e9a87a699043972ce6dafa9375bf774_html_a6e9a87a699043972ce6dafa9375bf774"><div class="ttname"><a href="cubature_8h_a6e9a87a699043972ce6dafa9375bf774.html#a6e9a87a699043972ce6dafa9375bf774">integrand</a></div><div class="ttdeci">double(* integrand)(unsigned ndim, const double *x, void *)</div><div class="ttdef"><b>Definition:</b> <a href="cubature_8h_source.html#l00060">cubature.h:60</a></div></div>
 <div class="ttc" id="amatlablike_8cc_aa4bab2cd176d2037935a135f9d37b5aa_html_aa4bab2cd176d2037935a135f9d37b5aa"><div class="ttname"><a href="matlablike_8cc_aa4bab2cd176d2037935a135f9d37b5aa.html#aa4bab2cd176d2037935a135f9d37b5aa">dblquad_cubature</a></div><div class="ttdeci">double dblquad_cubature(integrand f, double ax, double bx, double ay, double by, double reqRelError, void *fdata)</div><div class="ttdef"><b>Definition:</b> <a href="matlablike_8cc_source.html#l00022">matlablike.cc:22</a></div></div>
-<div class="ttc" id="amatlablike_8hh_html"><div class="ttname"><a href="matlablike_8hh.html">matlablike.hh</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

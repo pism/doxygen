@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PISM, A Parallel Ice Sheet Model
-   &#160;<span id="projectnumber">stable v2.0.7 committed by Constantine Khrulev on 2023-11-21 12:49:11 -0900</span>
+   &#160;<span id="projectnumber">stable v2.1 committed by Constantine Khrulev on 2023-11-23 11:24:22 -0900</span>
    </div>
   </td>
  </tr>
@@ -81,8 +81,9 @@ $(function() {
 <div class="title">EmptyingProblem.cc File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="EmptyingProblem_8hh_source.html">EmptyingProblem.hh</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;pism/hydrology/EmptyingProblem.hh&quot;</code><br />
 <code>#include &quot;pism/geometry/Geometry.hh&quot;</code><br />
+<code>#include &quot;pism/util/interpolation.hh&quot;</code><br />
 <code>#include &quot;pism/util/pism_utilities.hh&quot;</code><br />
 </div>
 <p><a href="EmptyingProblem_8cc_source.html">Go to the source code of this file.</a></p>
@@ -99,10 +100,10 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ade12991917531d37ea5964b25887cb31"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_1_1hydrology_1_1diagnostics_ade12991917531d37ea5964b25887cb31.html#ade12991917531d37ea5964b25887cb31">pism::hydrology::diagnostics::compute_sinks</a> (const IceModelVec2Int &amp;domain_mask, const IceModelVec2S &amp;psi, IceModelVec2S &amp;result)</td></tr>
-<tr class="separator:ade12991917531d37ea5964b25887cb31"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a254d14615b488d6d1bd02c0e507b3889"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_1_1hydrology_1_1diagnostics_a254d14615b488d6d1bd02c0e507b3889.html#a254d14615b488d6d1bd02c0e507b3889">pism::hydrology::diagnostics::effective_water_velocity</a> (const Geometry &amp;geometry, const IceModelVec2V &amp;water_flux, IceModelVec2V &amp;result)</td></tr>
-<tr class="separator:a254d14615b488d6d1bd02c0e507b3889"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a19d1b227108bdd4d70ad98dca25ca8"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_1_1hydrology_1_1diagnostics_a0a19d1b227108bdd4d70ad98dca25ca8.html#a0a19d1b227108bdd4d70ad98dca25ca8">pism::hydrology::diagnostics::compute_sinks</a> (const array::Scalar &amp;domain_mask, const array::Scalar1 &amp;psi, array::Scalar &amp;result)</td></tr>
+<tr class="separator:a0a19d1b227108bdd4d70ad98dca25ca8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66391ee8a31c2fccbf599a251892739a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_1_1hydrology_1_1diagnostics_a66391ee8a31c2fccbf599a251892739a.html#a66391ee8a31c2fccbf599a251892739a">pism::hydrology::diagnostics::effective_water_velocity</a> (const Geometry &amp;geometry, const array::Vector &amp;water_flux, array::Vector &amp;result)</td></tr>
+<tr class="separator:a66391ee8a31c2fccbf599a251892739a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a43ff7180d2c0024aaf9da724f7b5ef14"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_1_1hydrology_a43ff7180d2c0024aaf9da724f7b5ef14.html#a43ff7180d2c0024aaf9da724f7b5ef14">pism::hydrology::K</a> (double psi_x, double psi_y, double speed, double epsilon)</td></tr>
 <tr class="separator:a43ff7180d2c0024aaf9da724f7b5ef14"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>

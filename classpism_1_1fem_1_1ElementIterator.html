@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PISM, A Parallel Ice Sheet Model
-   &#160;<span id="projectnumber">stable v2.0.7 committed by Constantine Khrulev on 2023-11-21 12:49:11 -0900</span>
+   &#160;<span id="projectnumber">stable v2.1 committed by Constantine Khrulev on 2023-11-23 11:24:22 -0900</span>
    </div>
   </td>
  </tr>
@@ -90,8 +90,8 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aa2d0da4de2126cb93f54f926e04e0d00"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpism_1_1fem_1_1ElementIterator_aa2d0da4de2126cb93f54f926e04e0d00.html#aa2d0da4de2126cb93f54f926e04e0d00">ElementIterator</a> (const <a class="el" href="classpism_1_1IceGrid.html">IceGrid</a> &amp;<a class="el" href="namespacepism_a47d754ed3e959d5866b02a1b78b6a5b5.html#a47d754ed3e959d5866b02a1b78b6a5b5">g</a>)</td></tr>
-<tr class="separator:aa2d0da4de2126cb93f54f926e04e0d00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4265795b648a6544237ca3429dda06e7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpism_1_1fem_1_1ElementIterator_a4265795b648a6544237ca3429dda06e7.html#a4265795b648a6544237ca3429dda06e7">ElementIterator</a> (const <a class="el" href="classpism_1_1Grid.html">Grid</a> &amp;<a class="el" href="namespacepism_a47d754ed3e959d5866b02a1b78b6a5b5.html#a47d754ed3e959d5866b02a1b78b6a5b5">g</a>)</td></tr>
+<tr class="separator:a4265795b648a6544237ca3429dda06e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ffc040e936c670c595fde6bd6358d5c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpism_1_1fem_1_1ElementIterator_a9ffc040e936c670c595fde6bd6358d5c.html#a9ffc040e936c670c595fde6bd6358d5c">element_count</a> ()</td></tr>
 <tr class="memdesc:a9ffc040e936c670c595fde6bd6358d5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The total number of elements to be iterated over. Useful for creating per-element storage.  <a href="classpism_1_1fem_1_1ElementIterator_a9ffc040e936c670c595fde6bd6358d5c.html#a9ffc040e936c670c595fde6bd6358d5c">More...</a><br /></td></tr>
 <tr class="separator:a9ffc040e936c670c595fde6bd6358d5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -128,7 +128,7 @@ Public Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Manages iterating over element indices. </p>
-<p>When computing residuals and Jacobians, there is a loop over all the elements in the <a class="el" href="classpism_1_1IceGrid.html" title="Describes the PISM grid and the distribution of data across processors.">IceGrid</a>, and computations are done on each element. The <a class="el" href="classpism_1_1IceGrid.html" title="Describes the PISM grid and the distribution of data across processors.">IceGrid</a> has an underlying PETSc DM, and a process typically does not own all of the nodes in the grid. Therefore we should perform a computation on a subset of the elements. In general, an element will have ghost (o) and real (*) vertices:</p>
+<p>When computing residuals and Jacobians, there is a loop over all the elements in the <a class="el" href="classpism_1_1Grid.html" title="Describes the PISM grid and the distribution of data across processors.">Grid</a>, and computations are done on each element. The <a class="el" href="classpism_1_1Grid.html" title="Describes the PISM grid and the distribution of data across processors.">Grid</a> has an underlying PETSc DM, and a process typically does not own all of the nodes in the grid. Therefore we should perform a computation on a subset of the elements. In general, an element will have ghost (o) and real (*) vertices:</p>
 <pre class="fragment">o---*---*---*---o
 |   |   |   |   |
 o---*---*---*---o
@@ -136,7 +136,7 @@ o---*---*---*---o
 o---o---o---o---o
 </pre><p>The strategy is to perform computations on this process on every element that has a vertex that is owned by this processor. But we only update entries in the global residual and Jacobian matrices if the corresponding row corresponds to a vertex that we own. In the worst case, where each vertex of an element is owned by a different processor, the computations for that element will be repeated four times, once for each processor.</p>
 <p>This same strategy also correctly deals with periodic boundary conditions. The way PETSc deals with periodic boundaries can be thought of as using a kind of ghost. So the rule still works: compute on all elements containg a real vertex, but only update rows corresponding to that real vertex.</p>
-<p>The calculation of what elements to index over needs to account for ghosts and the presence or absense of periodic boundary conditions in the <a class="el" href="classpism_1_1IceGrid.html" title="Describes the PISM grid and the distribution of data across processors.">IceGrid</a>. The <a class="el" href="classpism_1_1fem_1_1ElementIterator.html" title="Manages iterating over element indices.">ElementIterator</a> performs that computation for you (see <a class="el" href="classpism_1_1fem_1_1ElementIterator_af26b1f4fafad56d1ffb668fc8d2e7760.html#af26b1f4fafad56d1ffb668fc8d2e7760" title="x-coordinate of the first element to loop over.">ElementIterator::xs</a> and friends). </p>
+<p>The calculation of what elements to index over needs to account for ghosts and the presence or absense of periodic boundary conditions in the <a class="el" href="classpism_1_1Grid.html" title="Describes the PISM grid and the distribution of data across processors.">Grid</a>. The <a class="el" href="classpism_1_1fem_1_1ElementIterator.html" title="Manages iterating over element indices.">ElementIterator</a> performs that computation for you (see <a class="el" href="classpism_1_1fem_1_1ElementIterator_af26b1f4fafad56d1ffb668fc8d2e7760.html#af26b1f4fafad56d1ffb668fc8d2e7760" title="x-coordinate of the first element to loop over.">ElementIterator::xs</a> and friends). </p>
 
 <p class="definition">Definition at line <a class="el" href="ElementIterator_8hh_source.html#l00059">59</a> of file <a class="el" href="ElementIterator_8hh_source.html">ElementIterator.hh</a>.</p>
 </div><hr/>The documentation for this class was generated from the following files:<ul>

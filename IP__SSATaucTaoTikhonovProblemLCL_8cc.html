@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PISM, A Parallel Ice Sheet Model
-   &#160;<span id="projectnumber">stable v2.0.7 committed by Constantine Khrulev on 2023-11-21 12:49:11 -0900</span>
+   &#160;<span id="projectnumber">stable v2.1 committed by Constantine Khrulev on 2023-11-23 11:24:22 -0900</span>
    </div>
   </td>
  </tr>
@@ -81,10 +81,11 @@ $(function() {
 <div class="title">IP_SSATaucTaoTikhonovProblemLCL.cc File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="IP__SSATaucTaoTikhonovProblemLCL_8hh_source.html">IP_SSATaucTaoTikhonovProblemLCL.hh</a>&quot;</code><br />
-<code>#include &quot;pism/util/IceGrid.hh&quot;</code><br />
+<div class="textblock"><code>#include &quot;pism/inverse/IP_SSATaucTaoTikhonovProblemLCL.hh&quot;</code><br />
+<code>#include &quot;pism/util/Grid.hh&quot;</code><br />
 <code>#include &quot;pism/util/ConfigInterface.hh&quot;</code><br />
 <code>#include &quot;pism/util/Context.hh&quot;</code><br />
+<code>#include &lt;memory&gt;</code><br />
 </div>
 <p><a href="IP__SSATaucTaoTikhonovProblemLCL_8cc_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -98,10 +99,10 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a16bd15a34127cc491455ba03e95c30ae"><td class="memItemLeft" align="right" valign="top">typedef IceModelVec2S&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_1_1inverse_a16bd15a34127cc491455ba03e95c30ae.html#a16bd15a34127cc491455ba03e95c30ae">pism::inverse::DesignVec</a></td></tr>
-<tr class="separator:a16bd15a34127cc491455ba03e95c30ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a87a083e9db7f2fbc1ee5ed79cbb9a5d7"><td class="memItemLeft" align="right" valign="top">typedef IceModelVec2V&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_1_1inverse_a87a083e9db7f2fbc1ee5ed79cbb9a5d7.html#a87a083e9db7f2fbc1ee5ed79cbb9a5d7">pism::inverse::StateVec</a></td></tr>
-<tr class="separator:a87a083e9db7f2fbc1ee5ed79cbb9a5d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ddf55ea5caae65bde6ea7b21f44d4d4"><td class="memItemLeft" align="right" valign="top">typedef array::Scalar&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_1_1inverse_a1ddf55ea5caae65bde6ea7b21f44d4d4.html#a1ddf55ea5caae65bde6ea7b21f44d4d4">pism::inverse::DesignVec</a></td></tr>
+<tr class="separator:a1ddf55ea5caae65bde6ea7b21f44d4d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a990168b7285dafe272a436e2a7faccb7"><td class="memItemLeft" align="right" valign="top">typedef array::Vector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_1_1inverse_a990168b7285dafe272a436e2a7faccb7.html#a990168b7285dafe272a436e2a7faccb7">pism::inverse::StateVec</a></td></tr>
+<tr class="separator:a990168b7285dafe272a436e2a7faccb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->

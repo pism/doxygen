@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PISM, A Parallel Ice Sheet Model
-   &#160;<span id="projectnumber">stable v2.0.7 committed by Constantine Khrulev on 2023-11-21 12:49:11 -0900</span>
+   &#160;<span id="projectnumber">stable v2.1 committed by Constantine Khrulev on 2023-11-23 11:24:22 -0900</span>
    </div>
   </td>
  </tr>
@@ -84,9 +84,9 @@ $(function() {
 <div class="textblock"><code>#include &lt;cstring&gt;</code><br />
 <code>#include &lt;cstdlib&gt;</code><br />
 <code>#include &lt;petscsys.h&gt;</code><br />
-<code>#include &quot;<a class="el" href="IceModel_8hh_source.html">IceModel.hh</a>&quot;</code><br />
+<code>#include &quot;pism/icemodel/IceModel.hh&quot;</code><br />
 <code>#include &quot;pism/stressbalance/StressBalance.hh&quot;</code><br />
-<code>#include &quot;pism/util/IceGrid.hh&quot;</code><br />
+<code>#include &quot;pism/util/Grid.hh&quot;</code><br />
 <code>#include &quot;pism/util/ConfigInterface.hh&quot;</code><br />
 <code>#include &quot;pism/util/Time.hh&quot;</code><br />
 <code>#include &quot;pism/util/pism_utilities.hh&quot;</code><br />
@@ -100,9 +100,9 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:abec4d4c50912417eec2d23ec6d259555"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_abec4d4c50912417eec2d23ec6d259555.html#abec4d4c50912417eec2d23ec6d259555">pism::count_CFL_violations</a> (const IceModelVec3 &amp;u3, const IceModelVec3 &amp;v3, const IceModelVec2S &amp;ice_thickness, double dt)</td></tr>
-<tr class="memdesc:abec4d4c50912417eec2d23ec6d259555"><td class="mdescLeft">&#160;</td><td class="mdescRight">Because of the -skip mechanism it is still possible that we can have CFL violations: count them.  <a href="namespacepism_abec4d4c50912417eec2d23ec6d259555.html#abec4d4c50912417eec2d23ec6d259555">More...</a><br /></td></tr>
-<tr class="separator:abec4d4c50912417eec2d23ec6d259555"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a137ae2be958402637382f25e18b7eb9d"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_a137ae2be958402637382f25e18b7eb9d.html#a137ae2be958402637382f25e18b7eb9d">pism::count_CFL_violations</a> (const array::Array3D &amp;u3, const array::Array3D &amp;v3, const array::Scalar &amp;ice_thickness, double dt)</td></tr>
+<tr class="memdesc:a137ae2be958402637382f25e18b7eb9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Because of the -skip mechanism it is still possible that we can have CFL violations: count them.  <a href="namespacepism_a137ae2be958402637382f25e18b7eb9d.html#a137ae2be958402637382f25e18b7eb9d">More...</a><br /></td></tr>
+<tr class="separator:a137ae2be958402637382f25e18b7eb9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->

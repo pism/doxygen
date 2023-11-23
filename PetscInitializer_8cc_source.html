@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PISM, A Parallel Ice Sheet Model
-   &#160;<span id="projectnumber">stable v2.0.7 committed by Constantine Khrulev on 2023-11-21 12:49:11 -0900</span>
+   &#160;<span id="projectnumber">stable v2.1 committed by Constantine Khrulev on 2023-11-23 11:24:22 -0900</span>
    </div>
   </td>
  </tr>
@@ -78,7 +78,7 @@ $(function() {
 <div class="title">PetscInitializer.cc</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="PetscInitializer_8cc.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/* Copyright (C) 2014, 2015, 2017 PISM Authors</span></div>
+<a href="PetscInitializer_8cc.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/* Copyright (C) 2014, 2015, 2017, 2023 PISM Authors</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * This file is part of PISM.</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> *</span></div>
@@ -97,7 +97,7 @@ $(function() {
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="PetscInitializer_8hh.html">PetscInitializer.hh</a>&quot;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;pism/util/petscwrappers/PetscInitializer.hh&quot;</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &lt;petscsys.h&gt;</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &lt;mpi.h&gt;</span></div>
@@ -140,13 +140,12 @@ $(function() {
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;} <span class="comment">// end of namespace petsc</span></div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;} <span class="comment">// end of namespace pism</span></div>
-<div class="ttc" id="aPetscInitializer_8hh_html"><div class="ttname"><a href="PetscInitializer_8hh.html">PetscInitializer.hh</a></div></div>
 <div class="ttc" id="abtutest_8cc_a29680e68c64040f4884f60691a193226_html_a29680e68c64040f4884f60691a193226"><div class="ttname"><a href="btutest_8cc_a29680e68c64040f4884f60691a193226.html#a29680e68c64040f4884f60691a193226">help</a></div><div class="ttdeci">static char help[]</div><div class="ttdef"><b>Definition:</b> <a href="btutest_8cc_source.html#l00021">btutest.cc:21</a></div></div>
 <div class="ttc" id="aclasspism_1_1petsc_1_1Initializer_a0e7ec3d8534e5f41107ca4656921a50b_html_a0e7ec3d8534e5f41107ca4656921a50b"><div class="ttname"><a href="classpism_1_1petsc_1_1Initializer_a0e7ec3d8534e5f41107ca4656921a50b.html#a0e7ec3d8534e5f41107ca4656921a50b">pism::petsc::Initializer::~Initializer</a></div><div class="ttdeci">~Initializer()</div><div class="ttdef"><b>Definition:</b> <a href="PetscInitializer_8cc_source.html#l00050">PetscInitializer.cc:50</a></div></div>
 <div class="ttc" id="aclasspism_1_1petsc_1_1Initializer_a898529df263a13e9c97ad29f79474aed_html_a898529df263a13e9c97ad29f79474aed"><div class="ttname"><a href="classpism_1_1petsc_1_1Initializer_a898529df263a13e9c97ad29f79474aed.html#a898529df263a13e9c97ad29f79474aed">pism::petsc::Initializer::Initializer</a></div><div class="ttdeci">Initializer(int argc, char **argv, const char *help)</div><div class="ttdef"><b>Definition:</b> <a href="PetscInitializer_8cc_source.html#l00031">PetscInitializer.cc:31</a></div></div>
-<div class="ttc" id="aerror__handling_8hh_a970ec877c0e54c6e16c039bfa1b88bad_html_a970ec877c0e54c6e16c039bfa1b88bad"><div class="ttname"><a href="error__handling_8hh_a970ec877c0e54c6e16c039bfa1b88bad.html#a970ec877c0e54c6e16c039bfa1b88bad">PISM_CHK</a></div><div class="ttdeci">#define PISM_CHK(errcode, name)</div><div class="ttdef"><b>Definition:</b> <a href="error__handling_8hh_source.html#l00091">error_handling.hh:91</a></div></div>
-<div class="ttc" id="anamespacepism_a5d5d5714fb63a96518ffbe7be151e90b_html_a5d5d5714fb63a96518ffbe7be151e90b"><div class="ttname"><a href="namespacepism_a5d5d5714fb63a96518ffbe7be151e90b.html#a5d5d5714fb63a96518ffbe7be151e90b">pism::printf</a></div><div class="ttdeci">std::string printf(const char *format,...)</div><div class="ttdef"><b>Definition:</b> <a href="pism__utilities_8cc_source.html#l00407">pism_utilities.cc:407</a></div></div>
-<div class="ttc" id="anamespacepism_html"><div class="ttname"><a href="namespacepism.html">pism</a></div><div class="ttdef"><b>Definition:</b> <a href="AgeColumnSystem_8cc_source.html#l00024">AgeColumnSystem.cc:24</a></div></div>
+<div class="ttc" id="aerror__handling_8hh_a970ec877c0e54c6e16c039bfa1b88bad_html_a970ec877c0e54c6e16c039bfa1b88bad"><div class="ttname"><a href="error__handling_8hh_a970ec877c0e54c6e16c039bfa1b88bad.html#a970ec877c0e54c6e16c039bfa1b88bad">PISM_CHK</a></div><div class="ttdeci">#define PISM_CHK(errcode, name)</div><div class="ttdef"><b>Definition:</b> <a href="error__handling_8hh_source.html#l00090">error_handling.hh:90</a></div></div>
+<div class="ttc" id="anamespacepism_a5d5d5714fb63a96518ffbe7be151e90b_html_a5d5d5714fb63a96518ffbe7be151e90b"><div class="ttname"><a href="namespacepism_a5d5d5714fb63a96518ffbe7be151e90b.html#a5d5d5714fb63a96518ffbe7be151e90b">pism::printf</a></div><div class="ttdeci">std::string printf(const char *format,...)</div><div class="ttdef"><b>Definition:</b> <a href="pism__utilities_8cc_source.html#l00415">pism_utilities.cc:415</a></div></div>
+<div class="ttc" id="anamespacepism_html"><div class="ttname"><a href="namespacepism.html">pism</a></div><div class="ttdef"><b>Definition:</b> <a href="AgeColumnSystem_8cc_source.html#l00023">AgeColumnSystem.cc:23</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

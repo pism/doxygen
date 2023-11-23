@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PISM, A Parallel Ice Sheet Model
-   &#160;<span id="projectnumber">stable v2.0.7 committed by Constantine Khrulev on 2023-11-21 12:49:11 -0900</span>
+   &#160;<span id="projectnumber">stable v2.1 committed by Constantine Khrulev on 2023-11-23 11:24:22 -0900</span>
    </div>
   </td>
  </tr>
@@ -114,6 +114,7 @@ $(function() {
           <tr><td class="navtab"><a class="navtab" href="classpism_1_1Config_a6d907f25c911c60ef9bc0ce6c6ecd6c4.html#a6d907f25c911c60ef9bc0ce6c6ecd6c4">read</a></td></tr>
           <tr><td class="navtab"><a class="navtab" href="classpism_1_1Config_a5395ae4d9f43999c1a91d4328c359412.html#a5395ae4d9f43999c1a91d4328c359412">read</a></td></tr>
           <tr><td class="navtab"><a class="navtab" href="classpism_1_1Config_a477bc0eb23e29121871d8b68f3159eca.html#a477bc0eb23e29121871d8b68f3159eca">read_impl</a></td></tr>
+          <tr><td class="navtab"><a class="navtab" href="classpism_1_1Config_aff97a59ba6cc8ff3a443439cb719c2b1.html#aff97a59ba6cc8ff3a443439cb719c2b1">resolve_filenames</a></td></tr>
           <tr><td class="navtab"><a class="navtab" href="classpism_1_1Config_a912a7b8f312236c44afcd15093ab439b.html#a912a7b8f312236c44afcd15093ab439b">set_flag</a></td></tr>
           <tr><td class="navtab"><a class="navtab" href="classpism_1_1Config_a60473b29e6b120a71a26a0480ecccd18.html#a60473b29e6b120a71a26a0480ecccd18">set_flag_impl</a></td></tr>
           <tr><td class="navtab"><a class="navtab" href="classpism_1_1Config_abd3f759c6167b6978ca10eb7fe16a21a.html#abd3f759c6167b6978ca10eb7fe16a21a">set_number</a></td></tr>
@@ -160,11 +161,11 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ConfigInterface_8cc_source.html#l00231">231</a> of file <a class="el" href="ConfigInterface_8cc_source.html">ConfigInterface.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ConfigInterface_8cc_source.html#l00257">257</a> of file <a class="el" href="ConfigInterface_8cc_source.html">ConfigInterface.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="classpism_1_1Config_aabb553453c269a49860d35c373f26da4.html#aabb553453c269a49860d35c373f26da4">get_string_impl()</a>, <a class="el" href="ConfigInterface_8hh_source.html#l00147">m_impl</a>, <a class="el" href="ConfigInterface_8cc_source.html#l00052">pism::Config::Impl::parameters_used</a>, and <a class="el" href="ConfigInterface_8hh_source.html#l00070">REMEMBER_THIS_USE</a>.</p>
+<p class="reference">References <a class="el" href="classpism_1_1Config_aabb553453c269a49860d35c373f26da4.html#aabb553453c269a49860d35c373f26da4">get_string_impl()</a>, <a class="el" href="ConfigInterface_8hh_source.html#l00150">m_impl</a>, <a class="el" href="ConfigInterface_8cc_source.html#l00056">pism::Config::Impl::parameters_used</a>, and <a class="el" href="ConfigInterface_8hh_source.html#l00070">REMEMBER_THIS_USE</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="io__helpers_8cc_source.html#l00257">pism::io::append_time()</a>, <a class="el" href="Time_8cc_source.html#l00145">pism::calendar()</a>, <a class="el" href="ConfigInterface_8cc_source.html#l00833">choices()</a>, <a class="el" href="io__helpers_8cc_source.html#l00220">pism::io::define_time()</a>, <a class="el" href="ConfigInterface_8cc_source.html#l00813">doc()</a>, <a class="el" href="Time_8cc_source.html#l00398">pism::end_time()</a>, <a class="el" href="coupler_2util_2options_8cc_source.html#l00029">pism::ForcingOptions::ForcingOptions()</a>, <a class="el" href="ConfigInterface_8cc_source.html#l00825">option()</a>, <a class="el" href="output__extra_8cc_source.html#l00047">pism::process_extra_shortcuts()</a>, <a class="el" href="output__ts_8cc_source.html#l00030">pism::process_ts_shortcuts()</a>, <a class="el" href="Time_8cc_source.html#l00108">pism::reference_date()</a>, <a class="el" href="ConfigInterface_8cc_source.html#l00639">pism::set_config_from_options()</a>, <a class="el" href="ConfigInterface_8cc_source.html#l00581">pism::set_keyword_from_option()</a>, <a class="el" href="ConfigInterface_8cc_source.html#l00566">pism::set_string_from_option()</a>, <a class="el" href="Time_8cc_source.html#l00347">pism::start_time()</a>, <a class="el" href="ConfigInterface_8cc_source.html#l00821">type()</a>, and <a class="el" href="ConfigInterface_8cc_source.html#l00817">units()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="io__helpers_8cc_source.html#l00247">pism::io::append_time()</a>, <a class="el" href="Time_8cc_source.html#l00146">pism::calendar()</a>, <a class="el" href="ConfigInterface_8cc_source.html#l00854">choices()</a>, <a class="el" href="DEBMSimplePointwise_8cc_source.html#l00297">pism::surface::DEBMSimplePointwise::DEBMSimplePointwise()</a>, <a class="el" href="io__helpers_8cc_source.html#l00213">pism::io::define_time()</a>, <a class="el" href="Isochrones_8cc_source.html#l00196">pism::details::deposition_times()</a>, <a class="el" href="ConfigInterface_8cc_source.html#l00834">doc()</a>, <a class="el" href="Time_8cc_source.html#l00399">pism::end_time()</a>, <a class="el" href="coupler_2util_2options_8cc_source.html#l00029">pism::ForcingOptions::ForcingOptions()</a>, <a class="el" href="ConfigInterface_8cc_source.html#l00846">option()</a>, <a class="el" href="Grid_8cc_source.html#l01121">pism::grid::Parameters::Parameters()</a>, <a class="el" href="output__extra_8cc_source.html#l00046">pism::process_extra_shortcuts()</a>, <a class="el" href="output__ts_8cc_source.html#l00030">pism::process_ts_shortcuts()</a>, <a class="el" href="Time_8cc_source.html#l00109">pism::reference_date()</a>, <a class="el" href="Isochrones_8cc_source.html#l00307">pism::details::regridp()</a>, <a class="el" href="ConfigInterface_8cc_source.html#l00660">pism::set_config_from_options()</a>, <a class="el" href="ConfigInterface_8cc_source.html#l00602">pism::set_keyword_from_option()</a>, <a class="el" href="ConfigInterface_8cc_source.html#l00587">pism::set_string_from_option()</a>, <a class="el" href="Time_8cc_source.html#l00348">pism::start_time()</a>, <a class="el" href="ConfigInterface_8cc_source.html#l00842">type()</a>, and <a class="el" href="ConfigInterface_8cc_source.html#l00838">units()</a>.</p>
 
 </div>
 </div>

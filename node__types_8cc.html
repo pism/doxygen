@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PISM, A Parallel Ice Sheet Model
-   &#160;<span id="projectnumber">stable v2.0.7 committed by Constantine Khrulev on 2023-11-21 12:49:11 -0900</span>
+   &#160;<span id="projectnumber">stable v2.1 committed by Constantine Khrulev on 2023-11-23 11:24:22 -0900</span>
    </div>
   </td>
  </tr>
@@ -81,9 +81,9 @@ $(function() {
 <div class="title">node_types.cc File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="node__types_8hh_source.html">node_types.hh</a>&quot;</code><br />
-<code>#include &quot;pism/util/iceModelVec.hh&quot;</code><br />
-<code>#include &quot;pism/util/IceGrid.hh&quot;</code><br />
+<div class="textblock"><code>#include &quot;pism/util/node_types.hh&quot;</code><br />
+<code>#include &quot;pism/util/array/Scalar.hh&quot;</code><br />
+<code>#include &quot;pism/util/Grid.hh&quot;</code><br />
 <code>#include &quot;pism/util/error_handling.hh&quot;</code><br />
 </div>
 <p><a href="node__types_8cc_source.html">Go to the source code of this file.</a></p>
@@ -95,8 +95,8 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:afcb643623869bb1ec4431939fff006ee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_afcb643623869bb1ec4431939fff006ee.html#afcb643623869bb1ec4431939fff006ee">pism::compute_node_types</a> (const IceModelVec2S &amp;ice_thickness, double thickness_threshold, IceModelVec2Int &amp;result)</td></tr>
-<tr class="separator:afcb643623869bb1ec4431939fff006ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38593a68e4249fdcba75b97492d6a32a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_a38593a68e4249fdcba75b97492d6a32a.html#a38593a68e4249fdcba75b97492d6a32a">pism::compute_node_types</a> (const array::Scalar1 &amp;ice_thickness, double thickness_threshold, array::Scalar &amp;result)</td></tr>
+<tr class="separator:a38593a68e4249fdcba75b97492d6a32a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->

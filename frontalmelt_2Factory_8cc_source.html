@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PISM, A Parallel Ice Sheet Model
-   &#160;<span id="projectnumber">stable v2.0.7 committed by Constantine Khrulev on 2023-11-21 12:49:11 -0900</span>
+   &#160;<span id="projectnumber">stable v2.1 committed by Constantine Khrulev on 2023-11-23 11:24:22 -0900</span>
    </div>
   </td>
  </tr>
@@ -78,7 +78,7 @@ $(function() {
 <div class="title">Factory.cc</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="frontalmelt_2Factory_8cc.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/* Copyright (C) 2015, 2017, 2018, 2019 PISM Authors</span></div>
+<a href="frontalmelt_2Factory_8cc.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/* Copyright (C) 2015, 2017, 2018, 2019, 2023 PISM Authors</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * This file is part of PISM.</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> *</span></div>
@@ -97,18 +97,18 @@ $(function() {
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="surface_2Factory_8hh.html">Factory.hh</a>&quot;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;pism/coupler/frontalmelt/Factory.hh&quot;</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">// frontal melt models:</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="ocean_2Constant_8hh.html">Constant.hh</a>&quot;</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="DischargeGiven_8hh.html">DischargeGiven.hh</a>&quot;</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="DischargeRouting_8hh.html">DischargeRouting.hh</a>&quot;</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="earth_2Given_8hh.html">Given.hh</a>&quot;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;pism/coupler/frontalmelt/Constant.hh&quot;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;pism/coupler/frontalmelt/DischargeGiven.hh&quot;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &quot;pism/coupler/frontalmelt/DischargeRouting.hh&quot;</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &quot;pism/coupler/frontalmelt/Given.hh&quot;</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacepism.html">pism</a> {</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">namespace </span>frontalmelt {</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">// FrontalMelt</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="classpism_1_1frontalmelt_1_1Factory_a6e0c5e74502d217b9426fdd20e13427e.html#a6e0c5e74502d217b9426fdd20e13427e">   31</a></span>&#160;<a class="code" href="classpism_1_1frontalmelt_1_1Factory_a6e0c5e74502d217b9426fdd20e13427e.html#a6e0c5e74502d217b9426fdd20e13427e">Factory::Factory</a>(<a class="code" href="classpism_1_1IceGrid_aa59b13ca1f14efc1555016e2b8a8b1ac.html#aa59b13ca1f14efc1555016e2b8a8b1ac">IceGrid::ConstPtr</a> <a class="code" href="namespacepism_a47d754ed3e959d5866b02a1b78b6a5b5.html#a47d754ed3e959d5866b02a1b78b6a5b5">g</a>)</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="classpism_1_1frontalmelt_1_1Factory_a0165c3cf6db4841c4525bb8d28657188.html#a0165c3cf6db4841c4525bb8d28657188">   31</a></span>&#160;<a class="code" href="classpism_1_1frontalmelt_1_1Factory_a0165c3cf6db4841c4525bb8d28657188.html#a0165c3cf6db4841c4525bb8d28657188">Factory::Factory</a>(std::shared_ptr&lt;const Grid&gt; <a class="code" href="namespacepism_a47d754ed3e959d5866b02a1b78b6a5b5.html#a47d754ed3e959d5866b02a1b78b6a5b5">g</a>)</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  : <a class="code" href="classpism_1_1PCFactory.html">PCFactory</a>&lt;<a class="code" href="classpism_1_1frontalmelt_1_1FrontalMelt.html">FrontalMelt</a>&gt;(<a class="code" href="namespacepism_a47d754ed3e959d5866b02a1b78b6a5b5.html#a47d754ed3e959d5866b02a1b78b6a5b5">g</a>, <span class="stringliteral">&quot;frontal_melt.models&quot;</span>) {</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  add_model&lt;Constant&gt;(<span class="stringliteral">&quot;constant&quot;</span>);</div>
@@ -119,17 +119,11 @@ $(function() {
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;} <span class="comment">// end of namespace frontalmelt</span></div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;} <span class="comment">// end of namespace pism</span></div>
-<div class="ttc" id="aDischargeGiven_8hh_html"><div class="ttname"><a href="DischargeGiven_8hh.html">DischargeGiven.hh</a></div></div>
-<div class="ttc" id="aDischargeRouting_8hh_html"><div class="ttname"><a href="DischargeRouting_8hh.html">DischargeRouting.hh</a></div></div>
-<div class="ttc" id="aclasspism_1_1IceGrid_aa59b13ca1f14efc1555016e2b8a8b1ac_html_aa59b13ca1f14efc1555016e2b8a8b1ac"><div class="ttname"><a href="classpism_1_1IceGrid_aa59b13ca1f14efc1555016e2b8a8b1ac.html#aa59b13ca1f14efc1555016e2b8a8b1ac">pism::IceGrid::ConstPtr</a></div><div class="ttdeci">std::shared_ptr&lt; const IceGrid &gt; ConstPtr</div><div class="ttdef"><b>Definition:</b> <a href="IceGrid_8hh_source.html#l00233">IceGrid.hh:233</a></div></div>
 <div class="ttc" id="aclasspism_1_1PCFactory_html"><div class="ttname"><a href="classpism_1_1PCFactory.html">pism::PCFactory</a></div><div class="ttdef"><b>Definition:</b> <a href="PCFactory_8hh_source.html#l00034">PCFactory.hh:34</a></div></div>
-<div class="ttc" id="aclasspism_1_1frontalmelt_1_1Factory_a6e0c5e74502d217b9426fdd20e13427e_html_a6e0c5e74502d217b9426fdd20e13427e"><div class="ttname"><a href="classpism_1_1frontalmelt_1_1Factory_a6e0c5e74502d217b9426fdd20e13427e.html#a6e0c5e74502d217b9426fdd20e13427e">pism::frontalmelt::Factory::Factory</a></div><div class="ttdeci">Factory(IceGrid::ConstPtr g)</div><div class="ttdef"><b>Definition:</b> <a href="frontalmelt_2Factory_8cc_source.html#l00031">Factory.cc:31</a></div></div>
-<div class="ttc" id="aclasspism_1_1frontalmelt_1_1FrontalMelt_html"><div class="ttname"><a href="classpism_1_1frontalmelt_1_1FrontalMelt.html">pism::frontalmelt::FrontalMelt</a></div><div class="ttdoc">A very rudimentary PISM frontal melt model.</div><div class="ttdef"><b>Definition:</b> <a href="FrontalMelt_8hh_source.html#l00046">FrontalMelt.hh:46</a></div></div>
-<div class="ttc" id="aearth_2Given_8hh_html"><div class="ttname"><a href="earth_2Given_8hh.html">Given.hh</a></div></div>
-<div class="ttc" id="anamespacepism_a47d754ed3e959d5866b02a1b78b6a5b5_html_a47d754ed3e959d5866b02a1b78b6a5b5"><div class="ttname"><a href="namespacepism_a47d754ed3e959d5866b02a1b78b6a5b5.html#a47d754ed3e959d5866b02a1b78b6a5b5">pism::g</a></div><div class="ttdeci">static const double g</div><div class="ttdef"><b>Definition:</b> <a href="exactTestP_8cc_source.html#l00039">exactTestP.cc:39</a></div></div>
-<div class="ttc" id="anamespacepism_html"><div class="ttname"><a href="namespacepism.html">pism</a></div><div class="ttdef"><b>Definition:</b> <a href="AgeColumnSystem_8cc_source.html#l00024">AgeColumnSystem.cc:24</a></div></div>
-<div class="ttc" id="aocean_2Constant_8hh_html"><div class="ttname"><a href="ocean_2Constant_8hh.html">Constant.hh</a></div></div>
-<div class="ttc" id="asurface_2Factory_8hh_html"><div class="ttname"><a href="surface_2Factory_8hh.html">Factory.hh</a></div></div>
+<div class="ttc" id="aclasspism_1_1frontalmelt_1_1Factory_a0165c3cf6db4841c4525bb8d28657188_html_a0165c3cf6db4841c4525bb8d28657188"><div class="ttname"><a href="classpism_1_1frontalmelt_1_1Factory_a0165c3cf6db4841c4525bb8d28657188.html#a0165c3cf6db4841c4525bb8d28657188">pism::frontalmelt::Factory::Factory</a></div><div class="ttdeci">Factory(std::shared_ptr&lt; const Grid &gt; g)</div><div class="ttdef"><b>Definition:</b> <a href="frontalmelt_2Factory_8cc_source.html#l00031">Factory.cc:31</a></div></div>
+<div class="ttc" id="aclasspism_1_1frontalmelt_1_1FrontalMelt_html"><div class="ttname"><a href="classpism_1_1frontalmelt_1_1FrontalMelt.html">pism::frontalmelt::FrontalMelt</a></div><div class="ttdoc">A very rudimentary PISM frontal melt model.</div><div class="ttdef"><b>Definition:</b> <a href="FrontalMelt_8hh_source.html#l00043">FrontalMelt.hh:43</a></div></div>
+<div class="ttc" id="anamespacepism_a47d754ed3e959d5866b02a1b78b6a5b5_html_a47d754ed3e959d5866b02a1b78b6a5b5"><div class="ttname"><a href="namespacepism_a47d754ed3e959d5866b02a1b78b6a5b5.html#a47d754ed3e959d5866b02a1b78b6a5b5">pism::g</a></div><div class="ttdeci">static const double g</div><div class="ttdef"><b>Definition:</b> <a href="exactTestP_8cc_source.html#l00036">exactTestP.cc:36</a></div></div>
+<div class="ttc" id="anamespacepism_html"><div class="ttname"><a href="namespacepism.html">pism</a></div><div class="ttdef"><b>Definition:</b> <a href="AgeColumnSystem_8cc_source.html#l00023">AgeColumnSystem.cc:23</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

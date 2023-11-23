@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PISM, A Parallel Ice Sheet Model
-   &#160;<span id="projectnumber">stable v2.0.7 committed by Constantine Khrulev on 2023-11-21 12:49:11 -0900</span>
+   &#160;<span id="projectnumber">stable v2.1 committed by Constantine Khrulev on 2023-11-23 11:24:22 -0900</span>
    </div>
   </td>
  </tr>
@@ -78,7 +78,7 @@ $(function() {
 <div class="title">FEM.cc</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="FEM_8cc.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/* Copyright (C) 2020 PISM Authors</span></div>
+<a href="FEM_8cc.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/* Copyright (C) 2020, 2023 PISM Authors</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * This file is part of PISM.</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> *</span></div>
@@ -97,7 +97,7 @@ $(function() {
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="FEM_8hh.html">FEM.hh</a>&quot;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;pism/util/fem/FEM.hh&quot;</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;pism/util/node_types.hh&quot;</span></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacepism.html">pism</a> {</div>
@@ -231,7 +231,6 @@ $(function() {
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160; </div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;} <span class="comment">// end of namespace fem</span></div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;} <span class="comment">// end of namespace pism</span></div>
-<div class="ttc" id="aFEM_8hh_html"><div class="ttname"><a href="FEM_8hh.html">FEM.hh</a></div><div class="ttdoc">Classes for implementing the Finite Element Method on an IceGrid.</div></div>
 <div class="ttc" id="anamespacepism_1_1fem_1_1linear_a652778253be65fd8cea9263d14523989_html_a652778253be65fd8cea9263d14523989"><div class="ttname"><a href="namespacepism_1_1fem_1_1linear_a652778253be65fd8cea9263d14523989.html#a652778253be65fd8cea9263d14523989">pism::fem::linear::chi</a></div><div class="ttdeci">Germ chi(unsigned int k, const QuadPoint &amp;pt)</div><div class="ttdoc">Linear basis functions on the interval [-1, -1].</div><div class="ttdef"><b>Definition:</b> <a href="FEM_8cc_source.html#l00029">FEM.cc:29</a></div></div>
 <div class="ttc" id="anamespacepism_1_1fem_1_1linear_ad8ffed8f2d82cf41bf9c9c681782b9b0_html_ad8ffed8f2d82cf41bf9c9c681782b9b0"><div class="ttname"><a href="namespacepism_1_1fem_1_1linear_ad8ffed8f2d82cf41bf9c9c681782b9b0.html#ad8ffed8f2d82cf41bf9c9c681782b9b0">pism::fem::linear::n_chi</a></div><div class="ttdeci">const int n_chi</div><div class="ttdef"><b>Definition:</b> <a href="FEM_8hh_source.html#l00177">FEM.hh:177</a></div></div>
 <div class="ttc" id="anamespacepism_1_1fem_1_1p1_ac81e34235785b11bbe0c75df78e60f88_html_ac81e34235785b11bbe0c75df78e60f88"><div class="ttname"><a href="namespacepism_1_1fem_1_1p1_ac81e34235785b11bbe0c75df78e60f88.html#ac81e34235785b11bbe0c75df78e60f88">pism::fem::p1::chi</a></div><div class="ttdeci">Germ chi(unsigned int k, const QuadPoint &amp;pt)</div><div class="ttdoc">P1 basis functions on the reference element with nodes (0,0), (1,0), (0,1).</div><div class="ttdef"><b>Definition:</b> <a href="FEM_8cc_source.html#l00088">FEM.cc:88</a></div></div>
@@ -245,8 +244,8 @@ $(function() {
 <div class="ttc" id="anamespacepism_1_1fem_ac18e0822794daf89a2d3f3ba0cf11335_html_ac18e0822794daf89a2d3f3ba0cf11335a909b03268404ae56a97f091e62b6bbd8"><div class="ttname"><a href="namespacepism_1_1fem_ac18e0822794daf89a2d3f3ba0cf11335.html#ac18e0822794daf89a2d3f3ba0cf11335a909b03268404ae56a97f091e62b6bbd8">pism::fem::ELEMENT_EXTERIOR</a></div><div class="ttdeci">@ ELEMENT_EXTERIOR</div><div class="ttdef"><b>Definition:</b> <a href="FEM_8hh_source.html#l00205">FEM.hh:205</a></div></div>
 <div class="ttc" id="anamespacepism_1_1fem_ac8c69e98698083b05a597741ef3e71fa_html_ac8c69e98698083b05a597741ef3e71fa"><div class="ttname"><a href="namespacepism_1_1fem_ac8c69e98698083b05a597741ef3e71fa.html#ac8c69e98698083b05a597741ef3e71fa">pism::fem::element_type</a></div><div class="ttdeci">ElementType element_type(int node_type[q1::n_chi])</div><div class="ttdef"><b>Definition:</b> <a href="FEM_8cc_source.html#l00104">FEM.cc:104</a></div></div>
 <div class="ttc" id="anamespacepism_a29133ed3f28e0aaba2d3af612dbbc5d6_html_a29133ed3f28e0aaba2d3af612dbbc5d6a439a40e16153abe158520a9b110fd8bd"><div class="ttname"><a href="namespacepism_a29133ed3f28e0aaba2d3af612dbbc5d6.html#a29133ed3f28e0aaba2d3af612dbbc5d6a439a40e16153abe158520a9b110fd8bd">pism::NODE_EXTERIOR</a></div><div class="ttdeci">@ NODE_EXTERIOR</div><div class="ttdef"><b>Definition:</b> <a href="node__types_8hh_source.html#l00037">node_types.hh:36</a></div></div>
-<div class="ttc" id="anamespacepism_a7343afff8d353b59dbdec563bd896812_html_a7343afff8d353b59dbdec563bd896812"><div class="ttname"><a href="namespacepism_a7343afff8d353b59dbdec563bd896812.html#a7343afff8d353b59dbdec563bd896812">pism::k</a></div><div class="ttdeci">static const double k</div><div class="ttdef"><b>Definition:</b> <a href="exactTestP_8cc_source.html#l00045">exactTestP.cc:45</a></div></div>
-<div class="ttc" id="anamespacepism_html"><div class="ttname"><a href="namespacepism.html">pism</a></div><div class="ttdef"><b>Definition:</b> <a href="AgeColumnSystem_8cc_source.html#l00024">AgeColumnSystem.cc:24</a></div></div>
+<div class="ttc" id="anamespacepism_a7343afff8d353b59dbdec563bd896812_html_a7343afff8d353b59dbdec563bd896812"><div class="ttname"><a href="namespacepism_a7343afff8d353b59dbdec563bd896812.html#a7343afff8d353b59dbdec563bd896812">pism::k</a></div><div class="ttdeci">static const double k</div><div class="ttdef"><b>Definition:</b> <a href="exactTestP_8cc_source.html#l00042">exactTestP.cc:42</a></div></div>
+<div class="ttc" id="anamespacepism_html"><div class="ttname"><a href="namespacepism.html">pism</a></div><div class="ttdef"><b>Definition:</b> <a href="AgeColumnSystem_8cc_source.html#l00023">AgeColumnSystem.cc:23</a></div></div>
 <div class="ttc" id="astructpism_1_1fem_1_1Germ_a049a429410ad48bb357c2ca2004b0df5_html_a049a429410ad48bb357c2ca2004b0df5"><div class="ttname"><a href="structpism_1_1fem_1_1Germ_a049a429410ad48bb357c2ca2004b0df5.html#a049a429410ad48bb357c2ca2004b0df5">pism::fem::Germ::dy</a></div><div class="ttdeci">double dy</div><div class="ttdoc">Function derivative with respect to y.</div><div class="ttdef"><b>Definition:</b> <a href="FEM_8hh_source.html#l00157">FEM.hh:157</a></div></div>
 <div class="ttc" id="astructpism_1_1fem_1_1Germ_a0acf620659f26a95338160e6943e4abf_html_a0acf620659f26a95338160e6943e4abf"><div class="ttname"><a href="structpism_1_1fem_1_1Germ_a0acf620659f26a95338160e6943e4abf.html#a0acf620659f26a95338160e6943e4abf">pism::fem::Germ::val</a></div><div class="ttdeci">double val</div><div class="ttdoc">Function value.</div><div class="ttdef"><b>Definition:</b> <a href="FEM_8hh_source.html#l00153">FEM.hh:153</a></div></div>
 <div class="ttc" id="astructpism_1_1fem_1_1Germ_afef00876912306f50415036a6b2073dc_html_afef00876912306f50415036a6b2073dc"><div class="ttname"><a href="structpism_1_1fem_1_1Germ_afef00876912306f50415036a6b2073dc.html#afef00876912306f50415036a6b2073dc">pism::fem::Germ::dx</a></div><div class="ttdeci">double dx</div><div class="ttdoc">Function deriviative with respect to x.</div><div class="ttdef"><b>Definition:</b> <a href="FEM_8hh_source.html#l00155">FEM.hh:155</a></div></div>

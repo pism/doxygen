@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PISM, A Parallel Ice Sheet Model
-   &#160;<span id="projectnumber">stable v2.0.7 committed by Constantine Khrulev on 2023-11-21 12:49:11 -0900</span>
+   &#160;<span id="projectnumber">stable v2.1 committed by Constantine Khrulev on 2023-11-23 11:24:22 -0900</span>
    </div>
   </td>
  </tr>
@@ -78,7 +78,7 @@ $(function() {
 <div class="title">SSAFD_diagnostics.hh</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="SSAFD__diagnostics_8hh.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/* Copyright (C) 2015, 2016, 2017 PISM Authors</span></div>
+<a href="SSAFD__diagnostics_8hh.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/* Copyright (C) 2015, 2016, 2017, 2023 PISM Authors</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * This file is part of PISM.</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> *</span></div>
@@ -111,19 +111,18 @@ $(function() {
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <a class="code" href="classpism_1_1stressbalance_1_1SSAFD__nuH_ab486b56845942e81732ec765dcc5bb5b.html#ab486b56845942e81732ec765dcc5bb5b">SSAFD_nuH</a>(<span class="keyword">const</span> <a class="code" href="classpism_1_1stressbalance_1_1SSAFD.html">SSAFD</a> *m);</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="classpism_1_1IceModelVec_a4c2d000bf8c70d9ed9801ea339b11097.html#a4c2d000bf8c70d9ed9801ea339b11097">IceModelVec::Ptr</a> <a class="code" href="classpism_1_1stressbalance_1_1SSAFD__nuH_a41ab999e0b84abbf35ed0b92530abf91.html#a41ab999e0b84abbf35ed0b92530abf91">compute_impl</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="keyword">virtual</span> std::shared_ptr&lt;array::Array&gt; <a class="code" href="classpism_1_1stressbalance_1_1SSAFD__nuH_a7be8294149cfe4438754efe55f37e400.html#a7be8294149cfe4438754efe55f37e400">compute_impl</a>() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;};</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;} <span class="comment">// end of namespace stressbalance</span></div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;} <span class="comment">// end of namespace pism</span></div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* _SSAFD_DIAGNOSTIC_H_ */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="aclasspism_1_1Diag_html"><div class="ttname"><a href="classpism_1_1Diag.html">pism::Diag</a></div><div class="ttdoc">A template derived from Diagnostic, adding a &quot;Model&quot;.</div><div class="ttdef"><b>Definition:</b> <a href="Diagnostic_8hh_source.html#l00161">Diagnostic.hh:161</a></div></div>
-<div class="ttc" id="aclasspism_1_1IceModelVec_a4c2d000bf8c70d9ed9801ea339b11097_html_a4c2d000bf8c70d9ed9801ea339b11097"><div class="ttname"><a href="classpism_1_1IceModelVec_a4c2d000bf8c70d9ed9801ea339b11097.html#a4c2d000bf8c70d9ed9801ea339b11097">pism::IceModelVec::Ptr</a></div><div class="ttdeci">std::shared_ptr&lt; IceModelVec &gt; Ptr</div><div class="ttdef"><b>Definition:</b> <a href="iceModelVec_8hh_source.html#l00206">iceModelVec.hh:206</a></div></div>
-<div class="ttc" id="aclasspism_1_1stressbalance_1_1SSAFD__nuH_a41ab999e0b84abbf35ed0b92530abf91_html_a41ab999e0b84abbf35ed0b92530abf91"><div class="ttname"><a href="classpism_1_1stressbalance_1_1SSAFD__nuH_a41ab999e0b84abbf35ed0b92530abf91.html#a41ab999e0b84abbf35ed0b92530abf91">pism::stressbalance::SSAFD_nuH::compute_impl</a></div><div class="ttdeci">virtual IceModelVec::Ptr compute_impl() const</div><div class="ttdef"><b>Definition:</b> <a href="SSAFD_8cc_source.html#l01755">SSAFD.cc:1755</a></div></div>
-<div class="ttc" id="aclasspism_1_1stressbalance_1_1SSAFD__nuH_ab486b56845942e81732ec765dcc5bb5b_html_ab486b56845942e81732ec765dcc5bb5b"><div class="ttname"><a href="classpism_1_1stressbalance_1_1SSAFD__nuH_ab486b56845942e81732ec765dcc5bb5b.html#ab486b56845942e81732ec765dcc5bb5b">pism::stressbalance::SSAFD_nuH::SSAFD_nuH</a></div><div class="ttdeci">SSAFD_nuH(const SSAFD *m)</div><div class="ttdef"><b>Definition:</b> <a href="SSAFD_8cc_source.html#l01742">SSAFD.cc:1742</a></div></div>
+<div class="ttc" id="aclasspism_1_1Diag_html"><div class="ttname"><a href="classpism_1_1Diag.html">pism::Diag</a></div><div class="ttdoc">A template derived from Diagnostic, adding a &quot;Model&quot;.</div><div class="ttdef"><b>Definition:</b> <a href="Diagnostic_8hh_source.html#l00166">Diagnostic.hh:166</a></div></div>
+<div class="ttc" id="aclasspism_1_1stressbalance_1_1SSAFD__nuH_a7be8294149cfe4438754efe55f37e400_html_a7be8294149cfe4438754efe55f37e400"><div class="ttname"><a href="classpism_1_1stressbalance_1_1SSAFD__nuH_a7be8294149cfe4438754efe55f37e400.html#a7be8294149cfe4438754efe55f37e400">pism::stressbalance::SSAFD_nuH::compute_impl</a></div><div class="ttdeci">virtual std::shared_ptr&lt; array::Array &gt; compute_impl() const</div><div class="ttdef"><b>Definition:</b> <a href="SSAFD_8cc_source.html#l01751">SSAFD.cc:1751</a></div></div>
+<div class="ttc" id="aclasspism_1_1stressbalance_1_1SSAFD__nuH_ab486b56845942e81732ec765dcc5bb5b_html_ab486b56845942e81732ec765dcc5bb5b"><div class="ttname"><a href="classpism_1_1stressbalance_1_1SSAFD__nuH_ab486b56845942e81732ec765dcc5bb5b.html#ab486b56845942e81732ec765dcc5bb5b">pism::stressbalance::SSAFD_nuH::SSAFD_nuH</a></div><div class="ttdeci">SSAFD_nuH(const SSAFD *m)</div><div class="ttdef"><b>Definition:</b> <a href="SSAFD_8cc_source.html#l01739">SSAFD.cc:1739</a></div></div>
 <div class="ttc" id="aclasspism_1_1stressbalance_1_1SSAFD__nuH_html"><div class="ttname"><a href="classpism_1_1stressbalance_1_1SSAFD__nuH.html">pism::stressbalance::SSAFD_nuH</a></div><div class="ttdoc">Reports the nuH (viscosity times thickness) product on the staggered grid.</div><div class="ttdef"><b>Definition:</b> <a href="SSAFD__diagnostics_8hh_source.html#l00029">SSAFD_diagnostics.hh:30</a></div></div>
-<div class="ttc" id="aclasspism_1_1stressbalance_1_1SSAFD_html"><div class="ttname"><a href="classpism_1_1stressbalance_1_1SSAFD.html">pism::stressbalance::SSAFD</a></div><div class="ttdoc">PISM's SSA solver: the finite difference implementation.</div><div class="ttdef"><b>Definition:</b> <a href="SSAFD_8hh_source.html#l00033">SSAFD.hh:34</a></div></div>
-<div class="ttc" id="anamespacepism_html"><div class="ttname"><a href="namespacepism.html">pism</a></div><div class="ttdef"><b>Definition:</b> <a href="AgeColumnSystem_8cc_source.html#l00024">AgeColumnSystem.cc:24</a></div></div>
+<div class="ttc" id="aclasspism_1_1stressbalance_1_1SSAFD_html"><div class="ttname"><a href="classpism_1_1stressbalance_1_1SSAFD.html">pism::stressbalance::SSAFD</a></div><div class="ttdoc">PISM's SSA solver: the finite difference implementation.</div><div class="ttdef"><b>Definition:</b> <a href="SSAFD_8hh_source.html#l00034">SSAFD.hh:35</a></div></div>
+<div class="ttc" id="anamespacepism_html"><div class="ttname"><a href="namespacepism.html">pism</a></div><div class="ttdef"><b>Definition:</b> <a href="AgeColumnSystem_8cc_source.html#l00023">AgeColumnSystem.cc:23</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

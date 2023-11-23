@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PISM, A Parallel Ice Sheet Model
-   &#160;<span id="projectnumber">stable v2.0.7 committed by Constantine Khrulev on 2023-11-21 12:49:11 -0900</span>
+   &#160;<span id="projectnumber">stable v2.1 committed by Constantine Khrulev on 2023-11-23 11:24:22 -0900</span>
    </div>
   </td>
  </tr>
@@ -78,7 +78,7 @@ $(function() {
 <div class="title">TerminationReason.cc</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="TerminationReason_8cc.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// Copyright (C) 2012, 2014  David Maxwell</span></div>
+<a href="TerminationReason_8cc.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// Copyright (C) 2012, 2014, 2023  David Maxwell</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">// This file is part of PISM.</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">//</span></div>
@@ -96,7 +96,7 @@ $(function() {
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">// along with PISM; if not, write to the Free Software</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">// Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="TerminationReason_8hh.html">TerminationReason.hh</a>&quot;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &quot;pism/util/TerminationReason.hh&quot;</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacepism.html">pism</a> {</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
@@ -130,16 +130,15 @@ $(function() {
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;}</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;} <span class="comment">// end of namespace pism</span></div>
-<div class="ttc" id="aTerminationReason_8hh_html"><div class="ttname"><a href="TerminationReason_8hh.html">TerminationReason.hh</a></div></div>
 <div class="ttc" id="aclasspism_1_1GenericTerminationReason_a3c5675990b3c915a081f9ebcf33cd3f6_html_a3c5675990b3c915a081f9ebcf33cd3f6"><div class="ttname"><a href="classpism_1_1GenericTerminationReason_a3c5675990b3c915a081f9ebcf33cd3f6.html#a3c5675990b3c915a081f9ebcf33cd3f6">pism::GenericTerminationReason::get_description</a></div><div class="ttdeci">virtual void get_description(std::ostream &amp;desc, int indent_level=0)</div><div class="ttdef"><b>Definition:</b> <a href="TerminationReason_8cc_source.html#l00045">TerminationReason.cc:45</a></div></div>
-<div class="ttc" id="aclasspism_1_1GenericTerminationReason_ad38cbe6201ed52c7333bb8a44ce373f1_html_ad38cbe6201ed52c7333bb8a44ce373f1"><div class="ttname"><a href="classpism_1_1GenericTerminationReason_ad38cbe6201ed52c7333bb8a44ce373f1.html#ad38cbe6201ed52c7333bb8a44ce373f1">pism::GenericTerminationReason::m_description</a></div><div class="ttdeci">std::string m_description</div><div class="ttdef"><b>Definition:</b> <a href="TerminationReason_8hh_source.html#l00153">TerminationReason.hh:153</a></div></div>
+<div class="ttc" id="aclasspism_1_1GenericTerminationReason_ad38cbe6201ed52c7333bb8a44ce373f1_html_ad38cbe6201ed52c7333bb8a44ce373f1"><div class="ttname"><a href="classpism_1_1GenericTerminationReason_ad38cbe6201ed52c7333bb8a44ce373f1.html#ad38cbe6201ed52c7333bb8a44ce373f1">pism::GenericTerminationReason::m_description</a></div><div class="ttdeci">std::string m_description</div><div class="ttdef"><b>Definition:</b> <a href="TerminationReason_8hh_source.html#l00151">TerminationReason.hh:151</a></div></div>
 <div class="ttc" id="aclasspism_1_1KSPTerminationReason_a53042c6bed6f87928c2142f3a428c61d_html_a53042c6bed6f87928c2142f3a428c61d"><div class="ttname"><a href="classpism_1_1KSPTerminationReason_a53042c6bed6f87928c2142f3a428c61d.html#a53042c6bed6f87928c2142f3a428c61d">pism::KSPTerminationReason::KSPTerminationReason</a></div><div class="ttdeci">KSPTerminationReason(KSPConvergedReason r)</div><div class="ttdef"><b>Definition:</b> <a href="TerminationReason_8cc_source.html#l00025">TerminationReason.cc:25</a></div></div>
 <div class="ttc" id="aclasspism_1_1KSPTerminationReason_ae52e0cf9eb8897895cc3c93af44487e5_html_ae52e0cf9eb8897895cc3c93af44487e5"><div class="ttname"><a href="classpism_1_1KSPTerminationReason_ae52e0cf9eb8897895cc3c93af44487e5.html#ae52e0cf9eb8897895cc3c93af44487e5">pism::KSPTerminationReason::get_description</a></div><div class="ttdeci">virtual void get_description(std::ostream &amp;desc, int indent_level=0)</div><div class="ttdef"><b>Definition:</b> <a href="TerminationReason_8cc_source.html#l00028">TerminationReason.cc:28</a></div></div>
 <div class="ttc" id="aclasspism_1_1SNESTerminationReason_a25febc50da3c47fe920a2716ec0c27b8_html_a25febc50da3c47fe920a2716ec0c27b8"><div class="ttname"><a href="classpism_1_1SNESTerminationReason_a25febc50da3c47fe920a2716ec0c27b8.html#a25febc50da3c47fe920a2716ec0c27b8">pism::SNESTerminationReason::get_description</a></div><div class="ttdeci">virtual void get_description(std::ostream &amp;desc, int indent_level=0)</div><div class="ttdef"><b>Definition:</b> <a href="TerminationReason_8cc_source.html#l00038">TerminationReason.cc:38</a></div></div>
 <div class="ttc" id="aclasspism_1_1SNESTerminationReason_ab2c45199cc2740e6783b3fecf00d1030_html_ab2c45199cc2740e6783b3fecf00d1030"><div class="ttname"><a href="classpism_1_1SNESTerminationReason_ab2c45199cc2740e6783b3fecf00d1030.html#ab2c45199cc2740e6783b3fecf00d1030">pism::SNESTerminationReason::SNESTerminationReason</a></div><div class="ttdeci">SNESTerminationReason(SNESConvergedReason r)</div><div class="ttdef"><b>Definition:</b> <a href="TerminationReason_8cc_source.html#l00035">TerminationReason.cc:35</a></div></div>
-<div class="ttc" id="aclasspism_1_1TerminationReason_a54f777c9b17ba06926909c7856a8351c_html_a54f777c9b17ba06926909c7856a8351c"><div class="ttname"><a href="classpism_1_1TerminationReason_a54f777c9b17ba06926909c7856a8351c.html#a54f777c9b17ba06926909c7856a8351c">pism::TerminationReason::m_reason</a></div><div class="ttdeci">int m_reason</div><div class="ttdef"><b>Definition:</b> <a href="TerminationReason_8hh_source.html#l00096">TerminationReason.hh:96</a></div></div>
-<div class="ttc" id="aclasspism_1_1TerminationReason_ad7b7a7c3a00398ebe23e389ffa60f9cf_html_ad7b7a7c3a00398ebe23e389ffa60f9cf"><div class="ttname"><a href="classpism_1_1TerminationReason_ad7b7a7c3a00398ebe23e389ffa60f9cf.html#ad7b7a7c3a00398ebe23e389ffa60f9cf">pism::TerminationReason::sm_indent</a></div><div class="ttdeci">static const char * sm_indent</div><div class="ttdef"><b>Definition:</b> <a href="TerminationReason_8hh_source.html#l00098">TerminationReason.hh:98</a></div></div>
-<div class="ttc" id="anamespacepism_html"><div class="ttname"><a href="namespacepism.html">pism</a></div><div class="ttdef"><b>Definition:</b> <a href="AgeColumnSystem_8cc_source.html#l00024">AgeColumnSystem.cc:24</a></div></div>
+<div class="ttc" id="aclasspism_1_1TerminationReason_a54f777c9b17ba06926909c7856a8351c_html_a54f777c9b17ba06926909c7856a8351c"><div class="ttname"><a href="classpism_1_1TerminationReason_a54f777c9b17ba06926909c7856a8351c.html#a54f777c9b17ba06926909c7856a8351c">pism::TerminationReason::m_reason</a></div><div class="ttdeci">int m_reason</div><div class="ttdef"><b>Definition:</b> <a href="TerminationReason_8hh_source.html#l00094">TerminationReason.hh:94</a></div></div>
+<div class="ttc" id="aclasspism_1_1TerminationReason_ad7b7a7c3a00398ebe23e389ffa60f9cf_html_ad7b7a7c3a00398ebe23e389ffa60f9cf"><div class="ttname"><a href="classpism_1_1TerminationReason_ad7b7a7c3a00398ebe23e389ffa60f9cf.html#ad7b7a7c3a00398ebe23e389ffa60f9cf">pism::TerminationReason::sm_indent</a></div><div class="ttdeci">static const char * sm_indent</div><div class="ttdef"><b>Definition:</b> <a href="TerminationReason_8hh_source.html#l00096">TerminationReason.hh:96</a></div></div>
+<div class="ttc" id="anamespacepism_html"><div class="ttname"><a href="namespacepism.html">pism</a></div><div class="ttdef"><b>Definition:</b> <a href="AgeColumnSystem_8cc_source.html#l00023">AgeColumnSystem.cc:23</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

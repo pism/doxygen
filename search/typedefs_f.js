@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['unitssystemptr_9297',['UnitsSystemPtr',['../classpism_1_1Context_a00183a13650447bed1697b8c9ef9fcd6.html#a00183a13650447bed1697b8c9ef9fcd6',1,'pism::Context']]]
+  ['weakptr_9682',['WeakPtr',['../classpism_1_1Wrapper_a675fb999565f9c6819f415954efbb664.html#a675fb999565f9c6819f415954efbb664',1,'pism::Wrapper']]]
 ];

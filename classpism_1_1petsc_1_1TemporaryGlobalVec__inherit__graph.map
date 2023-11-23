@@ -1,6 +1,6 @@
 <map id="pism::petsc::TemporaryGlobalVec" name="pism::petsc::TemporaryGlobalVec">
-<area shape="rect" id="node1" title=" " alt="" coords="5,261,244,288"/>
-<area shape="rect" id="node2" href="$classpism_1_1petsc_1_1Vec.html" title=" " alt="" coords="61,185,189,212"/>
-<area shape="rect" id="node3" href="$classpism_1_1petsc_1_1Wrapper.html" title=" " alt="" coords="45,95,205,136"/>
-<area shape="rect" id="node4" href="$classpism_1_1petsc_1_1Wrapper.html" title=" " alt="" coords="25,5,224,32"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,247,244,273"/>
+<area shape="rect" id="node2" href="$classpism_1_1petsc_1_1Vec.html" title=" " alt="" coords="61,171,189,197"/>
+<area shape="rect" id="node3" href="$classpism_1_1Wrapper.html" title=" " alt="" coords="35,95,214,121"/>
+<area shape="rect" id="node4" href="$classpism_1_1Wrapper.html" title=" " alt="" coords="47,5,202,32"/>
 </map>

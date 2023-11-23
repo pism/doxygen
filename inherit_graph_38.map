@@ -1,3 +1,8 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$structpism_1_1fem_1_1Germ.html" title="Struct for gathering the value and derivative of a function at a point." alt="" coords="5,5,137,32"/>
+<area shape="rect" id="node1" href="$classpism_1_1fem_1_1Element.html" title="The mapping from global to local degrees of freedom." alt="" coords="5,81,156,108"/>
+<area shape="rect" id="node2" href="$classpism_1_1fem_1_1Element2.html" title=" " alt="" coords="204,56,363,83"/>
+<area shape="rect" id="node5" href="$classpism_1_1fem_1_1Element3.html" title=" " alt="" coords="204,107,363,133"/>
+<area shape="rect" id="node3" href="$classpism_1_1fem_1_1P1Element2.html" title="P1 element embedded in Q1Element2." alt="" coords="411,5,586,32"/>
+<area shape="rect" id="node4" href="$classpism_1_1fem_1_1Q1Element2.html" title="Q1 element with sides parallel to X and Y axes." alt="" coords="411,56,587,83"/>
+<area shape="rect" id="node6" href="$classpism_1_1fem_1_1Q1Element3.html" title="3D Q1 element" alt="" coords="411,107,587,133"/>
 </map>

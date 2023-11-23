@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PISM, A Parallel Ice Sheet Model
-   &#160;<span id="projectnumber">stable v2.0.7 committed by Constantine Khrulev on 2023-11-21 12:49:11 -0900</span>
+   &#160;<span id="projectnumber">stable v2.1 committed by Constantine Khrulev on 2023-11-23 11:24:22 -0900</span>
    </div>
   </td>
  </tr>
@@ -78,7 +78,7 @@ $(function() {
 <div class="title">IPFunctional.cc</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="IPFunctional_8cc.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// Copyright (C) 2012, 2013, 2014, 2015, 2017, 2020  David Maxwell</span></div>
+<a href="IPFunctional_8cc.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// Copyright (C) 2012, 2013, 2014, 2015, 2017, 2020, 2022, 2023  David Maxwell</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">// This file is part of PISM.</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">//</span></div>
@@ -96,125 +96,125 @@ $(function() {
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">// along with PISM; if not, write to the Free Software</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">// Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="IPFunctional_8hh.html">IPFunctional.hh</a>&quot;</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;pism/util/IceGrid.hh&quot;</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;pism/util/IceModelVec2V.hh&quot;</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;pism/util/error_handling.hh&quot;</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacepism.html">pism</a> {</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">namespace </span>inverse {</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="namespacepism_1_1inverse_af7ad070d8f2062536ef34555ed169ac1.html#af7ad070d8f2062536ef34555ed169ac1">   27</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespacepism_1_1inverse_af7ad070d8f2062536ef34555ed169ac1.html#af7ad070d8f2062536ef34555ed169ac1">gradientFD</a>(<a class="code" href="classpism_1_1inverse_1_1IPFunctional.html">IPFunctional&lt;IceModelVec2S&gt;</a> &amp;f, <a class="code" href="classpism_1_1IceModelVec2S.html">IceModelVec2S</a> &amp;x, <a class="code" href="classpism_1_1IceModelVec2S.html">IceModelVec2S</a> &amp;gradient) {</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <span class="keyword">const</span> <a class="code" href="classpism_1_1IceGrid.html">IceGrid</a> &amp;grid = *x.<a class="code" href="classpism_1_1IceModelVec_a7ec09c4ef26812d2a16d81db42f6b852.html#a7ec09c4ef26812d2a16d81db42f6b852">grid</a>();</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="keywordtype">double</span> h = PETSC_SQRT_MACHINE_EPSILON;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="keywordtype">double</span> F0,Fh;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  f.<a class="code" href="classpism_1_1inverse_1_1IPFunctional_a2eb38a278b42f32d0068b37ef3937a55.html#a2eb38a278b42f32d0068b37ef3937a55">valueAt</a>(x,&amp;F0);</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <a class="code" href="classpism_1_1AccessList.html">IceModelVec::AccessList</a> list(gradient);</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <a class="code" href="classpism_1_1ParallelSection.html">ParallelSection</a> loop(grid.<a class="code" href="classpism_1_1IceGrid_ab20351f2aba0d91fee3f7d3bec944ef9.html#ab20351f2aba0d91fee3f7d3bec944ef9">com</a>);</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keywordflow">try</span> {</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordflow">for</span> (<a class="code" href="classpism_1_1Points.html">Points</a> p(grid); p; p.<a class="code" href="classpism_1_1PointsWithGhosts_a36441e98cc5c0a8538c5358523dce6af.html#a36441e98cc5c0a8538c5358523dce6af">next</a>()) {</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;      <span class="keyword">const</span> <span class="keywordtype">int</span> i = p.i(), j = p.j();</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;      {</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <a class="code" href="classpism_1_1AccessList.html">IceModelVec::AccessList</a> access_x(x);</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        x(i,j) += h;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;      }</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;      x.<a class="code" href="classpism_1_1IceModelVec_a08cf2fc4afc32d8a12619c0d5d090956.html#a08cf2fc4afc32d8a12619c0d5d090956">update_ghosts</a>();</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;      f.<a class="code" href="classpism_1_1inverse_1_1IPFunctional_a2eb38a278b42f32d0068b37ef3937a55.html#a2eb38a278b42f32d0068b37ef3937a55">valueAt</a>(x,&amp;Fh);</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;      {</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <a class="code" href="classpism_1_1AccessList.html">IceModelVec::AccessList</a> access_x(x);</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        x(i,j) -= h;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;      }</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;      x.<a class="code" href="classpism_1_1IceModelVec_a08cf2fc4afc32d8a12619c0d5d090956.html#a08cf2fc4afc32d8a12619c0d5d090956">update_ghosts</a>();</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;      gradient(i,j) = (Fh-F0)/h;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    }</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  } <span class="keywordflow">catch</span> (...) {</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    loop.<a class="code" href="classpism_1_1ParallelSection_a6b0a6e5e64970af7eadabfebe2b20bd2.html#a6b0a6e5e64970af7eadabfebe2b20bd2">failed</a>();</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  }</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  loop.<a class="code" href="classpism_1_1ParallelSection_ac23296abee1cbcb3c3fd68c7f5ce0835.html#ac23296abee1cbcb3c3fd68c7f5ce0835">check</a>();</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;}</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
-<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="namespacepism_1_1inverse_a4e7aadd85e8a89f0169c4154034aeaa2.html#a4e7aadd85e8a89f0169c4154034aeaa2">   64</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespacepism_1_1inverse_af7ad070d8f2062536ef34555ed169ac1.html#af7ad070d8f2062536ef34555ed169ac1">gradientFD</a>(<a class="code" href="classpism_1_1inverse_1_1IPFunctional.html">IPFunctional&lt;IceModelVec2V&gt;</a> &amp;f, <a class="code" href="classpism_1_1IceModelVec2V.html">IceModelVec2V</a> &amp;x, <a class="code" href="classpism_1_1IceModelVec2V.html">IceModelVec2V</a> &amp;gradient) {</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keyword">const</span> <a class="code" href="classpism_1_1IceGrid.html">IceGrid</a> &amp;grid = *x.<a class="code" href="classpism_1_1IceModelVec_a7ec09c4ef26812d2a16d81db42f6b852.html#a7ec09c4ef26812d2a16d81db42f6b852">grid</a>();</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keywordtype">double</span> h = PETSC_SQRT_MACHINE_EPSILON;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keywordtype">double</span> F0,Fh;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  </div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  f.<a class="code" href="classpism_1_1inverse_1_1IPFunctional_a2eb38a278b42f32d0068b37ef3937a55.html#a2eb38a278b42f32d0068b37ef3937a55">valueAt</a>(x,&amp;F0);</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  </div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <a class="code" href="classpism_1_1AccessList.html">IceModelVec::AccessList</a> access_gradient(gradient);</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <a class="code" href="classpism_1_1ParallelSection.html">ParallelSection</a> loop(grid.<a class="code" href="classpism_1_1IceGrid_ab20351f2aba0d91fee3f7d3bec944ef9.html#ab20351f2aba0d91fee3f7d3bec944ef9">com</a>);</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="keywordflow">try</span> {</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordflow">for</span> (<a class="code" href="classpism_1_1Points.html">Points</a> p(grid); p; p.<a class="code" href="classpism_1_1PointsWithGhosts_a36441e98cc5c0a8538c5358523dce6af.html#a36441e98cc5c0a8538c5358523dce6af">next</a>()) {</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;      <span class="keyword">const</span> <span class="keywordtype">int</span> i = p.i(), j = p.j();</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;      {</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <a class="code" href="classpism_1_1AccessList.html">IceModelVec::AccessList</a> access_x(x);</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        x(i,j).u += h;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;      }</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;      x.<a class="code" href="classpism_1_1IceModelVec_a08cf2fc4afc32d8a12619c0d5d090956.html#a08cf2fc4afc32d8a12619c0d5d090956">update_ghosts</a>();</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;      f.<a class="code" href="classpism_1_1inverse_1_1IPFunctional_a2eb38a278b42f32d0068b37ef3937a55.html#a2eb38a278b42f32d0068b37ef3937a55">valueAt</a>(x,&amp;Fh);</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;      {</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <a class="code" href="classpism_1_1AccessList.html">IceModelVec::AccessList</a> access_x(x);</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        x(i,j).u -= h;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;      }</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;      x.<a class="code" href="classpism_1_1IceModelVec_a08cf2fc4afc32d8a12619c0d5d090956.html#a08cf2fc4afc32d8a12619c0d5d090956">update_ghosts</a>();</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;      gradient(i,j).u = (Fh-F0)/h;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;      {</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <a class="code" href="classpism_1_1AccessList.html">IceModelVec::AccessList</a> access_x(x);</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        x(i,j).v += h;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;      }</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;      x.<a class="code" href="classpism_1_1IceModelVec_a08cf2fc4afc32d8a12619c0d5d090956.html#a08cf2fc4afc32d8a12619c0d5d090956">update_ghosts</a>();</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;      f.<a class="code" href="classpism_1_1inverse_1_1IPFunctional_a2eb38a278b42f32d0068b37ef3937a55.html#a2eb38a278b42f32d0068b37ef3937a55">valueAt</a>(x,&amp;Fh);</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;      {</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        <a class="code" href="classpism_1_1AccessList.html">IceModelVec::AccessList</a> access_x(x);</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        x(i,j).v -= h;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;      }</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;      x.<a class="code" href="classpism_1_1IceModelVec_a08cf2fc4afc32d8a12619c0d5d090956.html#a08cf2fc4afc32d8a12619c0d5d090956">update_ghosts</a>();</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;      gradient(i,j).v = (Fh-F0)/h;</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    }</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  } <span class="keywordflow">catch</span> (...) {</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    loop.<a class="code" href="classpism_1_1ParallelSection_a6b0a6e5e64970af7eadabfebe2b20bd2.html#a6b0a6e5e64970af7eadabfebe2b20bd2">failed</a>();</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;  }</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  loop.<a class="code" href="classpism_1_1ParallelSection_ac23296abee1cbcb3c3fd68c7f5ce0835.html#ac23296abee1cbcb3c3fd68c7f5ce0835">check</a>();</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;}</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="comment">// PetscErrorCode gradientFD(IPFunctional&lt;IceModelVec2V&gt; &amp;f, IceModelVec2V &amp;x, IceModelVec2V &amp;gradient);</span></div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;} <span class="comment">// end of namespace inverse</span></div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;} <span class="comment">// end of namespace pism</span></div>
-<div class="ttc" id="aIPFunctional_8hh_html"><div class="ttname"><a href="IPFunctional_8hh.html">IPFunctional.hh</a></div></div>
-<div class="ttc" id="aclasspism_1_1AccessList_html"><div class="ttname"><a href="classpism_1_1AccessList.html">pism::AccessList</a></div><div class="ttdoc">Makes sure that we call begin_access() and end_access() for all accessed IceModelVecs.</div><div class="ttdef"><b>Definition:</b> <a href="iceModelVec_8hh_source.html#l00059">iceModelVec.hh:59</a></div></div>
-<div class="ttc" id="aclasspism_1_1IceGrid_ab20351f2aba0d91fee3f7d3bec944ef9_html_ab20351f2aba0d91fee3f7d3bec944ef9"><div class="ttname"><a href="classpism_1_1IceGrid_ab20351f2aba0d91fee3f7d3bec944ef9.html#ab20351f2aba0d91fee3f7d3bec944ef9">pism::IceGrid::com</a></div><div class="ttdeci">const MPI_Comm com</div><div class="ttdef"><b>Definition:</b> <a href="IceGrid_8hh_source.html#l00311">IceGrid.hh:311</a></div></div>
-<div class="ttc" id="aclasspism_1_1IceGrid_html"><div class="ttname"><a href="classpism_1_1IceGrid.html">pism::IceGrid</a></div><div class="ttdoc">Describes the PISM grid and the distribution of data across processors.</div><div class="ttdef"><b>Definition:</b> <a href="IceGrid_8hh_source.html#l00228">IceGrid.hh:228</a></div></div>
-<div class="ttc" id="aclasspism_1_1IceModelVec2S_html"><div class="ttname"><a href="classpism_1_1IceModelVec2S.html">pism::IceModelVec2S</a></div><div class="ttdef"><b>Definition:</b> <a href="iceModelVec_8hh_source.html#l00336">iceModelVec.hh:336</a></div></div>
-<div class="ttc" id="aclasspism_1_1IceModelVec2V_html"><div class="ttname"><a href="classpism_1_1IceModelVec2V.html">pism::IceModelVec2V</a></div><div class="ttdef"><b>Definition:</b> <a href="IceModelVec2V_8hh_source.html#l00028">IceModelVec2V.hh:28</a></div></div>
-<div class="ttc" id="aclasspism_1_1IceModelVec_a08cf2fc4afc32d8a12619c0d5d090956_html_a08cf2fc4afc32d8a12619c0d5d090956"><div class="ttname"><a href="classpism_1_1IceModelVec_a08cf2fc4afc32d8a12619c0d5d090956.html#a08cf2fc4afc32d8a12619c0d5d090956">pism::IceModelVec::update_ghosts</a></div><div class="ttdeci">void update_ghosts()</div><div class="ttdoc">Updates ghost points.</div><div class="ttdef"><b>Definition:</b> <a href="iceModelVec_8cc_source.html#l00669">iceModelVec.cc:669</a></div></div>
-<div class="ttc" id="aclasspism_1_1IceModelVec_a7ec09c4ef26812d2a16d81db42f6b852_html_a7ec09c4ef26812d2a16d81db42f6b852"><div class="ttname"><a href="classpism_1_1IceModelVec_a7ec09c4ef26812d2a16d81db42f6b852.html#a7ec09c4ef26812d2a16d81db42f6b852">pism::IceModelVec::grid</a></div><div class="ttdeci">IceGrid::ConstPtr grid() const</div><div class="ttdef"><b>Definition:</b> <a href="iceModelVec_8cc_source.html#l00128">iceModelVec.cc:128</a></div></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &quot;pism/inverse/functional/IPFunctional.hh&quot;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;pism/util/Grid.hh&quot;</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;pism/util/array/Vector.hh&quot;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;pism/util/array/Scalar.hh&quot;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;pism/util/error_handling.hh&quot;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacepism.html">pism</a> {</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">namespace </span>inverse {</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="namespacepism_1_1inverse_ad4ddaf9898ba20c8fd58df0cbd955bd5.html#ad4ddaf9898ba20c8fd58df0cbd955bd5">   28</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespacepism_1_1inverse_ad4ddaf9898ba20c8fd58df0cbd955bd5.html#ad4ddaf9898ba20c8fd58df0cbd955bd5">gradientFD</a>(<a class="code" href="classpism_1_1inverse_1_1IPFunctional.html">IPFunctional&lt;array::Scalar&gt;</a> &amp;f, <a class="code" href="classpism_1_1array_1_1Scalar.html">array::Scalar</a> &amp;x, <a class="code" href="classpism_1_1array_1_1Scalar.html">array::Scalar</a> &amp;gradient) {</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="keyword">const</span> <a class="code" href="classpism_1_1Grid.html">Grid</a> &amp;grid = *x.<a class="code" href="classpism_1_1array_1_1Array_a982fca110a5d7011f681b928b20e3577.html#a982fca110a5d7011f681b928b20e3577">grid</a>();</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="keywordtype">double</span> h = PETSC_SQRT_MACHINE_EPSILON;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <span class="keywordtype">double</span> F0,Fh;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  f.<a class="code" href="classpism_1_1inverse_1_1IPFunctional_a2eb38a278b42f32d0068b37ef3937a55.html#a2eb38a278b42f32d0068b37ef3937a55">valueAt</a>(x,&amp;F0);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <a class="code" href="classpism_1_1array_1_1AccessScope.html">array::AccessScope</a> list(gradient);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <a class="code" href="classpism_1_1ParallelSection.html">ParallelSection</a> loop(grid.<a class="code" href="classpism_1_1Grid_a9c670ffb11baca93dcaf3a87c4d2c573.html#a9c670ffb11baca93dcaf3a87c4d2c573">com</a>);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keywordflow">try</span> {</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span> p = grid.<a class="code" href="classpism_1_1Grid_a445ee849503dd04d5fcdd889d200ce95.html#a445ee849503dd04d5fcdd889d200ce95">points</a>(); p; p.<a class="code" href="classpism_1_1PointsWithGhosts_a36441e98cc5c0a8538c5358523dce6af.html#a36441e98cc5c0a8538c5358523dce6af">next</a>()) {</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;      <span class="keyword">const</span> <span class="keywordtype">int</span> i = p.i(), j = p.j();</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;      {</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <a class="code" href="classpism_1_1array_1_1AccessScope.html">array::AccessScope</a> access_x(x);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        x(i,j) += h;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;      }</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;      x.<a class="code" href="classpism_1_1array_1_1Array_ad9defa70b851fd2dfac595cfcbb9d803.html#ad9defa70b851fd2dfac595cfcbb9d803">update_ghosts</a>();</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;      f.<a class="code" href="classpism_1_1inverse_1_1IPFunctional_a2eb38a278b42f32d0068b37ef3937a55.html#a2eb38a278b42f32d0068b37ef3937a55">valueAt</a>(x,&amp;Fh);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;      {</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <a class="code" href="classpism_1_1array_1_1AccessScope.html">array::AccessScope</a> access_x(x);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        x(i,j) -= h;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;      }</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;      x.<a class="code" href="classpism_1_1array_1_1Array_ad9defa70b851fd2dfac595cfcbb9d803.html#ad9defa70b851fd2dfac595cfcbb9d803">update_ghosts</a>();</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;      gradient(i,j) = (Fh-F0)/h;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    }</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  } <span class="keywordflow">catch</span> (...) {</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    loop.<a class="code" href="classpism_1_1ParallelSection_a6b0a6e5e64970af7eadabfebe2b20bd2.html#a6b0a6e5e64970af7eadabfebe2b20bd2">failed</a>();</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  }</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  loop.<a class="code" href="classpism_1_1ParallelSection_ac23296abee1cbcb3c3fd68c7f5ce0835.html#ac23296abee1cbcb3c3fd68c7f5ce0835">check</a>();</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;}</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="namespacepism_1_1inverse_a5ebcc831567fef4dcbef1dbf5ef834b4.html#a5ebcc831567fef4dcbef1dbf5ef834b4">   65</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespacepism_1_1inverse_ad4ddaf9898ba20c8fd58df0cbd955bd5.html#ad4ddaf9898ba20c8fd58df0cbd955bd5">gradientFD</a>(<a class="code" href="classpism_1_1inverse_1_1IPFunctional.html">IPFunctional&lt;array::Vector&gt;</a> &amp;f, <a class="code" href="classpism_1_1array_1_1Vector.html">array::Vector</a> &amp;x, <a class="code" href="classpism_1_1array_1_1Vector.html">array::Vector</a> &amp;gradient) {</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keyword">const</span> <a class="code" href="classpism_1_1Grid.html">Grid</a> &amp;grid = *x.<a class="code" href="classpism_1_1array_1_1Array_a982fca110a5d7011f681b928b20e3577.html#a982fca110a5d7011f681b928b20e3577">grid</a>();</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keywordtype">double</span> h = PETSC_SQRT_MACHINE_EPSILON;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="keywordtype">double</span> F0,Fh;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  f.<a class="code" href="classpism_1_1inverse_1_1IPFunctional_a2eb38a278b42f32d0068b37ef3937a55.html#a2eb38a278b42f32d0068b37ef3937a55">valueAt</a>(x,&amp;F0);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <a class="code" href="classpism_1_1array_1_1AccessScope.html">array::AccessScope</a> access_gradient(gradient);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <a class="code" href="classpism_1_1ParallelSection.html">ParallelSection</a> loop(grid.<a class="code" href="classpism_1_1Grid_a9c670ffb11baca93dcaf3a87c4d2c573.html#a9c670ffb11baca93dcaf3a87c4d2c573">com</a>);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <span class="keywordflow">try</span> {</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span> p = grid.<a class="code" href="classpism_1_1Grid_a445ee849503dd04d5fcdd889d200ce95.html#a445ee849503dd04d5fcdd889d200ce95">points</a>(); p; p.<a class="code" href="classpism_1_1PointsWithGhosts_a36441e98cc5c0a8538c5358523dce6af.html#a36441e98cc5c0a8538c5358523dce6af">next</a>()) {</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;      <span class="keyword">const</span> <span class="keywordtype">int</span> i = p.i(), j = p.j();</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;      {</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <a class="code" href="classpism_1_1array_1_1AccessScope.html">array::AccessScope</a> access_x(x);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        x(i,j).u += h;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;      }</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;      x.<a class="code" href="classpism_1_1array_1_1Array_ad9defa70b851fd2dfac595cfcbb9d803.html#ad9defa70b851fd2dfac595cfcbb9d803">update_ghosts</a>();</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;      f.<a class="code" href="classpism_1_1inverse_1_1IPFunctional_a2eb38a278b42f32d0068b37ef3937a55.html#a2eb38a278b42f32d0068b37ef3937a55">valueAt</a>(x,&amp;Fh);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;      {</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <a class="code" href="classpism_1_1array_1_1AccessScope.html">array::AccessScope</a> access_x(x);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        x(i,j).u -= h;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;      }</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;      x.<a class="code" href="classpism_1_1array_1_1Array_ad9defa70b851fd2dfac595cfcbb9d803.html#ad9defa70b851fd2dfac595cfcbb9d803">update_ghosts</a>();</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;      gradient(i,j).u = (Fh-F0)/h;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;      {</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        <a class="code" href="classpism_1_1array_1_1AccessScope.html">array::AccessScope</a> access_x(x);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        x(i,j).v += h;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;      }</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;      x.<a class="code" href="classpism_1_1array_1_1Array_ad9defa70b851fd2dfac595cfcbb9d803.html#ad9defa70b851fd2dfac595cfcbb9d803">update_ghosts</a>();</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;      f.<a class="code" href="classpism_1_1inverse_1_1IPFunctional_a2eb38a278b42f32d0068b37ef3937a55.html#a2eb38a278b42f32d0068b37ef3937a55">valueAt</a>(x,&amp;Fh);</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;      {</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        <a class="code" href="classpism_1_1array_1_1AccessScope.html">array::AccessScope</a> access_x(x);</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        x(i,j).v -= h;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;      }</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;      x.<a class="code" href="classpism_1_1array_1_1Array_ad9defa70b851fd2dfac595cfcbb9d803.html#ad9defa70b851fd2dfac595cfcbb9d803">update_ghosts</a>();</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;      gradient(i,j).v = (Fh-F0)/h;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    }</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  } <span class="keywordflow">catch</span> (...) {</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    loop.<a class="code" href="classpism_1_1ParallelSection_a6b0a6e5e64970af7eadabfebe2b20bd2.html#a6b0a6e5e64970af7eadabfebe2b20bd2">failed</a>();</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  }</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;  loop.<a class="code" href="classpism_1_1ParallelSection_ac23296abee1cbcb3c3fd68c7f5ce0835.html#ac23296abee1cbcb3c3fd68c7f5ce0835">check</a>();</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;}</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="comment">// PetscErrorCode gradientFD(IPFunctional&lt;array::Vector&gt; &amp;f, array::Vector &amp;x, array::Vector &amp;gradient);</span></div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160; </div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;} <span class="comment">// end of namespace inverse</span></div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;} <span class="comment">// end of namespace pism</span></div>
+<div class="ttc" id="aclasspism_1_1Grid_a445ee849503dd04d5fcdd889d200ce95_html_a445ee849503dd04d5fcdd889d200ce95"><div class="ttname"><a href="classpism_1_1Grid_a445ee849503dd04d5fcdd889d200ce95.html#a445ee849503dd04d5fcdd889d200ce95">pism::Grid::points</a></div><div class="ttdeci">PointsWithGhosts points(unsigned int stencil_width=0) const</div><div class="ttdef"><b>Definition:</b> <a href="Grid_8hh_source.html#l00362">Grid.hh:362</a></div></div>
+<div class="ttc" id="aclasspism_1_1Grid_a9c670ffb11baca93dcaf3a87c4d2c573_html_a9c670ffb11baca93dcaf3a87c4d2c573"><div class="ttname"><a href="classpism_1_1Grid_a9c670ffb11baca93dcaf3a87c4d2c573.html#a9c670ffb11baca93dcaf3a87c4d2c573">pism::Grid::com</a></div><div class="ttdeci">const MPI_Comm com</div><div class="ttdef"><b>Definition:</b> <a href="Grid_8hh_source.html#l00355">Grid.hh:355</a></div></div>
+<div class="ttc" id="aclasspism_1_1Grid_html"><div class="ttname"><a href="classpism_1_1Grid.html">pism::Grid</a></div><div class="ttdoc">Describes the PISM grid and the distribution of data across processors.</div><div class="ttdef"><b>Definition:</b> <a href="Grid_8hh_source.html#l00282">Grid.hh:282</a></div></div>
 <div class="ttc" id="aclasspism_1_1ParallelSection_a6b0a6e5e64970af7eadabfebe2b20bd2_html_a6b0a6e5e64970af7eadabfebe2b20bd2"><div class="ttname"><a href="classpism_1_1ParallelSection_a6b0a6e5e64970af7eadabfebe2b20bd2.html#a6b0a6e5e64970af7eadabfebe2b20bd2">pism::ParallelSection::failed</a></div><div class="ttdeci">void failed()</div><div class="ttdoc">Indicates a failure of a parallel section.</div><div class="ttdef"><b>Definition:</b> <a href="error__handling_8cc_source.html#l00185">error_handling.cc:185</a></div></div>
 <div class="ttc" id="aclasspism_1_1ParallelSection_ac23296abee1cbcb3c3fd68c7f5ce0835_html_ac23296abee1cbcb3c3fd68c7f5ce0835"><div class="ttname"><a href="classpism_1_1ParallelSection_ac23296abee1cbcb3c3fd68c7f5ce0835.html#ac23296abee1cbcb3c3fd68c7f5ce0835">pism::ParallelSection::check</a></div><div class="ttdeci">void check()</div><div class="ttdef"><b>Definition:</b> <a href="error__handling_8cc_source.html#l00201">error_handling.cc:201</a></div></div>
-<div class="ttc" id="aclasspism_1_1ParallelSection_html"><div class="ttname"><a href="classpism_1_1ParallelSection.html">pism::ParallelSection</a></div><div class="ttdef"><b>Definition:</b> <a href="error__handling_8hh_source.html#l00070">error_handling.hh:70</a></div></div>
-<div class="ttc" id="aclasspism_1_1PointsWithGhosts_a36441e98cc5c0a8538c5358523dce6af_html_a36441e98cc5c0a8538c5358523dce6af"><div class="ttname"><a href="classpism_1_1PointsWithGhosts_a36441e98cc5c0a8538c5358523dce6af.html#a36441e98cc5c0a8538c5358523dce6af">pism::PointsWithGhosts::next</a></div><div class="ttdeci">void next()</div><div class="ttdef"><b>Definition:</b> <a href="IceGrid_8hh_source.html#l00381">IceGrid.hh:381</a></div></div>
-<div class="ttc" id="aclasspism_1_1Points_html"><div class="ttname"><a href="classpism_1_1Points.html">pism::Points</a></div><div class="ttdef"><b>Definition:</b> <a href="IceGrid_8hh_source.html#l00409">IceGrid.hh:409</a></div></div>
+<div class="ttc" id="aclasspism_1_1ParallelSection_html"><div class="ttname"><a href="classpism_1_1ParallelSection.html">pism::ParallelSection</a></div><div class="ttdef"><b>Definition:</b> <a href="error__handling_8hh_source.html#l00069">error_handling.hh:69</a></div></div>
+<div class="ttc" id="aclasspism_1_1PointsWithGhosts_a36441e98cc5c0a8538c5358523dce6af_html_a36441e98cc5c0a8538c5358523dce6af"><div class="ttname"><a href="classpism_1_1PointsWithGhosts_a36441e98cc5c0a8538c5358523dce6af.html#a36441e98cc5c0a8538c5358523dce6af">pism::PointsWithGhosts::next</a></div><div class="ttdeci">void next()</div><div class="ttdef"><b>Definition:</b> <a href="Grid_8hh_source.html#l00189">Grid.hh:189</a></div></div>
+<div class="ttc" id="aclasspism_1_1array_1_1AccessScope_html"><div class="ttname"><a href="classpism_1_1array_1_1AccessScope.html">pism::array::AccessScope</a></div><div class="ttdoc">Makes sure that we call begin_access() and end_access() for all accessed array::Arrays.</div><div class="ttdef"><b>Definition:</b> <a href="Array_8hh_source.html#l00065">Array.hh:65</a></div></div>
+<div class="ttc" id="aclasspism_1_1array_1_1Array_a982fca110a5d7011f681b928b20e3577_html_a982fca110a5d7011f681b928b20e3577"><div class="ttname"><a href="classpism_1_1array_1_1Array_a982fca110a5d7011f681b928b20e3577.html#a982fca110a5d7011f681b928b20e3577">pism::array::Array::grid</a></div><div class="ttdeci">std::shared_ptr&lt; const Grid &gt; grid() const</div><div class="ttdef"><b>Definition:</b> <a href="Array_8cc_source.html#l00132">Array.cc:132</a></div></div>
+<div class="ttc" id="aclasspism_1_1array_1_1Array_ad9defa70b851fd2dfac595cfcbb9d803_html_ad9defa70b851fd2dfac595cfcbb9d803"><div class="ttname"><a href="classpism_1_1array_1_1Array_ad9defa70b851fd2dfac595cfcbb9d803.html#ad9defa70b851fd2dfac595cfcbb9d803">pism::array::Array::update_ghosts</a></div><div class="ttdeci">void update_ghosts()</div><div class="ttdoc">Updates ghost points.</div><div class="ttdef"><b>Definition:</b> <a href="Array_8cc_source.html#l00693">Array.cc:693</a></div></div>
+<div class="ttc" id="aclasspism_1_1array_1_1Scalar_html"><div class="ttname"><a href="classpism_1_1array_1_1Scalar.html">pism::array::Scalar</a></div><div class="ttdef"><b>Definition:</b> <a href="Scalar_8hh_source.html#l00031">Scalar.hh:31</a></div></div>
+<div class="ttc" id="aclasspism_1_1array_1_1Vector_html"><div class="ttname"><a href="classpism_1_1array_1_1Vector.html">pism::array::Vector</a></div><div class="ttdef"><b>Definition:</b> <a href="Vector_8hh_source.html#l00032">Vector.hh:32</a></div></div>
 <div class="ttc" id="aclasspism_1_1inverse_1_1IPFunctional_a2eb38a278b42f32d0068b37ef3937a55_html_a2eb38a278b42f32d0068b37ef3937a55"><div class="ttname"><a href="classpism_1_1inverse_1_1IPFunctional_a2eb38a278b42f32d0068b37ef3937a55.html#a2eb38a278b42f32d0068b37ef3937a55">pism::inverse::IPFunctional::valueAt</a></div><div class="ttdeci">virtual void valueAt(IMVecType &amp;x, double *OUTPUT)=0</div><div class="ttdoc">Computes the value of the functional at the vector x.</div></div>
-<div class="ttc" id="aclasspism_1_1inverse_1_1IPFunctional_html"><div class="ttname"><a href="classpism_1_1inverse_1_1IPFunctional.html">pism::inverse::IPFunctional&lt; IceModelVec2S &gt;</a></div></div>
-<div class="ttc" id="anamespacepism_1_1inverse_af7ad070d8f2062536ef34555ed169ac1_html_af7ad070d8f2062536ef34555ed169ac1"><div class="ttname"><a href="namespacepism_1_1inverse_af7ad070d8f2062536ef34555ed169ac1.html#af7ad070d8f2062536ef34555ed169ac1">pism::inverse::gradientFD</a></div><div class="ttdeci">void gradientFD(IPFunctional&lt; IceModelVec2S &gt; &amp;f, IceModelVec2S &amp;x, IceModelVec2S &amp;gradient)</div><div class="ttdoc">Computes finite difference approximations of a IPFunctional&lt;IceModelVec2S&gt; gradient.</div><div class="ttdef"><b>Definition:</b> <a href="IPFunctional_8cc_source.html#l00027">IPFunctional.cc:27</a></div></div>
-<div class="ttc" id="anamespacepism_html"><div class="ttname"><a href="namespacepism.html">pism</a></div><div class="ttdef"><b>Definition:</b> <a href="AgeColumnSystem_8cc_source.html#l00024">AgeColumnSystem.cc:24</a></div></div>
+<div class="ttc" id="aclasspism_1_1inverse_1_1IPFunctional_html"><div class="ttname"><a href="classpism_1_1inverse_1_1IPFunctional.html">pism::inverse::IPFunctional&lt; array::Scalar &gt;</a></div></div>
+<div class="ttc" id="anamespacepism_1_1inverse_ad4ddaf9898ba20c8fd58df0cbd955bd5_html_ad4ddaf9898ba20c8fd58df0cbd955bd5"><div class="ttname"><a href="namespacepism_1_1inverse_ad4ddaf9898ba20c8fd58df0cbd955bd5.html#ad4ddaf9898ba20c8fd58df0cbd955bd5">pism::inverse::gradientFD</a></div><div class="ttdeci">void gradientFD(IPFunctional&lt; array::Scalar &gt; &amp;f, array::Scalar &amp;x, array::Scalar &amp;gradient)</div><div class="ttdoc">Computes finite difference approximations of a IPFunctional&lt;array::Scalar&gt; gradient.</div><div class="ttdef"><b>Definition:</b> <a href="IPFunctional_8cc_source.html#l00028">IPFunctional.cc:28</a></div></div>
+<div class="ttc" id="anamespacepism_html"><div class="ttname"><a href="namespacepism.html">pism</a></div><div class="ttdef"><b>Definition:</b> <a href="AgeColumnSystem_8cc_source.html#l00023">AgeColumnSystem.cc:23</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

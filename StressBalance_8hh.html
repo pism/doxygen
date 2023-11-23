@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PISM, A Parallel Ice Sheet Model
-   &#160;<span id="projectnumber">stable v2.0.7 committed by Constantine Khrulev on 2023-11-21 12:49:11 -0900</span>
+   &#160;<span id="projectnumber">stable v2.1 committed by Constantine Khrulev on 2023-11-23 11:24:22 -0900</span>
    </div>
   </td>
  </tr>
@@ -84,7 +84,7 @@ $(function() {
 <div class="contents">
 <div class="textblock"><code>#include &lt;memory&gt;</code><br />
 <code>#include &quot;pism/util/Component.hh&quot;</code><br />
-<code>#include &quot;pism/util/iceModelVec.hh&quot;</code><br />
+<code>#include &quot;pism/util/array/Array3D.hh&quot;</code><br />
 <code>#include &quot;pism/stressbalance/timestepping.hh&quot;</code><br />
 </div>
 <p><a href="StressBalance_8hh_source.html">Go to the source code of this file.</a></p>
@@ -95,6 +95,10 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpism_1_1stressbalance_1_1StressBalance.html">pism::stressbalance::StressBalance</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The class defining PISM's interface to the shallow stress balance code.  <a href="classpism_1_1stressbalance_1_1StressBalance.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpism_1_1stressbalance_1_1PrincipalStrainRates.html">pism::stressbalance::PrincipalStrainRates</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpism_1_1stressbalance_1_1DeviatoricStresses.html">pism::stressbalance::DeviatoricStresses</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
@@ -110,14 +114,14 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a8326b45a1e82f904a481361b4e34c1cb"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; StressBalance &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_1_1stressbalance_a8326b45a1e82f904a481361b4e34c1cb.html#a8326b45a1e82f904a481361b4e34c1cb">pism::stressbalance::create</a> (const std::string &amp;model, IceGrid::ConstPtr grid, bool regional)</td></tr>
-<tr class="separator:a8326b45a1e82f904a481361b4e34c1cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac32a3b845ea2a359c1dbc229a9785e45"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_1_1stressbalance_ac32a3b845ea2a359c1dbc229a9785e45.html#ac32a3b845ea2a359c1dbc229a9785e45">pism::stressbalance::compute_2D_principal_strain_rates</a> (const IceModelVec2V &amp;V, const IceModelVec2CellType &amp;mask, IceModelVec3 &amp;result)</td></tr>
-<tr class="memdesc:ac32a3b845ea2a359c1dbc229a9785e45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute eigenvalues of the horizontal, vertically-integrated strain rate tensor.  <a href="namespacepism_1_1stressbalance_ac32a3b845ea2a359c1dbc229a9785e45.html#ac32a3b845ea2a359c1dbc229a9785e45">More...</a><br /></td></tr>
-<tr class="separator:ac32a3b845ea2a359c1dbc229a9785e45"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8d45375dbcb98d167870021b98f9794b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_1_1stressbalance_a8d45375dbcb98d167870021b98f9794b.html#a8d45375dbcb98d167870021b98f9794b">pism::stressbalance::compute_2D_stresses</a> (const rheology::FlowLaw &amp;flow_law, const IceModelVec2V &amp;velocity, const IceModelVec2S &amp;hardness, const IceModelVec2CellType &amp;cell_type, IceModelVec3 &amp;result)</td></tr>
-<tr class="memdesc:a8d45375dbcb98d167870021b98f9794b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute 2<a class="el" href="classD.html">D</a> deviatoric stresses.  <a href="namespacepism_1_1stressbalance_a8d45375dbcb98d167870021b98f9794b.html#a8d45375dbcb98d167870021b98f9794b">More...</a><br /></td></tr>
-<tr class="separator:a8d45375dbcb98d167870021b98f9794b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4be8d1718e84dad568c67a57f86a99a5"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; StressBalance &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_1_1stressbalance_a4be8d1718e84dad568c67a57f86a99a5.html#a4be8d1718e84dad568c67a57f86a99a5">pism::stressbalance::create</a> (const std::string &amp;model, std::shared_ptr&lt; const Grid &gt; grid, bool regional)</td></tr>
+<tr class="separator:a4be8d1718e84dad568c67a57f86a99a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22992d0d3a76fd1622dfa58afdd7bdac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_1_1stressbalance_a22992d0d3a76fd1622dfa58afdd7bdac.html#a22992d0d3a76fd1622dfa58afdd7bdac">pism::stressbalance::compute_2D_principal_strain_rates</a> (const array::Vector1 &amp;V, const array::CellType1 &amp;mask, array::Array2D&lt; PrincipalStrainRates &gt; &amp;result)</td></tr>
+<tr class="memdesc:a22992d0d3a76fd1622dfa58afdd7bdac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute eigenvalues of the horizontal, vertically-integrated strain rate tensor.  <a href="namespacepism_1_1stressbalance_a22992d0d3a76fd1622dfa58afdd7bdac.html#a22992d0d3a76fd1622dfa58afdd7bdac">More...</a><br /></td></tr>
+<tr class="separator:a22992d0d3a76fd1622dfa58afdd7bdac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af454c2dcd71e3326a756b0eaed4b9352"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_1_1stressbalance_af454c2dcd71e3326a756b0eaed4b9352.html#af454c2dcd71e3326a756b0eaed4b9352">pism::stressbalance::compute_2D_stresses</a> (const rheology::FlowLaw &amp;flow_law, const array::Vector1 &amp;velocity, const array::Scalar &amp;hardness, const array::CellType1 &amp;cell_type, array::Array2D&lt; DeviatoricStresses &gt; &amp;result)</td></tr>
+<tr class="memdesc:af454c2dcd71e3326a756b0eaed4b9352"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute 2<a class="el" href="classD.html">D</a> deviatoric stresses.  <a href="namespacepism_1_1stressbalance_af454c2dcd71e3326a756b0eaed4b9352.html#af454c2dcd71e3326a756b0eaed4b9352">More...</a><br /></td></tr>
+<tr class="separator:af454c2dcd71e3326a756b0eaed4b9352"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->

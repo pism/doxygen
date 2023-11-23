@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['dim_5flength_9313',['Dim_Length',['../namespacepism_a4a968920d9fff8c3c3aaa8b49324eba0.html#a4a968920d9fff8c3c3aaa8b49324eba0',1,'pism']]],
-  ['direction_9314',['Direction',['../namespacepism_a79037b9d17e5d3c872f8ea811fec2a31.html#a79037b9d17e5d3c872f8ea811fec2a31',1,'pism']]]
+  ['changekind_9689',['ChangeKind',['../namespacepism_1_1diagnostics_af35ed9ee223a712238e91a0b486f1580.html#af35ed9ee223a712238e91a0b486f1580',1,'pism::diagnostics']]],
+  ['configsettingflag_9690',['ConfigSettingFlag',['../namespacepism_adabe2f4a3814b52d25dd096a36bc3010.html#adabe2f4a3814b52d25dd096a36bc3010',1,'pism']]],
+  ['consistencyflag_9691',['ConsistencyFlag',['../classpism_1_1IceModel_aacce36ef43e773b59c12a2145cb50932.html#aacce36ef43e773b59c12a2145cb50932',1,'pism::IceModel']]]
 ];

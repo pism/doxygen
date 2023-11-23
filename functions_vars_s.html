@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PISM, A Parallel Ice Sheet Model
-   &#160;<span id="projectnumber">stable v2.0.7 committed by Constantine Khrulev on 2023-11-21 12:49:11 -0900</span>
+   &#160;<span id="projectnumber">stable v2.1 committed by Constantine Khrulev on 2023-11-23 11:24:22 -0900</span>
    </div>
   </td>
  </tr>
@@ -81,12 +81,12 @@ $(function() {
 : <a class="el" href="structpism_1_1stencils_1_1Box_a25039e1a4dc18eba7ffb44eece23541e.html#a25039e1a4dc18eba7ffb44eece23541e">pism::stencils::Box&lt; T &gt;</a>
 </li>
 <li>sea_level
-: <a class="el" href="structpism_1_1GeometryEvolution_1_1Impl_ad5adf83ac8d88d6dd433888d4498e96c.html#ad5adf83ac8d88d6dd433888d4498e96c">pism::GeometryEvolution::Impl</a>
+: <a class="el" href="structpism_1_1GeometryEvolution_1_1Impl_a864a4935ce9e4758a2ae3aacbc711e6b.html#a864a4935ce9e4758a2ae3aacbc711e6b">pism::GeometryEvolution::Impl</a>
 , <a class="el" href="structpism_1_1stressbalance_1_1Blatter_1_1Parameters_a4cadeec7d9fbb32847535dc2858580ef.html#a4cadeec7d9fbb32847535dc2858580ef">pism::stressbalance::Blatter::Parameters</a>
 , <a class="el" href="structpism_1_1stressbalance_1_1SSAFEM_1_1Coefficients_a8bfbc64506aeb0138f9bf151e86f2be7.html#a8bfbc64506aeb0138f9bf151e86f2be7">pism::stressbalance::SSAFEM::Coefficients</a>
 </li>
 <li>sea_level_elevation
-: <a class="el" href="classpism_1_1Geometry_ae17643fccc7184ddcf8fcf9724ec76fd.html#ae17643fccc7184ddcf8fcf9724ec76fd">pism::Geometry</a>
+: <a class="el" href="classpism_1_1Geometry_a0ddf1ad2492b9523989387fafe44dbef.html#a0ddf1ad2492b9523989387fafe44dbef">pism::Geometry</a>
 </li>
 <li>sea_water_density
 : <a class="el" href="classpism_1_1ocean_1_1GivenTH_1_1Constants_abb20cb18d04041dcabf47414a0dff54e.html#abb20cb18d04041dcabf47414a0dff54e">pism::ocean::GivenTH::Constants</a>
@@ -100,8 +100,14 @@ $(function() {
 <li>secpera
 : <a class="el" href="classpism_1_1surface_1_1Verification_afc50bf89df8c09fe131ba7975622145f.html#afc50bf89df8c09fe131ba7975622145f">pism::surface::Verification</a>
 </li>
+<li>shelf_base_mass_flux
+: <a class="el" href="classpism_1_1ocean_1_1PyOceanModel_ae2d16f726e15211382e223612d8b9578.html#ae2d16f726e15211382e223612d8b9578">pism::ocean::PyOceanModel</a>
+</li>
 <li>shelf_base_temp
-: <a class="el" href="classpism_1_1energy_1_1Inputs_a5e165f6aadfd1a87823f764c0dff9622.html#a5e165f6aadfd1a87823f764c0dff9622">pism::energy::Inputs</a>
+: <a class="el" href="classpism_1_1energy_1_1Inputs_a7fffde85dffc8f6cd0e7e80ec600ec04.html#a7fffde85dffc8f6cd0e7e80ec600ec04">pism::energy::Inputs</a>
+</li>
+<li>shelf_base_temperature
+: <a class="el" href="classpism_1_1ocean_1_1PyOceanModel_aa1863946b866d54f186f385607706d4a.html#aa1863946b866d54f186f385607706d4a">pism::ocean::PyOceanModel</a>
 </li>
 <li>shelf_top_surface_temperature
 : <a class="el" href="classpism_1_1ocean_1_1GivenTH_1_1Constants_ad2e4ae5ded1dd19081491c1a1d4a9a03.html#ad2e4ae5ded1dd19081491c1a1d4a9a03">pism::ocean::GivenTH::Constants</a>
@@ -116,7 +122,7 @@ $(function() {
 : <a class="el" href="structpism_1_1TestFGParameters_a2fad2e8fa02c09f9f2cca43910aac4db.html#a2fad2e8fa02c09f9f2cca43910aac4db">pism::TestFGParameters</a>
 </li>
 <li>size
-: <a class="el" href="structpism_1_1IceGrid_1_1Impl_ad182a9f4ef4f2ec40b92cebdf436dd2b.html#ad182a9f4ef4f2ec40b92cebdf436dd2b">pism::IceGrid::Impl</a>
+: <a class="el" href="structpism_1_1Grid_1_1Impl_a707c39d6e84b74424f7a7d167b40c56c.html#a707c39d6e84b74424f7a7d167b40c56c">pism::Grid::Impl</a>
 </li>
 <li>skip_counter
 : <a class="el" href="structpism_1_1IceModel_1_1TimesteppingInfo_a791f40ff1df7c1a98a8d2a4ac87697d1.html#a791f40ff1df7c1a98a8d2a4ac87697d1">pism::IceModel::TimesteppingInfo</a>
@@ -128,7 +134,9 @@ $(function() {
 : <a class="el" href="classpism_1_1TerminationReason_ad7b7a7c3a00398ebe23e389ffa60f9cf.html#ad7b7a7c3a00398ebe23e389ffa60f9cf">pism::TerminationReason</a>
 </li>
 <li>smb
-: <a class="el" href="classpism_1_1surface_1_1LocalMassBalance_1_1Changes_af389653aaef29d02bbccba420ba2cc7f.html#af389653aaef29d02bbccba420ba2cc7f">pism::surface::LocalMassBalance::Changes</a>
+: <a class="el" href="classpism_1_1icebin_1_1MassEnergyBudget_a445aa4afc377cea19afeb5d6f0f4903d.html#a445aa4afc377cea19afeb5d6f0f4903d">pism::icebin::MassEnergyBudget</a>
+, <a class="el" href="classpism_1_1surface_1_1DEBMSimplePointwise_1_1Changes_a4ea27d5dbc14d7238d124b71bffed240.html#a4ea27d5dbc14d7238d124b71bffed240">pism::surface::DEBMSimplePointwise::Changes</a>
+, <a class="el" href="classpism_1_1surface_1_1LocalMassBalance_1_1Changes_af389653aaef29d02bbccba420ba2cc7f.html#af389653aaef29d02bbccba420ba2cc7f">pism::surface::LocalMassBalance::Changes</a>
 </li>
 <li>snes_it
 : <a class="el" href="structpism_1_1stressbalance_1_1Blatter_1_1SolutionInfo_a7ec9c1f9291c0a2219508282c4bfd36a.html#a7ec9c1f9291c0a2219508282c4bfd36a">pism::stressbalance::Blatter::SolutionInfo</a>
@@ -140,13 +148,15 @@ $(function() {
 : <a class="el" href="structpism_1_1surface_1_1LocalMassBalance_1_1DegreeDayFactors_aa6a3af7595c15197215b50eb6c802cd4.html#aa6a3af7595c15197215b50eb6c802cd4">pism::surface::LocalMassBalance::DegreeDayFactors</a>
 </li>
 <li>snow_depth
-: <a class="el" href="classpism_1_1surface_1_1LocalMassBalance_1_1Changes_a4e12693e6e0e0e52b4ea3c5f81619ed5.html#a4e12693e6e0e0e52b4ea3c5f81619ed5">pism::surface::LocalMassBalance::Changes</a>
+: <a class="el" href="classpism_1_1surface_1_1DEBMSimplePointwise_1_1Changes_a63baf86845e1d215b2f62e3353c0785d.html#a63baf86845e1d215b2f62e3353c0785d">pism::surface::DEBMSimplePointwise::Changes</a>
+, <a class="el" href="classpism_1_1surface_1_1LocalMassBalance_1_1Changes_a4e12693e6e0e0e52b4ea3c5f81619ed5.html#a4e12693e6e0e0e52b4ea3c5f81619ed5">pism::surface::LocalMassBalance::Changes</a>
 </li>
 <li>solver
 : <a class="el" href="structpism_1_1SNESProblem_1_1CallbackData_a42f56459bad7abcf8d7b90c958f00d26.html#a42f56459bad7abcf8d7b90c958f00d26">pism::SNESProblem&lt; DOF, U &gt;::CallbackData</a>
 </li>
 <li>spline
 : <a class="el" href="classpism_1_1bed_1_1greens__elastic_a7d564d62cb767b92afb2450830cb05cd.html#a7d564d62cb767b92afb2450830cb05cd">pism::bed::greens_elastic</a>
+, <a class="el" href="structpism_1_1ScalarForcing_1_1Impl_a67b36be7367304316dfcaf794f887b33.html#a67b36be7367304316dfcaf794f887b33">pism::ScalarForcing::Impl</a>
 </li>
 <li>splitDim
 : <a class="el" href="structregion_a2d63d993b4832f859834b40e0c8f9a3d.html#a2d63d993b4832f859834b40e0c8f9a3d">region</a>
@@ -158,35 +168,35 @@ $(function() {
 : <a class="el" href="classpism_1_1surface_1_1Verification_a32e7009a4692920d7b610aded819beb7.html#a32e7009a4692920d7b610aded819beb7">pism::surface::Verification</a>
 </li>
 <li>start
-: <a class="el" href="classpism_1_1LocalInterpCtx_aa019ca21a66e68b53ec3fa94ef7129b1.html#aa019ca21a66e68b53ec3fa94ef7129b1">pism::LocalInterpCtx</a>
+: <a class="el" href="structpism_1_1io_1_1StartCountInfo_a0ab52105e966df5bb65799596f248940.html#a0ab52105e966df5bb65799596f248940">pism::io::StartCountInfo</a>
+, <a class="el" href="classpism_1_1LocalInterpCtx_a44eb3e69d93d5b458f63b45c8b10d693.html#a44eb3e69d93d5b458f63b45c8b10d693">pism::LocalInterpCtx</a>
 </li>
 <li>state_counter
-: <a class="el" href="structpism_1_1IceModelVec_1_1Impl_a32fa1c2fdcf11e791681b6b1d2a0cfc1.html#a32fa1c2fdcf11e791681b6b1d2a0cfc1">pism::IceModelVec::Impl</a>
+: <a class="el" href="structpism_1_1array_1_1Array_1_1Impl_a100d6ba747878ecf1aa09542976970b1.html#a100d6ba747878ecf1aa09542976970b1">pism::array::Array::Impl</a>
 </li>
 <li>strain_heating
-: <a class="el" href="classpism_1_1icebin_1_1MassEnergyBudget_affe2b9e0dee04a229ab7f21956a00614.html#affe2b9e0dee04a229ab7f21956a00614">pism::icebin::MassEnergyBudget</a>
+: <a class="el" href="classpism_1_1icebin_1_1MassEnergyBudget_aafebfccd5c84f0e5cb56efba31e0d025.html#aafebfccd5c84f0e5cb56efba31e0d025">pism::icebin::MassEnergyBudget</a>
 </li>
 <li>strength_extension
 : <a class="el" href="classpism_1_1stressbalance_1_1SSA_a90969e8bfae674758e4973be7fc94cf6.html#a90969e8bfae674758e4973be7fc94cf6">pism::stressbalance::SSA</a>
 </li>
 <li>subglacial_water_flux
-: <a class="el" href="classpism_1_1FrontalMeltInputs_ab6c46329bdf47969612c14b5c887fb1a.html#ab6c46329bdf47969612c14b5c887fb1a">pism::FrontalMeltInputs</a>
+: <a class="el" href="classpism_1_1FrontalMeltInputs_affca45a326f8f352d0c81eaad60a32bb.html#affca45a326f8f352d0c81eaad60a32bb">pism::FrontalMeltInputs</a>
 </li>
 <li>subglacial_water_thickness
-: <a class="el" href="classpism_1_1YieldStressInputs_a8cdc680977374d45c8496cecd79c47cb.html#a8cdc680977374d45c8496cecd79c47cb">pism::YieldStressInputs</a>
+: <a class="el" href="classpism_1_1YieldStressInputs_a563f0b3ee3cf4b0e11c159204740d055.html#a563f0b3ee3cf4b0e11c159204740d055">pism::YieldStressInputs</a>
 </li>
 <li>surface_elevation
-: <a class="el" href="structpism_1_1GeometryEvolution_1_1Impl_a9eabb7f61345802c89a93661a94963cd.html#a9eabb7f61345802c89a93661a94963cd">pism::GeometryEvolution::Impl</a>
+: <a class="el" href="structpism_1_1GeometryEvolution_1_1Impl_ac877d0084a57b14750525ac9cf801ec5.html#ac877d0084a57b14750525ac9cf801ec5">pism::GeometryEvolution::Impl</a>
 </li>
 <li>surface_input_rate
-: <a class="el" href="classpism_1_1hydrology_1_1Inputs_a86742b9b372cc464e546793bc78b6277.html#a86742b9b372cc464e546793bc78b6277">pism::hydrology::Inputs</a>
+: <a class="el" href="classpism_1_1hydrology_1_1Inputs_a413a9708dd84473afe58689359c0fbe9.html#a413a9708dd84473afe58689359c0fbe9">pism::hydrology::Inputs</a>
 </li>
 <li>surface_liquid_fraction
-: <a class="el" href="classpism_1_1energy_1_1Inputs_aa157b9de1ccef84cff7ea061db59cc39.html#aa157b9de1ccef84cff7ea061db59cc39">pism::energy::Inputs</a>
+: <a class="el" href="classpism_1_1energy_1_1Inputs_a13c9f895ec7bb5ae290d6d09c68e2419.html#a13c9f895ec7bb5ae290d6d09c68e2419">pism::energy::Inputs</a>
 </li>
 <li>surface_temp
-: <a class="el" href="classpism_1_1energy_1_1Inputs_ad876c6a2d1dd39c0364f4ba2fb25be9c.html#ad876c6a2d1dd39c0364f4ba2fb25be9c">pism::energy::Inputs</a>
-, <a class="el" href="classpism_1_1icebin_1_1IBSurfaceModel_a51da33f278b06ce74f1978fb037652d9.html#a51da33f278b06ce74f1978fb037652d9">pism::icebin::IBSurfaceModel</a>
+: <a class="el" href="classpism_1_1energy_1_1Inputs_ad503e84d24876426dd871a409a8d9ecd.html#ad503e84d24876426dd871a409a8d9ecd">pism::energy::Inputs</a>
 </li>
 <li>sw
 : <a class="el" href="structpism_1_1stencils_1_1Box_a4dcc00e979e1ce562f84d56245470c64.html#a4dcc00e979e1ce562f84d56245470c64">pism::stencils::Box&lt; T &gt;</a>

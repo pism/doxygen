@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PISM, A Parallel Ice Sheet Model
-   &#160;<span id="projectnumber">stable v2.0.7 committed by Constantine Khrulev on 2023-11-21 12:49:11 -0900</span>
+   &#160;<span id="projectnumber">stable v2.1 committed by Constantine Khrulev on 2023-11-23 11:24:22 -0900</span>
    </div>
   </td>
  </tr>
@@ -82,11 +82,12 @@ $(function() {
 <div class="title">SSAFD.hh File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="SSA_8hh_source.html">SSA.hh</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;pism/stressbalance/ssa/SSA.hh&quot;</code><br />
 <code>#include &quot;pism/util/error_handling.hh&quot;</code><br />
 <code>#include &quot;pism/util/petscwrappers/Viewer.hh&quot;</code><br />
 <code>#include &quot;pism/util/petscwrappers/KSP.hh&quot;</code><br />
 <code>#include &quot;pism/util/petscwrappers/Mat.hh&quot;</code><br />
+<code>#include &quot;pism/util/array/Staggered.hh&quot;</code><br />
 </div>
 <p><a href="SSAFD_8hh_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -112,9 +113,9 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:afe19b8bd398544e8c02729af51b8acf3"><td class="memItemLeft" align="right" valign="top">SSA *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_1_1stressbalance_afe19b8bd398544e8c02729af51b8acf3.html#afe19b8bd398544e8c02729af51b8acf3">pism::stressbalance::SSAFDFactory</a> (IceGrid::ConstPtr grid)</td></tr>
-<tr class="memdesc:afe19b8bd398544e8c02729af51b8acf3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a new <a class="el" href="classpism_1_1stressbalance_1_1SSAFD.html" title="PISM&#39;s SSA solver: the finite difference implementation.">SSAFD</a>.  <a href="namespacepism_1_1stressbalance_afe19b8bd398544e8c02729af51b8acf3.html#afe19b8bd398544e8c02729af51b8acf3">More...</a><br /></td></tr>
-<tr class="separator:afe19b8bd398544e8c02729af51b8acf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37fff0a267f86b316f10132a24eb3ac6"><td class="memItemLeft" align="right" valign="top">SSA *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_1_1stressbalance_a37fff0a267f86b316f10132a24eb3ac6.html#a37fff0a267f86b316f10132a24eb3ac6">pism::stressbalance::SSAFDFactory</a> (std::shared_ptr&lt; const Grid &gt; grid)</td></tr>
+<tr class="memdesc:a37fff0a267f86b316f10132a24eb3ac6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a new <a class="el" href="classpism_1_1stressbalance_1_1SSAFD.html" title="PISM&#39;s SSA solver: the finite difference implementation.">SSAFD</a>.  <a href="namespacepism_1_1stressbalance_a37fff0a267f86b316f10132a24eb3ac6.html#a37fff0a267f86b316f10132a24eb3ac6">More...</a><br /></td></tr>
+<tr class="separator:a37fff0a267f86b316f10132a24eb3ac6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->

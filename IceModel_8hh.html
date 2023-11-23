@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PISM, A Parallel Ice Sheet Model
-   &#160;<span id="projectnumber">stable v2.0.7 committed by Constantine Khrulev on 2023-11-21 12:49:11 -0900</span>
+   &#160;<span id="projectnumber">stable v2.1 committed by Constantine Khrulev on 2023-11-23 11:24:22 -0900</span>
    </div>
   </td>
  </tr>
@@ -77,6 +77,7 @@ $(function() {
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">IceModel.hh File Reference</div>  </div>
@@ -90,9 +91,7 @@ $(function() {
 <code>#include &lt;string&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
 <code>#include &lt;memory&gt;</code><br />
-<code>#include &quot;pism/util/iceModelVec.hh&quot;</code><br />
-<code>#include &quot;pism/util/IceModelVec2CellType.hh&quot;</code><br />
-<code>#include &quot;pism/util/IceModelVec2V.hh&quot;</code><br />
+<code>#include &quot;pism/util/array/Vector.hh&quot;</code><br />
 <code>#include &quot;pism/util/ConfigInterface.hh&quot;</code><br />
 <code>#include &quot;pism/util/Context.hh&quot;</code><br />
 <code>#include &quot;pism/util/Logger.hh&quot;</code><br />
@@ -103,6 +102,8 @@ $(function() {
 <code>#include &quot;pism/geometry/GeometryEvolution.hh&quot;</code><br />
 <code>#include &quot;pism/stressbalance/StressBalance.hh&quot;</code><br />
 <code>#include &quot;pism/basalstrength/YieldStress.hh&quot;</code><br />
+<code>#include &quot;pism/util/ScalarForcing.hh&quot;</code><br />
+<code>#include &quot;pism/util/petscwrappers/Vec.hh&quot;</code><br />
 </div>
 <p><a href="IceModel_8hh_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -142,19 +143,28 @@ Namespaces</h2></td></tr>
 <tr class="memitem:namespacepism_1_1bed"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_1_1bed.html">pism::bed</a></td></tr>
 <tr class="memdesc:namespacepism_1_1bed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bed-related models: bed deformation (provide bed elevation and uplift) and (soon) bed erosion. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespacepism_1_1array"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_1_1array.html">pism::array</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:a679e9292d71085dc8431e4cdd33a349a"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_a679e9292d71085dc8431e4cdd33a349a.html#a679e9292d71085dc8431e4cdd33a349a">pism::IceModelTerminationReason</a> { <a class="el" href="namespacepism_a679e9292d71085dc8431e4cdd33a349a.html#a679e9292d71085dc8431e4cdd33a349aad8fba8d168ac3b5e8061dc49b87dbd7e">pism::PISM_DONE</a>
+, <a class="el" href="namespacepism_a679e9292d71085dc8431e4cdd33a349a.html#a679e9292d71085dc8431e4cdd33a349aaf8a1983bba48644ce009a6d3269e4c53">pism::PISM_CHEKPOINT</a>
+, <a class="el" href="namespacepism_a679e9292d71085dc8431e4cdd33a349a.html#a679e9292d71085dc8431e4cdd33a349aa6b7c8d57031c3421c55a6b6702693a6e">pism::PISM_SIGNAL</a>
+ }</td></tr>
+<tr class="separator:a679e9292d71085dc8431e4cdd33a349a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a170673e2c3fc7e36e428c796f1abc9d4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_a170673e2c3fc7e36e428c796f1abc9d4.html#a170673e2c3fc7e36e428c796f1abc9d4">pism::write_mapping</a> (const File &amp;file, const <a class="el" href="classpism_1_1MappingInfo.html">pism::MappingInfo</a> &amp;info)</td></tr>
+<tr class="separator:a170673e2c3fc7e36e428c796f1abc9d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb9d6f7e33651a9122f5164d1795da2c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_afb9d6f7e33651a9122f5164d1795da2c.html#afb9d6f7e33651a9122f5164d1795da2c">pism::write_run_stats</a> (const File &amp;file, const <a class="el" href="classpism_1_1VariableMetadata.html">pism::VariableMetadata</a> &amp;stats)</td></tr>
+<tr class="separator:afb9d6f7e33651a9122f5164d1795da2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a022de42aa89ccb41686786fcc8754823"><td class="memItemLeft" align="right" valign="top">MaxTimestep&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_a022de42aa89ccb41686786fcc8754823.html#a022de42aa89ccb41686786fcc8754823">pism::reporting_max_timestep</a> (const std::vector&lt; double &gt; &amp;times, double t, double eps, const std::string &amp;description)</td></tr>
 <tr class="separator:a022de42aa89ccb41686786fcc8754823"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae36df4e40ea603cb7468c0ebbf86f1e7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_ae36df4e40ea603cb7468c0ebbf86f1e7.html#ae36df4e40ea603cb7468c0ebbf86f1e7">pism::check_minimum_ice_thickness</a> (const IceModelVec2S &amp;ice_thickness)</td></tr>
-<tr class="separator:ae36df4e40ea603cb7468c0ebbf86f1e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1375e49e1efdca4471c7afbc225d2963"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_a1375e49e1efdca4471c7afbc225d2963.html#a1375e49e1efdca4471c7afbc225d2963">pism::check_maximum_ice_thickness</a> (const IceModelVec2S &amp;ice_thickness)</td></tr>
-<tr class="memdesc:a1375e49e1efdca4471c7afbc225d2963"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the thickness of the ice is too large.  <a href="namespacepism_a1375e49e1efdca4471c7afbc225d2963.html#a1375e49e1efdca4471c7afbc225d2963">More...</a><br /></td></tr>
-<tr class="separator:a1375e49e1efdca4471c7afbc225d2963"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a66a064977bfb3d193360801556e8fd42"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_a66a064977bfb3d193360801556e8fd42.html#a66a064977bfb3d193360801556e8fd42">pism::bedrock_surface_temperature</a> (const IceModelVec2S &amp;sea_level, const IceModelVec2CellType &amp;cell_type, const IceModelVec2S &amp;bed_topography, const IceModelVec2S &amp;ice_thickness, const IceModelVec2S &amp;basal_enthalpy, const IceModelVec2S &amp;ice_surface_temperature, IceModelVec2S &amp;result)</td></tr>
-<tr class="memdesc:a66a064977bfb3d193360801556e8fd42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the temperature seen by the top of the bedrock thermal layer.  <a href="namespacepism_a66a064977bfb3d193360801556e8fd42.html#a66a064977bfb3d193360801556e8fd42">More...</a><br /></td></tr>
-<tr class="separator:a66a064977bfb3d193360801556e8fd42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa04cdf90d444dec6c7091c6737b721ab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_aa04cdf90d444dec6c7091c6737b721ab.html#aa04cdf90d444dec6c7091c6737b721ab">pism::bedrock_surface_temperature</a> (const array::Scalar &amp;sea_level, const array::CellType &amp;cell_type, const array::Scalar &amp;bed_topography, const array::Scalar &amp;ice_thickness, const array::Scalar &amp;basal_enthalpy, const array::Scalar &amp;ice_surface_temperature, array::Scalar &amp;result)</td></tr>
+<tr class="memdesc:aa04cdf90d444dec6c7091c6737b721ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the temperature seen by the top of the bedrock thermal layer.  <a href="namespacepism_aa04cdf90d444dec6c7091c6737b721ab.html#aa04cdf90d444dec6c7091c6737b721ab">More...</a><br /></td></tr>
+<tr class="separator:aa04cdf90d444dec6c7091c6737b721ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Definition of class IceModel. </p>

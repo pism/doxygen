@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PISM, A Parallel Ice Sheet Model
-   &#160;<span id="projectnumber">stable v2.0.7 committed by Constantine Khrulev on 2023-11-21 12:49:11 -0900</span>
+   &#160;<span id="projectnumber">stable v2.1 committed by Constantine Khrulev on 2023-11-23 11:24:22 -0900</span>
    </div>
   </td>
  </tr>
@@ -84,21 +84,17 @@ $(function() {
 <div class="textblock"><code>#include &lt;gsl/gsl_interp.h&gt;</code><br />
 <code>#include &lt;algorithm&gt;</code><br />
 <code>#include &lt;set&gt;</code><br />
-<code>#include &quot;<a class="el" href="IceModel_8hh_source.html">IceModel.hh</a>&quot;</code><br />
-<code>#include &quot;pism/util/IceGrid.hh&quot;</code><br />
+<code>#include &quot;pism/icemodel/IceModel.hh&quot;</code><br />
+<code>#include &quot;pism/util/Grid.hh&quot;</code><br />
 <code>#include &quot;pism/util/ConfigInterface.hh&quot;</code><br />
 <code>#include &quot;pism/util/Diagnostic.hh&quot;</code><br />
 <code>#include &quot;pism/util/Time.hh&quot;</code><br />
-<code>#include &quot;pism/util/error_handling.hh&quot;</code><br />
 <code>#include &quot;pism/util/io/File.hh&quot;</code><br />
-<code>#include &quot;pism/util/pism_options.hh&quot;</code><br />
-<code>#include &quot;pism/util/Vars.hh&quot;</code><br />
 <code>#include &quot;pism/util/io/io_helpers.hh&quot;</code><br />
 <code>#include &quot;pism/util/Profiling.hh&quot;</code><br />
 <code>#include &quot;pism/util/pism_utilities.hh&quot;</code><br />
 <code>#include &quot;pism/util/projection.hh&quot;</code><br />
 <code>#include &quot;pism/util/Component.hh&quot;</code><br />
-<code>#include &quot;pism/energy/utilities.hh&quot;</code><br />
 </div>
 <p><a href="output_8cc_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -111,6 +107,10 @@ Namespaces</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:a022de42aa89ccb41686786fcc8754823"><td class="memItemLeft" align="right" valign="top">MaxTimestep&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_a022de42aa89ccb41686786fcc8754823.html#a022de42aa89ccb41686786fcc8754823">pism::reporting_max_timestep</a> (const std::vector&lt; double &gt; &amp;times, double t, double eps, const std::string &amp;description)</td></tr>
 <tr class="separator:a022de42aa89ccb41686786fcc8754823"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a170673e2c3fc7e36e428c796f1abc9d4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_a170673e2c3fc7e36e428c796f1abc9d4.html#a170673e2c3fc7e36e428c796f1abc9d4">pism::write_mapping</a> (const File &amp;file, const <a class="el" href="classpism_1_1MappingInfo.html">pism::MappingInfo</a> &amp;info)</td></tr>
+<tr class="separator:a170673e2c3fc7e36e428c796f1abc9d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb9d6f7e33651a9122f5164d1795da2c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_afb9d6f7e33651a9122f5164d1795da2c.html#afb9d6f7e33651a9122f5164d1795da2c">pism::write_run_stats</a> (const File &amp;file, const <a class="el" href="classpism_1_1VariableMetadata.html">pism::VariableMetadata</a> &amp;stats)</td></tr>
+<tr class="separator:afb9d6f7e33651a9122f5164d1795da2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->

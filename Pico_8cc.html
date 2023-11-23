@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PISM, A Parallel Ice Sheet Model
-   &#160;<span id="projectnumber">stable v2.0.7 committed by Constantine Khrulev on 2023-11-21 12:49:11 -0900</span>
+   &#160;<span id="projectnumber">stable v2.1 committed by Constantine Khrulev on 2023-11-23 11:24:22 -0900</span>
    </div>
   </td>
  </tr>
@@ -85,14 +85,13 @@ $(function() {
 <code>#include &quot;pism/coupler/util/options.hh&quot;</code><br />
 <code>#include &quot;pism/geometry/Geometry.hh&quot;</code><br />
 <code>#include &quot;pism/util/ConfigInterface.hh&quot;</code><br />
-<code>#include &quot;pism/util/IceGrid.hh&quot;</code><br />
+<code>#include &quot;pism/util/Grid.hh&quot;</code><br />
 <code>#include &quot;pism/util/Mask.hh&quot;</code><br />
 <code>#include &quot;pism/util/Time.hh&quot;</code><br />
-<code>#include &quot;pism/util/Vars.hh&quot;</code><br />
-<code>#include &quot;pism/util/iceModelVec.hh&quot;</code><br />
-<code>#include &quot;<a class="el" href="Pico_8hh_source.html">Pico.hh</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="PicoGeometry_8hh_source.html">PicoGeometry.hh</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="PicoPhysics_8hh_source.html">PicoPhysics.hh</a>&quot;</code><br />
+<code>#include &quot;pism/coupler/ocean/Pico.hh&quot;</code><br />
+<code>#include &quot;pism/coupler/ocean/PicoGeometry.hh&quot;</code><br />
+<code>#include &quot;pism/coupler/ocean/PicoPhysics.hh&quot;</code><br />
+<code>#include &quot;pism/util/array/Forcing.hh&quot;</code><br />
 </div>
 <p><a href="Pico_8cc_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -106,8 +105,8 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ae05300cafae71ac5e2fbf4ce81ee763d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_1_1ocean_ae05300cafae71ac5e2fbf4ce81ee763d.html#ae05300cafae71ac5e2fbf4ce81ee763d">pism::ocean::extend_basal_melt_rates</a> (const IceModelVec2CellType &amp;cell_type, IceModelVec2S &amp;basal_melt_rate)</td></tr>
-<tr class="separator:ae05300cafae71ac5e2fbf4ce81ee763d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19ab8b8ca61a1e85d187e23f601d93a0"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_1_1ocean_a19ab8b8ca61a1e85d187e23f601d93a0.html#a19ab8b8ca61a1e85d187e23f601d93a0">pism::ocean::extend_basal_melt_rates</a> (const array::CellType1 &amp;cell_type, array::Scalar1 &amp;basal_melt_rate)</td></tr>
+<tr class="separator:a19ab8b8ca61a1e85d187e23f601d93a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->

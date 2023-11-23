@@ -1,3 +1,4 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classpism_1_1MaxTimestep.html" title="Combines the max. time step with the flag indicating if a restriction is active. Makes is possible to..." alt="" coords="5,5,156,32"/>
+<area shape="rect" id="node1" href="$classpism_1_1Logger.html" title="A basic logging class." alt="" coords="5,5,112,32"/>
+<area shape="rect" id="node2" href="$classpism_1_1StringLogger.html" title="A logger that accumulates messages and reports them as a string." alt="" coords="160,5,304,32"/>
 </map>

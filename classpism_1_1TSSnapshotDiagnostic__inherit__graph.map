@@ -1,7 +1,7 @@
 <map id="pism::TSSnapshotDiagnostic" name="pism::TSSnapshotDiagnostic">
-<area shape="rect" id="node1" title="Scalar diagnostic reporting a snapshot of a quantity modeled by PISM." alt="" coords="200,775,407,802"/>
-<area shape="rect" id="node3" href="$classpism_1_1TSDiag.html" title=" " alt="" coords="455,768,653,809"/>
-<area shape="rect" id="node2" href="$classpism_1_1TSDiagnostic.html" title="PISM&#39;s scalar time&#45;series diagnostics." alt="" coords="5,775,152,802"/>
+<area shape="rect" id="node1" title="Scalar diagnostic reporting a snapshot of a quantity modeled by PISM." alt="" coords="200,807,407,834"/>
+<area shape="rect" id="node3" href="$classpism_1_1TSDiag.html" title=" " alt="" coords="455,800,653,841"/>
+<area shape="rect" id="node2" href="$classpism_1_1TSDiagnostic.html" title="PISM&#39;s scalar time&#45;series diagnostics." alt="" coords="5,807,152,834"/>
 <area shape="rect" id="node4" href="$classpism_1_1diagnostics_1_1scalar_1_1IceAreaGlacierized.html" title="Computes the total ice area." alt="" coords="725,5,916,47"/>
 <area shape="rect" id="node5" href="$classpism_1_1diagnostics_1_1scalar_1_1IceAreaGlacierizedColdBase.html" title="Computes the total area of the cold ice." alt="" coords="725,71,916,127"/>
 <area shape="rect" id="node6" href="$classpism_1_1diagnostics_1_1scalar_1_1IceAreaGlacierizedGrounded.html" title="Computes the total grounded ice area." alt="" coords="725,151,916,207"/>
@@ -24,4 +24,5 @@
 <area shape="rect" id="node23" href="$classpism_1_1diagnostics_1_1scalar_1_1MaxHorizontalVelocity.html" title="Reports the maximum horizontal absolute velocity component over the grid." alt="" coords="713,1368,929,1409"/>
 <area shape="rect" id="node24" href="$classpism_1_1diagnostics_1_1scalar_1_1SeaLevelRisePotential.html" title="Computes the total ice volume which is relevant for sea&#45;level." alt="" coords="713,1433,928,1475"/>
 <area shape="rect" id="node25" href="$classpism_1_1diagnostics_1_1scalar_1_1TimeStepLength.html" title="Reports the mass continuity time step." alt="" coords="733,1499,908,1540"/>
+<area shape="rect" id="node26" href="$classpism_1_1diagnostics_1_1scalar_1_1TimeStepRatio.html" title="Reports the mass continuity time step." alt="" coords="738,1564,903,1605"/>
 </map>

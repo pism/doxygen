@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PISM, A Parallel Ice Sheet Model
-   &#160;<span id="projectnumber">stable v2.0.7 committed by Constantine Khrulev on 2023-11-21 12:49:11 -0900</span>
+   &#160;<span id="projectnumber">stable v2.1 committed by Constantine Khrulev on 2023-11-23 11:24:22 -0900</span>
    </div>
   </td>
  </tr>
@@ -76,7 +76,8 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#enum-members">Enumerations</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">pism::details Namespace Reference</div>  </div>
 </div><!--header-->
@@ -91,14 +92,54 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:afccb9ab99b584a40eb0113b9032e800c"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_1_1details_afccb9ab99b584a40eb0113b9032e800c.html#afccb9ab99b584a40eb0113b9032e800c">non_decreasing</a> (const std::vector&lt; double &gt; &amp;a)</td></tr>
+<tr class="memdesc:afccb9ab99b584a40eb0113b9032e800c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if a vector of doubles is not decreasing.  <a href="namespacepism_1_1details_afccb9ab99b584a40eb0113b9032e800c.html#afccb9ab99b584a40eb0113b9032e800c">More...</a><br /></td></tr>
+<tr class="separator:afccb9ab99b584a40eb0113b9032e800c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a858e082a4502590bc59746e94b13a967"><td class="memItemLeft" align="right" valign="top">static std::shared_ptr&lt; <a class="el" href="classpism_1_1array_1_1Array3D.html">array::Array3D</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_1_1details_a858e082a4502590bc59746e94b13a967.html#a858e082a4502590bc59746e94b13a967">allocate_layer_thickness</a> (std::shared_ptr&lt; const <a class="el" href="classpism_1_1Grid.html">Grid</a> &gt; grid, const std::vector&lt; double &gt; &amp;times)</td></tr>
+<tr class="separator:a858e082a4502590bc59746e94b13a967"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ce225decfd10786cd88ba594c290b13"><td class="memItemLeft" align="right" valign="top">static std::shared_ptr&lt; <a class="el" href="classpism_1_1array_1_1Array3D.html">array::Array3D</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_1_1details_a8ce225decfd10786cd88ba594c290b13.html#a8ce225decfd10786cd88ba594c290b13">allocate_layer_thickness</a> (const <a class="el" href="classpism_1_1array_1_1Array3D.html">array::Array3D</a> &amp;input, double T_start, const std::vector&lt; double &gt; &amp;requested_times)</td></tr>
+<tr class="separator:a8ce225decfd10786cd88ba594c290b13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32b15765a69adc66becb57b853f062bc"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_1_1details_a32b15765a69adc66becb57b853f062bc.html#a32b15765a69adc66becb57b853f062bc">prune_deposition_times</a> (const <a class="el" href="classpism_1_1Time.html">Time</a> &amp;time, const std::vector&lt; double &gt; &amp;times)</td></tr>
+<tr class="separator:a32b15765a69adc66becb57b853f062bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afad7e7e1c03f04710d6ebef2e1f7f4b1"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_1_1details_afad7e7e1c03f04710d6ebef2e1f7f4b1.html#afad7e7e1c03f04710d6ebef2e1f7f4b1">deposition_times</a> (const <a class="el" href="classpism_1_1File.html">File</a> &amp;input_file)</td></tr>
+<tr class="separator:afad7e7e1c03f04710d6ebef2e1f7f4b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35ad63d9cd865fb444b32307909ec46c"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_1_1details_a35ad63d9cd865fb444b32307909ec46c.html#a35ad63d9cd865fb444b32307909ec46c">deposition_times</a> (const <a class="el" href="classpism_1_1Config.html">Config</a> &amp;config, const <a class="el" href="classpism_1_1Time.html">Time</a> &amp;time)</td></tr>
+<tr class="separator:a35ad63d9cd865fb444b32307909ec46c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7e5919e953f9ffc8955a1b8d23348c8"><td class="memItemLeft" align="right" valign="top">static std::shared_ptr&lt; <a class="el" href="classpism_1_1array_1_1Array3D.html">array::Array3D</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_1_1details_af7e5919e953f9ffc8955a1b8d23348c8.html#af7e5919e953f9ffc8955a1b8d23348c8">regrid_layer_thickness</a> (std::shared_ptr&lt; const <a class="el" href="classpism_1_1Grid.html">Grid</a> &gt; grid, const <a class="el" href="classpism_1_1File.html">File</a> &amp;input_file, int record)</td></tr>
+<tr class="separator:af7e5919e953f9ffc8955a1b8d23348c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad52c555e0c3904e9504af1bbecb0fc5b"><td class="memItemLeft" align="right" valign="top">static std::shared_ptr&lt; <a class="el" href="classpism_1_1array_1_1Array3D.html">array::Array3D</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_1_1details_ad52c555e0c3904e9504af1bbecb0fc5b.html#ad52c555e0c3904e9504af1bbecb0fc5b">read_layer_thickness</a> (std::shared_ptr&lt; const <a class="el" href="classpism_1_1Grid.html">Grid</a> &gt; grid, const <a class="el" href="classpism_1_1File.html">File</a> &amp;input_file, int record)</td></tr>
+<tr class="separator:ad52c555e0c3904e9504af1bbecb0fc5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8baea191e2906b3593765dbaa8461cce"><td class="memItemLeft" align="right" valign="top">static size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_1_1details_a8baea191e2906b3593765dbaa8461cce.html#a8baea191e2906b3593765dbaa8461cce">n_active_layers</a> (std::vector&lt; double &gt; <a class="el" href="namespacepism_1_1details_afad7e7e1c03f04710d6ebef2e1f7f4b1.html#afad7e7e1c03f04710d6ebef2e1f7f4b1">deposition_times</a>, double current_time)</td></tr>
+<tr class="separator:a8baea191e2906b3593765dbaa8461cce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aecc8b5fe7c075b9450d56c4803ece59f"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_1_1details_aecc8b5fe7c075b9450d56c4803ece59f.html#aecc8b5fe7c075b9450d56c4803ece59f">regridp</a> (const <a class="el" href="classpism_1_1Config.html">Config</a> &amp;config)</td></tr>
+<tr class="separator:aecc8b5fe7c075b9450d56c4803ece59f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7013321cfa2b7ee7ab365df32dc952e6"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_1_1details_a7013321cfa2b7ee7ab365df32dc952e6.html#a7013321cfa2b7ee7ab365df32dc952e6">renormalize</a> (const <a class="el" href="classpism_1_1array_1_1Scalar.html">array::Scalar</a> &amp;ice_thickness, <a class="el" href="classpism_1_1array_1_1Array3D.html">array::Array3D</a> &amp;layer_thickness)</td></tr>
+<tr class="separator:a7013321cfa2b7ee7ab365df32dc952e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6dd26dd6408be05c70180a89f2339616"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_1_1details_a6dd26dd6408be05c70180a89f2339616.html#a6dd26dd6408be05c70180a89f2339616">pp</a> (double x)</td></tr>
 <tr class="separator:a6dd26dd6408be05c70180a89f2339616"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab3fbb2d544422757230622d558d43b94"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_1_1details_ab3fbb2d544422757230622d558d43b94.html#ab3fbb2d544422757230622d558d43b94">np</a> (double x)</td></tr>
 <tr class="separator:ab3fbb2d544422757230622d558d43b94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac987e7779b73e9ff7654f2387063316a"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_1_1details_ac987e7779b73e9ff7654f2387063316a.html#ac987e7779b73e9ff7654f2387063316a">flux_out</a> (const <a class="el" href="structpism_1_1stencils_1_1Star.html">stencils::Star</a>&lt; double &gt; &amp;u, double dx, double dy, double dt)</td></tr>
 <tr class="separator:ac987e7779b73e9ff7654f2387063316a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a13cab08d8233ec083a530a1de43ebd79"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_1_1details_a13cab08d8233ec083a530a1de43ebd79.html#a13cab08d8233ec083a530a1de43ebd79">ice_volume</a> (const <a class="el" href="classpism_1_1IceModelVec2S.html">IceModelVec2S</a> &amp;ice_thickness, const <a class="el" href="classpism_1_1IceModelVec3.html">IceModelVec3</a> &amp;ice_enthalpy, <a class="el" href="namespacepism_1_1details_aba92385acd5e5713532e85cf542af6c3.html#aba92385acd5e5713532e85cf542af6c3">IceKind</a> kind, double thickness_threshold)</td></tr>
-<tr class="separator:a13cab08d8233ec083a530a1de43ebd79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0291224aa2559ff11aa282b02a808fb7"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_1_1details_a0291224aa2559ff11aa282b02a808fb7.html#a0291224aa2559ff11aa282b02a808fb7">ice_volume</a> (const <a class="el" href="classpism_1_1array_1_1Scalar.html">array::Scalar</a> &amp;ice_thickness, const <a class="el" href="classpism_1_1array_1_1Array3D.html">array::Array3D</a> &amp;ice_enthalpy, <a class="el" href="namespacepism_1_1details_aba92385acd5e5713532e85cf542af6c3.html#aba92385acd5e5713532e85cf542af6c3">IceKind</a> kind, double thickness_threshold)</td></tr>
+<tr class="separator:a0291224aa2559ff11aa282b02a808fb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad48e20b30a856281bcced5645a75119"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_1_1details_aad48e20b30a856281bcced5645a75119.html#aad48e20b30a856281bcced5645a75119">base_area</a> (const <a class="el" href="classpism_1_1array_1_1Scalar.html">array::Scalar</a> &amp;ice_thickness, const <a class="el" href="classpism_1_1array_1_1Array3D.html">array::Array3D</a> &amp;ice_enthalpy, <a class="el" href="namespacepism_1_1details_aba92385acd5e5713532e85cf542af6c3.html#aba92385acd5e5713532e85cf542af6c3">IceKind</a> kind, double thickness_threshold)</td></tr>
+<tr class="separator:aad48e20b30a856281bcced5645a75119"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a92105bc1879c415639b1cefbd15f29db"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_1_1details_a92105bc1879c415639b1cefbd15f29db.html#a92105bc1879c415639b1cefbd15f29db">layer_thickness_variable_name</a> = &quot;isochronal_layer_thickness&quot;</td></tr>
+<tr class="separator:a92105bc1879c415639b1cefbd15f29db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad52bb4f30145bdaaa5f2b72e3089befd"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_1_1details_ad52bb4f30145bdaaa5f2b72e3089befd.html#ad52bb4f30145bdaaa5f2b72e3089befd">deposition_time_variable_name</a> = &quot;deposition_time&quot;</td></tr>
+<tr class="separator:ad52bb4f30145bdaaa5f2b72e3089befd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82f85ed1db8b4f689cfb50aac67682d3"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_1_1details_a82f85ed1db8b4f689cfb50aac67682d3.html#a82f85ed1db8b4f689cfb50aac67682d3">isochrone_depth_variable_name</a> = &quot;isochrone_depth&quot;</td></tr>
+<tr class="separator:a82f85ed1db8b4f689cfb50aac67682d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0e796523f99d1679d393e480f4c6e85"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_1_1details_af0e796523f99d1679d393e480f4c6e85.html#af0e796523f99d1679d393e480f4c6e85">times_parameter</a> = &quot;isochrones.deposition_times&quot;</td></tr>
+<tr class="separator:af0e796523f99d1679d393e480f4c6e85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1aca7da6f8d0f14f887ae9a5bb83623d"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_1_1details_a1aca7da6f8d0f14f887ae9a5bb83623d.html#a1aca7da6f8d0f14f887ae9a5bb83623d">N_max_parameter</a> = &quot;isochrones.max_n_layers&quot;</td></tr>
+<tr class="separator:a1aca7da6f8d0f14f887ae9a5bb83623d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf07097e96c8f588d480e94ecdc490be"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_1_1details_acf07097e96c8f588d480e94ecdc490be.html#acf07097e96c8f588d480e94ecdc490be">N_boot_parameter</a> = &quot;isochrones.bootstrapping.n_layers&quot;</td></tr>
+<tr class="separator:acf07097e96c8f588d480e94ecdc490be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>References:</p>

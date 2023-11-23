@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PISM, A Parallel Ice Sheet Model
-   &#160;<span id="projectnumber">stable v2.0.7 committed by Constantine Khrulev on 2023-11-21 12:49:11 -0900</span>
+   &#160;<span id="projectnumber">stable v2.1 committed by Constantine Khrulev on 2023-11-23 11:24:22 -0900</span>
    </div>
   </td>
  </tr>
@@ -81,19 +81,20 @@ $(function() {
 <div class="title">LocalInterpCtx.cc File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;cstring&gt;</code><br />
+<div class="textblock"><code>#include &lt;cstddef&gt;</code><br />
+<code>#include &lt;cstring&gt;</code><br />
 <code>#include &lt;cstdlib&gt;</code><br />
 <code>#include &lt;algorithm&gt;</code><br />
 <code>#include &lt;gsl/gsl_interp.h&gt;</code><br />
-<code>#include &quot;<a class="el" href="File_8hh_source.html">File.hh</a>&quot;</code><br />
-<code>#include &quot;pism/util/pism_utilities.hh&quot;</code><br />
-<code>#include &quot;<a class="el" href="LocalInterpCtx_8hh_source.html">LocalInterpCtx.hh</a>&quot;</code><br />
-<code>#include &quot;pism/util/ConfigInterface.hh&quot;</code><br />
-<code>#include &quot;pism/util/IceGrid.hh&quot;</code><br />
-<code>#include &quot;pism/util/interpolation.hh&quot;</code><br />
-<code>#include &quot;pism/util/error_handling.hh&quot;</code><br />
-<code>#include &quot;pism/util/Logger.hh&quot;</code><br />
+<code>#include &lt;memory&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
+<code>#include &quot;<a class="el" href="IO__Flags_8hh_source.html">IO_Flags.hh</a>&quot;</code><br />
+<code>#include &quot;pism/util/io/LocalInterpCtx.hh&quot;</code><br />
+<code>#include &quot;pism/util/Grid.hh&quot;</code><br />
 <code>#include &quot;pism/util/Context.hh&quot;</code><br />
+<code>#include &quot;pism/util/Logger.hh&quot;</code><br />
+<code>#include &quot;pism/util/error_handling.hh&quot;</code><br />
+<code>#include &quot;pism/util/interpolation.hh&quot;</code><br />
 </div>
 <p><a href="LocalInterpCtx_8cc_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -104,9 +105,9 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a61f6d5805a2b6c17c169c9a394881ce0"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_a61f6d5805a2b6c17c169c9a394881ce0.html#a61f6d5805a2b6c17c169c9a394881ce0">pism::subset_start_and_count</a> (const std::vector&lt; double &gt; &amp;x, double subset_x_min, double subset_x_max, unsigned int &amp;x_start, unsigned int &amp;x_count)</td></tr>
-<tr class="memdesc:a61f6d5805a2b6c17c169c9a394881ce0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute start and count for getting a subset of x.  <a href="namespacepism_a61f6d5805a2b6c17c169c9a394881ce0.html#a61f6d5805a2b6c17c169c9a394881ce0">More...</a><br /></td></tr>
-<tr class="separator:a61f6d5805a2b6c17c169c9a394881ce0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b6d2723ae96f0316c4d0d27e6746ae7"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_a8b6d2723ae96f0316c4d0d27e6746ae7.html#a8b6d2723ae96f0316c4d0d27e6746ae7">pism::subset_start_and_count</a> (const std::vector&lt; double &gt; &amp;x, double subset_x_min, double subset_x_max, int &amp;x_start, int &amp;x_count)</td></tr>
+<tr class="memdesc:a8b6d2723ae96f0316c4d0d27e6746ae7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute start and count for getting a subset of x.  <a href="namespacepism_a8b6d2723ae96f0316c4d0d27e6746ae7.html#a8b6d2723ae96f0316c4d0d27e6746ae7">More...</a><br /></td></tr>
+<tr class="separator:a8b6d2723ae96f0316c4d0d27e6746ae7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->

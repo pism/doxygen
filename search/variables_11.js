@@ -1,6 +1,28 @@
 var searchData=
 [
-  ['q_9094',['q',['../structpism_1_1bed_1_1ge__data_ab2cec4f2f4c8abaf221bf38d95a59ac1.html#ab2cec4f2f4c8abaf221bf38d95a59ac1',1,'pism::bed::ge_data']]],
-  ['qbed_9095',['qbed',['../structTestOParameters_af8f32d097cc28bcd6d31d64581508247.html#af8f32d097cc28bcd6d31d64581508247',1,'TestOParameters']]],
-  ['qice_9096',['qice',['../structTestOParameters_a2d77e708a4a9bfb01e1b6e2c5d0f65be.html#a2d77e708a4a9bfb01e1b6e2c5d0f65be',1,'TestOParameters']]]
+  ['r_9475',['r',['../structpism_1_1TestPParameters_aef743ab0160faa38b8cf022217674035.html#aef743ab0160faa38b8cf022217674035',1,'pism::TestPParameters::r()'],['../classpism_1_1rgrid_ada44afc09ab96daca5301c3103380b96.html#ada44afc09ab96daca5301c3103380b96',1,'pism::rgrid::r()']]],
+  ['r0_9476',['R0',['../structpism_1_1bed_1_1vd__params_aceaff330f9ebf8616c6be0a6701aa89c.html#aceaff330f9ebf8616c6be0a6701aa89c',1,'pism::bed::vd_params']]],
+  ['r1_9477',['R1',['../namespacepism_ad0405d3ae262a0cfbb1eff0b6bcb4957.html#ad0405d3ae262a0cfbb1eff0b6bcb4957',1,'pism']]],
+  ['radius_9478',['radius',['../test__cube_8c_a13553aadcae53676a3eef1d83c046c61.html#a13553aadcae53676a3eef1d83c046c61',1,'test_cube.c']]],
+  ['rank_9479',['rank',['../structpism_1_1Grid_1_1Impl_a7e8cbd6f6074252c5bffa3741addd729.html#a7e8cbd6f6074252c5bffa3741addd729',1,'pism::Grid::Impl']]],
+  ['rate_9480',['rate',['../classpism_1_1icebin_1_1IBIceModel_a9f7946f227bb7a959710cc16a19f1711.html#a9f7946f227bb7a959710cc16a19f1711',1,'pism::icebin::IBIceModel']]],
+  ['reason_9481',['reason',['../structpism_1_1IceModel_1_1TimesteppingInfo_ac9b87c596e68214d3cc8eff3461feeec.html#ac9b87c596e68214d3cc8eff3461feeec',1,'pism::IceModel::TimesteppingInfo']]],
+  ['record_9482',['record',['../structpism_1_1InputOptions_ae33c7fb4ca1317444d959bc3e1514ba4.html#ae33c7fb4ca1317444d959bc3e1514ba4',1,'pism::InputOptions']]],
+  ['reduced_5faccuracy_5fcounter_9483',['reduced_accuracy_counter',['../classpism_1_1energy_1_1EnergyModelStats_a2e8394e3ba7bd4d959c6303a12905fdf.html#a2e8394e3ba7bd4d959c6303a12905fdf',1,'pism::energy::EnergyModelStats']]],
+  ['refreeze_5ffraction_9484',['refreeze_fraction',['../structpism_1_1surface_1_1LocalMassBalance_1_1DegreeDayFactors_a4f6e87f9c1347cf8e581d2ef98bb90dc.html#a4f6e87f9c1347cf8e581d2ef98bb90dc',1,'pism::surface::LocalMassBalance::DegreeDayFactors']]],
+  ['refreeze_5fice_5fmelt_9485',['refreeze_ice_melt',['../classpism_1_1surface_1_1PDDMassBalance_a51420fa228b4d8d71aec4fac0e974001.html#a51420fa228b4d8d71aec4fac0e974001',1,'pism::surface::PDDMassBalance']]],
+  ['registration_9486',['registration',['../structpism_1_1Grid_1_1Impl_ac1c34113d87f8c5524d85451677568f9.html#ac1c34113d87f8c5524d85451677568f9',1,'pism::Grid::Impl::registration()'],['../classpism_1_1grid_1_1Parameters_aa240ed206c6f6bc68981bbda1d9049db.html#aa240ed206c6f6bc68981bbda1d9049db',1,'pism::grid::Parameters::registration()']]],
+  ['report_5frange_9487',['report_range',['../structpism_1_1array_1_1Array_1_1Impl_a71a1ccaa803f38c6edd4c027c031339a.html#a71a1ccaa803f38c6edd4c027c031339a',1,'pism::array::Array::Impl']]],
+  ['residual_9488',['residual',['../structpism_1_1GeometryEvolution_1_1Impl_a9d644e23031116f6ecae8e4c122c4c8a.html#a9d644e23031116f6ecae8e4c122c4c8a',1,'pism::GeometryEvolution::Impl']]],
+  ['rho_9489',['rho',['../exactTestL_8cc_aae14bb6d846f70291d5a016a6d19d11e.html#aae14bb6d846f70291d5a016a6d19d11e',1,'rho():&#160;exactTestL.cc'],['../structpism_1_1bed_1_1vd__params_a775f712a712cf8aaba3b48075249a223.html#a775f712a712cf8aaba3b48075249a223',1,'pism::bed::vd_params::rho()']]],
+  ['rho_5fbr_9490',['rho_BR',['../exactTestK_8c_af137795422e747a1950da7775a50ff47.html#af137795422e747a1950da7775a50ff47',1,'exactTestK.c']]],
+  ['rho_5fice_9491',['rho_ICE',['../exactTestO_8c_a07ef704f6f46d996a075f6b62f6e235e.html#a07ef704f6f46d996a075f6b62f6e235e',1,'exactTestO.c']]],
+  ['rho_5fice_9492',['rho_ice',['../exactTestK_8c_a82480c06ebc43bb6591a92f1fe36566c.html#a82480c06ebc43bb6591a92f1fe36566c',1,'exactTestK.c']]],
+  ['rhoi_9493',['rhoi',['../namespacepism_a22eee713ae18715b1ea0c7a92cc04ed7.html#a22eee713ae18715b1ea0c7a92cc04ed7',1,'pism']]],
+  ['rhow_9494',['rhow',['../namespacepism_a2356410fb62f525c4bc6844536f73cdc.html#a2356410fb62f525c4bc6844536f73cdc',1,'pism']]],
+  ['rk_9495',['rk',['../structpism_1_1bed_1_1vd__params_a0a15fc5abfa5b1a7e3a8cc5cb1fb3f1b.html#a0a15fc5abfa5b1a7e3a8cc5cb1fb3f1b',1,'pism::bed::vd_params']]],
+  ['rmkm_9496',['rmkm',['../classpism_1_1bed_1_1greens__elastic_a2176238181cc36c5d0bfec0742cdb605.html#a2176238181cc36c5d0bfec0742cdb605',1,'pism::bed::greens_elastic']]],
+  ['rng_9497',['rng',['../structpism_1_1surface_1_1PDDrandMassBalance_1_1Impl_a0fb8891184af3b42712ed9ecbbae0a1b.html#a0fb8891184af3b42712ed9ecbbae0a1b',1,'pism::surface::PDDrandMassBalance::Impl']]],
+  ['row_9498',['row',['../structRun_a8d9c0c81aa513bd0e04f1627000118be.html#a8d9c0c81aa513bd0e04f1627000118be',1,'Run']]],
+  ['runoff_9499',['runoff',['../classpism_1_1surface_1_1DEBMSimplePointwise_1_1Changes_a47fae1de5ea019513cb2c7146c4fe185.html#a47fae1de5ea019513cb2c7146c4fe185',1,'pism::surface::DEBMSimplePointwise::Changes::runoff()'],['../classpism_1_1surface_1_1LocalMassBalance_1_1Changes_a503b2073c19d98bc53e219ba1b7cb0f7.html#a503b2073c19d98bc53e219ba1b7cb0f7',1,'pism::surface::LocalMassBalance::Changes::runoff()']]]
 ];

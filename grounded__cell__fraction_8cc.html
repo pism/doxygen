@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PISM, A Parallel Ice Sheet Model
-   &#160;<span id="projectnumber">stable v2.0.7 committed by Constantine Khrulev on 2023-11-21 12:49:11 -0900</span>
+   &#160;<span id="projectnumber">stable v2.1 committed by Constantine Khrulev on 2023-11-23 11:24:22 -0900</span>
    </div>
   </td>
  </tr>
@@ -85,10 +85,10 @@ $(function() {
 <div class="contents">
 <div class="textblock"><code>#include &lt;cassert&gt;</code><br />
 <code>#include &lt;cmath&gt;</code><br />
-<code>#include &quot;<a class="el" href="grounded__cell__fraction_8hh_source.html">grounded_cell_fraction.hh</a>&quot;</code><br />
+<code>#include &quot;pism/geometry/grounded_cell_fraction.hh&quot;</code><br />
 <code>#include &quot;pism/util/error_handling.hh&quot;</code><br />
 <code>#include &quot;pism/util/pism_utilities.hh&quot;</code><br />
-<code>#include &quot;pism/util/iceModelVec.hh&quot;</code><br />
+<code>#include &quot;pism/util/array/Scalar.hh&quot;</code><br />
 </div>
 <p><a href="grounded__cell__fraction_8cc_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -127,8 +127,8 @@ Functions</h2></td></tr>
 <tr class="separator:a200b1c89a64c718f6b0f585508e55172"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0a40d97bfbeb010c37b48a8146151e1c"><td class="memItemLeft" align="right" valign="top">static Box&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_a0a40d97bfbeb010c37b48a8146151e1c.html#a0a40d97bfbeb010c37b48a8146151e1c">pism::F</a> (const Box &amp;SL, const Box &amp;B, const Box &amp;H, double alpha)</td></tr>
 <tr class="separator:a0a40d97bfbeb010c37b48a8146151e1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a43f0457b9456bf05d3fa0fedd866890e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_a43f0457b9456bf05d3fa0fedd866890e.html#a43f0457b9456bf05d3fa0fedd866890e">pism::compute_grounded_cell_fraction</a> (double ice_density, double ocean_density, const IceModelVec2S &amp;sea_level, const IceModelVec2S &amp;ice_thickness, const IceModelVec2S &amp;bed_topography, IceModelVec2S &amp;result)</td></tr>
-<tr class="separator:a43f0457b9456bf05d3fa0fedd866890e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e0714b3565e7cdd98c09aad3c191884"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_a5e0714b3565e7cdd98c09aad3c191884.html#a5e0714b3565e7cdd98c09aad3c191884">pism::compute_grounded_cell_fraction</a> (double ice_density, double ocean_density, const array::Scalar1 &amp;sea_level, const array::Scalar1 &amp;ice_thickness, const array::Scalar1 &amp;bed_topography, array::Scalar &amp;result)</td></tr>
+<tr class="separator:a5e0714b3565e7cdd98c09aad3c191884"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->

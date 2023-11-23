@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PISM, A Parallel Ice Sheet Model
-   &#160;<span id="projectnumber">stable v2.0.7 committed by Constantine Khrulev on 2023-11-21 12:49:11 -0900</span>
+   &#160;<span id="projectnumber">stable v2.1 committed by Constantine Khrulev on 2023-11-23 11:24:22 -0900</span>
    </div>
   </td>
  </tr>
@@ -78,7 +78,7 @@ $(function() {
 <div class="title">FEM.hh</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="FEM_8hh.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/* Copyright (C) 2020, 2021 PISM Authors</span></div>
+<a href="FEM_8hh.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/* Copyright (C) 2020, 2021, 2023 PISM Authors</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * This file is part of PISM.</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> *</span></div>
@@ -100,12 +100,12 @@ $(function() {
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#define PISM_FEM_H</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">//! \brief Classes for implementing the Finite Element Method on an IceGrid.</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">//! \brief Classes for implementing the Finite Element Method on an Grid.</span></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment"></span><span class="comment">/*! @file FEM.hh We assume that the reader has a basic understanding of the finite element method. The</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">  following is a reminder of the method that also gives the background for the how to implement it</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">  on an IceGrid with the tools in this module.</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">  on an Grid with the tools in this module.</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">  The IceGrid domain \f$\Omega\f$ is decomposed into a grid of rectangular physical elements indexed</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">  The Grid domain \f$\Omega\f$ is decomposed into a grid of rectangular physical elements indexed</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">  by indices (i,j):</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment">  ~~~</span></div>
@@ -321,19 +321,15 @@ $(function() {
 <div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;} <span class="comment">// end of namespace fem</span></div>
 <div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;} <span class="comment">// end of namespace pism</span></div>
 <div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160; </div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="DirichletData_8hh.html">DirichletData.hh</a>&quot;</span></div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;<span class="preprocessor">#include &quot;pism/util/fem/DirichletData.hh&quot;</span></div>
 <div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160; </div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Element_8hh.html">Element.hh</a>&quot;</span></div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;<span class="preprocessor">#include &quot;pism/util/fem/Element.hh&quot;</span></div>
 <div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160; </div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="ElementIterator_8hh.html">ElementIterator.hh</a>&quot;</span></div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;<span class="preprocessor">#include &quot;pism/util/fem/ElementIterator.hh&quot;</span></div>
 <div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160; </div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Quadrature_8hh.html">Quadrature.hh</a>&quot;</span></div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;<span class="preprocessor">#include &quot;pism/util/fem/Quadrature.hh&quot;</span></div>
 <div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160; </div>
 <div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PISM_FEM_H */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="aDirichletData_8hh_html"><div class="ttname"><a href="DirichletData_8hh.html">DirichletData.hh</a></div></div>
-<div class="ttc" id="aElementIterator_8hh_html"><div class="ttname"><a href="ElementIterator_8hh.html">ElementIterator.hh</a></div></div>
-<div class="ttc" id="aElement_8hh_html"><div class="ttname"><a href="Element_8hh.html">Element.hh</a></div></div>
-<div class="ttc" id="aQuadrature_8hh_html"><div class="ttname"><a href="Quadrature_8hh.html">Quadrature.hh</a></div></div>
 <div class="ttc" id="anamespacepism_1_1fem_1_1linear_a652778253be65fd8cea9263d14523989_html_a652778253be65fd8cea9263d14523989"><div class="ttname"><a href="namespacepism_1_1fem_1_1linear_a652778253be65fd8cea9263d14523989.html#a652778253be65fd8cea9263d14523989">pism::fem::linear::chi</a></div><div class="ttdeci">Germ chi(unsigned int k, const QuadPoint &amp;pt)</div><div class="ttdoc">Linear basis functions on the interval [-1, -1].</div><div class="ttdef"><b>Definition:</b> <a href="FEM_8cc_source.html#l00029">FEM.cc:29</a></div></div>
 <div class="ttc" id="anamespacepism_1_1fem_1_1linear_ad8ffed8f2d82cf41bf9c9c681782b9b0_html_ad8ffed8f2d82cf41bf9c9c681782b9b0"><div class="ttname"><a href="namespacepism_1_1fem_1_1linear_ad8ffed8f2d82cf41bf9c9c681782b9b0.html#ad8ffed8f2d82cf41bf9c9c681782b9b0">pism::fem::linear::n_chi</a></div><div class="ttdeci">const int n_chi</div><div class="ttdef"><b>Definition:</b> <a href="FEM_8hh_source.html#l00177">FEM.hh:177</a></div></div>
 <div class="ttc" id="anamespacepism_1_1fem_1_1p1_ac0039f65e0a433910822d97306a11b26_html_ac0039f65e0a433910822d97306a11b26"><div class="ttname"><a href="namespacepism_1_1fem_1_1p1_ac0039f65e0a433910822d97306a11b26.html#ac0039f65e0a433910822d97306a11b26">pism::fem::p1::n_chi</a></div><div class="ttdeci">const int n_chi</div><div class="ttdef"><b>Definition:</b> <a href="FEM_8hh_source.html#l00199">FEM.hh:199</a></div></div>
@@ -365,8 +361,8 @@ $(function() {
 <div class="ttc" id="anamespacepism_1_1fem_ac18e0822794daf89a2d3f3ba0cf11335_html_ac18e0822794daf89a2d3f3ba0cf11335a9df9f88b59512cc92bb2d740b9dccc79"><div class="ttname"><a href="namespacepism_1_1fem_ac18e0822794daf89a2d3f3ba0cf11335.html#ac18e0822794daf89a2d3f3ba0cf11335a9df9f88b59512cc92bb2d740b9dccc79">pism::fem::ELEMENT_P0</a></div><div class="ttdeci">@ ELEMENT_P0</div><div class="ttdef"><b>Definition:</b> <a href="FEM_8hh_source.html#l00204">FEM.hh:204</a></div></div>
 <div class="ttc" id="anamespacepism_1_1fem_ac18e0822794daf89a2d3f3ba0cf11335_html_ac18e0822794daf89a2d3f3ba0cf11335af2dbc56701988ea0fea3cc413405fd3f"><div class="ttname"><a href="namespacepism_1_1fem_ac18e0822794daf89a2d3f3ba0cf11335.html#ac18e0822794daf89a2d3f3ba0cf11335af2dbc56701988ea0fea3cc413405fd3f">pism::fem::ELEMENT_P3</a></div><div class="ttdeci">@ ELEMENT_P3</div><div class="ttdef"><b>Definition:</b> <a href="FEM_8hh_source.html#l00204">FEM.hh:204</a></div></div>
 <div class="ttc" id="anamespacepism_1_1fem_ac8c69e98698083b05a597741ef3e71fa_html_ac8c69e98698083b05a597741ef3e71fa"><div class="ttname"><a href="namespacepism_1_1fem_ac8c69e98698083b05a597741ef3e71fa.html#ac8c69e98698083b05a597741ef3e71fa">pism::fem::element_type</a></div><div class="ttdeci">ElementType element_type(int node_type[q1::n_chi])</div><div class="ttdef"><b>Definition:</b> <a href="FEM_8cc_source.html#l00104">FEM.cc:104</a></div></div>
-<div class="ttc" id="anamespacepism_a7343afff8d353b59dbdec563bd896812_html_a7343afff8d353b59dbdec563bd896812"><div class="ttname"><a href="namespacepism_a7343afff8d353b59dbdec563bd896812.html#a7343afff8d353b59dbdec563bd896812">pism::k</a></div><div class="ttdeci">static const double k</div><div class="ttdef"><b>Definition:</b> <a href="exactTestP_8cc_source.html#l00045">exactTestP.cc:45</a></div></div>
-<div class="ttc" id="anamespacepism_html"><div class="ttname"><a href="namespacepism.html">pism</a></div><div class="ttdef"><b>Definition:</b> <a href="AgeColumnSystem_8cc_source.html#l00024">AgeColumnSystem.cc:24</a></div></div>
+<div class="ttc" id="anamespacepism_a7343afff8d353b59dbdec563bd896812_html_a7343afff8d353b59dbdec563bd896812"><div class="ttname"><a href="namespacepism_a7343afff8d353b59dbdec563bd896812.html#a7343afff8d353b59dbdec563bd896812">pism::k</a></div><div class="ttdeci">static const double k</div><div class="ttdef"><b>Definition:</b> <a href="exactTestP_8cc_source.html#l00042">exactTestP.cc:42</a></div></div>
+<div class="ttc" id="anamespacepism_html"><div class="ttname"><a href="namespacepism.html">pism</a></div><div class="ttdef"><b>Definition:</b> <a href="AgeColumnSystem_8cc_source.html#l00023">AgeColumnSystem.cc:23</a></div></div>
 <div class="ttc" id="astructpism_1_1fem_1_1Germ_a049a429410ad48bb357c2ca2004b0df5_html_a049a429410ad48bb357c2ca2004b0df5"><div class="ttname"><a href="structpism_1_1fem_1_1Germ_a049a429410ad48bb357c2ca2004b0df5.html#a049a429410ad48bb357c2ca2004b0df5">pism::fem::Germ::dy</a></div><div class="ttdeci">double dy</div><div class="ttdoc">Function derivative with respect to y.</div><div class="ttdef"><b>Definition:</b> <a href="FEM_8hh_source.html#l00157">FEM.hh:157</a></div></div>
 <div class="ttc" id="astructpism_1_1fem_1_1Germ_a0acf620659f26a95338160e6943e4abf_html_a0acf620659f26a95338160e6943e4abf"><div class="ttname"><a href="structpism_1_1fem_1_1Germ_a0acf620659f26a95338160e6943e4abf.html#a0acf620659f26a95338160e6943e4abf">pism::fem::Germ::val</a></div><div class="ttdeci">double val</div><div class="ttdoc">Function value.</div><div class="ttdef"><b>Definition:</b> <a href="FEM_8hh_source.html#l00153">FEM.hh:153</a></div></div>
 <div class="ttc" id="astructpism_1_1fem_1_1Germ_abb1017c75e3b1e88daef21bd0b180485_html_abb1017c75e3b1e88daef21bd0b180485"><div class="ttname"><a href="structpism_1_1fem_1_1Germ_abb1017c75e3b1e88daef21bd0b180485.html#abb1017c75e3b1e88daef21bd0b180485">pism::fem::Germ::dz</a></div><div class="ttdeci">double dz</div><div class="ttdoc">Function derivative with respect to z.</div><div class="ttdef"><b>Definition:</b> <a href="FEM_8hh_source.html#l00159">FEM.hh:159</a></div></div>

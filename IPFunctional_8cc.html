@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PISM, A Parallel Ice Sheet Model
-   &#160;<span id="projectnumber">stable v2.0.7 committed by Constantine Khrulev on 2023-11-21 12:49:11 -0900</span>
+   &#160;<span id="projectnumber">stable v2.1 committed by Constantine Khrulev on 2023-11-23 11:24:22 -0900</span>
    </div>
   </td>
  </tr>
@@ -81,9 +81,10 @@ $(function() {
 <div class="title">IPFunctional.cc File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="IPFunctional_8hh_source.html">IPFunctional.hh</a>&quot;</code><br />
-<code>#include &quot;pism/util/IceGrid.hh&quot;</code><br />
-<code>#include &quot;pism/util/IceModelVec2V.hh&quot;</code><br />
+<div class="textblock"><code>#include &quot;pism/inverse/functional/IPFunctional.hh&quot;</code><br />
+<code>#include &quot;pism/util/Grid.hh&quot;</code><br />
+<code>#include &quot;pism/util/array/Vector.hh&quot;</code><br />
+<code>#include &quot;pism/util/array/Scalar.hh&quot;</code><br />
 <code>#include &quot;pism/util/error_handling.hh&quot;</code><br />
 </div>
 <p><a href="IPFunctional_8cc_source.html">Go to the source code of this file.</a></p>
@@ -98,12 +99,12 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:af7ad070d8f2062536ef34555ed169ac1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_1_1inverse_af7ad070d8f2062536ef34555ed169ac1.html#af7ad070d8f2062536ef34555ed169ac1">pism::inverse::gradientFD</a> (IPFunctional&lt; IceModelVec2S &gt; &amp;f, IceModelVec2S &amp;x, IceModelVec2S &amp;gradient)</td></tr>
-<tr class="memdesc:af7ad070d8f2062536ef34555ed169ac1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes finite difference approximations of a <a class="el" href="classpism_1_1inverse_1_1IPFunctional.html">IPFunctional&lt;IceModelVec2S&gt;</a> gradient.  <a href="namespacepism_1_1inverse_af7ad070d8f2062536ef34555ed169ac1.html#af7ad070d8f2062536ef34555ed169ac1">More...</a><br /></td></tr>
-<tr class="separator:af7ad070d8f2062536ef34555ed169ac1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4e7aadd85e8a89f0169c4154034aeaa2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_1_1inverse_a4e7aadd85e8a89f0169c4154034aeaa2.html#a4e7aadd85e8a89f0169c4154034aeaa2">pism::inverse::gradientFD</a> (IPFunctional&lt; IceModelVec2V &gt; &amp;f, IceModelVec2V &amp;x, IceModelVec2V &amp;gradient)</td></tr>
-<tr class="memdesc:a4e7aadd85e8a89f0169c4154034aeaa2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes finite difference approximations of a <a class="el" href="classpism_1_1inverse_1_1IPFunctional.html">IPFunctional&lt;IceModelVec2V&gt;</a> gradient.  <a href="namespacepism_1_1inverse_a4e7aadd85e8a89f0169c4154034aeaa2.html#a4e7aadd85e8a89f0169c4154034aeaa2">More...</a><br /></td></tr>
-<tr class="separator:a4e7aadd85e8a89f0169c4154034aeaa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4ddaf9898ba20c8fd58df0cbd955bd5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_1_1inverse_ad4ddaf9898ba20c8fd58df0cbd955bd5.html#ad4ddaf9898ba20c8fd58df0cbd955bd5">pism::inverse::gradientFD</a> (IPFunctional&lt; array::Scalar &gt; &amp;f, array::Scalar &amp;x, array::Scalar &amp;gradient)</td></tr>
+<tr class="memdesc:ad4ddaf9898ba20c8fd58df0cbd955bd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes finite difference approximations of a <a class="el" href="classpism_1_1inverse_1_1IPFunctional.html">IPFunctional&lt;array::Scalar&gt;</a> gradient.  <a href="namespacepism_1_1inverse_ad4ddaf9898ba20c8fd58df0cbd955bd5.html#ad4ddaf9898ba20c8fd58df0cbd955bd5">More...</a><br /></td></tr>
+<tr class="separator:ad4ddaf9898ba20c8fd58df0cbd955bd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ebcc831567fef4dcbef1dbf5ef834b4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_1_1inverse_a5ebcc831567fef4dcbef1dbf5ef834b4.html#a5ebcc831567fef4dcbef1dbf5ef834b4">pism::inverse::gradientFD</a> (IPFunctional&lt; array::Vector &gt; &amp;f, array::Vector &amp;x, array::Vector &amp;gradient)</td></tr>
+<tr class="memdesc:a5ebcc831567fef4dcbef1dbf5ef834b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes finite difference approximations of a <a class="el" href="classpism_1_1inverse_1_1IPFunctional.html">IPFunctional&lt;array::Vector&gt;</a> gradient.  <a href="namespacepism_1_1inverse_a5ebcc831567fef4dcbef1dbf5ef834b4.html#a5ebcc831567fef4dcbef1dbf5ef834b4">More...</a><br /></td></tr>
+<tr class="separator:a5ebcc831567fef4dcbef1dbf5ef834b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->

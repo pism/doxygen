@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PISM, A Parallel Ice Sheet Model
-   &#160;<span id="projectnumber">stable v2.0.7 committed by Constantine Khrulev on 2023-11-21 12:49:11 -0900</span>
+   &#160;<span id="projectnumber">stable v2.1 committed by Constantine Khrulev on 2023-11-23 11:24:22 -0900</span>
    </div>
   </td>
  </tr>
@@ -77,7 +77,7 @@ $(function() {
 : <a class="el" href="classpism_1_1TridiagonalSystem_a97cb81a38dbcb2cf2139cebec889b9c4.html#a97cb81a38dbcb2cf2139cebec889b9c4">pism::TridiagonalSystem</a>
 </li>
 <li>Data()
-: <a class="el" href="structpism_1_1IceModelVec2T_1_1Data_a073fae783d867f10f0d161d95c492d90.html#a073fae783d867f10f0d161d95c492d90">pism::IceModelVec2T::Data</a>
+: <a class="el" href="structpism_1_1array_1_1Forcing_1_1Data_adffad9c4eca3135867f94b6cd6c4b3ca.html#adffad9c4eca3135867f94b6cd6c4b3ca">pism::array::Forcing::Data</a>
 </li>
 <li>DataAccess()
 : <a class="el" href="classpism_1_1DataAccess_aec48915567b0d8526ac655496e903dae.html#aec48915567b0d8526ac655496e903dae">pism::DataAccess&lt; T &gt;</a>
@@ -92,6 +92,27 @@ $(function() {
 <li>ddratio()
 : <a class="el" href="classpism_1_1TridiagonalSystem_a6b1da825804de182668b3f725486f9c4.html#a6b1da825804de182668b3f725486f9c4">pism::TridiagonalSystem</a>
 </li>
+<li>DEBMSBackroundMelt()
+: <a class="el" href="classpism_1_1surface_1_1diagnostics_1_1DEBMSBackroundMelt_ae13b366b9cb46e69862bdf267f0a078f.html#ae13b366b9cb46e69862bdf267f0a078f">pism::surface::diagnostics::DEBMSBackroundMelt</a>
+</li>
+<li>DEBMSimple()
+: <a class="el" href="classpism_1_1surface_1_1DEBMSimple_adef67f630736eafba0a6c55f2c089c67.html#adef67f630736eafba0a6c55f2c089c67">pism::surface::DEBMSimple</a>
+</li>
+<li>DEBMSimpleMelt()
+: <a class="el" href="classpism_1_1surface_1_1DEBMSimpleMelt_a066f89efd710fd6ff2541821837026f7.html#a066f89efd710fd6ff2541821837026f7">pism::surface::DEBMSimpleMelt</a>
+</li>
+<li>DEBMSimplePointwise()
+: <a class="el" href="classpism_1_1surface_1_1DEBMSimplePointwise_af7e0c6ce991bd8414dee259dc95794dd.html#af7e0c6ce991bd8414dee259dc95794dd">pism::surface::DEBMSimplePointwise</a>
+</li>
+<li>DEBMSInsolation()
+: <a class="el" href="classpism_1_1surface_1_1diagnostics_1_1DEBMSInsolation_ac629e1ea8546500a4fa976b8a5d7d50d.html#ac629e1ea8546500a4fa976b8a5d7d50d">pism::surface::diagnostics::DEBMSInsolation</a>
+</li>
+<li>DEBMSInsolationMelt()
+: <a class="el" href="classpism_1_1surface_1_1diagnostics_1_1DEBMSInsolationMelt_a107a07dce9b156533bd0c0dbec798a54.html#a107a07dce9b156533bd0c0dbec798a54">pism::surface::diagnostics::DEBMSInsolationMelt</a>
+</li>
+<li>DEBMSTemperatureMelt()
+: <a class="el" href="classpism_1_1surface_1_1diagnostics_1_1DEBMSTemperatureMelt_ab50516a2af5aafcd1a867d26420197d5.html#ab50516a2af5aafcd1a867d26420197d5">pism::surface::diagnostics::DEBMSTemperatureMelt</a>
+</li>
 <li>def_dim()
 : <a class="el" href="classpism_1_1io_1_1NCFile_a5c08b24cfe5886846ac4a0866c37f4e6.html#a5c08b24cfe5886846ac4a0866c37f4e6">pism::io::NCFile</a>
 </li>
@@ -103,7 +124,7 @@ $(function() {
 , <a class="el" href="classpism_1_1io_1_1PNCFile_a0fcf3353d2cb0f4e03acfb21aacb52b9.html#a0fcf3353d2cb0f4e03acfb21aacb52b9">pism::io::PNCFile</a>
 </li>
 <li>def_var()
-: <a class="el" href="classpism_1_1io_1_1NCFile_a47ae2313785718cce4c9a5aa47a04c87.html#a47ae2313785718cce4c9a5aa47a04c87">pism::io::NCFile</a>
+: <a class="el" href="classpism_1_1io_1_1NCFile_af8608c5bc5e0f8ebc3c5f0cad9fee647.html#af8608c5bc5e0f8ebc3c5f0cad9fee647">pism::io::NCFile</a>
 </li>
 <li>def_var_chunking()
 : <a class="el" href="classpism_1_1io_1_1NCFile_aa6165d9c5500d2b51a74b3a437e3cff5.html#aa6165d9c5500d2b51a74b3a437e3cff5">pism::io::NCFile</a>
@@ -114,33 +135,36 @@ $(function() {
 , <a class="el" href="classpism_1_1io_1_1ParallelIO_aaca4a976127f7b693cb3093880ea25a4.html#aaca4a976127f7b693cb3093880ea25a4">pism::io::ParallelIO</a>
 </li>
 <li>def_var_impl()
-: <a class="el" href="classpism_1_1io_1_1NC4__Serial_a0345e934104f1f4d64871d93bfd2eaf3.html#a0345e934104f1f4d64871d93bfd2eaf3">pism::io::NC4_Serial</a>
-, <a class="el" href="classpism_1_1io_1_1NC4File_a1d6ed8b2873f639850fd3175ecd55b3b.html#a1d6ed8b2873f639850fd3175ecd55b3b">pism::io::NC4File</a>
-, <a class="el" href="classpism_1_1io_1_1NC__Serial_a75495487c8acedc851dfbba2016cd141.html#a75495487c8acedc851dfbba2016cd141">pism::io::NC_Serial</a>
-, <a class="el" href="classpism_1_1io_1_1NCFile_a6cd78fed6261455fe0ab01743791e959.html#a6cd78fed6261455fe0ab01743791e959">pism::io::NCFile</a>
-, <a class="el" href="classpism_1_1io_1_1ParallelIO_a908b45223683d7b020fff29a97b9e9d2.html#a908b45223683d7b020fff29a97b9e9d2">pism::io::ParallelIO</a>
-, <a class="el" href="classpism_1_1io_1_1PNCFile_ae38e4938ed37ae3dc16e23eb3f240556.html#ae38e4938ed37ae3dc16e23eb3f240556">pism::io::PNCFile</a>
+: <a class="el" href="classpism_1_1io_1_1NC4__Serial_a6cbb0add6dfdad20959a75ad8c2eb8d9.html#a6cbb0add6dfdad20959a75ad8c2eb8d9">pism::io::NC4_Serial</a>
+, <a class="el" href="classpism_1_1io_1_1NC4File_ad0795990dd42a6a16235a1d8e4808256.html#ad0795990dd42a6a16235a1d8e4808256">pism::io::NC4File</a>
+, <a class="el" href="classpism_1_1io_1_1NC__Serial_a9d0da49633194ef8ca91b208aa2d5598.html#a9d0da49633194ef8ca91b208aa2d5598">pism::io::NC_Serial</a>
+, <a class="el" href="classpism_1_1io_1_1NCFile_ac83a9f211073928afebf7dada103eeb3.html#ac83a9f211073928afebf7dada103eeb3">pism::io::NCFile</a>
+, <a class="el" href="classpism_1_1io_1_1ParallelIO_a6409128832a414b3b5bf6db92b5e6f5a.html#a6409128832a414b3b5bf6db92b5e6f5a">pism::io::ParallelIO</a>
+, <a class="el" href="classpism_1_1io_1_1PNCFile_af8f7b24c05ddb0c44ef3ec2b1ce205c3.html#af8f7b24c05ddb0c44ef3ec2b1ce205c3">pism::io::PNCFile</a>
+</li>
+<li>Default()
+: <a class="el" href="classpism_1_1io_1_1Default_aef13450d7ff9b500b9fd26a86e431e28.html#aef13450d7ff9b500b9fd26a86e431e28">pism::io::Default</a>
 </li>
 <li>DefaultConfig()
 : <a class="el" href="classpism_1_1DefaultConfig_a21984a2eff1afff18b7906dd8629c8cf.html#a21984a2eff1afff18b7906dd8629c8cf">pism::DefaultConfig</a>
 </li>
 <li>define()
-: <a class="el" href="classpism_1_1Diagnostic_aad5715a86169c0f83911177ed1c1ffe7.html#aad5715a86169c0f83911177ed1c1ffe7">pism::Diagnostic</a>
-, <a class="el" href="classpism_1_1IceModelVec_aa3a14430024efdba57118b95701484c1.html#aa3a14430024efdba57118b95701484c1">pism::IceModelVec</a>
-, <a class="el" href="classpism_1_1TSDiagnostic_acc145661a47ff8646d4ab92ff5f9cdb9.html#acc145661a47ff8646d4ab92ff5f9cdb9">pism::TSDiagnostic</a>
+: <a class="el" href="classpism_1_1array_1_1Array_a3e1a5859cef073a95e5e0cc5f1cc0fdb.html#a3e1a5859cef073a95e5e0cc5f1cc0fdb">pism::array::Array</a>
+, <a class="el" href="classpism_1_1Diagnostic_a5b1c2cf9a027568cb3461ce78bb0757b.html#a5b1c2cf9a027568cb3461ce78bb0757b">pism::Diagnostic</a>
 </li>
 <li>define_diagnostics()
-: <a class="el" href="classpism_1_1IceModel_a5da6dc04b0053feccaef9152878d0541.html#a5da6dc04b0053feccaef9152878d0541">pism::IceModel</a>
+: <a class="el" href="classpism_1_1IceModel_a09585061e399afd908be7f6b07d7dbe8.html#a09585061e399afd908be7f6b07d7dbe8">pism::IceModel</a>
 </li>
 <li>define_dimension()
 : <a class="el" href="classpism_1_1File_a258173725b30241dbde1480334fb4f60.html#a258173725b30241dbde1480334fb4f60">pism::File</a>
 </li>
 <li>define_impl()
-: <a class="el" href="classpism_1_1Diagnostic_adcd73d876dcf2919de134d5facc1e605.html#adcd73d876dcf2919de134d5facc1e605">pism::Diagnostic</a>
+: <a class="el" href="classpism_1_1Diagnostic_acff539718afa78aa97a715ae4638f5fa.html#acff539718afa78aa97a715ae4638f5fa">pism::Diagnostic</a>
 </li>
 <li>define_model_state()
 : <a class="el" href="classpism_1_1Component_aa04040a5dca5f87fb4bc858ee32b7542.html#aa04040a5dca5f87fb4bc858ee32b7542">pism::Component</a>
-, <a class="el" href="classpism_1_1IceModel_ab43b638f16b0b2ef773269dad8966d75.html#ab43b638f16b0b2ef773269dad8966d75">pism::IceModel</a>
+, <a class="el" href="classpism_1_1IceModel_aa845019779bbc818646407f1ab62d05d.html#aa845019779bbc818646407f1ab62d05d">pism::IceModel</a>
+, <a class="el" href="classpism_1_1ocean_1_1PyOceanModel_adc6c3ade26c29dd41e0f4c3ad33f47ba.html#adc6c3ade26c29dd41e0f4c3ad33f47ba">pism::ocean::PyOceanModel</a>
 </li>
 <li>define_model_state_impl()
 : <a class="el" href="classpism_1_1AgeModel_a06c55a1925b7e2b4497f11b14b81929f.html#a06c55a1925b7e2b4497f11b14b81929f">pism::AgeModel</a>
@@ -162,10 +186,12 @@ $(function() {
 , <a class="el" href="classpism_1_1hydrology_1_1Routing_abe97431ee2169b0f54a014b15e387225.html#abe97431ee2169b0f54a014b15e387225">pism::hydrology::Routing</a>
 , <a class="el" href="classpism_1_1hydrology_1_1SteadyState_acef1b19db24b7c85536916e6b056cbfb.html#acef1b19db24b7c85536916e6b056cbfb">pism::hydrology::SteadyState</a>
 , <a class="el" href="classpism_1_1icebin_1_1IBSurfaceModel_a42167974740e9efe14cefb5e9f649a2e.html#a42167974740e9efe14cefb5e9f649a2e">pism::icebin::IBSurfaceModel</a>
+, <a class="el" href="classpism_1_1Isochrones_ab1048de35b65d4d37441271d0dc43a27.html#ab1048de35b65d4d37441271d0dc43a27">pism::Isochrones</a>
 , <a class="el" href="classpism_1_1MohrCoulombYieldStress_a7d200e86baf956e510f6f0b036ab452b.html#a7d200e86baf956e510f6f0b036ab452b">pism::MohrCoulombYieldStress</a>
 , <a class="el" href="classpism_1_1ocean_1_1InitializationHelper_aae6a7b3fa57694d1a0b5a110ad15ab74.html#aae6a7b3fa57694d1a0b5a110ad15ab74">pism::ocean::InitializationHelper</a>
 , <a class="el" href="classpism_1_1ocean_1_1OceanModel_a4532704c3d2917325a12750993e91779.html#a4532704c3d2917325a12750993e91779">pism::ocean::OceanModel</a>
 , <a class="el" href="classpism_1_1ocean_1_1Pico_a7e51acb0ca855bd39cef93e5e9187554.html#a7e51acb0ca855bd39cef93e5e9187554">pism::ocean::Pico</a>
+, <a class="el" href="classpism_1_1ocean_1_1PyOceanModelAdapter_aee26b37360619f7011afe002a3bba6de.html#aee26b37360619f7011afe002a3bba6de">pism::ocean::PyOceanModelAdapter</a>
 , <a class="el" href="classpism_1_1ocean_1_1sea__level_1_1InitializationHelper_a963eeb666f1be33d5e0c4c773a7e508c.html#a963eeb666f1be33d5e0c4c773a7e508c">pism::ocean::sea_level::InitializationHelper</a>
 , <a class="el" href="classpism_1_1ocean_1_1sea__level_1_1SeaLevel_a446f8e9edf121a4c3f86bfc9a4814e06.html#a446f8e9edf121a4c3f86bfc9a4814e06">pism::ocean::sea_level::SeaLevel</a>
 , <a class="el" href="classpism_1_1OptTillphiYieldStress_a0504011851118c938279dd57d70ac682.html#a0504011851118c938279dd57d70ac682">pism::OptTillphiYieldStress</a>
@@ -173,6 +199,7 @@ $(function() {
 , <a class="el" href="classpism_1_1stressbalance_1_1Blatter_a03cf1873d794d47bbf2d9c3910fc265c.html#a03cf1873d794d47bbf2d9c3910fc265c">pism::stressbalance::Blatter</a>
 , <a class="el" href="classpism_1_1stressbalance_1_1SSA_a7ee279310fb50622467fa660ae626566.html#a7ee279310fb50622467fa660ae626566">pism::stressbalance::SSA</a>
 , <a class="el" href="classpism_1_1stressbalance_1_1StressBalance_a2cdb464dc4fc7ae8c8f49ff4bcd1e309.html#a2cdb464dc4fc7ae8c8f49ff4bcd1e309">pism::stressbalance::StressBalance</a>
+, <a class="el" href="classpism_1_1surface_1_1DEBMSimple_a6d8329beb1d21ba11d0cc91c09ed214a.html#a6d8329beb1d21ba11d0cc91c09ed214a">pism::surface::DEBMSimple</a>
 , <a class="el" href="classpism_1_1surface_1_1ForceThickness_a565b120a21cc5c774ec010aa688ad519.html#a565b120a21cc5c774ec010aa688ad519">pism::surface::ForceThickness</a>
 , <a class="el" href="classpism_1_1surface_1_1Given_afa205f8f399ff5808cc2209ce4858d72.html#afa205f8f399ff5808cc2209ce4858d72">pism::surface::Given</a>
 , <a class="el" href="classpism_1_1surface_1_1InitializationHelper_abf68430b62072a39dad0c5e88501073e.html#abf68430b62072a39dad0c5e88501073e">pism::surface::InitializationHelper</a>
@@ -191,7 +218,7 @@ $(function() {
 , <a class="el" href="classpism_1_1Diagnostic_a948931c6dcef9c05e2bf59777878d089.html#a948931c6dcef9c05e2bf59777878d089">pism::Diagnostic</a>
 </li>
 <li>define_variable()
-: <a class="el" href="classpism_1_1File_a3ac9e814c758ae74434db7cf5d11da7c.html#a3ac9e814c758ae74434db7cf5d11da7c">pism::File</a>
+: <a class="el" href="classpism_1_1File_a9cef32cbbe2a035b49248a2b3b4f23f8.html#a9cef32cbbe2a035b49248a2b3b4f23f8">pism::File</a>
 </li>
 <li>degree_day_factors()
 : <a class="el" href="classpism_1_1surface_1_1FaustoGrevePDDObject_a720ad8079e3372556062badba0f294ea.html#a720ad8079e3372556062badba0f294ea">pism::surface::FaustoGrevePDDObject</a>
@@ -207,27 +234,27 @@ $(function() {
 , <a class="el" href="classpism_1_1io_1_1PNCFile_a8307c57968affe747892dcb833336a27.html#a8307c57968affe747892dcb833336a27">pism::io::PNCFile</a>
 </li>
 <li>Delta_MBP()
-: <a class="el" href="classpism_1_1ocean_1_1Delta__MBP_a37da7f0dccd90f864b61be1327914fae.html#a37da7f0dccd90f864b61be1327914fae">pism::ocean::Delta_MBP</a>
+: <a class="el" href="classpism_1_1ocean_1_1Delta__MBP_a72e74b43938628551c16122fb30477fb.html#a72e74b43938628551c16122fb30477fb">pism::ocean::Delta_MBP</a>
 </li>
 <li>Delta_P()
-: <a class="el" href="classpism_1_1atmosphere_1_1Delta__P_ae6fab8e59a64f6287e0ef5217209c2cb.html#ae6fab8e59a64f6287e0ef5217209c2cb">pism::atmosphere::Delta_P</a>
+: <a class="el" href="classpism_1_1atmosphere_1_1Delta__P_add8a92987fd54ffa7d2cc46036958f8d.html#add8a92987fd54ffa7d2cc46036958f8d">pism::atmosphere::Delta_P</a>
 </li>
 <li>Delta_SL()
-: <a class="el" href="classpism_1_1ocean_1_1sea__level_1_1Delta__SL_a63001c608a523b27f1a65fe2c2013ee3.html#a63001c608a523b27f1a65fe2c2013ee3">pism::ocean::sea_level::Delta_SL</a>
+: <a class="el" href="classpism_1_1ocean_1_1sea__level_1_1Delta__SL_a1cc4596f9a44e75f1efa8252f8a2b5cf.html#a1cc4596f9a44e75f1efa8252f8a2b5cf">pism::ocean::sea_level::Delta_SL</a>
 </li>
 <li>Delta_SL_2D()
-: <a class="el" href="classpism_1_1ocean_1_1sea__level_1_1Delta__SL__2D_a0f5972de23fb10e60c1b70ae3c4d6897.html#a0f5972de23fb10e60c1b70ae3c4d6897">pism::ocean::sea_level::Delta_SL_2D</a>
+: <a class="el" href="classpism_1_1ocean_1_1sea__level_1_1Delta__SL__2D_a855f344a85d743ddc5eb1ad82075f10f.html#a855f344a85d743ddc5eb1ad82075f10f">pism::ocean::sea_level::Delta_SL_2D</a>
 </li>
 <li>Delta_SMB()
-: <a class="el" href="classpism_1_1ocean_1_1Delta__SMB_aa4b57e98db0e79078497c531b7fd2699.html#aa4b57e98db0e79078497c531b7fd2699">pism::ocean::Delta_SMB</a>
+: <a class="el" href="classpism_1_1ocean_1_1Delta__SMB_a81e4d58288855ed0f3afc7d7d0760541.html#a81e4d58288855ed0f3afc7d7d0760541">pism::ocean::Delta_SMB</a>
 </li>
 <li>Delta_T()
-: <a class="el" href="classpism_1_1atmosphere_1_1Delta__T_a5cacd2ce47596d424901030bd153fa3d.html#a5cacd2ce47596d424901030bd153fa3d">pism::atmosphere::Delta_T</a>
-, <a class="el" href="classpism_1_1ocean_1_1Delta__T_abf11eb472905791bd1b4713ebe845608.html#abf11eb472905791bd1b4713ebe845608">pism::ocean::Delta_T</a>
-, <a class="el" href="classpism_1_1surface_1_1Delta__T_aa919eee9c627aa086f9f51456f7b2e3a.html#aa919eee9c627aa086f9f51456f7b2e3a">pism::surface::Delta_T</a>
+: <a class="el" href="classpism_1_1atmosphere_1_1Delta__T_afa715cb2c6008a947bdbd05e2ab38ae0.html#afa715cb2c6008a947bdbd05e2ab38ae0">pism::atmosphere::Delta_T</a>
+, <a class="el" href="classpism_1_1ocean_1_1Delta__T_ae9d77f439c07376d2b0592951e18df8e.html#ae9d77f439c07376d2b0592951e18df8e">pism::ocean::Delta_T</a>
+, <a class="el" href="classpism_1_1surface_1_1Delta__T_a11c6594ae6fe9e2efd14170faf6d8729.html#a11c6594ae6fe9e2efd14170faf6d8729">pism::surface::Delta_T</a>
 </li>
 <li>density()
-: <a class="el" href="classpism_1_1FractureDensity_a9e4aaf6107d3dd67e2541471d633dad8.html#a9e4aaf6107d3dd67e2541471d633dad8">pism::FractureDensity</a>
+: <a class="el" href="classpism_1_1FractureDensity_af1e54c4f5cd6a2b2ff7bb8d0556c24b6.html#af1e54c4f5cd6a2b2ff7bb8d0556c24b6">pism::FractureDensity</a>
 </li>
 <li>depth()
 : <a class="el" href="classpism_1_1energy_1_1BedThermalUnit_a1c2a795ce7d829d5489f03da25ba74cd.html#a1c2a795ce7d829d5489f03da25ba74cd">pism::energy::BedThermalUnit</a>
@@ -245,8 +272,8 @@ $(function() {
 : <a class="el" href="classpism_1_1inverse_1_1IP__SSAHardavForwardProblem_a1efdf981294ed65f961542cf2e1219c6.html#a1efdf981294ed65f961542cf2e1219c6">pism::inverse::IP_SSAHardavForwardProblem</a>
 </li>
 <li>designSolution()
-: <a class="el" href="classpism_1_1inverse_1_1IP__SSATaucTaoTikhonovProblemLCL_a19045b604a0b74b925658b1a05924992.html#a19045b604a0b74b925658b1a05924992">pism::inverse::IP_SSATaucTaoTikhonovProblemLCL</a>
-, <a class="el" href="classpism_1_1inverse_1_1IP__SSATaucTikhonovGNSolver_ad6ae18fb610ffa7423e5fd901a0de40b.html#ad6ae18fb610ffa7423e5fd901a0de40b">pism::inverse::IP_SSATaucTikhonovGNSolver</a>
+: <a class="el" href="classpism_1_1inverse_1_1IP__SSATaucTaoTikhonovProblemLCL_a4b25a05457c7b94af5099d790a470a03.html#a4b25a05457c7b94af5099d790a470a03">pism::inverse::IP_SSATaucTaoTikhonovProblemLCL</a>
+, <a class="el" href="classpism_1_1inverse_1_1IP__SSATaucTikhonovGNSolver_a6f542c0b89d75223cf8dab897b5e529d.html#a6f542c0b89d75223cf8dab897b5e529d">pism::inverse::IP_SSATaucTikhonovGNSolver</a>
 , <a class="el" href="classpism_1_1inverse_1_1IPTaoTikhonovProblem_ac06b84b9acc75cf95e8d73dd78509ded.html#ac06b84b9acc75cf95e8d73dd78509ded">pism::inverse::IPTaoTikhonovProblem&lt; ForwardProblem &gt;</a>
 </li>
 <li>Diag()
@@ -256,7 +283,7 @@ $(function() {
 : <a class="el" href="classpism_1_1DiagAverageRate_abc47feb37482d0189a5ca29f48c53707.html#abc47feb37482d0189a5ca29f48c53707">pism::DiagAverageRate&lt; M &gt;</a>
 </li>
 <li>Diagnostic()
-: <a class="el" href="classpism_1_1Diagnostic_af3f201fc0c862ce0da9abc2a7b7150e3.html#af3f201fc0c862ce0da9abc2a7b7150e3">pism::Diagnostic</a>
+: <a class="el" href="classpism_1_1Diagnostic_ab0be0ef6c6c12e08fb7da1e10b8852d4.html#ab0be0ef6c6c12e08fb7da1e10b8852d4">pism::Diagnostic</a>
 </li>
 <li>diagnostics()
 : <a class="el" href="classpism_1_1Component_ac0ff4daf2dc8b23ea64b1d635666bdf0.html#ac0ff4daf2dc8b23ea64b1d635666bdf0">pism::Component</a>
@@ -281,6 +308,7 @@ $(function() {
 , <a class="el" href="classpism_1_1hydrology_1_1Hydrology_aa7ab6c3ea8063756ad2fdf77aba40505.html#aa7ab6c3ea8063756ad2fdf77aba40505">pism::hydrology::Hydrology</a>
 , <a class="el" href="classpism_1_1hydrology_1_1Routing_a251a760926d8109298ee0f18c3eb3343.html#a251a760926d8109298ee0f18c3eb3343">pism::hydrology::Routing</a>
 , <a class="el" href="classpism_1_1hydrology_1_1SteadyState_a911b151240bdf8dfbd0bbcc4ade63346.html#a911b151240bdf8dfbd0bbcc4ade63346">pism::hydrology::SteadyState</a>
+, <a class="el" href="classpism_1_1Isochrones_a92fb85eb5954fc199431560a7a07df09.html#a92fb85eb5954fc199431560a7a07df09">pism::Isochrones</a>
 , <a class="el" href="classpism_1_1MohrCoulombYieldStress_a58ac2be766eaf133fd53a1de03929c7e.html#a58ac2be766eaf133fd53a1de03929c7e">pism::MohrCoulombYieldStress</a>
 , <a class="el" href="classpism_1_1ocean_1_1OceanModel_a8cb098fa696035e6142e062b9b1dc41f.html#a8cb098fa696035e6142e062b9b1dc41f">pism::ocean::OceanModel</a>
 , <a class="el" href="classpism_1_1ocean_1_1Pico_af73c02919ca442c3a0002dc0ad42f8b0.html#af73c02919ca442c3a0002dc0ad42f8b0">pism::ocean::Pico</a>
@@ -292,6 +320,7 @@ $(function() {
 , <a class="el" href="classpism_1_1stressbalance_1_1SSA_a1ea6a91281388e4c51b02a37da648d6c.html#a1ea6a91281388e4c51b02a37da648d6c">pism::stressbalance::SSA</a>
 , <a class="el" href="classpism_1_1stressbalance_1_1SSAFD_a87e9e9a348bee09c11300372f955c144.html#a87e9e9a348bee09c11300372f955c144">pism::stressbalance::SSAFD</a>
 , <a class="el" href="classpism_1_1stressbalance_1_1StressBalance_a88817497e82e165d15fce467d6769e99.html#a88817497e82e165d15fce467d6769e99">pism::stressbalance::StressBalance</a>
+, <a class="el" href="classpism_1_1surface_1_1DEBMSimple_ac44b2794fcbba34adc3c75b1983f9456.html#ac44b2794fcbba34adc3c75b1983f9456">pism::surface::DEBMSimple</a>
 , <a class="el" href="classpism_1_1surface_1_1NoGLRetreat_a22b21a472e4b06261e28897d5af8f34f.html#a22b21a472e4b06261e28897d5af8f34f">pism::surface::NoGLRetreat</a>
 , <a class="el" href="classpism_1_1surface_1_1SurfaceModel_a24c2488f992cf6f937cd08b87c5c89c8.html#a24c2488f992cf6f937cd08b87c5c89c8">pism::surface::SurfaceModel</a>
 , <a class="el" href="classpism_1_1surface_1_1TemperatureIndex_af2c95a7f61806f560eb8ff1a5b334dd1.html#af2c95a7f61806f560eb8ff1a5b334dd1">pism::surface::TemperatureIndex</a>
@@ -304,11 +333,11 @@ $(function() {
 : <a class="el" href="classpism_1_1hydrology_1_1NullTransport_ace5c87861505780ed6ded3b8db309c19.html#ace5c87861505780ed6ded3b8db309c19">pism::hydrology::NullTransport</a>
 </li>
 <li>diffusive_flux()
-: <a class="el" href="classpism_1_1stressbalance_1_1SSB__Modifier_ae064259953dec5e723054eb762ca1ac5.html#ae064259953dec5e723054eb762ca1ac5">pism::stressbalance::SSB_Modifier</a>
-, <a class="el" href="classpism_1_1stressbalance_1_1StressBalance_aabb30a6c9a3092348a12a76d8a991714.html#aabb30a6c9a3092348a12a76d8a991714">pism::stressbalance::StressBalance</a>
+: <a class="el" href="classpism_1_1stressbalance_1_1SSB__Modifier_a6fb52c68e9cb3c1ef671cb0469d82e5a.html#a6fb52c68e9cb3c1ef671cb0469d82e5a">pism::stressbalance::SSB_Modifier</a>
+, <a class="el" href="classpism_1_1stressbalance_1_1StressBalance_a968b0cf8acc0df3995f3165b1a671907.html#a968b0cf8acc0df3995f3165b1a671907">pism::stressbalance::StressBalance</a>
 </li>
 <li>diffusivity()
-: <a class="el" href="classpism_1_1stressbalance_1_1SIAFD_a1b65b3a6fa8026116e86dff73a4545f6.html#a1b65b3a6fa8026116e86dff73a4545f6">pism::stressbalance::SIAFD</a>
+: <a class="el" href="classpism_1_1stressbalance_1_1SIAFD_a6a74733b373403ab9c3e5c3c5cfb8ceb.html#a6a74733b373403ab9c3e5c3c5cfb8ceb">pism::stressbalance::SIAFD</a>
 </li>
 <li>dimension_length()
 : <a class="el" href="classpism_1_1File_ae2f4f7a34ea524bf31ae0590ed4a3589.html#ae2f4f7a34ea524bf31ae0590ed4a3589">pism::File</a>
@@ -331,31 +360,31 @@ $(function() {
 : <a class="el" href="classpism_1_1fem_1_1DirichletData_a757377b5a124e6adeaba6ff559da08d3.html#a757377b5a124e6adeaba6ff559da08d3">pism::fem::DirichletData</a>
 </li>
 <li>DirichletData_Scalar()
-: <a class="el" href="classpism_1_1fem_1_1DirichletData__Scalar_a2746da6918d5e903964371bc74628e98.html#a2746da6918d5e903964371bc74628e98">pism::fem::DirichletData_Scalar</a>
+: <a class="el" href="classpism_1_1fem_1_1DirichletData__Scalar_ae82b67ece55ce3f7902f6f5d8d190a5f.html#ae82b67ece55ce3f7902f6f5d8d190a5f">pism::fem::DirichletData_Scalar</a>
 </li>
 <li>DirichletData_Vector()
-: <a class="el" href="classpism_1_1fem_1_1DirichletData__Vector_a3b281f983e8466406bbc0b2458a1f5ee.html#a3b281f983e8466406bbc0b2458a1f5ee">pism::fem::DirichletData_Vector</a>
+: <a class="el" href="classpism_1_1fem_1_1DirichletData__Vector_a614a6e18a923d4981ee37cec5f9c5168.html#a614a6e18a923d4981ee37cec5f9c5168">pism::fem::DirichletData_Vector</a>
 </li>
 <li>disable()
 : <a class="el" href="classpism_1_1Logger_a0885abfd1034ee6c5e8b8192e41f7e7d.html#a0885abfd1034ee6c5e8b8192e41f7e7d">pism::Logger</a>
 </li>
 <li>discard()
-: <a class="el" href="classpism_1_1IceModelVec2T_a0574e0b199db2531a9a317a88af1159a.html#a0574e0b199db2531a9a317a88af1159a">pism::IceModelVec2T</a>
+: <a class="el" href="classpism_1_1array_1_1Forcing_a1b7a806c8599d411f1222712835386d9.html#a1b7a806c8599d411f1222712835386d9">pism::array::Forcing</a>
 </li>
 <li>DischargeFlux()
 : <a class="el" href="classpism_1_1diagnostics_1_1DischargeFlux_a4cc36c0eff45ce518f8c7121719b43f9.html#a4cc36c0eff45ce518f8c7121719b43f9">pism::diagnostics::DischargeFlux</a>
 </li>
 <li>DischargeGiven()
-: <a class="el" href="classpism_1_1frontalmelt_1_1DischargeGiven_a6aeaed7ff5bc767a71163b3575f91e60.html#a6aeaed7ff5bc767a71163b3575f91e60">pism::frontalmelt::DischargeGiven</a>
+: <a class="el" href="classpism_1_1frontalmelt_1_1DischargeGiven_a756e223dbcd8b426b372b9c1279a08b2.html#a756e223dbcd8b426b372b9c1279a08b2">pism::frontalmelt::DischargeGiven</a>
 </li>
 <li>DischargeRouting()
-: <a class="el" href="classpism_1_1frontalmelt_1_1DischargeRouting_a21ec346428d4268632c695cce1e478f0.html#a21ec346428d4268632c695cce1e478f0">pism::frontalmelt::DischargeRouting</a>
+: <a class="el" href="classpism_1_1frontalmelt_1_1DischargeRouting_aa7d81aaf1397bbe19005fe5ef0756e24.html#aa7d81aaf1397bbe19005fe5ef0756e24">pism::frontalmelt::DischargeRouting</a>
 </li>
 <li>Distributed()
-: <a class="el" href="classpism_1_1hydrology_1_1Distributed_a92d2a48669896c13e1a353c3cb882f27.html#a92d2a48669896c13e1a353c3cb882f27">pism::hydrology::Distributed</a>
+: <a class="el" href="classpism_1_1hydrology_1_1Distributed_acaecf057cf723fe5cbaf2853cd940fe1.html#acaecf057cf723fe5cbaf2853cd940fe1">pism::hydrology::Distributed</a>
 </li>
 <li>dm()
-: <a class="el" href="classpism_1_1IceModelVec_a6591771b2227fd40168f545bedcccb46.html#a6591771b2227fd40168f545bedcccb46">pism::IceModelVec</a>
+: <a class="el" href="classpism_1_1array_1_1Array_aa3fb4d0b08e98efb43662be6db1fe2ef.html#aa3fb4d0b08e98efb43662be6db1fe2ef">pism::array::Array</a>
 </li>
 <li>DM()
 : <a class="el" href="classpism_1_1petsc_1_1DM_a6b64155c2f3085eecde1558c5df60d96.html#a6b64155c2f3085eecde1558c5df60d96">pism::petsc::DM</a>
@@ -376,13 +405,13 @@ $(function() {
 : <a class="el" href="classpism_1_1TerminationReason_ab2f51d78a694f55b87a827873443e679.html#ab2f51d78a694f55b87a827873443e679">pism::TerminationReason</a>
 </li>
 <li>dot()
-: <a class="el" href="classpism_1_1inverse_1_1IP__H1NormFunctional2S_a3f5f02f461b528d14391ed6030b4f5eb.html#a3f5f02f461b528d14391ed6030b4f5eb">pism::inverse::IP_H1NormFunctional2S</a>
-, <a class="el" href="classpism_1_1inverse_1_1IP__L2NormFunctional2S_a8f8c498d2e8abd27f4fbf12f9d8d18e0.html#a8f8c498d2e8abd27f4fbf12f9d8d18e0">pism::inverse::IP_L2NormFunctional2S</a>
-, <a class="el" href="classpism_1_1inverse_1_1IP__L2NormFunctional2V_acd39f552f176c3e7df01f7194f62e11d.html#acd39f552f176c3e7df01f7194f62e11d">pism::inverse::IP_L2NormFunctional2V</a>
-, <a class="el" href="classpism_1_1inverse_1_1IPGroundedIceH1NormFunctional2S_ab4271ea434f24be66490139e03c8224e.html#ab4271ea434f24be66490139e03c8224e">pism::inverse::IPGroundedIceH1NormFunctional2S</a>
+: <a class="el" href="classpism_1_1inverse_1_1IP__H1NormFunctional2S_a0a3a4022d1b5acbdd9ed11e93c64cad4.html#a0a3a4022d1b5acbdd9ed11e93c64cad4">pism::inverse::IP_H1NormFunctional2S</a>
+, <a class="el" href="classpism_1_1inverse_1_1IP__L2NormFunctional2S_a671fcf635872ea99a2b00d95a3c5b37f.html#a671fcf635872ea99a2b00d95a3c5b37f">pism::inverse::IP_L2NormFunctional2S</a>
+, <a class="el" href="classpism_1_1inverse_1_1IP__L2NormFunctional2V_ae9c66d6434018a107df97899482f9844.html#ae9c66d6434018a107df97899482f9844">pism::inverse::IP_L2NormFunctional2V</a>
+, <a class="el" href="classpism_1_1inverse_1_1IPGroundedIceH1NormFunctional2S_ab201eb2b442e731f68e4619144a6b543.html#ab201eb2b442e731f68e4619144a6b543">pism::inverse::IPGroundedIceH1NormFunctional2S</a>
 , <a class="el" href="classpism_1_1inverse_1_1IPInnerProductFunctional_a0549b8502f75878d9dbc81f925e7af20.html#a0549b8502f75878d9dbc81f925e7af20">pism::inverse::IPInnerProductFunctional&lt; IMVecType &gt;</a>
-, <a class="el" href="classpism_1_1inverse_1_1IPMeanSquareFunctional2S_a0d25eb0ca30020676c00b2f974d2d37a.html#a0d25eb0ca30020676c00b2f974d2d37a">pism::inverse::IPMeanSquareFunctional2S</a>
-, <a class="el" href="classpism_1_1inverse_1_1IPMeanSquareFunctional2V_a5729824ca5095cd51a45bc71f0f7388c.html#a5729824ca5095cd51a45bc71f0f7388c">pism::inverse::IPMeanSquareFunctional2V</a>
+, <a class="el" href="classpism_1_1inverse_1_1IPMeanSquareFunctional2S_a2a02d858a7e3a4227b26c6d20eb68814.html#a2a02d858a7e3a4227b26c6d20eb68814">pism::inverse::IPMeanSquareFunctional2S</a>
+, <a class="el" href="classpism_1_1inverse_1_1IPMeanSquareFunctional2V_a3a41c571bc150468f7cb819070c49ab4.html#a3a41c571bc150468f7cb819070c49ab4">pism::inverse::IPMeanSquareFunctional2V</a>
 </li>
 <li>drag()
 : <a class="el" href="classpism_1_1IceBasalResistancePlasticLaw_a1b758546bb0b1dc68e81d1482ff29310.html#a1b758546bb0b1dc68e81d1482ff29310">pism::IceBasalResistancePlasticLaw</a>
@@ -398,35 +427,43 @@ $(function() {
 : <a class="el" href="classpism_1_1energy_1_1DrainageCalculator_a4552109b8ac58b3b5da680d410cb8e37.html#a4552109b8ac58b3b5da680d410cb8e37">pism::energy::DrainageCalculator</a>
 </li>
 <li>driving_stress()
-: <a class="el" href="classpism_1_1stressbalance_1_1SSA_ab6aba4e594dfbe56d11009c776ef7e58.html#ab6aba4e594dfbe56d11009c776ef7e58">pism::stressbalance::SSA</a>
-, <a class="el" href="classpism_1_1stressbalance_1_1SSAFEM_af236dfc8f5e79af500675b86b7b08620.html#af236dfc8f5e79af500675b86b7b08620">pism::stressbalance::SSAFEM</a>
+: <a class="el" href="classpism_1_1stressbalance_1_1SSA_ad020f2d76684bfe08c375b82c1ba4b90.html#ad020f2d76684bfe08c375b82c1ba4b90">pism::stressbalance::SSA</a>
+, <a class="el" href="classpism_1_1stressbalance_1_1SSAFEM_adca2765542f6dd7ad369509ad6180ca4.html#adca2765542f6dd7ad369509ad6180ca4">pism::stressbalance::SSAFEM</a>
 </li>
 <li>dt()
 : <a class="el" href="classpism_1_1IceModel_a7d5ccbd02c10c01593d8d2468b139d40.html#a7d5ccbd02c10c01593d8d2468b139d40">pism::IceModel</a>
 </li>
 <li>dummy_accumulation()
-: <a class="el" href="classpism_1_1surface_1_1SurfaceModel_a83b99489a66f1d80d6db5ae999cadeec.html#a83b99489a66f1d80d6db5ae999cadeec">pism::surface::SurfaceModel</a>
+: <a class="el" href="classpism_1_1surface_1_1SurfaceModel_a2672ef3ce9378b9da9d834dad76a04b4.html#a2672ef3ce9378b9da9d834dad76a04b4">pism::surface::SurfaceModel</a>
 </li>
 <li>dummy_melt()
-: <a class="el" href="classpism_1_1surface_1_1SurfaceModel_af1ee4a1a6772ddbc90808b95b8ed6e46.html#af1ee4a1a6772ddbc90808b95b8ed6e46">pism::surface::SurfaceModel</a>
+: <a class="el" href="classpism_1_1surface_1_1SurfaceModel_a7b9a08a3dd1e7b83f722ac4badb98e55.html#a7b9a08a3dd1e7b83f722ac4badb98e55">pism::surface::SurfaceModel</a>
 </li>
 <li>dummy_runoff()
-: <a class="el" href="classpism_1_1surface_1_1SurfaceModel_ada66876da3a132185f98e13855aca81e.html#ada66876da3a132185f98e13855aca81e">pism::surface::SurfaceModel</a>
+: <a class="el" href="classpism_1_1surface_1_1SurfaceModel_af7718482a79bc0ad7c8fa8b7ccfe2ffc.html#af7718482a79bc0ad7c8fa8b7ccfe2ffc">pism::surface::SurfaceModel</a>
 </li>
 <li>DummyEnergyModel()
-: <a class="el" href="classpism_1_1energy_1_1DummyEnergyModel_a8926a4da7347ea9348b1c73643cdcb2b.html#a8926a4da7347ea9348b1c73643cdcb2b">pism::energy::DummyEnergyModel</a>
+: <a class="el" href="classpism_1_1energy_1_1DummyEnergyModel_a1290b4ac91058f4235fa3eada4062a6c.html#a1290b4ac91058f4235fa3eada4062a6c">pism::energy::DummyEnergyModel</a>
 </li>
 <li>dump()
-: <a class="el" href="classpism_1_1ConfigJSON_a7f9b139bb7f9db3f63cc2c276e32e187.html#a7f9b139bb7f9db3f63cc2c276e32e187">pism::ConfigJSON</a>
+: <a class="el" href="classpism_1_1array_1_1Array_a349f572801677e376b220abfb88f2118.html#a349f572801677e376b220abfb88f2118">pism::array::Array</a>
+, <a class="el" href="classpism_1_1ConfigJSON_a7f9b139bb7f9db3f63cc2c276e32e187.html#a7f9b139bb7f9db3f63cc2c276e32e187">pism::ConfigJSON</a>
 , <a class="el" href="classpism_1_1Geometry_a92c2669713e26b73ba66913c1b0b71db.html#a92c2669713e26b73ba66913c1b0b71db">pism::Geometry</a>
-, <a class="el" href="classpism_1_1IceModelVec_a23706638af224ffe965d1b03c724d2db.html#a23706638af224ffe965d1b03c724d2db">pism::IceModelVec</a>
 , <a class="el" href="classpism_1_1stressbalance_1_1Inputs_a9720f46eb0e7b83f5e36bdc027b23bb9.html#a9720f46eb0e7b83f5e36bdc027b23bb9">pism::stressbalance::Inputs</a>
 </li>
+<li>dumpToFile()
+: <a class="el" href="classpism_1_1icebin_1_1IBIceModel_a24d5a8487e2cacf2def324f3e77144a0.html#a24d5a8487e2cacf2def324f3e77144a0">pism::icebin::IBIceModel</a>
+</li>
+<li>duplicate()
+: <a class="el" href="classpism_1_1array_1_1Array3D_ab2d5de7b9ceac2f86db1288b02bf6572.html#ab2d5de7b9ceac2f86db1288b02bf6572">pism::array::Array3D</a>
+, <a class="el" href="classpism_1_1array_1_1Scalar_a9ed1287fb665ad499d059d34cf99d5e0.html#a9ed1287fb665ad499d059d34cf99d5e0">pism::array::Scalar</a>
+, <a class="el" href="classpism_1_1array_1_1Vector_a8038f3181b1878d334bb3b8594755787.html#a8038f3181b1878d334bb3b8594755787">pism::array::Vector</a>
+</li>
 <li>dx()
-: <a class="el" href="classpism_1_1IceGrid_aa89bc354cb094d612826c9ea2baec9bf.html#aa89bc354cb094d612826c9ea2baec9bf">pism::IceGrid</a>
+: <a class="el" href="classpism_1_1Grid_a4a3d3afbde02ce724981f0b3afe46be8.html#a4a3d3afbde02ce724981f0b3afe46be8">pism::Grid</a>
 </li>
 <li>dy()
-: <a class="el" href="classpism_1_1IceGrid_aadde1827e314078b98764f1372630414.html#aadde1827e314078b98764f1372630414">pism::IceGrid</a>
+: <a class="el" href="classpism_1_1Grid_abba80a273e1f3c80ee52001f3b369c3e.html#abba80a273e1f3c80ee52001f3b369c3e">pism::Grid</a>
 </li>
 <li>dz()
 : <a class="el" href="classpism_1_1columnSystemCtx_a7173eecf2f9eceb59d01108855b8654d.html#a7173eecf2f9eceb59d01108855b8654d">pism::columnSystemCtx</a>
@@ -435,10 +472,10 @@ $(function() {
 : <a class="el" href="classpism_1_1ColumnInterpolation_aa1f1b8b15ad344eac58b5b1df8d4ddfa.html#aa1f1b8b15ad344eac58b5b1df8d4ddfa">pism::ColumnInterpolation</a>
 </li>
 <li>dz_max()
-: <a class="el" href="classpism_1_1IceGrid_a905ba93158b5e26aa716d0b5efaadcbb.html#a905ba93158b5e26aa716d0b5efaadcbb">pism::IceGrid</a>
+: <a class="el" href="classpism_1_1Grid_ab659a9d30c9449beec1e97d5451942d3.html#ab659a9d30c9449beec1e97d5451942d3">pism::Grid</a>
 </li>
 <li>dz_min()
-: <a class="el" href="classpism_1_1IceGrid_aecebe9abf086e73913c0e62071636eca.html#aecebe9abf086e73913c0e62071636eca">pism::IceGrid</a>
+: <a class="el" href="classpism_1_1Grid_aad2a039f7963bb432867fdb7b261f42c.html#aad2a039f7963bb432867fdb7b261f42c">pism::Grid</a>
 </li>
 </ul>
 </div><!-- contents -->

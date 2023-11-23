@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PISM, A Parallel Ice Sheet Model
-   &#160;<span id="projectnumber">stable v2.0.7 committed by Constantine Khrulev on 2023-11-21 12:49:11 -0900</span>
+   &#160;<span id="projectnumber">stable v2.1 committed by Constantine Khrulev on 2023-11-23 11:24:22 -0900</span>
    </div>
   </td>
  </tr>
@@ -89,13 +89,13 @@ $(function() {
           <tr><td class="navtab"><a class="navtab" href="classpism_1_1IceRegionalModel_a1bea7e2e056bbc7dc7606af8c58b7b1b.html#a1bea7e2e056bbc7dc7606af8c58b7b1b">energy_model_inputs</a></td></tr>
           <tr><td class="navtab"><a class="navtab" href="classpism_1_1IceRegionalModel_a21260e34ba90564eb7c344c379613e40.html#a21260e34ba90564eb7c344c379613e40">energy_step</a></td></tr>
           <tr><td class="navtab"><a class="navtab" href="classpism_1_1IceRegionalModel_a33f0862bbdfec68d140e730ab9d632c2.html#a33f0862bbdfec68d140e730ab9d632c2">hydrology_step</a></td></tr>
-          <tr><td class="navtab"><a class="navtab" href="classpism_1_1IceRegionalModel_a07028793b0ae62fea26547fbd1c22d70.html#a07028793b0ae62fea26547fbd1c22d70">IceRegionalModel</a></td></tr>
+          <tr><td class="navtab"><a class="navtab" href="classpism_1_1IceRegionalModel_a6dae54d62dcafee11d2de585f0bc477f.html#a6dae54d62dcafee11d2de585f0bc477f">IceRegionalModel</a></td></tr>
           <tr><td class="navtab"><a class="navtab" href="classpism_1_1IceRegionalModel_a108b838340c0de29f40d6345b9432f95.html#a108b838340c0de29f40d6345b9432f95">init_diagnostics</a></td></tr>
           <tr><td class="navtab"><a class="navtab" href="classpism_1_1IceRegionalModel_ac7eae85e4cad4130a219615bcf09214e.html#ac7eae85e4cad4130a219615bcf09214e">m_ch_system</a></td></tr>
-          <tr><td class="navtab"><a class="navtab" href="classpism_1_1IceRegionalModel_a4e10ee38ceb95edba0a1ed9f8041d6c5.html#a4e10ee38ceb95edba0a1ed9f8041d6c5">m_ch_warming_flux</a></td></tr>
-          <tr><td class="navtab"><a class="navtab" href="classpism_1_1IceRegionalModel_abe3fb51354d9eec93f2fe372fd86b6dc.html#abe3fb51354d9eec93f2fe372fd86b6dc">m_no_model_mask</a></td></tr>
-          <tr><td class="navtab"><a class="navtab" href="classpism_1_1IceRegionalModel_a7a86e536f9b9570eb92784607bed1c21.html#a7a86e536f9b9570eb92784607bed1c21">m_thk_stored</a></td></tr>
-          <tr><td class="navtab"><a class="navtab" href="classpism_1_1IceRegionalModel_aa887a09cffe2d0f56315694539f76ff1.html#aa887a09cffe2d0f56315694539f76ff1">m_usurf_stored</a></td></tr>
+          <tr><td class="navtab"><a class="navtab" href="classpism_1_1IceRegionalModel_a46f95b4edb658dae305bc552002ccc79.html#a46f95b4edb658dae305bc552002ccc79">m_ch_warming_flux</a></td></tr>
+          <tr><td class="navtab"><a class="navtab" href="classpism_1_1IceRegionalModel_a6e8dac299e806ff17478b5c8c78dd371.html#a6e8dac299e806ff17478b5c8c78dd371">m_no_model_mask</a></td></tr>
+          <tr><td class="navtab"><a class="navtab" href="classpism_1_1IceRegionalModel_a7b0fae39ec9039a7563fd01396173b0b.html#a7b0fae39ec9039a7563fd01396173b0b">m_thk_stored</a></td></tr>
+          <tr><td class="navtab"><a class="navtab" href="classpism_1_1IceRegionalModel_a446bc55aada22061de00a3f36c1714c1.html#a446bc55aada22061de00a3f36c1714c1">m_usurf_stored</a></td></tr>
           <tr><td class="navtab"><a class="navtab" href="classpism_1_1IceRegionalModel_a5b8e16ae3fbe4702330bd970393661cf.html#a5b8e16ae3fbe4702330bd970393661cf">model_state_setup</a></td></tr>
           <tr><td class="navtab"><a class="navtab" href="classpism_1_1IceRegionalModel_a6cef9e1b3476c403fb3063b87b0fcfa7.html#a6cef9e1b3476c403fb3063b87b0fcfa7">stress_balance_inputs</a></td></tr>
           <tr><td class="navtab"><a class="navtab" href="classpism_1_1IceRegionalModel_ac8a1ed218024c2ec8b22137c50517b77.html#ac8a1ed218024c2ec8b22137c50517b77">yield_stress_inputs</a></td></tr>
@@ -126,16 +126,16 @@ $(function() {
 </table>
 </div><div class="memdoc">
 
-<p>Allocate all IceModelVecs defined in <a class="el" href="classpism_1_1IceModel.html">IceModel</a>. </p>
+<p>Allocate all Arrays defined in <a class="el" href="classpism_1_1IceModel.html">IceModel</a>. </p>
 <p>This procedure allocates the memory used to store model state, diagnostic and work vectors and sets metadata.</p>
 <p>Default values should not be set here; please use set_vars_from_options().</p>
-<p>All the memory allocated here is freed by IceModelVecs' destructors. </p>
+<p>All the memory allocated here is freed by Arrays' destructors. </p>
 
 <p>Reimplemented from <a class="el" href="classpism_1_1IceModel_a8b80df01e5418d320565fe546f9b3f13.html#a8b80df01e5418d320565fe546f9b3f13">pism::IceModel</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="IceRegionalModel_8cc_source.html#l00056">56</a> of file <a class="el" href="IceRegionalModel_8cc_source.html">IceRegionalModel.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="IceRegionalModel_8cc_source.html#l00048">48</a> of file <a class="el" href="IceRegionalModel_8cc_source.html">IceRegionalModel.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="IceModel_8cc_source.html#l00200">pism::IceModel::allocate_storage()</a>, <a class="el" href="IceModel_8hh_source.html#l00238">pism::IceModel::m_log</a>, <a class="el" href="IceModel_8hh_source.html#l00402">pism::IceModel::m_model_state</a>, <a class="el" href="IceRegionalModel_8hh_source.html#l00061">m_no_model_mask</a>, <a class="el" href="IceRegionalModel_8hh_source.html#l00063">m_thk_stored</a>, <a class="el" href="IceRegionalModel_8hh_source.html#l00062">m_usurf_stored</a>, <a class="el" href="iceModelVec_8cc_source.html#l00533">pism::IceModelVec::metadata()</a>, <a class="el" href="IO__Flags_8hh_source.html#l00036">pism::PISM_INT</a>, <a class="el" href="iceModelVec_8cc_source.html#l00683">pism::IceModelVec::set()</a>, <a class="el" href="iceModelVec_8cc_source.html#l00399">pism::IceModelVec::set_attrs()</a>, <a class="el" href="VariableMetadata_8cc_source.html#l00064">pism::VariableMetadata::set_output_type()</a>, and <a class="el" href="iceModelVec_8cc_source.html#l00175">pism::IceModelVec::set_time_independent()</a>.</p>
+<p class="reference">References <a class="el" href="IceModel_8cc_source.html#l00185">pism::IceModel::allocate_storage()</a>, <a class="el" href="VariableMetadata_8hh_source.html#l00115">pism::VariableMetadata::long_name()</a>, <a class="el" href="IceModel_8hh_source.html#l00249">pism::IceModel::m_log</a>, <a class="el" href="IceModel_8hh_source.html#l00417">pism::IceModel::m_model_state</a>, <a class="el" href="IceRegionalModel_8hh_source.html#l00061">m_no_model_mask</a>, <a class="el" href="IceRegionalModel_8hh_source.html#l00063">m_thk_stored</a>, <a class="el" href="IceRegionalModel_8hh_source.html#l00062">m_usurf_stored</a>, <a class="el" href="Array_8cc_source.html#l00553">pism::array::Array::metadata()</a>, <a class="el" href="IO__Flags_8hh_source.html#l00050">pism::io::PISM_INT</a>, <a class="el" href="Array_8cc_source.html#l00707">pism::array::Array::set()</a>, <a class="el" href="VariableMetadata_8cc_source.html#l00064">pism::VariableMetadata::set_output_type()</a>, <a class="el" href="VariableMetadata_8cc_source.html#l00058">pism::VariableMetadata::set_time_independent()</a>, and <a class="el" href="VariableMetadata_8hh_source.html#l00123">pism::VariableMetadata::units()</a>.</p>
 
 </div>
 </div>

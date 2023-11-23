@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PISM, A Parallel Ice Sheet Model
-   &#160;<span id="projectnumber">stable v2.0.7 committed by Constantine Khrulev on 2023-11-21 12:49:11 -0900</span>
+   &#160;<span id="projectnumber">stable v2.1 committed by Constantine Khrulev on 2023-11-23 11:24:22 -0900</span>
    </div>
   </td>
  </tr>
@@ -81,9 +81,11 @@ $(function() {
 <div class="title">RegionalYieldStress.cc File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="RegionalYieldStress_8hh_source.html">RegionalYieldStress.hh</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;pism/regional/RegionalYieldStress.hh&quot;</code><br />
 <code>#include &quot;pism/util/pism_utilities.hh&quot;</code><br />
 <code>#include &quot;pism/util/MaxTimestep.hh&quot;</code><br />
+<code>#include &quot;pism/util/array/Scalar.hh&quot;</code><br />
+<code>#include &quot;pism/util/interpolation.hh&quot;</code><br />
 </div>
 <p><a href="RegionalYieldStress_8cc_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -94,8 +96,8 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a585942712b9bd767179d8f7ac6e931fb"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_a585942712b9bd767179d8f7ac6e931fb.html#a585942712b9bd767179d8f7ac6e931fb">pism::set_no_model_yield_stress</a> (double tauc, const IceModelVec2Int &amp;mask, IceModelVec2S &amp;basal_yield_stress)</td></tr>
-<tr class="separator:a585942712b9bd767179d8f7ac6e931fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a295bd2c157a7a2839cb6d61a801a812c"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_a295bd2c157a7a2839cb6d61a801a812c.html#a295bd2c157a7a2839cb6d61a801a812c">pism::set_no_model_yield_stress</a> (double tauc, const array::Scalar &amp;mask, array::Scalar &amp;basal_yield_stress)</td></tr>
+<tr class="separator:a295bd2c157a7a2839cb6d61a801a812c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->

@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PISM, A Parallel Ice Sheet Model
-   &#160;<span id="projectnumber">stable v2.0.7 committed by Constantine Khrulev on 2023-11-21 12:49:11 -0900</span>
+   &#160;<span id="projectnumber">stable v2.1 committed by Constantine Khrulev on 2023-11-23 11:24:22 -0900</span>
    </div>
   </td>
  </tr>
@@ -143,7 +143,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aae977f5d429449fed1883fd9707547ca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpism_1_1units_1_1Unit.html">units::Unit</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpism_1_1Time_aae977f5d429449fed1883fd9707547ca.html#aae977f5d429449fed1883fd9707547ca">units</a> () const</td></tr>
 <tr class="separator:aae977f5d429449fed1883fd9707547ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8438260ecf3ca6236b8b69efb21bc60f"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpism_1_1Time_a8438260ecf3ca6236b8b69efb21bc60f.html#a8438260ecf3ca6236b8b69efb21bc60f">year_fraction</a> (double T) const</td></tr>
-<tr class="memdesc:a8438260ecf3ca6236b8b69efb21bc60f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the fraction of a year passed since the last beginning of a year. Only useful in codes with a "yearly cycle" (such as the PDD model).  <a href="classpism_1_1Time_a8438260ecf3ca6236b8b69efb21bc60f.html#a8438260ecf3ca6236b8b69efb21bc60f">More...</a><br /></td></tr>
+<tr class="memdesc:a8438260ecf3ca6236b8b69efb21bc60f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the fraction of a year that passed since the last beginning of a year. Only useful in codes with a "yearly cycle" (such as the PDD model).  <a href="classpism_1_1Time_a8438260ecf3ca6236b8b69efb21bc60f.html#a8438260ecf3ca6236b8b69efb21bc60f">More...</a><br /></td></tr>
 <tr class="separator:a8438260ecf3ca6236b8b69efb21bc60f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae201e1ff7f1467f14068c7529b343b5f"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpism_1_1Time_ae201e1ff7f1467f14068c7529b343b5f.html#ae201e1ff7f1467f14068c7529b343b5f">day_of_the_year_to_year_fraction</a> (unsigned int day) const</td></tr>
 <tr class="memdesc:ae201e1ff7f1467f14068c7529b343b5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert the day number to the year fraction.  <a href="classpism_1_1Time_ae201e1ff7f1467f14068c7529b343b5f.html#ae201e1ff7f1467f14068c7529b343b5f">More...</a><br /></td></tr>
@@ -204,7 +204,7 @@ Protected Attributes</h2></td></tr>
 <tr class="memdesc:afeb6bb802ea54258691ba5370bb059c3"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classpism_1_1Time.html" title="Time management class.">Time</a> resolution, in seconds.  <a href="classpism_1_1Time_afeb6bb802ea54258691ba5370bb059c3.html#afeb6bb802ea54258691ba5370bb059c3">More...</a><br /></td></tr>
 <tr class="separator:afeb6bb802ea54258691ba5370bb059c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d6814314891d9dcc2030815d6b5d8ae"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpism_1_1Time_a3d6814314891d9dcc2030815d6b5d8ae.html#a3d6814314891d9dcc2030815d6b5d8ae">m_year_length</a></td></tr>
-<tr class="memdesc:a3d6814314891d9dcc2030815d6b5d8ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">number of seconds in a year, for "mod" and "year fraction"  <a href="classpism_1_1Time_a3d6814314891d9dcc2030815d6b5d8ae.html#a3d6814314891d9dcc2030815d6b5d8ae">More...</a><br /></td></tr>
+<tr class="memdesc:a3d6814314891d9dcc2030815d6b5d8ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">number of seconds in a year, for "year fraction"  <a href="classpism_1_1Time_a3d6814314891d9dcc2030815d6b5d8ae.html#a3d6814314891d9dcc2030815d6b5d8ae">More...</a><br /></td></tr>
 <tr class="separator:a3d6814314891d9dcc2030815d6b5d8ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a88dbd6f2aa674346d0b1032a0431b77a"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpism_1_1Time_a88dbd6f2aa674346d0b1032a0431b77a.html#a88dbd6f2aa674346d0b1032a0431b77a">m_time_in_seconds</a></td></tr>
 <tr class="memdesc:a88dbd6f2aa674346d0b1032a0431b77a"><td class="mdescLeft">&#160;</td><td class="mdescRight">current time, in seconds since the reference time  <a href="classpism_1_1Time_a88dbd6f2aa674346d0b1032a0431b77a.html#a88dbd6f2aa674346d0b1032a0431b77a">More...</a><br /></td></tr>

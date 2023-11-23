@@ -24,7 +24,7 @@
 <g id="a_node2"><a xlink:href="classpism_1_1TSDiag.html" target="_top" xlink:title=" ">
 <polygon fill="none" stroke="black" points="49.5,-68.5 49.5,-98.5 229.5,-98.5 229.5,-68.5 49.5,-68.5"/>
 <text text-anchor="start" x="57.5" y="-86.5" font-family="Helvetica,sans-Serif" font-size="10.00">pism::TSDiag&lt; TSFluxDiagnostic,</text>
-<text text-anchor="middle" x="139.5" y="-75.5" font-family="Helvetica,sans-Serif" font-size="10.00"> TemperatureIndex &gt;</text>
+<text text-anchor="middle" x="139.5" y="-75.5" font-family="Helvetica,sans-Serif" font-size="10.00"> SurfaceModel &gt;</text>
 </a>
 </g>
 </g>
@@ -94,7 +94,7 @@
 <path fill="none" stroke="orange" stroke-dasharray="5,2" d="M198.78,-149.78C185.2,-134.83 165.23,-112.84 152.3,-98.6"/>
 <polygon fill="orange" stroke="orange" points="196.27,-152.23 205.58,-157.28 201.45,-147.52 196.27,-152.23"/>
 <text text-anchor="start" x="187.5" y="-131" font-family="Helvetica,sans-Serif" font-size="10.00"> &lt; TSFluxDiagnostic,</text>
-<text text-anchor="middle" x="239" y="-120" font-family="Helvetica,sans-Serif" font-size="10.00"> TemperatureIndex &gt;</text>
+<text text-anchor="middle" x="239" y="-120" font-family="Helvetica,sans-Serif" font-size="10.00"> SurfaceModel &gt;</text>
 </g>
 <!-- Node7 -->
 <g id="node7" class="node">

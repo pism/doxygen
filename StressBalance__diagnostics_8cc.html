@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PISM, A Parallel Ice Sheet Model
-   &#160;<span id="projectnumber">stable v2.0.7 committed by Constantine Khrulev on 2023-11-21 12:49:11 -0900</span>
+   &#160;<span id="projectnumber">stable v2.1 committed by Constantine Khrulev on 2023-11-23 11:24:22 -0900</span>
    </div>
   </td>
  </tr>
@@ -81,15 +81,17 @@ $(function() {
 <div class="title">StressBalance_diagnostics.cc File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="StressBalance__diagnostics_8hh_source.html">StressBalance_diagnostics.hh</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="SSB__Modifier_8hh_source.html">SSB_Modifier.hh</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="ShallowStressBalance_8hh_source.html">ShallowStressBalance.hh</a>&quot;</code><br />
+<div class="textblock"><code>#include &lt;cmath&gt;</code><br />
+<code>#include &lt;algorithm&gt;</code><br />
+<code>#include &quot;pism/stressbalance/StressBalance_diagnostics.hh&quot;</code><br />
+<code>#include &quot;pism/stressbalance/SSB_Modifier.hh&quot;</code><br />
+<code>#include &quot;pism/stressbalance/ShallowStressBalance.hh&quot;</code><br />
 <code>#include &quot;pism/util/Mask.hh&quot;</code><br />
 <code>#include &quot;pism/util/ConfigInterface.hh&quot;</code><br />
 <code>#include &quot;pism/util/Vars.hh&quot;</code><br />
 <code>#include &quot;pism/util/error_handling.hh&quot;</code><br />
 <code>#include &quot;pism/util/pism_utilities.hh&quot;</code><br />
-<code>#include &quot;pism/util/IceModelVec2CellType.hh&quot;</code><br />
+<code>#include &quot;pism/util/array/CellType.hh&quot;</code><br />
 <code>#include &quot;pism/rheology/FlowLaw.hh&quot;</code><br />
 <code>#include &quot;pism/rheology/FlowLawFactory.hh&quot;</code><br />
 <code>#include &quot;pism/util/Context.hh&quot;</code><br />
@@ -106,8 +108,8 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:af50713297f9b7450a3d87fa8a9cbe03c"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_1_1stressbalance_af50713297f9b7450a3d87fa8a9cbe03c.html#af50713297f9b7450a3d87fa8a9cbe03c">pism::stressbalance::zero_above_ice</a> (const IceModelVec3 &amp;F, const IceModelVec2S &amp;H, IceModelVec3 &amp;result)</td></tr>
-<tr class="separator:af50713297f9b7450a3d87fa8a9cbe03c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2433f27c50331925a788f035ef6ab4f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_1_1stressbalance_af2433f27c50331925a788f035ef6ab4f.html#af2433f27c50331925a788f035ef6ab4f">pism::stressbalance::zero_above_ice</a> (const array::Array3D &amp;F, const array::Scalar &amp;H, array::Array3D &amp;result)</td></tr>
+<tr class="separator:af2433f27c50331925a788f035ef6ab4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->

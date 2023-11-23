@@ -1,6 +1,0 @@
-<map id="pism::IceModelVec2T" name="pism::IceModelVec2T">
-<area shape="rect" id="node1" title="A class for storing and accessing 2D time&#45;series (for climate forcing)" alt="" coords="9,229,169,256"/>
-<area shape="rect" id="node2" href="$classpism_1_1IceModelVec2S.html" title=" " alt="" coords="9,155,169,181"/>
-<area shape="rect" id="node3" href="$classpism_1_1IceModelVec.html" title="Abstract class for reading, writing, allocating, and accessing a DA&#45;based PETSc Vec (2D and 3D fields..." alt="" coords="17,80,161,107"/>
-<area shape="rect" id="node4" href="$classpism_1_1PetscAccessible.html" title=" " alt="" coords="5,5,172,32"/>
-</map>

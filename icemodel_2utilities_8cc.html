@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PISM, A Parallel Ice Sheet Model
-   &#160;<span id="projectnumber">stable v2.0.7 committed by Constantine Khrulev on 2023-11-21 12:49:11 -0900</span>
+   &#160;<span id="projectnumber">stable v2.1 committed by Constantine Khrulev on 2023-11-23 11:24:22 -0900</span>
    </div>
   </td>
  </tr>
@@ -75,21 +75,19 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#namespaces">Namespaces</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#namespaces">Namespaces</a>  </div>
   <div class="headertitle">
 <div class="title">utilities.cc File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;cstring&gt;</code><br />
 <code>#include &lt;petscsys.h&gt;</code><br />
-<code>#include &quot;<a class="el" href="IceModel_8hh_source.html">IceModel.hh</a>&quot;</code><br />
-<code>#include &quot;pism/util/IceGrid.hh&quot;</code><br />
+<code>#include &quot;pism/icemodel/IceModel.hh&quot;</code><br />
+<code>#include &quot;pism/util/Grid.hh&quot;</code><br />
 <code>#include &quot;pism/util/ConfigInterface.hh&quot;</code><br />
 <code>#include &quot;pism/util/Time.hh&quot;</code><br />
 <code>#include &quot;pism/util/io/File.hh&quot;</code><br />
 <code>#include &quot;pism/util/pism_utilities.hh&quot;</code><br />
-<code>#include &quot;pism/util/projection.hh&quot;</code><br />
 <code>#include &quot;pism/util/pism_signal.h&quot;</code><br />
 </div>
 <p><a href="icemodel_2utilities_8cc_source.html">Go to the source code of this file.</a></p>
@@ -98,12 +96,6 @@ $(function() {
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacepism"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism.html">pism</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:a1375e49e1efdca4471c7afbc225d2963"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_a1375e49e1efdca4471c7afbc225d2963.html#a1375e49e1efdca4471c7afbc225d2963">pism::check_maximum_ice_thickness</a> (const IceModelVec2S &amp;ice_thickness)</td></tr>
-<tr class="memdesc:a1375e49e1efdca4471c7afbc225d2963"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the thickness of the ice is too large.  <a href="namespacepism_a1375e49e1efdca4471c7afbc225d2963.html#a1375e49e1efdca4471c7afbc225d2963">More...</a><br /></td></tr>
-<tr class="separator:a1375e49e1efdca4471c7afbc225d2963"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->

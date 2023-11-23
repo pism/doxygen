@@ -11,9 +11,9 @@
 <!-- Node0 -->
 <g id="node1" class="node">
 <title>Node0</title>
-<g id="a_node1"><a xlink:href="classpism_1_1Interpolation.html" target="_top" xlink:title=" ">
+<g id="a_node1"><a xlink:href="structpism_1_1InputOptions.html" target="_top" xlink:title=" ">
 <polygon fill="none" stroke="black" points="0,-0.5 0,-19.5 109,-19.5 109,-0.5 0,-0.5"/>
-<text text-anchor="middle" x="54.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">pism::Interpolation</text>
+<text text-anchor="middle" x="54.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">pism::InputOptions</text>
 </a>
 </g>
 </g>

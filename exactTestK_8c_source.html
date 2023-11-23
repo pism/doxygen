@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PISM, A Parallel Ice Sheet Model
-   &#160;<span id="projectnumber">stable v2.0.7 committed by Constantine Khrulev on 2023-11-21 12:49:11 -0900</span>
+   &#160;<span id="projectnumber">stable v2.1 committed by Constantine Khrulev on 2023-11-23 11:24:22 -0900</span>
    </div>
   </td>
  </tr>
@@ -79,7 +79,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <a href="exactTestK_8c.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">   Copyright (C) 2007, 2011, 2014, 2016 Ed Bueler</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">   Copyright (C) 2007, 2011, 2014, 2016, 2023 Ed Bueler</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">  </span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">   This file is part of PISM.</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">  </span></div>
@@ -103,7 +103,7 @@ $(function() {
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &lt;gsl/gsl_errno.h&gt;</span></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &lt;gsl/gsl_math.h&gt;</span>       <span class="comment">/* M_PI */</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &lt;gsl/gsl_roots.h&gt;</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="exactTestK_8h.html">exactTestK.h</a>&quot;</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &quot;pism/verification/tests/exactTestK.h&quot;</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
 <div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="exactTestK_8c_a7714df5f626688836ecd30d8e12190d5.html#a7714df5f626688836ecd30d8e12190d5">   28</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">double</span> <a class="code" href="exactTestK_8c_a7714df5f626688836ecd30d8e12190d5.html#a7714df5f626688836ecd30d8e12190d5">SperA</a> = 31556926.0; <span class="comment">/* seconds per year; 365.2422 days */</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
@@ -305,10 +305,9 @@ $(function() {
 <div class="ttc" id="aexactTestK_8c_aef865b9b807cb3a0419db3858f38bbc8_html_aef865b9b807cb3a0419db3858f38bbc8"><div class="ttname"><a href="exactTestK_8c_aef865b9b807cb3a0419db3858f38bbc8.html#aef865b9b807cb3a0419db3858f38bbc8">k_BR</a></div><div class="ttdeci">const double k_BR</div><div class="ttdef"><b>Definition:</b> <a href="exactTestK_8c_source.html#l00035">exactTestK.c:35</a></div></div>
 <div class="ttc" id="aexactTestK_8c_af137795422e747a1950da7775a50ff47_html_af137795422e747a1950da7775a50ff47"><div class="ttname"><a href="exactTestK_8c_af137795422e747a1950da7775a50ff47.html#af137795422e747a1950da7775a50ff47">rho_BR</a></div><div class="ttdeci">const double rho_BR</div><div class="ttdef"><b>Definition:</b> <a href="exactTestK_8c_source.html#l00034">exactTestK.c:34</a></div></div>
 <div class="ttc" id="aexactTestK_8c_afd45a0ee96a799aec6589e2eb8ce66cd_html_afd45a0ee96a799aec6589e2eb8ce66cd"><div class="ttname"><a href="exactTestK_8c_afd45a0ee96a799aec6589e2eb8ce66cd.html#afd45a0ee96a799aec6589e2eb8ce66cd">phi</a></div><div class="ttdeci">const double phi</div><div class="ttdef"><b>Definition:</b> <a href="exactTestK_8c_source.html#l00041">exactTestK.c:41</a></div></div>
-<div class="ttc" id="aexactTestK_8h_html"><div class="ttname"><a href="exactTestK_8h.html">exactTestK.h</a></div></div>
 <div class="ttc" id="anamespacepism_a200b1c89a64c718f6b0f585508e55172_html_a200b1c89a64c718f6b0f585508e55172"><div class="ttname"><a href="namespacepism_a200b1c89a64c718f6b0f585508e55172.html#a200b1c89a64c718f6b0f585508e55172">pism::F</a></div><div class="ttdeci">static double F(double SL, double B, double H, double alpha)</div><div class="ttdef"><b>Definition:</b> <a href="grounded__cell__fraction_8cc_source.html#l00225">grounded_cell_fraction.cc:225</a></div></div>
-<div class="ttc" id="anamespacepism_a5d5d5714fb63a96518ffbe7be151e90b_html_a5d5d5714fb63a96518ffbe7be151e90b"><div class="ttname"><a href="namespacepism_a5d5d5714fb63a96518ffbe7be151e90b.html#a5d5d5714fb63a96518ffbe7be151e90b">pism::printf</a></div><div class="ttdeci">std::string printf(const char *format,...)</div><div class="ttdef"><b>Definition:</b> <a href="pism__utilities_8cc_source.html#l00407">pism_utilities.cc:407</a></div></div>
-<div class="ttc" id="anamespacepism_a7343afff8d353b59dbdec563bd896812_html_a7343afff8d353b59dbdec563bd896812"><div class="ttname"><a href="namespacepism_a7343afff8d353b59dbdec563bd896812.html#a7343afff8d353b59dbdec563bd896812">pism::k</a></div><div class="ttdeci">static const double k</div><div class="ttdef"><b>Definition:</b> <a href="exactTestP_8cc_source.html#l00045">exactTestP.cc:45</a></div></div>
+<div class="ttc" id="anamespacepism_a5d5d5714fb63a96518ffbe7be151e90b_html_a5d5d5714fb63a96518ffbe7be151e90b"><div class="ttname"><a href="namespacepism_a5d5d5714fb63a96518ffbe7be151e90b.html#a5d5d5714fb63a96518ffbe7be151e90b">pism::printf</a></div><div class="ttdeci">std::string printf(const char *format,...)</div><div class="ttdef"><b>Definition:</b> <a href="pism__utilities_8cc_source.html#l00415">pism_utilities.cc:415</a></div></div>
+<div class="ttc" id="anamespacepism_a7343afff8d353b59dbdec563bd896812_html_a7343afff8d353b59dbdec563bd896812"><div class="ttname"><a href="namespacepism_a7343afff8d353b59dbdec563bd896812.html#a7343afff8d353b59dbdec563bd896812">pism::k</a></div><div class="ttdeci">static const double k</div><div class="ttdef"><b>Definition:</b> <a href="exactTestP_8cc_source.html#l00042">exactTestP.cc:42</a></div></div>
 <div class="ttc" id="astructTestKParameters_a8c0a5d078a9173978c25b3e4f2e06d2b_html_a8c0a5d078a9173978c25b3e4f2e06d2b"><div class="ttname"><a href="structTestKParameters_a8c0a5d078a9173978c25b3e4f2e06d2b.html#a8c0a5d078a9173978c25b3e4f2e06d2b">TestKParameters::error_code</a></div><div class="ttdeci">int error_code</div><div class="ttdef"><b>Definition:</b> <a href="exactTestK_8h_source.html#l00041">exactTestK.h:41</a></div></div>
 <div class="ttc" id="astructTestKParameters_html"><div class="ttname"><a href="structTestKParameters.html">TestKParameters</a></div><div class="ttdef"><b>Definition:</b> <a href="exactTestK_8h_source.html#l00040">exactTestK.h:40</a></div></div>
 <div class="ttc" id="astructcoscross__params_a08227665e07c076a970a8995cfbcb70b_html_a08227665e07c076a970a8995cfbcb70b"><div class="ttname"><a href="structcoscross__params_a08227665e07c076a970a8995cfbcb70b.html#a08227665e07c076a970a8995cfbcb70b">coscross_params::HZBsum</a></div><div class="ttdeci">double HZBsum</div><div class="ttdef"><b>Definition:</b> <a href="exactTestK_8c_source.html#l00142">exactTestK.c:142</a></div></div>

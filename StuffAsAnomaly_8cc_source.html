@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PISM, A Parallel Ice Sheet Model
-   &#160;<span id="projectnumber">stable v2.0.7 committed by Constantine Khrulev on 2023-11-21 12:49:11 -0900</span>
+   &#160;<span id="projectnumber">stable v2.1 committed by Constantine Khrulev on 2023-11-23 11:24:22 -0900</span>
    </div>
   </td>
  </tr>
@@ -78,7 +78,7 @@ $(function() {
 <div class="title">StuffAsAnomaly.cc</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="StuffAsAnomaly_8cc.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// Copyright (C) 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2021 PISM Authors</span></div>
+<a href="StuffAsAnomaly_8cc.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// Copyright (C) 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2021, 2023 PISM Authors</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">// This file is part of PISM.</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">//</span></div>
@@ -96,8 +96,8 @@ $(function() {
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">// along with PISM; if not, write to the Free Software</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">// Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &quot;StuffAsAnomaly.hh&quot;</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;pism/util/IceGrid.hh&quot;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &quot;pism/coupler/surface/StuffAsAnomaly.hh&quot;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;pism/util/Grid.hh&quot;</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;pism/util/Time.hh&quot;</span></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;pism/util/pism_utilities.hh&quot;</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;pism/util/MaxTimestep.hh&quot;</span></div>
@@ -105,20 +105,20 @@ $(function() {
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacepism.html">pism</a> {</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">namespace </span>surface {</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;StuffAsAnomaly::StuffAsAnomaly(<a class="code" href="classpism_1_1IceGrid_aa59b13ca1f14efc1555016e2b8a8b1ac.html#aa59b13ca1f14efc1555016e2b8a8b1ac">IceGrid::ConstPtr</a> <a class="code" href="namespacepism_a47d754ed3e959d5866b02a1b78b6a5b5.html#a47d754ed3e959d5866b02a1b78b6a5b5">g</a>, std::shared_ptr&lt;SurfaceModel&gt; input)</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;StuffAsAnomaly::StuffAsAnomaly(std::shared_ptr&lt;const Grid&gt; <a class="code" href="namespacepism_a47d754ed3e959d5866b02a1b78b6a5b5.html#a47d754ed3e959d5866b02a1b78b6a5b5">g</a>, std::shared_ptr&lt;SurfaceModel&gt; input)</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  : SurfaceModel(<a class="code" href="namespacepism_a47d754ed3e959d5866b02a1b78b6a5b5.html#a47d754ed3e959d5866b02a1b78b6a5b5">g</a>, input),</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    m_mass_flux(m_grid, <span class="stringliteral">&quot;climatic_mass_balance&quot;</span>, <a class="code" href="namespacepism_af0700c6771420c20ac873c2779475d57.html#af0700c6771420c20ac873c2779475d57a64e797222853badb3592d5d01f623da9">WITHOUT_GHOSTS</a>),</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    m_mass_flux_0(m_grid, <span class="stringliteral">&quot;mass_flux_0&quot;</span>, <a class="code" href="namespacepism_af0700c6771420c20ac873c2779475d57.html#af0700c6771420c20ac873c2779475d57a64e797222853badb3592d5d01f623da9">WITHOUT_GHOSTS</a>),</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    m_mass_flux_input(m_grid, <span class="stringliteral">&quot;climatic_mass_balance&quot;</span>, <a class="code" href="namespacepism_af0700c6771420c20ac873c2779475d57.html#af0700c6771420c20ac873c2779475d57a64e797222853badb3592d5d01f623da9">WITHOUT_GHOSTS</a>),</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    m_temp(m_grid, <span class="stringliteral">&quot;ice_surface_temp&quot;</span>, <a class="code" href="namespacepism_af0700c6771420c20ac873c2779475d57.html#af0700c6771420c20ac873c2779475d57a64e797222853badb3592d5d01f623da9">WITHOUT_GHOSTS</a>),</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    m_temp_0(m_grid, <span class="stringliteral">&quot;ice_surface_temp_0&quot;</span>, <a class="code" href="namespacepism_af0700c6771420c20ac873c2779475d57.html#af0700c6771420c20ac873c2779475d57a64e797222853badb3592d5d01f623da9">WITHOUT_GHOSTS</a>),</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    m_temp_input(m_grid, <span class="stringliteral">&quot;ice_surface_temp&quot;</span>, <a class="code" href="namespacepism_af0700c6771420c20ac873c2779475d57.html#af0700c6771420c20ac873c2779475d57a64e797222853badb3592d5d01f623da9">WITHOUT_GHOSTS</a>) {</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    m_mass_flux(m_grid, <span class="stringliteral">&quot;climatic_mass_balance&quot;</span>, <a class="code" href="namespacepism_1_1array_ab49b8ee9a79e7f46ec91fc40efdb7ca3.html#ab49b8ee9a79e7f46ec91fc40efdb7ca3af672399d2e1a4112ca5d4a4591c30885">WITHOUT_GHOSTS</a>),</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    m_mass_flux_0(m_grid, <span class="stringliteral">&quot;mass_flux_0&quot;</span>, <a class="code" href="namespacepism_1_1array_ab49b8ee9a79e7f46ec91fc40efdb7ca3.html#ab49b8ee9a79e7f46ec91fc40efdb7ca3af672399d2e1a4112ca5d4a4591c30885">WITHOUT_GHOSTS</a>),</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    m_mass_flux_input(m_grid, <span class="stringliteral">&quot;climatic_mass_balance&quot;</span>, <a class="code" href="namespacepism_1_1array_ab49b8ee9a79e7f46ec91fc40efdb7ca3.html#ab49b8ee9a79e7f46ec91fc40efdb7ca3af672399d2e1a4112ca5d4a4591c30885">WITHOUT_GHOSTS</a>),</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    m_temp(m_grid, <span class="stringliteral">&quot;ice_surface_temp&quot;</span>, <a class="code" href="namespacepism_1_1array_ab49b8ee9a79e7f46ec91fc40efdb7ca3.html#ab49b8ee9a79e7f46ec91fc40efdb7ca3af672399d2e1a4112ca5d4a4591c30885">WITHOUT_GHOSTS</a>),</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    m_temp_0(m_grid, <span class="stringliteral">&quot;ice_surface_temp_0&quot;</span>, <a class="code" href="namespacepism_1_1array_ab49b8ee9a79e7f46ec91fc40efdb7ca3.html#ab49b8ee9a79e7f46ec91fc40efdb7ca3af672399d2e1a4112ca5d4a4591c30885">WITHOUT_GHOSTS</a>),</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    m_temp_input(m_grid, <span class="stringliteral">&quot;ice_surface_temp&quot;</span>, <a class="code" href="namespacepism_1_1array_ab49b8ee9a79e7f46ec91fc40efdb7ca3.html#ab49b8ee9a79e7f46ec91fc40efdb7ca3af672399d2e1a4112ca5d4a4591c30885">WITHOUT_GHOSTS</a>) {</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  m_mass_flux.set_attrs(<span class="stringliteral">&quot;climate_state&quot;</span>,</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                      <span class="stringliteral">&quot;surface mass balance (accumulation/ablation) rate&quot;</span>,</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                      <span class="stringliteral">&quot;kg m-2 s-1&quot;</span>,</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                      <span class="stringliteral">&quot;land_ice_surface_specific_mass_balance_flux&quot;</span>);</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  m_mass_flux.metadata()[<span class="stringliteral">&quot;glaciological_units&quot;</span>] = <span class="stringliteral">&quot;kg m-2 year-1&quot;</span>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  m_mass_flux.metadata()[<span class="stringliteral">&quot;output_units&quot;</span>] = <span class="stringliteral">&quot;kg m-2 year-1&quot;</span>;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  m_temp.set_attrs(<span class="stringliteral">&quot;climate_state&quot;</span>, <span class="stringliteral">&quot;ice temperature at the ice surface&quot;</span>,</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                   <span class="stringliteral">&quot;K&quot;</span>, <span class="stringliteral">&quot;&quot;</span>);</div>
@@ -150,8 +150,8 @@ $(function() {
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;             <span class="stringliteral">&quot;  read from &#39;%s&#39;.\n&quot;</span>, opts.filename.c_str());</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="keywordflow">if</span> (opts.type == <a class="code" href="namespacepism_a56e80801555b7f36f4dd28941739654a.html#a56e80801555b7f36f4dd28941739654aa260aa6280296d9fffc338c9ecdaba861">INIT_BOOTSTRAP</a>) {</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    m_mass_flux_input.regrid(opts.filename, <a class="code" href="namespacepism_a819d77fa657009a82298ebdfcb6ac004.html#a819d77fa657009a82298ebdfcb6ac004a84412d7ebc44a6c81384ba9eb118e88a">CRITICAL</a>);</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    m_temp_input.regrid(opts.filename, <a class="code" href="namespacepism_a819d77fa657009a82298ebdfcb6ac004.html#a819d77fa657009a82298ebdfcb6ac004a84412d7ebc44a6c81384ba9eb118e88a">CRITICAL</a>);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    m_mass_flux_input.regrid(opts.filename, CRITICAL);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    m_temp_input.regrid(opts.filename, CRITICAL);</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  } <span class="keywordflow">else</span> {</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    m_mass_flux_input.read(opts.filename, opts.record);</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    m_temp_input.read(opts.filename, opts.record);</div>
@@ -171,17 +171,17 @@ $(function() {
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    m_mass_flux.copy_from(m_input_model-&gt;mass_flux());</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="comment">// if we are at the beginning of the run...</span></div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordflow">if</span> (t &lt; m_grid-&gt;ctx()-&gt;time()-&gt;start() + 1) {</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordflow">if</span> (t &lt; time().start() + 1) {</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;      <span class="comment">// this is goofy, but time-steps are usually longer than 1 second, so it should work</span></div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;      m_temp_0.copy_from(m_temp);</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;      m_mass_flux_0.copy_from(m_mass_flux);</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    }</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  }</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  IceModelVec::AccessList list{&amp;m_mass_flux, &amp;m_mass_flux_0, &amp;m_mass_flux_input,</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  array::AccessScope list{&amp;m_mass_flux, &amp;m_mass_flux_0, &amp;m_mass_flux_input,</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;      &amp;m_temp, &amp;m_temp_0, &amp;m_temp_input};</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  <span class="keywordflow">for</span> (Points p(*m_grid); p; p.next()) {</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span> p = m_grid-&gt;points(); p; p.next()) {</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> i = p.i(), j = p.j();</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    m_mass_flux(i, j) = m_mass_flux(i, j) - m_mass_flux_0(i, j) + m_mass_flux_input(i, j);</div>
@@ -189,23 +189,21 @@ $(function() {
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  }</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;}</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="keyword">const</span> IceModelVec2S &amp;StuffAsAnomaly::mass_flux_impl()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="keyword">const</span> array::Scalar &amp;StuffAsAnomaly::mass_flux_impl()<span class="keyword"> const </span>{</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;  <span class="keywordflow">return</span> m_mass_flux;</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;}</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="keyword">const</span> IceModelVec2S &amp;StuffAsAnomaly::temperature_impl()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="keyword">const</span> array::Scalar &amp;StuffAsAnomaly::temperature_impl()<span class="keyword"> const </span>{</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  <span class="keywordflow">return</span> m_temp;</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;}</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160; </div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;} <span class="comment">// end of namespace surface</span></div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;} <span class="comment">// end of namespace pism</span></div>
-<div class="ttc" id="aclasspism_1_1IceGrid_aa59b13ca1f14efc1555016e2b8a8b1ac_html_aa59b13ca1f14efc1555016e2b8a8b1ac"><div class="ttname"><a href="classpism_1_1IceGrid_aa59b13ca1f14efc1555016e2b8a8b1ac.html#aa59b13ca1f14efc1555016e2b8a8b1ac">pism::IceGrid::ConstPtr</a></div><div class="ttdeci">std::shared_ptr&lt; const IceGrid &gt; ConstPtr</div><div class="ttdef"><b>Definition:</b> <a href="IceGrid_8hh_source.html#l00233">IceGrid.hh:233</a></div></div>
-<div class="ttc" id="anamespacepism_a44fca05de5c3d0cb82c4a2910666b6e2_html_a44fca05de5c3d0cb82c4a2910666b6e2"><div class="ttname"><a href="namespacepism_a44fca05de5c3d0cb82c4a2910666b6e2.html#a44fca05de5c3d0cb82c4a2910666b6e2">pism::process_input_options</a></div><div class="ttdeci">InputOptions process_input_options(MPI_Comm com, Config::ConstPtr config)</div><div class="ttdef"><b>Definition:</b> <a href="Component_8cc_source.html#l00045">Component.cc:45</a></div></div>
-<div class="ttc" id="anamespacepism_a47d754ed3e959d5866b02a1b78b6a5b5_html_a47d754ed3e959d5866b02a1b78b6a5b5"><div class="ttname"><a href="namespacepism_a47d754ed3e959d5866b02a1b78b6a5b5.html#a47d754ed3e959d5866b02a1b78b6a5b5">pism::g</a></div><div class="ttdeci">static const double g</div><div class="ttdef"><b>Definition:</b> <a href="exactTestP_8cc_source.html#l00039">exactTestP.cc:39</a></div></div>
-<div class="ttc" id="anamespacepism_a56e80801555b7f36f4dd28941739654a_html_a56e80801555b7f36f4dd28941739654aa260aa6280296d9fffc338c9ecdaba861"><div class="ttname"><a href="namespacepism_a56e80801555b7f36f4dd28941739654a.html#a56e80801555b7f36f4dd28941739654aa260aa6280296d9fffc338c9ecdaba861">pism::INIT_BOOTSTRAP</a></div><div class="ttdeci">@ INIT_BOOTSTRAP</div><div class="ttdef"><b>Definition:</b> <a href="Component_8hh_source.html#l00039">Component.hh:39</a></div></div>
-<div class="ttc" id="anamespacepism_a819d77fa657009a82298ebdfcb6ac004_html_a819d77fa657009a82298ebdfcb6ac004a84412d7ebc44a6c81384ba9eb118e88a"><div class="ttname"><a href="namespacepism_a819d77fa657009a82298ebdfcb6ac004.html#a819d77fa657009a82298ebdfcb6ac004a84412d7ebc44a6c81384ba9eb118e88a">pism::CRITICAL</a></div><div class="ttdeci">@ CRITICAL</div><div class="ttdef"><b>Definition:</b> <a href="IO__Flags_8hh_source.html#l00070">IO_Flags.hh:70</a></div></div>
-<div class="ttc" id="anamespacepism_af0700c6771420c20ac873c2779475d57_html_af0700c6771420c20ac873c2779475d57a64e797222853badb3592d5d01f623da9"><div class="ttname"><a href="namespacepism_af0700c6771420c20ac873c2779475d57.html#af0700c6771420c20ac873c2779475d57a64e797222853badb3592d5d01f623da9">pism::WITHOUT_GHOSTS</a></div><div class="ttdeci">@ WITHOUT_GHOSTS</div><div class="ttdef"><b>Definition:</b> <a href="iceModelVec_8hh_source.html#l00049">iceModelVec.hh:49</a></div></div>
-<div class="ttc" id="anamespacepism_html"><div class="ttname"><a href="namespacepism.html">pism</a></div><div class="ttdef"><b>Definition:</b> <a href="AgeColumnSystem_8cc_source.html#l00024">AgeColumnSystem.cc:24</a></div></div>
+<div class="ttc" id="anamespacepism_1_1array_ab49b8ee9a79e7f46ec91fc40efdb7ca3_html_ab49b8ee9a79e7f46ec91fc40efdb7ca3af672399d2e1a4112ca5d4a4591c30885"><div class="ttname"><a href="namespacepism_1_1array_ab49b8ee9a79e7f46ec91fc40efdb7ca3.html#ab49b8ee9a79e7f46ec91fc40efdb7ca3af672399d2e1a4112ca5d4a4591c30885">pism::array::WITHOUT_GHOSTS</a></div><div class="ttdeci">@ WITHOUT_GHOSTS</div><div class="ttdef"><b>Definition:</b> <a href="Array_8hh_source.html#l00062">Array.hh:62</a></div></div>
+<div class="ttc" id="anamespacepism_a44fca05de5c3d0cb82c4a2910666b6e2_html_a44fca05de5c3d0cb82c4a2910666b6e2"><div class="ttname"><a href="namespacepism_a44fca05de5c3d0cb82c4a2910666b6e2.html#a44fca05de5c3d0cb82c4a2910666b6e2">pism::process_input_options</a></div><div class="ttdeci">InputOptions process_input_options(MPI_Comm com, Config::ConstPtr config)</div><div class="ttdef"><b>Definition:</b> <a href="Component_8cc_source.html#l00043">Component.cc:43</a></div></div>
+<div class="ttc" id="anamespacepism_a47d754ed3e959d5866b02a1b78b6a5b5_html_a47d754ed3e959d5866b02a1b78b6a5b5"><div class="ttname"><a href="namespacepism_a47d754ed3e959d5866b02a1b78b6a5b5.html#a47d754ed3e959d5866b02a1b78b6a5b5">pism::g</a></div><div class="ttdeci">static const double g</div><div class="ttdef"><b>Definition:</b> <a href="exactTestP_8cc_source.html#l00036">exactTestP.cc:36</a></div></div>
+<div class="ttc" id="anamespacepism_a56e80801555b7f36f4dd28941739654a_html_a56e80801555b7f36f4dd28941739654aa260aa6280296d9fffc338c9ecdaba861"><div class="ttname"><a href="namespacepism_a56e80801555b7f36f4dd28941739654a.html#a56e80801555b7f36f4dd28941739654aa260aa6280296d9fffc338c9ecdaba861">pism::INIT_BOOTSTRAP</a></div><div class="ttdeci">@ INIT_BOOTSTRAP</div><div class="ttdef"><b>Definition:</b> <a href="Component_8hh_source.html#l00056">Component.hh:56</a></div></div>
+<div class="ttc" id="anamespacepism_html"><div class="ttname"><a href="namespacepism.html">pism</a></div><div class="ttdef"><b>Definition:</b> <a href="AgeColumnSystem_8cc_source.html#l00023">AgeColumnSystem.cc:23</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

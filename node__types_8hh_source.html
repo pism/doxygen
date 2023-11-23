@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PISM, A Parallel Ice Sheet Model
-   &#160;<span id="projectnumber">stable v2.0.7 committed by Constantine Khrulev on 2023-11-21 12:49:11 -0900</span>
+   &#160;<span id="projectnumber">stable v2.1 committed by Constantine Khrulev on 2023-11-23 11:24:22 -0900</span>
    </div>
   </td>
  </tr>
@@ -78,7 +78,7 @@ $(function() {
 <div class="title">node_types.hh</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="node__types_8hh.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/* Copyright (C) 2016 PISM Authors</span></div>
+<a href="node__types_8hh.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/* Copyright (C) 2016, 2022 PISM Authors</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * This file is part of PISM.</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> *</span></div>
@@ -116,23 +116,25 @@ $(function() {
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <a class="code" href="namespacepism_a29133ed3f28e0aaba2d3af612dbbc5d6.html#a29133ed3f28e0aaba2d3af612dbbc5d6a439a40e16153abe158520a9b110fd8bd">NODE_EXTERIOR</a> = 1</div>
 <div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="namespacepism_a29133ed3f28e0aaba2d3af612dbbc5d6.html#a29133ed3f28e0aaba2d3af612dbbc5d6a439a40e16153abe158520a9b110fd8bd">   37</a></span>&#160;};</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">class </span>IceModelVec2S;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">class </span>IceModelVec2Int;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespacepism_afcb643623869bb1ec4431939fff006ee.html#afcb643623869bb1ec4431939fff006ee">compute_node_types</a>(<span class="keyword">const</span> IceModelVec2S &amp;ice_thickness,</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                        <span class="keywordtype">double</span> thickness_threshold,</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                        IceModelVec2Int &amp;result);</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;} <span class="comment">// end of namespace pism</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">namespace </span>array {</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">class </span>Scalar;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">class </span>Scalar1;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;}</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespacepism_a38593a68e4249fdcba75b97492d6a32a.html#a38593a68e4249fdcba75b97492d6a32a">compute_node_types</a>(<span class="keyword">const</span> array::Scalar1 &amp;ice_thickness,</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                        <span class="keywordtype">double</span> thickness_threshold,</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                        array::Scalar &amp;result);</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* _NODE_TYPES_H_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;} <span class="comment">// end of namespace pism</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* _NODE_TYPES_H_ */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="anamespacepism_a29133ed3f28e0aaba2d3af612dbbc5d6_html_a29133ed3f28e0aaba2d3af612dbbc5d6"><div class="ttname"><a href="namespacepism_a29133ed3f28e0aaba2d3af612dbbc5d6.html#a29133ed3f28e0aaba2d3af612dbbc5d6">pism::NodeType</a></div><div class="ttdeci">NodeType</div><div class="ttdef"><b>Definition:</b> <a href="node__types_8hh_source.html#l00033">node_types.hh:33</a></div></div>
 <div class="ttc" id="anamespacepism_a29133ed3f28e0aaba2d3af612dbbc5d6_html_a29133ed3f28e0aaba2d3af612dbbc5d6a043c9212bcba2789d9a5eb622e894054"><div class="ttname"><a href="namespacepism_a29133ed3f28e0aaba2d3af612dbbc5d6.html#a29133ed3f28e0aaba2d3af612dbbc5d6a043c9212bcba2789d9a5eb622e894054">pism::NODE_BOUNDARY</a></div><div class="ttdeci">@ NODE_BOUNDARY</div><div class="ttdef"><b>Definition:</b> <a href="node__types_8hh_source.html#l00035">node_types.hh:35</a></div></div>
 <div class="ttc" id="anamespacepism_a29133ed3f28e0aaba2d3af612dbbc5d6_html_a29133ed3f28e0aaba2d3af612dbbc5d6a439a40e16153abe158520a9b110fd8bd"><div class="ttname"><a href="namespacepism_a29133ed3f28e0aaba2d3af612dbbc5d6.html#a29133ed3f28e0aaba2d3af612dbbc5d6a439a40e16153abe158520a9b110fd8bd">pism::NODE_EXTERIOR</a></div><div class="ttdeci">@ NODE_EXTERIOR</div><div class="ttdef"><b>Definition:</b> <a href="node__types_8hh_source.html#l00037">node_types.hh:36</a></div></div>
 <div class="ttc" id="anamespacepism_a29133ed3f28e0aaba2d3af612dbbc5d6_html_a29133ed3f28e0aaba2d3af612dbbc5d6a7b96df4f2ad7c1cbd177d46c49af4aab"><div class="ttname"><a href="namespacepism_a29133ed3f28e0aaba2d3af612dbbc5d6.html#a29133ed3f28e0aaba2d3af612dbbc5d6a7b96df4f2ad7c1cbd177d46c49af4aab">pism::NODE_INTERIOR</a></div><div class="ttdeci">@ NODE_INTERIOR</div><div class="ttdef"><b>Definition:</b> <a href="node__types_8hh_source.html#l00034">node_types.hh:34</a></div></div>
-<div class="ttc" id="anamespacepism_afcb643623869bb1ec4431939fff006ee_html_afcb643623869bb1ec4431939fff006ee"><div class="ttname"><a href="namespacepism_afcb643623869bb1ec4431939fff006ee.html#afcb643623869bb1ec4431939fff006ee">pism::compute_node_types</a></div><div class="ttdeci">void compute_node_types(const IceModelVec2S &amp;ice_thickness, double thickness_threshold, IceModelVec2Int &amp;result)</div><div class="ttdef"><b>Definition:</b> <a href="node__types_8cc_source.html#l00061">node_types.cc:61</a></div></div>
-<div class="ttc" id="anamespacepism_html"><div class="ttname"><a href="namespacepism.html">pism</a></div><div class="ttdef"><b>Definition:</b> <a href="AgeColumnSystem_8cc_source.html#l00024">AgeColumnSystem.cc:24</a></div></div>
+<div class="ttc" id="anamespacepism_a38593a68e4249fdcba75b97492d6a32a_html_a38593a68e4249fdcba75b97492d6a32a"><div class="ttname"><a href="namespacepism_a38593a68e4249fdcba75b97492d6a32a.html#a38593a68e4249fdcba75b97492d6a32a">pism::compute_node_types</a></div><div class="ttdeci">void compute_node_types(const array::Scalar1 &amp;ice_thickness, double thickness_threshold, array::Scalar &amp;result)</div><div class="ttdef"><b>Definition:</b> <a href="node__types_8cc_source.html#l00062">node_types.cc:62</a></div></div>
+<div class="ttc" id="anamespacepism_html"><div class="ttname"><a href="namespacepism.html">pism</a></div><div class="ttdef"><b>Definition:</b> <a href="AgeColumnSystem_8cc_source.html#l00023">AgeColumnSystem.cc:23</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

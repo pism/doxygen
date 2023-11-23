@@ -1,3 +1,4 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classpism_1_1AccessList.html" title="Makes sure that we call begin_access() and end_access() for all accessed IceModelVecs." alt="" coords="5,5,136,32"/>
+<area shape="rect" id="node1" href="$classModelCreator.html" title=" " alt="" coords="5,13,116,39"/>
+<area shape="rect" id="node2" href="$classpism_1_1surface_1_1Factory_1_1SurfaceModelCreator.html" title=" " alt="" coords="164,5,373,47"/>
 </map>

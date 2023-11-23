@@ -1,7 +1,7 @@
 <map id="pism::inverse::IP_H1NormFunctional2S" name="pism::inverse::IP_H1NormFunctional2S">
-<area shape="rect" id="node1" title="Implements a functional corresponding to (the square of) an &#160;norm of a scalar valued function." alt="" coords="1044,35,1235,76"/>
-<area shape="rect" id="node2" href="$classpism_1_1inverse_1_1IPInnerProductFunctional.html" title=" " alt="" coords="777,35,995,76"/>
-<area shape="rect" id="node3" href="$classpism_1_1inverse_1_1IPFunctional.html" title=" " alt="" coords="391,5,589,47"/>
+<area shape="rect" id="node1" title="Implements a functional corresponding to (the square of) an &#160;norm of a scalar valued function." alt="" coords="1004,35,1195,76"/>
+<area shape="rect" id="node2" href="$classpism_1_1inverse_1_1IPInnerProductFunctional.html" title=" " alt="" coords="743,35,955,76"/>
+<area shape="rect" id="node3" href="$classpism_1_1inverse_1_1IPFunctional.html" title=" " alt="" coords="374,5,571,47"/>
 <area shape="rect" id="node4" href="$classpism_1_1inverse_1_1IPFunctional.html" title="Abstract base class for functions from ice model vectors to ." alt="" coords="5,39,203,80"/>
-<area shape="rect" id="node5" href="$classpism_1_1inverse_1_1IPInnerProductFunctional.html" title="Abstract base class for IPFunctionals arising from an inner product." alt="" coords="384,71,596,112"/>
+<area shape="rect" id="node5" href="$classpism_1_1inverse_1_1IPInnerProductFunctional.html" title="Abstract base class for IPFunctionals arising from an inner product." alt="" coords="367,71,579,112"/>
 </map>

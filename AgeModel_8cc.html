@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PISM, A Parallel Ice Sheet Model
-   &#160;<span id="projectnumber">stable v2.0.7 committed by Constantine Khrulev on 2023-11-21 12:49:11 -0900</span>
+   &#160;<span id="projectnumber">stable v2.1 committed by Constantine Khrulev on 2023-11-23 11:24:22 -0900</span>
    </div>
   </td>
  </tr>
@@ -81,11 +81,11 @@ $(function() {
 <div class="title">AgeModel.cc File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="AgeModel_8hh_source.html">AgeModel.hh</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;pism/age/AgeModel.hh&quot;</code><br />
 <code>#include &quot;pism/age/AgeColumnSystem.hh&quot;</code><br />
 <code>#include &quot;pism/util/error_handling.hh&quot;</code><br />
-<code>#include &quot;pism/util/Vars.hh&quot;</code><br />
 <code>#include &quot;pism/util/io/File.hh&quot;</code><br />
+<code>#include &lt;memory&gt;</code><br />
 </div>
 <p><a href="AgeModel_8cc_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -96,8 +96,8 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ae2464f29fd18cde79c728a9ef1081a72"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_ae2464f29fd18cde79c728a9ef1081a72.html#ae2464f29fd18cde79c728a9ef1081a72">pism::check_input</a> (const IceModelVec *ptr, const char *name)</td></tr>
-<tr class="separator:ae2464f29fd18cde79c728a9ef1081a72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41f7a488ef733f2b1e3575cadc5e8dc2"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_a41f7a488ef733f2b1e3575cadc5e8dc2.html#a41f7a488ef733f2b1e3575cadc5e8dc2">pism::check_input</a> (const array::Array *ptr, const char *name)</td></tr>
+<tr class="separator:a41f7a488ef733f2b1e3575cadc5e8dc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->

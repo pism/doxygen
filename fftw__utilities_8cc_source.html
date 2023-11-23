@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PISM, A Parallel Ice Sheet Model
-   &#160;<span id="projectnumber">stable v2.0.7 committed by Constantine Khrulev on 2023-11-21 12:49:11 -0900</span>
+   &#160;<span id="projectnumber">stable v2.1 committed by Constantine Khrulev on 2023-11-23 11:24:22 -0900</span>
    </div>
   </td>
  </tr>
@@ -78,7 +78,7 @@ $(function() {
 <div class="title">fftw_utilities.cc</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="fftw__utilities_8cc.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/* Copyright (C) 2018, 2019, 2020, 2021 PISM Authors</span></div>
+<a href="fftw__utilities_8cc.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/* Copyright (C) 2018, 2019, 2020, 2021, 2023 PISM Authors</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * This file is part of PISM.</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> *</span></div>
@@ -99,7 +99,7 @@ $(function() {
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &lt;cstring&gt;</span>              <span class="comment">// memcpy</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="fftw__utilities_8hh.html">fftw_utilities.hh</a>&quot;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;pism/util/fftw_utilities.hh&quot;</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;pism/util/petscwrappers/Vec.hh&quot;</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
@@ -207,13 +207,12 @@ $(function() {
 <div class="ttc" id="aclasspism_1_1FFTWArray_html"><div class="ttname"><a href="classpism_1_1FFTWArray.html">pism::FFTWArray</a></div><div class="ttdef"><b>Definition:</b> <a href="fftw__utilities_8hh_source.html#l00040">fftw_utilities.hh:40</a></div></div>
 <div class="ttc" id="aclasspism_1_1petsc_1_1VecArray2D_html"><div class="ttname"><a href="classpism_1_1petsc_1_1VecArray2D.html">pism::petsc::VecArray2D</a></div><div class="ttdoc">Wrapper around VecGetArray2d and VecRestoreArray2d.</div><div class="ttdef"><b>Definition:</b> <a href="Vec_8hh_source.html#l00055">Vec.hh:55</a></div></div>
 <div class="ttc" id="aclasspism_1_1petsc_1_1Vec_html"><div class="ttname"><a href="classpism_1_1petsc_1_1Vec.html">pism::petsc::Vec</a></div><div class="ttdef"><b>Definition:</b> <a href="Vec_8hh_source.html#l00036">Vec.hh:36</a></div></div>
-<div class="ttc" id="afftw__utilities_8hh_html"><div class="ttname"><a href="fftw__utilities_8hh.html">fftw_utilities.hh</a></div></div>
 <div class="ttc" id="anamespacepism_a2c4bc7484c7e81b1b4b4c9d01efc2f7c_html_a2c4bc7484c7e81b1b4b4c9d01efc2f7c"><div class="ttname"><a href="namespacepism_a2c4bc7484c7e81b1b4b4c9d01efc2f7c.html#a2c4bc7484c7e81b1b4b4c9d01efc2f7c">pism::clear_fftw_array</a></div><div class="ttdeci">void clear_fftw_array(fftw_complex *input, int Nx, int Ny)</div><div class="ttdoc">Fill input with zeros.</div><div class="ttdef"><b>Definition:</b> <a href="fftw__utilities_8cc_source.html#l00069">fftw_utilities.cc:69</a></div></div>
 <div class="ttc" id="anamespacepism_a9886af16d39e97b7d40b14c3ca4570d2_html_a9886af16d39e97b7d40b14c3ca4570d2"><div class="ttname"><a href="namespacepism_a9886af16d39e97b7d40b14c3ca4570d2.html#a9886af16d39e97b7d40b14c3ca4570d2">pism::copy_fftw_array</a></div><div class="ttdeci">void copy_fftw_array(fftw_complex *source, fftw_complex *destination, int Nx, int Ny)</div><div class="ttdoc">Copy source to destination.</div><div class="ttdef"><b>Definition:</b> <a href="fftw__utilities_8cc_source.html#l00079">fftw_utilities.cc:79</a></div></div>
 <div class="ttc" id="anamespacepism_aba2afaa603d56c7bbe6306f03d646d2a_html_aba2afaa603d56c7bbe6306f03d646d2a"><div class="ttname"><a href="namespacepism_aba2afaa603d56c7bbe6306f03d646d2a.html#aba2afaa603d56c7bbe6306f03d646d2a">pism::get_real_part</a></div><div class="ttdeci">void get_real_part(fftw_complex *input, double normalization, int Mx, int My, int Nx, int Ny, int i0, int j0, petsc::Vec &amp;output)</div><div class="ttdoc">Get the real part of input and put it in output.</div><div class="ttdef"><b>Definition:</b> <a href="fftw__utilities_8cc_source.html#l00110">fftw_utilities.cc:110</a></div></div>
 <div class="ttc" id="anamespacepism_abc22c2871f079da2b76a9d2cfb936f57_html_abc22c2871f079da2b76a9d2cfb936f57"><div class="ttname"><a href="namespacepism_abc22c2871f079da2b76a9d2cfb936f57.html#abc22c2871f079da2b76a9d2cfb936f57">pism::set_real_part</a></div><div class="ttdeci">void set_real_part(petsc::Vec &amp;input, double normalization, int Mx, int My, int Nx, int Ny, int i0, int j0, fftw_complex *output)</div><div class="ttdef"><b>Definition:</b> <a href="fftw__utilities_8cc_source.html#l00089">fftw_utilities.cc:89</a></div></div>
 <div class="ttc" id="anamespacepism_aef88c11fa8f9c01d3d5332b2381525ba_html_aef88c11fa8f9c01d3d5332b2381525ba"><div class="ttname"><a href="namespacepism_aef88c11fa8f9c01d3d5332b2381525ba.html#aef88c11fa8f9c01d3d5332b2381525ba">pism::fftfreq</a></div><div class="ttdeci">std::vector&lt; double &gt; fftfreq(int M, double normalization)</div><div class="ttdef"><b>Definition:</b> <a href="fftw__utilities_8cc_source.html#l00047">fftw_utilities.cc:47</a></div></div>
-<div class="ttc" id="anamespacepism_html"><div class="ttname"><a href="namespacepism.html">pism</a></div><div class="ttdef"><b>Definition:</b> <a href="AgeColumnSystem_8cc_source.html#l00024">AgeColumnSystem.cc:24</a></div></div>
+<div class="ttc" id="anamespacepism_html"><div class="ttname"><a href="namespacepism.html">pism</a></div><div class="ttdef"><b>Definition:</b> <a href="AgeColumnSystem_8cc_source.html#l00023">AgeColumnSystem.cc:23</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

@@ -1,3 +1,51 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classpism_1_1units_1_1System.html" title=" " alt="" coords="5,5,156,32"/>
+<area shape="rect" id="node1" href="$classpism_1_1TSDiagnostic.html" title="PISM&#39;s scalar time&#45;series diagnostics." alt="" coords="5,1050,152,1077"/>
+<area shape="rect" id="node2" href="$classpism_1_1TSRateDiagnostic.html" title="Scalar diagnostic reporting the rate of change of a quantity modeled by PISM." alt="" coords="215,621,392,647"/>
+<area shape="rect" id="node25" href="$classpism_1_1TSSnapshotDiagnostic.html" title="Scalar diagnostic reporting a snapshot of a quantity modeled by PISM." alt="" coords="200,1075,407,1102"/>
+<area shape="rect" id="node3" href="$classpism_1_1TSDiag.html" title=" " alt="" coords="455,193,697,235"/>
+<area shape="rect" id="node8" href="$classpism_1_1TSFluxDiagnostic.html" title="Scalar diagnostic reporting a &quot;flux&quot;." alt="" coords="489,621,663,647"/>
+<area shape="rect" id="node4" href="$classpism_1_1diagnostics_1_1scalar_1_1IceMassRateOfChange.html" title="Computes the rate of change of the total ice mass." alt="" coords="757,47,973,88"/>
+<area shape="rect" id="node5" href="$classpism_1_1diagnostics_1_1scalar_1_1IceMassRateOfChangeGlacierized.html" title="Computes the rate of change of the total ice mass in glacierized areas." alt="" coords="757,113,973,169"/>
+<area shape="rect" id="node6" href="$classpism_1_1diagnostics_1_1scalar_1_1IceVolumeRateOfChange.html" title="Computes the rate of change of the total ice volume." alt="" coords="750,193,981,235"/>
+<area shape="rect" id="node7" href="$classpism_1_1diagnostics_1_1scalar_1_1IceVolumeRateOfChangeGlacierized.html" title="Computes the rate of change of the total ice volume in glacierized areas." alt="" coords="750,259,981,315"/>
+<area shape="rect" id="node9" href="$classpism_1_1TSDiag.html" title=" " alt="" coords="745,340,985,381"/>
+<area shape="rect" id="node19" href="$classpism_1_1TSDiag.html" title=" " alt="" coords="745,613,985,655"/>
+<area shape="rect" id="node21" href="$classpism_1_1TSDiag.html" title=" " alt="" coords="745,679,985,720"/>
+<area shape="rect" id="node10" href="$classpism_1_1diagnostics_1_1scalar_1_1IceMassFluxAtGroundingLine.html" title="Reports the total flux across the grounding line." alt="" coords="1033,5,1292,47"/>
+<area shape="rect" id="node11" href="$classpism_1_1diagnostics_1_1scalar_1_1IceMassFluxBasal.html" title="Reports the total bottom surface ice flux." alt="" coords="1069,71,1256,112"/>
+<area shape="rect" id="node12" href="$classpism_1_1diagnostics_1_1scalar_1_1IceMassFluxBasalFloating.html" title="Reports the total sub&#45;shelf ice flux." alt="" coords="1043,136,1282,177"/>
+<area shape="rect" id="node13" href="$classpism_1_1diagnostics_1_1scalar_1_1IceMassFluxBasalGrounded.html" title="Reports the total basal ice flux over the grounded region." alt="" coords="1038,201,1287,243"/>
+<area shape="rect" id="node14" href="$classpism_1_1diagnostics_1_1scalar_1_1IceMassFluxCalving.html" title="Reports the total calving flux." alt="" coords="1063,267,1262,308"/>
+<area shape="rect" id="node15" href="$classpism_1_1diagnostics_1_1scalar_1_1IceMassFluxConservationError.html" title="Reports the total numerical mass flux needed to preserve non&#45;negativity of ice thickness." alt="" coords="1045,333,1281,389"/>
+<area shape="rect" id="node16" href="$classpism_1_1diagnostics_1_1scalar_1_1IceMassFluxDischarge.html" title="Reports the total discharge flux." alt="" coords="1055,413,1270,455"/>
+<area shape="rect" id="node17" href="$classpism_1_1diagnostics_1_1scalar_1_1IceMassFluxSurface.html" title="Reports the total top surface ice flux." alt="" coords="1063,479,1262,520"/>
+<area shape="rect" id="node18" href="$classpism_1_1diagnostics_1_1scalar_1_1IceMassRateOfChangeDueToFlow.html" title="Computes the rate of change of the total ice mass due to flow (influx due to prescribed constant&#45;in&#45;t..." alt="" coords="1055,545,1271,601"/>
+<area shape="rect" id="node20" href="$classpism_1_1energy_1_1LiquifiedIceFlux.html" title="Ice loss &quot;flux&quot; due to ice liquefaction." alt="" coords="1055,625,1271,651"/>
+<area shape="rect" id="node22" href="$classpism_1_1surface_1_1diagnostics_1_1TotalSurfaceAccumulation.html" title="Reports the total accumulation rate." alt="" coords="1063,676,1262,717"/>
+<area shape="rect" id="node23" href="$classpism_1_1surface_1_1diagnostics_1_1TotalSurfaceMelt.html" title="Reports the total melt rate." alt="" coords="1067,741,1259,783"/>
+<area shape="rect" id="node24" href="$classpism_1_1surface_1_1diagnostics_1_1TotalSurfaceRunoff.html" title="Reports the total top surface ice flux." alt="" coords="1067,807,1259,848"/>
+<area shape="rect" id="node26" href="$classpism_1_1TSDiag.html" title=" " alt="" coords="477,1505,675,1547"/>
+<area shape="rect" id="node27" href="$classpism_1_1diagnostics_1_1scalar_1_1IceAreaGlacierized.html" title="Computes the total ice area." alt="" coords="770,744,961,785"/>
+<area shape="rect" id="node28" href="$classpism_1_1diagnostics_1_1scalar_1_1IceAreaGlacierizedColdBase.html" title="Computes the total area of the cold ice." alt="" coords="770,810,961,866"/>
+<area shape="rect" id="node29" href="$classpism_1_1diagnostics_1_1scalar_1_1IceAreaGlacierizedGrounded.html" title="Computes the total grounded ice area." alt="" coords="770,890,961,946"/>
+<area shape="rect" id="node30" href="$classpism_1_1diagnostics_1_1scalar_1_1IceAreaGlacierizedShelf.html" title="Computes the total floating ice area." alt="" coords="770,970,961,1026"/>
+<area shape="rect" id="node31" href="$classpism_1_1diagnostics_1_1scalar_1_1IceAreaGlacierizedTemperateBase.html" title="Computes the total area of the temperate ice." alt="" coords="770,1050,961,1106"/>
+<area shape="rect" id="node32" href="$classpism_1_1diagnostics_1_1scalar_1_1IceEnthalpy.html" title="Computes the total ice enthalpy." alt="" coords="793,1131,938,1172"/>
+<area shape="rect" id="node33" href="$classpism_1_1diagnostics_1_1scalar_1_1IceEnthalpyGlacierized.html" title="Computes the total ice enthalpy in glacierized areas." alt="" coords="756,1196,975,1237"/>
+<area shape="rect" id="node34" href="$classpism_1_1diagnostics_1_1scalar_1_1IceMass.html" title="Computes the total ice mass." alt="" coords="793,1261,937,1303"/>
+<area shape="rect" id="node35" href="$classpism_1_1diagnostics_1_1scalar_1_1IceMassGlacierized.html" title="Computes the total ice mass in glacierized areas." alt="" coords="768,1327,963,1368"/>
+<area shape="rect" id="node36" href="$classpism_1_1diagnostics_1_1scalar_1_1IceMassNotDisplacingSeaWater.html" title="Computes the total mass of the ice not displacing sea water." alt="" coords="759,1393,972,1449"/>
+<area shape="rect" id="node37" href="$classpism_1_1diagnostics_1_1scalar_1_1IceVolume.html" title="Computes the total ice volume." alt="" coords="793,1473,937,1515"/>
+<area shape="rect" id="node38" href="$classpism_1_1diagnostics_1_1scalar_1_1IceVolumeCold.html" title="Computes the total volume of the cold ice." alt="" coords="782,1539,949,1580"/>
+<area shape="rect" id="node39" href="$classpism_1_1diagnostics_1_1scalar_1_1IceVolumeGlacierized.html" title="Computes the total ice volume in glacierized areas." alt="" coords="760,1604,971,1645"/>
+<area shape="rect" id="node40" href="$classpism_1_1diagnostics_1_1scalar_1_1IceVolumeGlacierizedCold.html" title="Computes the total volume of the cold ice in glacierized areas." alt="" coords="746,1669,985,1711"/>
+<area shape="rect" id="node41" href="$classpism_1_1diagnostics_1_1scalar_1_1IceVolumeGlacierizedGrounded.html" title="Computes the total grounded ice volume." alt="" coords="760,1735,971,1791"/>
+<area shape="rect" id="node42" href="$classpism_1_1diagnostics_1_1scalar_1_1IceVolumeGlacierizedShelf.html" title="Computes the total floating ice volume." alt="" coords="760,1815,971,1871"/>
+<area shape="rect" id="node43" href="$classpism_1_1diagnostics_1_1scalar_1_1IceVolumeGlacierizedTemperate.html" title="Computes the total volume of the temperate ice in glacierized areas." alt="" coords="760,1895,971,1951"/>
+<area shape="rect" id="node44" href="$classpism_1_1diagnostics_1_1scalar_1_1IceVolumeTemperate.html" title="Computes the total volume of the temperate ice." alt="" coords="762,1976,969,2017"/>
+<area shape="rect" id="node45" href="$classpism_1_1diagnostics_1_1scalar_1_1MaxDiffusivity.html" title="Reports maximum diffusivity." alt="" coords="783,2041,947,2083"/>
+<area shape="rect" id="node46" href="$classpism_1_1diagnostics_1_1scalar_1_1MaxHorizontalVelocity.html" title="Reports the maximum horizontal absolute velocity component over the grid." alt="" coords="757,2107,973,2148"/>
+<area shape="rect" id="node47" href="$classpism_1_1diagnostics_1_1scalar_1_1SeaLevelRisePotential.html" title="Computes the total ice volume which is relevant for sea&#45;level." alt="" coords="758,2172,973,2213"/>
+<area shape="rect" id="node48" href="$classpism_1_1diagnostics_1_1scalar_1_1TimeStepLength.html" title="Reports the mass continuity time step." alt="" coords="778,2237,953,2279"/>
+<area shape="rect" id="node49" href="$classpism_1_1diagnostics_1_1scalar_1_1TimeStepRatio.html" title="Reports the mass continuity time step." alt="" coords="783,2303,948,2344"/>
 </map>

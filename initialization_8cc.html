@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PISM, A Parallel Ice Sheet Model
-   &#160;<span id="projectnumber">stable v2.0.7 committed by Constantine Khrulev on 2023-11-21 12:49:11 -0900</span>
+   &#160;<span id="projectnumber">stable v2.1 committed by Constantine Khrulev on 2023-11-23 11:24:22 -0900</span>
    </div>
   </td>
  </tr>
@@ -80,11 +80,10 @@ $(function() {
 <div class="title">initialization.cc File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="IceModel_8hh_source.html">IceModel.hh</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;pism/icemodel/IceModel.hh&quot;</code><br />
 <code>#include &quot;pism/basalstrength/ConstantYieldStress.hh&quot;</code><br />
 <code>#include &quot;pism/basalstrength/MohrCoulombYieldStress.hh&quot;</code><br />
 <code>#include &quot;pism/basalstrength/OptTillphiYieldStress.hh&quot;</code><br />
-<code>#include &quot;pism/basalstrength/basal_resistance.hh&quot;</code><br />
 <code>#include &quot;pism/frontretreat/util/IcebergRemover.hh&quot;</code><br />
 <code>#include &quot;pism/frontretreat/util/IcebergRemoverFEM.hh&quot;</code><br />
 <code>#include &quot;pism/frontretreat/calving/CalvingAtThickness.hh&quot;</code><br />
@@ -98,15 +97,10 @@ $(function() {
 <code>#include &quot;pism/hydrology/SteadyState.hh&quot;</code><br />
 <code>#include &quot;pism/hydrology/Distributed.hh&quot;</code><br />
 <code>#include &quot;pism/stressbalance/StressBalance.hh&quot;</code><br />
-<code>#include &quot;pism/stressbalance/sia/SIAFD.hh&quot;</code><br />
-<code>#include &quot;pism/stressbalance/ssa/SSAFD.hh&quot;</code><br />
-<code>#include &quot;pism/stressbalance/ssa/SSAFEM.hh&quot;</code><br />
-<code>#include &quot;pism/util/Mask.hh&quot;</code><br />
 <code>#include &quot;pism/util/ConfigInterface.hh&quot;</code><br />
 <code>#include &quot;pism/util/Time.hh&quot;</code><br />
 <code>#include &quot;pism/util/error_handling.hh&quot;</code><br />
 <code>#include &quot;pism/util/io/File.hh&quot;</code><br />
-<code>#include &quot;pism/util/pism_options.hh&quot;</code><br />
 <code>#include &quot;pism/coupler/OceanModel.hh&quot;</code><br />
 <code>#include &quot;pism/coupler/SurfaceModel.hh&quot;</code><br />
 <code>#include &quot;pism/coupler/atmosphere/Factory.hh&quot;</code><br />
@@ -119,12 +113,11 @@ $(function() {
 <code>#include &quot;pism/earth/LingleClark.hh&quot;</code><br />
 <code>#include &quot;pism/earth/BedDef.hh&quot;</code><br />
 <code>#include &quot;pism/earth/Given.hh&quot;</code><br />
-<code>#include &quot;pism/util/EnthalpyConverter.hh&quot;</code><br />
 <code>#include &quot;pism/util/Vars.hh&quot;</code><br />
-<code>#include &quot;pism/util/io/io_helpers.hh&quot;</code><br />
 <code>#include &quot;pism/util/projection.hh&quot;</code><br />
 <code>#include &quot;pism/util/pism_utilities.hh&quot;</code><br />
 <code>#include &quot;pism/age/AgeModel.hh&quot;</code><br />
+<code>#include &quot;pism/age/Isochrones.hh&quot;</code><br />
 <code>#include &quot;pism/energy/EnthalpyModel.hh&quot;</code><br />
 <code>#include &quot;pism/energy/TemperatureModel.hh&quot;</code><br />
 <code>#include &quot;pism/fracturedensity/FractureDensity.hh&quot;</code><br />
@@ -133,6 +126,9 @@ $(function() {
 <code>#include &quot;pism/coupler/frontalmelt/Factory.hh&quot;</code><br />
 <code>#include &quot;pism/coupler/util/options.hh&quot;</code><br />
 <code>#include &quot;pism/util/ScalarForcing.hh&quot;</code><br />
+<code>#include &quot;pism/stressbalance/ShallowStressBalance.hh&quot;</code><br />
+<code>#include &quot;pism/util/array/Forcing.hh&quot;</code><br />
+<code>#include &lt;memory&gt;</code><br />
 </div>
 <p><a href="initialization_8cc_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">

@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PISM, A Parallel Ice Sheet Model
-   &#160;<span id="projectnumber">stable v2.0.7 committed by Constantine Khrulev on 2023-11-21 12:49:11 -0900</span>
+   &#160;<span id="projectnumber">stable v2.1 committed by Constantine Khrulev on 2023-11-23 11:24:22 -0900</span>
    </div>
   </td>
  </tr>
@@ -121,13 +121,13 @@ $(function() {
 </div><div class="memdoc">
 <p>Define model state variables.</p>
 <p>All yield stress models have to write basal yield stress to output files and read it from and input file during initialization because yield stress may be used by PISM's stress balance model. The stress balance code has to be executed early during an update of the model because its output (ice velocity) is used to compute the maximum allowed time step.</p>
-<p>Now that PISM's yield stress models are time-dependent <a class="el" href="classpism_1_1YieldStress_a8411e9f12d655c88b494b49e94a5a9b0.html#a8411e9f12d655c88b494b49e94a5a9b0">YieldStress::update()</a> will be called <em>after</em> the maximum time step is found. This means that during the first time step <a class="el" href="classpism_1_1YieldStress_a57ad390db2441c2ed82b3daf94b6e398.html#a57ad390db2441c2ed82b3daf94b6e398">basal_material_yield_stress()</a> gets called before <a class="el" href="classpism_1_1YieldStress_a8411e9f12d655c88b494b49e94a5a9b0.html#a8411e9f12d655c88b494b49e94a5a9b0">update()</a>. </p>
+<p>Now that PISM's yield stress models are time-dependent <a class="el" href="classpism_1_1YieldStress_a8411e9f12d655c88b494b49e94a5a9b0.html#a8411e9f12d655c88b494b49e94a5a9b0">YieldStress::update()</a> will be called <em>after</em> the maximum time step is found. This means that during the first time step <a class="el" href="classpism_1_1YieldStress_a7852e359f50bfaf712fe487d03356e51.html#a7852e359f50bfaf712fe487d03356e51">basal_material_yield_stress()</a> gets called before <a class="el" href="classpism_1_1YieldStress_a8411e9f12d655c88b494b49e94a5a9b0.html#a8411e9f12d655c88b494b49e94a5a9b0">update()</a>. </p>
 
 <p>Reimplemented from <a class="el" href="classpism_1_1YieldStress_ae024fe1604a2cd19785d83891a89acc2.html#ae024fe1604a2cd19785d83891a89acc2">pism::YieldStress</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="RegionalYieldStress_8cc_source.html#l00099">99</a> of file <a class="el" href="RegionalYieldStress_8cc_source.html">RegionalYieldStress.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="RegionalYieldStress_8cc_source.html#l00101">101</a> of file <a class="el" href="RegionalYieldStress_8cc_source.html">RegionalYieldStress.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="iceModelVec_8cc_source.html#l00523">pism::IceModelVec::define()</a>, <a class="el" href="YieldStress_8hh_source.html#l00075">pism::YieldStress::m_basal_yield_stress</a>, and <a class="el" href="RegionalYieldStress_8hh_source.html#l00056">m_input</a>.</p>
+<p class="reference">References <a class="el" href="Array_8cc_source.html#l00540">pism::array::Array::define()</a>, <a class="el" href="YieldStress_8hh_source.html#l00074">pism::YieldStress::m_basal_yield_stress</a>, <a class="el" href="RegionalYieldStress_8hh_source.html#l00056">m_input</a>, and <a class="el" href="IO__Flags_8hh_source.html#l00052">pism::io::PISM_DOUBLE</a>.</p>
 
 </div>
 </div>

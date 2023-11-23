@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['listener_9281',['Listener',['../classpism_1_1inverse_1_1IP__SSATaucTaoTikhonovProblemLCL_ae8f52d5c305cc3d7dbe4120a8f80d638.html#ae8f52d5c305cc3d7dbe4120a8f80d638',1,'pism::inverse::IP_SSATaucTaoTikhonovProblemLCL']]],
-  ['loggerptr_9282',['LoggerPtr',['../classpism_1_1Context_aaf95e1953a55f9ab952b90843637510e.html#aaf95e1953a55f9ab952b90843637510e',1,'pism::Context']]]
+  ['metadata_9660',['Metadata',['../namespacepism_ae1d57de4f2e675f3f5051da9ab0c99f7.html#ae1d57de4f2e675f3f5051da9ab0c99f7',1,'pism']]],
+  ['midfluxapproximation_9661',['MidFluxApproximation',['../classpism_1_1UNO_a88b8496c09d19ac437bb824e2590efd3.html#a88b8496c09d19ac437bb824e2590efd3',1,'pism::UNO']]]
 ];

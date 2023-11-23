@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PISM, A Parallel Ice Sheet Model
-   &#160;<span id="projectnumber">stable v2.0.7 committed by Constantine Khrulev on 2023-11-21 12:49:11 -0900</span>
+   &#160;<span id="projectnumber">stable v2.1 committed by Constantine Khrulev on 2023-11-23 11:24:22 -0900</span>
    </div>
   </td>
  </tr>
@@ -78,7 +78,7 @@ $(function() {
 <div class="title">Factory.cc</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="atmosphere_2Factory_8cc.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/* Copyright (C) 2015, 2017, 2018, 2019, 2020 PISM Authors</span></div>
+<a href="atmosphere_2Factory_8cc.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/* Copyright (C) 2015, 2017, 2018, 2019, 2020, 2023 PISM Authors</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * This file is part of PISM.</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> *</span></div>
@@ -97,29 +97,29 @@ $(function() {
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="surface_2Factory_8hh.html">Factory.hh</a>&quot;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;pism/coupler/atmosphere/Factory.hh&quot;</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">// atmosphere models:</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="surface_2GivenClimate_8hh.html">GivenClimate.hh</a>&quot;</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="surface_2ElevationChange_8hh.html">ElevationChange.hh</a>&quot;</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="SeariseGreenland_8hh.html">SeariseGreenland.hh</a>&quot;</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="surface_2Delta__T_8hh.html">Delta_T.hh</a>&quot;</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Delta__P_8hh.html">Delta_P.hh</a>&quot;</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Frac__P_8hh.html">Frac_P.hh</a>&quot;</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="PrecipitationScaling_8hh.html">PrecipitationScaling.hh</a>&quot;</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="PIK_8hh.html">PIK.hh</a>&quot;</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="surface_2Anomaly_8hh.html">Anomaly.hh</a>&quot;</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="CosineYearlyCycle_8hh.html">CosineYearlyCycle.hh</a>&quot;</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="WeatherStation_8hh.html">WeatherStation.hh</a>&quot;</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Uniform_8hh.html">Uniform.hh</a>&quot;</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="OrographicPrecipitation_8hh.html">OrographicPrecipitation.hh</a>&quot;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;pism/coupler/atmosphere/GivenClimate.hh&quot;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;pism/coupler/atmosphere/ElevationChange.hh&quot;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &quot;pism/coupler/atmosphere/SeariseGreenland.hh&quot;</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &quot;pism/coupler/atmosphere/Delta_T.hh&quot;</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &quot;pism/coupler/atmosphere/Delta_P.hh&quot;</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &quot;pism/coupler/atmosphere/Frac_P.hh&quot;</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &quot;pism/coupler/atmosphere/PrecipitationScaling.hh&quot;</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;pism/coupler/atmosphere/PIK.hh&quot;</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;pism/coupler/atmosphere/Anomaly.hh&quot;</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;pism/coupler/atmosphere/CosineYearlyCycle.hh&quot;</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &quot;pism/coupler/atmosphere/WeatherStation.hh&quot;</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &quot;pism/coupler/atmosphere/Uniform.hh&quot;</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &quot;pism/coupler/atmosphere/OrographicPrecipitation.hh&quot;</span></div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacepism.html">pism</a> {</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">namespace </span>atmosphere {</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment">// Atmosphere</span></div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="classpism_1_1atmosphere_1_1Factory_a69eef6b6f31e53250eeecb52bce38715.html#a69eef6b6f31e53250eeecb52bce38715">   42</a></span>&#160;<a class="code" href="classpism_1_1atmosphere_1_1Factory_a69eef6b6f31e53250eeecb52bce38715.html#a69eef6b6f31e53250eeecb52bce38715">Factory::Factory</a>(<a class="code" href="classpism_1_1IceGrid_aa59b13ca1f14efc1555016e2b8a8b1ac.html#aa59b13ca1f14efc1555016e2b8a8b1ac">IceGrid::ConstPtr</a> <a class="code" href="namespacepism_a47d754ed3e959d5866b02a1b78b6a5b5.html#a47d754ed3e959d5866b02a1b78b6a5b5">g</a>)</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="classpism_1_1atmosphere_1_1Factory_a3fd8868ef2a8c399e11f5ed139eb1ebd.html#a3fd8868ef2a8c399e11f5ed139eb1ebd">   42</a></span>&#160;<a class="code" href="classpism_1_1atmosphere_1_1Factory_a3fd8868ef2a8c399e11f5ed139eb1ebd.html#a3fd8868ef2a8c399e11f5ed139eb1ebd">Factory::Factory</a>(std::shared_ptr&lt;const Grid&gt; <a class="code" href="namespacepism_a47d754ed3e959d5866b02a1b78b6a5b5.html#a47d754ed3e959d5866b02a1b78b6a5b5">g</a>)</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  : <a class="code" href="classpism_1_1PCFactory.html">PCFactory</a>&lt;<a class="code" href="classpism_1_1atmosphere_1_1AtmosphereModel.html">AtmosphereModel</a>&gt;(<a class="code" href="namespacepism_a47d754ed3e959d5866b02a1b78b6a5b5.html#a47d754ed3e959d5866b02a1b78b6a5b5">g</a>, <span class="stringliteral">&quot;atmosphere.models&quot;</span>) {</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  add_model&lt;PIK&gt;(<span class="stringliteral">&quot;pik&quot;</span>);</div>
@@ -140,26 +140,11 @@ $(function() {
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;} <span class="comment">// end of namespace atmosphere</span></div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;} <span class="comment">// end of namespace pism</span></div>
-<div class="ttc" id="aCosineYearlyCycle_8hh_html"><div class="ttname"><a href="CosineYearlyCycle_8hh.html">CosineYearlyCycle.hh</a></div></div>
-<div class="ttc" id="aDelta__P_8hh_html"><div class="ttname"><a href="Delta__P_8hh.html">Delta_P.hh</a></div></div>
-<div class="ttc" id="aFrac__P_8hh_html"><div class="ttname"><a href="Frac__P_8hh.html">Frac_P.hh</a></div></div>
-<div class="ttc" id="aOrographicPrecipitation_8hh_html"><div class="ttname"><a href="OrographicPrecipitation_8hh.html">OrographicPrecipitation.hh</a></div></div>
-<div class="ttc" id="aPIK_8hh_html"><div class="ttname"><a href="PIK_8hh.html">PIK.hh</a></div></div>
-<div class="ttc" id="aPrecipitationScaling_8hh_html"><div class="ttname"><a href="PrecipitationScaling_8hh.html">PrecipitationScaling.hh</a></div></div>
-<div class="ttc" id="aSeariseGreenland_8hh_html"><div class="ttname"><a href="SeariseGreenland_8hh.html">SeariseGreenland.hh</a></div></div>
-<div class="ttc" id="aUniform_8hh_html"><div class="ttname"><a href="Uniform_8hh.html">Uniform.hh</a></div></div>
-<div class="ttc" id="aWeatherStation_8hh_html"><div class="ttname"><a href="WeatherStation_8hh.html">WeatherStation.hh</a></div></div>
-<div class="ttc" id="aclasspism_1_1IceGrid_aa59b13ca1f14efc1555016e2b8a8b1ac_html_aa59b13ca1f14efc1555016e2b8a8b1ac"><div class="ttname"><a href="classpism_1_1IceGrid_aa59b13ca1f14efc1555016e2b8a8b1ac.html#aa59b13ca1f14efc1555016e2b8a8b1ac">pism::IceGrid::ConstPtr</a></div><div class="ttdeci">std::shared_ptr&lt; const IceGrid &gt; ConstPtr</div><div class="ttdef"><b>Definition:</b> <a href="IceGrid_8hh_source.html#l00233">IceGrid.hh:233</a></div></div>
 <div class="ttc" id="aclasspism_1_1PCFactory_html"><div class="ttname"><a href="classpism_1_1PCFactory.html">pism::PCFactory</a></div><div class="ttdef"><b>Definition:</b> <a href="PCFactory_8hh_source.html#l00034">PCFactory.hh:34</a></div></div>
-<div class="ttc" id="aclasspism_1_1atmosphere_1_1AtmosphereModel_html"><div class="ttname"><a href="classpism_1_1atmosphere_1_1AtmosphereModel.html">pism::atmosphere::AtmosphereModel</a></div><div class="ttdoc">A purely virtual class defining the interface of a PISM Atmosphere Model.</div><div class="ttdef"><b>Definition:</b> <a href="AtmosphereModel_8hh_source.html#l00036">AtmosphereModel.hh:36</a></div></div>
-<div class="ttc" id="aclasspism_1_1atmosphere_1_1Factory_a69eef6b6f31e53250eeecb52bce38715_html_a69eef6b6f31e53250eeecb52bce38715"><div class="ttname"><a href="classpism_1_1atmosphere_1_1Factory_a69eef6b6f31e53250eeecb52bce38715.html#a69eef6b6f31e53250eeecb52bce38715">pism::atmosphere::Factory::Factory</a></div><div class="ttdeci">Factory(IceGrid::ConstPtr g)</div><div class="ttdef"><b>Definition:</b> <a href="atmosphere_2Factory_8cc_source.html#l00042">Factory.cc:42</a></div></div>
-<div class="ttc" id="anamespacepism_a47d754ed3e959d5866b02a1b78b6a5b5_html_a47d754ed3e959d5866b02a1b78b6a5b5"><div class="ttname"><a href="namespacepism_a47d754ed3e959d5866b02a1b78b6a5b5.html#a47d754ed3e959d5866b02a1b78b6a5b5">pism::g</a></div><div class="ttdeci">static const double g</div><div class="ttdef"><b>Definition:</b> <a href="exactTestP_8cc_source.html#l00039">exactTestP.cc:39</a></div></div>
-<div class="ttc" id="anamespacepism_html"><div class="ttname"><a href="namespacepism.html">pism</a></div><div class="ttdef"><b>Definition:</b> <a href="AgeColumnSystem_8cc_source.html#l00024">AgeColumnSystem.cc:24</a></div></div>
-<div class="ttc" id="asurface_2Anomaly_8hh_html"><div class="ttname"><a href="surface_2Anomaly_8hh.html">Anomaly.hh</a></div></div>
-<div class="ttc" id="asurface_2Delta__T_8hh_html"><div class="ttname"><a href="surface_2Delta__T_8hh.html">Delta_T.hh</a></div></div>
-<div class="ttc" id="asurface_2ElevationChange_8hh_html"><div class="ttname"><a href="surface_2ElevationChange_8hh.html">ElevationChange.hh</a></div></div>
-<div class="ttc" id="asurface_2Factory_8hh_html"><div class="ttname"><a href="surface_2Factory_8hh.html">Factory.hh</a></div></div>
-<div class="ttc" id="asurface_2GivenClimate_8hh_html"><div class="ttname"><a href="surface_2GivenClimate_8hh.html">GivenClimate.hh</a></div></div>
+<div class="ttc" id="aclasspism_1_1atmosphere_1_1AtmosphereModel_html"><div class="ttname"><a href="classpism_1_1atmosphere_1_1AtmosphereModel.html">pism::atmosphere::AtmosphereModel</a></div><div class="ttdoc">A purely virtual class defining the interface of a PISM Atmosphere Model.</div><div class="ttdef"><b>Definition:</b> <a href="AtmosphereModel_8hh_source.html#l00033">AtmosphereModel.hh:33</a></div></div>
+<div class="ttc" id="aclasspism_1_1atmosphere_1_1Factory_a3fd8868ef2a8c399e11f5ed139eb1ebd_html_a3fd8868ef2a8c399e11f5ed139eb1ebd"><div class="ttname"><a href="classpism_1_1atmosphere_1_1Factory_a3fd8868ef2a8c399e11f5ed139eb1ebd.html#a3fd8868ef2a8c399e11f5ed139eb1ebd">pism::atmosphere::Factory::Factory</a></div><div class="ttdeci">Factory(std::shared_ptr&lt; const Grid &gt; g)</div><div class="ttdef"><b>Definition:</b> <a href="atmosphere_2Factory_8cc_source.html#l00042">Factory.cc:42</a></div></div>
+<div class="ttc" id="anamespacepism_a47d754ed3e959d5866b02a1b78b6a5b5_html_a47d754ed3e959d5866b02a1b78b6a5b5"><div class="ttname"><a href="namespacepism_a47d754ed3e959d5866b02a1b78b6a5b5.html#a47d754ed3e959d5866b02a1b78b6a5b5">pism::g</a></div><div class="ttdeci">static const double g</div><div class="ttdef"><b>Definition:</b> <a href="exactTestP_8cc_source.html#l00036">exactTestP.cc:36</a></div></div>
+<div class="ttc" id="anamespacepism_html"><div class="ttname"><a href="namespacepism.html">pism</a></div><div class="ttdef"><b>Definition:</b> <a href="AgeColumnSystem_8cc_source.html#l00023">AgeColumnSystem.cc:23</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

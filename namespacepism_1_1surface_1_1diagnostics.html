@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PISM, A Parallel Ice Sheet Model
-   &#160;<span id="projectnumber">stable v2.0.7 committed by Constantine Khrulev on 2023-11-21 12:49:11 -0900</span>
+   &#160;<span id="projectnumber">stable v2.1 committed by Constantine Khrulev on 2023-11-23 11:24:22 -0900</span>
    </div>
   </td>
  </tr>
@@ -85,6 +85,18 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpism_1_1surface_1_1diagnostics_1_1DEBMSInsolation.html">DEBMSInsolation</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Report mean top of atmosphere insolation.  <a href="classpism_1_1surface_1_1diagnostics_1_1DEBMSInsolation.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpism_1_1surface_1_1diagnostics_1_1DEBMSInsolationMelt.html">DEBMSInsolationMelt</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Report surface insolation melt, averaged over the reporting interval.  <a href="classpism_1_1surface_1_1diagnostics_1_1DEBMSInsolationMelt.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpism_1_1surface_1_1diagnostics_1_1DEBMSTemperatureMelt.html">DEBMSTemperatureMelt</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Report surface temperature melt, averaged over the reporting interval.  <a href="classpism_1_1surface_1_1diagnostics_1_1DEBMSTemperatureMelt.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpism_1_1surface_1_1diagnostics_1_1DEBMSBackroundMelt.html">DEBMSBackroundMelt</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Report surface backround melt, averaged over the reporting interval.  <a href="classpism_1_1surface_1_1diagnostics_1_1DEBMSBackroundMelt.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpism_1_1surface_1_1diagnostics_1_1SMBAdjustment.html">SMBAdjustment</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpism_1_1surface_1_1diagnostics_1_1PS__climatic__mass__balance.html">PS_climatic_mass_balance</a></td></tr>
@@ -123,15 +135,23 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:acadff920eb40e3febfa8f0cbd19b2986"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_1_1surface_1_1diagnostics_acadff920eb40e3febfa8f0cbd19b2986.html#acadff920eb40e3febfa8f0cbd19b2986">AmountKind</a> { <a class="el" href="namespacepism_1_1surface_1_1diagnostics_acadff920eb40e3febfa8f0cbd19b2986.html#acadff920eb40e3febfa8f0cbd19b2986a2752545c626206f384856751a4a62c35">AMOUNT</a>
-, <a class="el" href="namespacepism_1_1surface_1_1diagnostics_acadff920eb40e3febfa8f0cbd19b2986.html#acadff920eb40e3febfa8f0cbd19b2986a2956227867586d3dcbd911a5e47b13f3">MASS</a>
+<tr class="memitem:acadff920eb40e3febfa8f0cbd19b2986"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_1_1surface_1_1diagnostics_acadff920eb40e3febfa8f0cbd19b2986.html#acadff920eb40e3febfa8f0cbd19b2986">AmountKind</a> { <a class="el" href="namespacepism_1_1surface_1_1diagnostics_acadff920eb40e3febfa8f0cbd19b2986.html#acadff920eb40e3febfa8f0cbd19b2986ad6b52059629f1a3bbbbac787b803b93f">AMOUNT</a>
+, <a class="el" href="namespacepism_1_1surface_1_1diagnostics_acadff920eb40e3febfa8f0cbd19b2986.html#acadff920eb40e3febfa8f0cbd19b2986a0a5cd199a02768d6005905118e4e8a0b">MASS</a>
+, <a class="el" href="namespacepism_1_1surface_1_1diagnostics_acadff920eb40e3febfa8f0cbd19b2986.html#acadff920eb40e3febfa8f0cbd19b2986ad6b52059629f1a3bbbbac787b803b93f">AMOUNT</a>
+, <a class="el" href="namespacepism_1_1surface_1_1diagnostics_acadff920eb40e3febfa8f0cbd19b2986.html#acadff920eb40e3febfa8f0cbd19b2986a0a5cd199a02768d6005905118e4e8a0b">MASS</a>
+ }</td></tr>
+<tr class="separator:acadff920eb40e3febfa8f0cbd19b2986"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acadff920eb40e3febfa8f0cbd19b2986"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_1_1surface_1_1diagnostics_acadff920eb40e3febfa8f0cbd19b2986.html#acadff920eb40e3febfa8f0cbd19b2986">AmountKind</a> { <a class="el" href="namespacepism_1_1surface_1_1diagnostics_acadff920eb40e3febfa8f0cbd19b2986.html#acadff920eb40e3febfa8f0cbd19b2986ad6b52059629f1a3bbbbac787b803b93f">AMOUNT</a>
+, <a class="el" href="namespacepism_1_1surface_1_1diagnostics_acadff920eb40e3febfa8f0cbd19b2986.html#acadff920eb40e3febfa8f0cbd19b2986a0a5cd199a02768d6005905118e4e8a0b">MASS</a>
+, <a class="el" href="namespacepism_1_1surface_1_1diagnostics_acadff920eb40e3febfa8f0cbd19b2986.html#acadff920eb40e3febfa8f0cbd19b2986ad6b52059629f1a3bbbbac787b803b93f">AMOUNT</a>
+, <a class="el" href="namespacepism_1_1surface_1_1diagnostics_acadff920eb40e3febfa8f0cbd19b2986.html#acadff920eb40e3febfa8f0cbd19b2986a0a5cd199a02768d6005905118e4e8a0b">MASS</a>
  }</td></tr>
 <tr class="separator:acadff920eb40e3febfa8f0cbd19b2986"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a3761a2499be1649a7daa6258678724a6"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_1_1surface_1_1diagnostics_a3761a2499be1649a7daa6258678724a6.html#a3761a2499be1649a7daa6258678724a6">integrate</a> (const <a class="el" href="classpism_1_1IceModelVec2S.html">IceModelVec2S</a> &amp;input)</td></tr>
-<tr class="separator:a3761a2499be1649a7daa6258678724a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acba2f854fade49a4e39db9125940622f"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_1_1surface_1_1diagnostics_acba2f854fade49a4e39db9125940622f.html#acba2f854fade49a4e39db9125940622f">integrate</a> (const <a class="el" href="classpism_1_1array_1_1Scalar.html">array::Scalar</a> &amp;input)</td></tr>
+<tr class="separator:acba2f854fade49a4e39db9125940622f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->

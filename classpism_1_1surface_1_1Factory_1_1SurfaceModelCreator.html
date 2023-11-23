@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>PISM, A Parallel Ice Sheet Model: pism::surface::Factory::SurfaceModelCreator Class Reference</title>
+<title>PISM, A Parallel Ice Sheet Model: pism::surface::Factory::SurfaceModelCreator&lt; M &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PISM, A Parallel Ice Sheet Model
-   &#160;<span id="projectnumber">stable v2.0.7 committed by Constantine Khrulev on 2023-11-21 12:49:11 -0900</span>
+   &#160;<span id="projectnumber">stable v2.1 committed by Constantine Khrulev on 2023-11-23 11:24:22 -0900</span>
    </div>
   </td>
  </tr>
@@ -76,30 +76,39 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classpism_1_1surface_1_1Factory_1_1SurfaceModelCreator-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">pism::surface::Factory::SurfaceModelCreator Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+<div class="title">pism::surface::Factory::SurfaceModelCreator&lt; M &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for pism::surface::Factory::SurfaceModelCreator:</div>
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for pism::surface::Factory::SurfaceModelCreator&lt; M &gt;:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classpism_1_1surface_1_1Factory_1_1SurfaceModelCreator__inherit__graph.svg" width="270" height="142"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classpism_1_1surface_1_1Factory_1_1SurfaceModelCreator__inherit__graph.svg" width="220" height="127"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a64efe2786b07493b6dfab24b1affc38f"><td class="memItemLeft" align="right" valign="top">virtual std::shared_ptr&lt; <a class="el" href="classpism_1_1surface_1_1SurfaceModel.html">SurfaceModel</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpism_1_1surface_1_1Factory_1_1SurfaceModelCreator_a64efe2786b07493b6dfab24b1affc38f.html#a64efe2786b07493b6dfab24b1affc38f">create</a> (<a class="el" href="classpism_1_1IceGrid_aa59b13ca1f14efc1555016e2b8a8b1ac.html#aa59b13ca1f14efc1555016e2b8a8b1ac">IceGrid::ConstPtr</a> grid, std::shared_ptr&lt; <a class="el" href="classpism_1_1surface_1_1Factory_a5af8b133906290278c92727369f876d1.html#a5af8b133906290278c92727369f876d1">InputModel</a> &gt; input)=0</td></tr>
-<tr class="separator:a64efe2786b07493b6dfab24b1affc38f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e81d3bbb317bf617f5068770b13b212"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpism_1_1surface_1_1Factory_1_1SurfaceModelCreator_a5e81d3bbb317bf617f5068770b13b212.html#a5e81d3bbb317bf617f5068770b13b212">~SurfaceModelCreator</a> ()</td></tr>
-<tr class="separator:a5e81d3bbb317bf617f5068770b13b212"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f99bb08785d7c6fc3e6f69cc4a0afc3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpism_1_1surface_1_1Factory_1_1SurfaceModelCreator_a3f99bb08785d7c6fc3e6f69cc4a0afc3.html#a3f99bb08785d7c6fc3e6f69cc4a0afc3">SurfaceModelCreator</a> (<a class="el" href="classpism_1_1surface_1_1Factory_a625a1812fe021f16319f3575d3c01eed.html#a625a1812fe021f16319f3575d3c01eed">AtmospherePtr</a> input)</td></tr>
+<tr class="separator:a3f99bb08785d7c6fc3e6f69cc4a0afc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82de196bb49160d21697c1d3a2123814"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classpism_1_1surface_1_1SurfaceModel.html">SurfaceModel</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpism_1_1surface_1_1Factory_1_1SurfaceModelCreator_a82de196bb49160d21697c1d3a2123814.html#a82de196bb49160d21697c1d3a2123814">create</a> (std::shared_ptr&lt; const <a class="el" href="classpism_1_1Grid.html">Grid</a> &gt; grid)</td></tr>
+<tr class="separator:a82de196bb49160d21697c1d3a2123814"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a003157fc8f327ffd62e53eb7cc4a45f1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpism_1_1surface_1_1Factory_a625a1812fe021f16319f3575d3c01eed.html#a625a1812fe021f16319f3575d3c01eed">AtmospherePtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpism_1_1surface_1_1Factory_1_1SurfaceModelCreator_a003157fc8f327ffd62e53eb7cc4a45f1.html#a003157fc8f327ffd62e53eb7cc4a45f1">m_input</a></td></tr>
+<tr class="separator:a003157fc8f327ffd62e53eb7cc4a45f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="surface_2Factory_8hh_source.html#l00037">37</a> of file <a class="el" href="surface_2Factory_8hh_source.html">Factory.hh</a>.</p>
+<div class="textblock"><h3>template&lt;class M&gt;<br />
+class pism::surface::Factory::SurfaceModelCreator&lt; M &gt;</h3>
+
+
+<p class="definition">Definition at line <a class="el" href="surface_2Factory_8hh_source.html#l00039">39</a> of file <a class="el" href="surface_2Factory_8hh_source.html">Factory.hh</a>.</p>
 </div><hr/>The documentation for this class was generated from the following file:<ul>
 <li>src/coupler/surface/<a class="el" href="surface_2Factory_8hh_source.html">Factory.hh</a></li>
 </ul>

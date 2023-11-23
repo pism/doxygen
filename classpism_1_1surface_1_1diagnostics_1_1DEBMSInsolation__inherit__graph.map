@@ -1,0 +1,6 @@
+<map id="pism::surface::diagnostics::DEBMSInsolation" name="pism::surface::diagnostics::DEBMSInsolation">
+<area shape="rect" id="node1" title="Report mean top of atmosphere insolation." alt="" coords="13,247,205,288"/>
+<area shape="rect" id="node2" href="$classpism_1_1Diag.html" title=" " alt="" coords="5,171,212,197"/>
+<area shape="rect" id="node3" href="$classpism_1_1Diagnostic.html" title="Class representing diagnostic computations in PISM." alt="" coords="38,5,169,32"/>
+<area shape="rect" id="node4" href="$classpism_1_1Diag.html" title="A template derived from Diagnostic, adding a &quot;Model&quot;." alt="" coords="125,81,287,108"/>
+</map>

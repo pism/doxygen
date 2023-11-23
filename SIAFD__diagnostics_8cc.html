@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PISM, A Parallel Ice Sheet Model
-   &#160;<span id="projectnumber">stable v2.0.7 committed by Constantine Khrulev on 2023-11-21 12:49:11 -0900</span>
+   &#160;<span id="projectnumber">stable v2.1 committed by Constantine Khrulev on 2023-11-23 11:24:22 -0900</span>
    </div>
   </td>
  </tr>
@@ -81,9 +81,10 @@ $(function() {
 <div class="title">SIAFD_diagnostics.cc File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="SIAFD__diagnostics_8hh_source.html">SIAFD_diagnostics.hh</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="BedSmoother_8hh_source.html">BedSmoother.hh</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;pism/stressbalance/sia/SIAFD_diagnostics.hh&quot;</code><br />
+<code>#include &quot;pism/stressbalance/sia/BedSmoother.hh&quot;</code><br />
 <code>#include &quot;pism/util/Vars.hh&quot;</code><br />
+<code>#include &quot;pism/util/array/CellType.hh&quot;</code><br />
 </div>
 <p><a href="SIAFD__diagnostics_8cc_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -97,8 +98,8 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a9b810f47857af415682637ce95907627"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_1_1stressbalance_a9b810f47857af415682637ce95907627.html#a9b810f47857af415682637ce95907627">pism::stressbalance::copy_staggered_vec</a> (const IceModelVec2Stag &amp;input, IceModelVec2Stag &amp;output)</td></tr>
-<tr class="separator:a9b810f47857af415682637ce95907627"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18ebc14f86d5ac336ce73bd1fa09b5c2"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_1_1stressbalance_a18ebc14f86d5ac336ce73bd1fa09b5c2.html#a18ebc14f86d5ac336ce73bd1fa09b5c2">pism::stressbalance::copy_staggered_vec</a> (const array::Staggered &amp;input, array::Staggered &amp;output)</td></tr>
+<tr class="separator:a18ebc14f86d5ac336ce73bd1fa09b5c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->

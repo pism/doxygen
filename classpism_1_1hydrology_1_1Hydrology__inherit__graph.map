@@ -1,8 +1,9 @@
 <map id="pism::hydrology::Hydrology" name="pism::hydrology::Hydrology">
-<area shape="rect" id="node1" title="The PISM subglacial hydrology model interface." alt="" coords="129,80,330,107"/>
-<area shape="rect" id="node3" href="$classpism_1_1hydrology_1_1NullTransport.html" title=" " alt="" coords="6,155,226,181"/>
-<area shape="rect" id="node5" href="$classpism_1_1hydrology_1_1Routing.html" title="A subglacial hydrology model which assumes water pressure equals overburden pressure." alt="" coords="252,155,436,181"/>
-<area shape="rect" id="node2" href="$classpism_1_1Component.html" title="A class defining a common interface for most PISM sub&#45;models." alt="" coords="161,5,298,32"/>
-<area shape="rect" id="node4" href="$classpism_1_1hydrology_1_1SteadyState.html" title=" " alt="" coords="5,229,219,256"/>
-<area shape="rect" id="node6" href="$classpism_1_1hydrology_1_1Distributed.html" title="The PISM subglacial hydrology model for a distributed linked&#45;cavity system." alt="" coords="243,229,450,256"/>
+<area shape="rect" id="node1" title="The PISM subglacial hydrology model interface." alt="" coords="191,93,392,120"/>
+<area shape="rect" id="node3" href="$classpism_1_1hydrology_1_1NullTransport.html" title=" " alt="" coords="440,64,660,91"/>
+<area shape="rect" id="node6" href="$classpism_1_1hydrology_1_1Routing.html" title="A subglacial hydrology model which assumes water pressure equals overburden pressure." alt="" coords="458,119,642,145"/>
+<area shape="rect" id="node2" href="$classpism_1_1Component.html" title="A class defining a common interface for most PISM sub&#45;models." alt="" coords="5,93,143,120"/>
+<area shape="rect" id="node4" href="$classpism_1_1hydrology_1_1SteadyState.html" title=" " alt="" coords="708,5,921,32"/>
+<area shape="rect" id="node5" href="$classpism_1_1icebin_1_1NullTransportHydrology.html" title=" " alt="" coords="717,57,912,98"/>
+<area shape="rect" id="node7" href="$classpism_1_1hydrology_1_1Distributed.html" title="The PISM subglacial hydrology model for a distributed linked&#45;cavity system." alt="" coords="711,123,918,149"/>
 </map>

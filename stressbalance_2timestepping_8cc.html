@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PISM, A Parallel Ice Sheet Model
-   &#160;<span id="projectnumber">stable v2.0.7 committed by Constantine Khrulev on 2023-11-21 12:49:11 -0900</span>
+   &#160;<span id="projectnumber">stable v2.1 committed by Constantine Khrulev on 2023-11-23 11:24:22 -0900</span>
    </div>
   </td>
  </tr>
@@ -81,11 +81,12 @@ $(function() {
 <div class="title">timestepping.cc File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="timestepping_8hh_source.html">timestepping.hh</a>&quot;</code><br />
-<code>#include &quot;pism/util/IceGrid.hh&quot;</code><br />
-<code>#include &quot;pism/util/iceModelVec.hh&quot;</code><br />
-<code>#include &quot;pism/util/IceModelVec2CellType.hh&quot;</code><br />
-<code>#include &quot;pism/util/IceModelVec2V.hh&quot;</code><br />
+<div class="textblock"><code>#include &quot;pism/stressbalance/timestepping.hh&quot;</code><br />
+<code>#include &quot;pism/util/Grid.hh&quot;</code><br />
+<code>#include &quot;pism/util/array/Array3D.hh&quot;</code><br />
+<code>#include &quot;pism/util/array/Scalar.hh&quot;</code><br />
+<code>#include &quot;pism/util/array/CellType.hh&quot;</code><br />
+<code>#include &quot;pism/util/array/Vector.hh&quot;</code><br />
 <code>#include &quot;pism/util/pism_utilities.hh&quot;</code><br />
 <code>#include &quot;pism/util/Context.hh&quot;</code><br />
 </div>
@@ -98,12 +99,14 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a67e16373ffd30a88084f7308d942d34a"><td class="memItemLeft" align="right" valign="top">CFLData&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_a67e16373ffd30a88084f7308d942d34a.html#a67e16373ffd30a88084f7308d942d34a">pism::max_timestep_cfl_3d</a> (const IceModelVec2S &amp;ice_thickness, const IceModelVec2CellType &amp;cell_type, const IceModelVec3 &amp;u3, const IceModelVec3 &amp;v3, const IceModelVec3 &amp;w3)</td></tr>
-<tr class="memdesc:a67e16373ffd30a88084f7308d942d34a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the maximum velocities for time-stepping and reporting to user.  <a href="namespacepism_a67e16373ffd30a88084f7308d942d34a.html#a67e16373ffd30a88084f7308d942d34a">More...</a><br /></td></tr>
-<tr class="separator:a67e16373ffd30a88084f7308d942d34a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e18722e24b6ab982d4034b5ee4bdc42"><td class="memItemLeft" align="right" valign="top">CFLData&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_a5e18722e24b6ab982d4034b5ee4bdc42.html#a5e18722e24b6ab982d4034b5ee4bdc42">pism::max_timestep_cfl_2d</a> (const IceModelVec2S &amp;ice_thickness, const IceModelVec2CellType &amp;cell_type, const IceModelVec2V &amp;velocity)</td></tr>
-<tr class="memdesc:a5e18722e24b6ab982d4034b5ee4bdc42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the CFL constant associated to first-order upwinding for the sliding contribution to mass continuity.  <a href="namespacepism_a5e18722e24b6ab982d4034b5ee4bdc42.html#a5e18722e24b6ab982d4034b5ee4bdc42">More...</a><br /></td></tr>
-<tr class="separator:a5e18722e24b6ab982d4034b5ee4bdc42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a923ac8ab6ef3dd218cf2a59722b687f5"><td class="memItemLeft" align="right" valign="top">CFLData&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_a923ac8ab6ef3dd218cf2a59722b687f5.html#a923ac8ab6ef3dd218cf2a59722b687f5">pism::max_timestep_cfl_3d</a> (const array::Scalar &amp;ice_thickness, const array::CellType &amp;cell_type, const array::Array3D &amp;u3, const array::Array3D &amp;v3, const array::Array3D &amp;w3)</td></tr>
+<tr class="memdesc:a923ac8ab6ef3dd218cf2a59722b687f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the maximum velocities for time-stepping and reporting to user.  <a href="namespacepism_a923ac8ab6ef3dd218cf2a59722b687f5.html#a923ac8ab6ef3dd218cf2a59722b687f5">More...</a><br /></td></tr>
+<tr class="separator:a923ac8ab6ef3dd218cf2a59722b687f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a220f4103c27361d02238e5a48b1af4c5"><td class="memItemLeft" align="right" valign="top">CFLData&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_a220f4103c27361d02238e5a48b1af4c5.html#a220f4103c27361d02238e5a48b1af4c5">pism::max_timestep_cfl_2d</a> (const array::Scalar &amp;ice_thickness, const array::CellType &amp;cell_type, const array::Vector &amp;velocity)</td></tr>
+<tr class="memdesc:a220f4103c27361d02238e5a48b1af4c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the CFL constant associated to first-order upwinding for the sliding contribution to mass continuity.  <a href="namespacepism_a220f4103c27361d02238e5a48b1af4c5.html#a220f4103c27361d02238e5a48b1af4c5">More...</a><br /></td></tr>
+<tr class="separator:a220f4103c27361d02238e5a48b1af4c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0fa85ae3c6071067da3392428f36dca"><td class="memItemLeft" align="right" valign="top">MaxTimestep&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_aa0fa85ae3c6071067da3392428f36dca.html#aa0fa85ae3c6071067da3392428f36dca">pism::max_timestep_diffusivity</a> (double D_max, double dx, double dy, double adaptive_timestepping_ratio)</td></tr>
+<tr class="separator:aa0fa85ae3c6071067da3392428f36dca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->

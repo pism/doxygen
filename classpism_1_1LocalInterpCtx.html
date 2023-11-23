@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PISM, A Parallel Ice Sheet Model
-   &#160;<span id="projectnumber">stable v2.0.7 committed by Constantine Khrulev on 2023-11-21 12:49:11 -0900</span>
+   &#160;<span id="projectnumber">stable v2.1 committed by Constantine Khrulev on 2023-11-23 11:24:22 -0900</span>
    </div>
   </td>
  </tr>
@@ -83,43 +83,41 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>The "local interpolation context" describes the processor's part of the source NetCDF file (for regridding).  
- <a href="classpism_1_1LocalInterpCtx.html#details">More...</a></p>
-
 <p><code>#include &lt;<a class="el" href="LocalInterpCtx_8hh_source.html">LocalInterpCtx.hh</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a2b9f77727651214fcf60774806fe7d27"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpism_1_1LocalInterpCtx_a2b9f77727651214fcf60774806fe7d27.html#a2b9f77727651214fcf60774806fe7d27">LocalInterpCtx</a> (const <a class="el" href="classpism_1_1grid__info.html">grid_info</a> &amp;input, const <a class="el" href="classpism_1_1IceGrid.html">IceGrid</a> &amp;grid, const std::vector&lt; double &gt; &amp;z_output, <a class="el" href="namespacepism_ae50e2208404456d7dcfdca1da2484d23.html#ae50e2208404456d7dcfdca1da2484d23">InterpolationType</a> type)</td></tr>
-<tr class="memdesc:a2b9f77727651214fcf60774806fe7d27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a local interpolation context.  <a href="classpism_1_1LocalInterpCtx_a2b9f77727651214fcf60774806fe7d27.html#a2b9f77727651214fcf60774806fe7d27">More...</a><br /></td></tr>
-<tr class="separator:a2b9f77727651214fcf60774806fe7d27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8bae3d4e2033dec7a6d385d7d37939e6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpism_1_1LocalInterpCtx_a8bae3d4e2033dec7a6d385d7d37939e6.html#a8bae3d4e2033dec7a6d385d7d37939e6">LocalInterpCtx</a> (const <a class="el" href="classpism_1_1grid_1_1InputGridInfo.html">grid::InputGridInfo</a> &amp;input_grid, const <a class="el" href="classpism_1_1Grid.html">Grid</a> &amp;internal_grid, <a class="el" href="namespacepism_a3415cf6a7a4530c4e489feebe6365e03.html#a3415cf6a7a4530c4e489feebe6365e03">InterpolationType</a> type)</td></tr>
+<tr class="separator:a8bae3d4e2033dec7a6d385d7d37939e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1725ea8471653d21d7391b1fdbced9c8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpism_1_1LocalInterpCtx_a1725ea8471653d21d7391b1fdbced9c8.html#a1725ea8471653d21d7391b1fdbced9c8">LocalInterpCtx</a> (const <a class="el" href="classpism_1_1grid_1_1InputGridInfo.html">grid::InputGridInfo</a> &amp;input_grid, const <a class="el" href="classpism_1_1Grid.html">Grid</a> &amp;internal_grid, const std::vector&lt; double &gt; &amp;z_internal, <a class="el" href="namespacepism_a3415cf6a7a4530c4e489feebe6365e03.html#a3415cf6a7a4530c4e489feebe6365e03">InterpolationType</a> type)</td></tr>
+<tr class="memdesc:a1725ea8471653d21d7391b1fdbced9c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a local interpolation context.  <a href="classpism_1_1LocalInterpCtx_a1725ea8471653d21d7391b1fdbced9c8.html#a1725ea8471653d21d7391b1fdbced9c8">More...</a><br /></td></tr>
+<tr class="separator:a1725ea8471653d21d7391b1fdbced9c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a564e92c22856b5d59964ca5be9dca80f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpism_1_1LocalInterpCtx_a564e92c22856b5d59964ca5be9dca80f.html#a564e92c22856b5d59964ca5be9dca80f">buffer_size</a> () const</td></tr>
+<tr class="separator:a564e92c22856b5d59964ca5be9dca80f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:aa019ca21a66e68b53ec3fa94ef7129b1"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpism_1_1LocalInterpCtx_aa019ca21a66e68b53ec3fa94ef7129b1.html#aa019ca21a66e68b53ec3fa94ef7129b1">start</a> [4]</td></tr>
-<tr class="separator:aa019ca21a66e68b53ec3fa94ef7129b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac6c48063adea39710d39fa41921575ab"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpism_1_1LocalInterpCtx_ac6c48063adea39710d39fa41921575ab.html#ac6c48063adea39710d39fa41921575ab">count</a> [4]</td></tr>
-<tr class="separator:ac6c48063adea39710d39fa41921575ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44eb3e69d93d5b458f63b45c8b10d693"><td class="memItemLeft" align="right" valign="top">std::array&lt; int, 4 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpism_1_1LocalInterpCtx_a44eb3e69d93d5b458f63b45c8b10d693.html#a44eb3e69d93d5b458f63b45c8b10d693">start</a></td></tr>
+<tr class="separator:a44eb3e69d93d5b458f63b45c8b10d693"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a130d7156e5bd6122d47d956c17b6e2f1"><td class="memItemLeft" align="right" valign="top">std::array&lt; int, 4 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpism_1_1LocalInterpCtx_a130d7156e5bd6122d47d956c17b6e2f1.html#a130d7156e5bd6122d47d956c17b6e2f1">count</a></td></tr>
+<tr class="separator:a130d7156e5bd6122d47d956c17b6e2f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afc700f7ac4496e3c40a1d249fa0f3435"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classpism_1_1Interpolation.html">Interpolation</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpism_1_1LocalInterpCtx_afc700f7ac4496e3c40a1d249fa0f3435.html#afc700f7ac4496e3c40a1d249fa0f3435">x</a></td></tr>
 <tr class="separator:afc700f7ac4496e3c40a1d249fa0f3435"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab87cca3c066c872a9e93e52dc237966e"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classpism_1_1Interpolation.html">Interpolation</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpism_1_1LocalInterpCtx_ab87cca3c066c872a9e93e52dc237966e.html#ab87cca3c066c872a9e93e52dc237966e">y</a></td></tr>
 <tr class="separator:ab87cca3c066c872a9e93e52dc237966e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac0c53d0970de4510743341f7864b8934"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classpism_1_1Interpolation.html">Interpolation</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpism_1_1LocalInterpCtx_ac0c53d0970de4510743341f7864b8934.html#ac0c53d0970de4510743341f7864b8934">z</a></td></tr>
 <tr class="separator:ac0c53d0970de4510743341f7864b8934"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c3a475e151c41306dbd86cca71772cf"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpism_1_1LocalInterpCtx_a6c3a475e151c41306dbd86cca71772cf.html#a6c3a475e151c41306dbd86cca71772cf">buffer</a></td></tr>
-<tr class="memdesc:a6c3a475e151c41306dbd86cca71772cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">temporary storage  <a href="classpism_1_1LocalInterpCtx_a6c3a475e151c41306dbd86cca71772cf.html#a6c3a475e151c41306dbd86cca71772cf">More...</a><br /></td></tr>
-<tr class="separator:a6c3a475e151c41306dbd86cca71772cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The "local interpolation context" describes the processor's part of the source NetCDF file (for regridding). </p>
+<div class="textblock"><p>The "local interpolation context" describes the processor's part of the source NetCDF file (for regridding).</p>
 <p>The local interpolation context contains the details of how the processor's block of the new computational domain fits into the domain of the netCDF file. Note that each vertical column of the grid is owned by exactly one processor.</p>
 <p>For any particular dimension, we have a new computational domain \([a,b]\) with spacing \(h\) so there are \(n = (b - a) / h\) interior cells, indexed by \(\{i_0, \dots, i_n\}\). The local processor owns a range \(\{i_m, \dots, i_{m&#39;}\}\). Suppose the netCDF file has domain \([A,B]\), spacing \(H\), and \(N = (B - A) / H\) cells. In order to interpolate onto these points, we need the indices \(\{I_m, \dots, I_{m&#39;}\}\) of the netCDF file so that</p>
 <p class="formulaDsp">
 \[ [x(i_m), x(i_{m&#39;})] \quad \text{is a subset of} \quad [x(I_m), x(I_{m&#39;})] \]
 </p>
-<p>The arrays <code>start</code> and <code>count</code> have 4 integer entries, corresponding to the dimensions \(t, x, y, z(zb)\). </p>
+<p>The arrays <code>start</code> and <code>count</code> have 4 integer entries, corresponding to the dimensions <code>t, x, y, z(zb)</code>. </p>
 
-<p class="definition">Definition at line <a class="el" href="LocalInterpCtx_8hh_source.html#l00050">50</a> of file <a class="el" href="LocalInterpCtx_8hh_source.html">LocalInterpCtx.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LocalInterpCtx_8hh_source.html#l00054">54</a> of file <a class="el" href="LocalInterpCtx_8hh_source.html">LocalInterpCtx.hh</a>.</p>
 </div><hr/>The documentation for this class was generated from the following files:<ul>
 <li>src/util/io/<a class="el" href="LocalInterpCtx_8hh_source.html">LocalInterpCtx.hh</a></li>
 <li>src/util/io/<a class="el" href="LocalInterpCtx_8cc_source.html">LocalInterpCtx.cc</a></li>

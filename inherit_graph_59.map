@@ -1,3 +1,5 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classpism_1_1IceGrid.html" title="Describes the PISM grid and the distribution of data across processors." alt="" coords="5,5,113,32"/>
+<area shape="rect" id="node1" href="$classpism_1_1IceBasalResistancePlasticLaw.html" title="Class containing physical constants and the constitutive relation describing till for SSA." alt="" coords="5,39,193,80"/>
+<area shape="rect" id="node2" href="$classpism_1_1IceBasalResistancePseudoPlasticLaw.html" title=" " alt="" coords="241,5,429,47"/>
+<area shape="rect" id="node3" href="$classpism_1_1IceBasalResistanceRegularizedLaw.html" title=" " alt="" coords="241,71,429,112"/>
 </map>

@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PISM, A Parallel Ice Sheet Model
-   &#160;<span id="projectnumber">stable v2.0.7 committed by Constantine Khrulev on 2023-11-21 12:49:11 -0900</span>
+   &#160;<span id="projectnumber">stable v2.1 committed by Constantine Khrulev on 2023-11-23 11:24:22 -0900</span>
    </div>
   </td>
  </tr>
@@ -83,12 +83,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;cassert&gt;</code><br />
-<code>#include &quot;<a class="el" href="Routing_8hh_source.html">Routing.hh</a>&quot;</code><br />
-<code>#include &quot;pism/util/IceModelVec2CellType.hh&quot;</code><br />
-<code>#include &quot;pism/util/Mask.hh&quot;</code><br />
-<code>#include &quot;pism/util/MaxTimestep.hh&quot;</code><br />
+<code>#include &quot;pism/hydrology/Routing.hh&quot;</code><br />
+<code>#include &quot;pism/util/array/CellType.hh&quot;</code><br />
 <code>#include &quot;pism/util/error_handling.hh&quot;</code><br />
-<code>#include &quot;pism/util/pism_options.hh&quot;</code><br />
 <code>#include &quot;pism/util/pism_utilities.hh&quot;</code><br />
 <code>#include &quot;pism/util/Vars.hh&quot;</code><br />
 <code>#include &quot;pism/geometry/Geometry.hh&quot;</code><br />
@@ -130,12 +127,12 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a2ad3ba59b942253eab9669d0ea56d863"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_1_1hydrology_1_1diagnostics_a2ad3ba59b942253eab9669d0ea56d863.html#a2ad3ba59b942253eab9669d0ea56d863">pism::hydrology::diagnostics::hydraulic_potential</a> (const IceModelVec2S &amp;W, const IceModelVec2S &amp;P, const IceModelVec2S &amp;sea_level, const IceModelVec2S &amp;bed, const IceModelVec2S &amp;ice_thickness, IceModelVec2S &amp;result)</td></tr>
-<tr class="memdesc:a2ad3ba59b942253eab9669d0ea56d863"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the hydraulic potential.  <a href="namespacepism_1_1hydrology_1_1diagnostics_a2ad3ba59b942253eab9669d0ea56d863.html#a2ad3ba59b942253eab9669d0ea56d863">More...</a><br /></td></tr>
-<tr class="separator:a2ad3ba59b942253eab9669d0ea56d863"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ff5c19885e763b8b10a22a6796e9eb4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_1_1hydrology_a2ff5c19885e763b8b10a22a6796e9eb4.html#a2ff5c19885e763b8b10a22a6796e9eb4">pism::hydrology::wall_melt</a> (const Routing &amp;model, const IceModelVec2S &amp;bed_elevation, IceModelVec2S &amp;result)</td></tr>
-<tr class="memdesc:a2ff5c19885e763b8b10a22a6796e9eb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the wall melt rate which comes from (turbulent) dissipation of flow energy.  <a href="namespacepism_1_1hydrology_a2ff5c19885e763b8b10a22a6796e9eb4.html#a2ff5c19885e763b8b10a22a6796e9eb4">More...</a><br /></td></tr>
-<tr class="separator:a2ff5c19885e763b8b10a22a6796e9eb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fcb4c1617b3b1f87fde3dffd3b00579"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_1_1hydrology_1_1diagnostics_a7fcb4c1617b3b1f87fde3dffd3b00579.html#a7fcb4c1617b3b1f87fde3dffd3b00579">pism::hydrology::diagnostics::hydraulic_potential</a> (const array::Scalar &amp;W, const array::Scalar &amp;P, const array::Scalar &amp;sea_level, const array::Scalar &amp;bed, const array::Scalar &amp;ice_thickness, array::Scalar &amp;result)</td></tr>
+<tr class="memdesc:a7fcb4c1617b3b1f87fde3dffd3b00579"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the hydraulic potential.  <a href="namespacepism_1_1hydrology_1_1diagnostics_a7fcb4c1617b3b1f87fde3dffd3b00579.html#a7fcb4c1617b3b1f87fde3dffd3b00579">More...</a><br /></td></tr>
+<tr class="separator:a7fcb4c1617b3b1f87fde3dffd3b00579"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac32b092f053d65988fddde5f66eb3381"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_1_1hydrology_ac32b092f053d65988fddde5f66eb3381.html#ac32b092f053d65988fddde5f66eb3381">pism::hydrology::wall_melt</a> (const Routing &amp;model, const array::Scalar &amp;bed_elevation, array::Scalar &amp;result)</td></tr>
+<tr class="memdesc:ac32b092f053d65988fddde5f66eb3381"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the wall melt rate which comes from (turbulent) dissipation of flow energy.  <a href="namespacepism_1_1hydrology_ac32b092f053d65988fddde5f66eb3381.html#ac32b092f053d65988fddde5f66eb3381">More...</a><br /></td></tr>
+<tr class="separator:ac32b092f053d65988fddde5f66eb3381"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->

@@ -1,17 +1,3 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classpism_1_1PetscAccessible.html" title=" " alt="" coords="5,272,172,299"/>
-<area shape="rect" id="node2" href="$classpism_1_1IceModelVec.html" title="Abstract class for reading, writing, allocating, and accessing a DA&#45;based PETSc Vec (2D and 3D fields..." alt="" coords="253,247,397,273"/>
-<area shape="rect" id="node15" href="$structpism_1_1icebin_1_1MassEnthVec2S.html" title=" " alt="" coords="220,297,431,324"/>
-<area shape="rect" id="node3" href="$classpism_1_1IceModelVec2.html" title=" " alt="" coords="482,5,666,61"/>
-<area shape="rect" id="node4" href="$classpism_1_1IceModelVec2.html" title=" " alt="" coords="498,86,650,127"/>
-<area shape="rect" id="node6" href="$classpism_1_1IceModelVec2.html" title=" " alt="" coords="491,152,657,208"/>
-<area shape="rect" id="node7" href="$classpism_1_1IceModelVec2.html" title=" " alt="" coords="489,232,659,288"/>
-<area shape="rect" id="node8" href="$classpism_1_1IceModelVec2.html" title="A storage vector combining related fields in a struct." alt="" coords="479,312,669,339"/>
-<area shape="rect" id="node9" href="$classpism_1_1IceModelVec2S.html" title=" " alt="" coords="494,363,654,389"/>
-<area shape="rect" id="node13" href="$classpism_1_1IceModelVec3.html" title="A virtual class collecting methods common to ice and bedrock 3D fields." alt="" coords="498,413,650,440"/>
-<area shape="rect" id="node5" href="$classpism_1_1IceModelVec2V.html" title=" " alt="" coords="727,93,889,120"/>
-<area shape="rect" id="node10" href="$classpism_1_1IceModelVec2Int.html" title="A simple class &quot;hiding&quot; the fact that the mask is stored as floating&#45;point scalars (instead of intege..." alt="" coords="723,312,893,339"/>
-<area shape="rect" id="node12" href="$classpism_1_1IceModelVec2T.html" title="A class for storing and accessing 2D time&#45;series (for climate forcing)" alt="" coords="728,363,888,389"/>
-<area shape="rect" id="node11" href="$classpism_1_1IceModelVec2CellType.html" title="&quot;Cell type&quot; mask. Adds convenience methods to IceModelVec2Int." alt="" coords="947,312,1153,339"/>
-<area shape="rect" id="node14" href="$classpism_1_1IceModelVec2Stag.html" title="A class for storing and accessing internal staggered&#45;grid 2D fields. Uses dof=2 storage...." alt="" coords="717,413,899,440"/>
+<area shape="rect" id="node1" href="$classpism_1_1Poisson.html" title=" " alt="" coords="5,5,117,32"/>
 </map>

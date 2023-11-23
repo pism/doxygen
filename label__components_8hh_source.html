@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PISM, A Parallel Ice Sheet Model
-   &#160;<span id="projectnumber">stable v2.0.7 committed by Constantine Khrulev on 2023-11-21 12:49:11 -0900</span>
+   &#160;<span id="projectnumber">stable v2.1 committed by Constantine Khrulev on 2023-11-23 11:24:22 -0900</span>
    </div>
   </td>
  </tr>
@@ -78,7 +78,7 @@ $(function() {
 <div class="title">label_components.hh</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="label__components_8hh.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/* Copyright (C) 2019 PISM Authors</span></div>
+<a href="label__components_8hh.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/* Copyright (C) 2019, 2023 PISM Authors</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * This file is part of PISM.</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> *</span></div>
@@ -102,15 +102,44 @@ $(function() {
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacepism.html">pism</a> {</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">class </span>IceModelVec2Int;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespacepism_a825e8776bf835db878cbfba2978878d3.html#a825e8776bf835db878cbfba2978878d3">label_components</a>(IceModelVec2Int &amp;mask, <span class="keywordtype">bool</span> identify_icebergs, <span class="keywordtype">double</span> mask_grounded);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">namespace </span>array {</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">class </span>Scalar;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;}</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;} <span class="comment">// end of namespace pism</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* LABEL_COMPONENTS_H */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="anamespacepism_a825e8776bf835db878cbfba2978878d3_html_a825e8776bf835db878cbfba2978878d3"><div class="ttname"><a href="namespacepism_a825e8776bf835db878cbfba2978878d3.html#a825e8776bf835db878cbfba2978878d3">pism::label_components</a></div><div class="ttdeci">void label_components(IceModelVec2Int &amp;mask, bool identify_icebergs, double mask_grounded)</div><div class="ttdef"><b>Definition:</b> <a href="label__components_8cc_source.html#l00035">label_components.cc:35</a></div></div>
-<div class="ttc" id="anamespacepism_html"><div class="ttname"><a href="namespacepism.html">pism</a></div><div class="ttdef"><b>Definition:</b> <a href="AgeColumnSystem_8cc_source.html#l00024">AgeColumnSystem.cc:24</a></div></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">namespace </span>petsc {</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">class </span>Vec;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;}</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment">/*!</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment"> * Label connected components in a mask stored in an array::Scalar.</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment"> * @param[in,out] mask_p0 temporary storage on rank 0.</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment"> * See the other `label_components()` details.</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespacepism_ab3596ffc5dfc577e5e3d362c277af395.html#ab3596ffc5dfc577e5e3d362c277af395">label_components</a>(array::Scalar &amp;mask,</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                      petsc::Vec &amp;mask_p0,</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                      <span class="keywordtype">bool</span> identify_icebergs, <span class="keywordtype">double</span> mask_grounded);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment">/*!</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment"> * Label connected components in a mask stored in an array::Scalar.</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment"> * This function allocates a copy on rank 0 and so should not be used if that is a</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment"> * problem.</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment"> * @param[in,out] mask mask used to identify components (modified in place)</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="comment"> * @param[in] identify_icebergs `true` to label blobs not connected to `mask_grounded` 1,</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="comment"> *                              the rest with 0, `false` to assign unique labels to all blobs.</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="comment"> * @param[in]  mask_grounded value in `mask` that is interpreted as &quot;grounded&quot;</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespacepism_ab3596ffc5dfc577e5e3d362c277af395.html#ab3596ffc5dfc577e5e3d362c277af395">label_components</a>(array::Scalar &amp;mask, <span class="keywordtype">bool</span> identify_icebergs, <span class="keywordtype">double</span> mask_grounded);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;} <span class="comment">// end of namespace pism</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* LABEL_COMPONENTS_H */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="anamespacepism_ab3596ffc5dfc577e5e3d362c277af395_html_ab3596ffc5dfc577e5e3d362c277af395"><div class="ttname"><a href="namespacepism_ab3596ffc5dfc577e5e3d362c277af395.html#ab3596ffc5dfc577e5e3d362c277af395">pism::label_components</a></div><div class="ttdeci">void label_components(array::Scalar &amp;mask, petsc::Vec &amp;mask_p0, bool identify_icebergs, double mask_grounded)</div><div class="ttdef"><b>Definition:</b> <a href="label__components_8cc_source.html#l00029">label_components.cc:29</a></div></div>
+<div class="ttc" id="anamespacepism_html"><div class="ttname"><a href="namespacepism.html">pism</a></div><div class="ttdef"><b>Definition:</b> <a href="AgeColumnSystem_8cc_source.html#l00023">AgeColumnSystem.cc:23</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

@@ -1,0 +1,9 @@
+<map id="pism::surface::diagnostics::DEBMSTemperatureMelt" name="pism::surface::diagnostics::DEBMSTemperatureMelt">
+<area shape="rect" id="node1" title="Report surface temperature melt, averaged over the reporting interval." alt="" coords="58,427,250,468"/>
+<area shape="rect" id="node2" href="$classpism_1_1DiagAverageRate.html" title=" " alt="" coords="67,336,241,377"/>
+<area shape="rect" id="node3" href="$classpism_1_1Diag.html" title=" " alt="" coords="5,171,212,197"/>
+<area shape="rect" id="node4" href="$classpism_1_1Diagnostic.html" title="Class representing diagnostic computations in PISM." alt="" coords="151,5,282,32"/>
+<area shape="rect" id="node5" href="$classpism_1_1Diag.html" title="A template derived from Diagnostic, adding a &quot;Model&quot;." alt="" coords="135,81,298,108"/>
+<area shape="rect" id="node7" href="$classpism_1_1Diag.html" title=" " alt="" coords="236,171,371,197"/>
+<area shape="rect" id="node6" href="$classpism_1_1DiagAverageRate.html" title=" " alt="" coords="183,247,400,273"/>
+</map>

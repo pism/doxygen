@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PISM, A Parallel Ice Sheet Model
-   &#160;<span id="projectnumber">stable v2.0.7 committed by Constantine Khrulev on 2023-11-21 12:49:11 -0900</span>
+   &#160;<span id="projectnumber">stable v2.1 committed by Constantine Khrulev on 2023-11-23 11:24:22 -0900</span>
    </div>
   </td>
  </tr>
@@ -82,7 +82,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;string&gt;</code><br />
-<code>#include &quot;pism/util/IceGrid.hh&quot;</code><br />
+<code>#include &quot;pism/util/Grid.hh&quot;</code><br />
 <code>#include &quot;pism/util/Config.hh&quot;</code><br />
 <code>#include &quot;pism/util/error_handling.hh&quot;</code><br />
 <code>#include &quot;pism/util/petscwrappers/PetscInitializer.hh&quot;</code><br />
@@ -100,10 +100,10 @@ Functions</h2></td></tr>
 <tr class="memitem:a40be702b2807c887f2993c01b86a911d"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classpism_1_1Context.html">Context</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pismv_8cc_a40be702b2807c887f2993c01b86a911d.html#a40be702b2807c887f2993c01b86a911d">pismv_context</a> (MPI_Comm com, const std::string &amp;prefix)</td></tr>
 <tr class="memdesc:a40be702b2807c887f2993c01b86a911d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate the PISMV (verification) context. Uses ColdEnthalpyConverter.  <a href="pismv_8cc_a40be702b2807c887f2993c01b86a911d.html#a40be702b2807c887f2993c01b86a911d">More...</a><br /></td></tr>
 <tr class="separator:a40be702b2807c887f2993c01b86a911d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aba5fdd36c725e55945eca5745119852f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpism_1_1GridParameters.html">GridParameters</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pismv_8cc_aba5fdd36c725e55945eca5745119852f.html#aba5fdd36c725e55945eca5745119852f">pismv_grid_defaults</a> (<a class="el" href="classpism_1_1Config_a194547f160a8ba3f3a2b4d29564473dc.html#a194547f160a8ba3f3a2b4d29564473dc">Config::Ptr</a> config, char testname)</td></tr>
-<tr class="separator:aba5fdd36c725e55945eca5745119852f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a46ae691733c25bc6fd022aa858f59361"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpism_1_1IceGrid_a64c8491c35cf7c43928dc8f34d3a8fc2.html#a64c8491c35cf7c43928dc8f34d3a8fc2">IceGrid::Ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pismv_8cc_a46ae691733c25bc6fd022aa858f59361.html#a46ae691733c25bc6fd022aa858f59361">pismv_grid</a> (std::shared_ptr&lt; <a class="el" href="classpism_1_1Context.html">Context</a> &gt; ctx, char testname)</td></tr>
-<tr class="separator:a46ae691733c25bc6fd022aa858f59361"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd4731892d80aaf483b902e80e743818"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpism_1_1grid_1_1Parameters.html">grid::Parameters</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pismv_8cc_afd4731892d80aaf483b902e80e743818.html#afd4731892d80aaf483b902e80e743818">pismv_grid_defaults</a> (<a class="el" href="classpism_1_1Config_a194547f160a8ba3f3a2b4d29564473dc.html#a194547f160a8ba3f3a2b4d29564473dc">Config::Ptr</a> config, char testname)</td></tr>
+<tr class="separator:afd4731892d80aaf483b902e80e743818"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08ff58610f6b6e69ae780f0bb9585f07"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classpism_1_1Grid.html">Grid</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pismv_8cc_a08ff58610f6b6e69ae780f0bb9585f07.html#a08ff58610f6b6e69ae780f0bb9585f07">pismv_grid</a> (std::shared_ptr&lt; <a class="el" href="classpism_1_1Context.html">Context</a> &gt; ctx, char testname)</td></tr>
+<tr class="separator:a08ff58610f6b6e69ae780f0bb9585f07"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ddf1224851353fc92bfbff6f499fa97"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pismv_8cc_a0ddf1224851353fc92bfbff6f499fa97.html#a0ddf1224851353fc92bfbff6f499fa97">main</a> (int argc, char *argv[])</td></tr>
 <tr class="separator:a0ddf1224851353fc92bfbff6f499fa97"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
