@@ -1,5 +1,7 @@
 <map id="pism::bed::LingleClark" name="pism::bed::LingleClark">
-<area shape="rect" id="node1" title="A wrapper class around LingleClarkSerial." alt="" coords="5,155,172,181"/>
-<area shape="rect" id="node2" href="$classpism_1_1bed_1_1BedDef.html" title="PISM bed deformation model (base class)." alt="" coords="17,80,160,107"/>
-<area shape="rect" id="node3" href="$classpism_1_1Component.html" title="A class defining a common interface for most PISM sub&#45;models." alt="" coords="20,5,157,32"/>
+<area shape="rect" id="Node000001" title="A wrapper class around LingleClarkSerial." alt="" coords="5,152,172,177"/>
+<area shape="rect" id="Node000002" href="$classpism_1_1bed_1_1BedDef.html" title="PISM bed deformation model (base class)." alt="" coords="17,79,160,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="91,118,91,152,86,152,86,118"/>
+<area shape="rect" id="Node000003" href="$classpism_1_1Component.html" title="A class defining a common interface for most PISM sub&#45;models." alt="" coords="20,5,157,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="91,44,91,79,86,79,86,44"/>
 </map>

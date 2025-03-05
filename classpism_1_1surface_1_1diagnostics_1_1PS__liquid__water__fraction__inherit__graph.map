@@ -1,6 +1,10 @@
 <map id="pism::surface::diagnostics::PS_liquid_water_fraction" name="pism::surface::diagnostics::PS_liquid_water_fraction">
-<area shape="rect" id="node1" title="Ice liquid water fraction at the ice surface." alt="" coords="15,247,207,288"/>
-<area shape="rect" id="node2" href="$classpism_1_1Diag.html" title=" " alt="" coords="5,171,216,197"/>
-<area shape="rect" id="node3" href="$classpism_1_1Diagnostic.html" title="Class representing diagnostic computations in PISM." alt="" coords="40,5,171,32"/>
-<area shape="rect" id="node4" href="$classpism_1_1Diag.html" title="A template derived from Diagnostic, adding a &quot;Model&quot;." alt="" coords="127,81,289,108"/>
+<area shape="rect" id="Node000001" title="Ice liquid water fraction at the ice surface." alt="" coords="15,243,207,283"/>
+<area shape="rect" id="Node000002" href="$classpism_1_1Diag.html" title=" " alt="" coords="5,168,216,193"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="113,207,113,243,108,243,108,207"/>
+<area shape="rect" id="Node000003" href="$classpism_1_1Diagnostic.html" title="Class representing diagnostic computations in PISM." alt="" coords="40,5,171,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="109,44,113,168,108,168,104,45"/>
+<area shape="rect" id="Node000004" href="$classpism_1_1Diag.html" title="A template derived from Diagnostic, adding a &quot;Model&quot;." alt="" coords="127,80,289,105"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="135,37,193,78,190,82,132,41"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="186,116,126,169,122,165,183,112"/>
 </map>

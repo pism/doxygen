@@ -1,9 +1,17 @@
 <map id="pism::diagnostics::SurfaceFlux" name="pism::diagnostics::SurfaceFlux">
-<area shape="rect" id="node1" title="Report surface mass balance flux, averaged over the reporting interval." alt="" coords="63,427,207,468"/>
-<area shape="rect" id="node2" href="$classpism_1_1DiagAverageRate.html" title=" " alt="" coords="47,336,222,377"/>
-<area shape="rect" id="node3" href="$classpism_1_1Diag.html" title=" " alt="" coords="5,171,187,197"/>
-<area shape="rect" id="node4" href="$classpism_1_1Diagnostic.html" title="Class representing diagnostic computations in PISM." alt="" coords="127,5,257,32"/>
-<area shape="rect" id="node5" href="$classpism_1_1Diag.html" title="A template derived from Diagnostic, adding a &quot;Model&quot;." alt="" coords="111,81,273,108"/>
-<area shape="rect" id="node7" href="$classpism_1_1Diag.html" title=" " alt="" coords="211,171,346,197"/>
-<area shape="rect" id="node6" href="$classpism_1_1DiagAverageRate.html" title=" " alt="" coords="161,247,378,273"/>
+<area shape="rect" id="Node000001" title="Report surface mass balance flux, averaged over the reporting interval." alt="" coords="36,431,180,471"/>
+<area shape="rect" id="Node000002" href="$classpism_1_1DiagAverageRate.html" title=" " alt="" coords="21,341,195,381"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="111,395,111,431,105,431,105,395"/>
+<area shape="rect" id="Node000003" href="$classpism_1_1Diag.html" title="A template derived from Diagnostic, adding a &quot;Model&quot;." alt="" coords="5,129,168,155"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="92,168,109,341,103,341,86,169"/>
+<area shape="rect" id="Node000004" href="$classpism_1_1Diagnostic.html" title="Class representing diagnostic computations in PISM." alt="" coords="123,5,253,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="172,43,98,131,94,128,168,40"/>
+<area shape="rect" id="Node000006" href="$classpism_1_1Diag.html" title=" " alt="" coords="166,179,301,204"/>
+<area shape="poly" id="edge6_Node000006_Node000004" title=" " alt="" coords="197,43,233,178,228,179,192,45"/>
+<area shape="rect" id="Node000007" href="$classpism_1_1Diag.html" title="A template derived from Diagnostic, adding a &quot;Model&quot;." alt="" coords="225,80,388,105"/>
+<area shape="poly" id="edge8_Node000007_Node000004" title=" " alt="" coords="220,36,289,78,286,82,218,40"/>
+<area shape="rect" id="Node000005" href="$classpism_1_1DiagAverageRate.html" title=" " alt="" coords="125,253,342,279"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="209,289,135,343,132,339,205,285"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="236,218,236,253,231,253,231,218"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="292,118,244,180,240,177,288,115"/>
 </map>

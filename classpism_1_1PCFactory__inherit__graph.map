@@ -1,13 +1,23 @@
 <map id="pism::PCFactory&lt; Model &gt;" name="pism::PCFactory&lt; Model &gt;">
-<area shape="rect" id="node1" title=" " alt="" coords="5,143,201,170"/>
-<area shape="rect" id="node2" href="$classpism_1_1PCFactory.html" title=" " alt="" coords="453,5,644,47"/>
-<area shape="rect" id="node4" href="$classpism_1_1PCFactory.html" title=" " alt="" coords="441,71,656,112"/>
-<area shape="rect" id="node6" href="$classpism_1_1PCFactory.html" title=" " alt="" coords="439,136,659,177"/>
-<area shape="rect" id="node8" href="$classpism_1_1PCFactory.html" title=" " alt="" coords="459,201,639,243"/>
-<area shape="rect" id="node10" href="$classpism_1_1PCFactory.html" title=" " alt="" coords="459,267,639,308"/>
-<area shape="rect" id="node3" href="$classpism_1_1surface_1_1Factory.html" title=" " alt="" coords="723,13,888,39"/>
-<area shape="rect" id="node5" href="$classpism_1_1frontalmelt_1_1Factory.html" title=" " alt="" coords="734,71,877,112"/>
-<area shape="rect" id="node7" href="$classpism_1_1atmosphere_1_1Factory.html" title=" " alt="" coords="708,143,903,170"/>
-<area shape="rect" id="node9" href="$classpism_1_1ocean_1_1Factory.html" title=" " alt="" coords="727,209,883,235"/>
-<area shape="rect" id="node11" href="$classpism_1_1ocean_1_1sea__level_1_1Factory.html" title=" " alt="" coords="720,267,891,308"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,141,201,166"/>
+<area shape="rect" id="Node000002" href="$classpism_1_1PCFactory.html" title=" " alt="" coords="439,5,659,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="134,131,176,107,224,85,333,55,438,35,439,41,335,60,226,91,178,112,137,136"/>
+<area shape="rect" id="Node000004" href="$classpism_1_1PCFactory.html" title=" " alt="" coords="441,69,656,109"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="192,136,225,131,441,100,441,106,226,136,193,141"/>
+<area shape="rect" id="Node000006" href="$classpism_1_1PCFactory.html" title=" " alt="" coords="459,133,639,173"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="216,151,458,151,458,156,216,156"/>
+<area shape="rect" id="Node000008" href="$classpism_1_1PCFactory.html" title=" " alt="" coords="459,197,639,237"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="156,168,226,185,347,202,459,211,458,216,347,208,225,191,154,173"/>
+<area shape="rect" id="Node000010" href="$classpism_1_1PCFactory.html" title=" " alt="" coords="453,261,644,301"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="132,173,175,202,226,228,283,246,343,259,453,274,453,279,342,265,282,251,224,233,172,207,129,177"/>
+<area shape="rect" id="Node000003" href="$classpism_1_1atmosphere_1_1Factory.html" title=" " alt="" coords="708,13,903,38"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="672,23,708,23,708,28,672,28"/>
+<area shape="rect" id="Node000005" href="$classpism_1_1frontalmelt_1_1Factory.html" title=" " alt="" coords="734,69,877,109"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="670,87,734,87,734,92,670,92"/>
+<area shape="rect" id="Node000007" href="$classpism_1_1ocean_1_1Factory.html" title=" " alt="" coords="727,141,883,166"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="653,151,727,151,727,156,653,156"/>
+<area shape="rect" id="Node000009" href="$classpism_1_1ocean_1_1sea__level_1_1Factory.html" title=" " alt="" coords="720,197,891,237"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="653,215,720,215,720,220,653,220"/>
+<area shape="rect" id="Node000011" href="$classpism_1_1surface_1_1Factory.html" title=" " alt="" coords="723,269,888,294"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="658,279,722,279,722,284,658,284"/>
 </map>

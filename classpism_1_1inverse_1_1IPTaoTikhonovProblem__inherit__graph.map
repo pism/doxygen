@@ -1,7 +1,11 @@
 <map id="pism::inverse::IPTaoTikhonovProblem&lt; ForwardProblem &gt;" name="pism::inverse::IPTaoTikhonovProblem&lt; ForwardProblem &gt;">
-<area shape="rect" id="node1" title="Defines a Tikhonov minimization problem to be solved with a TaoBasicSolver." alt="" coords="5,39,217,80"/>
-<area shape="rect" id="node2" href="$classpism_1_1inverse_1_1IPTaoTikhonovProblem.html" title=" " alt="" coords="499,5,803,47"/>
-<area shape="rect" id="node4" href="$classpism_1_1inverse_1_1IPTaoTikhonovProblem.html" title=" " alt="" coords="508,71,793,112"/>
-<area shape="rect" id="node3" href="$classpism_1_1inverse_1_1IP__SSAHardavTaoTikhonovProblem.html" title="Defines an IPTaoTikhonovProblem for inversion of basal yeild stresses &#160;from SSA velocities." alt="" coords="852,5,1063,47"/>
-<area shape="rect" id="node5" href="$classpism_1_1inverse_1_1IP__SSATaucTaoTikhonovProblem.html" title="Defines an IPTaoTikhonovProblem for inversion of basal yeild stresses &#160;from SSA velocities." alt="" coords="862,71,1053,112"/>
+<area shape="rect" id="Node000001" title="Defines a Tikhonov minimization problem to be solved with a TaoBasicSolver." alt="" coords="5,37,217,77"/>
+<area shape="rect" id="Node000002" href="$classpism_1_1inverse_1_1IPTaoTikhonovProblem.html" title=" " alt="" coords="499,5,803,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="231,48,498,32,499,37,231,53"/>
+<area shape="rect" id="Node000004" href="$classpism_1_1inverse_1_1IPTaoTikhonovProblem.html" title=" " alt="" coords="508,69,793,109"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="231,67,242,68,508,82,507,88,241,73,231,73"/>
+<area shape="rect" id="Node000003" href="$classpism_1_1inverse_1_1IP__SSAHardavTaoTikhonovProblem.html" title="Defines an IPTaoTikhonovProblem for inversion of basal yeild stresses &#160;from SSA velocities." alt="" coords="852,5,1063,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="817,23,852,23,852,28,817,28"/>
+<area shape="rect" id="Node000005" href="$classpism_1_1inverse_1_1IP__SSATaucTaoTikhonovProblem.html" title="Defines an IPTaoTikhonovProblem for inversion of basal yeild stresses &#160;from SSA velocities." alt="" coords="862,69,1053,109"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="807,87,862,87,862,92,807,92"/>
 </map>

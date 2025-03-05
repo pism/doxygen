@@ -1,13 +1,23 @@
 <map id="pism::fem::Quadrature" name="pism::fem::Quadrature">
-<area shape="rect" id="node1" title="Numerical integration of finite element functions." alt="" coords="5,233,175,260"/>
-<area shape="rect" id="node2" href="$classpism_1_1fem_1_1Gaussian2.html" title=" " alt="" coords="251,5,415,32"/>
-<area shape="rect" id="node3" href="$classpism_1_1fem_1_1P1Quadrature3.html" title=" " alt="" coords="237,56,430,83"/>
-<area shape="rect" id="node4" href="$classpism_1_1fem_1_1Q13DQuadrature1.html" title=" " alt="" coords="227,107,440,133"/>
-<area shape="rect" id="node5" href="$classpism_1_1fem_1_1Q13DQuadrature64.html" title=" " alt="" coords="223,157,444,184"/>
-<area shape="rect" id="node6" href="$classpism_1_1fem_1_1Q13DQuadrature8.html" title=" " alt="" coords="227,208,440,235"/>
-<area shape="rect" id="node7" href="$classpism_1_1fem_1_1Q1Quadrature1.html" title="The 1&#45;point Gaussian quadrature on the square [&#45;1,1]*[&#45;1,1]." alt="" coords="236,259,431,285"/>
-<area shape="rect" id="node8" href="$classpism_1_1fem_1_1Q1Quadrature16.html" title="The 16&#45;point Gaussian quadrature on the square [&#45;1,1]*[&#45;1,1]." alt="" coords="232,309,435,336"/>
-<area shape="rect" id="node9" href="$classpism_1_1fem_1_1Q1Quadrature4.html" title="The 4&#45;point Gaussian quadrature on the square [&#45;1,1]*[&#45;1,1]." alt="" coords="236,360,431,387"/>
-<area shape="rect" id="node10" href="$classpism_1_1fem_1_1Q1Quadrature9.html" title="The 9&#45;point Gaussian quadrature on the square [&#45;1,1]*[&#45;1,1]." alt="" coords="236,411,431,437"/>
-<area shape="rect" id="node11" href="$classpism_1_1fem_1_1Q1QuadratureN.html" title=" " alt="" coords="235,461,432,488"/>
+<area shape="rect" id="Node000001" title="Numerical integration of finite element functions." alt="" coords="5,228,175,253"/>
+<area shape="rect" id="Node000002" href="$classpism_1_1fem_1_1Gaussian2.html" title=" " alt="" coords="251,5,415,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="98,214,116,175,142,128,177,80,221,40,250,26,252,31,224,44,181,83,146,130,120,177,103,216"/>
+<area shape="rect" id="Node000003" href="$classpism_1_1fem_1_1P1Quadrature3.html" title=" " alt="" coords="237,55,430,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="104,215,150,151,183,117,221,89,246,78,249,83,224,94,187,121,154,155,108,218"/>
+<area shape="rect" id="Node000004" href="$classpism_1_1fem_1_1Q13DQuadrature1.html" title=" " alt="" coords="227,104,440,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="112,216,160,176,190,156,222,138,253,127,255,132,224,143,193,160,163,180,116,220"/>
+<area shape="rect" id="Node000005" href="$classpism_1_1fem_1_1Q13DQuadrature64.html" title=" " alt="" coords="223,153,444,179"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="132,220,222,187,266,176,267,181,223,193,134,225"/>
+<area shape="rect" id="Node000006" href="$classpism_1_1fem_1_1Q13DQuadrature8.html" title=" " alt="" coords="227,203,440,228"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="188,228,226,224,227,229,189,233"/>
+<area shape="rect" id="Node000007" href="$classpism_1_1fem_1_1Q1Quadrature1.html" title="The 1&#45;point Gaussian quadrature on the square [&#45;1,1]*[&#45;1,1]." alt="" coords="236,252,431,277"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="189,248,236,252,236,258,188,253"/>
+<area shape="rect" id="Node000008" href="$classpism_1_1fem_1_1Q1Quadrature16.html" title="The 16&#45;point Gaussian quadrature on the square [&#45;1,1]*[&#45;1,1]." alt="" coords="232,301,435,327"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="136,256,223,286,272,299,270,304,222,291,134,261"/>
+<area shape="rect" id="Node000009" href="$classpism_1_1fem_1_1Q1Quadrature4.html" title="The 4&#45;point Gaussian quadrature on the square [&#45;1,1]*[&#45;1,1]." alt="" coords="236,351,431,376"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="116,261,164,299,224,336,259,348,257,353,222,340,161,304,113,265"/>
+<area shape="rect" id="Node000010" href="$classpism_1_1fem_1_1Q1Quadrature9.html" title="The 9&#45;point Gaussian quadrature on the square [&#45;1,1]*[&#45;1,1]." alt="" coords="236,400,431,425"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="108,263,155,325,187,358,224,385,252,397,250,402,221,390,184,362,151,329,104,267"/>
+<area shape="rect" id="Node000011" href="$classpism_1_1fem_1_1Q1QuadratureN.html" title=" " alt="" coords="235,449,432,475"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="104,265,121,304,147,350,182,396,224,434,249,447,246,452,221,439,178,399,143,353,116,306,99,267"/>
 </map>

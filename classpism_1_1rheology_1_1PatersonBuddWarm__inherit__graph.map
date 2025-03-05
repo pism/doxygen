@@ -1,5 +1,7 @@
 <map id="pism::rheology::PatersonBuddWarm" name="pism::rheology::PatersonBuddWarm">
-<area shape="rect" id="node1" title="Warm case of Paterson&#45;Budd." alt="" coords="21,155,204,196"/>
-<area shape="rect" id="node2" href="$classpism_1_1rheology_1_1PatersonBudd.html" title="Derived class of FlowLaw for Paterson&#45;Budd (1982)&#45;Glen ice." alt="" coords="5,80,220,107"/>
-<area shape="rect" id="node3" href="$classpism_1_1rheology_1_1FlowLaw.html" title=" " alt="" coords="21,5,204,32"/>
+<area shape="rect" id="Node000001" title="Warm case of Paterson&#45;Budd." alt="" coords="21,152,204,192"/>
+<area shape="rect" id="Node000002" href="$classpism_1_1rheology_1_1PatersonBudd.html" title="Derived class of FlowLaw for Paterson&#45;Budd (1982)&#45;Glen ice." alt="" coords="5,79,220,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="115,118,115,152,110,152,110,118"/>
+<area shape="rect" id="Node000003" href="$classpism_1_1rheology_1_1FlowLaw.html" title=" " alt="" coords="21,5,204,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="115,44,115,79,110,79,110,44"/>
 </map>

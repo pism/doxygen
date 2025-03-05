@@ -1,6 +1,9 @@
 <map id="pism::icebin::NullTransportHydrology" name="pism::icebin::NullTransportHydrology">
-<area shape="rect" id="node1" title=" " alt="" coords="18,229,213,271"/>
-<area shape="rect" id="node2" href="$classpism_1_1hydrology_1_1NullTransport.html" title=" " alt="" coords="5,155,225,181"/>
-<area shape="rect" id="node3" href="$classpism_1_1hydrology_1_1Hydrology.html" title="The PISM subglacial hydrology model interface." alt="" coords="15,80,216,107"/>
-<area shape="rect" id="node4" href="$classpism_1_1Component.html" title="A class defining a common interface for most PISM sub&#45;models." alt="" coords="47,5,184,32"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="18,225,213,265"/>
+<area shape="rect" id="Node000002" href="$classpism_1_1hydrology_1_1NullTransport.html" title=" " alt="" coords="5,152,225,177"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="118,191,118,225,113,225,113,191"/>
+<area shape="rect" id="Node000003" href="$classpism_1_1hydrology_1_1Hydrology.html" title="The PISM subglacial hydrology model interface." alt="" coords="15,79,216,104"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="118,118,118,152,113,152,113,118"/>
+<area shape="rect" id="Node000004" href="$classpism_1_1Component.html" title="A class defining a common interface for most PISM sub&#45;models." alt="" coords="47,5,184,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="118,44,118,79,113,79,113,44"/>
 </map>

@@ -1,4 +1,5 @@
 <map id="pism::AgeColumnSystem" name="pism::AgeColumnSystem">
-<area shape="rect" id="node1" title="Tridiagonal linear system for vertical column of age (pure advection) problem." alt="" coords="5,80,192,107"/>
-<area shape="rect" id="node2" href="$classpism_1_1columnSystemCtx.html" title="Base class for tridiagonal systems in the ice." alt="" coords="8,5,189,32"/>
+<area shape="rect" id="Node000001" title="Tridiagonal linear system for vertical column of age (pure advection) problem." alt="" coords="5,79,192,104"/>
+<area shape="rect" id="Node000002" href="$classpism_1_1columnSystemCtx.html" title="Base class for tridiagonal systems in the ice." alt="" coords="8,5,189,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="101,44,101,79,96,79,96,44"/>
 </map>

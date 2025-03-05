@@ -1,7 +1,11 @@
 <map id="pism::inverse::IP_L2NormFunctional2V" name="pism::inverse::IP_L2NormFunctional2V">
-<area shape="rect" id="node1" title="Implements a functional corresponding to (the square of) an &#160;norm of a vector valued function." alt="" coords="1007,35,1195,76"/>
-<area shape="rect" id="node2" href="$classpism_1_1inverse_1_1IPInnerProductFunctional.html" title=" " alt="" coords="745,35,957,76"/>
-<area shape="rect" id="node3" href="$classpism_1_1inverse_1_1IPFunctional.html" title=" " alt="" coords="375,5,573,47"/>
-<area shape="rect" id="node4" href="$classpism_1_1inverse_1_1IPFunctional.html" title="Abstract base class for functions from ice model vectors to ." alt="" coords="5,39,203,80"/>
-<area shape="rect" id="node5" href="$classpism_1_1inverse_1_1IPInnerProductFunctional.html" title="Abstract base class for IPFunctionals arising from an inner product." alt="" coords="368,71,580,112"/>
+<area shape="rect" id="Node000001" title="Implements a functional corresponding to (the square of) an &#160;norm of a vector valued function." alt="" coords="891,37,1079,77"/>
+<area shape="rect" id="Node000002" href="$classpism_1_1inverse_1_1IPInnerProductFunctional.html" title=" " alt="" coords="629,37,841,77"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="855,55,891,55,891,60,855,60"/>
+<area shape="rect" id="Node000003" href="$classpism_1_1inverse_1_1IPFunctional.html" title="Abstract base class for functions from ice model vectors to ." alt="" coords="259,5,457,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="471,32,629,46,629,51,470,38"/>
+<area shape="rect" id="Node000004" href="$classpism_1_1inverse_1_1IPInnerProductFunctional.html" title="Abstract base class for IPFunctionals arising from an inner product." alt="" coords="252,69,464,109"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="477,77,629,64,629,69,478,82"/>
+<area shape="rect" id="Node000005" href="$classpism_1_1inverse_1_1IPFunctional.html" title="Abstract base class for functions from ice model vectors to ." alt="" coords="5,69,203,109"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="216,87,252,87,252,92,216,92"/>
 </map>

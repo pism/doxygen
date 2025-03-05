@@ -1,5 +1,7 @@
 <map id="pism::surface::InitializationHelper" name="pism::surface::InitializationHelper">
-<area shape="rect" id="node1" title=" " alt="" coords="9,155,208,196"/>
-<area shape="rect" id="node2" href="$classpism_1_1surface_1_1SurfaceModel.html" title="The interface of PISM&#39;s surface models." alt="" coords="5,80,212,107"/>
-<area shape="rect" id="node3" href="$classpism_1_1Component.html" title="A class defining a common interface for most PISM sub&#45;models." alt="" coords="40,5,177,32"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="9,152,208,192"/>
+<area shape="rect" id="Node000002" href="$classpism_1_1surface_1_1SurfaceModel.html" title="The interface of PISM&#39;s surface models." alt="" coords="5,79,212,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="111,118,111,152,106,152,106,118"/>
+<area shape="rect" id="Node000003" href="$classpism_1_1Component.html" title="A class defining a common interface for most PISM sub&#45;models." alt="" coords="40,5,177,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="111,44,111,79,106,79,106,44"/>
 </map>

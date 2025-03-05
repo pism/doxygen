@@ -1,3 +1,11 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$structpism_1_1units_1_1DateTime.html" title=" " alt="" coords="5,5,172,32"/>
+<area shape="rect" id="Node000000" href="$classpism_1_1TerminationReason.html" title=" " alt="" coords="5,95,192,121"/>
+<area shape="rect" id="Node000001" href="$classpism_1_1GenericTerminationReason.html" title=" " alt="" coords="256,5,445,45"/>
+<area shape="poly" id="edge392_Node000000_Node000001" title=" " alt="" coords="145,88,239,55,278,43,279,48,241,60,147,93"/>
+<area shape="rect" id="Node000002" href="$classpism_1_1KSPTerminationReason.html" title=" " alt="" coords="245,70,457,95"/>
+<area shape="poly" id="edge393_Node000000_Node000002" title=" " alt="" coords="205,95,244,91,245,96,206,100"/>
+<area shape="rect" id="Node000003" href="$classpism_1_1SNESTerminationReason.html" title=" " alt="" coords="240,119,461,145"/>
+<area shape="poly" id="edge394_Node000000_Node000003" title=" " alt="" coords="206,116,240,119,240,124,206,121"/>
+<area shape="rect" id="Node000004" href="$classpism_1_1taoutil_1_1TAOTerminationReason.html" title="Encapsulate TAO&#39;s TaoSolverTerminationReason codes as a PISM TerminationReason." alt="" coords="243,169,458,209"/>
+<area shape="poly" id="edge395_Node000000_Node000004" title=" " alt="" coords="150,123,241,153,283,167,281,172,239,159,148,128"/>
 </map>

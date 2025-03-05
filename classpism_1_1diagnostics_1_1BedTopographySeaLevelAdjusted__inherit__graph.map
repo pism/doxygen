@@ -1,6 +1,10 @@
 <map id="pism::diagnostics::BedTopographySeaLevelAdjusted" name="pism::diagnostics::BedTopographySeaLevelAdjusted">
-<area shape="rect" id="node1" title="Sea&#45;level adjusted bed topography (zero at sea level)." alt="" coords="5,247,244,288"/>
-<area shape="rect" id="node2" href="$classpism_1_1Diag.html" title=" " alt="" coords="34,171,215,197"/>
-<area shape="rect" id="node3" href="$classpism_1_1Diagnostic.html" title="Class representing diagnostic computations in PISM." alt="" coords="54,5,185,32"/>
-<area shape="rect" id="node4" href="$classpism_1_1Diag.html" title="A template derived from Diagnostic, adding a &quot;Model&quot;." alt="" coords="141,81,303,108"/>
+<area shape="rect" id="Node000001" title="Sea&#45;level adjusted bed topography (zero at sea level)." alt="" coords="5,243,244,283"/>
+<area shape="rect" id="Node000002" href="$classpism_1_1Diag.html" title=" " alt="" coords="34,168,215,193"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="127,207,127,243,122,243,122,207"/>
+<area shape="rect" id="Node000003" href="$classpism_1_1Diagnostic.html" title="Class representing diagnostic computations in PISM." alt="" coords="54,5,185,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="123,44,127,168,122,168,118,45"/>
+<area shape="rect" id="Node000004" href="$classpism_1_1Diag.html" title="A template derived from Diagnostic, adding a &quot;Model&quot;." alt="" coords="141,80,303,105"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="149,37,207,78,204,82,146,41"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="200,116,140,169,136,165,197,112"/>
 </map>

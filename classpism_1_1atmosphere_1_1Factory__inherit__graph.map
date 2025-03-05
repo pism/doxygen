@@ -1,5 +1,7 @@
 <map id="pism::atmosphere::Factory" name="pism::atmosphere::Factory">
-<area shape="rect" id="node1" title=" " alt="" coords="18,185,213,212"/>
-<area shape="rect" id="node2" href="$classpism_1_1PCFactory.html" title=" " alt="" coords="5,95,225,136"/>
-<area shape="rect" id="node3" href="$classpism_1_1PCFactory.html" title=" " alt="" coords="17,5,213,32"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="18,183,213,208"/>
+<area shape="rect" id="Node000002" href="$classpism_1_1PCFactory.html" title=" " alt="" coords="5,93,225,133"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="118,147,118,182,113,182,113,147"/>
+<area shape="rect" id="Node000003" href="$classpism_1_1PCFactory.html" title=" " alt="" coords="17,5,213,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="118,44,118,93,113,93,113,44"/>
 </map>

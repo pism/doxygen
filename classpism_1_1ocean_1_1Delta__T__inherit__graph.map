@@ -1,5 +1,7 @@
 <map id="pism::ocean::Delta_T" name="pism::ocean::Delta_T">
-<area shape="rect" id="node1" title="Forcing using shelf base temperature scalar time&#45;dependent offsets." alt="" coords="21,155,180,181"/>
-<area shape="rect" id="node2" href="$classpism_1_1ocean_1_1OceanModel.html" title="A very rudimentary PISM ocean model." alt="" coords="5,80,196,107"/>
-<area shape="rect" id="node3" href="$classpism_1_1Component.html" title="A class defining a common interface for most PISM sub&#45;models." alt="" coords="32,5,169,32"/>
+<area shape="rect" id="Node000001" title="Forcing using shelf base temperature scalar time&#45;dependent offsets." alt="" coords="21,152,180,177"/>
+<area shape="rect" id="Node000002" href="$classpism_1_1ocean_1_1OceanModel.html" title="A very rudimentary PISM ocean model." alt="" coords="5,79,196,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="103,118,103,152,98,152,98,118"/>
+<area shape="rect" id="Node000003" href="$classpism_1_1Component.html" title="A class defining a common interface for most PISM sub&#45;models." alt="" coords="32,5,169,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="103,44,103,79,98,79,98,44"/>
 </map>

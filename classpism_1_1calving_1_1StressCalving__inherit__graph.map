@@ -1,6 +1,9 @@
 <map id="pism::calving::StressCalving" name="pism::calving::StressCalving">
-<area shape="rect" id="node1" title="An abstract class containing fields used by all stress&#45;based calving methods." alt="" coords="123,80,330,107"/>
-<area shape="rect" id="node3" href="$classpism_1_1calving_1_1EigenCalving.html" title=" " alt="" coords="5,155,208,181"/>
-<area shape="rect" id="node4" href="$classpism_1_1calving_1_1vonMisesCalving.html" title=" " alt="" coords="233,155,461,181"/>
-<area shape="rect" id="node2" href="$classpism_1_1Component.html" title="A class defining a common interface for most PISM sub&#45;models." alt="" coords="158,5,295,32"/>
+<area shape="rect" id="Node000001" title="An abstract class containing fields used by all stress&#45;based calving methods." alt="" coords="123,79,330,104"/>
+<area shape="rect" id="Node000003" href="$classpism_1_1calving_1_1EigenCalving.html" title=" " alt="" coords="5,152,208,177"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="197,113,128,154,125,149,194,109"/>
+<area shape="rect" id="Node000004" href="$classpism_1_1calving_1_1vonMisesCalving.html" title=" " alt="" coords="233,152,461,177"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="259,109,328,149,326,154,257,113"/>
+<area shape="rect" id="Node000002" href="$classpism_1_1Component.html" title="A class defining a common interface for most PISM sub&#45;models." alt="" coords="158,5,295,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="229,44,229,79,224,79,224,44"/>
 </map>

@@ -1,5 +1,7 @@
 <map id="pism::bed::Null" name="pism::bed::Null">
-<area shape="rect" id="node1" title=" " alt="" coords="17,155,137,181"/>
-<area shape="rect" id="node2" href="$classpism_1_1bed_1_1BedDef.html" title="PISM bed deformation model (base class)." alt="" coords="5,80,148,107"/>
-<area shape="rect" id="node3" href="$classpism_1_1Component.html" title="A class defining a common interface for most PISM sub&#45;models." alt="" coords="8,5,145,32"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="17,152,137,177"/>
+<area shape="rect" id="Node000002" href="$classpism_1_1bed_1_1BedDef.html" title="PISM bed deformation model (base class)." alt="" coords="5,79,148,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="79,118,79,152,74,152,74,118"/>
+<area shape="rect" id="Node000003" href="$classpism_1_1Component.html" title="A class defining a common interface for most PISM sub&#45;models." alt="" coords="8,5,145,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="79,44,79,79,74,79,74,44"/>
 </map>

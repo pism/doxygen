@@ -1,8 +1,13 @@
 <map id="pism::YieldStress" name="pism::YieldStress">
-<area shape="rect" id="node1" title="The PISM basal yield stress model interface (virtual base class)" alt="" coords="267,80,402,107"/>
-<area shape="rect" id="node3" href="$classpism_1_1ConstantYieldStress.html" title=" " alt="" coords="5,155,197,181"/>
-<area shape="rect" id="node4" href="$classpism_1_1MohrCoulombYieldStress.html" title="PISM&#39;s default basal yield stress model which applies the Mohr&#45;Coulomb model of deformable,..." alt="" coords="222,155,447,181"/>
-<area shape="rect" id="node6" href="$classpism_1_1RegionalYieldStress.html" title=" " alt="" coords="471,155,662,181"/>
-<area shape="rect" id="node2" href="$classpism_1_1Component.html" title="A class defining a common interface for most PISM sub&#45;models." alt="" coords="266,5,403,32"/>
-<area shape="rect" id="node5" href="$classpism_1_1OptTillphiYieldStress.html" title="Iterative optimization of the till friction angle." alt="" coords="236,229,433,256"/>
+<area shape="rect" id="Node000001" title="The PISM basal yield stress model interface (virtual base class)" alt="" coords="267,79,402,104"/>
+<area shape="rect" id="Node000003" href="$classpism_1_1ConstantYieldStress.html" title=" " alt="" coords="5,152,197,177"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="285,110,140,154,138,149,284,105"/>
+<area shape="rect" id="Node000004" href="$classpism_1_1MohrCoulombYieldStress.html" title="PISM&#39;s default basal yield stress model which applies the Mohr&#45;Coulomb model of deformable,..." alt="" coords="222,152,447,177"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="337,118,337,152,332,152,332,118"/>
+<area shape="rect" id="Node000006" href="$classpism_1_1RegionalYieldStress.html" title=" " alt="" coords="471,152,662,177"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="386,105,530,149,528,154,384,110"/>
+<area shape="rect" id="Node000002" href="$classpism_1_1Component.html" title="A class defining a common interface for most PISM sub&#45;models." alt="" coords="266,5,403,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="337,44,337,79,332,79,332,44"/>
+<area shape="rect" id="Node000005" href="$classpism_1_1OptTillphiYieldStress.html" title="Iterative optimization of the till friction angle." alt="" coords="236,225,433,251"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="337,191,337,225,332,225,332,191"/>
 </map>

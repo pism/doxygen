@@ -1,18 +1,33 @@
 <map id="pism::atmosphere::AtmosphereModel" name="pism::atmosphere::AtmosphereModel">
-<area shape="rect" id="node1" title="A purely virtual class defining the interface of a PISM Atmosphere Model." alt="" coords="191,267,417,309"/>
-<area shape="rect" id="node3" href="$classpism_1_1atmosphere_1_1Anomaly.html" title="Reads and uses air_temp and precipitation anomalies from a file." alt="" coords="477,5,684,32"/>
-<area shape="rect" id="node4" href="$classpism_1_1atmosphere_1_1Delta__P.html" title=" " alt="" coords="481,56,680,83"/>
-<area shape="rect" id="node5" href="$classpism_1_1atmosphere_1_1Delta__T.html" title=" " alt="" coords="481,107,680,133"/>
-<area shape="rect" id="node6" href="$classpism_1_1atmosphere_1_1ElevationChange.html" title=" " alt="" coords="476,158,685,199"/>
-<area shape="rect" id="node7" href="$classpism_1_1atmosphere_1_1Frac__P.html" title=" " alt="" coords="485,224,676,251"/>
-<area shape="rect" id="node8" href="$classpism_1_1atmosphere_1_1Given.html" title=" " alt="" coords="487,275,674,301"/>
-<area shape="rect" id="node9" href="$classpism_1_1atmosphere_1_1OrographicPrecipitation.html" title=" " alt="" coords="471,326,690,367"/>
-<area shape="rect" id="node10" href="$classpism_1_1atmosphere_1_1PrecipitationScaling.html" title=" " alt="" coords="465,391,696,433"/>
-<area shape="rect" id="node11" href="$classpism_1_1atmosphere_1_1Uniform.html" title=" " alt="" coords="480,457,681,484"/>
-<area shape="rect" id="node12" href="$classpism_1_1atmosphere_1_1WeatherStation.html" title=" " alt="" coords="479,509,682,550"/>
-<area shape="rect" id="node13" href="$classpism_1_1atmosphere_1_1YearlyCycle.html" title=" " alt="" coords="487,574,674,615"/>
-<area shape="rect" id="node2" href="$classpism_1_1Component.html" title="A class defining a common interface for most PISM sub&#45;models." alt="" coords="5,275,143,301"/>
-<area shape="rect" id="node14" href="$classpism_1_1atmosphere_1_1CosineYearlyCycle.html" title=" " alt="" coords="782,515,974,557"/>
-<area shape="rect" id="node15" href="$classpism_1_1atmosphere_1_1PIK.html" title=" " alt="" coords="793,581,963,608"/>
-<area shape="rect" id="node16" href="$classpism_1_1atmosphere_1_1SeaRISEGreenland.html" title="A modification of YearlyCycle tailored for the SeaRISE&#45;Greenland assessment. Uses the Fausto [Faustoe..." alt="" coords="744,632,1012,659"/>
+<area shape="rect" id="Node000001" title="A purely virtual class defining the interface of a PISM Atmosphere Model." alt="" coords="191,261,417,301"/>
+<area shape="rect" id="Node000003" href="$classpism_1_1atmosphere_1_1Anomaly.html" title="Reads and uses air_temp and precipitation anomalies from a file." alt="" coords="477,5,684,31"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="315,247,337,200,369,143,411,87,436,62,464,40,486,28,488,33,467,44,440,66,415,90,373,146,341,202,320,249"/>
+<area shape="rect" id="Node000004" href="$classpism_1_1atmosphere_1_1Delta__P.html" title=" " alt="" coords="481,55,680,80"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="321,247,345,210,377,167,417,124,464,89,489,78,491,82,467,94,421,128,381,170,349,213,325,250"/>
+<area shape="rect" id="Node000005" href="$classpism_1_1atmosphere_1_1Delta__T.html" title=" " alt="" coords="481,104,680,129"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="330,249,387,192,424,164,464,140,498,127,499,132,467,144,427,168,391,197,333,252"/>
+<area shape="rect" id="Node000006" href="$classpism_1_1atmosphere_1_1ElevationChange.html" title=" " alt="" coords="476,154,685,194"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="355,252,464,204,501,191,502,197,466,208,357,257"/>
+<area shape="rect" id="Node000007" href="$classpism_1_1atmosphere_1_1Frac__P.html" title=" " alt="" coords="485,219,676,244"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="430,256,508,241,509,247,430,261"/>
+<area shape="rect" id="Node000008" href="$classpism_1_1atmosphere_1_1Given.html" title=" " alt="" coords="487,268,674,293"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="431,278,487,278,487,283,431,283"/>
+<area shape="rect" id="Node000009" href="$classpism_1_1atmosphere_1_1OrographicPrecipitation.html" title=" " alt="" coords="471,318,690,358"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="415,301,484,315,483,321,414,306"/>
+<area shape="rect" id="Node000010" href="$classpism_1_1atmosphere_1_1PrecipitationScaling.html" title=" " alt="" coords="465,382,696,422"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="349,306,404,337,466,368,500,379,498,384,464,372,401,342,346,310"/>
+<area shape="rect" id="Node000011" href="$classpism_1_1atmosphere_1_1Uniform.html" title=" " alt="" coords="480,447,681,472"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="330,309,388,372,425,405,467,432,497,444,495,449,464,436,422,409,384,376,327,313"/>
+<area shape="rect" id="Node000012" href="$classpism_1_1atmosphere_1_1WeatherStation.html" title=" " alt="" coords="479,497,682,537"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="324,312,348,351,380,398,420,444,467,482,489,494,486,499,464,487,416,447,376,401,343,354,320,315"/>
+<area shape="rect" id="Node000013" href="$classpism_1_1atmosphere_1_1YearlyCycle.html" title=" " alt="" coords="487,561,674,601"/>
+<area shape="poly" id="edge12_Node000001_Node000013" title=" " alt="" coords="318,313,339,365,370,428,413,492,438,521,467,547,489,559,486,564,464,551,435,525,408,495,365,431,334,367,313,315"/>
+<area shape="rect" id="Node000002" href="$classpism_1_1Component.html" title="A class defining a common interface for most PISM sub&#45;models." alt="" coords="5,268,143,293"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="156,278,191,278,191,283,156,283"/>
+<area shape="rect" id="Node000014" href="$classpism_1_1atmosphere_1_1CosineYearlyCycle.html" title=" " alt="" coords="782,503,974,543"/>
+<area shape="poly" id="edge13_Node000013_Node000014" title=" " alt="" coords="687,558,781,539,782,544,688,563"/>
+<area shape="rect" id="Node000015" href="$classpism_1_1atmosphere_1_1PIK.html" title=" " alt="" coords="793,568,963,593"/>
+<area shape="poly" id="edge14_Node000013_Node000015" title=" " alt="" coords="688,578,793,578,793,583,688,583"/>
+<area shape="rect" id="Node000016" href="$classpism_1_1atmosphere_1_1SeaRISEGreenland.html" title="A modification of YearlyCycle tailored for the SeaRISE&#45;Greenland assessment. Uses the Fausto [Faustoe..." alt="" coords="744,617,1012,643"/>
+<area shape="poly" id="edge15_Node000013_Node000016" title=" " alt="" coords="688,596,801,615,800,620,687,601"/>
 </map>

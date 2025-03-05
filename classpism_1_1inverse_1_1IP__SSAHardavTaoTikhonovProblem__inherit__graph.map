@@ -1,5 +1,7 @@
 <map id="pism::inverse::IP_SSAHardavTaoTikhonovProblem" name="pism::inverse::IP_SSAHardavTaoTikhonovProblem">
-<area shape="rect" id="node1" title="Defines an IPTaoTikhonovProblem for inversion of basal yeild stresses &#160;from SSA velocities." alt="" coords="52,200,263,241"/>
-<area shape="rect" id="node2" href="$classpism_1_1inverse_1_1IPTaoTikhonovProblem.html" title=" " alt="" coords="5,109,309,151"/>
-<area shape="rect" id="node3" href="$classpism_1_1inverse_1_1IPTaoTikhonovProblem.html" title="Defines a Tikhonov minimization problem to be solved with a TaoBasicSolver." alt="" coords="51,5,263,47"/>
+<area shape="rect" id="Node000001" title="Defines an IPTaoTikhonovProblem for inversion of basal yeild stresses &#160;from SSA velocities." alt="" coords="52,197,263,237"/>
+<area shape="rect" id="Node000002" href="$classpism_1_1inverse_1_1IPTaoTikhonovProblem.html" title=" " alt="" coords="5,108,309,148"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="160,162,160,197,155,197,155,162"/>
+<area shape="rect" id="Node000003" href="$classpism_1_1inverse_1_1IPTaoTikhonovProblem.html" title="Defines a Tikhonov minimization problem to be solved with a TaoBasicSolver." alt="" coords="51,5,263,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="160,59,160,108,155,108,155,59"/>
 </map>

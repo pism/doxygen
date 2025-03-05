@@ -1,10 +1,19 @@
 <map id="pism::stressbalance::SSA" name="pism::stressbalance::SSA">
-<area shape="rect" id="node1" title="PISM&#39;s SSA solver." alt="" coords="412,46,599,73"/>
-<area shape="rect" id="node4" href="$classpism_1_1stressbalance_1_1SSAFD.html" title="PISM&#39;s SSA solver: the finite difference implementation." alt="" coords="647,5,799,47"/>
-<area shape="rect" id="node6" href="$classpism_1_1stressbalance_1_1SSAFEM.html" title="PISM&#39;s SSA solver: the finite element method implementation written by Jed and David." alt="" coords="647,71,799,112"/>
-<area shape="rect" id="node2" href="$classpism_1_1stressbalance_1_1ShallowStressBalance.html" title="Shallow stress balance (such as the SSA)." alt="" coords="191,39,364,80"/>
-<area shape="rect" id="node3" href="$classpism_1_1Component.html" title="A class defining a common interface for most PISM sub&#45;models." alt="" coords="5,46,143,73"/>
-<area shape="rect" id="node5" href="$classpism_1_1stressbalance_1_1SSAFD__Regional.html" title="A version of the SSA stress balance with tweaks for outlet glacier simulations." alt="" coords="876,5,1028,47"/>
-<area shape="rect" id="node7" href="$classpism_1_1inverse_1_1IP__SSAHardavForwardProblem.html" title="Implements the forward problem of the map taking &#160;to the corresponding solution of the SSA." alt="" coords="847,71,1057,112"/>
-<area shape="rect" id="node8" href="$classpism_1_1inverse_1_1IP__SSATaucForwardProblem.html" title="Implements the forward problem of the map taking &#160;to the corresponding solution of the SSA." alt="" coords="857,136,1047,177"/>
+<area shape="rect" id="Node000001" title="PISM&#39;s SSA solver." alt="" coords="412,109,599,134"/>
+<area shape="rect" id="Node000004" href="$classpism_1_1stressbalance_1_1SSAFDBase.html" title=" " alt="" coords="647,69,799,109"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="605,104,646,98,647,103,606,109"/>
+<area shape="rect" id="Node000007" href="$classpism_1_1stressbalance_1_1SSAFEM.html" title="PISM&#39;s SSA solver: the finite element method implementation written by Jed and David." alt="" coords="647,133,799,173"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="606,133,647,140,646,145,605,139"/>
+<area shape="rect" id="Node000002" href="$classpism_1_1stressbalance_1_1ShallowStressBalance.html" title="Shallow stress balance (such as the SSA)." alt="" coords="191,101,364,141"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="378,119,412,119,412,124,378,124"/>
+<area shape="rect" id="Node000003" href="$classpism_1_1Component.html" title="A class defining a common interface for most PISM sub&#45;models." alt="" coords="5,109,143,134"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="156,119,191,119,191,124,156,124"/>
+<area shape="rect" id="Node000005" href="$classpism_1_1stressbalance_1_1SSAFD.html" title="PISM&#39;s SSA solver: the finite difference implementation." alt="" coords="876,5,1028,45"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="807,63,879,43,881,48,809,68"/>
+<area shape="rect" id="Node000006" href="$classpism_1_1stressbalance_1_1SSAFD__SNES.html" title=" " alt="" coords="876,69,1028,109"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="812,87,876,87,876,92,812,92"/>
+<area shape="rect" id="Node000008" href="$classpism_1_1inverse_1_1IP__SSAHardavForwardProblem.html" title="Implements the forward problem of the map taking &#160;to the corresponding solution of the SSA." alt="" coords="847,133,1057,173"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="812,151,846,151,846,156,812,156"/>
+<area shape="rect" id="Node000009" href="$classpism_1_1inverse_1_1IP__SSATaucForwardProblem.html" title="Implements the forward problem of the map taking &#160;to the corresponding solution of the SSA." alt="" coords="857,197,1047,237"/>
+<area shape="poly" id="edge8_Node000007_Node000009" title=" " alt="" coords="809,174,881,195,879,200,807,180"/>
 </map>

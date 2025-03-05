@@ -1,0 +1,17 @@
+<map id="pism::diagnostics::MassTransportAcrossGroundingLine" name="pism::diagnostics::MassTransportAcrossGroundingLine">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,431,259,471"/>
+<area shape="rect" id="Node000002" href="$classpism_1_1DiagAverageRate.html" title=" " alt="" coords="45,341,219,381"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="135,395,135,431,129,431,129,395"/>
+<area shape="rect" id="Node000003" href="$classpism_1_1Diag.html" title="A template derived from Diagnostic, adding a &quot;Model&quot;." alt="" coords="29,129,192,155"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="116,168,133,341,127,341,110,169"/>
+<area shape="rect" id="Node000004" href="$classpism_1_1Diagnostic.html" title="Class representing diagnostic computations in PISM." alt="" coords="147,5,277,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="196,43,122,131,118,128,192,40"/>
+<area shape="rect" id="Node000006" href="$classpism_1_1Diag.html" title=" " alt="" coords="190,179,325,204"/>
+<area shape="poly" id="edge6_Node000006_Node000004" title=" " alt="" coords="221,43,257,178,252,179,216,45"/>
+<area shape="rect" id="Node000007" href="$classpism_1_1Diag.html" title="A template derived from Diagnostic, adding a &quot;Model&quot;." alt="" coords="249,80,412,105"/>
+<area shape="poly" id="edge8_Node000007_Node000004" title=" " alt="" coords="244,36,313,78,310,82,242,40"/>
+<area shape="rect" id="Node000005" href="$classpism_1_1DiagAverageRate.html" title=" " alt="" coords="149,253,366,279"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="233,289,159,343,156,339,229,285"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="260,218,260,253,255,253,255,218"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="316,118,268,180,264,177,312,115"/>
+</map>

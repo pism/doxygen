@@ -1,13 +1,24 @@
 <map id="pism::array::Scalar" name="pism::array::Scalar">
-<area shape="rect" id="node1" title=" " alt="" coords="196,337,339,364"/>
-<area shape="rect" id="node6" href="$classpism_1_1array_1_1CellType.html" title="&quot;Cell type&quot; mask. Adds convenience methods to array::Scalar." alt="" coords="9,413,168,440"/>
-<area shape="rect" id="node9" href="$classpism_1_1array_1_1Forcing.html" title="2D time&#45;dependent inputs (for climate forcing, etc)" alt="" coords="192,413,343,440"/>
-<area shape="rect" id="node10" href="$classpism_1_1array_1_1Scalar1.html" title=" " alt="" coords="367,413,517,440"/>
-<area shape="rect" id="node2" href="$classpism_1_1array_1_1Array2D.html" title=" " alt="" coords="189,247,345,288"/>
-<area shape="rect" id="node3" href="$classpism_1_1array_1_1Array.html" title="Abstract class for reading, writing, allocating, and accessing a DA&#45;based PETSc Vec (2D and 3D fields..." alt="" coords="193,81,331,108"/>
-<area shape="rect" id="node5" href="$classpism_1_1array_1_1Array2D.html" title="A storage vector combining related fields in a struct." alt="" coords="283,157,478,184"/>
-<area shape="rect" id="node4" href="$classpism_1_1PetscAccessible.html" title=" " alt="" coords="179,5,345,32"/>
-<area shape="rect" id="node7" href="$classpism_1_1array_1_1CellType1.html" title=" " alt="" coords="5,489,172,516"/>
-<area shape="rect" id="node8" href="$classpism_1_1array_1_1CellType2.html" title=" " alt="" coords="5,565,172,592"/>
-<area shape="rect" id="node11" href="$classpism_1_1array_1_1Scalar2.html" title=" " alt="" coords="367,489,517,516"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="196,332,339,357"/>
+<area shape="rect" id="Node000006" href="$classpism_1_1array_1_1CellType.html" title="&quot;Cell type&quot; mask. Adds convenience methods to array::Scalar." alt="" coords="9,407,168,432"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="227,365,118,409,116,404,225,360"/>
+<area shape="rect" id="Node000009" href="$classpism_1_1array_1_1Forcing.html" title="2D time&#45;dependent inputs (for climate forcing, etc)" alt="" coords="192,407,343,432"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="270,372,270,406,265,406,265,372"/>
+<area shape="rect" id="Node000010" href="$classpism_1_1array_1_1Scalar1.html" title=" " alt="" coords="367,407,517,432"/>
+<area shape="poly" id="edge10_Node000001_Node000010" title=" " alt="" coords="309,360,415,404,413,409,307,365"/>
+<area shape="rect" id="Node000002" href="$classpism_1_1array_1_1Array2D.html" title=" " alt="" coords="189,243,345,283"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="270,296,270,332,265,332,265,296"/>
+<area shape="rect" id="Node000003" href="$classpism_1_1array_1_1Array.html" title="Abstract class for reading, writing, allocating, and accessing a DA&#45;based PETSc Vec (2D and 3D fields..." alt="" coords="193,80,331,105"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="265,119,269,242,264,242,260,119"/>
+<area shape="rect" id="Node000005" href="$classpism_1_1array_1_1Array2D.html" title="A storage vector combining related fields in a struct." alt="" coords="283,155,478,180"/>
+<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="294,111,363,152,360,157,292,115"/>
+<area shape="rect" id="Node000004" href="$classpism_1_1PetscAccessible.html" title=" " alt="" coords="179,5,345,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="265,45,265,80,259,80,259,45"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="358,191,292,245,289,240,355,187"/>
+<area shape="rect" id="Node000007" href="$classpism_1_1array_1_1CellType1.html" title=" " alt="" coords="5,481,172,507"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="91,446,91,481,86,481,86,446"/>
+<area shape="rect" id="Node000008" href="$classpism_1_1array_1_1CellType2.html" title=" " alt="" coords="5,556,172,581"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="91,521,91,556,86,556,86,521"/>
+<area shape="rect" id="Node000011" href="$classpism_1_1array_1_1Scalar2.html" title=" " alt="" coords="367,481,517,507"/>
+<area shape="poly" id="edge11_Node000010_Node000011" title=" " alt="" coords="445,446,445,481,439,481,439,446"/>
 </map>

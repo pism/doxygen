@@ -1,5 +1,7 @@
 <map id="pism::rheology::IsothermalGlen" name="pism::rheology::IsothermalGlen">
-<area shape="rect" id="node1" title="Isothermal Glen ice allowing extra customization." alt="" coords="5,155,232,181"/>
-<area shape="rect" id="node2" href="$classpism_1_1rheology_1_1PatersonBudd.html" title="Derived class of FlowLaw for Paterson&#45;Budd (1982)&#45;Glen ice." alt="" coords="11,80,226,107"/>
-<area shape="rect" id="node3" href="$classpism_1_1rheology_1_1FlowLaw.html" title=" " alt="" coords="27,5,210,32"/>
+<area shape="rect" id="Node000001" title="Isothermal Glen ice allowing extra customization." alt="" coords="5,152,232,177"/>
+<area shape="rect" id="Node000002" href="$classpism_1_1rheology_1_1PatersonBudd.html" title="Derived class of FlowLaw for Paterson&#45;Budd (1982)&#45;Glen ice." alt="" coords="11,79,226,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="121,118,121,152,116,152,116,118"/>
+<area shape="rect" id="Node000003" href="$classpism_1_1rheology_1_1FlowLaw.html" title=" " alt="" coords="27,5,210,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="121,44,121,79,116,79,116,44"/>
 </map>

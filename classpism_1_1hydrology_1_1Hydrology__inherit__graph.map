@@ -1,9 +1,15 @@
 <map id="pism::hydrology::Hydrology" name="pism::hydrology::Hydrology">
-<area shape="rect" id="node1" title="The PISM subglacial hydrology model interface." alt="" coords="191,93,392,120"/>
-<area shape="rect" id="node3" href="$classpism_1_1hydrology_1_1NullTransport.html" title=" " alt="" coords="440,64,660,91"/>
-<area shape="rect" id="node6" href="$classpism_1_1hydrology_1_1Routing.html" title="A subglacial hydrology model which assumes water pressure equals overburden pressure." alt="" coords="458,119,642,145"/>
-<area shape="rect" id="node2" href="$classpism_1_1Component.html" title="A class defining a common interface for most PISM sub&#45;models." alt="" coords="5,93,143,120"/>
-<area shape="rect" id="node4" href="$classpism_1_1hydrology_1_1SteadyState.html" title=" " alt="" coords="708,5,921,32"/>
-<area shape="rect" id="node5" href="$classpism_1_1icebin_1_1NullTransportHydrology.html" title=" " alt="" coords="717,57,912,98"/>
-<area shape="rect" id="node7" href="$classpism_1_1hydrology_1_1Distributed.html" title="The PISM subglacial hydrology model for a distributed linked&#45;cavity system." alt="" coords="711,123,918,149"/>
+<area shape="rect" id="Node000001" title="The PISM subglacial hydrology model interface." alt="" coords="191,92,392,117"/>
+<area shape="rect" id="Node000003" href="$classpism_1_1hydrology_1_1NullTransport.html" title=" " alt="" coords="440,63,660,88"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="405,89,439,85,440,90,406,94"/>
+<area shape="rect" id="Node000006" href="$classpism_1_1hydrology_1_1Routing.html" title="A subglacial hydrology model which assumes water pressure equals overburden pressure." alt="" coords="458,116,642,141"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="406,113,458,117,457,123,405,118"/>
+<area shape="rect" id="Node000002" href="$classpism_1_1Component.html" title="A class defining a common interface for most PISM sub&#45;models." alt="" coords="5,92,143,117"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="157,102,190,102,190,107,157,107"/>
+<area shape="rect" id="Node000004" href="$classpism_1_1hydrology_1_1SteadyState.html" title=" " alt="" coords="708,5,921,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="622,57,755,28,756,33,623,62"/>
+<area shape="rect" id="Node000005" href="$classpism_1_1icebin_1_1NullTransportHydrology.html" title=" " alt="" coords="717,55,912,95"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="674,73,717,73,717,78,674,78"/>
+<area shape="rect" id="Node000007" href="$classpism_1_1hydrology_1_1Distributed.html" title="The PISM subglacial hydrology model for a distributed linked&#45;cavity system." alt="" coords="711,120,918,145"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="656,128,711,128,711,134,656,133"/>
 </map>

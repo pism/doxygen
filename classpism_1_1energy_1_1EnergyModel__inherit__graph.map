@@ -1,10 +1,17 @@
 <map id="pism::energy::EnergyModel" name="pism::energy::EnergyModel">
-<area shape="rect" id="node1" title=" " alt="" coords="191,78,389,105"/>
-<area shape="rect" id="node3" href="$classpism_1_1energy_1_1CHSystem.html" title=" " alt="" coords="451,27,634,54"/>
-<area shape="rect" id="node4" href="$classpism_1_1energy_1_1EnthalpyModel.html" title="The enthalpy&#45;based energy balance model." alt="" coords="437,78,648,105"/>
-<area shape="rect" id="node7" href="$classpism_1_1energy_1_1TemperatureModel.html" title=" " alt="" coords="445,132,641,173"/>
-<area shape="rect" id="node2" href="$classpism_1_1Component.html" title="A class defining a common interface for most PISM sub&#45;models." alt="" coords="5,78,143,105"/>
-<area shape="rect" id="node5" href="$classpism_1_1energy_1_1DummyEnergyModel.html" title="The &quot;dummy&quot; energy balance model. Reads in enthalpy from a file, but does not update it." alt="" coords="696,5,907,47"/>
-<area shape="rect" id="node6" href="$classpism_1_1energy_1_1EnthalpyModel__Regional.html" title="The enthalpy&#45;based energy balance model for regional runs." alt="" coords="696,71,907,112"/>
-<area shape="rect" id="node8" href="$classpism_1_1energy_1_1TemperatureModel__Verification.html" title="Temperature&#45;based energy balance model with verification&#45;specific initialization code." alt="" coords="703,136,899,177"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="191,77,389,102"/>
+<area shape="rect" id="Node000003" href="$classpism_1_1energy_1_1CHSystem.html" title=" " alt="" coords="451,27,634,53"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="369,71,476,50,477,55,370,77"/>
+<area shape="rect" id="Node000004" href="$classpism_1_1energy_1_1EnthalpyModel.html" title="The enthalpy&#45;based energy balance model." alt="" coords="437,77,648,102"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="403,87,437,87,437,92,403,92"/>
+<area shape="rect" id="Node000007" href="$classpism_1_1energy_1_1TemperatureModel.html" title=" " alt="" coords="445,129,641,169"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="358,103,459,127,457,132,357,108"/>
+<area shape="rect" id="Node000002" href="$classpism_1_1Component.html" title="A class defining a common interface for most PISM sub&#45;models." alt="" coords="5,77,143,102"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="156,87,190,87,190,92,156,92"/>
+<area shape="rect" id="Node000005" href="$classpism_1_1energy_1_1DummyEnergyModel.html" title="The &quot;dummy&quot; energy balance model. Reads in enthalpy from a file, but does not update it." alt="" coords="696,5,907,45"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="613,71,647,63,725,43,726,48,649,68,615,76"/>
+<area shape="rect" id="Node000006" href="$classpism_1_1energy_1_1EnthalpyModel__Regional.html" title="The enthalpy&#45;based energy balance model for regional runs." alt="" coords="696,69,907,109"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="662,87,696,87,696,92,662,92"/>
+<area shape="rect" id="Node000008" href="$classpism_1_1energy_1_1TemperatureModel__Verification.html" title="Temperature&#45;based energy balance model with verification&#45;specific initialization code." alt="" coords="703,133,899,173"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="654,148,703,149,703,154,654,154"/>
 </map>

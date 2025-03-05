@@ -1,7 +1,11 @@
 <map id="pism::inverse::IP_SSAHardavForwardProblem" name="pism::inverse::IP_SSAHardavForwardProblem">
-<area shape="rect" id="node1" title="Implements the forward problem of the map taking &#160;to the corresponding solution of the SSA." alt="" coords="5,333,216,375"/>
-<area shape="rect" id="node2" href="$classpism_1_1stressbalance_1_1SSAFEM.html" title="PISM&#39;s SSA solver: the finite element method implementation written by Jed and David." alt="" coords="35,244,187,285"/>
-<area shape="rect" id="node3" href="$classpism_1_1stressbalance_1_1SSA.html" title="PISM&#39;s SSA solver." alt="" coords="17,169,204,196"/>
-<area shape="rect" id="node4" href="$classpism_1_1stressbalance_1_1ShallowStressBalance.html" title="Shallow stress balance (such as the SSA)." alt="" coords="24,80,197,121"/>
-<area shape="rect" id="node5" href="$classpism_1_1Component.html" title="A class defining a common interface for most PISM sub&#45;models." alt="" coords="42,5,179,32"/>
+<area shape="rect" id="Node000001" title="Implements the forward problem of the map taking &#160;to the corresponding solution of the SSA." alt="" coords="5,328,216,368"/>
+<area shape="rect" id="Node000002" href="$classpism_1_1stressbalance_1_1SSAFEM.html" title="PISM&#39;s SSA solver: the finite element method implementation written by Jed and David." alt="" coords="35,240,187,280"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="113,294,113,328,108,328,108,294"/>
+<area shape="rect" id="Node000003" href="$classpism_1_1stressbalance_1_1SSA.html" title="PISM&#39;s SSA solver." alt="" coords="17,167,204,192"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="113,206,113,240,108,240,108,206"/>
+<area shape="rect" id="Node000004" href="$classpism_1_1stressbalance_1_1ShallowStressBalance.html" title="Shallow stress balance (such as the SSA)." alt="" coords="24,79,197,119"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="113,132,113,166,108,166,108,132"/>
+<area shape="rect" id="Node000005" href="$classpism_1_1Component.html" title="A class defining a common interface for most PISM sub&#45;models." alt="" coords="42,5,179,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="113,44,113,79,108,79,108,44"/>
 </map>

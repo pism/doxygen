@@ -1,9 +1,17 @@
 <map id="pism::diagnostics::TendencyOfIceAmountDueToFlow" name="pism::diagnostics::TendencyOfIceAmountDueToFlow">
-<area shape="rect" id="node1" title="Computes tendency_of_ice_amount_due_to_flow, the rate of change of ice amount due to flow." alt="" coords="15,427,254,468"/>
-<area shape="rect" id="node2" href="$classpism_1_1DiagAverageRate.html" title=" " alt="" coords="47,336,222,377"/>
-<area shape="rect" id="node3" href="$classpism_1_1Diag.html" title=" " alt="" coords="5,171,187,197"/>
-<area shape="rect" id="node4" href="$classpism_1_1Diagnostic.html" title="Class representing diagnostic computations in PISM." alt="" coords="127,5,257,32"/>
-<area shape="rect" id="node5" href="$classpism_1_1Diag.html" title="A template derived from Diagnostic, adding a &quot;Model&quot;." alt="" coords="111,81,273,108"/>
-<area shape="rect" id="node7" href="$classpism_1_1Diag.html" title=" " alt="" coords="211,171,346,197"/>
-<area shape="rect" id="node6" href="$classpism_1_1DiagAverageRate.html" title=" " alt="" coords="161,247,378,273"/>
+<area shape="rect" id="Node000001" title="Computes tendency_of_ice_amount_due_to_flow, the rate of change of ice amount due to flow." alt="" coords="5,431,244,471"/>
+<area shape="rect" id="Node000002" href="$classpism_1_1DiagAverageRate.html" title=" " alt="" coords="37,341,212,381"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="127,395,127,431,122,431,122,395"/>
+<area shape="rect" id="Node000003" href="$classpism_1_1Diag.html" title="A template derived from Diagnostic, adding a &quot;Model&quot;." alt="" coords="22,129,185,155"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="108,168,125,341,120,341,103,169"/>
+<area shape="rect" id="Node000004" href="$classpism_1_1Diagnostic.html" title="Class representing diagnostic computations in PISM." alt="" coords="139,5,270,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="188,43,115,131,111,128,184,40"/>
+<area shape="rect" id="Node000006" href="$classpism_1_1Diag.html" title=" " alt="" coords="183,179,317,204"/>
+<area shape="poly" id="edge6_Node000006_Node000004" title=" " alt="" coords="214,43,250,178,244,179,209,45"/>
+<area shape="rect" id="Node000007" href="$classpism_1_1Diag.html" title="A template derived from Diagnostic, adding a &quot;Model&quot;." alt="" coords="242,80,405,105"/>
+<area shape="poly" id="edge8_Node000007_Node000004" title=" " alt="" coords="237,36,306,78,303,82,234,40"/>
+<area shape="rect" id="Node000005" href="$classpism_1_1DiagAverageRate.html" title=" " alt="" coords="141,253,359,279"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="225,289,152,343,149,339,222,285"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="253,218,253,253,247,253,247,218"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="308,118,261,180,257,177,304,115"/>
 </map>

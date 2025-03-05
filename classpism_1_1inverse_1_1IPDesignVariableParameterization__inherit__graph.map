@@ -1,7 +1,11 @@
 <map id="pism::inverse::IPDesignVariableParameterization" name="pism::inverse::IPDesignVariableParameterization">
-<area shape="rect" id="node1" title=" " alt="" coords="5,104,233,145"/>
-<area shape="rect" id="node2" href="$classpism_1_1inverse_1_1IPDesignVariableParamExp.html" title="Parameterization &#160;with ." alt="" coords="281,5,509,47"/>
-<area shape="rect" id="node3" href="$classpism_1_1inverse_1_1IPDesignVariableParamIdent.html" title="Parameterization &#160;with ." alt="" coords="281,71,509,112"/>
-<area shape="rect" id="node4" href="$classpism_1_1inverse_1_1IPDesignVariableParamSquare.html" title="Parameterization &#160;with ." alt="" coords="281,136,509,177"/>
-<area shape="rect" id="node5" href="$classpism_1_1inverse_1_1IPDesignVariableParamTruncatedIdent.html" title="A monotone non&#45;negative parameterization &#160;that is approximately the identity away from small values o..." alt="" coords="281,201,509,243"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,101,233,141"/>
+<area shape="rect" id="Node000002" href="$classpism_1_1inverse_1_1IPDesignVariableParamExp.html" title="Parameterization &#160;with ." alt="" coords="281,5,509,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="179,94,280,55,318,43,320,48,282,60,181,99"/>
+<area shape="rect" id="Node000003" href="$classpism_1_1inverse_1_1IPDesignVariableParamIdent.html" title="Parameterization &#160;with ." alt="" coords="281,69,509,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="246,104,281,100,281,105,247,109"/>
+<area shape="rect" id="Node000004" href="$classpism_1_1inverse_1_1IPDesignVariableParamSquare.html" title="Parameterization &#160;with ." alt="" coords="281,133,509,173"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="247,133,281,137,281,143,246,139"/>
+<area shape="rect" id="Node000005" href="$classpism_1_1inverse_1_1IPDesignVariableParamTruncatedIdent.html" title="A monotone non&#45;negative parameterization &#160;that is approximately the identity away from small values o..." alt="" coords="281,197,509,237"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="181,144,282,183,320,195,318,200,280,188,179,149"/>
 </map>

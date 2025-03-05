@@ -1,5 +1,7 @@
 <map id="pism::atmosphere::ElevationChange" name="pism::atmosphere::ElevationChange">
-<area shape="rect" id="node1" title=" " alt="" coords="14,169,223,211"/>
-<area shape="rect" id="node2" href="$classpism_1_1atmosphere_1_1AtmosphereModel.html" title="A purely virtual class defining the interface of a PISM Atmosphere Model." alt="" coords="5,80,232,121"/>
-<area shape="rect" id="node3" href="$classpism_1_1Component.html" title="A class defining a common interface for most PISM sub&#45;models." alt="" coords="50,5,187,32"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="14,167,223,207"/>
+<area shape="rect" id="Node000002" href="$classpism_1_1atmosphere_1_1AtmosphereModel.html" title="A purely virtual class defining the interface of a PISM Atmosphere Model." alt="" coords="5,79,232,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="121,133,121,166,116,166,116,133"/>
+<area shape="rect" id="Node000003" href="$classpism_1_1Component.html" title="A class defining a common interface for most PISM sub&#45;models." alt="" coords="50,5,187,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="121,44,121,79,116,79,116,44"/>
 </map>

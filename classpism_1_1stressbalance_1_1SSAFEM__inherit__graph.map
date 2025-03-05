@@ -1,8 +1,13 @@
 <map id="pism::stressbalance::SSAFEM" name="pism::stressbalance::SSAFEM">
-<area shape="rect" id="node1" title="PISM&#39;s SSA solver: the finite element method implementation written by Jed and David." alt="" coords="147,244,299,285"/>
-<area shape="rect" id="node5" href="$classpism_1_1inverse_1_1IP__SSAHardavForwardProblem.html" title="Implements the forward problem of the map taking &#160;to the corresponding solution of the SSA." alt="" coords="5,333,216,375"/>
-<area shape="rect" id="node6" href="$classpism_1_1inverse_1_1IP__SSATaucForwardProblem.html" title="Implements the forward problem of the map taking &#160;to the corresponding solution of the SSA." alt="" coords="241,333,431,375"/>
-<area shape="rect" id="node2" href="$classpism_1_1stressbalance_1_1SSA.html" title="PISM&#39;s SSA solver." alt="" coords="129,169,316,196"/>
-<area shape="rect" id="node3" href="$classpism_1_1stressbalance_1_1ShallowStressBalance.html" title="Shallow stress balance (such as the SSA)." alt="" coords="136,80,309,121"/>
-<area shape="rect" id="node4" href="$classpism_1_1Component.html" title="A class defining a common interface for most PISM sub&#45;models." alt="" coords="154,5,291,32"/>
+<area shape="rect" id="Node000001" title="PISM&#39;s SSA solver: the finite element method implementation written by Jed and David." alt="" coords="147,240,299,280"/>
+<area shape="rect" id="Node000005" href="$classpism_1_1inverse_1_1IP__SSAHardavForwardProblem.html" title="Implements the forward problem of the map taking &#160;to the corresponding solution of the SSA." alt="" coords="5,328,216,368"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="188,291,137,330,134,326,185,287"/>
+<area shape="rect" id="Node000006" href="$classpism_1_1inverse_1_1IP__SSATaucForwardProblem.html" title="Implements the forward problem of the map taking &#160;to the corresponding solution of the SSA." alt="" coords="241,328,431,368"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="260,286,313,326,309,330,257,290"/>
+<area shape="rect" id="Node000002" href="$classpism_1_1stressbalance_1_1SSA.html" title="PISM&#39;s SSA solver." alt="" coords="129,167,316,192"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="225,206,225,240,220,240,220,206"/>
+<area shape="rect" id="Node000003" href="$classpism_1_1stressbalance_1_1ShallowStressBalance.html" title="Shallow stress balance (such as the SSA)." alt="" coords="136,79,309,119"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="225,132,225,166,220,166,220,132"/>
+<area shape="rect" id="Node000004" href="$classpism_1_1Component.html" title="A class defining a common interface for most PISM sub&#45;models." alt="" coords="154,5,291,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="225,44,225,79,220,79,220,44"/>
 </map>

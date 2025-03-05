@@ -1,5 +1,7 @@
 <map id="pism::frontalmelt::Factory" name="pism::frontalmelt::Factory">
-<area shape="rect" id="node1" title=" " alt="" coords="41,185,184,227"/>
-<area shape="rect" id="node2" href="$classpism_1_1PCFactory.html" title=" " alt="" coords="5,95,220,136"/>
-<area shape="rect" id="node3" href="$classpism_1_1PCFactory.html" title=" " alt="" coords="15,5,211,32"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="41,183,184,223"/>
+<area shape="rect" id="Node000002" href="$classpism_1_1PCFactory.html" title=" " alt="" coords="5,93,220,133"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="115,147,115,183,110,183,110,147"/>
+<area shape="rect" id="Node000003" href="$classpism_1_1PCFactory.html" title=" " alt="" coords="15,5,211,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="115,44,115,93,110,93,110,44"/>
 </map>

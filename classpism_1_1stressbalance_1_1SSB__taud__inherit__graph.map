@@ -1,6 +1,10 @@
 <map id="pism::stressbalance::SSB_taud" name="pism::stressbalance::SSB_taud">
-<area shape="rect" id="node1" title="Computes the gravitational driving stress (diagnostically)." alt="" coords="29,261,181,303"/>
-<area shape="rect" id="node2" href="$classpism_1_1Diag.html" title=" " alt="" coords="5,171,204,212"/>
-<area shape="rect" id="node3" href="$classpism_1_1Diagnostic.html" title="Class representing diagnostic computations in PISM." alt="" coords="34,5,165,32"/>
-<area shape="rect" id="node4" href="$classpism_1_1Diag.html" title="A template derived from Diagnostic, adding a &quot;Model&quot;." alt="" coords="121,81,283,108"/>
+<area shape="rect" id="Node000001" title="Computes the gravitational driving stress (diagnostically)." alt="" coords="29,257,181,297"/>
+<area shape="rect" id="Node000002" href="$classpism_1_1Diag.html" title=" " alt="" coords="5,168,204,208"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="107,222,107,257,102,257,102,222"/>
+<area shape="rect" id="Node000003" href="$classpism_1_1Diagnostic.html" title="Class representing diagnostic computations in PISM." alt="" coords="34,5,165,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="103,44,107,168,101,168,97,44"/>
+<area shape="rect" id="Node000004" href="$classpism_1_1Diag.html" title="A template derived from Diagnostic, adding a &quot;Model&quot;." alt="" coords="121,80,283,105"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="129,37,187,78,184,82,126,41"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="182,117,126,170,123,166,178,113"/>
 </map>

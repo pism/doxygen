@@ -1,7 +1,11 @@
 <map id="pism::TerminationReason" name="pism::TerminationReason">
-<area shape="rect" id="node1" title=" " alt="" coords="5,97,192,123"/>
-<area shape="rect" id="node2" href="$classpism_1_1GenericTerminationReason.html" title=" " alt="" coords="256,5,445,47"/>
-<area shape="rect" id="node3" href="$classpism_1_1KSPTerminationReason.html" title=" " alt="" coords="245,71,457,98"/>
-<area shape="rect" id="node4" href="$classpism_1_1SNESTerminationReason.html" title=" " alt="" coords="240,122,461,149"/>
-<area shape="rect" id="node5" href="$classpism_1_1taoutil_1_1TAOTerminationReason.html" title="Encapsulate TAO&#39;s TaoSolverTerminationReason codes as a PISM TerminationReason." alt="" coords="243,173,458,215"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,95,192,121"/>
+<area shape="rect" id="Node000002" href="$classpism_1_1GenericTerminationReason.html" title=" " alt="" coords="256,5,445,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="145,88,239,55,278,43,279,48,241,60,147,93"/>
+<area shape="rect" id="Node000003" href="$classpism_1_1KSPTerminationReason.html" title=" " alt="" coords="245,70,457,95"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="205,95,244,91,245,96,206,100"/>
+<area shape="rect" id="Node000004" href="$classpism_1_1SNESTerminationReason.html" title=" " alt="" coords="240,119,461,145"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="206,116,240,119,240,124,206,121"/>
+<area shape="rect" id="Node000005" href="$classpism_1_1taoutil_1_1TAOTerminationReason.html" title="Encapsulate TAO&#39;s TaoSolverTerminationReason codes as a PISM TerminationReason." alt="" coords="243,169,458,209"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="150,123,241,153,283,167,281,172,239,159,148,128"/>
 </map>

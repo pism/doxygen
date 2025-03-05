@@ -1,6 +1,10 @@
 <map id="pism::hydrology::diagnostics::HydraulicPotential" name="pism::hydrology::diagnostics::HydraulicPotential">
-<area shape="rect" id="node1" title="Report hydraulic potential in the subglacial hydrology system." alt="" coords="5,247,213,288"/>
-<area shape="rect" id="node2" href="$classpism_1_1Diag.html" title=" " alt="" coords="23,171,195,197"/>
-<area shape="rect" id="node3" href="$classpism_1_1Diagnostic.html" title="Class representing diagnostic computations in PISM." alt="" coords="39,5,169,32"/>
-<area shape="rect" id="node4" href="$classpism_1_1Diag.html" title="A template derived from Diagnostic, adding a &quot;Model&quot;." alt="" coords="125,81,288,108"/>
+<area shape="rect" id="Node000001" title="Report hydraulic potential in the subglacial hydrology system." alt="" coords="5,243,213,283"/>
+<area shape="rect" id="Node000002" href="$classpism_1_1Diag.html" title=" " alt="" coords="23,168,195,193"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="112,207,112,243,107,243,107,207"/>
+<area shape="rect" id="Node000003" href="$classpism_1_1Diagnostic.html" title="Class representing diagnostic computations in PISM." alt="" coords="39,5,169,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="108,44,112,168,106,168,102,45"/>
+<area shape="rect" id="Node000004" href="$classpism_1_1Diag.html" title="A template derived from Diagnostic, adding a &quot;Model&quot;." alt="" coords="125,80,288,105"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="133,37,192,78,189,82,130,41"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="185,116,125,169,121,165,182,112"/>
 </map>
