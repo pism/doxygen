@@ -29,7 +29,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PISM, A Parallel Ice Sheet Model<span id="projectnumber">&#160;2.2.0-cb3567278 committed by Constantine Khrulev on 2025-03-05</span>
+   <div id="projectname">PISM, A Parallel Ice Sheet Model<span id="projectnumber">&#160;2.2.1-cd005eec8 committed by Constantine Khrulev on 2025-03-07</span>
    </div>
   </td>
  </tr>
@@ -89,7 +89,7 @@ $(document).ready(function() { init_codefold(0); });
   <div class="headertitle"><div class="title">pism.cc</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="pism_8cc.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// Copyright (C) 2004--2024 Jed Brown, Ed Bueler and Constantine Khroulev</span></div>
+<a href="pism_8cc.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// Copyright (C) 2004--2025 Jed Brown, Ed Bueler and Constantine Khroulev</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">//</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// This file is part of PISM.</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">//</span></div>
@@ -143,7 +143,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>  config.<a class="code hl_function" href="classpism_1_1Config_a37ce1aa66c778c521eda2eb45f3fccbf.html#a37ce1aa66c778c521eda2eb45f3fccbf">set_string</a>(<span class="stringliteral">&quot;grid.registration&quot;</span>, <span class="stringliteral">&quot;corner&quot;</span>);</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>  config.<a class="code hl_function" href="classpism_1_1Config_a37ce1aa66c778c521eda2eb45f3fccbf.html#a37ce1aa66c778c521eda2eb45f3fccbf">set_string</a>(<span class="stringliteral">&quot;stress_balance.sia.flow_law&quot;</span>, <span class="stringliteral">&quot;pb&quot;</span>);</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>  config.<a class="code hl_function" href="classpism_1_1Config_a37ce1aa66c778c521eda2eb45f3fccbf.html#a37ce1aa66c778c521eda2eb45f3fccbf">set_string</a>(<span class="stringliteral">&quot;energy.model&quot;</span>, <span class="stringliteral">&quot;none&quot;</span>);</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>  config.<a class="code hl_function" href="classpism_1_1Config_a37ce1aa66c778c521eda2eb45f3fccbf.html#a37ce1aa66c778c521eda2eb45f3fccbf">set_string</a>(<span class="stringliteral">&quot;energy.model&quot;</span>, <span class="stringliteral">&quot;cold&quot;</span>);</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>  <span class="comment">// Set sea level elevation to -1e4 meters to remove ocean interaction</span></div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>  config.<a class="code hl_function" href="classpism_1_1Config_abd3f759c6167b6978ca10eb7fe16a21a.html#abd3f759c6167b6978ca10eb7fe16a21a">set_number</a>(<span class="stringliteral">&quot;sea_level.constant.value&quot;</span>, -1e4);</div>
