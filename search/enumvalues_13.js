@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['unknown_0',['UNKNOWN',['../namespacepism_1_1grid_a2460b5c6ba456fce68d9ef780503b839.html#a2460b5c6ba456fce68d9ef780503b839ac3e3844cbc846c707c5bb74b584ca8b0',1,'pism::grid']]],
-  ['unknown_5faxis_1',['UNKNOWN_AXIS',['../namespacepism_a1063d7e1d4f65b16c8c48b1c8f6a12d7.html#a1063d7e1d4f65b16c8c48b1c8f6a12d7a14ee2a590efbd86d10384892804761be',1,'pism']]]
+  ['warning_0',['WARNING',['../namespacepism_aef2b2c8b6655797b158a090120681a21.html#aef2b2c8b6655797b158a090120681a21a93cdc52ff15e2aecd5afbc4eff82c901',1,'pism']]],
+  ['west_1',['West',['../namespacepism_a79037b9d17e5d3c872f8ea811fec2a31.html#a79037b9d17e5d3c872f8ea811fec2a31ae7dd2e31fa5a7a0acd2e1afccf7a066b',1,'pism']]],
+  ['with_5fghosts_2',['WITH_GHOSTS',['../namespacepism_1_1array_ab49b8ee9a79e7f46ec91fc40efdb7ca3.html#ab49b8ee9a79e7f46ec91fc40efdb7ca3a7aa2276678f0b2cd3f63c15be430372f',1,'pism::array']]],
+  ['without_5fghosts_3',['WITHOUT_GHOSTS',['../namespacepism_1_1array_ab49b8ee9a79e7f46ec91fc40efdb7ca3.html#ab49b8ee9a79e7f46ec91fc40efdb7ca3af672399d2e1a4112ca5d4a4591c30885',1,'pism::array']]]
 ];

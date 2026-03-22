@@ -1,9 +1,5 @@
 <map id="pism::Config" name="pism::Config">
-<area shape="rect" id="Node000001" title="A class for storing and accessing PISM configuration flags and parameters." alt="" coords="105,5,208,31"/>
-<area shape="rect" id="Node000002" href="$classpism_1_1ConfigJSON.html" title="The JSON&#45;based Config implementation." alt="" coords="5,79,140,104"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="134,42,88,80,85,76,131,38"/>
-<area shape="rect" id="Node000003" href="$classpism_1_1NetCDFConfig.html" title="A class for reading, writing and accessing PISM configuration flags and parameters." alt="" coords="164,79,317,104"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="182,38,229,76,225,80,179,42"/>
-<area shape="rect" id="Node000004" href="$classpism_1_1DefaultConfig.html" title="Default PISM configuration database: uses NetCDF files; can be initialized from a file specified usin..." alt="" coords="165,152,316,177"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="243,118,243,152,238,152,238,118"/>
+<area shape="rect" id="Node000001" title="A class for storing and accessing PISM configuration flags and parameters." alt="" coords="31,5,133,31"/>
+<area shape="rect" id="Node000002" href="$classpism_1_1NetCDFConfig.html" title="A class for reading, writing and accessing PISM configuration flags and parameters." alt="" coords="5,79,159,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="85,44,85,79,79,79,79,44"/>
 </map>

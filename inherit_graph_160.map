@@ -1,15 +1,3 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="Node000000" href="$classpism_1_1stressbalance_1_1SSATestCase.html" title=" " alt="" coords="5,165,157,205"/>
-<area shape="rect" id="Node000001" href="$classpism_1_1stressbalance_1_1SSATestCaseCFBC.html" title=" " alt="" coords="205,5,357,45"/>
-<area shape="poly" id="edge384_Node000000_Node000001" title=" " alt="" coords="104,153,148,104,204,55,225,43,227,48,207,60,151,108,108,156"/>
-<area shape="rect" id="Node000002" href="$classpism_1_1stressbalance_1_1SSATestCaseConst.html" title=" " alt="" coords="205,69,357,109"/>
-<area shape="poly" id="edge385_Node000000_Node000002" title=" " alt="" coords="130,157,204,119,230,107,233,112,206,124,132,161"/>
-<area shape="rect" id="Node000003" href="$classpism_1_1stressbalance_1_1SSATestCaseExp.html" title=" " alt="" coords="205,133,357,173"/>
-<area shape="poly" id="edge386_Node000000_Node000003" title=" " alt="" coords="171,168,205,163,205,168,171,174"/>
-<area shape="rect" id="Node000004" href="$classpism_1_1stressbalance_1_1SSATestCaseI.html" title=" " alt="" coords="205,197,357,237"/>
-<area shape="poly" id="edge387_Node000000_Node000004" title=" " alt="" coords="171,197,205,203,205,208,171,202"/>
-<area shape="rect" id="Node000005" href="$classpism_1_1stressbalance_1_1SSATestCaseJ.html" title=" " alt="" coords="205,261,357,301"/>
-<area shape="poly" id="edge388_Node000000_Node000005" title=" " alt="" coords="132,209,206,247,233,259,230,264,204,252,130,214"/>
-<area shape="rect" id="Node000006" href="$classpism_1_1stressbalance_1_1SSATestCasePlug.html" title=" " alt="" coords="205,325,357,365"/>
-<area shape="poly" id="edge389_Node000000_Node000006" title=" " alt="" coords="108,214,151,263,207,311,227,323,225,328,204,316,148,267,104,218"/>
+<area shape="rect" id="Node000000" href="$structpism_1_1stressbalance_1_1SSAFEM_1_1CallbackData.html" title="Adaptor for gluing SNESDAFormFunction callbacks to an SSAFEM." alt="" coords="5,5,184,45"/>
 </map>

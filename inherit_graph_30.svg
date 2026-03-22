@@ -11,10 +11,10 @@
 <!-- Node0 -->
 <g id="Node000000" class="node">
 <title>Node0</title>
-<g id="a_Node000000"><a xlink:href="classpism_1_1connected__components_1_1details_1_1CArray.html" target="_top" xlink:title=" ">
+<g id="a_Node000000"><a xlink:href="classpism_1_1connected__components_1_1details_1_1Mask.html" target="_top" xlink:title="Adds &quot;foregrdound&quot; and &quot;attached&quot; concepts to an &quot;array&quot;.">
 <polygon fill="white" stroke="#666666" points="162,-30 0,-30 0,0 162,0 162,-30"/>
 <text text-anchor="start" x="8" y="-18" font-family="Helvetica,sans-Serif" font-size="10.00">pism::connected_components</text>
-<text text-anchor="middle" x="81" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">::details::CArray&lt; T &gt;</text>
+<text text-anchor="middle" x="81" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">::details::Mask&lt; ARRAY &gt;</text>
 </a>
 </g>
 </g>

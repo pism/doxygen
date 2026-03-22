@@ -29,7 +29,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PISM, A Parallel Ice Sheet Model<span id="projectnumber">&#160;2.2.3-bcaa1c823 committed by Constantine Khrulev on 2026-03-20</span>
+   <div id="projectname">PISM, A Parallel Ice Sheet Model<span id="projectnumber">&#160;2.3.0-79cae578d committed by Constantine Khrulev on 2026-03-22</span>
    </div>
   </td>
  </tr>
@@ -89,8 +89,6 @@ $(function() {
           <tr><td class="navtab"><a class="navtab" href="classpism_1_1surface_1_1TemperatureIndex_a1cc1f2e96a7533f9af86013d30f29956.html#a1cc1f2e96a7533f9af86013d30f29956">accumulation_impl</a></td></tr>
           <tr><td class="navtab"><a class="navtab" href="classpism_1_1surface_1_1TemperatureIndex_a7c0b38c079175671326f06d8d064c4e0.html#a7c0b38c079175671326f06d8d064c4e0">air_temp_sd</a></td></tr>
           <tr><td class="navtab"><a class="navtab" href="classpism_1_1surface_1_1TemperatureIndex_a7cbaae5fcbc747e289f55120ebf9d7b7.html#a7cbaae5fcbc747e289f55120ebf9d7b7">compute_next_balance_year_start</a></td></tr>
-          <tr><td class="navtab"><a class="navtab" href="classpism_1_1surface_1_1TemperatureIndex_aaa08249d100bb527d4494ecb1130b936.html#aaa08249d100bb527d4494ecb1130b936">define_model_state_impl</a></td></tr>
-          <tr><td class="navtab"><a class="navtab" href="classpism_1_1surface_1_1TemperatureIndex_af2c95a7f61806f560eb8ff1a5b334dd1.html#af2c95a7f61806f560eb8ff1a5b334dd1">diagnostics_impl</a></td></tr>
           <tr><td class="navtab"><a class="navtab" href="classpism_1_1surface_1_1TemperatureIndex_af7b6eb46337031fe42834de058b5df32.html#af7b6eb46337031fe42834de058b5df32">firn_depth</a></td></tr>
           <tr><td class="navtab"><a class="navtab" href="classpism_1_1surface_1_1TemperatureIndex_a3282d23d08ff97178e8c8212d1b990a3.html#a3282d23d08ff97178e8c8212d1b990a3">init_impl</a></td></tr>
           <tr><td class="navtab"><a class="navtab" href="classpism_1_1surface_1_1TemperatureIndex_a05c3c2233da598c7ecec7b4f395759c0.html#a05c3c2233da598c7ecec7b4f395759c0">m_accumulation</a></td></tr>
@@ -115,10 +113,12 @@ $(function() {
           <tr><td class="navtab"><a class="navtab" href="classpism_1_1surface_1_1TemperatureIndex_a556c0501dfe82307b76269f32d80ef05.html#a556c0501dfe82307b76269f32d80ef05">melt_impl</a></td></tr>
           <tr><td class="navtab"><a class="navtab" href="classpism_1_1surface_1_1TemperatureIndex_a389eaaac0a5df347657643bd3befc227.html#a389eaaac0a5df347657643bd3befc227">runoff_impl</a></td></tr>
           <tr><td class="navtabHL"><a class="navtab" href="classpism_1_1surface_1_1TemperatureIndex_a5e682e39ddb18948a36ea82c56aeeb52.html#a5e682e39ddb18948a36ea82c56aeeb52">snow_depth</a></td></tr>
+          <tr><td class="navtab"><a class="navtab" href="classpism_1_1surface_1_1TemperatureIndex_a76cd7efaa98fbe743da7cab177da2647.html#a76cd7efaa98fbe743da7cab177da2647">spatial_diagnostics_impl</a></td></tr>
+          <tr><td class="navtab"><a class="navtab" href="classpism_1_1surface_1_1TemperatureIndex_aafff8e156853ec90b5350040a5d72f35.html#aafff8e156853ec90b5350040a5d72f35">state_impl</a></td></tr>
           <tr><td class="navtab"><a class="navtab" href="classpism_1_1surface_1_1TemperatureIndex_a5fc5f1cf06b83ca9582bfdf8609f38ee.html#a5fc5f1cf06b83ca9582bfdf8609f38ee">temperature_impl</a></td></tr>
           <tr><td class="navtab"><a class="navtab" href="classpism_1_1surface_1_1TemperatureIndex_af6606c7b14a4167489cfdd443bfd033e.html#af6606c7b14a4167489cfdd443bfd033e">TemperatureIndex</a></td></tr>
           <tr><td class="navtab"><a class="navtab" href="classpism_1_1surface_1_1TemperatureIndex_a3cfefcea26c55c950a4afb7438bc5ea0.html#a3cfefcea26c55c950a4afb7438bc5ea0">update_impl</a></td></tr>
-          <tr><td class="navtab"><a class="navtab" href="classpism_1_1surface_1_1TemperatureIndex_aef22e761305e0b7785119ed8d47d56ac.html#aef22e761305e0b7785119ed8d47d56ac">write_model_state_impl</a></td></tr>
+          <tr><td class="navtab"><a class="navtab" href="classpism_1_1surface_1_1TemperatureIndex_a7de158bf813173149574f244a345b928.html#a7de158bf813173149574f244a345b928">write_state_impl</a></td></tr>
           <tr><td class="navtab"><a class="navtab" href="classpism_1_1surface_1_1TemperatureIndex_a992b99512b439236506b9c75d7910785.html#a992b99512b439236506b9c75d7910785">~TemperatureIndex</a></td></tr>
         </table>
       </div>
@@ -139,7 +139,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="TemperatureIndex_8cc_source.html#l00477">477</a> of file <a class="el" href="TemperatureIndex_8cc_source.html">TemperatureIndex.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TemperatureIndex_8cc_source.html#l00479">479</a> of file <a class="el" href="TemperatureIndex_8cc_source.html">TemperatureIndex.cc</a>.</p>
 
 <p class="reference">References <a class="el" href="TemperatureIndex_8hh_source.html#l00093">m_snow_depth</a>.</p>
 

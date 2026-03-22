@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['registration_0',['Registration',['../namespacepism_1_1grid_a4de798cae6a9a0aacee8b2309b7a9db1.html#a4de798cae6a9a0aacee8b2309b7a9db1',1,'pism::grid']]],
-  ['regriddingflag_1',['RegriddingFlag',['../classpism_1_1Component_a48f8d0b81b7853d4e3fba0de79ec4a7f.html#a48f8d0b81b7853d4e3fba0de79ec4a7f',1,'pism::Component']]],
-  ['relabelingtype_2',['RelabelingType',['../namespacepism_1_1ocean_ae6d1a3d898bb9801597ac61283371ad7.html#ae6d1a3d898bb9801597ac61283371ad7',1,'pism::ocean']]]
+  ['tagtreatment_0',['TagTreatment',['../classpism_1_1YacOutputWriter_a622af423b66e91ed9a1a8e93e98e3546.html#a622af423b66e91ed9a1a8e93e98e3546',1,'pism::YacOutputWriter']]],
+  ['termtype_1',['TermType',['../namespacepism_1_1diagnostics_a9be104df35f48c5782d93a48a0890024.html#a9be104df35f48c5782d93a48a0890024',1,'pism::diagnostics']]],
+  ['type_2',['Type',['../namespacepism_1_1io_a53ffb40793c398e10644fbd2ecda3e77.html#a53ffb40793c398e10644fbd2ecda3e77',1,'pism::io']]]
 ];

@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['dim_5flength_0',['Dim_Length',['../namespacepism_1_1io_a3da6881b8df2111ef6b257bd93a32d55.html#a3da6881b8df2111ef6b257bd93a32d55',1,'pism::io']]],
-  ['direction_1',['Direction',['../namespacepism_a79037b9d17e5d3c872f8ea811fec2a31.html#a79037b9d17e5d3c872f8ea811fec2a31',1,'pism']]]
+  ['diagnosticreport_0',['DiagnosticReport',['../namespacepism_a319257b94a328f6fa5b74e33b1238f70.html#a319257b94a328f6fa5b74e33b1238f70',1,'pism']]],
+  ['dim_5flength_1',['Dim_Length',['../namespacepism_1_1io_a3da6881b8df2111ef6b257bd93a32d55.html#a3da6881b8df2111ef6b257bd93a32d55',1,'pism::io']]],
+  ['direction_2',['Direction',['../namespacepism_a79037b9d17e5d3c872f8ea811fec2a31.html#a79037b9d17e5d3c872f8ea811fec2a31',1,'pism']]]
 ];

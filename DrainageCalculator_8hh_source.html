@@ -29,7 +29,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PISM, A Parallel Ice Sheet Model<span id="projectnumber">&#160;2.2.3-bcaa1c823 committed by Constantine Khrulev on 2026-03-20</span>
+   <div id="projectname">PISM, A Parallel Ice Sheet Model<span id="projectnumber">&#160;2.3.0-79cae578d committed by Constantine Khrulev on 2026-03-22</span>
    </div>
   </td>
  </tr>
@@ -89,7 +89,7 @@ $(document).ready(function() { init_codefold(0); });
   <div class="headertitle"><div class="title">DrainageCalculator.hh</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="DrainageCalculator_8hh.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// Copyright (C) 2009-2011, 2013, 2014, 2015, 2016, 2017 Andreas Aschwanden, Ed Bueler and Constantine Khroulev</span></div>
+<a href="DrainageCalculator_8hh.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// Copyright (C) 2009-2011, 2013, 2014, 2015, 2016, 2017, 2025 Andreas Aschwanden, Ed Bueler and Constantine Khroulev</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">//</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// This file is part of PISM.</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">//</span></div>
@@ -110,7 +110,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#ifndef __DrainageCalculator_hh</span></div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#define __DrainageCalculator_hh</span></div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#include &quot;pism/util/ConfigInterface.hh&quot;</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#include &quot;pism/util/Config.hh&quot;</span></div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacepism.html">pism</a> {</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="keyword">namespace </span>energy {</div>
@@ -161,8 +161,8 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="preprocessor">#endif </span><span class="comment">// __DrainageCalculator_hh</span></div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
-<div class="ttc" id="aclasspism_1_1Config_a3d85dee64feb6cb551f98b32cf6db27d_html_a3d85dee64feb6cb551f98b32cf6db27d"><div class="ttname"><a href="classpism_1_1Config_a3d85dee64feb6cb551f98b32cf6db27d.html#a3d85dee64feb6cb551f98b32cf6db27d">pism::Config::get_number</a></div><div class="ttdeci">double get_number(const std::string &amp;name, UseFlag flag=REMEMBER_THIS_USE) const</div><div class="ttdef"><b>Definition</b> <a href="ConfigInterface_8cc_source.html#l00194">ConfigInterface.cc:194</a></div></div>
-<div class="ttc" id="aclasspism_1_1Config_html"><div class="ttname"><a href="classpism_1_1Config.html">pism::Config</a></div><div class="ttdoc">A class for storing and accessing PISM configuration flags and parameters.</div><div class="ttdef"><b>Definition</b> <a href="ConfigInterface_8hh_source.html#l00054">ConfigInterface.hh:54</a></div></div>
+<div class="ttc" id="aclasspism_1_1Config_a3d85dee64feb6cb551f98b32cf6db27d_html_a3d85dee64feb6cb551f98b32cf6db27d"><div class="ttname"><a href="classpism_1_1Config_a3d85dee64feb6cb551f98b32cf6db27d.html#a3d85dee64feb6cb551f98b32cf6db27d">pism::Config::get_number</a></div><div class="ttdeci">double get_number(const std::string &amp;name, UseFlag flag=REMEMBER_THIS_USE) const</div><div class="ttdef"><b>Definition</b> <a href="Config_8cc_source.html#l00188">Config.cc:188</a></div></div>
+<div class="ttc" id="aclasspism_1_1Config_html"><div class="ttname"><a href="classpism_1_1Config.html">pism::Config</a></div><div class="ttdoc">A class for storing and accessing PISM configuration flags and parameters.</div><div class="ttdef"><b>Definition</b> <a href="Config_8hh_source.html#l00056">Config.hh:56</a></div></div>
 <div class="ttc" id="aclasspism_1_1energy_1_1DrainageCalculator_a4552109b8ac58b3b5da680d410cb8e37_html_a4552109b8ac58b3b5da680d410cb8e37"><div class="ttname"><a href="classpism_1_1energy_1_1DrainageCalculator_a4552109b8ac58b3b5da680d410cb8e37.html#a4552109b8ac58b3b5da680d410cb8e37">pism::energy::DrainageCalculator::DrainageCalculator</a></div><div class="ttdeci">DrainageCalculator(const Config &amp;config)</div><div class="ttdef"><b>Definition</b> <a href="DrainageCalculator_8hh_source.html#l00031">DrainageCalculator.hh:31</a></div></div>
 <div class="ttc" id="aclasspism_1_1energy_1_1DrainageCalculator_a4a482643c34c97e2b83a8e17f9f9d786_html_a4a482643c34c97e2b83a8e17f9f9d786"><div class="ttname"><a href="classpism_1_1energy_1_1DrainageCalculator_a4a482643c34c97e2b83a8e17f9f9d786.html#a4a482643c34c97e2b83a8e17f9f9d786">pism::energy::DrainageCalculator::OM3</a></div><div class="ttdeci">double OM3</div><div class="ttdef"><b>Definition</b> <a href="DrainageCalculator_8hh_source.html#l00058">DrainageCalculator.hh:58</a></div></div>
 <div class="ttc" id="aclasspism_1_1energy_1_1DrainageCalculator_a4c50d69ddbf2122c78777a13570976ad_html_a4c50d69ddbf2122c78777a13570976ad"><div class="ttname"><a href="classpism_1_1energy_1_1DrainageCalculator_a4c50d69ddbf2122c78777a13570976ad.html#a4c50d69ddbf2122c78777a13570976ad">pism::energy::DrainageCalculator::DR2</a></div><div class="ttdeci">double DR2</div><div class="ttdef"><b>Definition</b> <a href="DrainageCalculator_8hh_source.html#l00058">DrainageCalculator.hh:58</a></div></div>

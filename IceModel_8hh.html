@@ -29,7 +29,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PISM, A Parallel Ice Sheet Model<span id="projectnumber">&#160;2.2.3-bcaa1c823 committed by Constantine Khrulev on 2026-03-20</span>
+   <div id="projectname">PISM, A Parallel Ice Sheet Model<span id="projectnumber">&#160;2.3.0-79cae578d committed by Constantine Khrulev on 2026-03-22</span>
    </div>
   </td>
  </tr>
@@ -98,7 +98,7 @@ $(function() {
 <code>#include &lt;vector&gt;</code><br />
 <code>#include &lt;memory&gt;</code><br />
 <code>#include &quot;pism/util/array/Vector.hh&quot;</code><br />
-<code>#include &quot;pism/util/ConfigInterface.hh&quot;</code><br />
+<code>#include &quot;pism/util/Config.hh&quot;</code><br />
 <code>#include &quot;pism/util/Context.hh&quot;</code><br />
 <code>#include &quot;pism/util/Logger.hh&quot;</code><br />
 <code>#include &quot;pism/util/Time.hh&quot;</code><br />
@@ -109,7 +109,6 @@ $(function() {
 <code>#include &quot;pism/stressbalance/StressBalance.hh&quot;</code><br />
 <code>#include &quot;pism/basalstrength/YieldStress.hh&quot;</code><br />
 <code>#include &quot;pism/util/ScalarForcing.hh&quot;</code><br />
-<code>#include &quot;pism/util/petscwrappers/Vec.hh&quot;</code><br />
 </div>
 <p><a href="IceModel_8hh_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -159,11 +158,19 @@ Enumerations</h2></td></tr>
 , <a class="el" href="namespacepism_a679e9292d71085dc8431e4cdd33a349a.html#a679e9292d71085dc8431e4cdd33a349aa6b7c8d57031c3421c55a6b6702693a6e">pism::PISM_SIGNAL</a>
  }</td></tr>
 <tr class="separator:a679e9292d71085dc8431e4cdd33a349a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a319257b94a328f6fa5b74e33b1238f70" id="r_a319257b94a328f6fa5b74e33b1238f70"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_a319257b94a328f6fa5b74e33b1238f70.html#a319257b94a328f6fa5b74e33b1238f70">pism::DiagnosticReport</a> { <br />
+&#160;&#160;<a class="el" href="namespacepism_a319257b94a328f6fa5b74e33b1238f70.html#a319257b94a328f6fa5b74e33b1238f70a8d71158e4cb87eb5c87d575862cf4322">pism::DIAG_NONE</a>
+, <a class="el" href="namespacepism_a319257b94a328f6fa5b74e33b1238f70.html#a319257b94a328f6fa5b74e33b1238f70aad14fd1c6ca7e6e3be88d3d6b692fe19">pism::DIAG_ALL</a>
+, <a class="el" href="namespacepism_a319257b94a328f6fa5b74e33b1238f70.html#a319257b94a328f6fa5b74e33b1238f70a7e7e20cc0675846022e5cb028c1174f0">pism::DIAG_SPATIAL</a>
+, <a class="el" href="namespacepism_a319257b94a328f6fa5b74e33b1238f70.html#a319257b94a328f6fa5b74e33b1238f70adc6ff04d92285171b2164824aec23b1a">pism::DIAG_SCALAR</a>
+, <br />
+&#160;&#160;<a class="el" href="namespacepism_a319257b94a328f6fa5b74e33b1238f70.html#a319257b94a328f6fa5b74e33b1238f70a5d1899147dabe8ab88038942303586ee">pism::DIAG_JSON</a>
+<br />
+ }</td></tr>
+<tr class="separator:a319257b94a328f6fa5b74e33b1238f70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:afb9d6f7e33651a9122f5164d1795da2c" id="r_afb9d6f7e33651a9122f5164d1795da2c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_afb9d6f7e33651a9122f5164d1795da2c.html#afb9d6f7e33651a9122f5164d1795da2c">pism::write_run_stats</a> (const <a class="el" href="classpism_1_1File.html">File</a> &amp;file, const <a class="el" href="classpism_1_1VariableMetadata.html">pism::VariableMetadata</a> &amp;stats)</td></tr>
-<tr class="separator:afb9d6f7e33651a9122f5164d1795da2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a022de42aa89ccb41686786fcc8754823" id="r_a022de42aa89ccb41686786fcc8754823"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpism_1_1MaxTimestep.html">MaxTimestep</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_a022de42aa89ccb41686786fcc8754823.html#a022de42aa89ccb41686786fcc8754823">pism::reporting_max_timestep</a> (const std::vector&lt; <a class="el" href="classdouble.html">double</a> &gt; &amp;times, <a class="el" href="classdouble.html">double</a> t, <a class="el" href="classdouble.html">double</a> eps, const std::string &amp;description)</td></tr>
 <tr class="separator:a022de42aa89ccb41686786fcc8754823"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa04cdf90d444dec6c7091c6737b721ab" id="r_aa04cdf90d444dec6c7091c6737b721ab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepism_aa04cdf90d444dec6c7091c6737b721ab.html#aa04cdf90d444dec6c7091c6737b721ab">pism::bedrock_surface_temperature</a> (const <a class="el" href="classpism_1_1array_1_1Scalar.html">array::Scalar</a> &amp;sea_level, const <a class="el" href="classpism_1_1array_1_1CellType.html">array::CellType</a> &amp;cell_type, const <a class="el" href="classpism_1_1array_1_1Scalar.html">array::Scalar</a> &amp;bed_topography, const <a class="el" href="classpism_1_1array_1_1Scalar.html">array::Scalar</a> &amp;ice_thickness, const <a class="el" href="classpism_1_1array_1_1Scalar.html">array::Scalar</a> &amp;basal_enthalpy, const <a class="el" href="classpism_1_1array_1_1Scalar.html">array::Scalar</a> &amp;ice_surface_temperature, <a class="el" href="classpism_1_1array_1_1Scalar.html">array::Scalar</a> &amp;result)</td></tr>

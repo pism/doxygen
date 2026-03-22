@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['j_0',['j',['../classpism_1_1PointsWithGhosts_a06def567d8b03e037e39018fedd97517.html#a06def567d8b03e037e39018fedd97517',1,'pism::PointsWithGhosts']]],
+  ['j_0',['j',['../classpism_1_1GridPoint_acdbc10fe6319a82b723ef917a814e5a7.html#acdbc10fe6319a82b723ef917a814e5a7',1,'pism::GridPoint']]],
   ['jacobian_5fbasal_1',['jacobian_basal',['../classpism_1_1stressbalance_1_1Blatter_ac8e50d024ec6306f770e3f5d0d61fe79.html#ac8e50d024ec6306f770e3f5d0d61fe79',1,'pism::stressbalance::Blatter::jacobian_basal()'],['../classpism_1_1stressbalance_1_1BlatterTestCFBC_a3478ea20c4c9397903c87e79cb4dc922.html#a3478ea20c4c9397903c87e79cb4dc922',1,'pism::stressbalance::BlatterTestCFBC::jacobian_basal()'],['../classpism_1_1stressbalance_1_1BlatterTestHalfar_af1300a4cda75fe5f84e7dfdedf5fb22b.html#af1300a4cda75fe5f84e7dfdedf5fb22b',1,'pism::stressbalance::BlatterTestHalfar::jacobian_basal()']]],
   ['jacobian_5fcallback_2',['jacobian_callback',['../classpism_1_1stressbalance_1_1Blatter_a7162f681169ccdda3d3c98dd7bbb9948.html#a7162f681169ccdda3d3c98dd7bbb9948',1,'pism::stressbalance::Blatter::jacobian_callback()'],['../classpism_1_1SNESProblem_a50ad550f404c48a93d41028ec2d855e2.html#a50ad550f404c48a93d41028ec2d855e2',1,'pism::SNESProblem::jacobian_callback()'],['../classpism_1_1stressbalance_1_1SSAFD__SNES_aa8810feb09848883dfb4b9242c65789f.html#aa8810feb09848883dfb4b9242c65789f',1,'pism::stressbalance::SSAFD_SNES::jacobian_callback()'],['../classpism_1_1stressbalance_1_1SSAFEM_a70da670ae3b86d7383cc412754634e81.html#a70da670ae3b86d7383cc412754634e81',1,'pism::stressbalance::SSAFEM::jacobian_callback()']]],
   ['jacobian_5fdesign_5fcallback_3',['jacobian_design_callback',['../classpism_1_1inverse_1_1IP__SSATaucTaoTikhonovProblemLCL_af713b582e05cca43ee7c60b94c03c58f.html#af713b582e05cca43ee7c60b94c03c58f',1,'pism::inverse::IP_SSATaucTaoTikhonovProblemLCL::jacobian_design_callback()'],['../classpism_1_1taoutil_1_1TaoLCLCallbacks_aec8f15e6b36dfdcf8735fc5cd9578493.html#aec8f15e6b36dfdcf8735fc5cd9578493',1,'pism::taoutil::TaoLCLCallbacks::jacobian_design_callback()']]],
@@ -9,5 +9,6 @@ var searchData=
   ['jacobian_5ff_6',['jacobian_f',['../classpism_1_1stressbalance_1_1Blatter_ac0c26595c8a55ee173b27da57da55f29.html#ac0c26595c8a55ee173b27da57da55f29',1,'pism::stressbalance::Blatter']]],
   ['jacobian_5fstate_5fcallback_7',['jacobian_state_callback',['../classpism_1_1taoutil_1_1TaoLCLCallbacks_af2b11394ee4232c7ecd81c434607b78c.html#af2b11394ee4232c7ecd81c434607b78c',1,'pism::taoutil::TaoLCLCallbacks']]],
   ['join_8',['join',['../namespacepism_ac311104835feb03e6eebfc818d99fd20.html#ac311104835feb03e6eebfc818d99fd20',1,'pism']]],
-  ['join_5fimpl_9',['join_impl',['../namespacepism_aeaf32b8565ab755570e756bc8fcd994a.html#aeaf32b8565ab755570e756bc8fcd994a',1,'pism']]]
+  ['join_5fimpl_9',['join_impl',['../namespacepism_aeaf32b8565ab755570e756bc8fcd994a.html#aeaf32b8565ab755570e756bc8fcd994a',1,'pism']]],
+  ['json_10',['json',['../classpism_1_1Config_a8f0d7e9fdc1b9ccfd742430498009489.html#a8f0d7e9fdc1b9ccfd742430498009489',1,'pism::Config']]]
 ];

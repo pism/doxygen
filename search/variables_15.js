@@ -10,7 +10,7 @@ var searchData=
   ['value_7',['value',['../structpism_1_1ocean_1_1TocBox1_a1a2a82adaab82339e2ee7fe07bc24800.html#a1a2a82adaab82339e2ee7fe07bc24800',1,'pism::ocean::TocBox1']]],
   ['values_8',['values',['../structpism_1_1ScalarForcing_1_1Impl_a3ef03209da0f0f703cfa519a6e869cae.html#a3ef03209da0f0f703cfa519a6e869cae',1,'pism::ScalarForcing::Impl']]],
   ['variable_5fname_9',['variable_name',['../classpism_1_1grid_1_1InputGridInfo_ab25c38a0273f0e9fa4ca3065ab8810c3.html#ab25c38a0273f0e9fa4ca3065ab8810c3',1,'pism::grid::InputGridInfo::variable_name'],['../classpism_1_1grid_1_1Parameters_a3958850222b70f853906a4ce32763702.html#a3958850222b70f853906a4ce32763702',1,'pism::grid::Parameters::variable_name']]],
-  ['variables_10',['variables',['../structpism_1_1Grid_1_1Impl_a018a47f3c5551c7a338689e3969c02ea.html#a018a47f3c5551c7a338689e3969c02ea',1,'pism::Grid::Impl']]],
+  ['variables_10',['variables',['../structpism_1_1Grid_1_1Impl_a018a47f3c5551c7a338689e3969c02ea.html#a018a47f3c5551c7a338689e3969c02ea',1,'pism::Grid::Impl::variables'],['../structpism_1_1OutputWriter_1_1Impl_ad0217ef225bfab310d60b6506761a5a6.html#ad0217ef225bfab310d60b6506761a5a6',1,'pism::OutputWriter::Impl::variables']]],
   ['vec_11',['vec',['../structpism_1_1icebin_1_1VecWithFlags_a5ffaba98ef5d765945032abe2b8236b5.html#a5ffaba98ef5d765945032abe2b8236b5',1,'pism::icebin::VecWithFlags']]],
   ['vecs_12',['vecs',['../classpism_1_1icebin_1_1VecBundleWriter_a5c033224c2f172371e8e198077c4c808.html#a5c033224c2f172371e8e198077c4c808',1,'pism::icebin::VecBundleWriter']]],
   ['vol_13',['vol',['../structhypercube_a2d59f78ab7d33e16e5dbec841b094dff.html#a2d59f78ab7d33e16e5dbec841b094dff',1,'hypercube']]],

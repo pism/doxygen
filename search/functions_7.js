@@ -19,7 +19,7 @@ var searchData=
   ['heap_5fpush_16',['heap_push',['../cubature_8c_a7ce6579f01926a9354d23ee7fd79d46b.html#a7ce6579f01926a9354d23ee7fd79d46b',1,'cubature.c']]],
   ['heap_5fresize_17',['heap_resize',['../cubature_8c_ad8fd6e488767ef439e4d6d0b59e8f5ec.html#ad8fd6e488767ef439e4d6d0b59e8f5ec',1,'cubature.c']]],
   ['heightabovefloatation_18',['HeightAboveFloatation',['../classpism_1_1diagnostics_1_1HeightAboveFloatation_a25562dceb5c88d880aa624f3feca3c05.html#a25562dceb5c88d880aa624f3feca3c05',1,'pism::diagnostics::HeightAboveFloatation']]],
-  ['hooke_19',['Hooke',['../classpism_1_1rheology_1_1Hooke_af64815293fbb04746534e1ab924ccb16.html#af64815293fbb04746534e1ab924ccb16',1,'pism::rheology::Hooke']]],
+  ['hooke_19',['Hooke',['../classpism_1_1rheology_1_1Hooke_a85e3e4fa5396df0d0fee662e4fb6a696.html#a85e3e4fa5396df0d0fee662e4fb6a696',1,'pism::rheology::Hooke']]],
   ['horizontal_5fsize_5fand_5fextent_5ffrom_5foptions_20',['horizontal_size_and_extent_from_options',['../classpism_1_1grid_1_1Parameters_a8f96bec9cbffe4449be6adeb6d050084.html#a8f96bec9cbffe4449be6adeb6d050084',1,'pism::grid::Parameters']]],
   ['hour_5fangle_21',['hour_angle',['../classpism_1_1surface_1_1DEBMSimplePointwise_a75047f7c192caed79fd3f02d9b6d9942.html#a75047f7c192caed79fd3f02d9b6d9942',1,'pism::surface::DEBMSimplePointwise']]],
   ['huybrechts_5fdewolde_22',['huybrechts_dewolde',['../namespacepism_1_1atmosphere_a84896f7e63795095db290b3e22888ca3.html#a84896f7e63795095db290b3e22888ca3',1,'pism::atmosphere']]],
@@ -28,5 +28,5 @@ var searchData=
   ['hydraulic_5fpotential_25',['hydraulic_potential',['../namespacepism_1_1hydrology_1_1diagnostics_a7fcb4c1617b3b1f87fde3dffd3b00579.html#a7fcb4c1617b3b1f87fde3dffd3b00579',1,'pism::hydrology::diagnostics']]],
   ['hydraulicpotential_26',['HydraulicPotential',['../classpism_1_1hydrology_1_1diagnostics_1_1HydraulicPotential_a52692814339e28565a2b4e7f65d99425.html#a52692814339e28565a2b4e7f65d99425',1,'pism::hydrology::diagnostics::HydraulicPotential']]],
   ['hydrology_27',['Hydrology',['../classpism_1_1hydrology_1_1Hydrology_a0bc3ed9df5a8d5b728ff68ce7bf95988.html#a0bc3ed9df5a8d5b728ff68ce7bf95988',1,'pism::hydrology::Hydrology']]],
-  ['hydrology_5fstep_28',['hydrology_step',['../classpism_1_1IceRegionalModel_a33f0862bbdfec68d140e730ab9d632c2.html#a33f0862bbdfec68d140e730ab9d632c2',1,'pism::IceRegionalModel::hydrology_step()'],['../classpism_1_1IceModel_a9e2f410a08ae1820d98a66e9456f9384.html#a9e2f410a08ae1820d98a66e9456f9384',1,'pism::IceModel::hydrology_step()']]]
+  ['hydrology_5fstep_28',['hydrology_step',['../classpism_1_1IceRegionalModel_ae451416bd4a8fad85e6674a2e08dddc9.html#ae451416bd4a8fad85e6674a2e08dddc9',1,'pism::IceRegionalModel::hydrology_step()'],['../classpism_1_1IceModel_a03cabd35526a87815a5ae8126f684bc2.html#a03cabd35526a87815a5ae8126f684bc2',1,'pism::IceModel::hydrology_step()']]]
 ];

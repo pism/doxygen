@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['weakptr_0',['WeakPtr',['../classpism_1_1Wrapper_a675fb999565f9c6819f415954efbb664.html#a675fb999565f9c6819f415954efbb664',1,'pism::Wrapper']]]
+  ['value_5ftype_0',['value_type',['../classpism_1_1array_1_1Array2D_a1281bc59399611e4aecff02ae375ac67.html#a1281bc59399611e4aecff02ae375ac67',1,'pism::array::Array2D']]]
 ];

@@ -1,12 +1,12 @@
 var searchData=
 [
-  ['martin_0',['MARTIN',['../classpism_1_1atmosphere_1_1PIK_a4a57600aba6ec3e25829da4a45ecb698.html#a4a57600aba6ec3e25829da4a45ecb698a84a1801398e3198b7e7b20e8f825d439',1,'pism::atmosphere::PIK']]],
-  ['martin_5fhuybrechts_5fdewolde_1',['MARTIN_HUYBRECHTS_DEWOLDE',['../classpism_1_1atmosphere_1_1PIK_a4a57600aba6ec3e25829da4a45ecb698.html#a4a57600aba6ec3e25829da4a45ecb698aa0395b71441670140cdc42b15148b8c9',1,'pism::atmosphere::PIK']]],
-  ['mask_5ffloating_2',['MASK_FLOATING',['../namespacepism_a782c0f064d473f15c29df4f1ac7bbed9.html#a782c0f064d473f15c29df4f1ac7bbed9a18c773ab42ce063a989d4e8cab83476e',1,'pism']]],
-  ['mask_5fgrounded_3',['MASK_GROUNDED',['../namespacepism_a782c0f064d473f15c29df4f1ac7bbed9.html#a782c0f064d473f15c29df4f1ac7bbed9aeed831165149ebb8bf3426f0ace4a6c2',1,'pism']]],
-  ['mask_5fice_5ffree_5fbedrock_4',['MASK_ICE_FREE_BEDROCK',['../namespacepism_a782c0f064d473f15c29df4f1ac7bbed9.html#a782c0f064d473f15c29df4f1ac7bbed9aebb43b94ac7bde65d4e4b91f08acdf9d',1,'pism']]],
-  ['mask_5fice_5ffree_5focean_5',['MASK_ICE_FREE_OCEAN',['../namespacepism_a782c0f064d473f15c29df4f1ac7bbed9.html#a782c0f064d473f15c29df4f1ac7bbed9a326b5714dc6fc42c36cd024a72712da7',1,'pism']]],
-  ['mask_5funknown_6',['MASK_UNKNOWN',['../namespacepism_a782c0f064d473f15c29df4f1ac7bbed9.html#a782c0f064d473f15c29df4f1ac7bbed9afe1583d640aa121b7192e70ef5ca8d5c',1,'pism']]],
-  ['mass_7',['mass',['../namespacepism_1_1surface_1_1diagnostics_acadff920eb40e3febfa8f0cbd19b2986.html#acadff920eb40e3febfa8f0cbd19b2986a0a5cd199a02768d6005905118e4e8a0b',1,'pism::surface::diagnostics::MASS'],['../namespacepism_1_1diagnostics_a45f6224f1bb1d0a924bd5d0c706aafb9.html#a45f6224f1bb1d0a924bd5d0c706aafb9a0dfee94623260f49617b695b6f90d2cf',1,'pism::diagnostics::MASS']]],
-  ['monthly_8',['MONTHLY',['../classpism_1_1Time_a6ab8978d4799f8c700d5274865fd7e37.html#a6ab8978d4799f8c700d5274865fd7e37a63e466f8fb35a98d4104b25eadba5192',1,'pism::Time']]]
+  ['nearest_0',['NEAREST',['../namespacepism_a3415cf6a7a4530c4e489feebe6365e03.html#a3415cf6a7a4530c4e489feebe6365e03ac53a9592e0f6980b96d3851633675efa',1,'pism']]],
+  ['no_5fregrid_5fwithout_5fregrid_5fvars_1',['NO_REGRID_WITHOUT_REGRID_VARS',['../classpism_1_1Component_a48f8d0b81b7853d4e3fba0de79ec4a7f.html#a48f8d0b81b7853d4e3fba0de79ec4a7fa40db21687f40497645ef1b899d9d5d95',1,'pism::Component']]],
+  ['node_5fboundary_2',['NODE_BOUNDARY',['../namespacepism_a29133ed3f28e0aaba2d3af612dbbc5d6.html#a29133ed3f28e0aaba2d3af612dbbc5d6a043c9212bcba2789d9a5eb622e894054',1,'pism']]],
+  ['node_5fexterior_3',['NODE_EXTERIOR',['../namespacepism_a29133ed3f28e0aaba2d3af612dbbc5d6.html#a29133ed3f28e0aaba2d3af612dbbc5d6a439a40e16153abe158520a9b110fd8bd',1,'pism']]],
+  ['node_5finterior_4',['NODE_INTERIOR',['../namespacepism_a29133ed3f28e0aaba2d3af612dbbc5d6.html#a29133ed3f28e0aaba2d3af612dbbc5d6a7b96df4f2ad7c1cbd177d46c49af4aab',1,'pism']]],
+  ['north_5',['North',['../namespacepism_a79037b9d17e5d3c872f8ea811fec2a31.html#a79037b9d17e5d3c872f8ea811fec2a31a1ab2876df82f60a35eb43c92c8cdebe9',1,'pism']]],
+  ['not_5fghosted_6',['NOT_GHOSTED',['../namespacepism_a294fe3e7c851ec53b318443b0c61ffab.html#a294fe3e7c851ec53b318443b0c61ffaba3c155fa786d4f050744bb13223985a9a',1,'pism']]],
+  ['not_5fperiodic_7',['NOT_PERIODIC',['../namespacepism_1_1grid_a368298223e3f3828fa1e4dcae12fbd3e.html#a368298223e3f3828fa1e4dcae12fbd3eaa50bdb2425d7347c4021a96740ae1527',1,'pism::grid']]],
+  ['not_5frepeatable_8',['NOT_REPEATABLE',['../classpism_1_1surface_1_1PDDrandMassBalance_abfe5f25a74bef607b0173cdcf763cf3e.html#abfe5f25a74bef607b0173cdcf763cf3ea7b462e201ce073671315c80571502781',1,'pism::surface::PDDrandMassBalance']]]
 ];

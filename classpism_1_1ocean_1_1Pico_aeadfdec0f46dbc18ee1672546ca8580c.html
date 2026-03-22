@@ -29,7 +29,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PISM, A Parallel Ice Sheet Model<span id="projectnumber">&#160;2.2.3-bcaa1c823 committed by Constantine Khrulev on 2026-03-20</span>
+   <div id="projectname">PISM, A Parallel Ice Sheet Model<span id="projectnumber">&#160;2.3.0-79cae578d committed by Constantine Khrulev on 2026-03-22</span>
    </div>
   </td>
  </tr>
@@ -90,8 +90,6 @@ $(function() {
           <tr><td class="navtab"><a class="navtab" href="classpism_1_1ocean_1_1Pico_a7375b62e829d756d17e0a6a3911004b4.html#a7375b62e829d756d17e0a6a3911004b4">compute_box_area</a></td></tr>
           <tr><td class="navtab"><a class="navtab" href="classpism_1_1ocean_1_1Pico_a94c0804f4feecb768df0a21e90e037ae.html#a94c0804f4feecb768df0a21e90e037ae">compute_box_average</a></td></tr>
           <tr><td class="navtab"><a class="navtab" href="classpism_1_1ocean_1_1Pico_a918f79b79b31d95d79cf5449d5ac0b7a.html#a918f79b79b31d95d79cf5449d5ac0b7a">compute_ocean_input_per_basin</a></td></tr>
-          <tr><td class="navtab"><a class="navtab" href="classpism_1_1ocean_1_1Pico_a7e51acb0ca855bd39cef93e5e9187554.html#a7e51acb0ca855bd39cef93e5e9187554">define_model_state_impl</a></td></tr>
-          <tr><td class="navtab"><a class="navtab" href="classpism_1_1ocean_1_1Pico_af73c02919ca442c3a0002dc0ad42f8b0.html#af73c02919ca442c3a0002dc0ad42f8b0">diagnostics_impl</a></td></tr>
           <tr><td class="navtab"><a class="navtab" href="classpism_1_1ocean_1_1Pico_ada110aa8fbb292682dc1a3571b9b0a32.html#ada110aa8fbb292682dc1a3571b9b0a32">init_impl</a></td></tr>
           <tr><td class="navtab"><a class="navtab" href="classpism_1_1ocean_1_1Pico_a8425ea684c9510f4511dc505a1ef15a2.html#a8425ea684c9510f4511dc505a1ef15a2">m_basal_melt_rate</a></td></tr>
           <tr><td class="navtab"><a class="navtab" href="classpism_1_1ocean_1_1Pico_ab7f9628fdfc7543adb0169cdd6fb4493.html#ab7f9628fdfc7543adb0169cdd6fb4493">m_geometry</a></td></tr>
@@ -111,8 +109,10 @@ $(function() {
           <tr><td class="navtab"><a class="navtab" href="classpism_1_1ocean_1_1Pico_a6b5c8f925eaf96e7db6df2b16e5a8035.html#a6b5c8f925eaf96e7db6df2b16e5a8035">process_box1</a></td></tr>
           <tr><td class="navtab"><a class="navtab" href="classpism_1_1ocean_1_1Pico_ab5ba078c88b20272ad754d63421733f4.html#ab5ba078c88b20272ad754d63421733f4">process_other_boxes</a></td></tr>
           <tr><td class="navtab"><a class="navtab" href="classpism_1_1ocean_1_1Pico_a0fcf272b876e945fb6290c2df8917d84.html#a0fcf272b876e945fb6290c2df8917d84">set_ocean_input_fields</a></td></tr>
-          <tr><td class="navtab"><a class="navtab" href="classpism_1_1ocean_1_1Pico_a8b33ff5b2b9cef7abdf4ff49c53970c7.html#a8b33ff5b2b9cef7abdf4ff49c53970c7">update_impl</a></td></tr>
-          <tr><td class="navtab"><a class="navtab" href="classpism_1_1ocean_1_1Pico_a5c62a82d203166de3f2ce56d70708b34.html#a5c62a82d203166de3f2ce56d70708b34">write_model_state_impl</a></td></tr>
+          <tr><td class="navtab"><a class="navtab" href="classpism_1_1ocean_1_1Pico_a596d849af739cb9e5ef35f35d756a197.html#a596d849af739cb9e5ef35f35d756a197">spatial_diagnostics_impl</a></td></tr>
+          <tr><td class="navtab"><a class="navtab" href="classpism_1_1ocean_1_1Pico_aa44abc20fc857d22be2210d236e06926.html#aa44abc20fc857d22be2210d236e06926">state_impl</a></td></tr>
+          <tr><td class="navtab"><a class="navtab" href="classpism_1_1ocean_1_1Pico_addae72d3d98776de435c3cd537d29b26.html#addae72d3d98776de435c3cd537d29b26">update_impl</a></td></tr>
+          <tr><td class="navtab"><a class="navtab" href="classpism_1_1ocean_1_1Pico_a2e2d6103b20eb834396a289da67d1a64.html#a2e2d6103b20eb834396a289da67d1a64">write_state_impl</a></td></tr>
           <tr><td class="navtab"><a class="navtab" href="classpism_1_1ocean_1_1Pico_a1c2f148751aac86117ab22da441f3608.html#a1c2f148751aac86117ab22da441f3608">~Pico</a></td></tr>
         </table>
       </div>
@@ -202,11 +202,11 @@ $(function() {
 <p>Use the simpler parameterization due to [<a class="el" href="references.html#BeckmannGoosse2003">BeckmannGoosse2003</a>] to set default sub-shelf temperature and melt rate values.</p>
 <p>At grid points containing floating ice not connected to the ocean, set the basal melt rate to zero and set basal temperature to the pressure melting point. </p>
 
-<p class="definition">Definition at line <a class="el" href="Pico_8cc_source.html#l00583">583</a> of file <a class="el" href="Pico_8cc_source.html">Pico.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Pico_8cc_source.html#l00582">582</a> of file <a class="el" href="Pico_8cc_source.html">Pico.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="Scalar_8hh_source.html#l00045">pism::array::Scalar::as_int()</a>, <a class="el" href="exactTestO_8c_source.html#l00023">beta_CC</a>, <a class="el" href="CellType_8hh_source.html#l00050">pism::array::CellType::floating_ice()</a>, <a class="el" href="exactTestP_8cc_source.html#l00036">pism::g</a>, <a class="el" href="Component_8hh_source.html#l00158">pism::Component::m_config</a>, <a class="el" href="Component_8hh_source.html#l00156">pism::Component::m_grid</a>, <a class="el" href="PicoPhysics_8cc_source.html#l00161">pism::ocean::PicoPhysics::melt_rate_beckmann_goosse()</a>, <a class="el" href="PicoPhysics_8cc_source.html#l00090">pism::ocean::PicoPhysics::pressure()</a>, <a class="el" href="PicoPhysics_8cc_source.html#l00149">pism::ocean::PicoPhysics::T_pm()</a>, and <a class="el" href="PicoPhysics_8cc_source.html#l00142">pism::ocean::PicoPhysics::theta_pm()</a>.</p>
+<p class="reference">References <a class="el" href="Scalar_8hh_source.html#l00045">pism::array::Scalar::as_int()</a>, <a class="el" href="exactTestO_8c_source.html#l00023">beta_CC</a>, <a class="el" href="CellType_8hh_source.html#l00050">pism::array::CellType::floating_ice()</a>, <a class="el" href="exactTestP_8cc_source.html#l00036">pism::g</a>, <a class="el" href="Component_8hh_source.html#l00160">pism::Component::m_config</a>, <a class="el" href="Component_8hh_source.html#l00158">pism::Component::m_grid</a>, <a class="el" href="PicoPhysics_8cc_source.html#l00161">pism::ocean::PicoPhysics::melt_rate_beckmann_goosse()</a>, <a class="el" href="PicoPhysics_8cc_source.html#l00090">pism::ocean::PicoPhysics::pressure()</a>, <a class="el" href="PicoPhysics_8cc_source.html#l00149">pism::ocean::PicoPhysics::T_pm()</a>, and <a class="el" href="PicoPhysics_8cc_source.html#l00142">pism::ocean::PicoPhysics::theta_pm()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="Pico_8cc_source.html#l00245">update_impl()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="Pico_8cc_source.html#l00244">update_impl()</a>.</p>
 
 </div>
 </div>

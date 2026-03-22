@@ -7,5 +7,7 @@ var searchData=
   ['option_3c_20std_3a_3astring_20_3e_4',['Option&lt; std::string &gt;',['../classpism_1_1options_1_1Option.html',1,'pism::options']]],
   ['opttillphiyieldstress_5',['OptTillphiYieldStress',['../classpism_1_1OptTillphiYieldStress.html',1,'pism']]],
   ['orographicprecipitation_6',['OrographicPrecipitation',['../classpism_1_1atmosphere_1_1OrographicPrecipitation.html',1,'pism::atmosphere']]],
-  ['orographicprecipitationserial_7',['OrographicPrecipitationSerial',['../classpism_1_1atmosphere_1_1OrographicPrecipitationSerial.html',1,'pism::atmosphere']]]
+  ['orographicprecipitationserial_7',['OrographicPrecipitationSerial',['../classpism_1_1atmosphere_1_1OrographicPrecipitationSerial.html',1,'pism::atmosphere']]],
+  ['outputfile_8',['OutputFile',['../classpism_1_1OutputFile.html',1,'pism']]],
+  ['outputwriter_9',['OutputWriter',['../classpism_1_1OutputWriter.html',1,'pism']]]
 ];

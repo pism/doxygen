@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['box_0',['Box',['../namespacepism_a86f380a436260515075becc4e22e2ef3.html#a86f380a436260515075becc4e22e2ef3',1,'pism']]]
+  ['box_0',['Box',['../namespacepism_aabc6b140ba6d3ae114c8ca0f2eed05eb.html#aabc6b140ba6d3ae114c8ca0f2eed05eb',1,'pism']]]
 ];

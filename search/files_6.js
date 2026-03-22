@@ -7,7 +7,7 @@ var searchData=
   ['given_2ecc_4',['given.cc',['../coupler_2frontalmelt_2Given_8cc.html',1,'(Global Namespace)'],['../earth_2Given_8cc.html',1,'(Global Namespace)']]],
   ['given_2ehh_5',['given.hh',['../earth_2Given_8hh.html',1,'(Global Namespace)'],['../coupler_2frontalmelt_2Given_8hh.html',1,'(Global Namespace)']]],
   ['givenclimate_2ecc_6',['givenclimate.cc',['../ocean_2GivenClimate_8cc.html',1,'(Global Namespace)'],['../atmosphere_2GivenClimate_8cc.html',1,'(Global Namespace)'],['../surface_2GivenClimate_8cc.html',1,'(Global Namespace)']]],
-  ['givenclimate_2ehh_7',['givenclimate.hh',['../surface_2GivenClimate_8hh.html',1,'(Global Namespace)'],['../atmosphere_2GivenClimate_8hh.html',1,'(Global Namespace)'],['../ocean_2GivenClimate_8hh.html',1,'(Global Namespace)']]],
+  ['givenclimate_2ehh_7',['givenclimate.hh',['../surface_2GivenClimate_8hh.html',1,'(Global Namespace)'],['../ocean_2GivenClimate_8hh.html',1,'(Global Namespace)'],['../atmosphere_2GivenClimate_8hh.html',1,'(Global Namespace)']]],
   ['giventh_2ecc_8',['GivenTH.cc',['../GivenTH_8cc.html',1,'']]],
   ['giventh_2ehh_9',['GivenTH.hh',['../GivenTH_8hh.html',1,'']]],
   ['goldsbykohlstedt_2ecc_10',['GoldsbyKohlstedt.cc',['../GoldsbyKohlstedt_8cc.html',1,'']]],
@@ -22,6 +22,7 @@ var searchData=
   ['grid_2ehh_19',['Grid.hh',['../Grid_8hh.html',1,'']]],
   ['grid_5fhierarchy_2ecc_20',['grid_hierarchy.cc',['../grid__hierarchy_8cc.html',1,'']]],
   ['grid_5fhierarchy_2ehh_21',['grid_hierarchy.hh',['../grid__hierarchy_8hh.html',1,'']]],
-  ['grounded_5fcell_5ffraction_2ecc_22',['grounded_cell_fraction.cc',['../grounded__cell__fraction_8cc.html',1,'']]],
-  ['grounded_5fcell_5ffraction_2ehh_23',['grounded_cell_fraction.hh',['../grounded__cell__fraction_8hh.html',1,'']]]
+  ['gridinfo_2ehh_22',['GridInfo.hh',['../GridInfo_8hh.html',1,'']]],
+  ['grounded_5fcell_5ffraction_2ecc_23',['grounded_cell_fraction.cc',['../grounded__cell__fraction_8cc.html',1,'']]],
+  ['grounded_5fcell_5ffraction_2ehh_24',['grounded_cell_fraction.hh',['../grounded__cell__fraction_8hh.html',1,'']]]
 ];

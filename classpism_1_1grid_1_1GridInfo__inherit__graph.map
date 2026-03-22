@@ -1,0 +1,9 @@
+<map id="pism::grid::GridInfo" name="pism::grid::GridInfo">
+<area shape="rect" id="Node000001" title=" " alt="" coords="153,5,300,31"/>
+<area shape="rect" id="Node000002" href="$classpism_1_1grid_1_1DistributedGridInfo.html" title=" " alt="" coords="5,79,224,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="198,40,134,81,132,76,195,36"/>
+<area shape="rect" id="Node000004" href="$classpism_1_1grid_1_1InputGridInfo.html" title=" " alt="" coords="249,79,429,104"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="258,36,322,76,319,81,255,40"/>
+<area shape="rect" id="Node000003" href="$structpism_1_1Grid_1_1Impl.html" title="Internal structures of Grid." alt="" coords="51,152,178,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="117,118,117,152,112,152,112,118"/>
+</map>

@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['parameterization_0',['Parameterization',['../classpism_1_1atmosphere_1_1PIK_a4a57600aba6ec3e25829da4a45ecb698.html#a4a57600aba6ec3e25829da4a45ecb698',1,'pism::atmosphere::PIK']]],
-  ['periodicity_1',['Periodicity',['../namespacepism_1_1grid_a368298223e3f3828fa1e4dcae12fbd3e.html#a368298223e3f3828fa1e4dcae12fbd3e',1,'pism::grid']]]
+  ['serveractions_0',['ServerActions',['../namespacepism_a5723ef6c9ac80695aaa5058d9ac3c232.html#a5723ef6c9ac80695aaa5058d9ac3c232',1,'pism']]]
 ];

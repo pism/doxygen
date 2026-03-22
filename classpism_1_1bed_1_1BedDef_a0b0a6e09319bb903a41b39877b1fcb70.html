@@ -29,7 +29,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PISM, A Parallel Ice Sheet Model<span id="projectnumber">&#160;2.2.3-bcaa1c823 committed by Constantine Khrulev on 2026-03-20</span>
+   <div id="projectname">PISM, A Parallel Ice Sheet Model<span id="projectnumber">&#160;2.3.0-79cae578d committed by Constantine Khrulev on 2026-03-22</span>
    </div>
   </td>
  </tr>
@@ -91,8 +91,6 @@ $(function() {
           <tr><td class="navtab"><a class="navtab" href="classpism_1_1bed_1_1BedDef_aae10d297f58c27642175ac37b9ecbaa7.html#aae10d297f58c27642175ac37b9ecbaa7">BedDef</a></td></tr>
           <tr><td class="navtab"><a class="navtab" href="classpism_1_1bed_1_1BedDef_a7c744cc807f2de03773ab25475fea2ad.html#a7c744cc807f2de03773ab25475fea2ad">bootstrap</a></td></tr>
           <tr><td class="navtab"><a class="navtab" href="classpism_1_1bed_1_1BedDef_a909f3ff6db68acb8e2d21212e8fd34fd.html#a909f3ff6db68acb8e2d21212e8fd34fd">bootstrap_impl</a></td></tr>
-          <tr><td class="navtab"><a class="navtab" href="classpism_1_1bed_1_1BedDef_a432572d80406df7620308bfc1e6506de.html#a432572d80406df7620308bfc1e6506de">define_model_state_impl</a></td></tr>
-          <tr><td class="navtab"><a class="navtab" href="classpism_1_1bed_1_1BedDef_a1aa2959595826063e459b756abfb73af.html#a1aa2959595826063e459b756abfb73af">diagnostics_impl</a></td></tr>
           <tr><td class="navtab"><a class="navtab" href="classpism_1_1bed_1_1BedDef_a66ef0bdfce3ede4f98d5bb1889691879.html#a66ef0bdfce3ede4f98d5bb1889691879">init</a></td></tr>
           <tr><td class="navtab"><a class="navtab" href="classpism_1_1bed_1_1BedDef_ad5f097e1a082d5a5b8e99ec3b967599c.html#ad5f097e1a082d5a5b8e99ec3b967599c">init_impl</a></td></tr>
           <tr><td class="navtab"><a class="navtab" href="classpism_1_1bed_1_1BedDef_ae84bfd895b934ea5ddc152077c440d35.html#ae84bfd895b934ea5ddc152077c440d35">m_load</a></td></tr>
@@ -106,10 +104,12 @@ $(function() {
           <tr><td class="navtab"><a class="navtab" href="classpism_1_1bed_1_1BedDef_a7ae78c0569adb8fa454bea6e9f7545ab.html#a7ae78c0569adb8fa454bea6e9f7545ab">m_update_interval</a></td></tr>
           <tr><td class="navtab"><a class="navtab" href="classpism_1_1bed_1_1BedDef_aae163c699051ee20349b893a343d1a2a.html#aae163c699051ee20349b893a343d1a2a">m_uplift</a></td></tr>
           <tr><td class="navtab"><a class="navtab" href="classpism_1_1bed_1_1BedDef_a6e7c79f6c6d0807d7ecd155c0b05fcf1.html#a6e7c79f6c6d0807d7ecd155c0b05fcf1">max_timestep_impl</a></td></tr>
+          <tr><td class="navtab"><a class="navtab" href="classpism_1_1bed_1_1BedDef_a043e424b197b3a662af64fe598395038.html#a043e424b197b3a662af64fe598395038">spatial_diagnostics_impl</a></td></tr>
+          <tr><td class="navtab"><a class="navtab" href="classpism_1_1bed_1_1BedDef_aed1476147254b5c4f4e7596fe9e2e4ae.html#aed1476147254b5c4f4e7596fe9e2e4ae">state_impl</a></td></tr>
           <tr><td class="navtab"><a class="navtab" href="classpism_1_1bed_1_1BedDef_a753c0498dee5ee7db6b2129a6de6db70.html#a753c0498dee5ee7db6b2129a6de6db70">update</a></td></tr>
           <tr><td class="navtab"><a class="navtab" href="classpism_1_1bed_1_1BedDef_a45b122a2e438230d261b83c5221623ff.html#a45b122a2e438230d261b83c5221623ff">update_impl</a></td></tr>
           <tr><td class="navtab"><a class="navtab" href="classpism_1_1bed_1_1BedDef_ab864f5da11db7bcae52e2bfe6fe7a8af.html#ab864f5da11db7bcae52e2bfe6fe7a8af">uplift</a></td></tr>
-          <tr><td class="navtab"><a class="navtab" href="classpism_1_1bed_1_1BedDef_a18e5652bb7916fa9c4cdb5cfdaa5b906.html#a18e5652bb7916fa9c4cdb5cfdaa5b906">write_model_state_impl</a></td></tr>
+          <tr><td class="navtab"><a class="navtab" href="classpism_1_1bed_1_1BedDef_a22bb601e6f462e0108679fcb1477d353.html#a22bb601e6f462e0108679fcb1477d353">write_state_impl</a></td></tr>
           <tr><td class="navtab"><a class="navtab" href="classpism_1_1bed_1_1BedDef_a80a1610781c4551adbfe50466919bac7.html#a80a1610781c4551adbfe50466919bac7">~BedDef</a></td></tr>
         </table>
       </div>
@@ -137,9 +137,9 @@ $(function() {
 
 <p>Name of the variable used to store the last update time. </p>
 
-<p class="definition">Definition at line <a class="el" href="BedDef_8hh_source.html#l00096">96</a> of file <a class="el" href="BedDef_8hh_source.html">BedDef.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="BedDef_8hh_source.html#l00097">97</a> of file <a class="el" href="BedDef_8hh_source.html">BedDef.hh</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="BedDef_8cc_source.html#l00032">BedDef()</a>, <a class="el" href="BedDef_8cc_source.html#l00079">define_model_state_impl()</a>, <a class="el" href="BedDef_8cc_source.html#l00112">init()</a>, and <a class="el" href="BedDef_8cc_source.html#l00095">write_model_state_impl()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="BedDef_8cc_source.html#l00116">init()</a>, <a class="el" href="BedDef_8cc_source.html#l00082">state_impl()</a>, and <a class="el" href="BedDef_8cc_source.html#l00096">write_state_impl()</a>.</p>
 
 </div>
 </div>

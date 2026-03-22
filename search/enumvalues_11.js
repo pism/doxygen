@@ -1,10 +1,7 @@
 var searchData=
 [
-  ['scale_0',['scale',['../classpism_1_1atmosphere_1_1ElevationChange_a94234f22ddd605620a5690d774a84d49.html#a94234f22ddd605620a5690d774a84d49aa42eec0e4f930b85f8c1fcbe35e27f59',1,'pism::atmosphere::ElevationChange::SCALE'],['../classpism_1_1surface_1_1ElevationChange_a89ec80c75a3ef54a67793f0400c6eef6.html#a89ec80c75a3ef54a67793f0400c6eef6afaba1a53949fad7a74fa2e257f8d0094',1,'pism::surface::ElevationChange::SCALE']]],
-  ['shelf_1',['SHELF',['../namespacepism_1_1diagnostics_a555fe870937c53c2aeba1a5e2034f518.html#a555fe870937c53c2aeba1a5e2034f518a7a51c1c583627edb4570bc7733972c4b',1,'pism::diagnostics']]],
-  ['shift_2',['shift',['../classpism_1_1atmosphere_1_1ElevationChange_a94234f22ddd605620a5690d774a84d49.html#a94234f22ddd605620a5690d774a84d49ada16711406bba7f33a6c68ac8c955c7a',1,'pism::atmosphere::ElevationChange::SHIFT'],['../classpism_1_1surface_1_1ElevationChange_a89ec80c75a3ef54a67793f0400c6eef6.html#a89ec80c75a3ef54a67793f0400c6eef6a20208c4f441bca4b9fb1113cd4365a72',1,'pism::surface::ElevationChange::SHIFT']]],
-  ['simple_3',['SIMPLE',['../classpism_1_1Time_a6ab8978d4799f8c700d5274865fd7e37.html#a6ab8978d4799f8c700d5274865fd7e37aed29a89c0b49c32164cd00fcdfb7ad73',1,'pism::Time']]],
-  ['skip_5fmapping_4',['SKIP_MAPPING',['../classpism_1_1IceModel_abe8fc467cf002d57deb5bae69c4f721f.html#abe8fc467cf002d57deb5bae69c4f721fa00e1659a99aa4de05bed06efb661ff98',1,'pism::IceModel']]],
-  ['smb_5',['SMB',['../namespacepism_1_1diagnostics_a9be104df35f48c5782d93a48a0890024.html#a9be104df35f48c5782d93a48a0890024af801d3552a0696abd73d75b3270885aa',1,'pism::diagnostics']]],
-  ['south_6',['South',['../namespacepism_a79037b9d17e5d3c872f8ea811fec2a31.html#a79037b9d17e5d3c872f8ea811fec2a31aab7dcd37c88dba1a0fa70f1ba84fd630',1,'pism']]]
+  ['t_5faxis_0',['T_AXIS',['../namespacepism_a1063d7e1d4f65b16c8c48b1c8f6a12d7.html#a1063d7e1d4f65b16c8c48b1c8f6a12d7a329e497bdac4cdeba039da644d1b2a44',1,'pism']]],
+  ['total_5fchange_1',['TOTAL_CHANGE',['../classpism_1_1DiagAverageRate_a44a50685701b5dcd19e71e4f2cc1e46f.html#a44a50685701b5dcd19e71e4f2cc1e46fa5ff14e4c51b9dfcb0540c0ce28d67cdd',1,'pism::DiagAverageRate']]],
+  ['total_5fdischarge_2',['TOTAL_DISCHARGE',['../namespacepism_1_1diagnostics_af35ed9ee223a712238e91a0b486f1580.html#af35ed9ee223a712238e91a0b486f1580a86691bb64ed83f8158ccff0ca0504d65',1,'pism::diagnostics']]],
+  ['trace_3',['TRACE',['../namespacepism_aef2b2c8b6655797b158a090120681a21.html#aef2b2c8b6655797b158a090120681a21ab1c73541c41e7cf3390ecbc57b458247',1,'pism']]]
 ];

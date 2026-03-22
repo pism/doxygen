@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['integrand_0',['integrand',['../cubature_8h_a6e9a87a699043972ce6dafa9375bf774.html#a6e9a87a699043972ce6dafa9375bf774',1,'cubature.h']]]
+  ['heap_5fitem_0',['heap_item',['../cubature_8c_a53548373573084fcad054978605c2277.html#a53548373573084fcad054978605c2277',1,'cubature.c']]],
+  ['hook_1',['Hook',['../classpism_1_1RuntimeError_a1f59e68a0f1027c0f67403da4b176f6d.html#a1f59e68a0f1027c0f67403da4b176f6d',1,'pism::RuntimeError']]]
 ];

@@ -17,6 +17,9 @@ var searchData=
   ['grain_5fsize_5fvostok_14',['grain_size_vostok',['../classpism_1_1rheology_1_1grain__size__vostok.html',1,'pism::rheology']]],
   ['greens_5felastic_15',['greens_elastic',['../classpism_1_1bed_1_1greens__elastic.html',1,'pism::bed']]],
   ['grid_16',['Grid',['../classpism_1_1Grid.html',1,'pism']]],
-  ['groundedmarginflux_17',['GroundedMarginFlux',['../classpism_1_1hydrology_1_1diagnostics_1_1GroundedMarginFlux.html',1,'pism::hydrology::diagnostics']]],
-  ['groundinglineflux_18',['groundinglineflux',['../classpism_1_1diagnostics_1_1GroundingLineFlux.html',1,'pism::diagnostics::GroundingLineFlux'],['../classpism_1_1hydrology_1_1diagnostics_1_1GroundingLineFlux.html',1,'pism::hydrology::diagnostics::GroundingLineFlux']]]
+  ['gridinfo_17',['GridInfo',['../classpism_1_1grid_1_1GridInfo.html',1,'pism::grid']]],
+  ['gridpoint_18',['GridPoint',['../classpism_1_1GridPoint.html',1,'pism']]],
+  ['gridpoints_19',['GridPoints',['../classpism_1_1GridPoints.html',1,'pism']]],
+  ['groundedmarginflux_20',['GroundedMarginFlux',['../classpism_1_1hydrology_1_1diagnostics_1_1GroundedMarginFlux.html',1,'pism::hydrology::diagnostics']]],
+  ['groundinglineflux_21',['groundinglineflux',['../classpism_1_1diagnostics_1_1GroundingLineFlux.html',1,'pism::diagnostics::GroundingLineFlux'],['../classpism_1_1hydrology_1_1diagnostics_1_1GroundingLineFlux.html',1,'pism::hydrology::diagnostics::GroundingLineFlux']]]
 ];

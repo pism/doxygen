@@ -29,7 +29,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PISM, A Parallel Ice Sheet Model<span id="projectnumber">&#160;2.2.3-bcaa1c823 committed by Constantine Khrulev on 2026-03-20</span>
+   <div id="projectname">PISM, A Parallel Ice Sheet Model<span id="projectnumber">&#160;2.3.0-79cae578d committed by Constantine Khrulev on 2026-03-22</span>
    </div>
   </td>
  </tr>
@@ -85,6 +85,7 @@ $(function() {
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classpism_1_1Config-members.html">List of all members</a>  </div>
@@ -95,13 +96,13 @@ $(function() {
 <p>A class for storing and accessing PISM configuration flags and parameters.  
  <a href="classpism_1_1Config.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="ConfigInterface_8hh_source.html">ConfigInterface.hh</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="Config_8hh_source.html">Config.hh</a>&gt;</code></p>
 <div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for pism::Config:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classpism_1_1Config__inherit__graph.svg" width="323" height="183"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classpism_1_1Config__inherit__graph.svg" width="164" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
@@ -116,10 +117,6 @@ Public Types</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:aed2e72d456c35e6cd250167521604cc0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flag used by <code>get_...()</code> methods.  <a href="classpism_1_1Config_aed2e72d456c35e6cd250167521604cc0.html#aed2e72d456c35e6cd250167521604cc0">More...</a><br /></td></tr>
 <tr class="separator:aed2e72d456c35e6cd250167521604cc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a194547f160a8ba3f3a2b4d29564473dc" id="r_a194547f160a8ba3f3a2b4d29564473dc"><td class="memItemLeft" align="right" valign="top">typedef std::shared_ptr&lt; <a class="el" href="classpism_1_1Config.html">Config</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpism_1_1Config_a194547f160a8ba3f3a2b4d29564473dc.html#a194547f160a8ba3f3a2b4d29564473dc">Ptr</a></td></tr>
-<tr class="separator:a194547f160a8ba3f3a2b4d29564473dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4dc1634c0eac358eb86303633024f810" id="r_a4dc1634c0eac358eb86303633024f810"><td class="memItemLeft" align="right" valign="top">typedef std::shared_ptr&lt; const <a class="el" href="classpism_1_1Config.html">Config</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpism_1_1Config_a4dc1634c0eac358eb86303633024f810.html#a4dc1634c0eac358eb86303633024f810">ConstPtr</a></td></tr>
-<tr class="separator:a4dc1634c0eac358eb86303633024f810"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3357f6cee0d7632dbc2db1565820f09a" id="r_a3357f6cee0d7632dbc2db1565820f09a"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; std::string, std::vector&lt; <a class="el" href="classdouble.html">double</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpism_1_1Config_a3357f6cee0d7632dbc2db1565820f09a.html#a3357f6cee0d7632dbc2db1565820f09a">Doubles</a></td></tr>
 <tr class="separator:a3357f6cee0d7632dbc2db1565820f09a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a16b06f2c0a39e5dcdee68aa0dddafcca" id="r_a16b06f2c0a39e5dcdee68aa0dddafcca"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; std::string, std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpism_1_1Config_a16b06f2c0a39e5dcdee68aa0dddafcca.html#a16b06f2c0a39e5dcdee68aa0dddafcca">Strings</a></td></tr>
@@ -129,8 +126,8 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a8ae72519a7ed2cf9fd569b04aed7a306" id="r_a8ae72519a7ed2cf9fd569b04aed7a306"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpism_1_1Config_a8ae72519a7ed2cf9fd569b04aed7a306.html#a8ae72519a7ed2cf9fd569b04aed7a306">Config</a> (<a class="el" href="classpism_1_1units_1_1System_afd20a5cddd2a92044ad97097c5474a67.html#afd20a5cddd2a92044ad97097c5474a67">units::System::Ptr</a> unit_system)</td></tr>
-<tr class="separator:a8ae72519a7ed2cf9fd569b04aed7a306"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c956dc26ff8c6de83851ffaba4a7f76" id="r_a2c956dc26ff8c6de83851ffaba4a7f76"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpism_1_1Config_a2c956dc26ff8c6de83851ffaba4a7f76.html#a2c956dc26ff8c6de83851ffaba4a7f76">Config</a> (std::shared_ptr&lt; <a class="el" href="classpism_1_1units_1_1System.html">units::System</a> &gt; <a class="el" href="classpism_1_1Config_a730531a96915c77e049c8f4b3e557212.html#a730531a96915c77e049c8f4b3e557212">unit_system</a>)</td></tr>
+<tr class="separator:a2c956dc26ff8c6de83851ffaba4a7f76"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab3f52c4dc1aae4fac4b9401f806d008d" id="r_ab3f52c4dc1aae4fac4b9401f806d008d"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpism_1_1Config_ab3f52c4dc1aae4fac4b9401f806d008d.html#ab3f52c4dc1aae4fac4b9401f806d008d">~Config</a> ()</td></tr>
 <tr class="separator:ab3f52c4dc1aae4fac4b9401f806d008d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a87e8730117b3ef79d004d73cc86c7813" id="r_a87e8730117b3ef79d004d73cc86c7813"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpism_1_1Config_a87e8730117b3ef79d004d73cc86c7813.html#a87e8730117b3ef79d004d73cc86c7813">import_from</a> (const <a class="el" href="classpism_1_1Config.html">Config</a> &amp;other)</td></tr>
@@ -143,15 +140,11 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a18fcaaefc9f6c931cae4f88d759765ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d907f25c911c60ef9bc0ce6c6ecd6c4" id="r_a6d907f25c911c60ef9bc0ce6c6ecd6c4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpism_1_1Config_a6d907f25c911c60ef9bc0ce6c6ecd6c4.html#a6d907f25c911c60ef9bc0ce6c6ecd6c4">read</a> (MPI_Comm com, const std::string &amp;<a class="el" href="classpism_1_1Config_ac2a35870f4ffafc24bfe9d097589919c.html#ac2a35870f4ffafc24bfe9d097589919c">filename</a>)</td></tr>
 <tr class="separator:a6d907f25c911c60ef9bc0ce6c6ecd6c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab600ec4ea76cc73d9e1f6ec23135aa8e" id="r_ab600ec4ea76cc73d9e1f6ec23135aa8e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpism_1_1Config_ab600ec4ea76cc73d9e1f6ec23135aa8e.html#ab600ec4ea76cc73d9e1f6ec23135aa8e">write</a> (MPI_Comm com, const std::string &amp;<a class="el" href="classpism_1_1Config_ac2a35870f4ffafc24bfe9d097589919c.html#ac2a35870f4ffafc24bfe9d097589919c">filename</a>, <a class="el" href="classbool.html">bool</a> append=true) const</td></tr>
-<tr class="separator:ab600ec4ea76cc73d9e1f6ec23135aa8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac2a35870f4ffafc24bfe9d097589919c" id="r_ac2a35870f4ffafc24bfe9d097589919c"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpism_1_1Config_ac2a35870f4ffafc24bfe9d097589919c.html#ac2a35870f4ffafc24bfe9d097589919c">filename</a> () const</td></tr>
 <tr class="memdesc:ac2a35870f4ffafc24bfe9d097589919c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the name of the file used to initialize the database.  <br /></td></tr>
 <tr class="separator:ac2a35870f4ffafc24bfe9d097589919c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5395ae4d9f43999c1a91d4328c359412" id="r_a5395ae4d9f43999c1a91d4328c359412"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpism_1_1Config_a5395ae4d9f43999c1a91d4328c359412.html#a5395ae4d9f43999c1a91d4328c359412">read</a> (const <a class="el" href="classpism_1_1File.html">File</a> &amp;file)</td></tr>
 <tr class="separator:a5395ae4d9f43999c1a91d4328c359412"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00fc7f740f2ea026b7352597a90f1b49" id="r_a00fc7f740f2ea026b7352597a90f1b49"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpism_1_1Config_a00fc7f740f2ea026b7352597a90f1b49.html#a00fc7f740f2ea026b7352597a90f1b49">write</a> (const <a class="el" href="classpism_1_1File.html">File</a> &amp;file) const</td></tr>
-<tr class="separator:a00fc7f740f2ea026b7352597a90f1b49"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a19ed2058bf26e02251a24bf5b08afcb9" id="r_a19ed2058bf26e02251a24bf5b08afcb9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbool.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpism_1_1Config_a19ed2058bf26e02251a24bf5b08afcb9.html#a19ed2058bf26e02251a24bf5b08afcb9">is_set</a> (const std::string &amp;name) const</td></tr>
 <tr class="separator:a19ed2058bf26e02251a24bf5b08afcb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6e569141ab2b076edb8319f0e21bf47d" id="r_a6e569141ab2b076edb8319f0e21bf47d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbool.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpism_1_1Config_a6e569141ab2b076edb8319f0e21bf47d.html#a6e569141ab2b076edb8319f0e21bf47d">is_valid_number</a> (const std::string &amp;name) const</td></tr>
@@ -198,13 +191,21 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aee9187b28912651d0055ee2d1cf48de3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2fe39b044295db05563b7d5dbd7bc741" id="r_a2fe39b044295db05563b7d5dbd7bc741"><td class="memItemLeft" align="right" valign="top">std::pair&lt; <a class="el" href="classbool.html">bool</a>, <a class="el" href="classdouble.html">double</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpism_1_1Config_a2fe39b044295db05563b7d5dbd7bc741.html#a2fe39b044295db05563b7d5dbd7bc741">valid_max</a> (const std::string &amp;parameter) const</td></tr>
 <tr class="separator:a2fe39b044295db05563b7d5dbd7bc741"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a730531a96915c77e049c8f4b3e557212" id="r_a730531a96915c77e049c8f4b3e557212"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classpism_1_1units_1_1System.html">units::System</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpism_1_1Config_a730531a96915c77e049c8f4b3e557212.html#a730531a96915c77e049c8f4b3e557212">unit_system</a> () const</td></tr>
+<tr class="separator:a730531a96915c77e049c8f4b3e557212"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f0d7e9fdc1b9ccfd742430498009489" id="r_a8f0d7e9fdc1b9ccfd742430498009489"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpism_1_1Config_a8f0d7e9fdc1b9ccfd742430498009489.html#a8f0d7e9fdc1b9ccfd742430498009489">json</a> () const</td></tr>
+<tr class="separator:a8f0d7e9fdc1b9ccfd742430498009489"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:ae773b6bd64b270ef835a087e560854d9" id="r_ae773b6bd64b270ef835a087e560854d9"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classint.html">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpism_1_1Config_ae773b6bd64b270ef835a087e560854d9.html#ae773b6bd64b270ef835a087e560854d9">max_length</a> = 32768</td></tr>
+<tr class="memdesc:ae773b6bd64b270ef835a087e560854d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum length of the JSON string (for writing to output files)  <br /></td></tr>
+<tr class="separator:ae773b6bd64b270ef835a087e560854d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:a477bc0eb23e29121871d8b68f3159eca" id="r_a477bc0eb23e29121871d8b68f3159eca"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpism_1_1Config_a477bc0eb23e29121871d8b68f3159eca.html#a477bc0eb23e29121871d8b68f3159eca">read_impl</a> (const <a class="el" href="classpism_1_1File.html">File</a> &amp;nc)=0</td></tr>
 <tr class="separator:a477bc0eb23e29121871d8b68f3159eca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad9e8d964346c02f495d0a928fb010df7" id="r_ad9e8d964346c02f495d0a928fb010df7"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpism_1_1Config_ad9e8d964346c02f495d0a928fb010df7.html#ad9e8d964346c02f495d0a928fb010df7">write_impl</a> (const <a class="el" href="classpism_1_1File.html">File</a> &amp;nc) const =0</td></tr>
-<tr class="separator:ad9e8d964346c02f495d0a928fb010df7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a01e0add2a63167acbc46d626053e3fcc" id="r_a01e0add2a63167acbc46d626053e3fcc"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classbool.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpism_1_1Config_a01e0add2a63167acbc46d626053e3fcc.html#a01e0add2a63167acbc46d626053e3fcc">is_set_impl</a> (const std::string &amp;name) const =0</td></tr>
 <tr class="separator:a01e0add2a63167acbc46d626053e3fcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab50c7bf178fc5564239bee90bda69df6" id="r_ab50c7bf178fc5564239bee90bda69df6"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classpism_1_1Config_a3357f6cee0d7632dbc2db1565820f09a.html#a3357f6cee0d7632dbc2db1565820f09a">Doubles</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpism_1_1Config_ab50c7bf178fc5564239bee90bda69df6.html#ab50c7bf178fc5564239bee90bda69df6">all_doubles_impl</a> () const =0</td></tr>
@@ -238,10 +239,10 @@ Private Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A class for storing and accessing PISM configuration flags and parameters. </p>
 
-<p class="definition">Definition at line <a class="el" href="ConfigInterface_8hh_source.html#l00054">54</a> of file <a class="el" href="ConfigInterface_8hh_source.html">ConfigInterface.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Config_8hh_source.html#l00056">56</a> of file <a class="el" href="Config_8hh_source.html">Config.hh</a>.</p>
 </div><hr/>The documentation for this class was generated from the following files:<ul>
-<li>src/util/<a class="el" href="ConfigInterface_8hh_source.html">ConfigInterface.hh</a></li>
-<li>src/util/<a class="el" href="ConfigInterface_8cc_source.html">ConfigInterface.cc</a></li>
+<li>src/util/<a class="el" href="Config_8hh_source.html">Config.hh</a></li>
+<li>src/util/<a class="el" href="Config_8cc_source.html">Config.cc</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

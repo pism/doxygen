@@ -17,5 +17,7 @@ var searchData=
   ['widthlambda_14',['widthLambda',['../structrule75genzmalik_aaa747674033b69d1aab6611421966d87.html#aaa747674033b69d1aab6611421966d87',1,'rule75genzmalik']]],
   ['widthlambda2_15',['widthLambda2',['../structrule75genzmalik_a62ad8543676887c17584558f4333222f.html#a62ad8543676887c17584558f4333222f',1,'rule75genzmalik']]],
   ['wr_16',['Wr',['../namespacepism_a8cd94e8165a0f8ed5c722b809b39daf4.html#a8cd94e8165a0f8ed5c722b809b39daf4',1,'pism']]],
-  ['written_5fvariables_17',['written_variables',['../structpism_1_1File_1_1Impl_ae10a8e000628457853c1d812629ef184.html#ae10a8e000628457853c1d812629ef184',1,'pism::File::Impl']]]
+  ['written_5ftime_5fdependent_17',['written_time_dependent',['../structpism_1_1OutputWriter_1_1Impl_a60ade38c93ff60d4a6b1017a42bf09ab.html#a60ade38c93ff60d4a6b1017a42bf09ab',1,'pism::OutputWriter::Impl']]],
+  ['written_5ftime_5findependent_18',['written_time_independent',['../structpism_1_1OutputWriter_1_1Impl_a77ff9aef520565462d28861390fde020.html#a77ff9aef520565462d28861390fde020',1,'pism::OutputWriter::Impl']]],
+  ['written_5fvariables_19',['written_variables',['../structpism_1_1File_1_1Impl_ae10a8e000628457853c1d812629ef184.html#ae10a8e000628457853c1d812629ef184',1,'pism::File::Impl']]]
 ];
