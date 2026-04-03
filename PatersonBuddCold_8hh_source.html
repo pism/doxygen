@@ -29,7 +29,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">PISM, A Parallel Ice Sheet Model<span id="projectnumber">&#160;2.3.0-79cae578d committed by Constantine Khrulev on 2026-03-22</span>
+   <div id="projectname">PISM, A Parallel Ice Sheet Model<span id="projectnumber">&#160;2.3.1-6664c8ae8 committed by Constantine Khrulev on 2026-04-02</span>
    </div>
   </td>
  </tr>
@@ -89,7 +89,7 @@ $(document).ready(function() { init_codefold(0); });
   <div class="headertitle"><div class="title">PatersonBuddCold.hh</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="PatersonBuddCold_8hh.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/* Copyright (C) 2015, 2016, 2018, 2021, 2023, 2025 PISM Authors</span></div>
+<a href="PatersonBuddCold_8hh.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/* Copyright (C) 2015, 2016, 2018, 2021, 2023, 2025, 2026 PISM Authors</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment"> *</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment"> * This file is part of PISM.</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment"> *</span></div>
@@ -132,7 +132,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>  <span class="comment">// ignores pressure and uses non-pressure-adjusted temperature</span></div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>  <span class="keywordtype">double</span> <a class="code hl_function" href="classpism_1_1rheology_1_1PatersonBuddCold_aec0db50a373a7adba8eb06e0f4c0feff.html#aec0db50a373a7adba8eb06e0f4c0feff">flow_from_temp</a>(<span class="keywordtype">double</span> stress, <span class="keywordtype">double</span> temp,</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>                        <span class="keywordtype">double</span> , <span class="keywordtype">double</span>) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>                        <span class="keywordtype">double</span>  <span class="comment">/*pressure*/</span>, <span class="keywordtype">double</span> <span class="comment">/*gs*/</span>) <span class="keyword">const</span>;</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>};</div>
 </div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
